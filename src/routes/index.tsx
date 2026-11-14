@@ -1,23 +1,20 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { ClientOnly, createFileRoute } from '@tanstack/react-router'
+import { VocabApp } from '@/components/VocabApp'
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+export const Route = createFileRoute('/')({
+  head: () => ({
+    meta: [
+      { title: 'Học từ qua hội thoại — Vocab Conversations' },
+      { name: 'description', content: 'Walk a 2D city and learn English words through AI-written everyday conversations, made for Vietnamese speakers.' },
+      { property: 'og:title', content: 'Học từ qua hội thoại — Vocab Conversations' },
+      { property: 'og:description', content: 'A small city game that teaches beginner English vocabulary to Vietnamese speakers.' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+    ],
+  }),
+  component: () => (
+    <ClientOnly fallback={<div className="min-h-screen bg-background" />}>
+      <VocabApp />
+    </ClientOnly>
+  ),
+})

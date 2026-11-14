@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Lesson generation runs in the `generateLessonFn` server function (src/lib/lesson.functions.ts) using shared, framework-free logic in src/shared/ (ported from the original Supabase edge function); keeps the AI call server-side and the validation unit-testable.
+- The game renders inside `<ClientOnly>` on `/` because its state loads from localStorage on first render; avoids hydration mismatches.

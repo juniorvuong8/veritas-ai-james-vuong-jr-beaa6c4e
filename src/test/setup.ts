@@ -8,7 +8,7 @@ Object.defineProperty(window, "scrollTo", {
 Object.defineProperty(window, "matchMedia", {
   writable: true,
   value: (query: string) => ({
-    matches: false,
+    matches: query.includes("prefers-reduced-motion"),
     media: query,
     onchange: null,
     addListener: () => {},
@@ -18,3 +18,7 @@ Object.defineProperty(window, "matchMedia", {
     dispatchEvent: () => {},
   }),
 });
+
+import { cleanup } from '@testing-library/react'
+import { afterEach } from 'vitest'
+afterEach(() => cleanup())
