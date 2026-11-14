@@ -1,0 +1,278 @@
+[
+  {
+    "id": "cafe-A-L1",
+    "scenarioId": "cafe",
+    "set": "A",
+    "level": 1,
+    "words": [
+      "menu",
+      "to go",
+      "refill"
+    ]
+  },
+  {
+    "id": "cafe-A-L2",
+    "scenarioId": "cafe",
+    "set": "A",
+    "level": 2,
+    "words": [
+      "menu",
+      "to go",
+      "refill"
+    ]
+  },
+  {
+    "id": "cafe-A-L3",
+    "scenarioId": "cafe",
+    "set": "A",
+    "level": 3,
+    "words": [
+      "menu",
+      "to go",
+      "refill"
+    ]
+  },
+  {
+    "id": "cafe-B-L1",
+    "scenarioId": "cafe",
+    "set": "B",
+    "level": 1,
+    "words": [
+      "medium",
+      "straw",
+      "napkin",
+      "hóa đơn"
+    ]
+  },
+  {
+    "id": "cafe-B-L2",
+    "scenarioId": "cafe",
+    "set": "B",
+    "level": 2,
+    "words": [
+      "medium",
+      "straw",
+      "napkin",
+      "hóa đơn"
+    ]
+  },
+  {
+    "id": "cafe-B-L3",
+    "scenarioId": "cafe",
+    "set": "B",
+    "level": 3,
+    "words": [
+      "medium",
+      "straw",
+      "napkin",
+      "hóa đơn"
+    ]
+  },
+  {
+    "id": "supermarket-A-L1",
+    "scenarioId": "supermarket",
+    "set": "A",
+    "level": 1,
+    "words": [
+      "cart",
+      "checkout",
+      "on sale"
+    ]
+  },
+  {
+    "id": "supermarket-A-L2",
+    "scenarioId": "supermarket",
+    "set": "A",
+    "level": 2,
+    "words": [
+      "cart",
+      "checkout",
+      "on sale"
+    ]
+  },
+  {
+    "id": "supermarket-A-L3",
+    "scenarioId": "supermarket",
+    "set": "A",
+    "level": 3,
+    "words": [
+      "cart",
+      "checkout",
+      "on sale"
+    ]
+  },
+  {
+    "id": "supermarket-B-L1",
+    "scenarioId": "supermarket",
+    "set": "B",
+    "level": 1,
+    "words": [
+      "basket",
+      "cashier",
+      "price",
+      "túi"
+    ]
+  },
+  {
+    "id": "supermarket-B-L2",
+    "scenarioId": "supermarket",
+    "set": "B",
+    "level": 2,
+    "words": [
+      "basket",
+      "cashier",
+      "price",
+      "túi"
+    ]
+  },
+  {
+    "id": "supermarket-B-L3",
+    "scenarioId": "supermarket",
+    "set": "B",
+    "level": 3,
+    "words": [
+      "basket",
+      "cashier",
+      "price",
+      "túi"
+    ]
+  },
+  {
+    "id": "taxi-A-L1",
+    "scenarioId": "taxi",
+    "set": "A",
+    "level": 1,
+    "words": [
+      "address",
+      "turn left",
+      "fare"
+    ]
+  },
+  {
+    "id": "taxi-A-L2",
+    "scenarioId": "taxi",
+    "set": "A",
+    "level": 2,
+    "words": [
+      "address",
+      "turn left",
+      "fare"
+    ]
+  },
+  {
+    "id": "taxi-A-L3",
+    "scenarioId": "taxi",
+    "set": "A",
+    "level": 3,
+    "words": [
+      "address",
+      "turn left",
+      "fare"
+    ]
+  },
+  {
+    "id": "taxi-B-L1",
+    "scenarioId": "taxi",
+    "set": "B",
+    "level": 1,
+    "words": [
+      "airport",
+      "traffic",
+      "seatbelt",
+      "tiền boa"
+    ]
+  },
+  {
+    "id": "taxi-B-L2",
+    "scenarioId": "taxi",
+    "set": "B",
+    "level": 2,
+    "words": [
+      "airport",
+      "traffic",
+      "seatbelt",
+      "tiền boa"
+    ]
+  },
+  {
+    "id": "taxi-B-L3",
+    "scenarioId": "taxi",
+    "set": "B",
+    "level": 3,
+    "words": [
+      "airport",
+      "traffic",
+      "seatbelt",
+      "tiền boa"
+    ]
+  },
+  {
+    "id": "clinic-A-L1",
+    "scenarioId": "clinic",
+    "set": "A",
+    "level": 1,
+    "words": [
+      "appointment",
+      "fever",
+      "medicine"
+    ]
+  },
+  {
+    "id": "clinic-A-L2",
+    "scenarioId": "clinic",
+    "set": "A",
+    "level": 2,
+    "words": [
+      "appointment",
+      "fever",
+      "medicine"
+    ]
+  },
+  {
+    "id": "clinic-A-L3",
+    "scenarioId": "clinic",
+    "set": "A",
+    "level": 3,
+    "words": [
+      "appointment",
+      "fever",
+      "medicine"
+    ]
+  },
+  {
+    "id": "clinic-B-L1",
+    "scenarioId": "clinic",
+    "set": "B",
+    "level": 1,
+    "words": [
+      "headache",
+      "cough",
+      "pharmacy",
+      "đơn thuốc"
+    ]
+  },
+  {
+    "id": "clinic-B-L2",
+    "scenarioId": "clinic",
+    "set": "B",
+    "level": 2,
+    "words": [
+      "headache",
+      "cough",
+      "pharmacy",
+      "đơn thuốc"
+    ]
+  },
+  {
+    "id": "clinic-B-L3",
+    "scenarioId": "clinic",
+    "set": "B",
+    "level": 3,
+    "words": [
+      "headache",
+      "cough",
+      "pharmacy",
+      "đơn thuốc"
+    ]
+  }
+]

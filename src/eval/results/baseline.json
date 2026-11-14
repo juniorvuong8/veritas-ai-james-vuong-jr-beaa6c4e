@@ -1,0 +1,2438 @@
+{
+  "cafe-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Quán cà phê",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào anh, anh muốn uống gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho tôi xem menu được không em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Anh uống ở đây hay to go ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Ở đây có refill miễn phí không em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, của anh đây. Cảm ơn anh nhé!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "menu",
+          "word": "menu",
+          "meaning_vi": "thực đơn",
+          "usage_vi": "Dùng khi muốn xem quán có món gì và giá bao nhiêu."
+        },
+        {
+          "input": "to go",
+          "word": "to go",
+          "meaning_vi": "mang đi",
+          "usage_vi": "Trả lời khi nhân viên hỏi bạn uống tại chỗ hay mang đi."
+        },
+        {
+          "input": "refill",
+          "word": "refill",
+          "meaning_vi": "rót thêm",
+          "usage_vi": "Hỏi khi muốn được rót thêm đồ uống vào ly."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thực đơn\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"menu\" nghĩa là thực đơn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"mang đi\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"to go\" nghĩa là mang đi."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"rót thêm\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"refill\" nghĩa là rót thêm."
+        }
+      ]
+    }
+  },
+  "cafe-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Quán cà phê",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào anh, anh muốn uống gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em ơi, can I see the menu?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, for here or to go ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Can I get a free refill không em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, của anh đây. Cảm ơn anh nhé!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you, em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "menu",
+          "word": "menu",
+          "meaning_vi": "thực đơn",
+          "usage_vi": "Dùng khi muốn xem quán có món gì và giá bao nhiêu."
+        },
+        {
+          "input": "to go",
+          "word": "to go",
+          "meaning_vi": "mang đi",
+          "usage_vi": "Trả lời khi nhân viên hỏi bạn uống tại chỗ hay mang đi."
+        },
+        {
+          "input": "refill",
+          "word": "refill",
+          "meaning_vi": "rót thêm",
+          "usage_vi": "Hỏi khi muốn được rót thêm đồ uống vào ly."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thực đơn\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"menu\" nghĩa là thực đơn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"mang đi\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"to go\" nghĩa là mang đi."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"rót thêm\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"refill\" nghĩa là rót thêm."
+        }
+      ]
+    }
+  },
+  "cafe-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Quán cà phê",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! What can I get for you?",
+          "translation_vi": "Chào anh! Anh muốn dùng gì ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Can I see the menu, please?",
+          "translation_vi": "Cho tôi xem thực đơn được không?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Is that for here or to go?",
+          "translation_vi": "Anh uống ở đây hay mang đi ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Can I get a free refill?",
+          "translation_vi": "Tôi được rót thêm miễn phí không?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Here you go. Have a nice day!",
+          "translation_vi": "Của anh đây. Chúc anh một ngày tốt lành!"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you!",
+          "translation_vi": "Cảm ơn em!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "menu",
+          "word": "menu",
+          "meaning_vi": "thực đơn",
+          "usage_vi": "Dùng khi muốn xem quán có món gì và giá bao nhiêu."
+        },
+        {
+          "input": "to go",
+          "word": "to go",
+          "meaning_vi": "mang đi",
+          "usage_vi": "Trả lời khi nhân viên hỏi bạn uống tại chỗ hay mang đi."
+        },
+        {
+          "input": "refill",
+          "word": "refill",
+          "meaning_vi": "rót thêm",
+          "usage_vi": "Hỏi khi muốn được rót thêm đồ uống vào ly."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thực đơn\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"menu\" nghĩa là thực đơn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"mang đi\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"to go\" nghĩa là mang đi."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"rót thêm\"?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"refill\" nghĩa là rót thêm."
+        }
+      ]
+    }
+  },
+  "cafe-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Quán cà phê",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào anh, anh muốn uống gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho tôi một ly cà phê sữa size medium.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em cho tôi xin một cái straw nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em ơi, cho tôi thêm napkin được không?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho tôi xin receipt nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, của anh đây. Cảm ơn anh nhé!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "medium",
+          "word": "medium",
+          "meaning_vi": "cỡ vừa",
+          "usage_vi": "Dùng khi chọn cỡ ly đồ uống."
+        },
+        {
+          "input": "straw",
+          "word": "straw",
+          "meaning_vi": "ống hút",
+          "usage_vi": "Xin khi cần ống hút để uống."
+        },
+        {
+          "input": "napkin",
+          "word": "napkin",
+          "meaning_vi": "khăn giấy",
+          "usage_vi": "Xin khi cần lau tay hoặc lau miệng."
+        },
+        {
+          "input": "hóa đơn",
+          "word": "receipt",
+          "meaning_vi": "hóa đơn, biên lai",
+          "usage_vi": "Xin sau khi trả tiền, khi cần giấy ghi số tiền đã trả."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"cỡ vừa\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"medium\" nghĩa là cỡ vừa."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"ống hút\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"straw\" nghĩa là ống hút."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"khăn giấy\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"napkin\" nghĩa là khăn giấy."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"hóa đơn, biên lai\"?",
+          "options": [
+            "receipt",
+            "medium",
+            "straw"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"receipt\" nghĩa là hóa đơn, biên lai."
+        }
+      ]
+    }
+  },
+  "cafe-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Quán cà phê",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào anh, anh muốn uống gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho tôi a medium latte nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em cho tôi a straw, please.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho tôi thêm a napkin, please.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Can I have the receipt, em nhé?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, của anh đây. Cảm ơn anh nhé!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you, em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "medium",
+          "word": "medium",
+          "meaning_vi": "cỡ vừa",
+          "usage_vi": "Dùng khi chọn cỡ ly đồ uống."
+        },
+        {
+          "input": "straw",
+          "word": "straw",
+          "meaning_vi": "ống hút",
+          "usage_vi": "Xin khi cần ống hút để uống."
+        },
+        {
+          "input": "napkin",
+          "word": "napkin",
+          "meaning_vi": "khăn giấy",
+          "usage_vi": "Xin khi cần lau tay hoặc lau miệng."
+        },
+        {
+          "input": "hóa đơn",
+          "word": "receipt",
+          "meaning_vi": "hóa đơn, biên lai",
+          "usage_vi": "Xin sau khi trả tiền, khi cần giấy ghi số tiền đã trả."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"cỡ vừa\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"medium\" nghĩa là cỡ vừa."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"ống hút\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"straw\" nghĩa là ống hút."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"khăn giấy\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"napkin\" nghĩa là khăn giấy."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"hóa đơn, biên lai\"?",
+          "options": [
+            "receipt",
+            "medium",
+            "straw"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"receipt\" nghĩa là hóa đơn, biên lai."
+        }
+      ]
+    }
+  },
+  "cafe-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Quán cà phê",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! What can I get for you?",
+          "translation_vi": "Chào anh! Anh muốn dùng gì ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "A medium latte, please.",
+          "translation_vi": "Cho tôi một ly latte cỡ vừa."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Could I have a straw, please?",
+          "translation_vi": "Cho tôi xin một cái ống hút nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Can I have a napkin, please?",
+          "translation_vi": "Cho tôi xin một tờ khăn giấy nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Can I have the receipt, please?",
+          "translation_vi": "Cho tôi xin hóa đơn nhé."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Here you go. Have a nice day!",
+          "translation_vi": "Của anh đây. Chúc anh một ngày tốt lành!"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you!",
+          "translation_vi": "Cảm ơn em!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "medium",
+          "word": "medium",
+          "meaning_vi": "cỡ vừa",
+          "usage_vi": "Dùng khi chọn cỡ ly đồ uống."
+        },
+        {
+          "input": "straw",
+          "word": "straw",
+          "meaning_vi": "ống hút",
+          "usage_vi": "Xin khi cần ống hút để uống."
+        },
+        {
+          "input": "napkin",
+          "word": "napkin",
+          "meaning_vi": "khăn giấy",
+          "usage_vi": "Xin khi cần lau tay hoặc lau miệng."
+        },
+        {
+          "input": "hóa đơn",
+          "word": "receipt",
+          "meaning_vi": "hóa đơn, biên lai",
+          "usage_vi": "Xin sau khi trả tiền, khi cần giấy ghi số tiền đã trả."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"cỡ vừa\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"medium\" nghĩa là cỡ vừa."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"ống hút\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"straw\" nghĩa là ống hút."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"khăn giấy\"?",
+          "options": [
+            "medium",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"napkin\" nghĩa là khăn giấy."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"hóa đơn, biên lai\"?",
+          "options": [
+            "receipt",
+            "medium",
+            "straw"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"receipt\" nghĩa là hóa đơn, biên lai."
+        }
+      ]
+    }
+  },
+  "supermarket-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Siêu thị",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị, chị cần tìm gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em ơi, lấy cart ở đâu vậy?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Quầy checkout ở đâu em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Trái cây này có đang on sale không em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, cảm ơn chị. Hẹn gặp lại!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "cart",
+          "word": "cart",
+          "meaning_vi": "xe đẩy hàng",
+          "usage_vi": "Dùng khi mua nhiều đồ trong siêu thị."
+        },
+        {
+          "input": "checkout",
+          "word": "checkout",
+          "meaning_vi": "quầy thanh toán",
+          "usage_vi": "Nơi bạn đến để trả tiền."
+        },
+        {
+          "input": "on sale",
+          "word": "on sale",
+          "meaning_vi": "đang giảm giá",
+          "usage_vi": "Hỏi khi muốn biết món hàng có rẻ hơn bình thường không."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"xe đẩy hàng\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"cart\" nghĩa là xe đẩy hàng."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"quầy thanh toán\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"checkout\" nghĩa là quầy thanh toán."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đang giảm giá\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"on sale\" nghĩa là đang giảm giá."
+        }
+      ]
+    }
+  },
+  "supermarket-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Siêu thị",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị, chị cần tìm gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em ơi, where is the cart?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Where is the checkout vậy em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Is this on sale không em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, cảm ơn chị. Hẹn gặp lại!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you, em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "cart",
+          "word": "cart",
+          "meaning_vi": "xe đẩy hàng",
+          "usage_vi": "Dùng khi mua nhiều đồ trong siêu thị."
+        },
+        {
+          "input": "checkout",
+          "word": "checkout",
+          "meaning_vi": "quầy thanh toán",
+          "usage_vi": "Nơi bạn đến để trả tiền."
+        },
+        {
+          "input": "on sale",
+          "word": "on sale",
+          "meaning_vi": "đang giảm giá",
+          "usage_vi": "Hỏi khi muốn biết món hàng có rẻ hơn bình thường không."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"xe đẩy hàng\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"cart\" nghĩa là xe đẩy hàng."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"quầy thanh toán\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"checkout\" nghĩa là quầy thanh toán."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đang giảm giá\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"on sale\" nghĩa là đang giảm giá."
+        }
+      ]
+    }
+  },
+  "supermarket-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Siêu thị",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! Can I help you find something?",
+          "translation_vi": "Chào chị! Chị cần tìm gì ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Excuse me, where can I get a cart?",
+          "translation_vi": "Xin lỗi, lấy xe đẩy ở đâu vậy?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Where is the checkout?",
+          "translation_vi": "Quầy thanh toán ở đâu?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Is this on sale today?",
+          "translation_vi": "Hôm nay cái này có giảm giá không?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Thank you. See you again!",
+          "translation_vi": "Cảm ơn chị. Hẹn gặp lại!"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you!",
+          "translation_vi": "Cảm ơn em!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "cart",
+          "word": "cart",
+          "meaning_vi": "xe đẩy hàng",
+          "usage_vi": "Dùng khi mua nhiều đồ trong siêu thị."
+        },
+        {
+          "input": "checkout",
+          "word": "checkout",
+          "meaning_vi": "quầy thanh toán",
+          "usage_vi": "Nơi bạn đến để trả tiền."
+        },
+        {
+          "input": "on sale",
+          "word": "on sale",
+          "meaning_vi": "đang giảm giá",
+          "usage_vi": "Hỏi khi muốn biết món hàng có rẻ hơn bình thường không."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"xe đẩy hàng\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"cart\" nghĩa là xe đẩy hàng."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"quầy thanh toán\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"checkout\" nghĩa là quầy thanh toán."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đang giảm giá\"?",
+          "options": [
+            "cart",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"on sale\" nghĩa là đang giảm giá."
+        }
+      ]
+    }
+  },
+  "supermarket-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Siêu thị",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị, chị cần tìm gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho chị một cái basket để đựng đồ nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chị ra chỗ cashier để tính tiền nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cái này price bao nhiêu vậy em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chị có cần bag không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, cảm ơn chị. Hẹn gặp lại!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "basket",
+          "word": "basket",
+          "meaning_vi": "giỏ xách tay",
+          "usage_vi": "Dùng khi mua ít đồ."
+        },
+        {
+          "input": "cashier",
+          "word": "cashier",
+          "meaning_vi": "thu ngân",
+          "usage_vi": "Người tính tiền cho bạn."
+        },
+        {
+          "input": "price",
+          "word": "price",
+          "meaning_vi": "giá",
+          "usage_vi": "Hỏi khi muốn biết món hàng bao nhiêu tiền."
+        },
+        {
+          "input": "túi",
+          "word": "bag",
+          "meaning_vi": "túi",
+          "usage_vi": "Thu ngân hỏi bạn có cần túi đựng đồ không."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giỏ xách tay\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"basket\" nghĩa là giỏ xách tay."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thu ngân\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"cashier\" nghĩa là thu ngân."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giá\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"price\" nghĩa là giá."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"túi\"?",
+          "options": [
+            "bag",
+            "basket",
+            "cashier"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"bag\" nghĩa là túi."
+        }
+      ]
+    }
+  },
+  "supermarket-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Siêu thị",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị, chị cần tìm gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho chị a basket, please.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chị ra the cashier để tính tiền nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "What's the price vậy em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Do you need a bag không chị?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, cảm ơn chị. Hẹn gặp lại!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you, em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "basket",
+          "word": "basket",
+          "meaning_vi": "giỏ xách tay",
+          "usage_vi": "Dùng khi mua ít đồ."
+        },
+        {
+          "input": "cashier",
+          "word": "cashier",
+          "meaning_vi": "thu ngân",
+          "usage_vi": "Người tính tiền cho bạn."
+        },
+        {
+          "input": "price",
+          "word": "price",
+          "meaning_vi": "giá",
+          "usage_vi": "Hỏi khi muốn biết món hàng bao nhiêu tiền."
+        },
+        {
+          "input": "túi",
+          "word": "bag",
+          "meaning_vi": "túi",
+          "usage_vi": "Thu ngân hỏi bạn có cần túi đựng đồ không."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giỏ xách tay\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"basket\" nghĩa là giỏ xách tay."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thu ngân\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"cashier\" nghĩa là thu ngân."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giá\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"price\" nghĩa là giá."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"túi\"?",
+          "options": [
+            "bag",
+            "basket",
+            "cashier"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"bag\" nghĩa là túi."
+        }
+      ]
+    }
+  },
+  "supermarket-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Siêu thị",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! Can I help you find something?",
+          "translation_vi": "Chào chị! Chị cần tìm gì ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Can I have a basket, please?",
+          "translation_vi": "Cho tôi một cái giỏ nhé."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Please pay at the cashier.",
+          "translation_vi": "Chị thanh toán ở chỗ thu ngân nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "What's the price of this?",
+          "translation_vi": "Cái này giá bao nhiêu?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Do you need a bag?",
+          "translation_vi": "Chị có cần túi không ạ?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Thank you. See you again!",
+          "translation_vi": "Cảm ơn chị. Hẹn gặp lại!"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you!",
+          "translation_vi": "Cảm ơn em!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "basket",
+          "word": "basket",
+          "meaning_vi": "giỏ xách tay",
+          "usage_vi": "Dùng khi mua ít đồ."
+        },
+        {
+          "input": "cashier",
+          "word": "cashier",
+          "meaning_vi": "thu ngân",
+          "usage_vi": "Người tính tiền cho bạn."
+        },
+        {
+          "input": "price",
+          "word": "price",
+          "meaning_vi": "giá",
+          "usage_vi": "Hỏi khi muốn biết món hàng bao nhiêu tiền."
+        },
+        {
+          "input": "túi",
+          "word": "bag",
+          "meaning_vi": "túi",
+          "usage_vi": "Thu ngân hỏi bạn có cần túi đựng đồ không."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giỏ xách tay\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"basket\" nghĩa là giỏ xách tay."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thu ngân\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"cashier\" nghĩa là thu ngân."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giá\"?",
+          "options": [
+            "basket",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"price\" nghĩa là giá."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"túi\"?",
+          "options": [
+            "bag",
+            "basket",
+            "cashier"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"bag\" nghĩa là túi."
+        }
+      ]
+    }
+  },
+  "taxi-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi taxi",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị, chị đi đâu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh chở tôi đến address này nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Tới ngã tư anh turn left nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh ơi, fare hết bao nhiêu?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Dạ, tới nơi rồi. Chúc chị một ngày vui!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn anh nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "address",
+          "word": "address",
+          "meaning_vi": "địa chỉ",
+          "usage_vi": "Đưa cho tài xế khi nói nơi muốn đến."
+        },
+        {
+          "input": "turn left",
+          "word": "turn left",
+          "meaning_vi": "rẽ trái",
+          "usage_vi": "Dùng để chỉ đường cho tài xế."
+        },
+        {
+          "input": "fare",
+          "word": "fare",
+          "meaning_vi": "tiền xe, giá cước",
+          "usage_vi": "Hỏi khi muốn biết phải trả bao nhiêu."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"địa chỉ\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"address\" nghĩa là địa chỉ."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"rẽ trái\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"turn left\" nghĩa là rẽ trái."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"tiền xe, giá cước\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"fare\" nghĩa là tiền xe, giá cước."
+        }
+      ]
+    }
+  },
+  "taxi-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi taxi",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị, chị đi đâu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh chở tôi đến this address nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh turn left at the next corner nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "How much is the fare vậy anh?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Dạ, tới nơi rồi. Chúc chị một ngày vui!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you, anh nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "address",
+          "word": "address",
+          "meaning_vi": "địa chỉ",
+          "usage_vi": "Đưa cho tài xế khi nói nơi muốn đến."
+        },
+        {
+          "input": "turn left",
+          "word": "turn left",
+          "meaning_vi": "rẽ trái",
+          "usage_vi": "Dùng để chỉ đường cho tài xế."
+        },
+        {
+          "input": "fare",
+          "word": "fare",
+          "meaning_vi": "tiền xe, giá cước",
+          "usage_vi": "Hỏi khi muốn biết phải trả bao nhiêu."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"địa chỉ\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"address\" nghĩa là địa chỉ."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"rẽ trái\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"turn left\" nghĩa là rẽ trái."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"tiền xe, giá cước\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"fare\" nghĩa là tiền xe, giá cước."
+        }
+      ]
+    }
+  },
+  "taxi-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi taxi",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Hello! Where are you going?",
+          "translation_vi": "Chào chị! Chị đi đâu ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Please take me to this address.",
+          "translation_vi": "Anh chở tôi đến địa chỉ này nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Please turn left at the next corner.",
+          "translation_vi": "Tới góc đường anh rẽ trái nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "How much is the fare?",
+          "translation_vi": "Tiền xe bao nhiêu vậy anh?"
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Here we are. Have a good day!",
+          "translation_vi": "Tới nơi rồi. Chúc chị một ngày tốt lành!"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you!",
+          "translation_vi": "Cảm ơn anh!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "address",
+          "word": "address",
+          "meaning_vi": "địa chỉ",
+          "usage_vi": "Đưa cho tài xế khi nói nơi muốn đến."
+        },
+        {
+          "input": "turn left",
+          "word": "turn left",
+          "meaning_vi": "rẽ trái",
+          "usage_vi": "Dùng để chỉ đường cho tài xế."
+        },
+        {
+          "input": "fare",
+          "word": "fare",
+          "meaning_vi": "tiền xe, giá cước",
+          "usage_vi": "Hỏi khi muốn biết phải trả bao nhiêu."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"địa chỉ\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"address\" nghĩa là địa chỉ."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"rẽ trái\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"turn left\" nghĩa là rẽ trái."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"tiền xe, giá cước\"?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"fare\" nghĩa là tiền xe, giá cước."
+        }
+      ]
+    }
+  },
+  "taxi-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi taxi",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị, chị đi đâu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh cho tôi ra airport nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Giờ này traffic đông lắm chị ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chị nhớ thắt seatbelt nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Đây là tiền tip cho anh.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Dạ, tới nơi rồi. Chúc chị một ngày vui!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn anh nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "airport",
+          "word": "airport",
+          "meaning_vi": "sân bay",
+          "usage_vi": "Nói khi muốn đi ra sân bay."
+        },
+        {
+          "input": "traffic",
+          "word": "traffic",
+          "meaning_vi": "giao thông, xe cộ",
+          "usage_vi": "Dùng khi nói đường đông, kẹt xe."
+        },
+        {
+          "input": "seatbelt",
+          "word": "seatbelt",
+          "meaning_vi": "dây an toàn",
+          "usage_vi": "Tài xế nhắc bạn thắt khi lên xe."
+        },
+        {
+          "input": "tiền boa",
+          "word": "tip",
+          "meaning_vi": "tiền boa",
+          "usage_vi": "Đưa thêm cho tài xế để cảm ơn."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"sân bay\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"airport\" nghĩa là sân bay."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giao thông, xe cộ\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"traffic\" nghĩa là giao thông, xe cộ."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"dây an toàn\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"seatbelt\" nghĩa là dây an toàn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"tiền boa\"?",
+          "options": [
+            "tip",
+            "airport",
+            "traffic"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"tip\" nghĩa là tiền boa."
+        }
+      ]
+    }
+  },
+  "taxi-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi taxi",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị, chị đi đâu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "To the airport, please.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Giờ này the traffic is bad lắm chị.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Please wear your seatbelt nhé chị.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "This is a tip for you, anh.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Dạ, tới nơi rồi. Chúc chị một ngày vui!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you, anh nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "airport",
+          "word": "airport",
+          "meaning_vi": "sân bay",
+          "usage_vi": "Nói khi muốn đi ra sân bay."
+        },
+        {
+          "input": "traffic",
+          "word": "traffic",
+          "meaning_vi": "giao thông, xe cộ",
+          "usage_vi": "Dùng khi nói đường đông, kẹt xe."
+        },
+        {
+          "input": "seatbelt",
+          "word": "seatbelt",
+          "meaning_vi": "dây an toàn",
+          "usage_vi": "Tài xế nhắc bạn thắt khi lên xe."
+        },
+        {
+          "input": "tiền boa",
+          "word": "tip",
+          "meaning_vi": "tiền boa",
+          "usage_vi": "Đưa thêm cho tài xế để cảm ơn."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"sân bay\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"airport\" nghĩa là sân bay."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giao thông, xe cộ\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"traffic\" nghĩa là giao thông, xe cộ."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"dây an toàn\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"seatbelt\" nghĩa là dây an toàn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"tiền boa\"?",
+          "options": [
+            "tip",
+            "airport",
+            "traffic"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"tip\" nghĩa là tiền boa."
+        }
+      ]
+    }
+  },
+  "taxi-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi taxi",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Hello! Where are you going?",
+          "translation_vi": "Chào chị! Chị đi đâu ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "To the airport, please.",
+          "translation_vi": "Cho tôi ra sân bay."
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "The traffic is very bad right now.",
+          "translation_vi": "Giờ này kẹt xe lắm."
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Please wear your seatbelt.",
+          "translation_vi": "Chị thắt dây an toàn nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "This is a tip for you.",
+          "translation_vi": "Đây là tiền boa cho anh."
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Here we are. Have a good day!",
+          "translation_vi": "Tới nơi rồi. Chúc chị một ngày tốt lành!"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you!",
+          "translation_vi": "Cảm ơn anh!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "airport",
+          "word": "airport",
+          "meaning_vi": "sân bay",
+          "usage_vi": "Nói khi muốn đi ra sân bay."
+        },
+        {
+          "input": "traffic",
+          "word": "traffic",
+          "meaning_vi": "giao thông, xe cộ",
+          "usage_vi": "Dùng khi nói đường đông, kẹt xe."
+        },
+        {
+          "input": "seatbelt",
+          "word": "seatbelt",
+          "meaning_vi": "dây an toàn",
+          "usage_vi": "Tài xế nhắc bạn thắt khi lên xe."
+        },
+        {
+          "input": "tiền boa",
+          "word": "tip",
+          "meaning_vi": "tiền boa",
+          "usage_vi": "Đưa thêm cho tài xế để cảm ơn."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"sân bay\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"airport\" nghĩa là sân bay."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"giao thông, xe cộ\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"traffic\" nghĩa là giao thông, xe cộ."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"dây an toàn\"?",
+          "options": [
+            "airport",
+            "traffic",
+            "seatbelt"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"seatbelt\" nghĩa là dây an toàn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"tiền boa\"?",
+          "options": [
+            "tip",
+            "airport",
+            "traffic"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"tip\" nghĩa là tiền boa."
+        }
+      ]
+    }
+  },
+  "clinic-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Phòng khám",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chào anh, anh thấy trong người thế nào?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Tôi có appointment lúc 9 giờ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Tôi bị fever từ tối qua.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh uống medicine này ngày hai lần nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh nhớ nghỉ ngơi nhé. Chúc anh mau khỏe!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ, cảm ơn bác sĩ!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "appointment",
+          "word": "appointment",
+          "meaning_vi": "lịch hẹn",
+          "usage_vi": "Nói khi bạn đã đặt giờ khám."
+        },
+        {
+          "input": "fever",
+          "word": "fever",
+          "meaning_vi": "sốt",
+          "usage_vi": "Nói khi người nóng, nhiệt độ cao."
+        },
+        {
+          "input": "medicine",
+          "word": "medicine",
+          "meaning_vi": "thuốc",
+          "usage_vi": "Bác sĩ dặn bạn uống."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"lịch hẹn\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"appointment\" nghĩa là lịch hẹn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"sốt\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"fever\" nghĩa là sốt."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thuốc\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"medicine\" nghĩa là thuốc."
+        }
+      ]
+    }
+  },
+  "clinic-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Phòng khám",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chào anh, anh thấy trong người thế nào?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have an appointment lúc 9 giờ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have a fever từ tối qua.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Take this medicine ngày hai lần nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh nhớ nghỉ ngơi nhé. Chúc anh mau khỏe!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Thank you, bác sĩ!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "appointment",
+          "word": "appointment",
+          "meaning_vi": "lịch hẹn",
+          "usage_vi": "Nói khi bạn đã đặt giờ khám."
+        },
+        {
+          "input": "fever",
+          "word": "fever",
+          "meaning_vi": "sốt",
+          "usage_vi": "Nói khi người nóng, nhiệt độ cao."
+        },
+        {
+          "input": "medicine",
+          "word": "medicine",
+          "meaning_vi": "thuốc",
+          "usage_vi": "Bác sĩ dặn bạn uống."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"lịch hẹn\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"appointment\" nghĩa là lịch hẹn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"sốt\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"fever\" nghĩa là sốt."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thuốc\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"medicine\" nghĩa là thuốc."
+        }
+      ]
+    }
+  },
+  "clinic-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Phòng khám",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Hello. How are you feeling today?",
+          "translation_vi": "Chào anh. Hôm nay anh thấy thế nào?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have an appointment at nine.",
+          "translation_vi": "Tôi có lịch hẹn lúc 9 giờ."
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I've had a fever since last night.",
+          "translation_vi": "Tôi bị sốt từ tối qua."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Take this medicine twice a day.",
+          "translation_vi": "Anh uống thuốc này ngày hai lần."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Get some rest. I hope you feel better soon!",
+          "translation_vi": "Anh nghỉ ngơi nhé. Chúc anh mau khỏe!"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Thank you, doctor!",
+          "translation_vi": "Cảm ơn bác sĩ!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "appointment",
+          "word": "appointment",
+          "meaning_vi": "lịch hẹn",
+          "usage_vi": "Nói khi bạn đã đặt giờ khám."
+        },
+        {
+          "input": "fever",
+          "word": "fever",
+          "meaning_vi": "sốt",
+          "usage_vi": "Nói khi người nóng, nhiệt độ cao."
+        },
+        {
+          "input": "medicine",
+          "word": "medicine",
+          "meaning_vi": "thuốc",
+          "usage_vi": "Bác sĩ dặn bạn uống."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"lịch hẹn\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"appointment\" nghĩa là lịch hẹn."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"sốt\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"fever\" nghĩa là sốt."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"thuốc\"?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"medicine\" nghĩa là thuốc."
+        }
+      ]
+    }
+  },
+  "clinic-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Phòng khám",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chào anh, anh thấy trong người thế nào?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Tôi bị headache suốt cả ngày.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Tôi bị cough nhiều về đêm.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh mang toa ra pharmacy để mua thuốc nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Đây là prescription của anh.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh nhớ nghỉ ngơi nhé. Chúc anh mau khỏe!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ, cảm ơn bác sĩ!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "headache",
+          "word": "headache",
+          "meaning_vi": "đau đầu",
+          "usage_vi": "Nói khi bị nhức đầu."
+        },
+        {
+          "input": "cough",
+          "word": "cough",
+          "meaning_vi": "ho",
+          "usage_vi": "Nói khi bạn bị ho."
+        },
+        {
+          "input": "pharmacy",
+          "word": "pharmacy",
+          "meaning_vi": "nhà thuốc",
+          "usage_vi": "Nơi mua thuốc."
+        },
+        {
+          "input": "đơn thuốc",
+          "word": "prescription",
+          "meaning_vi": "đơn thuốc",
+          "usage_vi": "Bác sĩ đưa để bạn mua thuốc."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đau đầu\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"headache\" nghĩa là đau đầu."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"ho\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"cough\" nghĩa là ho."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"nhà thuốc\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"pharmacy\" nghĩa là nhà thuốc."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đơn thuốc\"?",
+          "options": [
+            "prescription",
+            "headache",
+            "cough"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"prescription\" nghĩa là đơn thuốc."
+        }
+      ]
+    }
+  },
+  "clinic-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Phòng khám",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chào anh, anh thấy trong người thế nào?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have a headache cả ngày.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have a bad cough về đêm.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh ra the pharmacy để mua thuốc nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Here is your prescription anh nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh nhớ nghỉ ngơi nhé. Chúc anh mau khỏe!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Thank you, bác sĩ!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "headache",
+          "word": "headache",
+          "meaning_vi": "đau đầu",
+          "usage_vi": "Nói khi bị nhức đầu."
+        },
+        {
+          "input": "cough",
+          "word": "cough",
+          "meaning_vi": "ho",
+          "usage_vi": "Nói khi bạn bị ho."
+        },
+        {
+          "input": "pharmacy",
+          "word": "pharmacy",
+          "meaning_vi": "nhà thuốc",
+          "usage_vi": "Nơi mua thuốc."
+        },
+        {
+          "input": "đơn thuốc",
+          "word": "prescription",
+          "meaning_vi": "đơn thuốc",
+          "usage_vi": "Bác sĩ đưa để bạn mua thuốc."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đau đầu\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"headache\" nghĩa là đau đầu."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"ho\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"cough\" nghĩa là ho."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"nhà thuốc\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"pharmacy\" nghĩa là nhà thuốc."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đơn thuốc\"?",
+          "options": [
+            "prescription",
+            "headache",
+            "cough"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"prescription\" nghĩa là đơn thuốc."
+        }
+      ]
+    }
+  },
+  "clinic-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Phòng khám",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Hello. How are you feeling today?",
+          "translation_vi": "Chào anh. Hôm nay anh thấy thế nào?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I've had a headache all day.",
+          "translation_vi": "Tôi bị đau đầu cả ngày."
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have a bad cough at night.",
+          "translation_vi": "Tôi bị ho nhiều về đêm."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "You can buy it at the pharmacy.",
+          "translation_vi": "Anh có thể mua ở nhà thuốc."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Here is your prescription.",
+          "translation_vi": "Đây là đơn thuốc của anh."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Get some rest. I hope you feel better soon!",
+          "translation_vi": "Anh nghỉ ngơi nhé. Chúc anh mau khỏe!"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Thank you, doctor!",
+          "translation_vi": "Cảm ơn bác sĩ!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "headache",
+          "word": "headache",
+          "meaning_vi": "đau đầu",
+          "usage_vi": "Nói khi bị nhức đầu."
+        },
+        {
+          "input": "cough",
+          "word": "cough",
+          "meaning_vi": "ho",
+          "usage_vi": "Nói khi bạn bị ho."
+        },
+        {
+          "input": "pharmacy",
+          "word": "pharmacy",
+          "meaning_vi": "nhà thuốc",
+          "usage_vi": "Nơi mua thuốc."
+        },
+        {
+          "input": "đơn thuốc",
+          "word": "prescription",
+          "meaning_vi": "đơn thuốc",
+          "usage_vi": "Bác sĩ đưa để bạn mua thuốc."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đau đầu\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"headache\" nghĩa là đau đầu."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"ho\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"cough\" nghĩa là ho."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"nhà thuốc\"?",
+          "options": [
+            "headache",
+            "cough",
+            "pharmacy"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"pharmacy\" nghĩa là nhà thuốc."
+        },
+        {
+          "question_vi": "Từ tiếng Anh nào có nghĩa là \"đơn thuốc\"?",
+          "options": [
+            "prescription",
+            "headache",
+            "cough"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"prescription\" nghĩa là đơn thuốc."
+        }
+      ]
+    }
+  }
+}

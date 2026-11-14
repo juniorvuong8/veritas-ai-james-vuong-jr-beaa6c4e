@@ -1,0 +1,2463 @@
+{
+  "cafe-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi đồ uống ở quán cà phê",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị! Đây là menu ạ. Chị muốn uống gì?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho em một ly cà phê sữa nóng, cỡ vừa nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ. Chị uống ở đây hay to go ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em uống ở đây. Cà phê có được refill không anh?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ có, cà phê nóng được refill miễn phí một lần ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Hay quá, cảm ơn anh!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "menu",
+          "word": "menu",
+          "meaning_vi": "thực đơn",
+          "usage_vi": "Dùng để chỉ danh sách món ăn, đồ uống và giá ở quán. Bạn có thể hỏi \"Can I see the menu?\" khi muốn xem thực đơn."
+        },
+        {
+          "input": "to go",
+          "word": "to go",
+          "meaning_vi": "mang đi",
+          "usage_vi": "Dùng khi bạn muốn mua đồ uống hoặc đồ ăn mang đi, không ngồi lại quán. Nhân viên thường hỏi \"For here or to go?\"."
+        },
+        {
+          "input": "refill",
+          "word": "refill",
+          "meaning_vi": "rót thêm, châm thêm (một ly nữa)",
+          "usage_vi": "Dùng khi bạn muốn được rót thêm đồ uống vào ly đã uống hết. Nhiều quán cho refill cà phê hoặc nước ngọt miễn phí."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn vừa vào một quán trà sữa và muốn xem danh sách đồ uống cùng giá tiền. Bạn cần xin cái gì?",
+          "options": [
+            "refill",
+            "menu",
+            "receipt"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Menu\" là thực đơn, nơi ghi các món và giá tiền."
+        },
+        {
+          "question_vi": "Bạn mua một ly trà nhưng muốn mang về văn phòng uống. Bạn nói với nhân viên từ nào?",
+          "options": [
+            "to go",
+            "for here",
+            "menu"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"To go\" nghĩa là mang đi, còn \"for here\" là uống tại quán."
+        },
+        {
+          "question_vi": "Bạn đang ăn ở nhà hàng và ly trà đá đã hết, bạn muốn được rót thêm. Bạn dùng từ nào?",
+          "options": [
+            "menu",
+            "to go",
+            "refill"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Refill\" là rót thêm đồ uống vào ly đã hết."
+        }
+      ]
+    }
+  },
+  "cafe-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi đồ uống ở quán cà phê",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Xin chào! Đây là the menu, anh chọn từ từ nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn. Cho tôi a latte, please.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, anh uống ở đây hay to go ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Tôi uống ở đây. Còn trà đá có free refill không?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ có, anh có thể get a refill ở quầy bất cứ lúc nào.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Tuyệt quá. Vậy cho tôi thêm một ly trà đá to go để mang về nữa nhé.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "menu",
+          "word": "menu",
+          "meaning_vi": "thực đơn",
+          "usage_vi": "Dùng để chỉ danh sách món ăn, đồ uống và giá ở quán. Bạn có thể hỏi \"Can I see the menu?\" khi muốn xem thực đơn."
+        },
+        {
+          "input": "to go",
+          "word": "to go",
+          "meaning_vi": "mang đi",
+          "usage_vi": "Dùng khi bạn muốn mang đồ uống hoặc đồ ăn đi, không ngồi lại quán. Ví dụ: \"A coffee to go, please.\""
+        },
+        {
+          "input": "refill",
+          "word": "refill",
+          "meaning_vi": "rót thêm, châm thêm (đồ uống)",
+          "usage_vi": "Dùng khi bạn uống hết và muốn được rót thêm vào ly, nhiều quán cho \"free refill\" (rót thêm miễn phí). Ví dụ: \"Can I get a refill?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn vừa ngồi vào bàn ở một nhà hàng và muốn xem có những món gì. Bạn sẽ xin nhân viên cái gì?",
+          "options": [
+            "refill",
+            "receipt",
+            "menu"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Menu\" là thực đơn, giúp bạn xem các món và giá trước khi gọi."
+        },
+        {
+          "question_vi": "Bạn đang vội đi làm và muốn mua một ly trà sữa mang theo. Bạn nói với nhân viên: \"A milk tea ___, please.\"",
+          "options": [
+            "to go",
+            "for here",
+            "refill"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"To go\" nghĩa là mang đi, phù hợp khi bạn không ngồi lại quán."
+        },
+        {
+          "question_vi": "Bạn đang ăn ở quán và ly nước ngọt đã hết, bạn muốn nhân viên rót thêm. Bạn hỏi: \"Can I get a ___?\"",
+          "options": [
+            "menu",
+            "refill",
+            "to go"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Refill\" là rót thêm đồ uống vào ly khi bạn đã uống hết."
+        }
+      ]
+    }
+  },
+  "cafe-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi đồ uống ở quán cà phê",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! Here is our menu. What can I get you?",
+          "translation_vi": "Chào bạn! Đây là thực đơn của quán. Bạn muốn dùng gì ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Hi! Can I have a black coffee, please?",
+          "translation_vi": "Chào bạn! Cho mình một ly cà phê đen nhé."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Sure. For here or to go?",
+          "translation_vi": "Dạ được. Bạn uống ở đây hay mang đi ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "For here, please. Is the refill free?",
+          "translation_vi": "Mình uống ở đây. Rót thêm có miễn phí không bạn?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Yes, one free refill. Just ask me at the counter.",
+          "translation_vi": "Dạ có, được rót thêm một lần miễn phí. Bạn cứ ra quầy gọi mình nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Great, thank you!",
+          "translation_vi": "Tuyệt quá, cảm ơn bạn!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "menu",
+          "word": "menu",
+          "meaning_vi": "thực đơn",
+          "usage_vi": "Dùng để chỉ danh sách món ăn, đồ uống và giá ở quán. Bạn có thể hỏi: \"Can I see the menu?\" (Cho mình xem thực đơn được không?)."
+        },
+        {
+          "input": "to go",
+          "word": "to go",
+          "meaning_vi": "mang đi",
+          "usage_vi": "Dùng khi bạn muốn mua đồ uống hoặc đồ ăn mang ra ngoài, không dùng tại quán. Nhân viên thường hỏi: \"For here or to go?\"."
+        },
+        {
+          "input": "refill",
+          "word": "refill",
+          "meaning_vi": "sự rót thêm, châm thêm (đồ uống)",
+          "usage_vi": "Dùng khi bạn uống hết và muốn được rót thêm vào ly. Bạn có thể hỏi: \"Can I get a refill?\" (Cho mình rót thêm được không?)."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn vừa ngồi xuống ở một quán ăn và muốn xem danh sách món cùng giá tiền. Bạn nói: \"Can I see the ___, please?\"",
+          "options": [
+            "refill",
+            "menu",
+            "to go"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Menu\" là thực đơn, nơi ghi các món và giá tiền của quán."
+        },
+        {
+          "question_vi": "Bạn đang vội đi làm và muốn mua trà sữa mang theo. Bạn nói: \"One milk tea ___, please.\"",
+          "options": [
+            "to go",
+            "menu",
+            "for here"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"To go\" nghĩa là mang đi, dùng khi bạn không uống tại quán."
+        },
+        {
+          "question_vi": "Bạn đã uống hết ly trà đá ở nhà hàng và muốn được rót thêm. Bạn hỏi: \"Can I get a ___?\"",
+          "options": [
+            "menu",
+            "receipt",
+            "refill"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Refill\" là rót thêm đồ uống vào ly khi bạn đã uống hết."
+        }
+      ]
+    }
+  },
+  "cafe-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi đồ uống ở quán cà phê",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị, chị muốn uống gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho em một ly trà đào cỡ medium nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ vâng. Chị có cần straw không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Có ạ. Cho em xin thêm một tờ napkin nữa nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, đồ uống của chị đây. Chị có lấy receipt không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ có, em cảm ơn anh.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "medium",
+          "word": "medium",
+          "meaning_vi": "cỡ vừa",
+          "usage_vi": "Dùng khi gọi đồ uống để chọn cỡ ly vừa, nằm giữa small (nhỏ) và large (lớn)."
+        },
+        {
+          "input": "straw",
+          "word": "straw",
+          "meaning_vi": "ống hút",
+          "usage_vi": "Dùng khi muốn xin ống hút để uống nước, ví dụ: \"Can I have a straw?\""
+        },
+        {
+          "input": "napkin",
+          "word": "napkin",
+          "meaning_vi": "khăn giấy",
+          "usage_vi": "Dùng khi cần khăn giấy để lau tay hoặc lau miệng, ví dụ: \"Can I have a napkin, please?\""
+        },
+        {
+          "input": "hóa đơn",
+          "word": "receipt",
+          "meaning_vi": "hóa đơn (biên lai)",
+          "usage_vi": "Dùng để chỉ tờ giấy ghi số tiền bạn đã trả sau khi thanh toán. Nhân viên thường hỏi bạn có muốn lấy receipt không."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn mua nước cam ở quầy nước ép và muốn ly không quá to cũng không quá nhỏ. Bạn chọn cỡ nào?",
+          "options": [
+            "napkin",
+            "medium",
+            "straw"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Medium\" nghĩa là cỡ vừa, phù hợp khi bạn muốn ly không to cũng không nhỏ."
+        },
+        {
+          "question_vi": "Bạn mua một hộp sữa ở cửa hàng tiện lợi và cần thứ gì đó để hút sữa. Bạn xin cái gì?",
+          "options": [
+            "straw",
+            "receipt",
+            "medium"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Straw\" là ống hút, dùng để hút đồ uống."
+        },
+        {
+          "question_vi": "Bạn đang ăn bánh mì ở tiệm và tay bị dính sốt. Bạn xin nhân viên cái gì để lau tay?",
+          "options": [
+            "receipt",
+            "straw",
+            "napkin"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay hoặc lau miệng."
+        },
+        {
+          "question_vi": "Bạn vừa trả tiền mua sách ở nhà sách và muốn giữ tờ giấy ghi số tiền đã trả. Bạn xin cái gì?",
+          "options": [
+            "medium",
+            "receipt",
+            "napkin"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Receipt\" là hóa đơn, tờ giấy ghi lại số tiền bạn đã thanh toán."
+        }
+      ]
+    }
+  },
+  "cafe-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi đồ uống ở quán cà phê",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! Chị muốn uống gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Em muốn an iced latte, cảm ơn.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, chị lấy size small, medium hay large ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "A medium, please. Cho em xin thêm a straw nữa nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ được. Chị lấy thêm a napkin ở quầy bên kia nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ. Cho em xin the receipt luôn ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Here is your receipt. Chúc chị một ngày vui vẻ!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you so much!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "medium",
+          "word": "medium",
+          "meaning_vi": "cỡ vừa",
+          "usage_vi": "Dùng khi chọn size đồ uống, nằm giữa small (nhỏ) và large (lớn). Có thể nói ngắn gọn: \"A medium, please.\""
+        },
+        {
+          "input": "straw",
+          "word": "straw",
+          "meaning_vi": "ống hút",
+          "usage_vi": "Dùng khi muốn xin ống hút để uống nước. Ví dụ: \"Can I have a straw, please?\""
+        },
+        {
+          "input": "napkin",
+          "word": "napkin",
+          "meaning_vi": "khăn giấy",
+          "usage_vi": "Dùng khi cần khăn giấy để lau tay hoặc lau miệng ở quán ăn, quán cà phê. Ví dụ: \"Can I have a napkin?\""
+        },
+        {
+          "input": "hóa đơn",
+          "word": "receipt",
+          "meaning_vi": "hóa đơn (biên lai sau khi trả tiền)",
+          "usage_vi": "Dùng khi muốn xin tờ giấy ghi số tiền mình đã trả. Ví dụ: \"Can I have the receipt, please?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn mua trà sữa, không muốn ly nhỏ cũng không muốn ly lớn. Bạn nói với nhân viên size nào?",
+          "options": [
+            "large",
+            "medium",
+            "small"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa small và large."
+        },
+        {
+          "question_vi": "Bạn mua một ly nước cam nhưng không có gì để hút nước lên. Bạn xin cái gì?",
+          "options": [
+            "napkin",
+            "receipt",
+            "straw"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Straw\" là ống hút, dùng để uống nước trong ly."
+        },
+        {
+          "question_vi": "Bạn ăn bánh xong, tay bị dính kem. Bạn xin cái gì để lau tay?",
+          "options": [
+            "napkin",
+            "straw",
+            "medium"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay hoặc lau miệng."
+        },
+        {
+          "question_vi": "Bạn trả tiền ở tiệm bánh và muốn giữ tờ giấy ghi số tiền đã trả. Bạn xin cái gì?",
+          "options": [
+            "napkin",
+            "straw",
+            "receipt"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Receipt\" là hóa đơn, tờ giấy ghi số tiền bạn đã trả."
+        }
+      ]
+    }
+  },
+  "cafe-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi đồ uống ở quán cà phê",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! What can I get for you?",
+          "translation_vi": "Chào chị! Chị muốn gọi gì ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Hi. Can I have an iced latte, please?",
+          "translation_vi": "Chào em. Cho chị một ly latte đá nhé."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Sure. Small, medium or large?",
+          "translation_vi": "Dạ được. Chị lấy ly nhỏ, vừa hay lớn ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Medium, please. Can I also get a straw and a napkin?",
+          "translation_vi": "Ly vừa nhé. Cho chị xin thêm một cái ống hút và một tờ khăn giấy được không?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Of course. That's five dollars. Here you go.",
+          "translation_vi": "Dạ được ạ. Của chị năm đô. Đồ của chị đây ạ."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you. Can I have a receipt, please?",
+          "translation_vi": "Cảm ơn em. Cho chị xin hóa đơn nhé."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Sure, here it is. Have a nice day!",
+          "translation_vi": "Dạ, hóa đơn của chị đây. Chúc chị một ngày tốt lành!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "medium",
+          "word": "medium",
+          "meaning_vi": "cỡ vừa",
+          "usage_vi": "Dùng khi chọn kích cỡ ly đồ uống, nằm giữa small (nhỏ) và large (lớn). Ví dụ: \"Medium, please.\""
+        },
+        {
+          "input": "straw",
+          "word": "straw",
+          "meaning_vi": "ống hút",
+          "usage_vi": "Dùng khi muốn xin ống hút để uống nước. Ví dụ: \"Can I get a straw?\""
+        },
+        {
+          "input": "napkin",
+          "word": "napkin",
+          "meaning_vi": "khăn giấy",
+          "usage_vi": "Dùng khi cần khăn giấy để lau tay hoặc lau miệng ở quán. Ví dụ: \"Can I have a napkin, please?\""
+        },
+        {
+          "input": "hóa đơn",
+          "word": "receipt",
+          "meaning_vi": "hóa đơn (biên lai sau khi trả tiền)",
+          "usage_vi": "Dùng khi muốn xin tờ giấy ghi số tiền đã trả sau khi thanh toán. Ví dụ: \"Can I have a receipt, please?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn mua trà sữa, ly nhỏ thì hơi ít mà ly lớn thì quá nhiều. Bạn chọn cỡ nào?",
+          "options": [
+            "large",
+            "small",
+            "medium"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa nhỏ và lớn."
+        },
+        {
+          "question_vi": "Bạn mua một ly sinh tố đặc nhưng không muốn uống trực tiếp từ miệng ly. Bạn xin cái gì?",
+          "options": [
+            "straw",
+            "napkin",
+            "spoon"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Straw\" là ống hút, dùng để hút nước uống từ ly."
+        },
+        {
+          "question_vi": "Bạn ăn bánh xong và tay bị dính kem. Bạn xin nhân viên cái gì?",
+          "options": [
+            "receipt",
+            "napkin",
+            "straw"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay hoặc lau miệng."
+        },
+        {
+          "question_vi": "Công ty sẽ trả lại tiền cà phê nếu bạn có giấy chứng minh đã thanh toán. Bạn xin nhân viên cái gì?",
+          "options": [
+            "menu",
+            "receipt",
+            "napkin"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Receipt\" là hóa đơn ghi số tiền bạn đã trả, dùng làm bằng chứng thanh toán."
+        }
+      ]
+    }
+  },
+  "supermarket-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi mua đồ ở siêu thị",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị! Chị cần một cái cart không ạ? Ở cửa vào có nhiều lắm.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, cảm ơn em. Hôm nay có món nào on sale không em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ có ạ. Táo và sữa đang on sale, rẻ hơn mọi ngày đó chị.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Hay quá! Chị lấy mấy hộp sữa bỏ vào cart. À, mua xong thì chị đi checkout ở đâu em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, checkout ở phía trước, gần cửa ra đó chị.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn em nhiều nha!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "cart",
+          "word": "cart",
+          "meaning_vi": "xe đẩy (mua hàng)",
+          "usage_vi": "Dùng để chỉ chiếc xe đẩy bạn lấy ở cửa siêu thị để bỏ đồ cần mua vào."
+        },
+        {
+          "input": "checkout",
+          "word": "checkout",
+          "meaning_vi": "quầy tính tiền",
+          "usage_vi": "Dùng để chỉ nơi bạn mang đồ đến trả tiền trước khi ra khỏi siêu thị."
+        },
+        {
+          "input": "on sale",
+          "word": "on sale",
+          "meaning_vi": "đang giảm giá",
+          "usage_vi": "Dùng để nói một món hàng đang được bán rẻ hơn giá thường, ví dụ hỏi món nào đang on sale."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn định mua rất nhiều đồ, tay không cầm hết. Bạn nên lấy cái gì ở cửa siêu thị?",
+          "options": [
+            "checkout",
+            "cart",
+            "on sale"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Cart\" là xe đẩy, giúp bạn chở nhiều đồ khi đi mua sắm."
+        },
+        {
+          "question_vi": "Bạn đã chọn xong đồ và muốn trả tiền. Bạn nên đi đến đâu?",
+          "options": [
+            "checkout",
+            "bag",
+            "cart"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Checkout\" là quầy tính tiền, nơi bạn trả tiền cho đồ đã chọn."
+        },
+        {
+          "question_vi": "Bạn thấy bảng ghi bánh mì hôm nay rẻ hơn mọi ngày. Bánh mì đang thế nào?",
+          "options": [
+            "sold out",
+            "checkout",
+            "on sale"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, bán rẻ hơn giá thường."
+        }
+      ]
+    }
+  },
+  "supermarket-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi mua thực phẩm ở siêu thị",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị! Chị cần a cart không ạ? Ở đây có nhiều xe đẩy.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, cho em one cart, cảm ơn anh. Hôm nay có gì on sale không anh?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Có chị ơi, apples are on sale hôm nay, giảm 20% đó ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Hay quá! Em sẽ lấy một túi. Còn the checkout ở đâu vậy anh?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, the checkout ở phía trước, gần cửa ra vào ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, cảm ơn anh nhiều nha!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "cart",
+          "word": "cart",
+          "meaning_vi": "xe đẩy (mua hàng)",
+          "usage_vi": "Dùng để chỉ chiếc xe đẩy bạn bỏ đồ vào khi đi siêu thị. Ví dụ: \"I need a cart.\" (Tôi cần một chiếc xe đẩy.)"
+        },
+        {
+          "input": "checkout",
+          "word": "checkout",
+          "meaning_vi": "quầy thanh toán",
+          "usage_vi": "Dùng để chỉ nơi bạn trả tiền trước khi ra khỏi siêu thị. Ví dụ: \"Where is the checkout?\" (Quầy thanh toán ở đâu?)"
+        },
+        {
+          "input": "on sale",
+          "word": "on sale",
+          "meaning_vi": "đang giảm giá",
+          "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn bình thường. Ví dụ: \"The milk is on sale.\" (Sữa đang giảm giá.)"
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn mua quá nhiều đồ, tay cầm không nổi. Bạn nên lấy cái gì để bỏ đồ vào?",
+          "options": [
+            "checkout",
+            "cart",
+            "on sale"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Cart\" là xe đẩy để chứa đồ khi mua sắm trong siêu thị."
+        },
+        {
+          "question_vi": "Bạn đã chọn đồ xong và muốn đi trả tiền. Bạn hỏi nhân viên: \"Where is the ___?\"",
+          "options": [
+            "on sale",
+            "basket",
+            "checkout"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Checkout\" là quầy thanh toán, nơi bạn trả tiền cho đồ đã mua."
+        },
+        {
+          "question_vi": "Bạn thấy bảng ghi giá trứng hôm nay rẻ hơn mọi ngày. Bạn nói với bạn mình: \"The eggs are ___.\"",
+          "options": [
+            "on sale",
+            "cart",
+            "closed"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, bán rẻ hơn bình thường."
+        }
+      ]
+    }
+  },
+  "supermarket-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi siêu thị mua thực phẩm",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! Do you need a cart?",
+          "translation_vi": "Chào chị! Chị có cần xe đẩy không?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Yes, please. Are the apples on sale today?",
+          "translation_vi": "Dạ có, cảm ơn anh. Hôm nay táo có giảm giá không ạ?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Yes, they are. Two bags for five dollars.",
+          "translation_vi": "Có chị ạ. Hai túi năm đô la."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Great! I'll take two bags.",
+          "translation_vi": "Tuyệt quá! Em lấy hai túi."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Where is the checkout?",
+          "translation_vi": "Quầy thanh toán ở đâu ạ?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "The checkout is over there, next to the door.",
+          "translation_vi": "Quầy thanh toán ở đằng kia, cạnh cửa ra vào."
+        }
+      ],
+      "vocab": [
+        {
+          "input": "cart",
+          "word": "cart",
+          "meaning_vi": "xe đẩy (siêu thị)",
+          "usage_vi": "Dùng để chỉ chiếc xe đẩy chở hàng khi đi siêu thị. Ví dụ: \"I need a cart.\" (Tôi cần một xe đẩy.)"
+        },
+        {
+          "input": "checkout",
+          "word": "checkout",
+          "meaning_vi": "quầy thanh toán",
+          "usage_vi": "Dùng để chỉ nơi trả tiền trong siêu thị hoặc cửa hàng. Ví dụ: \"Where is the checkout?\" (Quầy thanh toán ở đâu?)"
+        },
+        {
+          "input": "on sale",
+          "word": "on sale",
+          "meaning_vi": "đang giảm giá",
+          "usage_vi": "Dùng khi món hàng đang được bán rẻ hơn bình thường. Ví dụ: \"The milk is on sale.\" (Sữa đang giảm giá.)"
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn mua nhiều đồ quá, không cầm hết được. Bạn hỏi nhân viên xin một chiếc xe đẩy. Bạn nói: \"Can I have a ___?\"",
+          "options": [
+            "checkout",
+            "cart",
+            "receipt"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Cart\" là xe đẩy dùng để chở hàng trong siêu thị."
+        },
+        {
+          "question_vi": "Bạn đã chọn xong đồ và muốn đi trả tiền. Bạn hỏi: \"Where is the ___?\"",
+          "options": [
+            "checkout",
+            "on sale",
+            "cart"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Checkout\" là quầy thanh toán, nơi bạn trả tiền cho hàng đã mua."
+        },
+        {
+          "question_vi": "Bạn thấy bánh mì hôm nay rẻ hơn mọi ngày. Bạn hỏi nhân viên: \"Is this bread ___?\"",
+          "options": [
+            "cart",
+            "open",
+            "on sale"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, bán rẻ hơn bình thường."
+        }
+      ]
+    }
+  },
+  "supermarket-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi siêu thị mua đồ ăn",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị! Chị có cần lấy một cái basket để đựng đồ không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ có, cảm ơn em. Cho chị hỏi hộp sữa này price là bao nhiêu vậy?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, price ghi trên kệ ạ, ba đô la một hộp.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn em. Mua xong thì chị tính tiền với cashier ở đâu?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, cashier ở cuối dãy này, gần cửa ra ạ. Ở đó chị có thể mua bag, mười xu một cái.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Vậy chị sẽ lấy một cái bag. Cảm ơn em nhiều nha!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "basket",
+          "word": "basket",
+          "meaning_vi": "giỏ (xách tay)",
+          "usage_vi": "Dùng để chỉ cái giỏ nhỏ ở siêu thị mà bạn xách tay để đựng đồ khi mua ít món."
+        },
+        {
+          "input": "cashier",
+          "word": "cashier",
+          "meaning_vi": "nhân viên thu ngân, quầy tính tiền",
+          "usage_vi": "Dùng khi nói về người hoặc chỗ bạn đến trả tiền sau khi chọn đồ xong."
+        },
+        {
+          "input": "price",
+          "word": "price",
+          "meaning_vi": "giá, giá tiền",
+          "usage_vi": "Dùng khi hỏi hoặc nói một món hàng bao nhiêu tiền, ví dụ: \"What is the price?\""
+        },
+        {
+          "input": "túi",
+          "word": "bag",
+          "meaning_vi": "túi",
+          "usage_vi": "Dùng để chỉ cái túi đựng đồ mang về. Ở nhiều siêu thị nước ngoài, bạn phải mua thêm bag ở quầy tính tiền."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn vào cửa hàng tiện lợi chỉ định mua vài món nhỏ và muốn lấy cái giỏ để xách. Bạn tìm cái gì?",
+          "options": [
+            "cashier",
+            "basket",
+            "price"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Basket\" là cái giỏ xách tay để đựng đồ khi đi mua sắm."
+        },
+        {
+          "question_vi": "Bạn chọn đồ xong ở hiệu thuốc và muốn hỏi nên đến đâu để trả tiền. Bạn hỏi chỗ của ai?",
+          "options": [
+            "cashier",
+            "bag",
+            "basket"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Cashier\" là người thu ngân, nơi bạn đến để trả tiền."
+        },
+        {
+          "question_vi": "Ở chợ trái cây, bạn thấy một rổ táo nhưng không có bảng giá. Bạn hỏi: \"What is the ___?\"",
+          "options": [
+            "bag",
+            "basket",
+            "price"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Price\" nghĩa là giá tiền, dùng khi muốn biết món hàng bao nhiêu tiền."
+        },
+        {
+          "question_vi": "Bạn mua nhiều đồ ở cửa hàng quần áo và cần thứ gì đó để đựng mang về. Bạn xin cái gì?",
+          "options": [
+            "bag",
+            "price",
+            "cashier"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Bag\" là cái túi dùng để đựng đồ mang về."
+        }
+      ]
+    }
+  },
+  "supermarket-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi mua đồ ở siêu thị",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị, chị có cần a basket để đựng đồ không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, cho em a basket, cảm ơn. Cho em hỏi, what's the price của hộp sữa này?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "The price là 3 đô ạ, có ghi trên kệ đó chị.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ cảm ơn. Lát nữa em tính tiền ở đâu, where is the cashier?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "The cashier ở gần cửa ra ạ, chị cứ đi thẳng là thấy.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ. Ở đây có free bag không chị?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ không, a bag là 10 cents ạ. Chị mang túi riêng cũng được.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "basket",
+          "word": "basket",
+          "meaning_vi": "giỏ (đựng hàng)",
+          "usage_vi": "Dùng để chỉ cái giỏ nhỏ xách tay trong siêu thị. Ví dụ: \"Can I get a basket?\" khi muốn lấy giỏ đựng đồ."
+        },
+        {
+          "input": "cashier",
+          "word": "cashier",
+          "meaning_vi": "thu ngân, chỗ tính tiền",
+          "usage_vi": "Dùng để chỉ người tính tiền hoặc quầy tính tiền. Hỏi \"Where is the cashier?\" khi muốn tìm chỗ trả tiền."
+        },
+        {
+          "input": "price",
+          "word": "price",
+          "meaning_vi": "giá (tiền)",
+          "usage_vi": "Dùng khi hỏi hoặc nói về giá của món hàng. Ví dụ: \"What's the price?\" nghĩa là \"Giá bao nhiêu?\"."
+        },
+        {
+          "input": "túi",
+          "word": "bag",
+          "meaning_vi": "túi (đựng đồ)",
+          "usage_vi": "Dùng khi xin hoặc mua túi đựng hàng lúc tính tiền. Ví dụ: \"Can I have a bag?\" nghĩa là \"Cho tôi xin một cái túi.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn vào siêu thị và chỉ mua vài món nhỏ, không cần xe đẩy. Bạn nên lấy cái gì?",
+          "options": [
+            "price",
+            "basket",
+            "cashier"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Basket\" là cái giỏ xách tay, rất tiện khi chỉ mua ít đồ."
+        },
+        {
+          "question_vi": "Bạn đã chọn xong đồ và muốn trả tiền. Bạn hỏi nhân viên: \"Where is the ___?\"",
+          "options": [
+            "cashier",
+            "bag",
+            "basket"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Cashier\" là thu ngân, nơi bạn đến để trả tiền."
+        },
+        {
+          "question_vi": "Một gói bánh không có nhãn giá. Bạn muốn hỏi giá, bạn nói: \"What's the ___?\"",
+          "options": [
+            "bag",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Price\" nghĩa là giá, nên \"What's the price?\" là câu hỏi giá bao nhiêu."
+        },
+        {
+          "question_vi": "Lúc tính tiền, bạn mua nhiều đồ và cần thứ để đựng mang về. Bạn nói: \"Can I have a ___?\"",
+          "options": [
+            "basket",
+            "bag",
+            "price"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Bag\" là túi để mang đồ về nhà, còn \"basket\" là giỏ của siêu thị, phải để lại."
+        }
+      ]
+    }
+  },
+  "supermarket-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi siêu thị mua đồ ăn",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hello! Do you need a basket?",
+          "translation_vi": "Chào chị! Chị có cần giỏ không ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Yes, please. Where are the apples?",
+          "translation_vi": "Dạ có, cảm ơn. Táo để ở đâu vậy?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "They are in aisle two. They are on sale today.",
+          "translation_vi": "Táo ở dãy số hai. Hôm nay táo đang giảm giá."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Great! What is the price for one kilo?",
+          "translation_vi": "Tuyệt quá! Một ký giá bao nhiêu vậy?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Three dollars a kilo. You can pay the cashier at the front.",
+          "translation_vi": "Ba đô một ký. Chị thanh toán với thu ngân ở phía trước nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you. Can I get a bag there?",
+          "translation_vi": "Cảm ơn. Ở đó tôi có lấy túi được không?"
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Yes. A bag is ten cents.",
+          "translation_vi": "Được ạ. Một cái túi giá mười xu."
+        }
+      ],
+      "vocab": [
+        {
+          "input": "basket",
+          "word": "basket",
+          "meaning_vi": "giỏ (đựng đồ khi mua sắm)",
+          "usage_vi": "Dùng để chỉ cái giỏ xách tay trong siêu thị dùng để đựng đồ trong lúc chọn mua. Ví dụ: \"Do you need a basket?\""
+        },
+        {
+          "input": "cashier",
+          "word": "cashier",
+          "meaning_vi": "nhân viên thu ngân",
+          "usage_vi": "Dùng để chỉ người tính tiền ở quầy thanh toán. Thường nói \"pay the cashier\" (trả tiền cho thu ngân)."
+        },
+        {
+          "input": "price",
+          "word": "price",
+          "meaning_vi": "giá, giá tiền",
+          "usage_vi": "Dùng khi hỏi hoặc nói một món đồ giá bao nhiêu. Ví dụ: \"What is the price of this?\""
+        },
+        {
+          "input": "túi",
+          "word": "bag",
+          "meaning_vi": "túi (túi đựng đồ)",
+          "usage_vi": "Dùng để chỉ túi nilon hoặc túi giấy đựng đồ mang về khi thanh toán. Ví dụ: \"Can I have a bag, please?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn vừa bước vào siêu thị và muốn lấy một thứ để đựng đồ trong lúc đi chọn hàng. Bạn sẽ lấy gì?",
+          "options": [
+            "cashier",
+            "basket",
+            "price"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Basket\" là cái giỏ dùng để đựng đồ trong lúc đi mua sắm trong siêu thị."
+        },
+        {
+          "question_vi": "Bạn đã chọn xong đồ và muốn trả tiền. Bạn sẽ đến gặp ai?",
+          "options": [
+            "cashier",
+            "bag",
+            "price"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Cashier\" là nhân viên thu ngân, người tính tiền cho bạn."
+        },
+        {
+          "question_vi": "Hộp sữa không có nhãn giá. Bạn hỏi nhân viên: \"What is the ___ of this milk?\"",
+          "options": [
+            "bag",
+            "cashier",
+            "price"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Price\" nghĩa là giá tiền, dùng khi hỏi món đồ giá bao nhiêu."
+        },
+        {
+          "question_vi": "Bạn mua nhiều đồ và cần một thứ để mang tất cả về nhà. Bạn nói với thu ngân: \"Can I have a ___, please?\"",
+          "options": [
+            "basket",
+            "bag",
+            "price"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Bag\" là cái túi để mang đồ về nhà, còn \"basket\" là giỏ của siêu thị chỉ dùng trong cửa hàng."
+        }
+      ]
+    }
+  },
+  "taxi-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi taxi trong thành phố",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào anh! Anh muốn đi đâu ạ? Anh cho tôi xin address nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, address là số 25 đường Oak Street ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Được rồi. Tới ngã tư phía trước thì tôi turn left hay đi thẳng ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh turn left ở ngã tư đó, rồi đi thẳng một chút là tới ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Tới nơi rồi anh. Fare của anh là 18 đô ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, fare 18 đô, tôi gửi anh 20 đô, không cần thối lại đâu. Cảm ơn anh!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "address",
+          "word": "address",
+          "meaning_vi": "địa chỉ",
+          "usage_vi": "Dùng khi nói nơi bạn muốn đến, ví dụ tên đường và số nhà. Tài xế thường hỏi address ngay khi bạn lên xe."
+        },
+        {
+          "input": "turn left",
+          "word": "turn left",
+          "meaning_vi": "rẽ trái",
+          "usage_vi": "Dùng khi chỉ đường cho tài xế, thường đi kèm vị trí như ngã tư hoặc đèn giao thông. Ngược lại là \"turn right\" (rẽ phải)."
+        },
+        {
+          "input": "fare",
+          "word": "fare",
+          "meaning_vi": "tiền cước, tiền vé (đi xe)",
+          "usage_vi": "Dùng để nói số tiền phải trả cho một chuyến đi bằng taxi, xe buýt, tàu. Bạn có thể hỏi tài xế fare là bao nhiêu."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn đặt xe công nghệ và ứng dụng yêu cầu bạn nhập nơi muốn đến, gồm số nhà và tên đường. Ứng dụng đang hỏi bạn từ nào?",
+          "options": [
+            "fare",
+            "address",
+            "turn left"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "Số nhà và tên đường là địa chỉ, tiếng Anh là \"address\"."
+        },
+        {
+          "question_vi": "Bạn đang đi taxi, sắp tới đèn giao thông và nhà bạn nằm ở con đường bên tay trái. Bạn nói gì với tài xế?",
+          "options": [
+            "Turn left",
+            "Turn right",
+            "Go straight"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "Muốn tài xế rẽ sang bên tay trái thì nói \"turn left\"."
+        },
+        {
+          "question_vi": "Bạn lên xe buýt ở sân bay và muốn biết mình phải trả bao nhiêu tiền cho chuyến đi. Bạn hỏi về từ nào?",
+          "options": [
+            "address",
+            "ticket office",
+            "fare"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "Số tiền phải trả cho một chuyến đi bằng xe buýt hay taxi gọi là \"fare\"."
+        }
+      ]
+    }
+  },
+  "taxi-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi taxi trong thành phố",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị, chị muốn đi đâu? Cho tôi xin the address nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, the address là 25 Green Street, gần công viên ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Được rồi. Đến ngã tư phía trước tôi sẽ turn left nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ vâng. Anh ơi, the fare khoảng bao nhiêu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Khoảng 15 đô. The fare sẽ hiện trên đồng hồ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, ở kia, please turn left ở đèn đỏ, rồi dừng ở đó ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Đến nơi rồi. The fare là 14 đô ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, gửi anh 15 đô. Keep the change, cảm ơn anh.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "address",
+          "word": "address",
+          "meaning_vi": "địa chỉ",
+          "usage_vi": "Dùng khi nói nơi bạn muốn đến, ví dụ đưa địa chỉ cho tài xế. Có thể nói \"The address is...\" hoặc \"Here is the address.\""
+        },
+        {
+          "input": "turn left",
+          "word": "turn left",
+          "meaning_vi": "rẽ trái",
+          "usage_vi": "Dùng khi chỉ đường cho tài xế. Thêm \"please\" cho lịch sự: \"Please turn left here.\""
+        },
+        {
+          "input": "fare",
+          "word": "fare",
+          "meaning_vi": "tiền cước, giá vé đi xe",
+          "usage_vi": "Dùng để nói số tiền phải trả cho chuyến taxi, xe buýt hoặc tàu. Hỏi giá bằng câu \"How much is the fare?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn gọi xe qua ứng dụng và tài xế nhắn hỏi bạn đang ở đâu để đến đón. Bạn cần gửi cho tài xế cái gì?",
+          "options": [
+            "fare",
+            "address",
+            "turn left"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Address\" là địa chỉ, giúp tài xế biết chỗ để đến đón bạn."
+        },
+        {
+          "question_vi": "Bạn đi taxi đến nhà bạn bè. Tài xế đang chạy thẳng, nhưng nhà bạn bè ở con đường bên tay trái. Bạn nói gì?",
+          "options": [
+            "turn left",
+            "turn right",
+            "address"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, đúng hướng con đường bên tay trái."
+        },
+        {
+          "question_vi": "Bạn sắp lên xe buýt sân bay và muốn biết phải trả bao nhiêu tiền cho chuyến đi. Bạn hỏi \"How much is the ___?\"",
+          "options": [
+            "address",
+            "ticket office",
+            "fare"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Fare\" là tiền cước của chuyến đi, nên \"How much is the fare?\" là câu hỏi giá vé đi xe."
+        }
+      ]
+    }
+  },
+  "taxi-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi taxi trong thành phố",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Hi! Where are you going today?",
+          "translation_vi": "Chào bạn! Hôm nay bạn đi đâu?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Hi. Here is the address. It's on my phone.",
+          "translation_vi": "Chào anh. Đây là địa chỉ. Nó ở trên điện thoại của tôi."
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Okay, 25 Green Street. About fifteen minutes.",
+          "translation_vi": "Được rồi, số 25 đường Green. Khoảng mười lăm phút."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thanks. Please turn left at the next light. That's my street.",
+          "translation_vi": "Cảm ơn anh. Anh rẽ trái ở đèn giao thông tiếp theo nhé. Đó là đường nhà tôi."
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Sure. Here we are!",
+          "translation_vi": "Được thôi. Tới nơi rồi!"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "How much is the fare?",
+          "translation_vi": "Tiền cước là bao nhiêu ạ?"
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "It's eighteen dollars, please.",
+          "translation_vi": "Mười tám đô la nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Here you go. Have a nice day!",
+          "translation_vi": "Gửi anh. Chúc anh một ngày tốt lành!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "address",
+          "word": "address",
+          "meaning_vi": "địa chỉ",
+          "usage_vi": "Dùng khi nói hoặc đưa cho tài xế nơi bạn muốn đến. Ví dụ: \"Here is the address.\""
+        },
+        {
+          "input": "turn left",
+          "word": "turn left",
+          "meaning_vi": "rẽ trái",
+          "usage_vi": "Dùng để chỉ đường cho tài xế, thường đi kèm vị trí như \"at the next light\" (ở đèn giao thông tiếp theo)."
+        },
+        {
+          "input": "fare",
+          "word": "fare",
+          "meaning_vi": "tiền cước, tiền vé xe",
+          "usage_vi": "Dùng để nói về số tiền phải trả cho một chuyến taxi, xe buýt hay tàu. Hỏi giá bằng câu \"How much is the fare?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn đặt xe công nghệ và tài xế gọi hỏi chính xác nhà bạn ở đâu. Bạn nói: \"Let me send you my ___.\" Từ nào phù hợp?",
+          "options": [
+            "fare",
+            "address",
+            "turn left"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Address\" là địa chỉ, thông tin tài xế cần để tìm đúng nơi đón bạn."
+        },
+        {
+          "question_vi": "Xe sắp đến ngã tư và khách sạn của bạn nằm ở phía bên trái. Bạn nói với tài xế: \"Please ___ here.\" Cụm nào phù hợp?",
+          "options": [
+            "turn left",
+            "go straight",
+            "fare"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, đúng hướng đến khách sạn của bạn."
+        },
+        {
+          "question_vi": "Trước khi lên taxi ở sân bay, bạn muốn biết đi vào trung tâm hết bao nhiêu tiền. Bạn hỏi: \"What is the ___ to downtown?\" Từ nào phù hợp?",
+          "options": [
+            "address",
+            "turn left",
+            "fare"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Fare\" là tiền cước của chuyến đi, nên dùng khi hỏi giá taxi."
+        }
+      ]
+    }
+  },
+  "taxi-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi taxi ra sân bay",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị, chị muốn đi airport đúng không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ đúng rồi. Đi mất bao lâu vậy anh?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Khoảng ba mươi phút, nhưng giờ này traffic hơi đông.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Không sao đâu anh, em không vội lắm.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chị nhớ thắt seatbelt giúp tôi nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, em thắt rồi ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Tới airport rồi chị ơi.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn anh. Đây là tiền xe, còn đây là tip cho anh.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "airport",
+          "word": "airport",
+          "meaning_vi": "sân bay",
+          "usage_vi": "Dùng khi nói nơi bạn muốn đến để đi máy bay. Ví dụ: \"To the airport, please.\" (Cho tôi ra sân bay.)"
+        },
+        {
+          "input": "traffic",
+          "word": "traffic",
+          "meaning_vi": "giao thông, xe cộ trên đường",
+          "usage_vi": "Dùng khi nói đường đông hay vắng xe. Ví dụ: \"There is a lot of traffic.\" (Đường đông xe quá.)"
+        },
+        {
+          "input": "seatbelt",
+          "word": "seatbelt",
+          "meaning_vi": "dây an toàn",
+          "usage_vi": "Dùng khi nhắc ai đó thắt dây an toàn trên xe. Ví dụ: \"Please wear your seatbelt.\" (Vui lòng thắt dây an toàn.)"
+        },
+        {
+          "input": "tiền boa",
+          "word": "tip",
+          "meaning_vi": "tiền boa, tiền típ",
+          "usage_vi": "Là tiền thêm bạn đưa cho tài xế hoặc nhân viên để cảm ơn họ. Ở các nước nói tiếng Anh, nhiều người thường boa khoảng 10–20%."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn sắp phải bay chuyến lúc 8 giờ. Lên taxi, bạn nói với tài xế: \"To the ___, please.\" Từ nào đúng?",
+          "options": [
+            "traffic",
+            "airport",
+            "tip"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Airport\" là sân bay, nơi bạn cần đến để đi máy bay."
+        },
+        {
+          "question_vi": "Xe bị kẹt giữa hàng dài ô tô. Bạn nói: \"There is a lot of ___ today.\" Từ nào đúng?",
+          "options": [
+            "traffic",
+            "seatbelt",
+            "airport"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Traffic\" chỉ xe cộ trên đường, dùng khi đường đông, kẹt xe."
+        },
+        {
+          "question_vi": "Bạn chở em nhỏ đi chơi và thấy em chưa thắt dây an toàn. Bạn nhắc: \"Please wear your ___.\" Từ nào đúng?",
+          "options": [
+            "tip",
+            "airport",
+            "seatbelt"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Seatbelt\" là dây an toàn trên xe."
+        },
+        {
+          "question_vi": "Ăn ở nhà hàng xong, bạn thấy người phục vụ rất chu đáo nên muốn đưa thêm tiền cảm ơn. Số tiền đó gọi là gì?",
+          "options": [
+            "seatbelt",
+            "tip",
+            "traffic"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Tip\" là tiền boa, tiền thêm để cảm ơn người phục vụ hoặc tài xế."
+        }
+      ]
+    }
+  },
+  "taxi-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi taxi ra sân bay",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị! Chị muốn đi đâu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, cho em đến the airport, please. Chuyến bay của em lúc 3 giờ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Được ạ. Chị nhớ put on your seatbelt nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, em thắt rồi. Hôm nay is there a lot of traffic không anh?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Hơi đông một chút, nhưng mình sẽ đến kịp. Khoảng 30 phút thôi ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn anh. Đây là tiền xe, and this is your tip. Have a nice day!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "airport",
+          "word": "airport",
+          "meaning_vi": "sân bay",
+          "usage_vi": "Dùng khi nói điểm đến là sân bay, ví dụ \"To the airport, please.\" để nhờ tài xế chở ra sân bay."
+        },
+        {
+          "input": "traffic",
+          "word": "traffic",
+          "meaning_vi": "giao thông, xe cộ trên đường",
+          "usage_vi": "Dùng để nói đường đông hay vắng, ví dụ \"There is a lot of traffic.\" nghĩa là đường đang kẹt xe."
+        },
+        {
+          "input": "seatbelt",
+          "word": "seatbelt",
+          "meaning_vi": "dây an toàn",
+          "usage_vi": "Dùng khi nhắc thắt dây an toàn trên xe, thường nói \"Put on your seatbelt.\""
+        },
+        {
+          "input": "tiền boa",
+          "word": "tip",
+          "meaning_vi": "tiền boa",
+          "usage_vi": "Ở nhiều nước nói tiếng Anh, khách thường đưa thêm tiền boa cho tài xế, ví dụ \"This is your tip.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn lên taxi và cần ra sân bay để kịp chuyến bay. Bạn nói \"To the ___, please.\"",
+          "options": [
+            "hotel",
+            "airport",
+            "traffic"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Airport\" là sân bay, đúng điểm đến bạn cần đi."
+        },
+        {
+          "question_vi": "Xe chạy rất chậm vì đường quá đông. Tài xế nói \"Sorry, there is a lot of ___ today.\"",
+          "options": [
+            "traffic",
+            "tip",
+            "seatbelt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Traffic\" chỉ xe cộ trên đường, \"a lot of traffic\" nghĩa là kẹt xe."
+        },
+        {
+          "question_vi": "Bạn vừa ngồi vào xe, tài xế nhắc bạn thắt dây an toàn. Tài xế nói \"Please put on your ___.\"",
+          "options": [
+            "tip",
+            "airport",
+            "seatbelt"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Seatbelt\" là dây an toàn, thường đi với \"put on\"."
+        },
+        {
+          "question_vi": "Tài xế rất tốt bụng và giúp bạn mang vali, bạn muốn đưa thêm tiền cảm ơn. Bạn nói \"This is your ___.\"",
+          "options": [
+            "seatbelt",
+            "tip",
+            "ticket"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Tip\" là tiền boa, số tiền đưa thêm để cảm ơn người phục vụ."
+        }
+      ]
+    }
+  },
+  "taxi-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi taxi ra sân bay",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Hi! Where are you going today?",
+          "translation_vi": "Xin chào! Hôm nay anh chị đi đâu ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "To the airport, please.",
+          "translation_vi": "Cho em ra sân bay ạ."
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Sure. Please put on your seatbelt.",
+          "translation_vi": "Được ạ. Anh chị vui lòng thắt dây an toàn nhé."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Okay. Is there a lot of traffic now?",
+          "translation_vi": "Vâng. Bây giờ đường có đông xe không anh?"
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "A little traffic, but we will be there in 30 minutes.",
+          "translation_vi": "Hơi đông một chút, nhưng khoảng 30 phút nữa là mình tới."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Great, thank you! This is a tip for you.",
+          "translation_vi": "Tốt quá, cảm ơn anh! Đây là tiền boa gửi anh ạ."
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Thank you so much! Have a good flight!",
+          "translation_vi": "Cảm ơn nhiều nhé! Chúc anh chị có chuyến bay vui vẻ!"
+        }
+      ],
+      "vocab": [
+        {
+          "input": "airport",
+          "word": "airport",
+          "meaning_vi": "sân bay",
+          "usage_vi": "Dùng khi nói về nơi đi hoặc đến bằng máy bay. Khi bắt taxi, bạn có thể nói \"To the airport, please.\""
+        },
+        {
+          "input": "traffic",
+          "word": "traffic",
+          "meaning_vi": "xe cộ trên đường, tình trạng giao thông",
+          "usage_vi": "Dùng để nói đường đông hay vắng xe. Cụm \"a lot of traffic\" nghĩa là đường đông, dễ kẹt xe."
+        },
+        {
+          "input": "seatbelt",
+          "word": "seatbelt",
+          "meaning_vi": "dây an toàn",
+          "usage_vi": "Dùng khi ngồi trên xe hơi hoặc máy bay. Câu thường gặp là \"Please put on your seatbelt\" (Vui lòng thắt dây an toàn)."
+        },
+        {
+          "input": "tiền boa",
+          "word": "tip",
+          "meaning_vi": "tiền boa, tiền thưởng thêm",
+          "usage_vi": "Dùng khi đưa thêm tiền cho tài xế hoặc người phục vụ vì họ làm tốt. Bạn có thể nói \"This is a tip for you.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn sắp bay về Việt Nam và lên taxi ở khách sạn. Bạn nói với tài xế: \"Please take me to the ___.\"",
+          "options": [
+            "hotel",
+            "airport",
+            "traffic"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Airport\" là sân bay, nơi bạn cần đến để đi máy bay."
+        },
+        {
+          "question_vi": "Bạn đến trễ buổi hẹn vì đường quá đông xe. Bạn xin lỗi: \"Sorry, I'm late. There was a lot of ___.\"",
+          "options": [
+            "traffic",
+            "tip",
+            "seatbelt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"A lot of traffic\" nghĩa là đường đông xe, lý do khiến bạn đến trễ."
+        },
+        {
+          "question_vi": "Bạn ngồi lên xe của một người bạn. Bạn ấy nhắc bạn thắt dây an toàn trước khi chạy: \"Please put on your ___.\"",
+          "options": [
+            "tip",
+            "airport",
+            "seatbelt"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Seatbelt\" là dây an toàn, phải thắt khi ngồi trên xe."
+        },
+        {
+          "question_vi": "Ăn xong ở nhà hàng, bạn muốn để lại thêm tiền cho người phục vụ vì họ rất dễ thương. Số tiền thêm đó gọi là gì?",
+          "options": [
+            "tip",
+            "receipt",
+            "traffic"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Tip\" là tiền boa, tiền thêm bạn đưa cho người phục vụ tốt."
+        }
+      ]
+    }
+  },
+  "clinic-A-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ ở phòng khám",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Lễ tân",
+          "text": "Chào anh, anh có appointment chưa ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ có, tôi có appointment lúc 10 giờ với bác sĩ Smith.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Lễ tân",
+          "text": "Vâng, anh thấy trong người thế nào ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Tôi bị fever từ hôm qua, người rất mệt.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Lễ tân",
+          "text": "Anh đã uống medicine gì chưa ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Chưa ạ, tôi muốn hỏi bác sĩ trước rồi mới uống medicine.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "appointment",
+          "word": "appointment",
+          "meaning_vi": "lịch hẹn",
+          "usage_vi": "Dùng khi bạn đã đặt giờ gặp bác sĩ hoặc ai đó trước. Ví dụ: \"I have an appointment at 10.\""
+        },
+        {
+          "input": "fever",
+          "word": "fever",
+          "meaning_vi": "sốt",
+          "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường. Thường nói: \"I have a fever.\""
+        },
+        {
+          "input": "medicine",
+          "word": "medicine",
+          "meaning_vi": "thuốc",
+          "usage_vi": "Dùng để nói về thuốc chữa bệnh nói chung. Thường nói: \"take medicine\" (uống thuốc)."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn gọi điện đến nha khoa để đặt giờ khám răng vào thứ Hai. Bạn muốn đặt một ___.",
+          "options": [
+            "fever",
+            "medicine",
+            "appointment"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Appointment\" là lịch hẹn, dùng khi đặt giờ gặp bác sĩ hoặc nha sĩ."
+        },
+        {
+          "question_vi": "Con bạn sờ trán thấy rất nóng, nhiệt độ 39°C. Bạn nói với cô giáo rằng bé bị ___.",
+          "options": [
+            "fever",
+            "appointment",
+            "receipt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Fever\" là sốt, khi nhiệt độ cơ thể cao hơn bình thường."
+        },
+        {
+          "question_vi": "Bạn vào nhà thuốc và muốn mua thứ gì đó để chữa đau đầu. Bạn hỏi mua ___.",
+          "options": [
+            "appointment",
+            "medicine",
+            "ticket"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Medicine\" là thuốc, thứ bạn uống để chữa bệnh."
+        }
+      ]
+    }
+  },
+  "clinic-A-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ tại phòng khám",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Lễ tân",
+          "text": "Xin chào, chị có an appointment không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ có, em có an appointment lúc 10 giờ với bác sĩ Smith.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Lễ tân",
+          "text": "Vâng, chị ngồi chờ một chút nhé. Chị thấy trong người thế nào?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Em bị đau đầu và I have a fever từ hôm qua.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Lễ tân",
+          "text": "Chị có đang uống any medicine không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ chưa, em chưa uống medicine gì cả.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "appointment",
+          "word": "appointment",
+          "meaning_vi": "cuộc hẹn (khám bệnh)",
+          "usage_vi": "Dùng khi bạn đã đặt lịch gặp bác sĩ trước. Hay nói: \"I have an appointment at 10.\""
+        },
+        {
+          "input": "fever",
+          "word": "fever",
+          "meaning_vi": "sốt",
+          "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường. Hay nói: \"I have a fever.\""
+        },
+        {
+          "input": "medicine",
+          "word": "medicine",
+          "meaning_vi": "thuốc",
+          "usage_vi": "Dùng để nói về thuốc chữa bệnh. Bác sĩ hay hỏi: \"Are you taking any medicine?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn gọi điện đến phòng khám để đặt lịch khám vào thứ Hai. Bạn nói: \"I want to make an ___.\"",
+          "options": [
+            "fever",
+            "appointment",
+            "medicine"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Make an appointment\" nghĩa là đặt lịch hẹn khám bệnh."
+        },
+        {
+          "question_vi": "Con bạn bị nóng sốt cả đêm. Bạn nói với bác sĩ: \"My son has a ___.\"",
+          "options": [
+            "fever",
+            "headache",
+            "medicine"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Fever\" là sốt, dùng khi người bị nóng, thân nhiệt cao."
+        },
+        {
+          "question_vi": "Bạn bị ho và muốn mua thuốc ở nhà thuốc. Bạn hỏi: \"Do you have any ___ for a cough?\"",
+          "options": [
+            "appointment",
+            "doctor",
+            "medicine"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Medicine\" là thuốc, dùng khi bạn cần thuốc để chữa bệnh."
+        }
+      ]
+    }
+  },
+  "clinic-A-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ ở phòng khám",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Hello. Do you have an appointment today?",
+          "translation_vi": "Xin chào. Hôm nay anh có lịch hẹn không?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Yes, my appointment is at ten o'clock.",
+          "translation_vi": "Dạ có, lịch hẹn của tôi lúc mười giờ."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Good. What is the problem?",
+          "translation_vi": "Được rồi. Anh bị sao vậy?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have a fever and a headache.",
+          "translation_vi": "Tôi bị sốt và đau đầu."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Let me check. Yes, you have a small fever. Take this medicine two times a day.",
+          "translation_vi": "Để tôi kiểm tra. Đúng rồi, anh bị sốt nhẹ. Anh uống thuốc này hai lần một ngày nhé."
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Okay. Should I take the medicine after food?",
+          "translation_vi": "Vâng. Tôi có nên uống thuốc sau khi ăn không?"
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Yes, after food. Drink a lot of water and rest.",
+          "translation_vi": "Đúng, uống sau khi ăn. Anh uống nhiều nước và nghỉ ngơi nhé."
+        }
+      ],
+      "vocab": [
+        {
+          "input": "appointment",
+          "word": "appointment",
+          "meaning_vi": "lịch hẹn, cuộc hẹn",
+          "usage_vi": "Dùng khi bạn đã đặt giờ trước để gặp bác sĩ hoặc ai đó. Ví dụ: \"I have an appointment at ten.\""
+        },
+        {
+          "input": "fever",
+          "word": "fever",
+          "meaning_vi": "sốt",
+          "usage_vi": "Dùng khi thân nhiệt bạn cao hơn bình thường. Thường nói: \"I have a fever.\""
+        },
+        {
+          "input": "medicine",
+          "word": "medicine",
+          "meaning_vi": "thuốc",
+          "usage_vi": "Dùng để nói về thuốc chữa bệnh. Người bản xứ hay nói \"take medicine\" (uống thuốc), không dùng \"drink medicine\"."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn gọi điện đến phòng khám nha khoa để đặt giờ khám vào thứ Hai. Bạn nói: \"I want to make an ___.\" Từ nào phù hợp?",
+          "options": [
+            "medicine",
+            "appointment",
+            "fever"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Make an appointment\" nghĩa là đặt lịch hẹn, phù hợp khi muốn đặt giờ khám."
+        },
+        {
+          "question_vi": "Con bạn bị nóng người, nhiệt độ 39 độ. Bạn nói với cô giáo: \"My son has a ___.\" Từ nào phù hợp?",
+          "options": [
+            "fever",
+            "appointment",
+            "receipt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Fever\" nghĩa là sốt, dùng khi thân nhiệt cao."
+        },
+        {
+          "question_vi": "Bạn vào hiệu thuốc vì bị cảm và muốn mua thuốc. Bạn nói: \"Can I have some ___ for a cold?\" Từ nào phù hợp?",
+          "options": [
+            "appointment",
+            "fever",
+            "medicine"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Medicine\" nghĩa là thuốc, dùng khi muốn mua thuốc chữa bệnh."
+        }
+      ]
+    }
+  },
+  "clinic-B-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ ở phòng khám",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chào chị, hôm nay chị thấy không khỏe ở đâu?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ, em bị headache từ hôm qua, đau đầu lắm bác sĩ ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chị có bị cough không? Có ho nhiều không?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ có, em bị cough, nhất là vào ban đêm.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chị bị cảm nhẹ thôi. Tôi sẽ viết prescription cho chị nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ, em mua thuốc ở đâu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chị mang prescription này ra pharmacy ở tầng một là mua được.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ, em cảm ơn bác sĩ ạ.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "headache",
+          "word": "headache",
+          "meaning_vi": "chứng đau đầu",
+          "usage_vi": "Dùng khi bạn bị đau đầu, thường nói \"I have a headache\" để báo với bác sĩ hoặc người khác."
+        },
+        {
+          "input": "cough",
+          "word": "cough",
+          "meaning_vi": "ho, cơn ho",
+          "usage_vi": "Dùng khi bạn bị ho, ví dụ nói \"I have a cough\" khi đi khám bệnh."
+        },
+        {
+          "input": "pharmacy",
+          "word": "pharmacy",
+          "meaning_vi": "nhà thuốc, hiệu thuốc",
+          "usage_vi": "Là nơi bán thuốc, bạn đến đây để mua thuốc theo đơn hoặc thuốc thông thường."
+        },
+        {
+          "input": "đơn thuốc",
+          "word": "prescription",
+          "meaning_vi": "đơn thuốc",
+          "usage_vi": "Là giấy bác sĩ viết ghi các loại thuốc bạn cần, bạn mang nó đến nhà thuốc để mua thuốc."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn làm việc trên máy tính cả ngày và thấy đau đầu. Bạn nói với đồng nghiệp: \"I have a ___.\" Từ nào phù hợp?",
+          "options": [
+            "cough",
+            "headache",
+            "pharmacy"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với cảm giác bạn đang bị."
+        },
+        {
+          "question_vi": "Bạn bị ho mấy ngày nay và muốn nói với dược sĩ. Bạn nói: \"I have a ___.\" Từ nào phù hợp?",
+          "options": [
+            "cough",
+            "prescription",
+            "headache"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Cough\" nghĩa là ho, đúng với triệu chứng bạn đang có."
+        },
+        {
+          "question_vi": "Bạn đang đi du lịch và cần mua thuốc. Bạn hỏi người đi đường: \"Where is the ___?\" Từ nào phù hợp?",
+          "options": [
+            "clinic",
+            "prescription",
+            "pharmacy"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bạn có thể mua thuốc."
+        },
+        {
+          "question_vi": "Ở nhà thuốc, dược sĩ nói loại thuốc này cần giấy của bác sĩ. Dược sĩ hỏi: \"Do you have a ___?\" Từ nào phù hợp?",
+          "options": [
+            "pharmacy",
+            "prescription",
+            "receipt"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Prescription\" là đơn thuốc do bác sĩ viết, cần có để mua một số loại thuốc."
+        }
+      ]
+    }
+  },
+  "clinic-B-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ ở phòng khám",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chào anh, hôm nay anh bị sao vậy? What's wrong today?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ, em bị I have a headache từ hôm qua, đau lắm ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Anh có bị ho không? Do you have a cough?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ có, em có a bad cough vào ban đêm ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Được rồi, tôi sẽ viết cho anh a prescription. Anh uống thuốc ngày hai lần nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Cảm ơn bác sĩ. Em mua thuốc ở đâu ạ? Where is the pharmacy?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "The pharmacy ở ngay tầng một, cạnh cửa ra vào. Chúc anh mau khỏe!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "headache",
+          "word": "headache",
+          "meaning_vi": "đau đầu",
+          "usage_vi": "Dùng khi bạn bị đau ở đầu. Thường nói \"I have a headache\" (Tôi bị đau đầu)."
+        },
+        {
+          "input": "cough",
+          "word": "cough",
+          "meaning_vi": "ho, cơn ho",
+          "usage_vi": "Dùng khi bạn bị ho. Thường nói \"I have a cough\" để kể triệu chứng với bác sĩ."
+        },
+        {
+          "input": "pharmacy",
+          "word": "pharmacy",
+          "meaning_vi": "nhà thuốc, hiệu thuốc",
+          "usage_vi": "Là nơi bạn mua thuốc. Bạn có thể hỏi \"Where is the pharmacy?\" để tìm nhà thuốc."
+        },
+        {
+          "input": "đơn thuốc",
+          "word": "prescription",
+          "meaning_vi": "đơn thuốc",
+          "usage_vi": "Là giấy bác sĩ viết ghi các loại thuốc bạn cần dùng. Bạn mang prescription đến nhà thuốc để mua thuốc."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn làm việc trên máy tính cả ngày và thấy đầu rất đau. Bạn nói với đồng nghiệp: \"I have a ___.\"",
+          "options": [
+            "cough",
+            "headache",
+            "pharmacy"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với cảm giác đau ở đầu."
+        },
+        {
+          "question_vi": "Bạn bị cảm và ho suốt đêm. Bạn nói với bạn cùng phòng: \"I have a ___.\"",
+          "options": [
+            "headache",
+            "prescription",
+            "cough"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Cough\" nghĩa là ho, đúng với triệu chứng ho suốt đêm."
+        },
+        {
+          "question_vi": "Bạn đang đi du lịch và cần mua thuốc cảm. Bạn hỏi người đi đường: \"Where is the ___?\"",
+          "options": [
+            "pharmacy",
+            "hospital bed",
+            "doctor"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bạn mua thuốc."
+        },
+        {
+          "question_vi": "Ở nhà thuốc, nhân viên muốn xem tờ giấy bác sĩ đã ghi các loại thuốc cho bạn. Họ hỏi: \"Do you have a ___?\"",
+          "options": [
+            "cough",
+            "prescription",
+            "headache"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Prescription\" là đơn thuốc do bác sĩ viết, nhà thuốc cần xem để bán thuốc cho bạn."
+        }
+      ]
+    }
+  },
+  "clinic-B-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ ở phòng khám",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Hello. How can I help you today?",
+          "translation_vi": "Chào bạn. Hôm nay tôi có thể giúp gì cho bạn?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have a headache, and I can't sleep well.",
+          "translation_vi": "Tôi bị đau đầu, và tôi ngủ không ngon."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "I see. Do you have a cough too?",
+          "translation_vi": "Tôi hiểu rồi. Bạn có bị ho nữa không?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Yes, I have a bad cough at night.",
+          "translation_vi": "Có ạ, tôi ho nhiều vào ban đêm."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "OK. Here is your prescription. Take one pill two times a day.",
+          "translation_vi": "Được rồi. Đây là đơn thuốc của bạn. Uống một viên, ngày hai lần."
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Thank you. Where is the pharmacy?",
+          "translation_vi": "Cảm ơn bác sĩ. Nhà thuốc ở đâu ạ?"
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "There is a pharmacy next to the clinic.",
+          "translation_vi": "Có một nhà thuốc ngay cạnh phòng khám."
+        }
+      ],
+      "vocab": [
+        {
+          "input": "headache",
+          "word": "headache",
+          "meaning_vi": "đau đầu",
+          "usage_vi": "Dùng khi bạn bị đau ở đầu. Thường nói \"I have a headache\"."
+        },
+        {
+          "input": "cough",
+          "word": "cough",
+          "meaning_vi": "ho, cơn ho",
+          "usage_vi": "Dùng khi bạn bị ho. Thường nói \"I have a cough\" để kể triệu chứng với bác sĩ."
+        },
+        {
+          "input": "pharmacy",
+          "word": "pharmacy",
+          "meaning_vi": "nhà thuốc, hiệu thuốc",
+          "usage_vi": "Là nơi bạn mua thuốc, thường mang đơn thuốc của bác sĩ đến đây. Hỏi đường: \"Where is the pharmacy?\""
+        },
+        {
+          "input": "đơn thuốc",
+          "word": "prescription",
+          "meaning_vi": "đơn thuốc",
+          "usage_vi": "Là giấy bác sĩ ghi thuốc cho bạn. Bạn đưa \"prescription\" cho nhân viên nhà thuốc để lấy thuốc."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn làm việc trên máy tính cả ngày và thấy đầu rất đau. Bạn nói với đồng nghiệp: \"I have a ___.\"",
+          "options": [
+            "cough",
+            "headache",
+            "pharmacy"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với cảm giác đau ở đầu."
+        },
+        {
+          "question_vi": "Bạn bị cảm lạnh và cổ họng ngứa, cứ ho mãi. Bạn gọi điện xin nghỉ làm và nói: \"I have a ___.\"",
+          "options": [
+            "prescription",
+            "pharmacy",
+            "cough"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Cough\" nghĩa là ho, dùng để nói bạn đang bị ho."
+        },
+        {
+          "question_vi": "Bạn cần mua thuốc cảm vào buổi tối. Bạn hỏi người đi đường: \"Is there a ___ near here?\"",
+          "options": [
+            "pharmacy",
+            "headache",
+            "clinic"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bán thuốc."
+        },
+        {
+          "question_vi": "Ở nhà thuốc, nhân viên nói thuốc này cần giấy của bác sĩ. Họ hỏi: \"Do you have a ___?\"",
+          "options": [
+            "cough",
+            "prescription",
+            "receipt"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Prescription\" là đơn thuốc bác sĩ viết, cần có để mua một số loại thuốc."
+        }
+      ]
+    }
+  }
+}
