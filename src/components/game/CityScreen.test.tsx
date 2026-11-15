@@ -41,6 +41,11 @@ describe('CityScreen', () => {
   beforeEach(() => vi.useFakeTimers())
   afterEach(() => vi.useRealTimers())
 
+  it('labels every park bench on the map as a 1-1 conversation', () => {
+    renderCity()
+    for (const b of CITY.benches) expect(screen.getByTestId(`bench-label-${b.benchId}`)).toHaveTextContent('1-1 conversation')
+  })
+
   it('shows the hint and moves one tile per arrow key', () => {
     const c = renderCity()
     expect(screen.getByText('Đi đến một địa điểm để bắt đầu')).toBeInTheDocument()

@@ -313,6 +313,27 @@ export function CityScreen(props: {
             {biText(getScenario(b.placeId)?.name_vi ?? '', getScenario(b.placeId)?.name_en)}
           </span>
         ))}
+        {CITY.benches.map((b) => {
+          // Centred above the bench, kept inside the map at the edges.
+          const LABEL_TILES = 2.6
+          const left = Math.min(Math.max(0, b.pos.x + 0.5 - LABEL_TILES / 2), CITY.width - LABEL_TILES)
+          return (
+            <span
+              key={b.benchId}
+              data-testid={`bench-label-${b.benchId}`}
+              aria-hidden
+              className="pointer-events-none absolute truncate rounded-full bg-[#2F5F33] px-1 text-center leading-snug font-bold whitespace-nowrap text-white shadow-[0_1px_0_rgba(0,0,0,0.25)]"
+              style={{
+                left: pct(left, CITY.width),
+                top: pct(Math.max(0, b.pos.y - 0.42), CITY.height),
+                width: pct(LABEL_TILES, CITY.width),
+                fontSize: `max(0.5rem, ${tileFont(0.22)})`,
+              }}
+            >
+              1-1 conversation
+            </span>
+          )
+        })}
         <div
           data-testid="player"
           data-x={pos.x}
