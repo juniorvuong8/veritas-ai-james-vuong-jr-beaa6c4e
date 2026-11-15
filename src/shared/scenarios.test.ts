@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
+import { isInappropriate } from './profanity'
 import { SCENARIOS } from './scenarios'
-import { checkLessonRequest } from './validate-request'
+import { checkLessonRequest, wordProblem } from './validate-request'
 
 describe('SCENARIOS', () => {
   it('has the 4 situations with unique ids', () => {
@@ -23,4 +24,17 @@ describe('SCENARIOS', () => {
       }
     })
   }
+
+  it('has extra batches of valid, clean words that repeat nothing else at the place', () => {
+    for (const s of SCENARIOS) {
+      expect(s.moreWords.length, s.id).toBeGreaterThanOrEqual(1)
+      for (const batch of s.moreWords) expect(batch.length, s.id).toBeGreaterThanOrEqual(10)
+      const all = [s.suggestedWords, ...s.moreWords].flat()
+      expect(new Set(all.map((w) => w.toLowerCase())).size, s.id).toBe(all.length)
+      for (const w of all) {
+        expect(wordProblem(w), w).toBeNull()
+        expect(isInappropriate(w), w).toBe(false)
+      }
+    }
+  })
 })

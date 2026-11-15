@@ -6,6 +6,8 @@ export interface Scenario {
   /** English description of the situation, used in the AI prompt. */
   promptContext: string
   suggestedWords: string[]
+  /** More words for this place, one batch at a time, offered once every suggested word has been learned. */
+  moreWords: string[][]
 }
 
 export const SCENARIOS: Scenario[] = [
@@ -29,6 +31,10 @@ export const SCENARIOS: Scenario[] = [
       'change',
       'for here',
     ],
+    moreWords: [
+      ['cup', 'lid', 'sugar', 'milk', 'small', 'hot', 'decaf', 'pastry', 'sandwich', 'tea', 'water', 'counter'],
+      ['barista', 'table', 'seat', 'wifi', 'cash', 'card', 'line', 'ready', 'name', 'spoon', 'ice', 'tip jar'],
+    ],
   },
   {
     id: 'supermarket',
@@ -49,6 +55,10 @@ export const SCENARIOS: Scenario[] = [
       'card',
       'fresh',
       'frozen',
+    ],
+    moreWords: [
+      ['milk', 'bread', 'eggs', 'fruit', 'vegetables', 'meat', 'shelf', 'receipt', 'discount', 'coupon', 'scale', 'organic'],
+      ['brand', 'expired', 'snacks', 'drinks', 'rice', 'cheap', 'expensive', 'self-checkout', 'line', 'change', 'bakery', 'dairy'],
     ],
   },
   {
@@ -71,6 +81,10 @@ export const SCENARIOS: Scenario[] = [
       'how long',
       'tip',
     ],
+    moreWords: [
+      ['driver', 'meter', 'hotel', 'station', 'downtown', 'corner', 'map', 'receipt', 'luggage', 'slow down', 'hurry', 'parking'],
+      ['pick up', 'drop off', 'highway', 'bridge', 'traffic light', 'block', 'change', 'card', 'cash', 'window', 'door', 'ride'],
+    ],
   },
   {
     id: 'clinic',
@@ -91,6 +105,10 @@ export const SCENARIOS: Scenario[] = [
       'insurance',
       'pain',
       'prescription',
+    ],
+    moreWords: [
+      ['nurse', 'stomachache', 'cold', 'flu', 'temperature', 'blood pressure', 'rash', 'dizzy', 'pill', 'waiting room', 'checkup', 'symptom'],
+      ['x-ray', 'bandage', 'sneeze', 'tired', 'tablet', 'dose', 'side effect', 'emergency', 'form', 'reception', 'runny nose', 'cut'],
     ],
   },
 ]

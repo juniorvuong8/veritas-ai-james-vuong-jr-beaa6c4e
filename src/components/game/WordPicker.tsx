@@ -43,10 +43,20 @@ export function WordPicker(props: {
   const [checking, setChecking] = useState(false)
   const biText = useBiText()
 
-  const suggested = getScenario(props.scenarioId)?.suggestedWords ?? []
+  const scenario = getScenario(props.scenarioId)
+  /** The suggested words, then more batches offered once a batch is all learned. */
+  const batches = scenario ? [scenario.suggestedWords, ...scenario.moreWords] : [[]]
+  const [batch, setBatch] = useState(0)
+  const suggested = batches[batch] ?? []
+  const allWords = batches.flat()
   const customWords = words.filter((w) => !suggested.some((s) => key(s) === key(w)))
   const isSelected = (w: string) => words.some((s) => key(s) === key(w))
   const learned = (w: string) => isLearned(props.learnedWords ?? [], w)
+  const allLearned = suggested.length > 0 && suggested.every(learned)
+  /** The next batch (after this one, wrapping round) that still has a word to learn. */
+  const nextBatch = batches
+    .map((_, i) => (batch + 1 + i) % batches.length)
+    .find((i) => i !== batch && batches[i].some((w) => !learned(w)))
 
   async function addCustom(e: FormEvent) {
     e.preventDefault()
@@ -59,7 +69,7 @@ export function WordPicker(props: {
     }
     setCustomError(undefined)
     // Suggested and already-chosen words are known to fit; only new words go to the AI.
-    if (!isSelected(word) && !suggested.some((s) => key(s) === key(word))) {
+    if (!isSelected(word) && !allWords.some((s) => key(s) === key(word))) {
       setChecking(true)
       const check = props.checkWord ?? ((w: string) => requestWordFit(props.scenarioId, w))
       const verdict = await check(word)
@@ -124,6 +134,27 @@ export function WordPicker(props: {
           </span>
         ))}
       </div>
+      {allLearned && (
+        <div className="flex flex-col items-start gap-2 rounded-2xl bg-[#E6F4E8] px-4 py-3 text-sm font-semibold text-[#1F5A2A] sm:flex-row sm:items-center sm:justify-between">
+          {nextBatch !== undefined ? (
+            <>
+              <span>
+                <Bi vi="Bạn đã học hết các từ này rồi!" en="You've learned all of these words!" />
+              </span>
+              <SecondaryButton onClick={() => setBatch(nextBatch)}>
+                <Bi vi="🔄 Lấy từ mới" en="🔄 Get new words" />
+              </SecondaryButton>
+            </>
+          ) : (
+            <span>
+              <Bi
+                vi="Bạn đã học hết các từ gợi ý ở đây! Hãy tự thêm từ bạn muốn học nhé."
+                en="You've learned every suggested word here! Add your own words to learn more."
+              />
+            </span>
+          )}
+        </div>
+      )}
       <form onSubmit={addCustom} className="flex gap-2">
         <input
           className="min-w-0 flex-1 rounded-full border-2 border-[#2B1D16]/15 bg-white px-4 py-2 text-base outline-none placeholder:text-[#2B1D16]/40 focus:border-[#2B1D16] aria-invalid:border-[#E8553D]"
