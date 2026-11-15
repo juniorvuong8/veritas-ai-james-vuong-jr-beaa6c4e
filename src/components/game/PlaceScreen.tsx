@@ -20,7 +20,7 @@ type Phase =
   | { name: 'loading' }
   | { name: 'error'; code: ErrorCode; message_vi: string }
   | { name: 'talk' | 'notes' | 'quiz'; lesson: Lesson; isSample: boolean }
-  | { name: 'done'; correct: number; total: number }
+  | { name: 'done'; correct: number; total: number; lesson: Lesson; isSample: boolean }
 
 export function PlaceScreen(props: {
   placeId: string
@@ -42,6 +42,8 @@ export function PlaceScreen(props: {
   const [phase, setPhase] = useState<Phase>({ name: 'pick' })
   const [words, setWords] = useState<string[]>(props.initialWords)
   const [earned, setEarned] = useState(0)
+  /** Redoing the quiz: practice only, so it pays no coins. */
+  const [retake, setRetake] = useState(false)
   const debug = useDebug()
 
   async function generate(chosen: string[]) {
@@ -157,13 +159,15 @@ export function PlaceScreen(props: {
         <HostQuiz
           quiz={phase.lesson.quiz}
           hostAvatar={art.host}
+          rewards={!retake}
           onCorrect={() => {
+            if (retake) return
             setEarned((n) => n + COINS_PER_CORRECT)
             props.onCorrect()
           }}
           onFinish={(r) => {
             props.onLearned?.(phase.lesson.vocab)
-            setPhase({ name: 'done', ...r })
+            setPhase({ name: 'done', ...r, lesson: phase.lesson, isSample: phase.isSample })
           }}
         />
       )}
@@ -176,7 +180,7 @@ export function PlaceScreen(props: {
               en={`You got ${phase.correct}/${phase.total} right`}
             />
           </p>
-          <p className="inline-block rounded-full bg-[#FFF3D6] px-4 py-1 text-lg font-bold">{`+${earned} 🪙`}</p>
+          {!retake && <p className="inline-block rounded-full bg-[#FFF3D6] px-4 py-1 text-lg font-bold">{`+${earned} 🪙`}</p>}
           <div
             className="mx-auto flex size-28 animate-[stamp_400ms_ease-out] items-center justify-center rounded-full border-4 border-dashed text-6xl"
             style={{ borderColor: art.color, background: `${art.color}18` }}
@@ -189,6 +193,21 @@ export function PlaceScreen(props: {
           <PrimaryButton size="lg" arrow className="w-full" onClick={props.onFinish}>
             <Bi vi="Về thành phố" en="Back to the city" />
           </PrimaryButton>
+          <SecondaryButton
+            size="lg"
+            className="w-full"
+            onClick={() => {
+              setRetake(true)
+              setPhase({ name: 'notes', lesson: phase.lesson, isSample: phase.isSample })
+            }}
+          >
+            <Bi vi="Làm lại quiz" en="Redo the quiz" />
+          </SecondaryButton>
+          {!retake && (
+            <p className="text-xs text-[#2B1D16]/55">
+              <Bi vi="Làm lại để ôn tập, không nhận thêm xu." en="Redo it to practise; it earns no more coins." />
+            </p>
+          )}
         </div>
       )}
     </div>

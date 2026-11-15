@@ -11,6 +11,8 @@ export function HostQuiz(props: {
   quiz: QuizQuestion[]
   hostAvatar: string
   onCorrect: () => void
+  /** False on a retake: no coins, so no coin badge. */
+  rewards?: boolean
   onFinish: (result: { correct: number; total: number }) => void
 }) {
   const { quiz } = props
@@ -71,7 +73,7 @@ export function HostQuiz(props: {
           side="host"
           avatar={props.hostAvatar}
           badge={
-            right && (
+            right && props.rewards !== false && (
               <span className="inline-block animate-bounce rounded-full bg-[#FFD45C] px-2 py-0.5 text-sm font-extrabold whitespace-nowrap text-[#2B1D16] shadow-[0_2px_0_rgba(43,29,22,0.25)] ring-2 ring-white">{`+${COINS_PER_CORRECT} 🪙`}</span>
             )
           }

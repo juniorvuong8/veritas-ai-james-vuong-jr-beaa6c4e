@@ -50,6 +50,29 @@ describe('PlaceScreen', () => {
     expect(p.onFinish).toHaveBeenCalledTimes(1)
   })
 
+  it('redoes the quiz from the word review, without paying coins again', async () => {
+    mocked.mockResolvedValue({ ok: true, lesson: validLesson() })
+    const p = renderPlace()
+    await pickWords(p.user)
+    await screen.findByText(/Chào chị! Đây là/)
+    const takeQuiz = async () => {
+      await p.user.click(screen.getByRole('button', { name: 'Làm bài kiểm tra' }))
+      for (const answer of ['menu', 'to go', 'receipt']) {
+        await p.user.click(screen.getByRole('button', { name: answer }))
+        await p.user.click(screen.getByRole('button', { name: /Câu tiếp theo|Xem kết quả/ }))
+      }
+    }
+    for (let i = 0; i < 4; i++) await p.user.click(screen.getByRole('button', { name: 'Tiếp ▸' }))
+    await takeQuiz()
+    expect(screen.getByText('+30 🪙')).toBeInTheDocument()
+    await p.user.click(screen.getByRole('button', { name: 'Làm lại quiz' }))
+    expect(screen.getByRole('button', { name: 'Làm bài kiểm tra' })).toBeInTheDocument()
+    await takeQuiz()
+    expect(p.onCorrect).toHaveBeenCalledTimes(3)
+    expect(screen.getByText(/3\/3/)).toBeInTheDocument()
+    expect(screen.queryByText(/🪙/)).not.toBeInTheDocument()
+  })
+
   it('offers the sample lesson when the AI fails, and can retry', async () => {
     mocked.mockResolvedValue({
       ok: false,

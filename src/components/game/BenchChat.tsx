@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { BENCH_ART } from '@/game/art'
 import { BENCH_REWARD, type BenchStatus, wordKey } from '@/game/state'
 import { requestBenchReply, type BenchChatResult } from '@/lib/bench-api'
-import { Bi, useBiText, useDebug } from '@/lib/debug'
+import { Bi, Gloss, useBiText, useDebug } from '@/lib/debug'
 import {
   BENCH_PERSONAS,
   MAX_LEARNER_MESSAGES,
@@ -14,7 +14,7 @@ import {
   type BenchTurn,
 } from '@/shared/bench'
 import type { Level } from '@/shared/types'
-import { HighlightedText } from './Conversation'
+import { HighlightedText, toMeanings } from './Conversation'
 import { SpeechBubble } from './SpeechBubble'
 import { Awning, GhostButton, PrimaryButton } from './ui'
 
@@ -71,6 +71,7 @@ export function BenchChat(props: {
   const persona = BENCH_PERSONAS[props.benchId]
   /** Highlighted wherever they appear in the chat, like the chosen words in a shop conversation. */
   const targetWords = props.targets.map((t) => t.word)
+  const meanings = toMeanings(props.targets)
   const art = BENCH_ART[props.benchId]
   const debug = useDebug()
   const biText = useBiText()
@@ -183,6 +184,10 @@ export function BenchChat(props: {
             <span>
               <Bi vi={persona.name_vi} en={persona.name_en} />
             </span>
+            <span className="rounded-full bg-[#7BAE7F]/20 px-2.5 py-0.5 text-xs font-bold text-[#2F5F33]">
+              1-1 conversation
+              <Gloss text="Trò chuyện 1-1" lang="vi" />
+            </span>
           </h2>
           <GhostButton onClick={leave}>
             <Bi vi="Rời đi" en="Leave" />
@@ -218,13 +223,13 @@ export function BenchChat(props: {
               l.from === 'person' ? (
                 <SpeechBubble key={i} speaker="" side="host" avatar={art.person}>
                   <p>
-                    <Bi vi={<HighlightedText text={l.text} words={targetWords} />} en={l.en} />
+                    <Bi vi={<HighlightedText text={l.text} words={targetWords} meanings={meanings} />} en={l.en} />
                   </p>
                 </SpeechBubble>
               ) : (
                 <SpeechBubble key={i} speaker="" side="player" avatar={LEARNER_EMOJI}>
                   <p>
-                    <HighlightedText text={l.text} words={targetWords} />
+                    <HighlightedText text={l.text} words={targetWords} meanings={meanings} />
                   </p>
                 </SpeechBubble>
               ),

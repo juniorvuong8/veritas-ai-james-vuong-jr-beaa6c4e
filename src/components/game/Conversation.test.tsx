@@ -30,6 +30,19 @@ describe('Conversation', () => {
     expect(onDone).toHaveBeenCalledTimes(1)
   })
 
+  it('opens the Vietnamese meaning of a word from its book icon without advancing', async () => {
+    const { user } = renderConv()
+    const icon = screen.getByRole('button', { name: 'Nghĩa của "menu"' })
+    expect(icon).toHaveAttribute('aria-expanded', 'false')
+    await user.click(icon)
+    expect(icon).toHaveAttribute('aria-expanded', 'true')
+    expect(screen.getByRole('note')).toHaveTextContent('thực đơn')
+    await user.click(screen.getByRole('note'))
+    expect(screen.queryByText(/cà phê sữa đá/)).not.toBeInTheDocument()
+    await user.keyboard('{Escape}')
+    expect(screen.queryByRole('note')).not.toBeInTheDocument()
+  })
+
   it('shows level-3 translations under lines', () => {
     const lesson = validLesson()
     lesson.level = 3

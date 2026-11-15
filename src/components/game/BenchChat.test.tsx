@@ -71,6 +71,15 @@ describe('BenchChat', () => {
     expect(requestReply.mock.calls[0][0].targets).toEqual(targets)
   })
 
+  it('is labelled as a 1-1 conversation and explains the tested words', async () => {
+    setup({ replies: [reply({ text: 'Cháu nhớ lấy receipt nhé!' })] })
+    const user = userEvent.setup()
+    expect(screen.getByText('1-1 conversation')).toBeInTheDocument()
+    await screen.findByText(/Cháu nhớ lấy/)
+    await user.click(screen.getByRole('button', { name: 'Nghĩa của "receipt"' }))
+    expect(screen.getByRole('note')).toHaveTextContent('hóa đơn')
+  })
+
   it('sends the conversation so far with each message', async () => {
     const { requestReply } = setup({ replies: [reply(), reply({ text: 'Vậy à!' })] })
     const user = userEvent.setup()
