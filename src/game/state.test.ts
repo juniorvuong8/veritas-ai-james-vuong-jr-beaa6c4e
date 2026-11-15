@@ -8,7 +8,7 @@ const allFour = [finish('cafe'), finish('supermarket'), finish('taxi'), finish('
 describe('gameReducer', () => {
   it('starts empty at the chosen level', () => {
     expect(newGame(2)).toEqual({
-      level: 2, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords: {}, learnedWords: [],
+      level: 2, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords: {}, learnedWords: [], benchDay: null,
     })
   })
 

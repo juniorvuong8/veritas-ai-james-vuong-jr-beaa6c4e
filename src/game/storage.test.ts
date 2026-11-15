@@ -42,6 +42,29 @@ describe('storage', () => {
     expect(loaded?.coins).toBe(40)
   })
 
+  it('round-trips a bench day and lastTested', () => {
+    const store = memoryStorage()
+    const g = { ...game, benchDay: { date: '2026-11-14', chats: 2, paid: { receipt: ['use' as const] } }, learnedWords: [{ ...game.learnedWords[0], lastTested: '2026-11-14' }] }
+    saveGame(g, () => store)
+    expect(loadGame(() => store)).toEqual(g)
+  })
+
+  it('loads a save without a bench day as null', () => {
+    const { benchDay: _, ...old } = game
+    expect(loadGame(saved(old))?.benchDay).toBeNull()
+  })
+
+  it('loads a malformed bench day as null without rejecting the save', () => {
+    const loaded = loadGame(saved({ ...game, benchDay: { date: 5 } }))
+    expect(loaded?.benchDay).toBeNull()
+    expect(loaded?.coins).toBe(40)
+  })
+
+  it('drops learned words with a non-string lastTested', () => {
+    const loaded = loadGame(saved({ ...game, learnedWords: [...game.learnedWords, { ...game.learnedWords[0], lastTested: 3 }] }))
+    expect(loaded?.learnedWords).toEqual(game.learnedWords)
+  })
+
   it('returns null when nothing is saved', () => {
     expect(loadGame(() => memoryStorage())).toBeNull()
   })

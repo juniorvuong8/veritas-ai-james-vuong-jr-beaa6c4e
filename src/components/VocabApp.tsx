@@ -15,7 +15,7 @@ import type { Level } from '@/shared/types'
 type AppAction = GameAction | { type: 'newGame'; level: Level }
 
 function appReducer(state: GameState | null, action: AppAction): GameState | null {
-  if (action.type === 'newGame') return newGame(action.level, state?.lastWords, state?.learnedWords)
+  if (action.type === 'newGame') return newGame(action.level, state?.lastWords, state?.learnedWords, state?.benchDay ?? null)
   return state ? gameReducer(state, action) : state
 }
 

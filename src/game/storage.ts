@@ -1,4 +1,4 @@
-import { PLACE_IDS, type GameState, type LearnedWord } from './state'
+import { PLACE_IDS, type BenchDay, type GameState, type LearnedWord } from './state'
 
 export const SAVE_KEY = 'vocab-city-v1'
 
@@ -14,12 +14,27 @@ function isLearnedWord(v: unknown): v is LearnedWord {
   return (
     ['word', 'input', 'meaning_vi', 'usage_vi', 'placeId'].every((k) => typeof w[k] === 'string') &&
     optString(w.meaning_en) &&
-    optString(w.usage_en)
+    optString(w.usage_en) &&
+    optString(w.lastTested)
   )
 }
 
 /** Saves from before the notebook have no list: start empty. Broken entries are dropped, not the whole save. */
 const parseLearned = (v: unknown): LearnedWord[] => (Array.isArray(v) ? v.filter(isLearnedWord) : [])
+
+/** Saves from before the bench have none; a malformed record is ignored, not fatal. */
+function parseBenchDay(v: unknown): BenchDay | null {
+  if (typeof v !== 'object' || v === null) return null
+  const b = v as Record<string, unknown>
+  if (typeof b.date !== 'string' || typeof b.chats !== 'number' || !Number.isInteger(b.chats) || b.chats < 0) return null
+  if (typeof b.paid !== 'object' || b.paid === null || Array.isArray(b.paid)) return null
+  const paid: BenchDay['paid'] = {}
+  for (const [k, checks] of Object.entries(b.paid)) {
+    if (!Array.isArray(checks) || !checks.every((c) => c === 'understand' || c === 'use')) return null
+    paid[k] = [...new Set(checks as ('understand' | 'use')[])]
+  }
+  return { date: b.date, chats: b.chats, paid }
+}
 
 function parseGame(raw: unknown): GameState | null {
   if (typeof raw !== 'object' || raw === null) return null
@@ -40,6 +55,7 @@ function parseGame(raw: unknown): GameState | null {
     celebrationOpen: false,
     lastWords: lastWords as Record<string, string[]>,
     learnedWords: parseLearned(g.learnedWords),
+    benchDay: parseBenchDay(g.benchDay),
   }
 }
 
