@@ -62,6 +62,17 @@ export function benchOf(map: CityMap, benchId: BenchId): Bench {
   return bench
 }
 
+/** A plain walkable neighbour of a door or bench (not itself a door or bench). */
+function findOutside(map: CityMap, pos: Pos): Pos | undefined {
+  const around: Pos[] = [
+    { x: pos.x, y: pos.y + 1 },
+    { x: pos.x, y: pos.y - 1 },
+    { x: pos.x - 1, y: pos.y },
+    { x: pos.x + 1, y: pos.y },
+  ]
+  return around.find((p) => isWalkable(map, p) && map.tiles[p.y][p.x] !== 'door' && map.tiles[p.y][p.x] !== 'bench')
+}
+
 /**
  * Parse a map from rows of characters.
  * `.` road, `,` grass, `^` tree, `~` water, `*` fountain, `@` start (road).
@@ -112,13 +123,7 @@ export function parseMap(rows: string[], placeLetters: Record<string, string>, b
     const found = doorPos[place] ?? []
     if (found.length !== 1) throw new Error(`place ${place} needs exactly one door`)
     const pos = found[0]
-    const around: Pos[] = [
-      { x: pos.x, y: pos.y + 1 },
-      { x: pos.x, y: pos.y - 1 },
-      { x: pos.x - 1, y: pos.y },
-      { x: pos.x + 1, y: pos.y },
-    ]
-    const outside = around.find((p) => isWalkable(map, p) && map.tiles[p.y][p.x] !== 'door')
+    const outside = findOutside(map, pos)
     if (!outside) throw new Error(`door of ${place} has no walkable tile outside`)
     map.doors.push({ placeId: place, pos, outside })
   }
@@ -126,13 +131,7 @@ export function parseMap(rows: string[], placeLetters: Record<string, string>, b
     const found = benchPos[benchId] ?? []
     if (found.length !== 1) throw new Error(`bench ${benchId} needs exactly one tile`)
     const pos = found[0]
-    const around: Pos[] = [
-      { x: pos.x, y: pos.y + 1 },
-      { x: pos.x, y: pos.y - 1 },
-      { x: pos.x - 1, y: pos.y },
-      { x: pos.x + 1, y: pos.y },
-    ]
-    const outside = around.find((p) => isWalkable(map, p) && map.tiles[p.y][p.x] !== 'door' && map.tiles[p.y][p.x] !== 'bench')
+    const outside = findOutside(map, pos)
     if (!outside) throw new Error(`bench ${benchId} has no walkable tile beside it`)
     map.benches.push({ benchId, pos, outside })
   }

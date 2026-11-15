@@ -78,6 +78,20 @@ describe('PLACE_ART', () => {
   })
 })
 
+describe('parseMap benchLetters', () => {
+  const letters = { '1': 'bac-tu' as const }
+  it('parses a bench with its outside tile', () => {
+    const map = parseMap([',1,', ',@,'], {}, letters)
+    expect(map.benches).toEqual([{ benchId: 'bac-tu', pos: { x: 1, y: 0 }, outside: { x: 1, y: 1 } }])
+  })
+  it('throws when a bench is missing', () => {
+    expect(() => parseMap([',,,', ',@,'], {}, letters)).toThrow(/bench bac-tu/)
+  })
+  it('throws on a duplicate bench', () => {
+    expect(() => parseMap([',1,1', ',@,,'], {}, letters)).toThrow(/bench bac-tu/)
+  })
+})
+
 describe('benches', () => {
   it('has two benches on walkable lawns with plain outside tiles', () => {
     expect(CITY.benches.map((b) => b.pos)).toEqual([{ x: 1, y: 4 }, { x: 9, y: 4 }])
