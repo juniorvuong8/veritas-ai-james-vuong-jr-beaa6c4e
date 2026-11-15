@@ -71,7 +71,7 @@ function DefinitionButton({ word, meaning }: { word: string; meaning: { vi: stri
         aria-controls={id}
         aria-label={`Nghĩa của "${word}"`}
         onClick={toggle}
-        className="ml-0.5 inline-flex items-center align-middle text-[#2F7F7A] hover:opacity-70"
+        className="mr-0.5 inline-flex items-center align-middle text-[#2F7F7A] hover:opacity-70"
       >
         <BookOpen className="size-4" aria-hidden />
       </button>
@@ -104,11 +104,11 @@ export function HighlightedText({ text, words, meanings }: { text: string; words
         const meaning = meanings?.[meaningKey(seg.word)]
         return (
           <span key={j} className="whitespace-nowrap">
+            {meaning && <DefinitionButton word={seg.word} meaning={meaning} />}
             <mark className="rounded-md bg-[#FFD45C] px-1 font-bold text-[#2B1D16]">
               {seg.text}
             </mark>
             <SpeakButton text={seg.word} />
-            {meaning && <DefinitionButton word={seg.word} meaning={meaning} />}
           </span>
         )
       })}
