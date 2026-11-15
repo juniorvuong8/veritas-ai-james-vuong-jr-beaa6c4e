@@ -189,31 +189,41 @@ describe('App', () => {
       await user.click(screen.getByRole('button', { name: 'Chơi tiếp' }))
     }
 
-    it('chats on a bench, pays a verdict once, and leaves to the tile beside it', async () => {
+    it('chats on a bench, earns 10 coins for understanding every word, and goes back beside it', async () => {
       save({ coins: 0 })
       benchMocked
         .mockResolvedValueOnce({ ok: true, reply: { text: 'Xin chào cháu!', verdicts: [], done: false } })
-        .mockResolvedValueOnce({ ok: true, reply: { text: 'Giỏi lắm!', verdicts: [{ word: 'menu', check: 'use', passed: true }], done: false } })
+        .mockResolvedValueOnce({
+          ok: true,
+          reply: {
+            text: 'Giỏi lắm, tạm biệt cháu!',
+            verdicts: [
+              { word: 'menu', understood: true },
+              { word: 'receipt', understood: true },
+            ],
+            done: true,
+          },
+        })
       const user = userEvent.setup()
       const { container } = render(<App />)
       await resume(user)
       const bench = benchOf(CITY, 'bac-tu')
       walkTo(bench.pos)
       expect(await screen.findByText('Xin chào cháu!')).toBeInTheDocument()
-      await user.type(screen.getByLabelText('Tin nhắn'), 'Can I see the menu?')
+      await user.type(screen.getByLabelText('Tin nhắn'), 'Cháu xem thực đơn và xin hóa đơn ạ')
       await user.click(screen.getByRole('button', { name: 'Gửi' }))
-      expect(await screen.findByText('Giỏi lắm!')).toBeInTheDocument()
+      expect(await screen.findByText('Giỏi lắm, tạm biệt cháu!')).toBeInTheDocument()
       expect(screen.getByText('+10 🪙')).toBeInTheDocument()
-      await user.click(screen.getByRole('button', { name: 'Rời đi' }))
+      await user.click(screen.getByRole('button', { name: 'Về thành phố' }))
       expect(screen.getByText('🪙 10')).toBeInTheDocument()
       expect(playerPos(container)).toEqual(bench.outside)
       const saved = JSON.parse(localStorage.getItem(SAVE_KEY)!)
-      expect(saved.benchDay.chats).toBe(1)
+      expect(saved.benchDay).toEqual({ date: today(), chats: 1, rewarded: 1 })
       expect(saved.coins).toBe(10)
     })
 
     it('says to come back tomorrow after four chats, without calling the AI', async () => {
-      save({ benchDay: { date: today(), chats: 4, paid: {} } })
+      save({ benchDay: { date: today(), chats: 4, rewarded: 0 } })
       const user = userEvent.setup()
       render(<App />)
       await resume(user)

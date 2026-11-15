@@ -23,18 +23,18 @@ function isLearnedWord(v: unknown): v is LearnedWord {
 /** Saves from before the notebook have no list: start empty. Broken entries are dropped, not the whole save. */
 const parseLearned = (v: unknown): LearnedWord[] => (Array.isArray(v) ? v.filter(isLearnedWord) : [])
 
-/** Saves from before the bench have none; a malformed record is ignored, not fatal. */
+const isCount = (v: unknown): v is number => typeof v === 'number' && Number.isInteger(v) && v >= 0
+
+/**
+ * Saves from before the bench have none; a malformed record is ignored, not fatal.
+ * Records from the per-word payout version have no `rewarded`: their chats count as rewarded.
+ */
 function parseBenchDay(v: unknown): BenchDay | null {
   if (typeof v !== 'object' || v === null) return null
   const b = v as Record<string, unknown>
-  if (typeof b.date !== 'string' || typeof b.chats !== 'number' || !Number.isInteger(b.chats) || b.chats < 0) return null
-  if (typeof b.paid !== 'object' || b.paid === null || Array.isArray(b.paid)) return null
-  const paid: BenchDay['paid'] = {}
-  for (const [k, checks] of Object.entries(b.paid)) {
-    if (!Array.isArray(checks) || !checks.every((c) => c === 'understand' || c === 'use')) return null
-    paid[k] = [...new Set(checks as ('understand' | 'use')[])]
-  }
-  return { date: b.date, chats: b.chats, paid }
+  if (typeof b.date !== 'string' || !isCount(b.chats)) return null
+  const rewarded = isCount(b.rewarded) ? Math.min(b.rewarded, b.chats) : b.chats
+  return { date: b.date, chats: b.chats, rewarded }
 }
 
 /** Saves from before the shop have neither: start with nothing. Unknown items are dropped. */

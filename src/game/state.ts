@@ -1,4 +1,4 @@
-import type { BenchCheck, BenchTarget, BenchVerdict } from '@/shared/bench'
+import type { BenchTarget } from '@/shared/bench'
 import { MAX_TARGETS } from '@/shared/bench'
 import { normalizeWord, SCENARIOS } from '@/shared/scenarios'
 import { isValidWord } from '@/shared/validate-request'
@@ -25,13 +25,14 @@ export interface LearnedWord {
 }
 
 export const BENCH_CHATS_PER_DAY = 4
-export const BENCH_COINS: Record<BenchCheck, number> = { understand: 5, use: 10 }
+/** Paid at the end of a bench chat in which the learner understood every word tested. */
+export const BENCH_REWARD = 10
 
-/** One local day's bench record. `paid` is keyed by wordKey. */
+/** One local day's bench record: chats started and chats rewarded. */
 export interface BenchDay {
   date: string
   chats: number
-  paid: Record<string, BenchCheck[]>
+  rewarded: number
 }
 
 /** Local calendar date as YYYY-MM-DD. */
@@ -78,7 +79,7 @@ export type GameAction =
   | { type: 'playAgain' }
   | { type: 'levelUp' }
   | { type: 'startBenchChat'; date: string; words: string[] }
-  | { type: 'awardBench'; date: string; verdicts: BenchVerdict[] }
+  | { type: 'rewardBenchChat'; date: string }
   | { type: 'buyItem'; itemId: string }
   | { type: 'toggleItem'; itemId: string }
   | { type: 'setGender'; gender: Gender }
@@ -116,7 +117,7 @@ export function keptLook(state: GameState): Pick<GameState, 'owned' | 'outfit' |
 
 /** The day's record for `date`: a fresh one when there is none or it is from another day. */
 const dayRecord = (state: GameState, date: string): BenchDay =>
-  state.benchDay?.date === date ? state.benchDay : { date, chats: 0, paid: {} }
+  state.benchDay?.date === date ? state.benchDay : { date, chats: 0, rewarded: 0 }
 
 export type BenchStatus = 'no_words' | 'limit' | 'open'
 
@@ -132,8 +133,7 @@ export function benchStatus(state: GameState, date: string): BenchStatus {
 }
 
 /** Up to MAX_TARGETS words: never-tested first, then the longest ago; ties in notebook order. */
-export function pickBenchTargets(state: GameState, date: string): BenchTarget[] {
-  const paid = dayRecord(state, date).paid
+export function pickBenchTargets(state: GameState): BenchTarget[] {
   return state.learnedWords
     .map((l, i) => ({ l, i }))
     .filter(({ l }) => benchable(l))
@@ -143,27 +143,7 @@ export function pickBenchTargets(state: GameState, date: string): BenchTarget[] 
       return x < y ? -1 : x > y ? 1 : a.i - b.i
     })
     .slice(0, MAX_TARGETS)
-    .map(({ l }) => ({ word: l.word, meaning_vi: l.meaning_vi, paid: [...(paid[wordKey(l.word)] ?? [])] }))
-}
-
-export type BenchPayout = { word: string; check: BenchCheck; coins: number }
-
-/** Passed checks on notebook words that are not yet paid on `date`. Each (word, check) pays at most once. */
-export function benchPayouts(state: GameState, date: string, verdicts: BenchVerdict[]): BenchPayout[] {
-  const paid = dayRecord(state, date).paid
-  const seen = new Set<string>()
-  const out: BenchPayout[] = []
-  for (const v of verdicts) {
-    if (!v.passed || !Object.hasOwn(BENCH_COINS, v.check)) continue
-    const key = wordKey(v.word)
-    const learned = state.learnedWords.find((l) => wordKey(l.word) === key)
-    if (!learned) continue
-    const id = `${key}|${v.check}`
-    if (seen.has(id) || paid[key]?.includes(v.check)) continue
-    seen.add(id)
-    out.push({ word: learned.word, check: v.check, coins: BENCH_COINS[v.check] })
-  }
-  return out
+    .map(({ l }) => ({ word: l.word, meaning_vi: l.meaning_vi }))
 }
 
 export function canLevelUp(state: GameState): boolean {
@@ -218,16 +198,11 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         learnedWords: state.learnedWords.map((l) => (keys.includes(wordKey(l.word)) ? { ...l, lastTested: action.date } : l)),
       }
     }
-    case 'awardBench': {
+    case 'rewardBenchChat': {
+      // `date` is the day the chat started. Each started chat pays at most once.
       const day = dayRecord(state, action.date)
-      const payouts = benchPayouts(state, action.date, action.verdicts)
-      const paid = { ...day.paid }
-      for (const p of payouts) paid[wordKey(p.word)] = [...(paid[wordKey(p.word)] ?? []), p.check]
-      return {
-        ...state,
-        coins: state.coins + payouts.reduce((n, p) => n + p.coins, 0),
-        benchDay: { ...day, paid },
-      }
+      if (day.rewarded >= day.chats) return state
+      return { ...state, coins: state.coins + BENCH_REWARD, benchDay: { ...day, rewarded: day.rewarded + 1 } }
     }
     case 'buyItem': {
       // Buying puts the item on straight away.

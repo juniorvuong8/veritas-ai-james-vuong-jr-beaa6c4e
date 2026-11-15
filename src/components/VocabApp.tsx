@@ -12,7 +12,6 @@ import { CITY, benchOf, doorOf, type Pos } from '@/game/map'
 import { outfitEmojis } from '@/game/shop'
 import {
   COINS_PER_CORRECT,
-  benchPayouts,
   benchStatus,
   canLevelUp,
   gameReducer,
@@ -26,7 +25,7 @@ import {
 } from '@/game/state'
 import { clearGame, loadGame, saveGame } from '@/game/storage'
 import { DebugBadge, DebugProvider, readDebugFlag, saveDebugFlag, useDebugShortcut } from '@/lib/debug'
-import type { BenchId, BenchTarget, BenchVerdict } from '@/shared/bench'
+import type { BenchId, BenchTarget } from '@/shared/bench'
 import type { Level } from '@/shared/types'
 
 type AppAction = GameAction | { type: 'newGame'; level: Level }
@@ -79,9 +78,8 @@ function Game() {
     if (game) saveGame(game)
   }, [game])
 
-  // Latest state for callbacks that fire after earlier dispatches (bench payouts).
-  const gameRef = useRef(game)
-  gameRef.current = game
+  // The day the current bench chat started, so its reward counts against that day's chats even past midnight.
+  const benchChatDate = useRef(today())
 
   const enterGame = () => {
     if (pendingPlace) {
@@ -135,7 +133,7 @@ function Game() {
             onEnterPlace={(placeId) => setScreen({ name: 'place', placeId, viaDoor: true })}
             onEnterBench={(benchId) => {
               const date = today()
-              setScreen({ name: 'bench', benchId, status: benchStatus(game, date), targets: pickBenchTargets(game, date) })
+              setScreen({ name: 'bench', benchId, status: benchStatus(game, date), targets: pickBenchTargets(game) })
             }}
             onOpenCelebration={() => dispatch({ type: 'openCelebration' })}
             onOpenNotebook={() => setNotebookOpen(true)}
@@ -213,13 +211,11 @@ function Game() {
           level={game.level}
           status={screen.status}
           targets={screen.targets}
-          onStart={() => dispatch({ type: 'startBenchChat', date: today(), words: screen.targets.map((t) => t.word) })}
-          onVerdicts={(verdicts: BenchVerdict[]) => {
-            const date = today()
-            const payouts = gameRef.current ? benchPayouts(gameRef.current, date, verdicts) : []
-            dispatch({ type: 'awardBench', date, verdicts })
-            return payouts
+          onStart={() => {
+            benchChatDate.current = today()
+            dispatch({ type: 'startBenchChat', date: benchChatDate.current, words: screen.targets.map((t) => t.word) })
           }}
+          onReward={() => dispatch({ type: 'rewardBenchChat', date: benchChatDate.current })}
           onLeave={() => goToCity(benchOf(CITY, screen.benchId).outside)}
         />
       )}

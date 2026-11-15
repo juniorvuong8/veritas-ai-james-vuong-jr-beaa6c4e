@@ -1,36 +1,30 @@
-import { render, screen, waitFor } from '@testing-library/react'
+import { act, render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import type { BenchRequest, BenchReply, BenchTarget } from '@/shared/bench'
-import type { BenchPayout } from '@/game/state'
 import type { BenchChatResult } from '@/lib/bench-api'
 import { DebugProvider } from '@/lib/debug'
-import { BenchChat } from './BenchChat'
+import { AUTO_LEAVE_MS, BenchChat } from './BenchChat'
 
 const targets: BenchTarget[] = [
-  { word: 'iced', meaning_vi: 'có đá', paid: [] },
-  { word: 'receipt', meaning_vi: 'hóa đơn', paid: [] },
+  { word: 'iced', meaning_vi: 'có đá' },
+  { word: 'receipt', meaning_vi: 'hóa đơn' },
 ]
 const reply = (r: Partial<BenchReply> = {}): BenchChatResult => ({
   ok: true,
   reply: { text: 'Chào cháu!', verdicts: [], done: false, ...r },
 })
+const understood = (word: string, ok = true) => ({ word, understood: ok })
 
-function setup(
-  opts: {
-    status?: 'no_words' | 'limit' | 'open'
-    replies?: BenchChatResult[]
-    onVerdicts?: (v: unknown[]) => BenchPayout[]
-  } = {},
-) {
+function setup(opts: { status?: 'no_words' | 'limit' | 'open'; replies?: BenchChatResult[] } = {}) {
   const queue = [...(opts.replies ?? [reply()])]
   const requestReply = vi.fn((req: BenchRequest) => {
     void req
     return Promise.resolve(queue.shift()!)
   })
   const onStart = vi.fn()
+  const onReward = vi.fn()
   const onLeave = vi.fn()
-  const onVerdicts = vi.fn(opts.onVerdicts ?? (() => []))
   render(
     <BenchChat
       benchId="bac-tu"
@@ -38,12 +32,12 @@ function setup(
       status={opts.status ?? 'open'}
       targets={targets}
       onStart={onStart}
-      onVerdicts={onVerdicts}
+      onReward={onReward}
       onLeave={onLeave}
       requestReply={requestReply}
     />,
   )
-  return { requestReply, onStart, onLeave, onVerdicts, user: userEvent.setup() }
+  return { requestReply, onStart, onReward, onLeave }
 }
 
 async function send(user: ReturnType<typeof userEvent.setup>, text: string) {
@@ -51,14 +45,18 @@ async function send(user: ReturnType<typeof userEvent.setup>, text: string) {
   await user.click(screen.getByRole('button', { name: 'Gửi' }))
 }
 
+afterEach(() => {
+  vi.useRealTimers()
+})
+
 describe('BenchChat', () => {
   it.each([
     ['no_words', /học vài từ/],
     ['limit', /ngày mai/],
   ] as const)('shows fixed text for %s without calling anything', async (status, text) => {
-    const { requestReply, onStart, onLeave, user } = setup({ status })
+    const { requestReply, onStart, onLeave } = setup({ status })
     expect(screen.getByText(text)).toBeInTheDocument()
-    await user.click(screen.getByRole('button', { name: 'Rời đi' }))
+    await userEvent.setup().click(screen.getByRole('button', { name: 'Rời đi' }))
     expect(onLeave).toHaveBeenCalled()
     expect(requestReply).not.toHaveBeenCalled()
     expect(onStart).not.toHaveBeenCalled()
@@ -70,50 +68,24 @@ describe('BenchChat', () => {
     expect(onStart).toHaveBeenCalledTimes(1)
     expect(requestReply).toHaveBeenCalledTimes(1)
     expect(requestReply.mock.calls[0][0].history).toEqual([])
+    expect(requestReply.mock.calls[0][0].targets).toEqual(targets)
   })
 
-  it('shows the coin pop only for what was paid', async () => {
-    const verdict = { word: 'iced', check: 'understand' as const, passed: true }
-    const { requestReply, onVerdicts, user } = setup({
-      replies: [reply(), reply({ text: 'Giỏi!', verdicts: [verdict] })],
-      onVerdicts: () => [{ word: 'iced', check: 'understand', coins: 5 }],
-    })
+  it('sends the conversation so far with each message', async () => {
+    const { requestReply } = setup({ replies: [reply(), reply({ text: 'Vậy à!' })] })
+    const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
     await send(user, 'Cháu uống đá ạ')
-    expect(await screen.findByText('+5 🪙')).toBeInTheDocument()
+    await screen.findByText('Vậy à!')
     expect(requestReply.mock.calls[1][0].history).toEqual([
       { from: 'person', text: 'Chào cháu!' },
       { from: 'learner', text: 'Cháu uống đá ạ' },
     ])
-    expect(onVerdicts).toHaveBeenCalledWith([verdict])
-  })
-
-  it('shows no pop when nothing paid, then sends updated paid after a payout', async () => {
-    const verdict = { word: 'iced', check: 'understand' as const, passed: true }
-    const payouts: BenchPayout[][] = [[], [{ word: 'iced', check: 'understand', coins: 5 }]]
-    const { requestReply, user } = setup({
-      replies: [
-        reply(),
-        reply({ verdicts: [verdict], text: 'A' }),
-        reply({ verdicts: [verdict], text: 'B' }),
-        reply({ text: 'C' }),
-      ],
-      onVerdicts: () => payouts.shift() ?? [],
-    })
-    await screen.findByText('Chào cháu!')
-    await send(user, 'one')
-    await screen.findByText('A')
-    expect(screen.queryByText(/🪙/)).not.toBeInTheDocument()
-    await send(user, 'two')
-    await screen.findByText('B')
-    await send(user, 'three')
-    await screen.findByText('C')
-    expect(requestReply.mock.calls[2][0].targets[0].paid).toEqual([])
-    expect(requestReply.mock.calls[3][0].targets[0].paid).toEqual(['understand'])
   })
 
   it('disables Send when blank and limits length', async () => {
-    const { user } = setup()
+    setup()
+    const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
     expect(screen.getByRole('button', { name: 'Gửi' })).toBeDisabled()
     expect(screen.getByRole('textbox')).toHaveAttribute('maxLength', '200')
@@ -122,9 +94,10 @@ describe('BenchChat', () => {
   })
 
   it('shows an error and retries the same message', async () => {
-    const { requestReply, onVerdicts, user } = setup({
+    const { requestReply } = setup({
       replies: [reply(), { ok: false, code: 'network', message_vi: 'Mất mạng rồi' }, reply({ text: 'Ổn rồi' })],
     })
+    const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
     await send(user, 'xin chào')
     expect(await screen.findByText('Mất mạng rồi')).toBeInTheDocument()
@@ -132,13 +105,13 @@ describe('BenchChat', () => {
     expect(await screen.findByText('Ổn rồi')).toBeInTheDocument()
     expect(screen.getAllByText('xin chào')).toHaveLength(1)
     expect(requestReply.mock.calls[2][0].history).toEqual(requestReply.mock.calls[1][0].history)
-    expect(onVerdicts).not.toHaveBeenCalled()
   })
 
   it('hides Try again on bad_request and blocks sending while an error shows', async () => {
-    const { requestReply, user } = setup({
+    const { requestReply } = setup({
       replies: [reply(), { ok: false, code: 'bad_request', message_vi: 'Yêu cầu không hợp lệ' }],
     })
+    const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
     await send(user, 'xin chào')
     expect(await screen.findByText('Yêu cầu không hợp lệ')).toBeInTheDocument()
@@ -154,7 +127,7 @@ describe('BenchChat', () => {
     const user = userEvent.setup()
     render(
       <DebugProvider value>
-        <BenchChat benchId="bac-tu" level={1} status="open" targets={targets} onStart={vi.fn()} onVerdicts={() => []} onLeave={vi.fn()} requestReply={requestReply} />
+        <BenchChat benchId="bac-tu" level={1} status="open" targets={targets} onStart={vi.fn()} onReward={vi.fn()} onLeave={vi.fn()} requestReply={requestReply} />
       </DebugProvider>,
     )
     await screen.findByText('Chào cháu!')
@@ -163,51 +136,96 @@ describe('BenchChat', () => {
     expect(await screen.findByText(/Couldn't connect/)).toBeInTheDocument()
   })
 
-  it('shows the summary status for a word the server spelled differently', async () => {
-    const { user } = setup({
-      replies: [reply(), reply({ done: true, verdicts: [{ word: 'ICED', check: 'use', passed: true }] })],
-      onVerdicts: () => [{ word: 'iced', check: 'use', coins: 10 }],
-    })
-    await screen.findByText('Chào cháu!')
-    await send(user, 'iced')
-    expect(await screen.findByText('đã dùng')).toBeInTheDocument()
-  })
-
-  it('shows a summary when done', async () => {
-    const v = [
-      { word: 'iced', check: 'use' as const, passed: true },
-      { word: 'receipt', check: 'understand' as const, passed: true },
-    ]
-    const { user } = setup({
-      replies: [reply(), reply({ verdicts: v, done: true, text: 'Tạm biệt' })],
-      onVerdicts: () => [
-        { word: 'iced', check: 'use', coins: 10 },
-        { word: 'receipt', check: 'understand', coins: 5 },
+  it('rewards once when every word was understood, then says goodbye', async () => {
+    const { onReward } = setup({
+      replies: [
+        reply(),
+        reply({ text: 'A', verdicts: [understood('iced')] }),
+        reply({ text: 'Tạm biệt cháu!', verdicts: [understood('RECEIPT')], done: true }),
       ],
     })
+    const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
-    await send(user, 'iced coffee')
-    await screen.findByText('Tạm biệt')
+    await send(user, 'Cháu thích uống đá')
+    await screen.findByText('A')
+    await send(user, 'Hóa đơn ạ')
+    expect(await screen.findByText('Tạm biệt cháu!')).toBeInTheDocument()
+    expect(screen.getByText('+10 🪙')).toBeInTheDocument()
+    expect(screen.getAllByText('✓ đã hiểu')).toHaveLength(2)
     expect(screen.queryByRole('textbox')).not.toBeInTheDocument()
-    expect(screen.getAllByText('+15 🪙')).toHaveLength(2)
-    expect(screen.getByText('đã dùng')).toBeInTheDocument()
-    expect(screen.getByText('đã hiểu')).toBeInTheDocument()
+    expect(onReward).toHaveBeenCalledTimes(1)
   })
 
-  it('ends after the 10th learner message', async () => {
-    const { user } = setup({ replies: Array.from({ length: 11 }, () => reply()) })
+  it('gives no reward when a word was not understood', async () => {
+    const { onReward } = setup({
+      replies: [reply(), reply({ text: 'Tạm biệt!', verdicts: [understood('iced'), understood('receipt', false)], done: true })],
+    })
+    const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
-    for (let i = 0; i < 10; i++) {
-      if (i > 0) await waitFor(() => expect(screen.queryByRole('status')).not.toBeInTheDocument())
+    await send(user, 'ừm')
+    await screen.findByText('Tạm biệt!')
+    expect(screen.getByText(/Lần sau/)).toBeInTheDocument()
+    expect(screen.queryByText(/🪙/)).not.toBeInTheDocument()
+    expect(screen.getByText('chưa')).toBeInTheDocument()
+    expect(onReward).not.toHaveBeenCalled()
+  })
+
+  it('counts a word as understood once, even if a later reply misjudges it', async () => {
+    const { onReward } = setup({
+      replies: [
+        reply(),
+        reply({ text: 'A', verdicts: [understood('iced'), understood('receipt')] }),
+        reply({ text: 'Bye', verdicts: [understood('iced', false)], done: true }),
+      ],
+    })
+    const user = userEvent.setup()
+    await screen.findByText('Chào cháu!')
+    await send(user, 'one')
+    await screen.findByText('A')
+    await send(user, 'two')
+    await screen.findByText('Bye')
+    expect(onReward).toHaveBeenCalledTimes(1)
+  })
+
+  it('ends after the 5th learner message even if the reply is not marked done', async () => {
+    setup({ replies: Array.from({ length: 6 }, (_, i) => reply({ text: `r${i}` })) })
+    const user = userEvent.setup()
+    await screen.findByText('r0')
+    for (let i = 0; i < 5; i++) {
       await send(user, `m${i}`)
+      await screen.findByText(`r${i + 1}`)
     }
     await waitFor(() => expect(screen.queryByRole('textbox')).not.toBeInTheDocument())
     expect(screen.getAllByText('chưa')).toHaveLength(2)
   })
 
+  it('goes back to the city by itself after the goodbye, or at once with the button', async () => {
+    vi.useFakeTimers({ shouldAdvanceTime: true })
+    const { onLeave } = setup({ replies: [reply(), reply({ text: 'Tạm biệt!', done: true })] })
+    const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime })
+    await screen.findByText('Chào cháu!')
+    await send(user, 'chào bác')
+    await screen.findByText('Tạm biệt!')
+    expect(onLeave).not.toHaveBeenCalled()
+    act(() => {
+      vi.advanceTimersByTime(AUTO_LEAVE_MS)
+    })
+    expect(onLeave).toHaveBeenCalledTimes(1)
+  })
+
+  it('leaves once when the button is pressed before the timer', async () => {
+    vi.useFakeTimers({ shouldAdvanceTime: true })
+    const { onLeave } = setup({ replies: [reply(), reply({ text: 'Tạm biệt!', done: true })] })
+    const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime })
+    await screen.findByText('Chào cháu!')
+    await send(user, 'chào bác')
+    await user.click(await screen.findByRole('button', { name: 'Về thành phố' }))
+    expect(onLeave).toHaveBeenCalledTimes(1)
+  })
+
   it('ignores a reply that arrives after leaving', async () => {
     let resolve!: (r: BenchChatResult) => void
-    const onVerdicts = vi.fn(() => [])
+    const onReward = vi.fn()
     const onLeave = vi.fn()
     const requestReply = vi.fn(() => new Promise<BenchChatResult>((r) => (resolve = r)))
     const user = userEvent.setup()
@@ -218,15 +236,16 @@ describe('BenchChat', () => {
         status="open"
         targets={targets}
         onStart={vi.fn()}
-        onVerdicts={onVerdicts}
+        onReward={onReward}
         onLeave={onLeave}
         requestReply={requestReply}
       />,
     )
     await user.click(screen.getByRole('button', { name: 'Rời đi' }))
-    resolve(reply({ verdicts: [{ word: 'iced', check: 'use', passed: true }] }))
-    await Promise.resolve()
-    expect(onVerdicts).not.toHaveBeenCalled()
-    expect(onLeave).toHaveBeenCalled()
+    await act(async () => {
+      resolve(reply({ verdicts: [understood('iced'), understood('receipt')], done: true }))
+    })
+    expect(onReward).not.toHaveBeenCalled()
+    expect(onLeave).toHaveBeenCalledTimes(1)
   })
 })

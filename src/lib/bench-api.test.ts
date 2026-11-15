@@ -6,7 +6,7 @@ import type { benchChatFn } from './bench.functions'
 const req: BenchRequest = {
   benchId: 'bac-tu',
   level: 2,
-  targets: [{ word: 'bench', meaning_vi: 'ghế dài', paid: [] }],
+  targets: [{ word: 'bench', meaning_vi: 'ghế dài' }],
   history: [],
 }
 const reply: BenchReply = { text: 'Hello!', verdicts: [], done: false }

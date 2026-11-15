@@ -62,9 +62,19 @@ describe('storage', () => {
 
   it('round-trips a bench day and lastTested', () => {
     const store = memoryStorage()
-    const g = { ...game, benchDay: { date: '2026-11-14', chats: 2, paid: { receipt: ['use' as const] } }, learnedWords: [{ ...game.learnedWords[0], lastTested: '2026-11-14' }] }
+    const g = { ...game, benchDay: { date: '2026-11-14', chats: 2, rewarded: 1 }, learnedWords: [{ ...game.learnedWords[0], lastTested: '2026-11-14' }] }
     saveGame(g, () => store)
     expect(loadGame(() => store)).toEqual(g)
+  })
+
+  it('loads a bench day from the per-word payout version with its chats counted as rewarded', () => {
+    const loaded = loadGame(saved({ ...game, benchDay: { date: '2026-11-14', chats: 2, paid: { receipt: ['use'] } } }))
+    expect(loaded?.benchDay).toEqual({ date: '2026-11-14', chats: 2, rewarded: 2 })
+  })
+
+  it('never loads more rewards than chats', () => {
+    const loaded = loadGame(saved({ ...game, benchDay: { date: '2026-11-14', chats: 1, rewarded: 5 } }))
+    expect(loaded?.benchDay).toEqual({ date: '2026-11-14', chats: 1, rewarded: 1 })
   })
 
   it('loads a save without a bench day as null', () => {

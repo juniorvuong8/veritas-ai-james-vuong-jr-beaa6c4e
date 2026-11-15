@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { BENCH_ART } from '@/game/art'
-import { type BenchPayout, type BenchStatus, wordKey } from '@/game/state'
+import { BENCH_REWARD, type BenchStatus, wordKey } from '@/game/state'
 import { requestBenchReply, type BenchChatResult } from '@/lib/bench-api'
 import { Bi, useBiText, useDebug } from '@/lib/debug'
 import { ERROR_MESSAGES_EN } from '@/lib/error-messages-en'
@@ -8,22 +8,21 @@ import {
   BENCH_PERSONAS,
   MAX_LEARNER_MESSAGES,
   MAX_MESSAGE_CHARS,
-  type BenchCheck,
   type BenchId,
   type BenchRequest,
   type BenchTarget,
   type BenchTurn,
-  type BenchVerdict,
 } from '@/shared/bench'
 import type { Level } from '@/shared/types'
 import { SpeechBubble } from './SpeechBubble'
 import { Awning, GhostButton, PrimaryButton } from './ui'
 
-type Line = BenchTurn & { en?: string; coins?: number }
-type Seen = 'used' | 'understood'
+type Line = BenchTurn & { en?: string }
 
 const LEARNER_EMOJI = '🧑'
 const BENCH_COLOR = '#7BAE7F'
+/** How long the goodbye and the result stay up before the player is sent back to the city. */
+export const AUTO_LEAVE_MS = 4000
 
 export function BenchChat(props: {
   benchId: BenchId
@@ -32,8 +31,8 @@ export function BenchChat(props: {
   targets: BenchTarget[]
   /** Called once, just before the first AI call. */
   onStart: () => void
-  /** Called with the verdicts of a successful reply; returns what actually paid. */
-  onVerdicts: (verdicts: BenchVerdict[]) => BenchPayout[]
+  /** Called once, when the chat ends with every word understood. */
+  onReward: () => void
   onLeave: () => void
   requestReply?: (req: BenchRequest) => Promise<BenchChatResult>
 }) {
@@ -45,13 +44,14 @@ export function BenchChat(props: {
   const [draft, setDraft] = useState('')
   const [pending, setPending] = useState(false)
   const [error, setError] = useState<{ code: Extract<BenchChatResult, { ok: false }>['code']; message_vi: string; history: BenchTurn[] } | null>(null)
-  const [finished, setFinished] = useState(false)
-  const [seen, setSeen] = useState<Record<string, Seen>>({})
-  const [earned, setEarned] = useState(0)
+  /** Set when the chat has ended: whether every word was understood. */
+  const [result, setResult] = useState<{ allUnderstood: boolean } | null>(null)
+  /** wordKey → understood at least once in this chat. */
+  const understood = useRef<Record<string, boolean>>({})
 
   const alive = useRef(true)
   const started = useRef(false)
-  const paid = useRef<Record<string, BenchCheck[]>>(Object.fromEntries(props.targets.map((t) => [t.word, [...t.paid]])))
+  const rewarded = useRef(false)
   const send = props.requestReply ?? requestBenchReply
   const bottom = useRef<HTMLDivElement>(null)
 
@@ -64,49 +64,50 @@ export function BenchChat(props: {
 
   useEffect(() => {
     bottom.current?.scrollIntoView?.({ block: 'end' })
-  }, [lines, pending, error, finished])
+  }, [lines, pending, error, result])
+
+  function leave() {
+    alive.current = false
+    props.onLeave()
+  }
+
+  // After the goodbye, show the result for a moment, then go back to the city.
+  const leaveRef = useRef(leave)
+  leaveRef.current = leave
+  useEffect(() => {
+    if (!result) return
+    const t = setTimeout(() => leaveRef.current(), AUTO_LEAVE_MS)
+    return () => clearTimeout(t)
+  }, [result])
 
   async function ask(history: BenchTurn[]) {
     setError(null)
     setPending(true)
-    const result = await send({
+    const res = await send({
       benchId: props.benchId,
       level: props.level,
-      targets: props.targets.map((t) => ({ ...t, paid: [...(paid.current[t.word] ?? [])] })),
+      targets: props.targets,
       history,
       ...(debug ? { debug } : {}),
     })
     if (!alive.current) return
     setPending(false)
-    if (!result.ok) {
-      setError({ code: result.code, message_vi: result.message_vi, history })
+    if (!res.ok) {
+      setError({ code: res.code, message_vi: res.message_vi, history })
       return
     }
-    const { reply } = result
-    let payouts: BenchPayout[] = []
-    if (reply.verdicts.length > 0) {
-      payouts = props.onVerdicts(reply.verdicts)
-      for (const p of payouts) paid.current[p.word] = [...(paid.current[p.word] ?? []), p.check]
-      setSeen((prev) => {
-        const next = { ...prev }
-        for (const v of reply.verdicts) {
-          if (!v.passed) continue
-          const k = wordKey(v.word)
-          if (v.check === 'use') next[k] = 'used'
-          else if (next[k] !== 'used') next[k] = 'understood'
-        }
-        return next
-      })
-    }
-    const coins = payouts.reduce((sum, p) => sum + p.coins, 0)
-    setEarned((n) => n + coins)
-    setLines((prev) => {
-      const next = [...prev]
-      if (coins > 0 && next.length > 0) next[next.length - 1] = { ...next[next.length - 1], coins }
-      return [...next, { from: 'person', text: reply.text, en: reply.text_en }]
-    })
+    const { reply } = res
+    for (const v of reply.verdicts) if (v.understood) understood.current[wordKey(v.word)] = true
+    setLines((prev) => [...prev, { from: 'person', text: reply.text, en: reply.text_en }])
     const learnerCount = history.filter((t) => t.from === 'learner').length
-    if (reply.done || learnerCount >= MAX_LEARNER_MESSAGES) setFinished(true)
+    if (reply.done || learnerCount >= MAX_LEARNER_MESSAGES) {
+      const allUnderstood = props.targets.every((t) => understood.current[wordKey(t.word)])
+      if (allUnderstood && !rewarded.current) {
+        rewarded.current = true
+        props.onReward()
+      }
+      setResult({ allUnderstood })
+    }
   }
 
   useEffect(() => {
@@ -121,19 +122,12 @@ export function BenchChat(props: {
 
   function submit() {
     const text = draft.trim()
-    if (!text || pending || finished || error) return
+    if (!text || pending || result || error) return
     const next = [...lines, { from: 'learner' as const, text }]
     setLines(next)
     setDraft('')
     void ask(toTurns(next))
   }
-
-  function leave() {
-    alive.current = false
-    props.onLeave()
-  }
-
-  const statusOf = (word: string) => seen[wordKey(word)]
 
   return (
     <div className="space-y-5">
@@ -186,16 +180,9 @@ export function BenchChat(props: {
                   </p>
                 </SpeechBubble>
               ) : (
-                <div key={i}>
-                  <SpeechBubble speaker="" side="player" avatar={LEARNER_EMOJI}>
-                    <p>{l.text}</p>
-                  </SpeechBubble>
-                  {l.coins ? (
-                    <p className="mt-1 text-right">
-                      <span className="inline-block animate-bounce rounded-full bg-[#FFD45C] px-2 text-sm font-bold text-[#2B1D16]">{`+${l.coins} 🪙`}</span>
-                    </p>
-                  ) : null}
-                </div>
+                <SpeechBubble key={i} speaker="" side="player" avatar={LEARNER_EMOJI}>
+                  <p>{l.text}</p>
+                </SpeechBubble>
               ),
             )}
             {pending && (
@@ -229,30 +216,29 @@ export function BenchChat(props: {
             <div ref={bottom} />
           </div>
 
-          {finished ? (
-            <div className="space-y-4 rounded-3xl bg-white p-6 text-center ring-1 ring-[#2B1D16]/10">
-              <p className="text-xl font-extrabold tracking-tight">
-                <Bi vi="Cảm ơn cháu đã trò chuyện!" en="Thanks for chatting!" />
-              </p>
-              <p className="inline-block rounded-full bg-[#FFF3D6] px-4 py-1 text-lg font-bold">{`+${earned} 🪙`}</p>
+          {result ? (
+            <div role="status" className="space-y-4 rounded-3xl bg-white p-6 text-center ring-1 ring-[#2B1D16]/10">
+              {result.allUnderstood ? (
+                <>
+                  <p className="text-xl font-extrabold tracking-tight">
+                    <Bi vi="Cháu hiểu hết các từ rồi!" en="You understood every word!" />
+                  </p>
+                  <p className="inline-block animate-bounce rounded-full bg-[#FFD45C] px-4 py-1 text-lg font-bold">{`+${BENCH_REWARD} 🪙`}</p>
+                </>
+              ) : (
+                <p className="text-xl font-extrabold tracking-tight">
+                  <Bi vi="Lần sau cháu sẽ hiểu hết thôi!" en="You'll get them all next time!" />
+                </p>
+              )}
               <ul className="space-y-1 text-left">
-                {props.targets.map((t) => {
-                  const s = statusOf(t.word)
-                  return (
-                    <li key={t.word} className="flex items-center justify-between gap-2 rounded-xl bg-[#FFF8EE] px-3 py-2">
-                      <span className="font-bold">{t.word}</span>
-                      <span className="text-sm font-semibold">
-                        {s === 'used' ? (
-                          <Bi vi="đã dùng" en="used" />
-                        ) : s === 'understood' ? (
-                          <Bi vi="đã hiểu" en="understood" />
-                        ) : (
-                          <Bi vi="chưa" en="not yet" />
-                        )}
-                      </span>
-                    </li>
-                  )
-                })}
+                {props.targets.map((t) => (
+                  <li key={t.word} className="flex items-center justify-between gap-2 rounded-xl bg-[#FFF8EE] px-3 py-2">
+                    <span className="font-bold">{t.word}</span>
+                    <span className="text-sm font-semibold">
+                      {understood.current[wordKey(t.word)] ? <Bi vi="✓ đã hiểu" en="✓ understood" /> : <Bi vi="chưa" en="not yet" />}
+                    </span>
+                  </li>
+                ))}
               </ul>
               <PrimaryButton size="lg" className="w-full" onClick={leave}>
                 <Bi vi="Về thành phố" en="Back to the city" />
