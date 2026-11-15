@@ -83,6 +83,17 @@ describe('BenchChat', () => {
     ])
   })
 
+  it('highlights the notebook words being tested, in both bubbles, like a shop conversation', async () => {
+    setup({ replies: [reply({ text: 'Cháu uống ICED coffee không?' }), reply({ text: 'Nhớ lấy receipt nhé!' })] })
+    const user = userEvent.setup()
+    await screen.findByText(/coffee không/)
+    await send(user, 'Dạ, iced ạ')
+    await screen.findByText(/Nhớ lấy/)
+    const marks = [...document.querySelectorAll('mark')].map((m) => m.textContent)
+    expect(marks).toEqual(['ICED', 'iced', 'receipt'])
+    expect(screen.queryByText('coffee', { selector: 'mark' })).not.toBeInTheDocument()
+  })
+
   it('disables Send when blank and limits length', async () => {
     setup()
     const user = userEvent.setup()

@@ -14,6 +14,7 @@ import {
   type BenchTurn,
 } from '@/shared/bench'
 import type { Level } from '@/shared/types'
+import { HighlightedText } from './Conversation'
 import { SpeechBubble } from './SpeechBubble'
 import { Awning, GhostButton, PrimaryButton } from './ui'
 
@@ -68,6 +69,8 @@ export function BenchChat(props: {
   requestReply?: (req: BenchRequest) => Promise<BenchChatResult>
 }) {
   const persona = BENCH_PERSONAS[props.benchId]
+  /** Highlighted wherever they appear in the chat, like the chosen words in a shop conversation. */
+  const targetWords = props.targets.map((t) => t.word)
   const art = BENCH_ART[props.benchId]
   const debug = useDebug()
   const biText = useBiText()
@@ -215,12 +218,14 @@ export function BenchChat(props: {
               l.from === 'person' ? (
                 <SpeechBubble key={i} speaker="" side="host" avatar={art.person}>
                   <p>
-                    <Bi vi={l.text} en={l.en} />
+                    <Bi vi={<HighlightedText text={l.text} words={targetWords} />} en={l.en} />
                   </p>
                 </SpeechBubble>
               ) : (
                 <SpeechBubble key={i} speaker="" side="player" avatar={LEARNER_EMOJI}>
-                  <p>{l.text}</p>
+                  <p>
+                    <HighlightedText text={l.text} words={targetWords} />
+                  </p>
                 </SpeechBubble>
               ),
             )}
