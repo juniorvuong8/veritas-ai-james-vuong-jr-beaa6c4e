@@ -97,13 +97,16 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
         <div className="sun pointer-events-none absolute top-24 right-[8%] size-48 rounded-full bg-[#FFC978] opacity-60 blur-2xl sm:size-72" />
 
         <nav className="relative z-10 mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
-          <div className="flex items-center gap-2 text-base font-extrabold sm:text-lg">
-            <span className="grid size-9 place-items-center rounded-xl bg-[#2B1D16] text-lg" aria-hidden>
+          <div className="flex items-center gap-3 text-2xl font-extrabold tracking-tight sm:gap-4 sm:text-4xl">
+            <span
+              className="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#2B1D16] text-2xl sm:size-16 sm:text-4xl"
+              aria-hidden
+            >
               👋
             </span>
-            <span className="leading-tight">
+            <span className="leading-none">
               Xin Chào City
-              <span className="block text-xs font-semibold text-[#2B1D16]/60 sm:text-sm">
+              <span className="mt-1 block text-sm font-semibold tracking-normal text-[#2B1D16]/60 sm:text-base">
                 Học từ qua hội thoại
                 <Gloss text="Learn words through conversation" />
               </span>
