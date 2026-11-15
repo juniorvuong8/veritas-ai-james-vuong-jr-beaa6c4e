@@ -247,7 +247,9 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
         </div>
       </section>
 
-      <footer className="bg-[#1F2A47] px-4 pb-8 text-center text-sm text-white/40">Veritas AI Hackathon</footer>
+      <footer className="bg-[#1F2A47] px-4 pb-8 text-center text-sm text-white/40">
+        Veritas AI Hackathon · v{__APP_VERSION__} · {__BUILD_DATE__}
+      </footer>
     </div>
   )
 }
