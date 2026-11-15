@@ -102,7 +102,7 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
               className="grid size-12 shrink-0 place-items-center rounded-2xl bg-[#2B1D16] text-2xl sm:size-16 sm:text-4xl"
               aria-hidden
             >
-              👋
+              🌱
             </span>
             <span className="leading-none">
               Game to Thrive
