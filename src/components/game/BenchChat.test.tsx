@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import type { BenchRequest, BenchReply, BenchTarget } from '@/shared/bench'
 import type { BenchChatResult } from '@/lib/bench-api'
 import { DebugProvider } from '@/lib/debug'
-import { AUTO_LEAVE_MS, BenchChat } from './BenchChat'
+import { BenchChat } from './BenchChat'
 
 const targets: BenchTarget[] = [
   { word: 'iced', meaning_vi: 'có đá' },
@@ -199,27 +199,19 @@ describe('BenchChat', () => {
     expect(screen.getAllByText('chưa')).toHaveLength(2)
   })
 
-  it('goes back to the city by itself after the goodbye, or at once with the button', async () => {
+  it('keeps the results up until the player clicks to go back to the city', async () => {
     vi.useFakeTimers({ shouldAdvanceTime: true })
     const { onLeave } = setup({ replies: [reply(), reply({ text: 'Tạm biệt!', done: true })] })
     const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime })
     await screen.findByText('Chào cháu!')
     await send(user, 'chào bác')
     await screen.findByText('Tạm biệt!')
-    expect(onLeave).not.toHaveBeenCalled()
     act(() => {
-      vi.advanceTimersByTime(AUTO_LEAVE_MS)
+      vi.advanceTimersByTime(60_000)
     })
-    expect(onLeave).toHaveBeenCalledTimes(1)
-  })
-
-  it('leaves once when the button is pressed before the timer', async () => {
-    vi.useFakeTimers({ shouldAdvanceTime: true })
-    const { onLeave } = setup({ replies: [reply(), reply({ text: 'Tạm biệt!', done: true })] })
-    const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime })
-    await screen.findByText('Chào cháu!')
-    await send(user, 'chào bác')
-    await user.click(await screen.findByRole('button', { name: 'Về thành phố' }))
+    expect(onLeave).not.toHaveBeenCalled()
+    expect(screen.getByText(/Lần sau/)).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Về thành phố' }))
     expect(onLeave).toHaveBeenCalledTimes(1)
   })
 

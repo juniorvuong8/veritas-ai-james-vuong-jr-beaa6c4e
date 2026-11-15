@@ -21,8 +21,6 @@ type Line = BenchTurn & { en?: string }
 
 const LEARNER_EMOJI = '🧑'
 const BENCH_COLOR = '#7BAE7F'
-/** How long the goodbye and the result stay up before the player is sent back to the city. */
-export const AUTO_LEAVE_MS = 4000
 
 export function BenchChat(props: {
   benchId: BenchId
@@ -70,15 +68,6 @@ export function BenchChat(props: {
     alive.current = false
     props.onLeave()
   }
-
-  // After the goodbye, show the result for a moment, then go back to the city.
-  const leaveRef = useRef(leave)
-  leaveRef.current = leave
-  useEffect(() => {
-    if (!result) return
-    const t = setTimeout(() => leaveRef.current(), AUTO_LEAVE_MS)
-    return () => clearTimeout(t)
-  }, [result])
 
   async function ask(history: BenchTurn[]) {
     setError(null)
