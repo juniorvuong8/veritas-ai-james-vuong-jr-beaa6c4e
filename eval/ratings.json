@@ -286,5 +286,77 @@
     "q1": true,
     "h": "b388833e",
     "q2": false
+  },
+  "baseline:x-clinic-pain-L1": {
+    "note": "Doctor just ignore what the patient said and ask him to rest.",
+    "q1": true,
+    "h": "e743e6d8",
+    "q2": false
+  },
+  "baseline:x-taxi-L1": {
+    "note": "What each person said is not related to what the other person said. ",
+    "q1": true,
+    "h": "b55b762d",
+    "q2": false
+  },
+  "baseline:x-taxi-tip-L2": {
+    "note": "What each person said is not related to what the other person said. ",
+    "q1": true,
+    "h": "b119c35b",
+    "q2": false
+  },
+  "baseline:x-clinic-L3": {
+    "note": "Doctor asking multiple questions, and then made a couple of statement, and then ending. No churn from the patient. ",
+    "q1": true,
+    "h": "7c426da8",
+    "q2": false
+  },
+  "baseline:x-supermarket-L3": {
+    "note": "What each person said is not related to what the other person said. ",
+    "q1": true,
+    "h": "c6c2b216",
+    "q2": false
+  },
+  "baseline:x-cafe-L2": {
+    "note": "employee saying two unrelated thing with no response from customer.",
+    "h": "bcc0cd24",
+    "q1": true,
+    "q2": false
+  },
+  "llm:x-supermarket-L3": {
+    "note": "",
+    "q1": true,
+    "h": "80c58f6b",
+    "q2": true
+  },
+  "llm:x-taxi-L1": {
+    "note": "",
+    "q1": true,
+    "h": "10ff246f",
+    "q2": true
+  },
+  "llm:x-clinic-pain-L1": {
+    "note": "",
+    "q1": true,
+    "h": "5f9de796",
+    "q2": true
+  },
+  "llm:x-taxi-tip-L2": {
+    "note": "",
+    "q1": true,
+    "h": "773a374f",
+    "q2": true
+  },
+  "llm:x-clinic-L3": {
+    "note": "Doctor should respond to what the patient said about having a sore throat and fever before jumping straight to a prescription and then asking if she's allergic to any medicine. ",
+    "q1": true,
+    "h": "4b9b9c90",
+    "q2": false
+  },
+  "llm:x-cafe-L2": {
+    "note": "",
+    "q1": true,
+    "h": "f3c7e7bb",
+    "q2": true
   }
 }

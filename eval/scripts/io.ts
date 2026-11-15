@@ -17,7 +17,7 @@ export function writeJsonAtomic(path: string, value: unknown): void {
   renameSync(tmp, path)
 }
 
-/** Where a case set's files live: the main 24 cases (default), or the separate 6 with `--set extra`. */
+/** Where a case set's files live: the main set (default, all 30 cases), or the 6 extra ones alone with `--set extra`. */
 export function evalSetDir(argv: string[] = process.argv): { name: 'main' | 'extra'; dir: string } {
   const i = argv.indexOf('--set')
   const name = i !== -1 ? argv[i + 1] : 'main'

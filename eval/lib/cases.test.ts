@@ -9,9 +9,10 @@ const cases = casesJson as EvalCase[]
 const hasDiacritic = (w: string) => /[^\u0000-\u007f]/.test(w.normalize('NFC'))
 
 describe('eval cases', () => {
-  it('has 24 cases with unique ids', () => {
-    expect(cases).toHaveLength(24)
-    expect(new Set(cases.map((c) => c.id)).size).toBe(24)
+  it('has 30 cases with unique ids: the 24 planned ones plus the 6 extra (set X)', () => {
+    expect(cases).toHaveLength(30)
+    expect(new Set(cases.map((c) => c.id)).size).toBe(30)
+    expect(cases.filter((c) => c.set === 'X')).toHaveLength(6)
   })
 
   it('reuses each place and word set at levels 1, 2 and 3', () => {
@@ -33,6 +34,7 @@ describe('eval cases', () => {
     for (const c of cases) {
       const suggested = getScenario(c.scenarioId)!.suggestedWords
       const inList = c.words.filter((w) => suggested.includes(w))
+      if (c.set === 'X') continue
       if (c.set === 'A') {
         expect(c.words, c.id).toHaveLength(3)
         expect(inList, c.id).toHaveLength(3)
@@ -49,14 +51,13 @@ describe('eval cases', () => {
 describe('extra eval cases', () => {
   const extra = extraJson as EvalCase[]
 
-  it('has 6 valid cases in set X, with ids that differ from the main set', () => {
+  it('has 6 valid cases in set X, matching the set X cases in the main file', () => {
     expect(extra).toHaveLength(6)
-    expect(new Set(extra.map((c) => c.id)).size).toBe(6)
     for (const c of extra) {
       expect(c.set, c.id).toBe('X')
       expect(checkLessonRequest(c).ok, c.id).toBe(true)
-      expect(cases.some((m) => m.id === c.id), c.id).toBe(false)
     }
+    expect(cases.filter((c) => c.set === 'X')).toEqual(extra)
   })
 
   it('uses suggested words for every place, and marks one or two cases as expected LLM failures', () => {

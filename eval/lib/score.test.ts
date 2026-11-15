@@ -53,7 +53,8 @@ describe('score', () => {
   it('renders the filled-in sentence', () => {
     const md = renderResults(score(cases, results, ratings))
     expect(md).toContain('On the same 2 test cases, the baseline achieved 50% and the LLM achieved 50%.')
-    expect(md).toContain('The LLM still failed when ___')
+    expect(md).toContain('The LLM failed 1 case(s); the rater\'s notes on each are below.')
+    expect(md).not.toContain('___')
   })
 
   it('does not leave a "failed when ___" blank when the LLM passed every case', () => {
