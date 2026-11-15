@@ -3,6 +3,7 @@ import { MAX_TARGETS } from '@/shared/bench'
 import { normalizeWord, SCENARIOS } from '@/shared/scenarios'
 import { isValidWord } from '@/shared/validate-request'
 import type { Level, VocabItem } from '@/shared/types'
+import { getItem, type Outfit } from './shop'
 
 export const COINS_PER_CORRECT = 10
 export const PLACE_IDS: string[] = SCENARIOS.map((s) => s.id)
@@ -59,6 +60,10 @@ export interface GameState {
   learnedWords: LearnedWord[]
   /** Today's bench chats and payouts; kept across rounds and levels. */
   benchDay: BenchDay | null
+  /** Shop items bought with coins (ids from SHOP_ITEMS). Kept across rounds and levels. */
+  owned: string[]
+  /** What the player is wearing. Kept across rounds and levels. */
+  outfit: Outfit
 }
 
 export type GameAction =
@@ -72,6 +77,8 @@ export type GameAction =
   | { type: 'levelUp' }
   | { type: 'startBenchChat'; date: string; words: string[] }
   | { type: 'awardBench'; date: string; verdicts: BenchVerdict[] }
+  | { type: 'buyItem'; itemId: string }
+  | { type: 'toggleItem'; itemId: string }
 
 export function newGame(
   level: Level,
@@ -79,7 +86,27 @@ export function newGame(
   learnedWords: LearnedWord[] = [],
   benchDay: BenchDay | null = null,
 ): GameState {
-  return { level, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords, learnedWords, benchDay }
+  return {
+    level,
+    stamps: [],
+    coins: 0,
+    complete: false,
+    celebrationOpen: false,
+    lastWords,
+    learnedWords,
+    benchDay,
+    owned: [],
+    outfit: {},
+  }
+}
+
+/** A new round that keeps what lasts across rounds: words, the notebook, today's bench limits and the shop items. */
+function nextRound(state: GameState, level: Level): GameState {
+  return {
+    ...newGame(level, state.lastWords, state.learnedWords, state.benchDay),
+    owned: state.owned,
+    outfit: state.outfit,
+  }
 }
 
 /** The day's record for `date`: a fresh one when there is none or it is from another day. */
@@ -173,11 +200,9 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
     case 'dismissCelebration':
       return { ...state, celebrationOpen: false }
     case 'playAgain':
-      return newGame(state.level, state.lastWords, state.learnedWords, state.benchDay)
+      return nextRound(state, state.level)
     case 'levelUp':
-      return canLevelUp(state)
-        ? newGame((state.level + 1) as Level, state.lastWords, state.learnedWords, state.benchDay)
-        : state
+      return canLevelUp(state) ? nextRound(state, (state.level + 1) as Level) : state
     case 'startBenchChat': {
       const day = dayRecord(state, action.date)
       if (day.chats >= BENCH_CHATS_PER_DAY) return state
@@ -198,6 +223,24 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         coins: state.coins + payouts.reduce((n, p) => n + p.coins, 0),
         benchDay: { ...day, paid },
       }
+    }
+    case 'buyItem': {
+      // Buying puts the item on straight away.
+      const item = getItem(action.itemId)
+      if (!item || state.owned.includes(item.id) || state.coins < item.price) return state
+      return {
+        ...state,
+        coins: state.coins - item.price,
+        owned: [...state.owned, item.id],
+        outfit: { ...state.outfit, [item.slot]: item.id },
+      }
+    }
+    case 'toggleItem': {
+      // Put an owned item on, or take it off if it's already on.
+      const item = getItem(action.itemId)
+      if (!item || !state.owned.includes(item.id)) return state
+      const wearing = state.outfit[item.slot] === item.id
+      return { ...state, outfit: { ...state.outfit, [item.slot]: wearing ? undefined : item.id } }
     }
   }
 }

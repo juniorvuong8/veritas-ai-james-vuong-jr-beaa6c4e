@@ -34,6 +34,8 @@ export function PlaceScreen(props: {
   onCorrect: () => void
   onFinish: () => void
   onLeave: () => void
+  /** The player's face in the conversation (a bought look, or the default). */
+  playerAvatar?: string
 }) {
   const scenario = getScenario(props.placeId)!
   const art = PLACE_ART[props.placeId]
@@ -142,7 +144,7 @@ export function PlaceScreen(props: {
         <Conversation
           lesson={phase.lesson}
           hostAvatar={art.host}
-          playerAvatar={PLAYER_EMOJI}
+          playerAvatar={props.playerAvatar ?? PLAYER_EMOJI}
           onDone={() => setPhase({ ...phase, name: 'notes' })}
         />
       )}

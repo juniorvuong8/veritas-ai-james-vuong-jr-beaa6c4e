@@ -31,6 +31,19 @@ describe('storage', () => {
     expect(loadGame(() => store)).toEqual({ ...complete, celebrationOpen: false })
   })
 
+  it('loads shop items, dropping unknown ones and outfits for items not owned', () => {
+    const loaded = loadGame(
+      saved({ ...game, owned: ['cap', 'jetpack', 'dog'], outfit: { hat: 'cap', pet: 'cat', look: 'dog' } }),
+    )
+    expect(loaded?.owned).toEqual(['cap', 'dog'])
+    expect(loaded?.outfit).toEqual({ hat: 'cap' })
+  })
+
+  it('loads a save from before the shop with nothing bought', () => {
+    const { owned: _o, outfit: _f, ...old } = game
+    expect(loadGame(saved(old))).toMatchObject({ owned: [], outfit: {} })
+  })
+
   it('loads a save from before the notebook with no learned words', () => {
     const { learnedWords: _, ...old } = game
     expect(loadGame(saved(old))?.learnedWords).toEqual([])

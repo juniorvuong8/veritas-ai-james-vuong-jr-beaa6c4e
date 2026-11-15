@@ -9,6 +9,7 @@ describe('gameReducer', () => {
   it('starts empty at the chosen level', () => {
     expect(newGame(2)).toEqual({
       level: 2, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords: {}, learnedWords: [], benchDay: null,
+      owned: [], outfit: {},
     })
   })
 
@@ -115,5 +116,41 @@ describe('learned words', () => {
     const s = run(newGame(1), learn('cafe', ['menu', 'menu']), ...allFour)
     expect(run(s, { type: 'playAgain' }).learnedWords).toHaveLength(1)
     expect(run(s, { type: 'levelUp' }).learnedWords).toHaveLength(1)
+  })
+})
+
+describe('shop', () => {
+  const rich = (coins: number) => ({ ...newGame(1), coins })
+
+  it('buys an item, takes the coins and puts it on', () => {
+    const s = run(rich(50), { type: 'buyItem', itemId: 'cap' })
+    expect(s.coins).toBe(30)
+    expect(s.owned).toEqual(['cap'])
+    expect(s.outfit).toEqual({ hat: 'cap' })
+  })
+
+  it('refuses when there are not enough coins, the item is owned or unknown', () => {
+    expect(run(rich(10), { type: 'buyItem', itemId: 'cap' })).toEqual(rich(10))
+    const owned = run(rich(50), { type: 'buyItem', itemId: 'cap' })
+    expect(run(owned, { type: 'buyItem', itemId: 'cap' })).toBe(owned)
+    expect(run(rich(500), { type: 'buyItem', itemId: 'jetpack' })).toEqual(rich(500))
+  })
+
+  it('wears one item per slot and takes it off again', () => {
+    let s = run(rich(200), { type: 'buyItem', itemId: 'cap' }, { type: 'buyItem', itemId: 'tophat' }, { type: 'buyItem', itemId: 'beard' })
+    expect(s.outfit).toEqual({ hat: 'tophat', look: 'beard' })
+    s = run(s, { type: 'toggleItem', itemId: 'cap' })
+    expect(s.outfit.hat).toBe('cap')
+    s = run(s, { type: 'toggleItem', itemId: 'cap' })
+    expect(s.outfit.hat).toBeUndefined()
+    expect(run(s, { type: 'toggleItem', itemId: 'crown' })).toBe(s)
+  })
+
+  it('keeps items through play again and level up', () => {
+    const s = run(rich(100), { type: 'buyItem', itemId: 'dog' }, ...allFour)
+    for (const next of [run(s, { type: 'playAgain' }), run(s, { type: 'levelUp' })]) {
+      expect(next.owned).toEqual(['dog'])
+      expect(next.outfit).toEqual({ pet: 'dog' })
+    }
   })
 })
