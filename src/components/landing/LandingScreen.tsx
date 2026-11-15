@@ -105,7 +105,7 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
               👋
             </span>
             <span className="leading-none">
-              Xin Chào City
+              Game to Thrive
               <span className="mt-1 block text-sm font-semibold tracking-normal text-[#2B1D16]/60 sm:text-base">
                 Học từ qua hội thoại
                 <Gloss text="Learn words through conversation" />
