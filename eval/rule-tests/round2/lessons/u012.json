@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "u012",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "headache",
+   "fever",
+   "pharmacy",
+   "pain",
+   "cough"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello. What's wrong today?",
+    "translation_vi": "Xin chào. Hôm nay anh bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a headache. My head hurts a lot.",
+    "translation_vi": "Tôi bị đau đầu. Đầu tôi đau lắm."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Do you have a fever? Do you feel very hot?",
+    "translation_vi": "Anh có bị sốt không? Anh có thấy người rất nóng không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, I feel very hot. I also have a cough. I cough all night, and my throat hurts.",
+    "translation_vi": "Vâng, tôi thấy người rất nóng. Tôi cũng bị ho nữa. Tôi ho cả đêm và cổ họng bị đau."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Do you have pain anywhere else? Does your body hurt?",
+    "translation_vi": "Anh có bị đau ở chỗ nào khác không? Người anh có bị đau nhức không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, I have some pain in my back. It hurts when I move.",
+    "translation_vi": "Có, lưng tôi hơi đau. Khi cử động thì thấy đau."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "OK. Take this paper to the pharmacy next door. They sell medicine there.",
+    "translation_vi": "Được rồi. Anh mang tờ giấy này đến nhà thuốc bên cạnh nhé. Ở đó có bán thuốc."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you, doctor. I will go and buy the medicine now.",
+    "translation_vi": "Cảm ơn bác sĩ. Tôi sẽ đi mua thuốc ngay bây giờ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu",
+    "usage_vi": "Dùng khi đầu bạn bị đau. Thường nói \"I have a headache.\""
+   },
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi thân nhiệt cao, người nóng hơn bình thường. Thường nói \"I have a fever.\""
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "nhà thuốc, hiệu thuốc",
+    "usage_vi": "Là nơi bán thuốc. Sau khi khám, bác sĩ thường bảo bạn đến pharmacy để mua thuốc."
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói về cảm giác đau ở một bộ phận cơ thể. Thường nói \"I have pain in my...\" (ví dụ: in my back, in my leg)."
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng khi bạn bị ho, thường lúc cảm lạnh hoặc đau họng. Có thể nói \"I have a cough.\" hoặc \"I cough a lot.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ngồi học trước máy tính quá lâu và bây giờ đầu rất đau. Bạn nói với bác sĩ: \"I have a ___.\"",
+    "options": [
+     "cough",
+     "headache",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với tình trạng đầu bị đau."
+   },
+   {
+    "question_vi": "Con bạn bị nóng sốt, nhiệt kế đo được 39°C. Bạn nói với bác sĩ: \"My son has a ___.\"",
+    "options": [
+     "fever",
+     "pharmacy",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fever\" nghĩa là sốt, dùng khi thân nhiệt cao hơn bình thường."
+   },
+   {
+    "question_vi": "Bạn đang cầm đơn thuốc và cần tìm chỗ mua thuốc. Bạn hỏi một người qua đường: \"Where is the ___?\"",
+    "options": [
+     "pain",
+     "cough",
+     "pharmacy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bạn mua thuốc theo đơn."
+   },
+   {
+    "question_vi": "Bạn bị ngã xe đạp và đầu gối rất đau. Bạn nói với bác sĩ: \"I have ___ in my knee.\"",
+    "options": [
+     "fever",
+     "pain",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pain\" nghĩa là cơn đau, dùng để nói một bộ phận cơ thể bị đau như đầu gối."
+   },
+   {
+    "question_vi": "Bạn bị cảm lạnh và cứ ho liên tục suốt ngày. Bạn nói với bác sĩ: \"I have a ___.\"",
+    "options": [
+     "fever",
+     "pharmacy",
+     "cough"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cough\" nghĩa là ho, đúng với việc bạn ho liên tục."
+   }
+  ]
+ }
+}

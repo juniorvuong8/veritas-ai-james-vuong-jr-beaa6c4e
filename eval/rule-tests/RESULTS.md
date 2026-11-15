@@ -59,3 +59,40 @@ It comes from the prompt's context-clue rule; the clues are often spelled out in
 - Every case ran once, so a rule with no failure (rule 1) may still fail on other inputs.
 - t001 was generated three times because of a decoding bug in the driver; only the third lesson is saved.
 - `drive.mjs` imports Playwright from a temporary scratchpad folder; point that import at any Playwright install to rerun it.
+
+## Round 2: rules 3, 5, 7, 11 and 13
+
+50 more fixed cases (`round2/cases.json`, seeded, written before generating) aimed at these five rules:
+- Mostly 5 words, drawn from all 36 words per place, including the new word batches.
+- About half include a payment word (change, receipt, fare, tip…), since skipped steps and contradictions showed up around paying in round 1.
+- At most one typed word per case.
+
+Every lesson was checked against all five rules, and every break was recorded (round 1 stopped at the first).
+
+The live site went down partway through: from u038 it answered **404, "No Lovable project found at this address."** So only u001 to u037 were generated (`round2/lessons/`). The other 13 never reached the AI.
+
+| Rule | Breaks in 37 lessons | Cases |
+|---|---|---|
+| 3. Unrelated thoughts or a topic jump in one turn | 0 | none |
+| 5. A question or request left unresolved | 0 | (u037 borderline) |
+| 7. A later turn contradicts an earlier detail | 0 | (u027 borderline) |
+| 11. A target word forced in | 0 | (u027, u032 borderline) |
+| 13. Skips a step or ends before the goal | **4** | u001, u003, u012, u020 (u024, u036 borderline) |
+
+**Rule 13 breaks:**
+- **u001 (café, level 1).** The customer pays ("Em gửi tiền", "Here's the money") but the staff never says the price.
+- **u003 (taxi, level 1).** "Tới nơi rồi chị." / "Đây là tiền cước." ("We're here." / "Here's the fare.") The fare is never stated, and the passenger just hands over money.
+- **u012 (clinic, level 3).** The doctor asks about the symptoms, then: "OK. Take this paper to the pharmacy next door. They sell medicine there." There's no diagnosis, no prescription and no medicine named, so it's unclear what the paper is.
+- **u020 (clinic, level 2).** The nurse checks the appointment, the insurance, the medicine already taken and allergies, and then the conversation ends. The patient is never told what happens next or sent to the doctor.
+
+**Borderline, not counted:**
+- **u037:** ends on the customer asking for a receipt, with no reply.
+- **u027:** the driver says the ride was booked on an app, then still asks for the address.
+- **u027 ("I'm your driver") and u032 (a doctor handing over the paperwork "form"):** the words fit, but are a little staged.
+- **u024 and u036:** the doctor prescribes after only asking about the pain, with no examination.
+
+**What this round shows:** rule 13 is still the most common of these five. It nearly always comes from the money step being shortened or the visit being cut off. Rules 3, 5, 7 and 11 were rare even with 5 words and payment words, so round 1's cases (t006, t020, t074) look like occasional slips, not patterns.
+
+Two other problems not checked in this round showed up again:
+- A tip left with no thank-you: u023, u027, u035 (rule 6).
+- "pain" used as a verb: u028, "đầu em cũng hơi bị pain" (rule 10).

@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "u028",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "prescription",
+   "sore throat",
+   "pain",
+   "medicine"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, hôm nay chị thấy không khỏe ở đâu?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em bị sore throat ạ. Mỗi lần nuốt nước bọt là cổ họng em rát lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Ngoài cổ họng ra, chị còn thấy pain ở chỗ nào nữa không? Ví dụ như đầu có nhức không, tai có đau không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, đầu em cũng hơi bị pain, nhức suốt từ sáng đến giờ ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Tôi sẽ cho chị medicine. Chị uống ngày ba lần sau bữa ăn, vài ngày là đỡ đau.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, vậy em mua medicine đó ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Đây là prescription, tờ giấy tôi đã ký và ghi tên thuốc cho chị. Chị mang ra nhà thuốc đưa cho dược sĩ, họ sẽ bán đúng thuốc cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em cảm ơn bác sĩ nhiều ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Dùng để chỉ tờ giấy bác sĩ ghi tên thuốc cho bạn. Bạn mang prescription đến nhà thuốc để mua thuốc."
+   },
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng, viêm họng",
+    "usage_vi": "Dùng khi cổ họng bạn bị rát, đau, nhất là lúc nuốt. Bạn có thể nói với bác sĩ: \"I have a sore throat.\""
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói một chỗ nào đó trên cơ thể bị đau. Bác sĩ thường hỏi bạn bị pain ở đâu và đau nhiều hay ít."
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (để chữa bệnh)",
+    "usage_vi": "Dùng để chỉ thuốc uống hoặc thuốc dùng khi bị bệnh. Bác sĩ cho bạn medicine và dặn bạn uống mấy lần mỗi ngày."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đến nhà thuốc để mua thuốc mà bác sĩ đã kê. Dược sĩ hỏi xin tờ giấy bác sĩ ghi tên thuốc. Tờ giấy đó gọi là gì?",
+    "options": [
+     "medicine",
+     "prescription",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Prescription\" là đơn thuốc, tờ giấy bác sĩ ghi tên thuốc để bạn mang đến nhà thuốc."
+   },
+   {
+    "question_vi": "Sau khi ăn nhiều kem lạnh, sáng hôm sau cổ họng bạn rát và đau khi nuốt. Bạn bị gì?",
+    "options": [
+     "sore throat",
+     "pain",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Sore throat\" là đau họng, đúng với cảm giác rát và đau trong cổ họng khi nuốt."
+   },
+   {
+    "question_vi": "Bạn bị ngã xe đạp, đầu gối rất đau. Bạn muốn nói với bác sĩ là đầu gối mình bị đau. Bạn dùng từ nào?",
+    "options": [
+     "medicine",
+     "sore throat",
+     "pain"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng được cho bất kỳ chỗ nào trên cơ thể bị đau, như đầu gối."
+   },
+   {
+    "question_vi": "Bạn bị cảm và muốn hỏi bạn cùng phòng xem có thuốc để uống không. Bạn hỏi xin cái gì?",
+    "options": [
+     "prescription",
+     "medicine",
+     "pain"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medicine\" là thuốc chữa bệnh, thứ bạn uống khi bị cảm."
+   }
+  ]
+ }
+}

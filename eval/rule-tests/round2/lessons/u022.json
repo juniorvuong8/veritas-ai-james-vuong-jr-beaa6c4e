@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "u022",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "fresh",
+   "price",
+   "frozen"
+  ],
+  "custom": [
+   "bread"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Mua đồ ăn ở siêu thị",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Can I help you find something?",
+    "translation_vi": "Chào chị! Chị cần tìm gì không ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. Where is the bread? I want to make sandwiches.",
+    "translation_vi": "Dạ có. Bánh mì ở đâu vậy? Tôi muốn làm bánh mì kẹp."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "The bread is in aisle 3. We bake it every morning, so it is fresh and still warm.",
+    "translation_vi": "Bánh mì ở dãy số 3 ạ. Sáng nào chúng tôi cũng nướng nên bánh còn mới và vẫn còn ấm."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great! Do you have frozen fish? I want to keep it in my freezer for next week.",
+    "translation_vi": "Tuyệt quá! Ở đây có cá đông lạnh không? Tôi muốn để trong ngăn đá ăn dần tuần sau."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, the frozen fish is next to the ice cream, in the cold section.",
+    "translation_vi": "Dạ có, cá đông lạnh nằm cạnh kem, ở khu đồ lạnh ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thanks. How much is it? I can't see the price.",
+    "translation_vi": "Cảm ơn. Cá đó bao nhiêu tiền vậy? Tôi không thấy giá."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "The price is on the shelf, under the fish. It is five dollars a bag.",
+    "translation_vi": "Giá ghi trên kệ, ngay dưới chỗ để cá ạ. Năm đô một túi."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Five dollars is good. Thank you for your help!",
+    "translation_vi": "Năm đô là được. Cảm ơn anh đã giúp nhé!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói đồ ăn mới làm, mới hái hoặc mới nướng, chưa để lâu. Ví dụ: fresh bread, fresh fruit."
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng bao nhiêu tiền. Ví dụ: \"What is the price of this?\""
+   },
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng cho đồ ăn được làm đông đá và để trong tủ đông, như frozen fish, frozen pizza. Ở siêu thị thường có khu riêng cho đồ frozen."
+   },
+   {
+    "input": "bread",
+    "word": "bread",
+    "meaning_vi": "bánh mì",
+    "usage_vi": "Dùng để chỉ bánh mì nói chung, thường ăn sáng hoặc làm bánh mì kẹp. Khi hỏi mua, bạn có thể nói \"Where is the bread?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn mua rau mới hái hôm nay, không bị héo. Bạn hỏi nhân viên: \"Are these vegetables ___?\" Từ nào phù hợp?",
+    "options": [
+     "frozen",
+     "fresh",
+     "cheap"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, đúng với rau mới hái hôm nay."
+   },
+   {
+    "question_vi": "Bạn thấy một cái áo đẹp ở cửa hàng nhưng không biết bao nhiêu tiền. Bạn hỏi: \"What is the ___ of this shirt?\" Từ nào phù hợp?",
+    "options": [
+     "size",
+     "bread",
+     "price"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Price\" là giá tiền, dùng khi muốn hỏi món đồ bao nhiêu tiền."
+   },
+   {
+    "question_vi": "Bạn muốn mua pizza để trong tủ đông, cuối tuần mới nướng ăn. Bạn hỏi: \"Where is the ___ pizza?\" Từ nào phù hợp?",
+    "options": [
+     "frozen",
+     "fresh",
+     "price"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Frozen\" nghĩa là đông lạnh, chỉ đồ ăn để trong tủ đông."
+   },
+   {
+    "question_vi": "Ở tiệm bánh, bạn muốn mua thứ để làm bánh mì kẹp cho bữa sáng. Bạn hỏi: \"Can I have some ___, please?\" Từ nào phù hợp?",
+    "options": [
+     "price",
+     "bread",
+     "fish"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Bread\" là bánh mì, thứ bạn cần để làm bánh mì kẹp."
+   }
+  ]
+ }
+}

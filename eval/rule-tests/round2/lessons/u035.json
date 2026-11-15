@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "u035",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "how long",
+   "fare",
+   "tip"
+  ],
+  "custom": [
+   "change"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi đến khách sạn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Where are you going today?",
+    "translation_vi": "Chào chị! Hôm nay chị đi đâu ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "The Central Hotel, please. How long will it take to get there?",
+    "translation_vi": "Cho tôi đến khách sạn Central. Đến đó mất bao lâu vậy anh?"
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "About twenty minutes, if the traffic is good.",
+    "translation_vi": "Khoảng hai mươi phút, nếu đường không kẹt xe."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "OK. And how much is the fare?",
+    "translation_vi": "Được rồi. Vậy tiền đi xe là bao nhiêu?"
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "It's eighteen dollars to the hotel.",
+    "translation_vi": "Đi đến khách sạn là mười tám đô."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "We're here! Here's twenty-five dollars.",
+    "translation_vi": "Tới rồi! Đây là hai mươi lăm đô."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Thank you! Here's your change, seven dollars.",
+    "translation_vi": "Cảm ơn chị! Tôi gửi lại chị bảy đô tiền thừa."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Please keep two dollars as a tip. Thank you for the nice ride!",
+    "translation_vi": "Anh giữ lại hai đô coi như tiền cảm ơn nhé. Cảm ơn anh đã chở tôi chu đáo!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "bao lâu",
+    "usage_vi": "Dùng để hỏi một việc mất bao nhiêu thời gian, ví dụ hỏi tài xế: \"How long will it take?\" (Mất bao lâu?)."
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền đi xe, giá vé",
+    "usage_vi": "Dùng để nói số tiền phải trả khi đi taxi, xe buýt, tàu hay máy bay. Bạn có thể hỏi: \"How much is the fare?\""
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền tip",
+    "usage_vi": "Là số tiền thêm bạn tự nguyện đưa cho tài xế hoặc người phục vụ để cảm ơn. Ở nhiều nước nói tiếng Anh, đưa tip cho tài xế là việc rất phổ biến."
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thừa, tiền thối lại",
+    "usage_vi": "Là số tiền người khác trả lại khi bạn đưa nhiều hơn số tiền cần trả. Tài xế thường nói: \"Here's your change.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn sắp ra sân bay và muốn hỏi tài xế đi đến đó mất bao nhiêu thời gian. Bạn dùng từ nào để bắt đầu câu hỏi?",
+    "options": [
+     "fare",
+     "tip",
+     "how long"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"How long\" dùng để hỏi một việc mất bao lâu, ví dụ: \"How long will it take to the airport?\""
+   },
+   {
+    "question_vi": "Bạn muốn đi xe buýt và hỏi bác tài phải trả bao nhiêu tiền cho chuyến đi. Bạn hỏi: \"How much is the ___?\"",
+    "options": [
+     "fare",
+     "change",
+     "tip"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fare\" là tiền đi xe hay giá vé mà bạn phải trả cho chuyến đi."
+   },
+   {
+    "question_vi": "Ăn ở nhà hàng xong, bạn thấy phục vụ rất tốt nên để thêm vài đô trên bàn để cảm ơn. Số tiền đó gọi là gì?",
+    "options": [
+     "change",
+     "tip",
+     "fare"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip\" là tiền thêm bạn tự nguyện đưa để cảm ơn người phục vụ."
+   },
+   {
+    "question_vi": "Bạn mua một chai nước giá 3 đô và đưa cho người bán 5 đô. Người bán trả lại bạn 2 đô. Số tiền 2 đô đó gọi là gì?",
+    "options": [
+     "tip",
+     "fare",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thừa được trả lại khi bạn đưa nhiều hơn số tiền cần trả."
+   }
+  ]
+ }
+}

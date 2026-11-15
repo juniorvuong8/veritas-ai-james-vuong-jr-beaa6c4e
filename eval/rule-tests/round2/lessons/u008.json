@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "u008",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "sore throat",
+   "pharmacy",
+   "medicine"
+  ],
+  "custom": [
+   "tablet"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ vì đau họng",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, hôm nay chị thấy không khỏe ở đâu?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em có a sore throat từ hôm qua. Nuốt nước cũng thấy đau, nói nhiều thì khàn tiếng ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Để tôi xem họng chị... Hơi đỏ. Tôi sẽ kê cho chị some medicine để uống cho đỡ đau và mau khỏi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em uống this medicine thế nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Mỗi lần chị uống one tablet với một ly nước, nuốt nguyên viên, đừng nhai nhé. Ngày ba lần sau bữa ăn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, vậy em mua thuốc ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị mang toa này ra the pharmacy ở góc đường, người ta sẽ bán thuốc cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em cảm ơn bác sĩ nhiều.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng",
+    "usage_vi": "Dùng khi cổ họng bị đau, rát, nhất là khi nuốt hoặc nói. Thường nói: \"I have a sore throat.\""
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "nhà thuốc, hiệu thuốc",
+    "usage_vi": "Dùng để chỉ nơi bán thuốc, nơi bạn mang toa của bác sĩ đến mua thuốc. Ví dụ: \"Where is the pharmacy?\""
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (chữa bệnh)",
+    "usage_vi": "Dùng để nói chung về thuốc uống hoặc thuốc chữa bệnh. Ví dụ: \"I need some medicine for my cough.\""
+   },
+   {
+    "input": "tablet",
+    "word": "tablet",
+    "meaning_vi": "viên thuốc (dạng nén)",
+    "usage_vi": "Dùng để chỉ một viên thuốc nhỏ, cứng, thường nuốt với nước. Hay dùng khi nói liều lượng: \"Take one tablet a day.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thức dậy thấy nuốt nước bọt rất đau. Bạn nói với bác sĩ: \"I have a ___.\" Chọn từ đúng.",
+    "options": [
+     "tablet",
+     "sore throat",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Sore throat\" nghĩa là đau họng, đúng với triệu chứng nuốt bị đau."
+   },
+   {
+    "question_vi": "Bạn đang cầm toa thuốc và muốn hỏi người đi đường chỗ mua thuốc: \"Where is the ___?\" Chọn từ đúng.",
+    "options": [
+     "pharmacy",
+     "medicine",
+     "sore throat"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bạn đến để mua thuốc theo toa."
+   },
+   {
+    "question_vi": "Con bạn bị sốt, bạn hỏi người bán ở nhà thuốc: \"Do you have any ___ for a fever?\" Chọn từ đúng.",
+    "options": [
+     "receipt",
+     "medicine",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medicine\" là thuốc nói chung, dùng khi bạn hỏi mua thuốc để chữa bệnh."
+   },
+   {
+    "question_vi": "Dược sĩ đưa bạn hộp thuốc và dặn mỗi tối uống một viên: \"Take one ___ every night.\" Chọn từ đúng.",
+    "options": [
+     "medicine",
+     "pharmacy",
+     "tablet"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Tablet\" là một viên thuốc, nên \"one tablet\" nghĩa là một viên mỗi lần uống."
+   }
+  ]
+ }
+}

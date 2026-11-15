@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u015",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "stop here",
+   "traffic",
+   "how long",
+   "turn right"
+  ],
+  "custom": [
+   "change"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi về khách sạn",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị, chị đi khách sạn Grand đúng không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ đúng rồi. Đi đến đó how long vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Bình thường khoảng hai mươi phút, nhưng giờ này traffic đông lắm, xe kẹt cả đường, chắc mất ba mươi phút chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ không sao. Tới ngã tư phía trước anh turn right giúp em, khách sạn nằm ở con đường bên tay phải.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được. Khách sạn đây rồi, chị muốn xuống ở cửa chính hay chỗ nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Anh stop here được rồi, em xuống ngay chỗ này cho tiện. Em gửi anh hai mươi đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, cuốc xe mười lăm đô, em gửi lại chị năm đô change đây ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ cảm ơn anh, chúc anh một ngày tốt lành!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Dùng để bảo tài xế dừng xe ngay tại chỗ bạn muốn xuống. Có thể nói lịch sự hơn: \"Please stop here.\""
+   },
+   {
+    "input": "traffic",
+    "word": "traffic",
+    "meaning_vi": "giao thông, xe cộ trên đường",
+    "usage_vi": "Dùng khi nói về lượng xe trên đường, nhất là lúc đường đông hoặc kẹt xe. Ví dụ: \"The traffic is bad today.\""
+   },
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "bao lâu",
+    "usage_vi": "Dùng để hỏi một việc mất bao nhiêu thời gian, ví dụ hỏi tài xế đi đến nơi mất bao lâu: \"How long does it take?\""
+   },
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng để chỉ đường cho tài xế khi cần rẽ sang bên tay phải, thường ở ngã tư hoặc đầu hẻm."
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa trả lại",
+    "usage_vi": "Dùng khi bạn đưa nhiều tiền hơn số phải trả và người kia trả lại phần dư. Bạn có thể hỏi: \"Do you have change?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đi taxi và đã đến trước nhà mình. Bạn muốn tài xế dừng xe ngay chỗ đó. Bạn nói gì?",
+    "options": [
+     "turn right",
+     "stop here",
+     "how long"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" nghĩa là dừng ở đây, dùng khi bạn muốn xuống xe ngay tại chỗ đó."
+   },
+   {
+    "question_vi": "Đường phố đầy xe và xe chạy rất chậm. Từ nào dùng để nói về xe cộ trên đường?",
+    "options": [
+     "traffic",
+     "change",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Traffic\" là giao thông, xe cộ trên đường, thường dùng khi nói đường đông hay kẹt xe."
+   },
+   {
+    "question_vi": "Bạn muốn hỏi tài xế đi từ khách sạn đến sân bay mất bao nhiêu thời gian. Bạn bắt đầu câu hỏi bằng gì?",
+    "options": [
+     "turn right",
+     "change",
+     "how long"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"How long\" dùng để hỏi một việc mất bao lâu."
+   },
+   {
+    "question_vi": "Nhà hàng bạn muốn đến nằm ở con đường bên tay phải phía trước. Bạn nói gì với tài xế?",
+    "options": [
+     "stop here",
+     "turn right",
+     "traffic"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, dùng để chỉ đường khi cần rẽ sang bên tay phải."
+   },
+   {
+    "question_vi": "Bạn mua chai nước giá 3 đô, đưa 5 đô và chờ người bán trả lại 2 đô. Số tiền 2 đô đó gọi là gì?",
+    "options": [
+     "traffic",
+     "how long",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối, tức phần tiền dư được trả lại khi bạn đưa nhiều hơn số phải trả."
+   }
+  ]
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "case": {
+  "id": "u034",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "cart",
+   "checkout",
+   "on sale"
+  ],
+  "custom": [
+   "vegetables"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị mua đồ ăn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Do you need a cart? You can put all your food in it and push it around the store.",
+    "translation_vi": "Chào bạn! Bạn có cần xe đẩy không? Bạn có thể bỏ hết đồ ăn vào đó và đẩy đi khắp cửa hàng."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. I want to buy some vegetables, like carrots and tomatoes.",
+    "translation_vi": "Dạ có, cảm ơn. Tôi muốn mua ít rau củ, như cà rốt và cà chua."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "The vegetables are in aisle two. And the apples are on sale today. They are half price!",
+    "translation_vi": "Rau củ ở dãy số hai. Còn táo hôm nay đang giảm giá đó. Chỉ còn nửa giá thôi!"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great, cheap apples! I will buy some. Where do I pay?",
+    "translation_vi": "Tuyệt quá, táo rẻ! Tôi sẽ mua một ít. Tôi trả tiền ở đâu vậy?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "You can pay at the checkout, near the door. The cashier will help you.",
+    "translation_vi": "Bạn trả tiền ở quầy thanh toán, gần cửa ra vào. Nhân viên thu ngân sẽ giúp bạn."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you! I will take my cart to the checkout when I finish.",
+    "translation_vi": "Cảm ơn bạn! Mua xong tôi sẽ đẩy xe ra quầy thanh toán."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cart",
+    "word": "cart",
+    "meaning_vi": "xe đẩy hàng",
+    "usage_vi": "Dùng để chỉ chiếc xe đẩy trong siêu thị để chứa đồ khi đi mua sắm. Ví dụ: \"I need a cart.\""
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy thanh toán",
+    "usage_vi": "Dùng để chỉ nơi bạn trả tiền trước khi rời siêu thị hoặc cửa hàng. Ví dụ: \"Please pay at the checkout.\""
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn giá bình thường. Ví dụ: \"The apples are on sale.\""
+   },
+   {
+    "input": "vegetables",
+    "word": "vegetables",
+    "meaning_vi": "rau củ",
+    "usage_vi": "Dùng để chỉ các loại rau và củ như cà rốt, cà chua, bắp cải. Ví dụ: \"I want to buy some vegetables.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn định mua rất nhiều đồ ở siêu thị nên cầm tay không hết. Bạn nên lấy cái gì?",
+    "options": [
+     "on sale",
+     "cart",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cart\" là xe đẩy hàng, giúp bạn chở nhiều đồ khi đi siêu thị."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn trả tiền. Bạn nên đi đến đâu?",
+    "options": [
+     "checkout",
+     "vegetables",
+     "cart"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Checkout\" là quầy thanh toán, nơi bạn trả tiền cho đồ đã mua."
+   },
+   {
+    "question_vi": "Ở cửa hàng quần áo, chiếc áo khoác hôm nay được giảm 30%. Bạn nói với bạn mình: \"This jacket is ___.\"",
+    "options": [
+     "vegetables",
+     "expensive",
+     "on sale"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, đúng với chiếc áo đang được bán rẻ hơn."
+   },
+   {
+    "question_vi": "Mẹ dặn bạn mua cà rốt, bắp cải và dưa leo. Bạn nên tìm khu nào trong siêu thị?",
+    "options": [
+     "fruit",
+     "vegetables",
+     "checkout"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Cà rốt, bắp cải và dưa leo đều là \"vegetables\" (rau củ), không phải \"fruit\" (trái cây)."
+   }
+  ]
+ }
+}

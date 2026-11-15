@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "u017",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "change",
+   "refill",
+   "napkin",
+   "iced"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị muốn uống cà phê nóng hay an iced coffee cho mát ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Trời nóng quá, cho chị an iced latte, bỏ nhiều đá nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị là 4 đô rưỡi ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây, chị gửi 5 đô. À, ở đây có free refill không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có ạ, chị uống hết thì mang ly lại, em rót thêm ly nữa không tính tiền. Chị đưa 5 đô, đây là your change, 50 xu ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị xin a napkin nhé, chị muốn lau tay một chút.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, napkin để cạnh chỗ ống hút đó chị, chị cứ lấy thoải mái nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa trả lại",
+    "usage_vi": "Dùng khi bạn đưa nhiều tiền hơn giá món đồ và người bán trả lại phần dư. Nhân viên thường nói \"Here's your change\"."
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, lấy thêm ly nữa",
+    "usage_vi": "Dùng khi bạn uống hết và muốn được rót thêm đồ uống vào ly. Nhiều quán có \"free refill\", nghĩa là rót thêm miễn phí."
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy",
+    "usage_vi": "Dùng khi bạn cần giấy để lau tay, lau miệng hoặc lau bàn. Bạn có thể hỏi \"Can I have a napkin?\"."
+   },
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, uống lạnh",
+    "usage_vi": "Đặt trước tên đồ uống khi bạn muốn uống lạnh có đá, ví dụ \"iced coffee\", \"iced tea\". Từ trái nghĩa thường gặp là \"hot\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một cái bánh giá 3 đô và đưa 10 đô. Người bán trả lại bạn 7 đô. Số tiền 7 đô đó gọi là gì?",
+    "options": [
+     "napkin",
+     "change",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Change\" là tiền thối, phần tiền dư người bán trả lại cho bạn."
+   },
+   {
+    "question_vi": "Bạn đã uống hết ly trà và muốn nhân viên rót thêm cho bạn một ly nữa. Bạn hỏi: \"Can I get a ___?\"",
+    "options": [
+     "refill",
+     "change",
+     "iced"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Refill\" là rót thêm đồ uống khi ly của bạn đã hết."
+   },
+   {
+    "question_vi": "Bạn làm đổ một chút nước ra bàn và cần giấy để lau. Bạn hỏi: \"Can I have a ___?\"",
+    "options": [
+     "iced",
+     "change",
+     "napkin"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Napkin\" là khăn giấy dùng để lau tay, lau miệng hoặc lau bàn."
+   },
+   {
+    "question_vi": "Trời 35 độ, bạn muốn uống trà lạnh có đá. Bạn gọi: \"An ___ tea, please.\"",
+    "options": [
+     "refill",
+     "iced",
+     "hot"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" nghĩa là có đá, uống lạnh, còn \"hot\" là uống nóng."
+   }
+  ]
+ }
+}

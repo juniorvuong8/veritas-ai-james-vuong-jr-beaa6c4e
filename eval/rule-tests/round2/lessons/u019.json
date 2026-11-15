@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "u019",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "address",
+   "straight",
+   "seatbelt",
+   "turn left"
+  ],
+  "custom": [
+   "change"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi trong thành phố nói tiếng Anh",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị muốn đi đâu ạ? Chị cho anh the address, tức là số nhà và tên đường chị muốn đến nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, the address là 25 King Street ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Ok. Chị nhớ put on your seatbelt nhé, kéo dây qua vai rồi cài vào khóa bên cạnh cho an toàn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cài rồi. Anh cứ go straight con đường này, không rẽ đâu cả. Đến ngã tư thì turn left, không phải rẽ phải đâu anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Ok, go straight rồi turn left. … Đến nơi rồi chị ơi, 18 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em gửi anh tờ 20 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chị đưa 20, giá 18, vậy here's your change, 2 đô của chị đây ạ. Cảm ơn chị!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi nói nơi bạn muốn đến, gồm số nhà và tên đường. Ví dụ: \"The address is 25 King Street.\""
+   },
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng",
+    "usage_vi": "Thường dùng trong cụm \"go straight\" để bảo tài xế đi thẳng, không rẽ."
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nhắc ai đó cài dây an toàn trên xe. Ví dụ: \"Please put on your seatbelt.\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường để bảo tài xế rẽ sang bên trái, thường đi kèm nơi rẽ như \"turn left at the light\"."
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa",
+    "usage_vi": "Dùng khi bạn trả nhiều hơn giá và nhận lại phần tiền dư. Tài xế hay nói: \"Here's your change.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vừa lên một chiếc xe Grab. Tài xế muốn biết số nhà và tên đường nơi bạn cần đến. Tài xế đang hỏi về cái gì?",
+    "options": [
+     "change",
+     "address",
+     "seatbelt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Address\" là địa chỉ, gồm số nhà và tên đường nơi bạn muốn đến."
+   },
+   {
+    "question_vi": "Khách sạn của bạn nằm ở cuối con đường đang đi, xe không cần rẽ. Bạn nói với tài xế: \"Please go ___.\"",
+    "options": [
+     "turn left",
+     "seatbelt",
+     "straight"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Go straight\" nghĩa là đi thẳng, không rẽ sang đâu cả."
+   },
+   {
+    "question_vi": "Con bạn ngồi ghế sau taxi. Bạn muốn nhắc bé kéo dây qua vai và cài lại cho an toàn. Bạn nói: \"Put on your ___.\"",
+    "options": [
+     "seatbelt",
+     "address",
+     "change"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn mà mọi người nên cài khi ngồi trên xe."
+   },
+   {
+    "question_vi": "Nhà bạn ở phía bên trái của ngã tư phía trước. Bạn nói với tài xế: \"Please ___ at the corner.\"",
+    "options": [
+     "straight",
+     "turn left",
+     "turn right"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, đúng với hướng về nhà bạn."
+   },
+   {
+    "question_vi": "Chuyến xe giá 35 đô, bạn đưa tờ 50 đô và tài xế trả lại bạn 15 đô. Tài xế nói: \"Here's your ___.\"",
+    "options": [
+     "receipt",
+     "address",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối, tức phần tiền dư được trả lại khi bạn đưa nhiều hơn giá."
+   }
+  ]
+ }
+}

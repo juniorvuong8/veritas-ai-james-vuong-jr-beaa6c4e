@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "u020",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "sore throat",
+   "medicine",
+   "appointment",
+   "allergy",
+   "insurance"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Y tá",
+    "text": "Chào em, hôm nay em có an appointment không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, em có an appointment lúc 10 giờ, em đã gọi điện đặt lịch hôm qua ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Được rồi. Cho chị xem your insurance card nhé, công ty trên thẻ sẽ trả phần lớn tiền khám cho em.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, thẻ đây ạ. Em bị a sore throat từ hôm qua, nuốt nước cũng đau, nói chuyện cũng khó.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Hôm nay em đã uống any medicine chưa?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, sáng nay em đã uống some medicine for the pain, hai viên giảm đau ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Em có an allergy với thuốc nào không? Ví dụ uống vào là bị ngứa hay nổi mẩn?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, em có an allergy to penicillin, uống vào là nổi mẩn đỏ khắp người ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng",
+    "usage_vi": "Dùng khi cổ họng bị đau rát, nhất là lúc nuốt hoặc nói. Thường nói: \"I have a sore throat.\""
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (chữa bệnh)",
+    "usage_vi": "Dùng để chỉ thuốc uống hoặc thuốc chữa bệnh nói chung. Ví dụ: \"I take medicine for my headache.\""
+   },
+   {
+    "input": "appointment",
+    "word": "appointment",
+    "meaning_vi": "cuộc hẹn, lịch hẹn",
+    "usage_vi": "Dùng khi bạn đã đặt giờ gặp bác sĩ, nha sĩ hoặc cơ quan nào đó. Thường nói: \"I have an appointment at 10.\""
+   },
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể phản ứng xấu (ngứa, nổi mẩn, khó thở) với một loại thuốc, thức ăn hay chất nào đó. Thường nói: \"I have an allergy to...\""
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dùng khi nói về dịch vụ giúp trả tiền khám chữa bệnh. Ở phòng khám, nhân viên thường hỏi xem \"insurance card\" của bạn."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn cơm mà mỗi lần nuốt đều thấy cổ đau rát. Bạn nói với bác sĩ: \"I have a ___.\"",
+    "options": [
+     "sore throat",
+     "allergy",
+     "appointment"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Sore throat\" là đau họng, đúng với cảm giác cổ đau rát khi nuốt."
+   },
+   {
+    "question_vi": "Bạn bị sốt và đến hiệu thuốc muốn mua thứ gì đó để uống cho hạ sốt. Bạn nói: \"I need some ___ for my fever.\"",
+    "options": [
+     "insurance",
+     "appointment",
+     "medicine"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Medicine\" là thuốc, thứ bạn uống để chữa sốt."
+   },
+   {
+    "question_vi": "Bạn gọi điện đến phòng khám để đặt giờ gặp nha sĩ vào thứ Sáu. Bạn nói: \"I want to make an ___ for Friday.\"",
+    "options": [
+     "allergy",
+     "appointment",
+     "sore throat"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Appointment\" là lịch hẹn, dùng khi bạn đặt giờ gặp bác sĩ hay nha sĩ."
+   },
+   {
+    "question_vi": "Mỗi lần ăn tôm là bạn bị ngứa và nổi mẩn. Bạn nói với người phục vụ: \"I have an ___ to shrimp.\"",
+    "options": [
+     "medicine",
+     "allergy",
+     "insurance"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Allergy\" là dị ứng, đúng với việc bị ngứa và nổi mẩn khi ăn tôm."
+   },
+   {
+    "question_vi": "Nhân viên lễ tân bệnh viện muốn xem tấm thẻ giúp bạn được chi trả tiền viện phí. Họ hỏi: \"Can I see your ___ card?\"",
+    "options": [
+     "insurance",
+     "appointment",
+     "medicine"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Insurance card\" là thẻ bảo hiểm, giúp trả tiền khám chữa bệnh cho bạn."
+   }
+  ]
+ }
+}

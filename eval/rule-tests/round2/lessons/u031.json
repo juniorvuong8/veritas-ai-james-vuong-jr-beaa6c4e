@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "u031",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "address",
+   "turn right",
+   "how long",
+   "seatbelt"
+  ],
+  "custom": [
+   "change"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị muốn đi đâu ạ? Cho tôi xin the address, số nhà và tên đường nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, the address là số 25 đường Park. Anh ơi, how long to get there? Em có hẹn lúc 3 giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Không lâu đâu chị, about 15 minutes thôi. Chị nhớ put on your seatbelt nhé, kéo cái dây cạnh ghế qua người rồi cài lại cho an toàn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cài seatbelt rồi. Đến ngã tư có tiệm cà phê, anh please turn right, đừng rẽ trái nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "OK, turn right here. Đến nơi rồi chị, cuốc xe hết 18 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em gửi anh 20 đô. Anh keep the change nhé, 2 đô dư đó anh cứ giữ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Cảm ơn chị nhiều! Chúc chị một ngày vui vẻ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi nói số nhà, tên đường của nơi bạn muốn đến. Khi lên taxi, bạn có thể nói: \"The address is...\" rồi đọc địa chỉ."
+   },
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng để chỉ đường cho tài xế khi cần rẽ sang bên tay phải. Bạn có thể nói lịch sự: \"Please turn right here.\""
+   },
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "mất bao lâu",
+    "usage_vi": "Dùng để hỏi một việc mất bao nhiêu thời gian. Trên taxi, bạn hỏi: \"How long to get there?\" để biết bao lâu thì đến nơi."
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Là sợi dây ở ghế ngồi trên xe, bạn cài vào để giữ an toàn. Người ta thường nói: \"Please put on your seatbelt.\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối lại, tiền thừa",
+    "usage_vi": "Là số tiền còn dư khi bạn trả nhiều hơn giá. Nếu muốn cho tài xế giữ phần tiền dư, bạn nói: \"Keep the change.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đặt xe trên ứng dụng và ứng dụng hỏi số nhà, tên đường của nơi bạn muốn đến. Bạn cần nhập từ nào?",
+    "options": [
+     "address",
+     "change",
+     "seatbelt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Address\" là địa chỉ, gồm số nhà và tên đường của nơi bạn muốn đến."
+   },
+   {
+    "question_vi": "Đường vào khách sạn của bạn nằm ở bên tay phải phía trước. Bạn nói gì với tài xế?",
+    "options": [
+     "how long",
+     "seatbelt",
+     "turn right"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, dùng để chỉ đường cho tài xế."
+   },
+   {
+    "question_vi": "Bạn muốn biết đi taxi từ khách sạn ra sân bay mất mấy phút. Bạn bắt đầu câu hỏi bằng cụm nào?",
+    "options": [
+     "change",
+     "how long",
+     "address"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"How long\" dùng để hỏi một việc mất bao nhiêu thời gian."
+   },
+   {
+    "question_vi": "Con bạn vừa ngồi vào ghế sau xe. Bạn nhắc con cài thứ gì để an toàn?",
+    "options": [
+     "seatbelt",
+     "turn right",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn trên ghế xe, cần cài lại mỗi khi đi xe."
+   },
+   {
+    "question_vi": "Cuốc xe hết 42 đô, bạn đưa tài xế 50 đô và chờ lấy lại 8 đô. Số tiền 8 đô đó gọi là gì?",
+    "options": [
+     "address",
+     "how much",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối lại khi bạn trả nhiều hơn số tiền phải trả."
+   }
+  ]
+ }
+}

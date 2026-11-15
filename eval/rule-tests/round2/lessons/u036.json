@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u036",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "fever",
+   "cough",
+   "doctor",
+   "allergy"
+  ],
+  "custom": [
+   "pill"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ vì bị sốt và ho",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello, I am your doctor today. I will check you and help you get better. What is the problem?",
+    "translation_vi": "Chào bạn, hôm nay tôi là bác sĩ khám cho bạn. Tôi sẽ kiểm tra và giúp bạn khỏe lại. Bạn bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a fever. My body is very hot.",
+    "translation_vi": "Tôi bị sốt. Người tôi nóng lắm."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "I see. Do you cough too?",
+    "translation_vi": "Tôi hiểu rồi. Bạn có bị ho nữa không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, I cough all night, and my throat hurts.",
+    "translation_vi": "Có, tôi ho cả đêm và bị đau họng."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Do you have an allergy to any medicine? Some medicine makes people itchy or sick.",
+    "translation_vi": "Bạn có bị dị ứng với thuốc nào không? Có loại thuốc làm người ta bị ngứa hoặc khó chịu."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "No, I don't have an allergy.",
+    "translation_vi": "Không, tôi không bị dị ứng."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "OK. Take one pill two times a day. Swallow it with water.",
+    "translation_vi": "Được rồi. Bạn uống một viên thuốc, ngày hai lần. Uống với nước nhé."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you. One pill in the morning, one at night.",
+    "translation_vi": "Cảm ơn bác sĩ. Một viên buổi sáng, một viên buổi tối."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi người bị nóng hơn bình thường vì bệnh. Thường nói: \"I have a fever.\""
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho",
+    "usage_vi": "Dùng để nói bạn bị ho, ví dụ \"I cough a lot.\" Từ này cũng có thể là danh từ: \"I have a cough.\""
+   },
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Người khám và chữa bệnh. Khi muốn gặp bác sĩ, bạn nói: \"Can I see the doctor?\""
+   },
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể phản ứng xấu với thức ăn hoặc thuốc. Thường nói: \"I have an allergy to ...\" (tôi bị dị ứng với ...)."
+   },
+   {
+    "input": "pill",
+    "word": "pill",
+    "meaning_vi": "viên thuốc",
+    "usage_vi": "Chỉ một viên thuốc nhỏ để uống với nước. Bác sĩ hay dặn: \"Take one pill a day.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Con bạn đo nhiệt độ được 39 độ, người nóng ran. Bạn nói với y tá: \"My child has a ___.\" Từ nào đúng?",
+    "options": [
+     "cough",
+     "fever",
+     "pill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fever\" nghĩa là sốt, đúng với tình trạng người nóng và nhiệt độ cao."
+   },
+   {
+    "question_vi": "Bạn bị ho liên tục khi nói chuyện. Bạn nói: \"I ___ a lot.\" Từ nào đúng?",
+    "options": [
+     "fever",
+     "allergy",
+     "cough"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cough\" nghĩa là ho, nên \"I cough a lot\" là tôi ho nhiều."
+   },
+   {
+    "question_vi": "Bạn đến bệnh viện và muốn gặp người khám bệnh cho mình. Bạn hỏi: \"Can I see the ___?\" Từ nào đúng?",
+    "options": [
+     "doctor",
+     "pill",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Doctor\" là bác sĩ, người khám và chữa bệnh."
+   },
+   {
+    "question_vi": "Mỗi lần ăn tôm, bạn bị nổi mẩn và ngứa. Bạn nói: \"I have an ___ to shrimp.\" Từ nào đúng?",
+    "options": [
+     "cough",
+     "fever",
+     "allergy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Allergy\" là dị ứng, khi cơ thể phản ứng xấu với một loại thức ăn như tôm."
+   },
+   {
+    "question_vi": "Dược sĩ đưa bạn một viên thuốc nhỏ và dặn uống sau bữa tối. Câu nào đúng: \"Take one ___ after dinner.\"",
+    "options": [
+     "doctor",
+     "pill",
+     "fever"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pill\" là viên thuốc, thứ bạn uống với nước theo lời dặn."
+   }
+  ]
+ }
+}

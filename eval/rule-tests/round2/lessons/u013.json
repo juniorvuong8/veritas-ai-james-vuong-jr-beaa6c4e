@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "u013",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "iced",
+   "straw",
+   "change",
+   "receipt"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị muốn cà phê nóng hay cà phê iced ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị cà phê iced nhé, trời nóng quá, chị muốn uống thật lạnh. Em cho chị xin thêm một cái straw để hút cho tiện nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ. Của chị hết 4 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây, chị gửi em tờ 10 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị đưa 10 đô, cà phê 4 đô, vậy đây là 6 đô change của chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị xin receipt luôn nhé, chị cần tờ giấy ghi số tiền đã trả để nộp cho công ty.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, receipt và straw của chị đây ạ. Chúc chị một ngày vui vẻ!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, ướp lạnh",
+    "usage_vi": "Dùng trước tên đồ uống khi bạn muốn uống lạnh có đá, ví dụ: iced coffee, iced tea."
+   },
+   {
+    "input": "straw",
+    "word": "straw",
+    "meaning_vi": "ống hút",
+    "usage_vi": "Dùng khi bạn muốn xin ống hút để uống nước, ví dụ: Can I have a straw?"
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối lại",
+    "usage_vi": "Là số tiền nhân viên trả lại khi bạn đưa nhiều hơn giá món hàng. Nhân viên thường nói: Here is your change."
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng khi bạn muốn xin tờ giấy ghi món đã mua và số tiền đã trả, ví dụ: Can I have a receipt?"
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn gọi một ly trà có đá lạnh. Bạn nói: \"Cho tôi một ly trà ___.\"",
+    "options": [
+     "straw",
+     "iced",
+     "change"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" nghĩa là có đá, ướp lạnh, nên \"iced tea\" là trà đá."
+   },
+   {
+    "question_vi": "Bạn mua một ly nước ép và cần một thứ để hút nước từ ly. Bạn xin nhân viên cái gì?",
+    "options": [
+     "straw",
+     "receipt",
+     "iced"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Straw\" là ống hút, dùng để hút nước từ ly."
+   },
+   {
+    "question_vi": "Bạn đưa tờ 20 đô để trả một cái bánh giá 12 đô, nhân viên đưa lại cho bạn 8 đô. Số tiền 8 đô đó gọi là gì?",
+    "options": [
+     "receipt",
+     "straw",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối lại khi bạn trả nhiều hơn giá món hàng."
+   },
+   {
+    "question_vi": "Bạn muốn giữ tờ giấy ghi những món đã mua và số tiền đã trả để đổi hàng sau này. Bạn xin cái gì?",
+    "options": [
+     "change",
+     "receipt",
+     "straw"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Receipt\" là hóa đơn, tờ giấy ghi món đã mua và số tiền đã trả."
+   }
+  ]
+ }
+}

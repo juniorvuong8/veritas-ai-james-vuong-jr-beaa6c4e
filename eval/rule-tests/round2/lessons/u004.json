@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u004",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pain",
+   "fever",
+   "headache",
+   "allergy"
+  ],
+  "custom": [
+   "pill"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào anh, hôm nay anh thấy không khỏe ở chỗ nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, tôi bị pain ở bụng, cứ ấn tay vào là nhói, khó chịu lắm. Tôi còn bị headache nữa, cả ngày đầu cứ nặng và nhức hai bên thái dương.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Để tôi đo nhiệt độ cho anh... 39 độ, người anh nóng quá, anh bị fever rồi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, tối qua tôi cũng thấy người nóng ran mà lại run lập cập.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Anh có allergy với loại thuốc nào không? Ví dụ uống vào là bị ngứa hay nổi mẩn đỏ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, tôi bị allergy với penicillin, lần trước uống vào là nổi mẩn khắp người.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Vậy tôi kê thuốc khác cho anh. Mỗi lần anh nuốt một pill với nước, ngày ba lần sau bữa ăn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, tôi nhớ rồi. Cảm ơn bác sĩ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng khi muốn nói một chỗ trên cơ thể bị đau. Có thể nói \"I have pain in my stomach\" (tôi bị đau bụng)."
+   },
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường, người nóng. Thường nói \"I have a fever\"."
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bị đau hoặc nhức ở đầu. Thường nói \"I have a headache\"."
+   },
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể phản ứng xấu (ngứa, nổi mẩn, khó thở) với thuốc, thức ăn hoặc thứ khác. Có thể nói \"I have an allergy to...\" để báo cho bác sĩ hoặc nhà hàng."
+   },
+   {
+    "input": "pill",
+    "word": "pill",
+    "meaning_vi": "viên thuốc",
+    "usage_vi": "Dùng để chỉ một viên thuốc nhỏ để nuốt. Bác sĩ hay dược sĩ thường dặn \"Take one pill...\" (uống một viên...)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị ngã và đầu gối rất đau. Bạn nói với bác sĩ: \"I have ___ in my knee.\"",
+    "options": [
+     "pill",
+     "pain",
+     "fever"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng để nói một chỗ trên cơ thể đang bị đau."
+   },
+   {
+    "question_vi": "Bạn sờ trán con thấy rất nóng, nhiệt kế chỉ 38,5 độ. Bạn nói với bác sĩ: \"My child has a ___.\"",
+    "options": [
+     "fever",
+     "allergy",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fever\" là sốt, đúng khi thân nhiệt cao và người nóng."
+   },
+   {
+    "question_vi": "Bạn làm việc trước máy tính cả ngày, bây giờ đầu rất nhức. Bạn nói: \"I have a ___.\"",
+    "options": [
+     "pill",
+     "allergy",
+     "headache"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Headache\" là đau đầu, dùng khi đầu bị nhức."
+   },
+   {
+    "question_vi": "Mỗi lần ăn tôm, bạn bị ngứa và nổi mẩn đỏ. Ở nhà hàng, bạn nói với nhân viên: \"I have an ___ to shrimp.\"",
+    "options": [
+     "allergy",
+     "fever",
+     "pain"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Allergy\" là dị ứng, dùng khi cơ thể phản ứng xấu với một loại thức ăn như tôm."
+   },
+   {
+    "question_vi": "Dược sĩ đưa bạn một lọ thuốc và dặn mỗi tối uống một viên. Dược sĩ nói: \"Take one ___ after dinner.\"",
+    "options": [
+     "headache",
+     "pill",
+     "pain"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pill\" là viên thuốc, nên \"take one pill\" nghĩa là uống một viên thuốc."
+   }
+  ]
+ }
+}

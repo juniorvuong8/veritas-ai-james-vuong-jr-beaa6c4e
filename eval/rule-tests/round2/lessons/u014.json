@@ -1,0 +1,125 @@
+{
+ "case": {
+  "id": "u014",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "price",
+   "cash",
+   "card"
+  ],
+  "custom": [
+   "receipt"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Thanh toán ở quầy tính tiền siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, của chị tổng cộng là 25 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em ơi, price trên kệ của hộp sữa này ghi là 3 đô, sao máy lại tính 4 đô vậy em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, em xin lỗi, đúng là 3 đô ạ. Vậy tổng còn 24 đô. Chị trả cash hay card ạ? Nếu trả bằng card thì chị quẹt vào máy này nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Trong ví chị chỉ còn ít tiền giấy thôi, không đủ trả cash, nên chị quẹt card nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, thanh toán xong rồi ạ. Chị có lấy receipt không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Có em, cho chị xin receipt để về nhà chị xem lại mình đã mua gì và trả bao nhiêu tiền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị đây ạ. Cảm ơn chị, hẹn gặp lại chị!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi nói hoặc hỏi về số tiền của một món hàng. Ví dụ: \"What is the price?\" nghĩa là \"Giá bao nhiêu?\""
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi trả bằng tiền giấy hoặc tiền xu. Thu ngân thường hỏi \"Cash or card?\" để biết bạn muốn trả bằng cách nào."
+   },
+   {
+    "input": "card",
+    "word": "card",
+    "meaning_vi": "thẻ (thẻ ngân hàng, thẻ tín dụng)",
+    "usage_vi": "Dùng khi trả tiền bằng cách quẹt hoặc chạm thẻ vào máy. Bạn có thể nói \"By card, please.\" để trả bằng thẻ."
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Là tờ giấy ghi các món đã mua và số tiền đã trả. Bạn cần giữ nó nếu muốn đổi hoặc trả lại hàng."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy một túi táo nhưng không thấy ghi giá. Bạn muốn hỏi nhân viên túi táo này bao nhiêu tiền. Bạn hỏi về từ nào?",
+    "options": [
+     "receipt",
+     "price",
+     "card"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Price\" là giá tiền của món hàng, nên bạn hỏi về price của túi táo."
+   },
+   {
+    "question_vi": "Bạn đưa cho thu ngân một tờ tiền giấy 20 đô để trả tiền. Bạn đang trả bằng gì?",
+    "options": [
+     "cash",
+     "card",
+     "price"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Trả bằng tiền giấy hoặc tiền xu là trả bằng \"cash\"."
+   },
+   {
+    "question_vi": "Bạn không mang tiền giấy, nên bạn lấy thẻ ngân hàng ra quẹt vào máy. Bạn đang trả bằng gì?",
+    "options": [
+     "receipt",
+     "cash",
+     "card"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Quẹt thẻ ngân hàng vào máy là trả bằng \"card\"."
+   },
+   {
+    "question_vi": "Bạn mua một cái áo nhưng về nhà mới thấy bị chật. Muốn đổi áo, bạn cần mang theo tờ giấy ghi món đã mua và số tiền đã trả. Đó là gì?",
+    "options": [
+     "receipt",
+     "price",
+     "card"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Receipt\" là tờ hóa đơn ghi món đã mua và số tiền đã trả, cần có khi đổi hoặc trả hàng."
+   }
+  ]
+ }
+}

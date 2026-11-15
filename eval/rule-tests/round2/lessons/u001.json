@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "u001",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "refill",
+   "menu",
+   "medium",
+   "receipt"
+  ],
+  "custom": [
+   "sugar"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Đây là menu, chị xem quán có đồ uống gì và giá bao nhiêu nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho em một ly cà phê sữa. Ly nhỏ thì ít quá, ly lớn thì nhiều quá, nên em lấy ly medium ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ. Chị có muốn cho thêm sugar để cà phê ngọt hơn không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, một chút thôi. Uống hết rồi thì em có được refill không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được. Chị mang ly lại, em rót đầy lại miễn phí cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hay quá. Em gửi tiền, cho em xin receipt nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, tờ giấy ghi món chị mua và số tiền chị đã trả đây ạ. Cảm ơn chị!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, làm đầy lại (ly đồ uống)",
+    "usage_vi": "Dùng khi bạn uống hết và muốn quán rót thêm đồ uống vào ly. Nhiều quán ở nước ngoài cho refill miễn phí với cà phê hoặc nước ngọt."
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Là danh sách món ăn, đồ uống và giá ở quán. Bạn có thể nói \"Cho em xem menu\" khi muốn chọn món."
+   },
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng khi chọn cỡ ly hoặc phần ăn, nằm giữa cỡ nhỏ và cỡ lớn. Ví dụ: \"Cho em ly medium\"."
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Là tờ giấy ghi món bạn mua và số tiền bạn đã trả. Bạn xin receipt sau khi trả tiền để kiểm tra hoặc đổi trả hàng."
+   },
+   {
+    "input": "sugar",
+    "word": "sugar",
+    "meaning_vi": "đường",
+    "usage_vi": "Dùng khi muốn đồ uống ngọt hơn hoặc không muốn ngọt. Ví dụ: \"Cho em thêm sugar\" hoặc \"Không sugar ạ\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn uống hết ly trà đá ở nhà hàng và muốn được rót thêm. Bạn nên hỏi: \"Cho em ___ được không ạ?\"",
+    "options": [
+     "menu",
+     "refill",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Refill\" là rót thêm đồ uống vào ly khi bạn đã uống hết."
+   },
+   {
+    "question_vi": "Bạn vào một tiệm bánh mới và muốn biết tiệm có những món gì, giá bao nhiêu. Bạn xin xem cái gì?",
+    "options": [
+     "menu",
+     "sugar",
+     "medium"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Menu\" là danh sách món và giá để bạn chọn."
+   },
+   {
+    "question_vi": "Bạn mua nước ép. Ly nhỏ thì ít quá, ly lớn thì nhiều quá. Bạn chọn cỡ nào?",
+    "options": [
+     "refill",
+     "receipt",
+     "medium"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa cỡ nhỏ và cỡ lớn."
+   },
+   {
+    "question_vi": "Trả tiền ở siêu thị xong, bạn muốn giữ tờ giấy ghi số tiền đã trả để sau này đổi hàng. Bạn xin gì?",
+    "options": [
+     "sugar",
+     "receipt",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Receipt\" là tờ giấy ghi món đã mua và số tiền đã trả."
+   },
+   {
+    "question_vi": "Bạn gọi một ly trà nóng nhưng thấy hơi đắng và muốn nó ngọt hơn. Bạn xin thêm gì?",
+    "options": [
+     "sugar",
+     "medium",
+     "menu"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Sugar\" là đường, cho vào để đồ uống ngọt hơn."
+   }
+  ]
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u026",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "on sale",
+   "aisle",
+   "price",
+   "basket"
+  ],
+  "custom": [
+   "change"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị mua đồ ăn",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị lấy một cái basket ở cửa để bỏ đồ vào, xách đi cho tiện nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Sữa để ở aisle nào vậy em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị đi thẳng rồi rẽ trái vào aisle số 3, sữa nằm trên kệ hai bên lối đi đó ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hộp sữa này price là bao nhiêu vậy em? Trên kệ chị không thấy ghi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, 3 đô ạ. Hôm nay nó đang on sale, rẻ hơn mọi ngày 1 đô đó chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy chị lấy một hộp. Chị gửi em 5 đô nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị hết 3 đô, em gửi lại chị change 2 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em nhiều nha!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá, đang khuyến mãi",
+    "usage_vi": "Dùng khi một món hàng đang bán rẻ hơn giá bình thường. Thường nói \"It's on sale\" (Món này đang giảm giá)."
+   },
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ hàng",
+    "usage_vi": "Dùng để hỏi hoặc chỉ chỗ để hàng trong siêu thị, ví dụ \"Which aisle is the milk in?\" (Sữa ở lối đi nào?)."
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng bao nhiêu tiền, ví dụ \"What's the price?\" (Giá bao nhiêu?)."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "cái giỏ (để đựng đồ khi mua sắm)",
+    "usage_vi": "Dùng để chỉ cái giỏ xách tay trong siêu thị khi bạn mua ít đồ. Nếu mua nhiều đồ thì người ta dùng xe đẩy."
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa",
+    "usage_vi": "Dùng khi thu ngân trả lại phần tiền dư sau khi bạn đưa nhiều hơn số tiền phải trả, ví dụ \"Here's your change\" (Tiền thối của bạn đây)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy bảng ghi áo khoác hôm nay giảm 30%. Bạn nói với bạn mình: \"Áo khoác này đang ___, rẻ hơn hôm qua nhiều.\" Chọn từ đúng:",
+    "options": [
+     "on sale",
+     "price",
+     "change"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, đúng với món áo đang rẻ hơn bình thường."
+   },
+   {
+    "question_vi": "Bạn muốn mua bánh mì nhưng không biết nó để ở đâu trong siêu thị. Bạn hỏi nhân viên: \"Bánh mì ở ___ nào vậy?\" Chọn từ đúng:",
+    "options": [
+     "basket",
+     "price",
+     "aisle"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Aisle\" là lối đi giữa các dãy kệ, nên dùng để hỏi món hàng nằm ở đâu."
+   },
+   {
+    "question_vi": "Bạn cầm một gói bánh nhưng không thấy ghi giá. Bạn hỏi: \"Gói bánh này ___ bao nhiêu?\" Chọn từ đúng:",
+    "options": [
+     "change",
+     "price",
+     "on sale"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Price\" là giá tiền, dùng khi hỏi món hàng bao nhiêu tiền."
+   },
+   {
+    "question_vi": "Bạn vào siêu thị để mua vài quả táo và một chai nước. Bạn cần một thứ để bỏ đồ vào và xách đi. Bạn lấy cái gì?",
+    "options": [
+     "basket",
+     "aisle",
+     "change"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Basket\" là cái giỏ xách tay để đựng đồ khi đi mua sắm."
+   },
+   {
+    "question_vi": "Bạn mua đồ hết 7 đô và đưa thu ngân 10 đô. Thu ngân đưa lại bạn 3 đô và nói: \"Đây là ___ của chị.\" Chọn từ đúng:",
+    "options": [
+     "price",
+     "on sale",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối, tức phần tiền dư được trả lại cho bạn."
+   }
+  ]
+ }
+}

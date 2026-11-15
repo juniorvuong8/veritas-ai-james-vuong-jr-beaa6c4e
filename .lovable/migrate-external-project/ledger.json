@@ -1,0 +1,5 @@
+[
+ {"capability":"code","source":"github juniorvuong8/Veritas-AI-Hackathon","outcome":"migrate","status":"verified","next_action":null},
+ {"capability":"AI lesson generation (edge function)","source":"supabase/functions/generate-lesson","outcome":"server function via Lovable AI","status":"verified","next_action":null},
+ {"capability":"database/auth","source":"none (progress saved in browser)","outcome":"n/a","status":"verified","next_action":null}
+]

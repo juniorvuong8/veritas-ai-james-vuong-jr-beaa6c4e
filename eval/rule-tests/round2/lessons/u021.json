@@ -1,0 +1,125 @@
+{
+ "case": {
+  "id": "u021",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "to go",
+   "change",
+   "straw"
+  ],
+  "custom": [
+   "card"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! What would you like to drink today?",
+    "translation_vi": "Chào bạn! Hôm nay bạn muốn uống gì ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "An iced tea, please. Can I get it to go? I want to drink it on the bus.",
+    "translation_vi": "Cho mình một ly trà đá nhé. Mình mang đi được không? Mình muốn uống trên xe buýt."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Do you want a straw? Then you can drink through the lid.",
+    "translation_vi": "Được ạ. Bạn có cần ống hút không? Như vậy bạn có thể uống qua nắp ly."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. Can I pay by card?",
+    "translation_vi": "Có, cảm ơn bạn. Mình trả bằng thẻ được không?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sorry, the card machine is broken. Cash only today. It's four dollars.",
+    "translation_vi": "Xin lỗi, máy quẹt thẻ bị hỏng rồi. Hôm nay chỉ nhận tiền mặt thôi ạ. Ly của bạn bốn đô."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Okay. Here's ten dollars.",
+    "translation_vi": "Được rồi. Đây là mười đô."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Thank you. Here's six dollars in change, and here's your tea.",
+    "translation_vi": "Cảm ơn bạn. Mình gửi lại bạn sáu đô tiền thối, và đây là ly trà của bạn."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi bạn mua đồ ăn hoặc đồ uống và muốn mang ra ngoài, không ngồi lại quán. Nhân viên thường hỏi \"For here or to go?\"."
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa trả lại",
+    "usage_vi": "Là số tiền người bán trả lại khi bạn đưa nhiều hơn giá tiền. Thường nghe câu \"Here's your change.\"."
+   },
+   {
+    "input": "straw",
+    "word": "straw",
+    "meaning_vi": "ống hút",
+    "usage_vi": "Dùng khi bạn cần ống để hút nước uống. Bạn có thể hỏi \"Can I have a straw, please?\"."
+   },
+   {
+    "input": "card",
+    "word": "card",
+    "meaning_vi": "thẻ (thẻ ngân hàng, thẻ tín dụng)",
+    "usage_vi": "Dùng khi bạn muốn trả tiền bằng thẻ thay vì tiền mặt. Câu thường dùng là \"Can I pay by card?\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một ly cà phê và muốn mang ra công viên uống. Bạn nói: \"Can I get a coffee ___?\"",
+    "options": [
+     "for here",
+     "to go",
+     "straw"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, phù hợp khi bạn không muốn ngồi uống tại quán."
+   },
+   {
+    "question_vi": "Bạn đưa 20 đô để trả cho ly sinh tố giá 7 đô, nhân viên đưa lại bạn 13 đô. Số tiền 13 đô đó gọi là gì?",
+    "options": [
+     "change",
+     "card",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Change\" là tiền thối, tức số tiền được trả lại khi bạn đưa nhiều hơn giá tiền."
+   },
+   {
+    "question_vi": "Bạn mua một ly trà sữa trân châu và cần thứ gì đó để hút trân châu lên. Bạn hỏi: \"Can I have a ___, please?\"",
+    "options": [
+     "card",
+     "to go",
+     "straw"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Straw\" là ống hút, dùng để hút đồ uống từ trong ly."
+   },
+   {
+    "question_vi": "Bạn không mang tiền mặt nhưng có thẻ ngân hàng trong ví. Bạn hỏi nhân viên: \"Can I pay by ___?\"",
+    "options": [
+     "change",
+     "card",
+     "cash"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pay by card\" nghĩa là trả bằng thẻ, phù hợp khi bạn không có tiền mặt."
+   }
+  ]
+ }
+}

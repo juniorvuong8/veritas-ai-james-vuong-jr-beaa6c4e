@@ -1,0 +1,120 @@
+{
+ "case": {
+  "id": "u030",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "on sale",
+   "fresh",
+   "price"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Mua táo giảm giá ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Hôm nay apples are on sale, rẻ hơn 30% so với mọi khi đó ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ồ, vậy what is the price bây giờ? Một ký bao nhiêu tiền vậy em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, the price is 2 đô một ký thôi chị. Táo mới về sáng nay, very fresh, không bị héo hay dập chút nào ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Tốt quá. Chị còn có a coupon nè, tờ giấy chị cắt từ tờ quảng cáo, đưa ra thì được trừ thêm 1 đô. Dùng được không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ. Lúc tính tiền, chị give the coupon cho thu ngân, họ sẽ trừ 1 đô cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy chị lấy 2 ký nha. Thank you, em!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn bình thường. Ví dụ: \"The milk is on sale.\""
+   },
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thực phẩm như rau, trái cây, thịt, cá hay bánh mì còn mới, chưa bị hư. Ví dụ: \"Is the fish fresh?\""
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng giá bao nhiêu. Ví dụ: \"What is the price?\""
+   },
+   {
+    "input": "coupon",
+    "word": "coupon",
+    "meaning_vi": "phiếu giảm giá",
+    "usage_vi": "Là tờ phiếu (giấy hoặc trên điện thoại) đưa cho thu ngân để được giảm tiền. Ví dụ: \"Can I use this coupon?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy biển ghi sữa được giảm 50% trong tuần này. Bạn nói với bạn mình: \"The milk is ___ this week.\" Chọn từ đúng.",
+    "options": [
+     "fresh",
+     "on sale",
+     "coupon"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, đúng với việc sữa được bán rẻ hơn trong tuần này."
+   },
+   {
+    "question_vi": "Bạn muốn mua bánh mì vừa mới nướng sáng nay. Bạn hỏi nhân viên: \"Is this bread ___?\" Chọn từ đúng.",
+    "options": [
+     "fresh",
+     "coupon",
+     "price"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fresh\" dùng để hỏi bánh mì có còn mới, vừa làm xong không."
+   },
+   {
+    "question_vi": "Con cá ở quầy không có ghi giá. Bạn hỏi nhân viên: \"What is the ___ of this fish?\" Chọn từ đúng.",
+    "options": [
+     "coupon",
+     "fresh",
+     "price"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Price\" là giá tiền, nên \"What is the price?\" là câu hỏi món đó bao nhiêu tiền."
+   },
+   {
+    "question_vi": "Bạn có một tờ phiếu cắt từ tờ quảng cáo để được trừ 2 đô. Lúc tính tiền, bạn hỏi thu ngân: \"Can I use this ___?\" Chọn từ đúng.",
+    "options": [
+     "coupon",
+     "price",
+     "on sale"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Coupon\" là phiếu giảm giá, đưa cho thu ngân để được trừ tiền."
+   }
+  ]
+ }
+}

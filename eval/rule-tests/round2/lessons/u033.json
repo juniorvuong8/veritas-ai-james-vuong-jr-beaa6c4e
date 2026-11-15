@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "u033",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "medium",
+   "to go",
+   "menu",
+   "iced",
+   "large"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Here is the menu. It has all our drinks and prices.",
+    "translation_vi": "Chào bạn! Menu đây ạ. Trong này có tất cả đồ uống và giá của quán."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thanks. Can I have a coffee, please?",
+    "translation_vi": "Cảm ơn bạn. Cho mình một ly cà phê nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Hot or iced?",
+    "translation_vi": "Dạ được ạ. Bạn uống nóng hay đá?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Iced, please. I want a cold drink today.",
+    "translation_vi": "Đá nhé. Hôm nay mình muốn uống gì đó lạnh."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "What size? Medium is a normal cup, and large is our biggest cup.",
+    "translation_vi": "Bạn lấy cỡ nào ạ? Cỡ vừa là ly bình thường, còn cỡ lớn là ly to nhất của quán."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Medium, please. Large is too much for me.",
+    "translation_vi": "Cho mình cỡ vừa nhé. Cỡ lớn thì mình uống không hết."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "OK. Is it for here or to go?",
+    "translation_vi": "Dạ vâng. Bạn uống ở đây hay mang đi ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "To go, please. I'm drinking it on my way to work.",
+    "translation_vi": "Mang đi nhé. Mình sẽ vừa đi làm vừa uống."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng khi chọn kích cỡ ly đồ uống, nằm giữa small (nhỏ) và large (lớn). Ví dụ: \"A medium coffee, please.\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi bạn muốn mua đồ ăn, đồ uống mang đi chứ không dùng tại quán. Nhân viên thường hỏi: \"For here or to go?\""
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Là danh sách các món và giá ở quán ăn, quán cà phê. Bạn có thể nói \"Can I see the menu, please?\" để xin xem."
+   },
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, uống lạnh",
+    "usage_vi": "Đặt trước tên đồ uống để gọi loại uống lạnh có đá, trái nghĩa với hot (nóng). Ví dụ: \"iced coffee\", \"iced tea\"."
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn",
+    "usage_vi": "Dùng khi chọn kích cỡ to nhất của ly đồ uống hoặc phần ăn. Ví dụ: \"A large tea, please.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua trà sữa và muốn một ly không nhỏ quá, cũng không to quá. Bạn nói: \"A ___ milk tea, please.\"",
+    "options": [
+     "large",
+     "medium",
+     "iced"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa cỡ nhỏ và cỡ lớn."
+   },
+   {
+    "question_vi": "Bạn mua một ly trà và muốn mang lên xe buýt uống. Nhân viên hỏi \"For here or ...?\", bạn trả lời gì?",
+    "options": [
+     "To go",
+     "Menu",
+     "Medium"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, không uống tại quán."
+   },
+   {
+    "question_vi": "Bạn vào một nhà hàng mới và muốn xem có những món gì, giá bao nhiêu. Bạn nói: \"Can I see the ___, please?\"",
+    "options": [
+     "large",
+     "iced",
+     "menu"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Menu\" là thực đơn ghi các món và giá của quán."
+   },
+   {
+    "question_vi": "Trời rất nóng, bạn muốn một ly trà lạnh có đá. Bạn nói: \"An ___ tea, please.\"",
+    "options": [
+     "medium",
+     "iced",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" dùng cho đồ uống lạnh có đá, ví dụ \"iced tea\" là trà đá."
+   },
+   {
+    "question_vi": "Bạn đang rất khát và muốn ly nước cam to nhất. Bạn nói: \"A ___ orange juice, please.\"",
+    "options": [
+     "medium",
+     "to go",
+     "large"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Large\" là cỡ lớn, phù hợp khi bạn muốn ly to nhất."
+   }
+  ]
+ }
+}

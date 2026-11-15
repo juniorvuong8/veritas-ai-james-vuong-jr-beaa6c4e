@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u006",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "price",
+   "basket",
+   "bag",
+   "checkout"
+  ],
+  "custom": [
+   "change"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi mua đồ ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị lấy a basket để đựng đồ trong lúc đi chọn hàng nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị hỏi, what is the price của hộp sữa này? Chị không thấy ghi bao nhiêu tiền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, the price là 3 đô ạ. Chọn xong, chị mang đồ ra the checkout ở gần cửa để tính tiền và trả tiền nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị chọn xong rồi. Đây là the checkout phải không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ đúng ạ. Tổng cộng 8 đô. Chị cần a bag để đựng đồ xách về không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, one bag, please. Đây, chị gửi em 10 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị đưa 10 đô, hàng hết 8 đô, nên here is your change, 2 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you! Chào em nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi muốn hỏi hoặc nói một món hàng bao nhiêu tiền. Ví dụ: \"What is the price?\" (Giá bao nhiêu?)"
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "cái giỏ (giỏ đi chợ, giỏ siêu thị)",
+    "usage_vi": "Dùng để chỉ cái giỏ xách tay trong siêu thị, dùng để đựng đồ khi đi chọn hàng."
+   },
+   {
+    "input": "bag",
+    "word": "bag",
+    "meaning_vi": "cái túi",
+    "usage_vi": "Dùng khi xin hoặc nói về túi đựng đồ để mang về. Ví dụ: \"Can I have a bag, please?\""
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền, quầy thu ngân",
+    "usage_vi": "Dùng để chỉ nơi bạn mang hàng đến để tính tiền và trả tiền trong siêu thị hoặc cửa hàng."
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa trả lại",
+    "usage_vi": "Dùng để chỉ số tiền người bán trả lại khi bạn đưa nhiều hơn giá món hàng. Thu ngân thường nói: \"Here is your change.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy một chai nước nhưng không biết giá bao nhiêu. Bạn hỏi nhân viên: \"What is the ___?\"",
+    "options": [
+     "bag",
+     "price",
+     "change"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Price\" nghĩa là giá tiền, nên dùng để hỏi món hàng bao nhiêu tiền."
+   },
+   {
+    "question_vi": "Bạn vừa vào siêu thị và muốn có cái giỏ để đựng đồ trong lúc đi chọn hàng. Bạn hỏi: \"Where is a ___?\"",
+    "options": [
+     "basket",
+     "checkout",
+     "price"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Basket\" là cái giỏ dùng để đựng đồ khi đi chọn hàng trong siêu thị."
+   },
+   {
+    "question_vi": "Bạn mua nhiều trái cây và cần cái túi để xách về nhà. Bạn nói: \"Can I have a ___, please?\"",
+    "options": [
+     "change",
+     "price",
+     "bag"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Bag\" là cái túi để đựng đồ mang về."
+   },
+   {
+    "question_vi": "Bạn đang ở cửa hàng tiện lợi, đã chọn đồ xong và muốn tìm chỗ trả tiền. Bạn hỏi: \"Where is the ___?\"",
+    "options": [
+     "basket",
+     "checkout",
+     "bag"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Checkout\" là quầy tính tiền, nơi bạn trả tiền cho món hàng."
+   },
+   {
+    "question_vi": "Bạn đưa 20 đô cho món hàng giá 15 đô. Thu ngân đưa lại 5 đô và nói: \"Here is your ___.\"",
+    "options": [
+     "price",
+     "checkout",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối, tức số tiền được trả lại khi bạn đưa nhiều hơn giá hàng."
+   }
+  ]
+ }
+}

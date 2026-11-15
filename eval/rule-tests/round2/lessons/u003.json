@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "u003",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "tip",
+   "how long",
+   "turn left",
+   "trunk"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi trong thành phố",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Vali của chị to quá, để tôi mở trunk ở phía sau xe cho chị cất vào nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, cảm ơn anh. Em muốn đến khách sạn Grand. Đi mất how long vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Khoảng hai mươi phút thôi chị, nếu không kẹt xe.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Tới ngã tư phía trước, anh turn left giúp em nhé, khách sạn nằm ở con đường bên tay trái.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được ạ. Tới nơi rồi chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây là tiền cước. Em gửi thêm chút tip, anh cứ giữ nhé, cảm ơn anh đã chạy cẩn thận.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Cảm ơn chị nhiều! Để tôi lấy vali trong trunk ra cho chị.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền típ",
+    "usage_vi": "Số tiền nhỏ bạn đưa thêm cho tài xế, phục vụ… để cảm ơn họ, ngoài số tiền phải trả."
+   },
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "bao lâu",
+    "usage_vi": "Dùng để hỏi một việc mất bao nhiêu thời gian, ví dụ hỏi tài xế bao lâu thì tới nơi."
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường, nói với tài xế quẹo sang bên trái ở ngã tư hoặc góc đường."
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (ô tô)",
+    "usage_vi": "Chỗ chứa hành lý ở phía sau xe ô tô. Nói khi muốn cất hoặc lấy vali, túi đồ."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn ở nhà hàng, người phục vụ rất chu đáo nên bạn muốn để lại thêm ít tiền để cảm ơn. Số tiền đó gọi là gì?",
+    "options": [
+     "trunk",
+     "tip",
+     "how long"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip\" là tiền đưa thêm để cảm ơn người phục vụ hoặc tài xế."
+   },
+   {
+    "question_vi": "Bạn đang chờ xe buýt và muốn hỏi người bên cạnh phải chờ bao lâu nữa. Bạn dùng cụm từ nào?",
+    "options": [
+     "how long",
+     "turn left",
+     "tip"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"How long\" dùng để hỏi một việc mất bao nhiêu thời gian."
+   },
+   {
+    "question_vi": "Bạn đi xe ôm công nghệ, đến ngã tư bạn muốn tài xế quẹo sang bên trái. Bạn nói gì?",
+    "options": [
+     "trunk",
+     "turn right",
+     "turn left"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Turn left\" là rẽ trái, còn \"turn right\" là rẽ phải."
+   },
+   {
+    "question_vi": "Bạn đi siêu thị mua nhiều túi đồ và muốn cất chúng vào chỗ chứa đồ phía sau ô tô. Chỗ đó gọi là gì?",
+    "options": [
+     "tip",
+     "trunk",
+     "seat"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Trunk\" là cốp xe phía sau ô tô, dùng để chứa hành lý và đồ đạc."
+   }
+  ]
+ }
+}

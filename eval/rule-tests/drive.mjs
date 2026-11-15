@@ -5,9 +5,9 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 const SITE = 'https://veritas-ai-james-vuong-jr.lovable.app/'
 const LESSON_FN = 'f2fa5693f67131a1a1df5518a5a9e72ac420bcff940abe1bdf27f50e9de81275'
 const PLACE = { cafe: 'Quán cà phê', supermarket: 'Siêu thị', taxi: 'Gọi taxi', clinic: 'Phòng khám' }
-const dir = new URL('./lessons/', import.meta.url).pathname
+const dir = new URL(process.env.OUT ?? './lessons/', import.meta.url).pathname
 mkdirSync(dir, { recursive: true })
-const cases = JSON.parse(readFileSync(new URL('./cases.json', import.meta.url), 'utf8'))
+const cases = JSON.parse(readFileSync(new URL(process.env.CASES ?? './cases.json', import.meta.url), 'utf8'))
 const [from, to] = [Number(process.argv[2] ?? 0), Number(process.argv[3] ?? 1)]
 const b = await chromium.launch({ executablePath: process.env.HOME + '/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell' })
 

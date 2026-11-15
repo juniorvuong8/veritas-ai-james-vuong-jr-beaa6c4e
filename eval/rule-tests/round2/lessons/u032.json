@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u032",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "allergy",
+   "medicine",
+   "pharmacy",
+   "headache"
+  ],
+  "custom": [
+   "form"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào em. Trước khi khám, em điền this form giúp tôi nhé, ghi tên, ngày sinh và số điện thoại vào đây.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em điền xong rồi. Em bị a bad headache, đầu đau suốt từ sáng đến giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Em có allergy nào không? Ví dụ uống thuốc gì vào thì bị ngứa hay nổi mẩn đỏ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em không có allergy nào hết ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Tốt. Tôi sẽ cho em some medicine, mỗi ngày uống hai viên sau khi ăn là đỡ đau.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em mua the medicine ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Em mang tờ giấy này đến the pharmacy ở tầng một, ở đó họ sẽ bán thuốc cho em.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em cảm ơn bác sĩ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể phản ứng xấu (ngứa, nổi mẩn, khó thở) với một loại thuốc, thức ăn hay thứ gì đó. Ví dụ: \"I have an allergy to peanuts.\""
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc",
+    "usage_vi": "Dùng để nói về thuốc uống hoặc thuốc chữa bệnh mà bác sĩ cho hay bạn mua. Ví dụ: \"Take this medicine after meals.\""
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "nhà thuốc, hiệu thuốc",
+    "usage_vi": "Dùng để chỉ nơi bán thuốc, thường bạn mang đơn thuốc của bác sĩ đến đây. Ví dụ: \"Where is the pharmacy?\""
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu",
+    "usage_vi": "Dùng khi bạn thấy đau ở đầu, thường nói \"I have a headache\" với bác sĩ hoặc người bán thuốc."
+   },
+   {
+    "input": "form",
+    "word": "form",
+    "meaning_vi": "mẫu đơn, tờ khai",
+    "usage_vi": "Dùng để chỉ tờ giấy có sẵn ô trống để bạn điền thông tin như tên, ngày sinh, địa chỉ. Ví dụ: \"Please fill out this form.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn tôm xong thì người ngứa và nổi mẩn đỏ. Bạn nói với bác sĩ: \"I have a shrimp ___.\" Từ nào đúng?",
+    "options": [
+     "headache",
+     "allergy",
+     "form"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Allergy\" là dị ứng, đúng với việc ăn tôm bị ngứa và nổi mẩn đỏ."
+   },
+   {
+    "question_vi": "Bạn bị cảm, bác sĩ đưa cho bạn mấy viên thuốc để uống mỗi ngày. Những viên đó gọi là gì?",
+    "options": [
+     "medicine",
+     "pharmacy",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Medicine\" là thuốc, thứ bạn uống để chữa bệnh."
+   },
+   {
+    "question_vi": "Buổi tối bạn bị ho và cần mua thuốc ho. Bạn nên đi đến đâu?",
+    "options": [
+     "form",
+     "headache",
+     "pharmacy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bạn có thể mua thuốc."
+   },
+   {
+    "question_vi": "Bạn ngồi học bài quá lâu và thấy đầu đau nhức. Bạn nói: \"I have a ___.\" Từ nào đúng?",
+    "options": [
+     "toothache",
+     "headache",
+     "medicine"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Headache\" là đau đầu, còn \"toothache\" là đau răng."
+   },
+   {
+    "question_vi": "Ở ngân hàng, nhân viên đưa bạn một tờ giấy có ô trống để viết tên và địa chỉ. Tờ giấy đó là gì?",
+    "options": [
+     "form",
+     "receipt",
+     "pharmacy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Form\" là tờ khai có ô trống để bạn điền thông tin cá nhân."
+   }
+  ]
+ }
+}

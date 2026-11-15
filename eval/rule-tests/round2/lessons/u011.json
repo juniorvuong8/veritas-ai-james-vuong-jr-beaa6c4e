@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "u011",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "tip",
+   "stop here",
+   "fare",
+   "turn left"
+  ],
+  "custom": [
+   "block"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi đến khách sạn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Where are you going today?",
+    "translation_vi": "Chào chị! Hôm nay chị muốn đi đâu ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "To Green Park Hotel, please. At the next light, please turn left, not right.",
+    "translation_vi": "Cho em đến khách sạn Green Park ạ. Đến đèn giao thông tiếp theo, anh rẽ trái giúp em, đừng rẽ phải nhé."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "OK, I will turn left at the light. The hotel is one block after that, past the next corner.",
+    "translation_vi": "Được, tôi sẽ rẽ trái ở đèn giao thông. Đi thêm một dãy nhà nữa, qua góc đường tiếp theo là tới khách sạn."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great. Please stop here, in front of the door. I want to get out.",
+    "translation_vi": "Tốt quá. Anh dừng ở đây giúp em, ngay trước cửa nhé. Em muốn xuống xe."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Sure. The fare is 18 dollars for this ride.",
+    "translation_vi": "Được chị. Tiền cước cho chuyến đi này là 18 đô la."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here is 20 dollars. Please keep 2 dollars as a tip. Thank you for the good drive!",
+    "translation_vi": "Em gửi anh 20 đô la. Anh giữ lại 2 đô la tiền boa nhé. Cảm ơn anh đã chở em cẩn thận!"
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Thank you so much for the extra money! Have a nice day.",
+    "translation_vi": "Cảm ơn chị nhiều vì tiền thêm nhé! Chúc chị một ngày vui vẻ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền thưởng thêm",
+    "usage_vi": "Dùng khi bạn đưa thêm tiền ngoài giá phải trả để cảm ơn tài xế hoặc người phục vụ. Ví dụ: \"Keep the change as a tip.\""
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Nói với tài xế khi bạn muốn xe dừng lại ngay chỗ này để xuống. Có thể thêm \"please\" cho lịch sự."
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền cước, tiền vé đi xe",
+    "usage_vi": "Dùng để chỉ số tiền phải trả cho một chuyến đi bằng taxi, xe buýt, tàu. Ví dụ: \"How much is the fare?\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường, bảo người lái xe hoặc người đi đường quẹo sang bên trái. Ví dụ: \"Turn left at the light.\""
+   },
+   {
+    "input": "block",
+    "word": "block",
+    "meaning_vi": "dãy nhà, đoạn đường giữa hai ngã tư",
+    "usage_vi": "Dùng để nói khoảng cách trong thành phố, tính bằng số đoạn đường giữa các ngã tư. Ví dụ: \"It's one block from here.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn ở nhà hàng và người phục vụ rất tốt. Bạn muốn để lại thêm tiền để cảm ơn. Số tiền thêm đó gọi là gì?",
+    "options": [
+     "fare",
+     "tip",
+     "block"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip\" là tiền boa, tiền bạn đưa thêm để cảm ơn người phục vụ."
+   },
+   {
+    "question_vi": "Bạn đi xe công nghệ và thấy nhà mình ngay bên đường. Bạn muốn tài xế dừng xe ngay lúc này. Bạn nói gì?",
+    "options": [
+     "stop here",
+     "turn left",
+     "tip"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Stop here\" nghĩa là dừng ở đây, dùng khi bạn muốn xuống xe ngay chỗ đó."
+   },
+   {
+    "question_vi": "Bạn lên xe buýt và muốn hỏi phải trả bao nhiêu tiền cho chuyến đi. Bạn hỏi: \"How much is the ___?\"",
+    "options": [
+     "block",
+     "tip",
+     "fare"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fare\" là tiền cước, tiền vé phải trả cho một chuyến đi."
+   },
+   {
+    "question_vi": "Bạn chỉ đường cho một người đi xe đạp. Đến ngã tư, nhà bạn nằm ở phía bên trái. Bạn nói gì?",
+    "options": [
+     "stop here",
+     "turn left",
+     "block"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, dùng khi chỉ đường sang bên trái."
+   },
+   {
+    "question_vi": "Một người hỏi đường đến cửa hàng. Cửa hàng ở ngay sau ngã tư tiếp theo. Bạn nói: \"The store is one ___ from here.\"",
+    "options": [
+     "block",
+     "fare",
+     "tip"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Block\" là một dãy nhà, đoạn đường giữa hai ngã tư, dùng để nói khoảng cách trong thành phố."
+   }
+  ]
+ }
+}

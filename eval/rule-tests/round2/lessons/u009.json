@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u009",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "receipt",
+   "menu",
+   "change",
+   "large"
+  ],
+  "custom": [
+   "pastry"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Here is the menu. You can see all our drinks and prices.",
+    "translation_vi": "Xin chào! Đây là menu ạ. Anh/chị có thể xem tất cả đồ uống và giá ở đây."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thanks. Can I have a latte, please?",
+    "translation_vi": "Cảm ơn. Cho tôi một ly latte nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Small, medium or large?",
+    "translation_vi": "Vâng. Anh/chị lấy ly nhỏ, vừa hay lớn ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Large, please. A big one. And can I have a pastry? That little sweet cake in the glass box looks good.",
+    "translation_vi": "Ly lớn nhé. Ly to ấy. Cho tôi thêm một cái bánh ngọt nữa. Cái bánh nhỏ ngọt ngọt trong tủ kính trông ngon quá."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "OK. That's eight dollars.",
+    "translation_vi": "Dạ. Của anh/chị hết tám đô ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here is ten dollars.",
+    "translation_vi": "Đây, gửi bạn mười đô."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Thank you. Here is your change, two dollars. Do you want a receipt? It shows what you paid.",
+    "translation_vi": "Cảm ơn anh/chị. Đây là tiền thối lại, hai đô ạ. Anh/chị có lấy hóa đơn không? Trên đó có ghi số tiền anh/chị đã trả."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. I need it for my office.",
+    "translation_vi": "Có, cho tôi xin nhé. Tôi cần nộp cho công ty."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng khi muốn xin tờ giấy ghi các món đã mua và số tiền đã trả. Ví dụ: \"Can I have a receipt, please?\""
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng khi muốn xem danh sách món ăn, đồ uống và giá ở quán. Ví dụ: \"Can I see the menu?\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối lại",
+    "usage_vi": "Là số tiền người bán trả lại khi bạn đưa nhiều hơn giá món hàng. Nhân viên thường nói: \"Here is your change.\""
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "lớn (cỡ to)",
+    "usage_vi": "Dùng khi chọn cỡ ly hoặc phần ăn to nhất, đi cùng small (nhỏ) và medium (vừa). Ví dụ: \"A large coffee, please.\""
+   },
+   {
+    "input": "pastry",
+    "word": "pastry",
+    "meaning_vi": "bánh ngọt nướng (như bánh sừng bò)",
+    "usage_vi": "Dùng để gọi các loại bánh nướng nhỏ, thường ngọt và có bơ, bày trong tủ kính ở quán cà phê. Ví dụ: \"I'd like a pastry, please.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vừa mua sách ở hiệu sách và muốn xin tờ giấy ghi số tiền đã trả. Bạn nói: \"Can I have a ___, please?\"",
+    "options": [
+     "change",
+     "receipt",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Receipt\" là tờ hóa đơn ghi số tiền bạn đã trả."
+   },
+   {
+    "question_vi": "Bạn vào một nhà hàng và muốn xem danh sách món ăn cùng giá tiền. Bạn hỏi: \"Can I see the ___?\"",
+    "options": [
+     "menu",
+     "pastry",
+     "large"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Menu\" là thực đơn có danh sách món ăn và giá."
+   },
+   {
+    "question_vi": "Bạn mua chai nước giá 3 đô và đưa tờ 5 đô. Người bán trả lại bạn 2 đô và nói: \"Here is your ___.\"",
+    "options": [
+     "receipt",
+     "large",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối lại khi bạn đưa nhiều hơn giá món hàng."
+   },
+   {
+    "question_vi": "Trời nóng, bạn rất khát và muốn gọi ly nước cam cỡ to nhất. Bạn nói: \"A ___ orange juice, please.\"",
+    "options": [
+     "small",
+     "large",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Large\" là cỡ lớn, phù hợp khi bạn muốn ly to nhất."
+   },
+   {
+    "question_vi": "Ở tiệm bánh, bạn muốn mua một chiếc bánh nướng nhỏ, ngọt, có bơ như bánh sừng bò. Bạn nói: \"I'd like a ___, please.\"",
+    "options": [
+     "receipt",
+     "change",
+     "pastry"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pastry\" là bánh ngọt nướng, như bánh sừng bò."
+   }
+  ]
+ }
+}

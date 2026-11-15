@@ -1,0 +1,125 @@
+{
+ "case": {
+  "id": "u025",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "straw",
+   "napkin",
+   "refill"
+  ],
+  "custom": [
+   "tip jar"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, cà phê đá của chị đây ạ. Chị có cần straw để hút nước cho dễ không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Có em, cho chị một cái straw nhé. À, chị lỡ làm đổ ít cà phê ra bàn rồi, cho chị xin napkin để lau với.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, napkin đây ạ, chị cứ lấy thêm để lau tay luôn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em ơi, chị uống hết cốc rồi, chị refill được không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ, em rót thêm đầy cốc cho chị. Ở quán em refill không mất thêm tiền đâu ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em nhiều. Chị muốn để lại ít tiền boa cho các em, bỏ ở đâu nhỉ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị bỏ vào cái tip jar trên quầy là được ạ. Cảm ơn chị!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "straw",
+    "word": "straw",
+    "meaning_vi": "ống hút",
+    "usage_vi": "Dùng khi bạn muốn xin ống để hút nước uống, ví dụ: \"Can I have a straw?\""
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy",
+    "usage_vi": "Dùng khi cần giấy để lau tay, lau miệng hoặc lau bàn ở quán ăn, quán cà phê."
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, châm thêm (vào cốc đã uống hết)",
+    "usage_vi": "Dùng khi bạn uống hết và muốn được rót thêm vào cốc cũ; nhiều quán cho refill miễn phí, ví dụ: \"Can I get a refill?\""
+   },
+   {
+    "input": "tip jar",
+    "word": "tip jar",
+    "meaning_vi": "hũ đựng tiền boa",
+    "usage_vi": "Là cái hũ đặt trên quầy để khách bỏ tiền boa cho nhân viên nếu muốn."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một ly sinh tố mang về và cần cái ống để hút. Bạn xin nhân viên cái gì?",
+    "options": [
+     "napkin",
+     "straw",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Straw\" là ống hút, dùng để hút nước uống."
+   },
+   {
+    "question_vi": "Ăn bánh xong tay bạn dính đầy kem và bạn cần giấy để lau. Bạn xin cái gì?",
+    "options": [
+     "napkin",
+     "tip jar",
+     "straw"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay và miệng."
+   },
+   {
+    "question_vi": "Bạn đã uống hết ly trà và muốn nhân viên rót thêm trà vào chính cái cốc đó. Bạn nói từ nào?",
+    "options": [
+     "tip jar",
+     "straw",
+     "refill"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Refill\" là rót thêm vào cốc đã uống hết."
+   },
+   {
+    "question_vi": "Nhân viên phục vụ rất tốt, bạn muốn để lại vài đồng tiền boa. Bạn bỏ tiền vào đâu trên quầy?",
+    "options": [
+     "napkin",
+     "tip jar",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip jar\" là hũ đựng tiền boa đặt trên quầy cho khách bỏ tiền vào."
+   }
+  ]
+ }
+}

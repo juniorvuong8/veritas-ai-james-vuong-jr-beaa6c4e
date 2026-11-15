@@ -1,0 +1,120 @@
+{
+ "case": {
+  "id": "u007",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "tip",
+   "seatbelt",
+   "fare"
+  ],
+  "custom": [
+   "drop off"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị nhớ put on your seatbelt nhé, kéo dây qua người rồi cài lại cho an toàn khi xe chạy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cài rồi. Em muốn drop off at the Grand Hotel, anh cho em xuống xe ngay trước cửa là được ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "OK, no problem. Khoảng hai mươi phút là tới.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Tới nơi rồi chị. The fare is 25 dollars, đồng hồ tính theo quãng đường mình vừa đi đó.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em gửi 25 dollars, và em gửi thêm a 5-dollar tip cho anh, cảm ơn anh đã chở em cẩn thận.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Thank you for the tip! Chúc chị một ngày vui vẻ nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền tip",
+    "usage_vi": "Dùng khi bạn đưa thêm một ít tiền để cảm ơn người phục vụ, như tài xế hay bồi bàn. Ví dụ: \"Here is a tip for you.\""
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nói về dây cài trên ghế ô tô hoặc máy bay. Người ta thường nói \"Put on your seatbelt\" để nhắc bạn cài dây."
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền vé, tiền cước đi xe",
+    "usage_vi": "Dùng để nói số tiền phải trả khi đi taxi, xe buýt, tàu hoặc máy bay. Ví dụ: \"The fare is 10 dollars.\""
+   },
+   {
+    "input": "drop off",
+    "word": "drop off",
+    "meaning_vi": "cho xuống xe, thả xuống",
+    "usage_vi": "Dùng khi nói về nơi bạn muốn xuống xe hoặc nơi tài xế để bạn xuống. Ví dụ: \"I want to drop off at the station.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn tối ở nhà hàng và muốn để lại thêm một ít tiền để cảm ơn người phục vụ. Số tiền thêm đó gọi là gì?",
+    "options": [
+     "fare",
+     "tip",
+     "seatbelt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip\" là tiền boa bạn đưa thêm để cảm ơn người phục vụ."
+   },
+   {
+    "question_vi": "Bạn vừa ngồi vào ghế trên máy bay, tiếp viên nhắc bạn cài thứ gì trước khi cất cánh?",
+    "options": [
+     "seatbelt",
+     "tip",
+     "drop off"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn, cần cài khi ngồi trên máy bay hoặc ô tô."
+   },
+   {
+    "question_vi": "Bạn lên xe buýt và muốn hỏi phải trả bao nhiêu tiền cho chuyến đi. Bạn hỏi về cái gì?",
+    "options": [
+     "tip",
+     "drop off",
+     "fare"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fare\" là tiền vé hoặc tiền cước phải trả cho một chuyến đi."
+   },
+   {
+    "question_vi": "Bạn đặt xe công nghệ và muốn nói với tài xế rằng bạn muốn xuống xe ở ga tàu. Bạn dùng cụm từ nào?",
+    "options": [
+     "fare",
+     "drop off",
+     "tip"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Drop off\" dùng để nói nơi bạn muốn xuống xe, ví dụ \"drop off at the station\"."
+   }
+  ]
+ }
+}

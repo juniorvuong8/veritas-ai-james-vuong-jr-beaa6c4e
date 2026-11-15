@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "u037",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "receipt",
+   "for here",
+   "medium"
+  ],
+  "custom": [
+   "cash"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị muốn uống gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị một ly cà phê sữa nóng.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị lấy ly nhỏ, ly medium hay ly lớn ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ly medium em nhé, không nhỏ mà cũng không lớn quá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ. Chị uống for here hay mang đi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "For here em, chị ngồi ở cái bàn gần cửa sổ kia.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị năm đô. Chị trả bằng thẻ hay cash ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị trả cash, tờ năm đô đây em. Em in receipt cho chị để chị biết mình đã trả bao nhiêu nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng khi bạn muốn xin tờ giấy ghi những món đã mua và số tiền đã trả. Bạn có thể nói \"Can I have the receipt?\"."
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại quán",
+    "usage_vi": "Dùng khi bạn muốn ăn hoặc uống ngay tại quán, không mang đi. Câu này thường là câu trả lời cho câu hỏi \"For here or to go?\"."
+   },
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng để chọn kích cỡ ở giữa, không nhỏ (small) cũng không lớn (large). Bạn thường gặp từ này khi gọi đồ uống hoặc mua quần áo."
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi bạn trả bằng tiền giấy hoặc tiền xu, không dùng thẻ. Bạn có thể nói \"I'll pay in cash.\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một quyển sách và muốn giữ tờ giấy ghi số tiền đã trả để đổi sách sau này. Bạn nói: \"Can I have the ___?\"",
+    "options": [
+     "cash",
+     "receipt",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Receipt\" là tờ giấy ghi món đã mua và số tiền đã trả, nên đây là thứ bạn cần xin."
+   },
+   {
+    "question_vi": "Ở tiệm bánh, nhân viên hỏi bạn ăn ở đâu. Bạn muốn ngồi ăn bánh ngay tại bàn trong tiệm. Bạn trả lời thế nào?",
+    "options": [
+     "to go",
+     "medium",
+     "for here"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại chỗ, còn \"to go\" là mang đi."
+   },
+   {
+    "question_vi": "Ở rạp chiếu phim, bạn mua bắp rang và muốn túi không nhỏ cũng không lớn. Bạn chọn cỡ nào?",
+    "options": [
+     "medium",
+     "large",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa \"small\" (nhỏ) và \"large\" (lớn)."
+   },
+   {
+    "question_vi": "Ở một khu chợ, người bán nói họ không nhận thẻ. Bạn phải trả bằng gì?",
+    "options": [
+     "card",
+     "cash",
+     "for here"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Khi người bán không nhận thẻ (card), bạn phải trả bằng \"cash\", tức là tiền mặt."
+   }
+  ]
+ }
+}

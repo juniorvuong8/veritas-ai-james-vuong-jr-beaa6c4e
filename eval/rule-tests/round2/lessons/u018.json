@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "u018",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "cash",
+   "fresh",
+   "cashier",
+   "basket"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị lấy a basket không ạ? Có cái này đựng đồ, xách đi trong siêu thị cho tiện.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, cho em một cái, cảm ơn anh. Rau ở đây có fresh không anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có, very fresh ạ! Rau mới hái sáng nay, còn xanh lắm, không bị héo đâu chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy em lấy ít rau. Chọn xong rồi thì em ra đâu trả tiền ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị ra quầy đằng kia, the cashier ở đó sẽ tính tiền cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em trả by cash được không, hay chỉ dùng thẻ thôi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được chị, pay by cash hay card đều được. Tiền giấy, tiền xu bên em đều nhận ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi bạn trả bằng tiền giấy hoặc tiền xu, không dùng thẻ. Thường nói \"pay by cash\" hoặc \"pay in cash\"."
+   },
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thực phẩm như rau, trái cây, thịt, bánh mì còn mới, chưa bị cũ hay héo. Ví dụ: \"Is this fish fresh?\""
+   },
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Chỉ người đứng ở quầy tính tiền trong siêu thị hoặc cửa hàng. Bạn có thể hỏi \"Where is the cashier?\" khi muốn đi trả tiền."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "cái giỏ",
+    "usage_vi": "Dùng để chỉ cái giỏ xách tay đựng đồ khi đi mua sắm trong siêu thị. Ví dụ: \"Can I have a basket?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn không mang thẻ ngân hàng, trong ví chỉ có tiền giấy. Khi trả tiền, bạn nói: \"I will pay by ___.\"",
+    "options": [
+     "card",
+     "cash",
+     "basket"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cash\" là tiền mặt, phù hợp khi bạn trả bằng tiền giấy chứ không dùng thẻ."
+   },
+   {
+    "question_vi": "Bạn muốn mua bánh mì vừa mới nướng sáng nay. Bạn hỏi nhân viên tiệm bánh: \"Is this bread ___?\"",
+    "options": [
+     "fresh",
+     "cashier",
+     "cash"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, dùng để hỏi bánh mì có phải mới làm không."
+   },
+   {
+    "question_vi": "Ở cửa hàng tiện lợi, bạn cầm đồ trên tay và muốn tìm người tính tiền. Bạn hỏi: \"Where is the ___?\"",
+    "options": [
+     "basket",
+     "fresh",
+     "cashier"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cashier\" là nhân viên thu ngân, người tính tiền cho bạn ở quầy."
+   },
+   {
+    "question_vi": "Ở chợ trái cây, bạn chọn nhiều cam và táo quá, cầm không hết. Bạn hỏi người bán: \"Can I have a ___?\"",
+    "options": [
+     "cash",
+     "basket",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Basket\" là cái giỏ, dùng để đựng đồ khi bạn mua nhiều thứ."
+   }
+  ]
+ }
+}

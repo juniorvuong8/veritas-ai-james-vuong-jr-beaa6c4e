@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "u016",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pharmacy",
+   "appointment",
+   "medicine",
+   "allergy",
+   "prescription"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, chị có appointment lúc 10 giờ đúng không? Hôm qua chị gọi điện đặt lịch trước rồi phải không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ đúng ạ. Mấy hôm nay em bị ho và đau họng, bác sĩ ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị có bị allergy với loại thuốc nào không? Ví dụ uống vào là bị ngứa hoặc nổi mẩn đỏ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, em uống penicillin là bị nổi mẩn khắp người.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Vậy tôi sẽ cho chị loại medicine khác. Chị uống ngày hai lần sau khi ăn là sẽ đỡ ho.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em mua thuốc đó ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Đây là prescription của chị, tôi đã ghi tên thuốc và cách uống lên tờ giấy này. Chị mang nó tới pharmacy ở góc đường, ở đó người ta sẽ bán thuốc cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em cảm ơn bác sĩ ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "nhà thuốc, hiệu thuốc",
+    "usage_vi": "Dùng để chỉ cửa hàng bán thuốc. Ví dụ: \"Where is the pharmacy?\" (Nhà thuốc ở đâu?)."
+   },
+   {
+    "input": "appointment",
+    "word": "appointment",
+    "meaning_vi": "cuộc hẹn, lịch hẹn",
+    "usage_vi": "Dùng khi bạn đặt lịch trước để gặp bác sĩ hoặc người khác vào một giờ nhất định. Thường nói \"make an appointment\" (đặt lịch hẹn)."
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc",
+    "usage_vi": "Dùng để chỉ thuốc uống hoặc thuốc chữa bệnh nói chung. Ví dụ: \"Take this medicine twice a day.\" (Uống thuốc này ngày hai lần)."
+   },
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể bị phản ứng xấu như ngứa, nổi mẩn với một loại thuốc hoặc thức ăn. Ví dụ: \"I have an allergy to shrimp.\" (Tôi bị dị ứng tôm)."
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Dùng để chỉ tờ giấy bác sĩ ghi tên thuốc và cách dùng. Bạn mang đơn thuốc đến nhà thuốc để mua thuốc."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn gọi điện cho phòng khám để hẹn gặp bác sĩ vào thứ Hai. Bạn nói: \"I want to make an ___.\" Từ nào phù hợp?",
+    "options": [
+     "appointment",
+     "pharmacy",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Appointment\" là lịch hẹn, nên khi muốn đặt lịch gặp bác sĩ, bạn nói \"make an appointment\"."
+   },
+   {
+    "question_vi": "Bạn bị sốt và cần thứ gì đó để uống cho khỏi bệnh. Bạn cần gì?",
+    "options": [
+     "prescription",
+     "medicine",
+     "appointment"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medicine\" là thuốc, thứ bạn uống để chữa bệnh."
+   },
+   {
+    "question_vi": "Mỗi lần ăn tôm, bạn bị ngứa và nổi mẩn. Bạn nói với bác sĩ: \"I have an ___ to shrimp.\" Từ nào phù hợp?",
+    "options": [
+     "medicine",
+     "pharmacy",
+     "allergy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Allergy\" là dị ứng, tức là cơ thể phản ứng xấu như ngứa, nổi mẩn khi ăn tôm."
+   },
+   {
+    "question_vi": "Bạn bị đau đầu và muốn đi mua thuốc. Bạn hỏi người đi đường chỗ nào?",
+    "options": [
+     "pharmacy",
+     "appointment",
+     "prescription"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bán thuốc."
+   },
+   {
+    "question_vi": "Nhân viên nhà thuốc nói loại thuốc này chỉ bán khi có tờ giấy bác sĩ ghi tên thuốc. Họ hỏi bạn có cái gì?",
+    "options": [
+     "allergy",
+     "prescription",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Prescription\" là đơn thuốc, tờ giấy bác sĩ ghi tên thuốc để bạn mang đi mua."
+   }
+  ]
+ }
+}

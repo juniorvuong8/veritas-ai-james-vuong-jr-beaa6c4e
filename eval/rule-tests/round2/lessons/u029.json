@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "u029",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "order",
+   "change",
+   "iced",
+   "napkin"
+  ],
+  "custom": [
+   "cash"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị xem bảng phía trên rồi chọn món nhé. Chị muốn order gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Trời nóng quá, chị không uống nóng đâu. Cho chị an iced latte, nhiều đá nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị là five dollars ạ. Chị quẹt thẻ hay pay by cash ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị trả cash nhé, tờ ten dollars này em.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị đưa mười đô, ly nước năm đô, vậy đây là your change, năm đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Chị lỡ làm đổ nước ra tay rồi. Can I have a napkin?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, napkin ở ngay cạnh chỗ để ống hút, chị cứ lấy để lau tay nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi bạn nói muốn mua món gì ở quán ăn hoặc quán cà phê. Nhân viên thường hỏi: \"What would you like to order?\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa trả lại",
+    "usage_vi": "Là số tiền người bán trả lại khi bạn đưa nhiều hơn giá món hàng. Nhân viên hay nói: \"Here is your change.\""
+   },
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "lạnh, có đá",
+    "usage_vi": "Đặt trước tên đồ uống để gọi loại uống lạnh có đá, ví dụ \"iced coffee\", \"iced tea\"."
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy (để lau tay, lau miệng)",
+    "usage_vi": "Dùng khi bạn cần thứ để lau tay, lau miệng hoặc lau bàn ở quán. Bạn có thể hỏi: \"Can I have a napkin?\""
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi bạn trả bằng tiền giấy hoặc tiền xu, không phải bằng thẻ. Bạn có thể nói: \"I'll pay by cash.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vào nhà hàng, ngồi xem thực đơn xong và muốn gọi món ngay. Bạn nói: \"I'm ready to ___.\"",
+    "options": [
+     "order",
+     "change",
+     "napkin"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, nên \"I'm ready to order\" là \"Tôi sẵn sàng gọi món rồi\"."
+   },
+   {
+    "question_vi": "Bạn mua một cái bánh giá 3 đô và đưa tờ 5 đô. Người bán đưa lại cho bạn 2 đô. Số tiền 2 đô đó gọi là gì?",
+    "options": [
+     "cash",
+     "napkin",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Số tiền người bán trả lại khi bạn đưa dư gọi là \"change\" (tiền thối)."
+   },
+   {
+    "question_vi": "Trời rất nóng, bạn muốn uống trà lạnh có đá. Bạn gọi: \"An ___ tea, please.\"",
+    "options": [
+     "hot",
+     "iced",
+     "cash"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" chỉ đồ uống lạnh có đá, còn \"hot\" là nóng nên không đúng ý bạn."
+   },
+   {
+    "question_vi": "Bạn đang ăn bánh mì thì bị dính sốt lên miệng và cần thứ để lau. Bạn hỏi nhân viên: \"Can I have a ___?\"",
+    "options": [
+     "napkin",
+     "receipt",
+     "order"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Napkin\" là khăn giấy dùng để lau miệng, lau tay."
+   },
+   {
+    "question_vi": "Máy quẹt thẻ của cửa hàng bị hỏng nên bạn phải trả bằng tiền giấy. Bạn nói: \"I'll pay by ___.\"",
+    "options": [
+     "card",
+     "change",
+     "cash"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Trả bằng tiền giấy tức là trả bằng tiền mặt, tiếng Anh là \"cash\"."
+   }
+  ]
+ }
+}

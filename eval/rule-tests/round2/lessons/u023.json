@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "u023",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "airport",
+   "trunk",
+   "turn right",
+   "stop here",
+   "tip"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Where are you going today?",
+    "translation_vi": "Chào bạn! Hôm nay bạn muốn đi đâu?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "To the airport, please. My plane leaves at six.",
+    "translation_vi": "Cho tôi ra sân bay nhé. Máy bay của tôi cất cánh lúc sáu giờ."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. Your bag is big. I can put it in the trunk, at the back of the car.",
+    "translation_vi": "Được rồi. Túi của bạn to quá. Tôi có thể để nó vào cốp xe, ở phía sau xe."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you. Please turn right at the next light, not left. That road is faster.",
+    "translation_vi": "Cảm ơn anh. Đến đèn giao thông tiếp theo anh rẽ phải nhé, đừng rẽ trái. Đường đó nhanh hơn."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Sure. We are at the airport now. Where do you want to get out?",
+    "translation_vi": "Được. Chúng ta đến sân bay rồi. Bạn muốn xuống xe ở đâu?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Please stop here, by door 3. I want to get out now.",
+    "translation_vi": "Anh dừng ở đây nhé, cạnh cửa số 3. Tôi muốn xuống xe bây giờ."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Here you are. That's 30 dollars.",
+    "translation_vi": "Đến nơi rồi. Hết 30 đô la."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here is 35 dollars. The extra 5 dollars is your tip. Thank you for the good ride!",
+    "translation_vi": "Đây là 35 đô la. 5 đô la dư ra là tiền boa cho anh. Cảm ơn anh vì chuyến đi tốt!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi nói về nơi máy bay cất cánh và hạ cánh. Khi đi taxi, bạn có thể nói \"To the airport, please.\" để nhờ tài xế chở ra sân bay."
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (phía sau ô tô)",
+    "usage_vi": "Dùng để chỉ chỗ để hành lý ở phía sau xe ô tô. Ví dụ: \"Can you open the trunk?\" nghĩa là nhờ tài xế mở cốp xe."
+   },
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế đi sang bên phải. Bạn có thể nói \"Please turn right here.\" hoặc \"Turn right at the next light.\""
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Dùng khi bạn muốn tài xế dừng xe ngay tại chỗ để bạn xuống. Thêm \"please\" cho lịch sự: \"Please stop here.\""
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền tip",
+    "usage_vi": "Dùng để chỉ khoản tiền thêm bạn tặng tài xế hoặc nhân viên để cảm ơn họ phục vụ tốt. Ví dụ: \"This is your tip.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn sắp bay về Việt Nam và lên taxi ở khách sạn. Bạn nói với tài xế: \"To the ___, please.\" Từ nào phù hợp?",
+    "options": [
+     "trunk",
+     "airport",
+     "tip"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Airport\" là sân bay, nơi bạn cần đến để đi máy bay."
+   },
+   {
+    "question_vi": "Bạn có một chiếc vali rất to và muốn nhờ tài xế cất nó vào phía sau xe. Bạn hỏi: \"Can you open the ___?\" Từ nào phù hợp?",
+    "options": [
+     "trunk",
+     "stop here",
+     "airport"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Trunk\" là cốp xe ở phía sau ô tô, nơi để hành lý."
+   },
+   {
+    "question_vi": "Nhà bạn bạn nằm ở con đường bên phải ngã tư phía trước. Bạn nói với tài xế: \"Please ___ at the corner.\" Cụm từ nào phù hợp?",
+    "options": [
+     "stop here",
+     "tip",
+     "turn right"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Turn right\" là rẽ phải, dùng để chỉ tài xế đi sang con đường bên phải."
+   },
+   {
+    "question_vi": "Xe đang chạy ngang qua đúng cửa hàng bạn muốn đến. Bạn muốn xuống xe ngay. Bạn nói: \"Please ___.\" Cụm từ nào phù hợp?",
+    "options": [
+     "turn right",
+     "stop here",
+     "trunk"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" là dừng ở đây, dùng khi bạn muốn tài xế dừng xe ngay tại chỗ."
+   },
+   {
+    "question_vi": "Tài xế rất thân thiện và giúp bạn mang hành lý. Bạn đưa thêm 3 đô la và nói: \"This is your ___.\" Từ nào phù hợp?",
+    "options": [
+     "tip",
+     "airport",
+     "turn right"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Tip\" là tiền boa, khoản tiền thêm để cảm ơn người phục vụ tốt."
+   }
+  ]
+ }
+}

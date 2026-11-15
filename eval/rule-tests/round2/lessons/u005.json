@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "u005",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "order",
+   "menu",
+   "refill",
+   "large"
+  ],
+  "custom": [
+   "tip jar"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị đã chọn được đồ uống chưa ạ? Can I take your order?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chưa em ơi, cho chị xem the menu trước để biết quán có những món gì và giá bao nhiêu nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, the menu đây chị. Ly cà phê nhỏ giá 3 đô, còn a large coffee là ly to hơn, giá 5 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị đang khát lắm, vậy chị order a large iced coffee nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ. Quán có free refill, chị uống hết thì mang ly lại đây, em rót thêm cho chị miễn phí nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hay quá! Đây là tiền, phần tiền thừa chị bỏ vào the tip jar nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, cảm ơn chị nhiều! Tiền trong cái hũ trên quầy đó là tiền boa để cảm ơn nhân viên quán ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món; món mình đã gọi",
+    "usage_vi": "Dùng khi bạn gọi đồ ăn, đồ uống ở quán. Nhân viên thường hỏi \"Can I take your order?\" và bạn có thể nói \"I'd like to order...\"."
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "danh sách món ăn, đồ uống kèm giá",
+    "usage_vi": "Dùng khi muốn xem quán có món gì và giá bao nhiêu. Bạn có thể nói \"Can I see the menu, please?\"."
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, châm thêm (đồ uống)",
+    "usage_vi": "Dùng khi uống hết và muốn được rót thêm vào ly cũ. Nhiều quán có \"free refill\", tức là rót thêm không mất tiền."
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn, to",
+    "usage_vi": "Dùng để chọn cỡ ly to nhất hoặc to hơn khi gọi đồ uống, ví dụ \"a large coffee\". Cỡ nhỏ là \"small\"."
+   },
+   {
+    "input": "tip jar",
+    "word": "tip jar",
+    "meaning_vi": "hũ đựng tiền boa",
+    "usage_vi": "Là cái hũ đặt trên quầy để khách bỏ tiền boa cảm ơn nhân viên. Bạn có thể bỏ tiền thừa vào \"the tip jar\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đã chọn xong món ở một quán ăn và muốn nói với nhân viên là bạn sẵn sàng gọi món: \"I'm ready to ___.\" Từ nào phù hợp?",
+    "options": [
+     "menu",
+     "order",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, nên \"I'm ready to order\" là \"Tôi sẵn sàng gọi món rồi\"."
+   },
+   {
+    "question_vi": "Bạn vừa vào một quán trà sữa và muốn xem danh sách các món cùng giá tiền. Bạn nói: \"Can I see the ___, please?\"",
+    "options": [
+     "menu",
+     "tip jar",
+     "large"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Menu\" là danh sách món và giá, nên bạn xin xem \"the menu\"."
+   },
+   {
+    "question_vi": "Ở nhà hàng, bạn đã uống hết ly trà đá và muốn nhân viên rót thêm vào ly. Bạn nói: \"Can I get a ___, please?\"",
+    "options": [
+     "large",
+     "order",
+     "refill"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Refill\" là rót thêm đồ uống vào ly cũ, đúng với điều bạn muốn."
+   },
+   {
+    "question_vi": "Trời rất nóng và bạn muốn mua ly nước cam to nhất ở quầy nước. Bạn nói: \"A ___ orange juice, please.\"",
+    "options": [
+     "large",
+     "small",
+     "refill"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Large\" nghĩa là cỡ lớn, còn \"small\" là cỡ nhỏ."
+   },
+   {
+    "question_vi": "Bạn rất hài lòng với nhân viên tiệm bánh và muốn bỏ vài đồng vào cái hũ trên quầy để cảm ơn. Cái hũ đó gọi là gì?",
+    "options": [
+     "menu",
+     "tip jar",
+     "order"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip jar\" là hũ đựng tiền boa đặt trên quầy để khách cảm ơn nhân viên."
+   }
+  ]
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "u010",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "basket",
+   "cash",
+   "cart",
+   "checkout",
+   "on sale"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị mua đồ ăn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Do you want a basket to carry your things in your hand, or a cart with wheels for a big shop?",
+    "translation_vi": "Chào chị! Chị muốn lấy giỏ xách tay để đựng đồ, hay xe đẩy có bánh để mua nhiều đồ ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Just a basket, please. I only need a few things. Is the milk on sale today?",
+    "translation_vi": "Cho em cái giỏ thôi ạ. Em chỉ cần mua vài món. Hôm nay sữa có giảm giá không ạ?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, the milk is on sale. It is cheaper this week, only one dollar.",
+    "translation_vi": "Có chị ạ, sữa đang giảm giá. Tuần này rẻ hơn, chỉ một đô thôi."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great! Where do I pay?",
+    "translation_vi": "Tuyệt quá! Em trả tiền ở đâu ạ?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Please go to the checkout near the door. You pay for your things there.",
+    "translation_vi": "Chị ra quầy thanh toán gần cửa nhé. Chị trả tiền cho đồ của mình ở đó."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Can I pay with cash, or only by card?",
+    "translation_vi": "Em trả bằng tiền mặt được không, hay chỉ quẹt thẻ thôi ạ?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Cash is fine. Paper money and coins are OK.",
+    "translation_vi": "Tiền mặt được chị ạ. Tiền giấy hay tiền xu đều được."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ (xách tay)",
+    "usage_vi": "Dùng khi nói về cái giỏ nhỏ để cầm tay đựng đồ trong siêu thị, thích hợp khi mua ít món."
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi bạn trả bằng tiền giấy hoặc tiền xu, không dùng thẻ. Thường nói: \"Can I pay with cash?\""
+   },
+   {
+    "input": "cart",
+    "word": "cart",
+    "meaning_vi": "xe đẩy (mua hàng)",
+    "usage_vi": "Dùng khi nói về chiếc xe có bánh để đẩy trong siêu thị, thích hợp khi mua nhiều hoặc mua đồ nặng."
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy thanh toán",
+    "usage_vi": "Dùng khi nói về chỗ trả tiền trong siêu thị. Có thể hỏi: \"Where is the checkout?\""
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn bình thường. Ví dụ: \"The bread is on sale.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn chỉ mua một hộp sữa và vài quả táo, nên muốn lấy một thứ nhỏ để cầm tay đựng đồ. Bạn nói: \"Can I have a ___, please?\"",
+    "options": [
+     "cart",
+     "basket",
+     "checkout"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Basket\" là giỏ xách tay, vừa đủ khi bạn mua ít đồ."
+   },
+   {
+    "question_vi": "Bạn không mang thẻ, chỉ có tiền giấy và tiền xu trong ví. Bạn hỏi: \"Can I pay with ___?\"",
+    "options": [
+     "cash",
+     "on sale",
+     "basket"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cash\" là tiền mặt, tức là tiền giấy và tiền xu."
+   },
+   {
+    "question_vi": "Bạn mua đồ ăn cho cả gia đình trong một tuần, có nhiều chai nước và túi gạo nặng. Bạn cần lấy cái gì?",
+    "options": [
+     "checkout",
+     "basket",
+     "cart"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cart\" là xe đẩy có bánh, giúp bạn chở nhiều đồ nặng."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn đi trả tiền. Bạn hỏi nhân viên: \"Where is the ___?\"",
+    "options": [
+     "cash",
+     "checkout",
+     "on sale"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Checkout\" là quầy thanh toán, nơi bạn trả tiền cho đồ đã mua."
+   },
+   {
+    "question_vi": "Bạn thấy bánh mì hôm nay rẻ hơn mọi ngày. Bạn nói với bạn mình: \"Look! The bread is ___.\"",
+    "options": [
+     "on time",
+     "in cash",
+     "on sale"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, bán rẻ hơn bình thường."
+   }
+  ]
+ }
+}

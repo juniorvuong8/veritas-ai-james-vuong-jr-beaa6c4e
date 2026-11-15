@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u027",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "address",
+   "trunk",
+   "tip",
+   "stop here"
+  ],
+  "custom": [
+   "driver"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị, tôi là driver của chuyến xe chị đặt trên app, hôm nay tôi sẽ lái xe đưa chị đi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ chào anh. Em có một vali lớn, anh mở trunk ở phía sau xe giúp em để em cất vali vào nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Được ạ. Chị muốn đi đâu? Chị đọc giúp tôi address, số nhà và tên đường nơi chị đến nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, số 25 đường Park, gần công viên ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Sắp tới số 25 rồi chị ơi, chị muốn xuống ở chỗ nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Anh stop here giúp em, ngay trước cửa khách sạn này, em xuống ở đây được rồi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, xe dừng rồi. Tổng tiền là 20 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em gửi anh 25 đô, 5 đô dư là tip em cảm ơn anh đã chở em nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi nói hoặc hỏi nơi mình muốn đến, gồm số nhà và tên đường. Ví dụ: \"What's the address?\" là hỏi địa chỉ."
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (phía sau ô tô)",
+    "usage_vi": "Dùng khi muốn nhờ tài xế mở chỗ để hành lý ở sau xe. Ví dụ: \"Can you open the trunk?\""
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền típ",
+    "usage_vi": "Là số tiền thêm ngoài giá cước để cảm ơn tài xế. Ở nhiều nước nói tiếng Anh, khách thường cho tip khi đi taxi."
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Nói với tài xế khi bạn muốn xuống xe ngay tại chỗ đó. Có thể nói lịch sự hơn: \"Please stop here.\""
+   },
+   {
+    "input": "driver",
+    "word": "driver",
+    "meaning_vi": "tài xế, người lái xe",
+    "usage_vi": "Dùng để chỉ người lái taxi hoặc xe đặt qua ứng dụng. Trong app thường ghi tên và ảnh của driver."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn đặt đồ ăn giao tới nhà, ứng dụng yêu cầu bạn nhập số nhà và tên đường. Ứng dụng đang hỏi bạn điều gì?",
+    "options": [
+     "trunk",
+     "address",
+     "tip"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Số nhà và tên đường là address, tức là nơi bạn ở hoặc nơi cần đến."
+   },
+   {
+    "question_vi": "Bạn đi sân bay bằng ô tô của bạn bè và mang theo hai túi lớn. Bạn nên để túi vào đâu?",
+    "options": [
+     "trunk",
+     "driver",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Trunk là cốp ở phía sau ô tô, nơi để hành lý lớn."
+   },
+   {
+    "question_vi": "Ăn tối ở nhà hàng xong, bạn để lại thêm một ít tiền trên bàn để cảm ơn người phục vụ. Số tiền đó gọi là gì?",
+    "options": [
+     "address",
+     "driver",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Tiền thêm để cảm ơn người phục vụ, tài xế hay nhân viên là tip."
+   },
+   {
+    "question_vi": "Bạn đang ngồi taxi và thấy xe vừa tới trước cửa nhà bạn. Bạn nói gì để tài xế dừng xe?",
+    "options": [
+     "tip",
+     "stop here",
+     "trunk"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" dùng để nhờ tài xế dừng xe ngay tại chỗ này."
+   },
+   {
+    "question_vi": "Bạn đặt xe qua ứng dụng và muốn biết ai sẽ lái xe tới đón mình. Bạn xem thông tin của ai?",
+    "options": [
+     "driver",
+     "address",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Người lái xe đến đón bạn là driver, ứng dụng thường hiện tên và ảnh của họ."
+   }
+  ]
+ }
+}

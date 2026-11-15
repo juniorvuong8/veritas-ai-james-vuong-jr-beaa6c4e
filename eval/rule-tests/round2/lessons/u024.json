@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "u024",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "pain",
+   "headache",
+   "pharmacy",
+   "prescription"
+  ],
+  "custom": [
+   "reception"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ vì đau đầu",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello, I'm Dr. Brown. What's wrong today?",
+    "translation_vi": "Chào bạn, tôi là bác sĩ Brown. Hôm nay bạn bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a headache. My head hurts a lot.",
+    "translation_vi": "Tôi bị đau đầu. Đầu tôi đau nhiều lắm."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Where is the pain? Show me where it hurts.",
+    "translation_vi": "Đau ở chỗ nào? Bạn chỉ cho tôi chỗ bị đau nhé."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "The pain is here, at the front of my head.",
+    "translation_vi": "Đau ở đây, phía trước đầu ạ."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "OK. This paper is your prescription. It says which medicine you need. Take it to the pharmacy.",
+    "translation_vi": "Được rồi. Tờ giấy này là đơn thuốc của bạn. Trong đó ghi bạn cần thuốc gì. Bạn mang nó đến nhà thuốc nhé."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Where is the pharmacy? Where can I buy the medicine?",
+    "translation_vi": "Nhà thuốc ở đâu ạ? Tôi mua thuốc ở đâu được?"
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "It's next door. But first, please pay at reception, the front desk near the door.",
+    "translation_vi": "Ngay bên cạnh. Nhưng trước tiên, bạn thanh toán ở quầy lễ tân, cái bàn phía trước gần cửa ra vào nhé."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "OK, I'll pay at the front desk. Thank you, doctor.",
+    "translation_vi": "Vâng, tôi sẽ trả tiền ở bàn phía trước. Cảm ơn bác sĩ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng khi nói với bác sĩ về chỗ bị đau trên cơ thể. Ví dụ: \"I have pain in my back.\" (Tôi bị đau lưng.)"
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu",
+    "usage_vi": "Dùng khi đầu bạn bị đau. Thường nói: \"I have a headache.\" (Tôi bị đau đầu.)"
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "nhà thuốc, hiệu thuốc",
+    "usage_vi": "Là nơi bạn mua thuốc hoặc mang đơn thuốc đến để lấy thuốc. Ví dụ: \"Where is the pharmacy?\" (Nhà thuốc ở đâu?)"
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Là giấy bác sĩ viết, ghi loại thuốc bạn cần. Bạn mang nó đến nhà thuốc để mua thuốc."
+   },
+   {
+    "input": "reception",
+    "word": "reception",
+    "meaning_vi": "quầy lễ tân",
+    "usage_vi": "Là bàn ở gần cửa phòng khám, nơi bạn đăng ký khi đến và trả tiền khi về. Ví dụ: \"Please pay at reception.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị ngã và đầu gối rất đau. Bạn nói với bác sĩ: \"I have ___ in my knee.\" Từ nào phù hợp?",
+    "options": [
+     "pain",
+     "reception",
+     "pharmacy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pain\" nghĩa là cơn đau, dùng để nói chỗ nào trên cơ thể bị đau."
+   },
+   {
+    "question_vi": "Tối qua bạn ngủ ít, sáng nay đầu bạn đau nhức. Bạn nói: \"I have a ___.\" Từ nào phù hợp?",
+    "options": [
+     "prescription",
+     "pharmacy",
+     "headache"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với tình trạng đầu bị đau nhức."
+   },
+   {
+    "question_vi": "Bạn bị cảm và muốn mua thuốc. Bạn nên đi đến đâu?",
+    "options": [
+     "reception",
+     "pharmacy",
+     "headache"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bán thuốc."
+   },
+   {
+    "question_vi": "Ở nhà thuốc, nhân viên nói loại thuốc này cần giấy của bác sĩ. Họ hỏi: \"Do you have a ___?\" Từ nào phù hợp?",
+    "options": [
+     "prescription",
+     "pain",
+     "reception"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Prescription\" là đơn thuốc do bác sĩ viết, cần có để mua một số loại thuốc."
+   },
+   {
+    "question_vi": "Bạn vừa đến phòng khám và cần báo tên ở bàn gần cửa trước khi gặp bác sĩ. Bạn đi đến đâu?",
+    "options": [
+     "pain",
+     "pharmacy",
+     "reception"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Reception\" là quầy lễ tân, nơi bạn đăng ký khi đến phòng khám."
+   }
+  ]
+ }
+}
