@@ -67,6 +67,14 @@ describe('WordPicker', () => {
     expect(screen.getByText(/Đã chọn 0\/5 từ/)).toBeInTheDocument()
   })
 
+  it('refuses a profane word without asking the AI', async () => {
+    const { user, checkWord } = setup()
+    await addCustom(user, 'bullshit')
+    expect(screen.getByText(/không phù hợp/)).toBeInTheDocument()
+    expect(checkWord).not.toHaveBeenCalled()
+    expect(screen.getByText(/Đã chọn 0\/5 từ/)).toBeInTheDocument()
+  })
+
   it('does not ask the AI about a suggested word typed in by hand', async () => {
     const { user, checkWord } = setup()
     await addCustom(user, 'Napkin')

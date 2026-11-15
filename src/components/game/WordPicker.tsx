@@ -18,6 +18,10 @@ const PROBLEM_MESSAGES: Record<WordProblem, { vi: string; en: string }> = {
     vi: 'Hãy nhập một hoặc hai từ thôi, không phải cả câu.',
     en: 'Please enter just one or two words, not a whole sentence.',
   },
+  inappropriate: {
+    vi: 'Từ này không phù hợp. Hãy chọn một từ khác nhé.',
+    en: "That word isn't appropriate here. Please choose another one.",
+  },
 }
 
 type CustomError = { vi: string; en: string }

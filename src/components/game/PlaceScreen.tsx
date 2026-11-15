@@ -118,7 +118,7 @@ export function PlaceScreen(props: {
         <div className="space-y-4" role="alert">
           {host(phase.message_vi, ERROR_MESSAGES_EN[phase.code])}
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            {phase.code !== 'bad_request' && <PrimaryButton onClick={() => generate(words)}>
+            {phase.code !== 'bad_request' && phase.code !== 'inappropriate' && <PrimaryButton onClick={() => generate(words)}>
                 <Bi vi="Thử lại" en="Try again" />
               </PrimaryButton>}
             <SecondaryButton

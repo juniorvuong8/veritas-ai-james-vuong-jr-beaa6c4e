@@ -1,3 +1,4 @@
+import { isInappropriate } from './profanity'
 import { getScenario, normalizeWord } from './scenarios'
 import type { CheckResult, LessonRequest, Level } from './types'
 
@@ -11,18 +12,20 @@ export const MAX_ENGLISH_WORDS = 2
 export const MAX_VIETNAMESE_SYLLABLES = 4
 const VIETNAMESE_LETTER = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/iu
 
-export type WordProblem = 'chars' | 'too_long'
+export type WordProblem = 'chars' | 'too_long' | 'inappropriate'
 
 /**
  * Why a normalized word can't be used, or null if it can.
  * 'chars': only letters (any language), spaces, hyphens and apostrophes, 1-30 chars, at least one letter.
  * 'too_long': a whole phrase or sentence rather than one or two words.
+ * 'inappropriate': profanity, a slur or a sexual term (see profanity.ts).
  */
 export function wordProblem(w: string): WordProblem | null {
   if (!WORD_RULE.test(w) || !/\p{L}/u.test(w)) return 'chars'
   const parts = w.split(' ').filter(Boolean).length
   const max = VIETNAMESE_LETTER.test(w) ? MAX_VIETNAMESE_SYLLABLES : MAX_ENGLISH_WORDS
-  return parts > max ? 'too_long' : null
+  if (parts > max) return 'too_long'
+  return isInappropriate(w) ? 'inappropriate' : null
 }
 
 /** Expects a normalized word. See `wordProblem`. */

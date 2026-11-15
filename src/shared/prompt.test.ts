@@ -38,6 +38,11 @@ describe('buildMessages', () => {
     expect(system.content).toContain('Do not translate the word directly next to it')
   })
 
+  it('tells the model to refuse a lesson around an inappropriate word', () => {
+    const [system] = buildMessages(cafe, validRequest)
+    expect(system.content).toContain('{"error": "inappropriate_word"}')
+  })
+
   it('states the two-speaker, host-first rule', () => {
     const [system] = buildMessages(cafe, validRequest)
     expect(system.content).toContain('exactly two speakers')

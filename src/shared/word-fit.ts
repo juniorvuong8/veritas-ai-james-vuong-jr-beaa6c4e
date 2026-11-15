@@ -26,6 +26,8 @@ Decide whether the word fits the situation well enough that a natural, everyday 
 
 Be generous. It fits if a person in that situation might plausibly say it, hear it, or need it, including general words that come up anywhere (for example "wifi" or "toilet" at a café, "umbrella" in a taxi, "hello" anywhere). It does not fit only if using it would feel forced or random there (for example "volcano" at a café, "algebra" at a supermarket), or if it is not a real word or phrase.
 
+The course is for learners of all ages. "fits" is always false for anything inappropriate, in any language, spelling or disguise: profanity, slurs or insults about any group, sexual words, hate symbols, drugs, or graphic violence. Ordinary words a doctor or shop might use (for example "pain", "pharmacy", "beer" at a supermarket) are fine. When refusing an inappropriate word, do not repeat it in the reasons, and do not suggest a replacement; just say kindly that it isn't suitable and ask for another word.
+
 Respond with ONLY a JSON object, with no other text:
 { "fits": boolean, "reason_vi": string, "reason_en": string }
 "reason_vi" is one short, friendly Vietnamese sentence with full diacritics, and "reason_en" says the same in English. When "fits" is false, say why it doesn't fit this place and suggest one related word that would.`

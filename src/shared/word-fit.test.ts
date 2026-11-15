@@ -74,4 +74,10 @@ describe('buildWordFitMessages', () => {
     const [system] = buildWordFitMessages(getScenario('cafe')!, 'wifi')
     expect(system.content).toContain('Be generous')
   })
+
+  it('tells the model to refuse inappropriate words without repeating them', () => {
+    const [system] = buildWordFitMessages(getScenario('cafe')!, 'wifi')
+    expect(system.content).toContain('"fits" is always false for anything inappropriate')
+    expect(system.content).toContain('do not repeat it')
+  })
 })

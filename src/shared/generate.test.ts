@@ -74,4 +74,19 @@ describe('generateLesson', () => {
     expect(res.status).toBe(502)
     expect(ai).toHaveBeenCalledTimes(2)
   })
+
+  it('refuses with "inappropriate" when the model flags a chosen word, without retrying', async () => {
+    const ai = queue('{"error": "inappropriate_word"}', good)
+    const res = await generateLesson(validRequest, ai)
+    expect(res.status).toBe(400)
+    expect(res.body).toMatchObject({ code: 'inappropriate' })
+    expect(ai).toHaveBeenCalledTimes(1)
+  })
+
+  it('rejects a blocked word before calling the AI', async () => {
+    const ai = queue(good)
+    const res = await generateLesson({ ...validRequest, words: ['menu', 'to go', 'shit'] }, ai)
+    expect(res.body).toMatchObject({ code: 'bad_request' })
+    expect(ai).not.toHaveBeenCalled()
+  })
 })

@@ -8,6 +8,7 @@ import { Bi, useBiText } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 import { getScenario } from '@/shared/scenarios'
 import { TopBar } from './TopBar'
+import { GhostButton, PrimaryButton } from './ui'
 
 export const STEP_MS = 120
 /** On a door: finish the step, pause a moment on the doorstep, then fade the screen to black. */
@@ -91,6 +92,10 @@ export function CityScreen(props: {
   const walkTimer = useRef<ReturnType<typeof setInterval> | null>(null)
   const entered = useRef(false)
   const [fading, setFading] = useState(false)
+  /** A finished place whose door the player just stepped on: ask before going in again. */
+  const [revisit, setRevisit] = useState<string | null>(null)
+  const revisitRef = useRef<string | null>(null)
+  revisitRef.current = revisit
   const enterTimers = useRef<ReturnType<typeof setTimeout>[]>([])
   const moved = useRef(false)
   const propsRef = useRef(props)
@@ -112,16 +117,23 @@ export function CityScreen(props: {
         propsRef.current.onMoved()
       }
       if (enteredPlace) {
-        entered.current = true
         stopWalk()
-        enterTimers.current.push(
-          setTimeout(() => setFading(true), STEP_MS + DOOR_PAUSE_MS),
-          setTimeout(() => propsRef.current.onEnterPlace(enteredPlace), ENTER_DELAY_MS),
-        )
+        if (propsRef.current.state.stamps.includes(enteredPlace)) setRevisit(enteredPlace)
+        else enterPlace(enteredPlace)
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- enterPlace only uses refs and setters
     [stopWalk],
   )
+
+  /** Finish the step onto the door, pause, fade to black, then open the place. */
+  function enterPlace(placeId: string, delayMs = STEP_MS + DOOR_PAUSE_MS) {
+    entered.current = true
+    enterTimers.current.push(
+      setTimeout(() => setFading(true), delayMs),
+      setTimeout(() => propsRef.current.onEnterPlace(placeId), delayMs + FADE_MS),
+    )
+  }
 
   const stepDir = useCallback(
     (dir: Dir) => {
@@ -134,7 +146,7 @@ export function CityScreen(props: {
   const walkTo = useCallback(
     (tapped: Pos) => {
       stopWalk()
-      if (entered.current || propsRef.current.paused) return
+      if (entered.current || propsRef.current.paused || revisitRef.current) return
       const target = resolveTapTarget(CITY, tapped)
       const path = target && findPath(CITY, posRef.current, target)
       if (!path || path.length === 0) return
@@ -152,6 +164,10 @@ export function CityScreen(props: {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
+      if (revisitRef.current) {
+        if (e.key === 'Escape') setRevisit(null)
+        return
+      }
       if (propsRef.current.paused || isTypingTarget(e.target)) return
       const dir = keyToDir(e.key)
       if (!dir) return
@@ -227,7 +243,11 @@ export function CityScreen(props: {
                     TILE_EMOJI[tile]
                   )}
                   {signPlace && props.state.stamps.includes(signPlace) && (
-                    <span className="absolute right-0 top-0 text-[0.6em]" aria-hidden>
+                    <span
+                      data-testid={`done-${signPlace}`}
+                      className="absolute top-[4%] right-[4%] grid size-[38%] place-items-center rounded-full bg-[#22A04B] text-[0.4em] font-black text-white shadow-[0_1px_0_rgba(0,0,0,0.25)]"
+                      aria-hidden
+                    >
                       ✓
                     </span>
                   )}
@@ -286,6 +306,49 @@ export function CityScreen(props: {
           <Bi vi="Chạm vào bản đồ để đi" en="Tap the map to walk" />
         </span>
       </p>
+      {revisit && (
+        <div className="fixed inset-0 z-40 flex items-end justify-center bg-[#2B1D16]/40 p-4 sm:items-center">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="revisit-title"
+            className="bubble-in w-full max-w-sm space-y-4 rounded-[28px] border-2 border-[#2B1D16] bg-[#FFF8EE] p-6 text-center shadow-[6px_6px_0_#2B1D16]"
+          >
+            <div className="flex justify-center gap-2 text-5xl" aria-hidden>
+              {PLACE_ART[revisit].sign}
+              <span className="grid size-12 place-items-center self-center rounded-full bg-[#22A04B] text-2xl font-black text-white">
+                ✓
+              </span>
+            </div>
+            <h2 id="revisit-title" className="text-xl font-extrabold tracking-tight">
+              <Bi
+                vi={`Bạn đã đến ${getScenario(revisit)?.name_vi} rồi!`}
+                en={`You've already been to the ${getScenario(revisit)?.name_en}!`}
+              />
+            </h2>
+            <p className="text-sm text-[#2B1D16]/70">
+              <Bi
+                vi="Bạn đã có con dấu ở đây. Vào lại để luyện thêm từ mới, hoặc đi tiếp đến nơi khác."
+                en="You already have the stamp here. Go in again to practise more words, or head somewhere else."
+              />
+            </p>
+            <div className="grid gap-2">
+              <PrimaryButton
+                autoFocus
+                onClick={() => {
+                  setRevisit(null)
+                  enterPlace(revisit, 0)
+                }}
+              >
+                <Bi vi="Vào lại" en="Go in again" />
+              </PrimaryButton>
+              <GhostButton onClick={() => setRevisit(null)}>
+                <Bi vi="Ở ngoài" en="Stay outside" />
+              </GhostButton>
+            </div>
+          </div>
+        </div>
+      )}
       {/* Fades the whole screen to black as the player goes through a door. */}
       <div
         data-testid="door-fade"

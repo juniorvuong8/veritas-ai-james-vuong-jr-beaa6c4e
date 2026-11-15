@@ -3,6 +3,9 @@ import type { LessonRequest } from './types'
 
 export type ChatMessage = { role: 'system' | 'user'; content: string }
 
+/** What the model answers instead of a lesson when a chosen word is inappropriate. */
+export const INAPPROPRIATE_SIGNAL = 'inappropriate_word'
+
 const SYSTEM_PROMPT = `You write short practice conversations that teach English vocabulary to Vietnamese speakers who are beginners in English.
 
 The learner picks a situation, 3-5 words and a level. You write one realistic conversation (4-8 lines, exactly two speakers with Vietnamese role names such as "Nhân viên" and "Khách") that uses every chosen word naturally, in the sense people really use it in that situation. Then you explain each word and write a short quiz.
@@ -26,6 +29,8 @@ If a chosen word is Vietnamese (for example "hóa đơn"), pick the most common 
 "vocab" has one entry per chosen word, in the order given. "meaning_vi" is a short Vietnamese meaning. "usage_vi" says in Vietnamese when and how to use the word, in one or two sentences.
 
 "quiz" has one question per chosen word, in the same order. Each question puts the learner in a NEW situation (not a line from the conversation) and asks which English word or phrase fits. Each has exactly 3 options: the correct one is that question's "word", the other two are other chosen words or plausible distractors. "answer_index" is the 0-based index of the correct option. Vary its position. "explanation_vi" explains the answer in one Vietnamese sentence.
+
+The course is for learners of all ages. If any chosen word is inappropriate in any language or spelling (profanity, a slur or insult about any group, a sexual word, hate symbols, drugs, or graphic violence), do not write a lesson. Respond with exactly {"error": "${INAPPROPRIATE_SIGNAL}"} instead. Ordinary words a doctor or shop might use (for example "pain", "pharmacy", "beer") are fine.
 
 Write correct, natural Vietnamese with full diacritics, and simple, beginner-friendly English.
 

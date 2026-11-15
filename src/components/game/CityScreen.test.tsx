@@ -73,6 +73,38 @@ describe('CityScreen', () => {
     expect(c.onEnterPlace).toHaveBeenCalledWith('cafe')
   })
 
+  it('asks before going back into a finished place, and can stay outside', () => {
+    const c = renderCity({ ...newGame(1), stamps: ['cafe'] })
+    const door = doorOf(CITY, 'cafe').pos
+    const path = [CITY.start, ...findPath(CITY, CITY.start, door)!]
+    for (let i = 1; i < path.length; i++) fireEvent.keyDown(window, { key: keyFor(path[i - 1], path[i]) })
+    const dialog = screen.getByRole('dialog', { name: 'Bạn đã đến Quán cà phê rồi!' })
+    expect(dialog).toBeInTheDocument()
+    // Arrow keys are ignored while it is open.
+    fireEvent.keyDown(window, { key: 'ArrowUp' })
+    expect(c.pos()).toEqual(door)
+    act(() => { vi.advanceTimersByTime(ENTER_DELAY_MS) })
+    expect(c.onEnterPlace).not.toHaveBeenCalled()
+    fireEvent.click(screen.getByRole('button', { name: 'Ở ngoài' }))
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+    expect(c.onEnterPlace).not.toHaveBeenCalled()
+  })
+
+  it('goes back into a finished place after "Vào lại"', () => {
+    const c = renderCity({ ...newGame(1), stamps: ['cafe'] })
+    const path = [CITY.start, ...findPath(CITY, CITY.start, doorOf(CITY, 'cafe').pos)!]
+    for (let i = 1; i < path.length; i++) fireEvent.keyDown(window, { key: keyFor(path[i - 1], path[i]) })
+    fireEvent.click(screen.getByRole('button', { name: 'Vào lại' }))
+    act(() => { vi.advanceTimersByTime(FADE_MS) })
+    expect(c.onEnterPlace).toHaveBeenCalledWith('cafe')
+  })
+
+  it('marks finished places with a green check', () => {
+    renderCity({ ...newGame(1), stamps: ['taxi'] })
+    expect(screen.getByTestId('done-taxi')).toHaveClass('bg-[#22A04B]')
+    expect(screen.queryByTestId('done-cafe')).not.toBeInTheDocument()
+  })
+
   it('pauses on the door and fades to black before entering', () => {
     const c = renderCity()
     const fade = () => c.container.querySelector('[data-testid="door-fade"]')!

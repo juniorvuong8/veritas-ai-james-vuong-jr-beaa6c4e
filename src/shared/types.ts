@@ -50,7 +50,7 @@ export interface Lesson {
 
 export type CheckResult<T> = { ok: true; value: T } | { ok: false; errors: string[] }
 
-export type ErrorCode = 'bad_request' | 'rate_limited' | 'out_of_credits' | 'ai_failed'
+export type ErrorCode = 'bad_request' | 'inappropriate' | 'rate_limited' | 'out_of_credits' | 'ai_failed'
 
 export interface ErrorBody {
   code: ErrorCode
