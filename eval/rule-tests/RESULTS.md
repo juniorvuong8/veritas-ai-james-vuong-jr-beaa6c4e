@@ -22,6 +22,8 @@ Each lesson was checked against every rule that had not failed yet, in case orde
 
 ## The failing cases
 
+Each case has a screenshot in `screenshots/tNNN.png`: the saved lesson shown in the app's own conversation screen, with the lines that break the rule outlined in red.
+
 **Rule 2, t017 (café, level 2).** The staff member asks two different questions in one turn: "Chị muốn uống gì ạ? Chị ngồi uống ở đây hay to go ạ?" ("What would you like to drink? Will you drink here or to go?"). The customer answers both, so this is the mild form. t085 line 3 is the same pattern. No case had three or more questions piling up the way the baseline's did.
 
 **Rule 3, t006 (supermarket, level 2).** In line 3 the cashier jumps from unrequested advice to the total with no transition: "Hôm nào chị mua ít thì dùng a basket xách tay cho nhẹ nhé. Của chị tổng cộng 45 đô ạ." ("On days you buy less, use a basket so it's lighter. Your total is $45.")
