@@ -20,6 +20,7 @@ const game: GameState = {
   stamps: ['cafe', 'taxi'],
   coins: 40,
   lastWords: { cafe: ['menu', 'to go', 'receipt'] },
+  learnedWords: [{ word: 'receipt', input: 'hóa đơn', meaning_vi: 'hóa đơn', usage_vi: 'Xin sau khi trả tiền.', placeId: 'cafe' }],
 }
 
 describe('storage', () => {
@@ -28,6 +29,17 @@ describe('storage', () => {
     const complete = { ...game, stamps: ['cafe', 'supermarket', 'taxi', 'clinic'], complete: true, celebrationOpen: true }
     saveGame(complete, () => store)
     expect(loadGame(() => store)).toEqual({ ...complete, celebrationOpen: false })
+  })
+
+  it('loads a save from before the notebook with no learned words', () => {
+    const { learnedWords: _, ...old } = game
+    expect(loadGame(saved(old))?.learnedWords).toEqual([])
+  })
+
+  it('drops broken learned words but keeps the rest of the save', () => {
+    const loaded = loadGame(saved({ ...game, learnedWords: [...game.learnedWords, { word: 7 }, 'menu'] }))
+    expect(loaded?.learnedWords).toEqual(game.learnedWords)
+    expect(loaded?.coins).toBe(40)
   })
 
   it('returns null when nothing is saved', () => {

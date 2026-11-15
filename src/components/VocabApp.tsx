@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useReducer, useState } from 'react'
 import { Celebration } from '@/components/game/Celebration'
 import { CityScreen, FADE_MS } from '@/components/game/CityScreen'
+import { Notebook } from '@/components/game/Notebook'
 import { PlaceScreen } from '@/components/game/PlaceScreen'
 import { StartScreen } from '@/components/game/StartScreen'
 import { LandingScreen } from '@/components/landing/LandingScreen'
@@ -14,7 +15,7 @@ import type { Level } from '@/shared/types'
 type AppAction = GameAction | { type: 'newGame'; level: Level }
 
 function appReducer(state: GameState | null, action: AppAction): GameState | null {
-  if (action.type === 'newGame') return newGame(action.level, state?.lastWords)
+  if (action.type === 'newGame') return newGame(action.level, state?.lastWords, state?.learnedWords)
   return state ? gameReducer(state, action) : state
 }
 
@@ -47,6 +48,8 @@ function Game() {
   const [pendingPlace, setPendingPlace] = useState<string | undefined>()
   const [showHint, setShowHint] = useState(true)
   const [visit, setVisit] = useState(0)
+  const [notebookOpen, setNotebookOpen] = useState(false)
+  const closeNotebook = useCallback(() => setNotebookOpen(false), [])
 
   useEffect(() => {
     if (game) saveGame(game)
@@ -99,11 +102,13 @@ function Game() {
             state={game}
             startPos={screen.startPos}
             showHint={showHint}
-            paused={game.celebrationOpen}
+            paused={game.celebrationOpen || notebookOpen}
             onMoved={() => setShowHint(false)}
             onEnterPlace={(placeId) => setScreen({ name: 'place', placeId, viaDoor: true })}
             onOpenCelebration={() => dispatch({ type: 'openCelebration' })}
+            onOpenNotebook={() => setNotebookOpen(true)}
           />
+          {notebookOpen && <Notebook words={game.learnedWords} onClose={closeNotebook} />}
           {game.celebrationOpen && (
             <Celebration
               level={game.level}
@@ -143,6 +148,8 @@ function Game() {
           placeId={screen.placeId}
           level={game.level}
           initialWords={game.lastWords[screen.placeId] ?? []}
+          learnedWords={game.learnedWords}
+          onLearned={(vocab) => dispatch({ type: 'learnWords', placeId: screen.placeId, vocab })}
           onWordsChosen={(words) => dispatch({ type: 'rememberWords', placeId: screen.placeId, words })}
           onCorrect={() => dispatch({ type: 'earnCoins', amount: COINS_PER_CORRECT })}
           onFinish={() => {

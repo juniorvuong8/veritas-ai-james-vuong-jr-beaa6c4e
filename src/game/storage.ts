@@ -1,10 +1,25 @@
-import { PLACE_IDS, type GameState } from './state'
+import { PLACE_IDS, type GameState, type LearnedWord } from './state'
 
 export const SAVE_KEY = 'vocab-city-v1'
 
 const defaultStorage = () => window.localStorage
 
 const isStringArray = (v: unknown): v is string[] => Array.isArray(v) && v.every((x) => typeof x === 'string')
+
+const optString = (v: unknown) => v === undefined || typeof v === 'string'
+
+function isLearnedWord(v: unknown): v is LearnedWord {
+  if (typeof v !== 'object' || v === null) return false
+  const w = v as Record<string, unknown>
+  return (
+    ['word', 'input', 'meaning_vi', 'usage_vi', 'placeId'].every((k) => typeof w[k] === 'string') &&
+    optString(w.meaning_en) &&
+    optString(w.usage_en)
+  )
+}
+
+/** Saves from before the notebook have no list: start empty. Broken entries are dropped, not the whole save. */
+const parseLearned = (v: unknown): LearnedWord[] => (Array.isArray(v) ? v.filter(isLearnedWord) : [])
 
 function parseGame(raw: unknown): GameState | null {
   if (typeof raw !== 'object' || raw === null) return null
@@ -24,6 +39,7 @@ function parseGame(raw: unknown): GameState | null {
     complete: g.complete,
     celebrationOpen: false,
     lastWords: lastWords as Record<string, string[]>,
+    learnedWords: parseLearned(g.learnedWords),
   }
 }
 

@@ -3,7 +3,7 @@ import { PLACE_IDS, type GameState } from '@/game/state'
 import { Bi, useBiText } from '@/lib/debug'
 import { getScenario } from '@/shared/scenarios'
 
-export function TopBar(props: { state: GameState; onOpenCelebration: () => void }) {
+export function TopBar(props: { state: GameState; onOpenCelebration: () => void; onOpenNotebook?: () => void }) {
   const { state } = props
   const biText = useBiText()
   return (
@@ -13,6 +13,19 @@ export function TopBar(props: { state: GameState; onOpenCelebration: () => void 
           <Bi vi={`Cấp ${state.level}`} en={`Level ${state.level}`} />
         </span>
         <span className="rounded-full bg-[#FFF3D6] px-2.5 py-1">{`🪙 ${state.coins}`}</span>
+        {props.onOpenNotebook && (
+          <button
+            type="button"
+            onClick={props.onOpenNotebook}
+            aria-label={biText(
+              `📒 Sổ từ: ${state.learnedWords.length} từ`,
+              `Word notebook: ${state.learnedWords.length} words`,
+            )}
+            className="rounded-full bg-[#FFF3D6] px-2.5 py-1 transition-transform hover:scale-105 hover:bg-[#FFE8B0]"
+          >
+            {`📒 ${state.learnedWords.length}`}
+          </button>
+        )}
       </div>
       <div className="flex items-center gap-1" aria-label={biText('Hộ chiếu', 'Passport')}>
         {PLACE_IDS.map((id) => {

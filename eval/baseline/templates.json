@@ -1,0 +1,962 @@
+{
+  "cafe": {
+    "roles": {
+      "host": "Nhân viên",
+      "guest": "Khách"
+    },
+    "levels": {
+      "1": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào anh, anh muốn uống gì ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Dạ, của anh đây. Cảm ơn anh nhé!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Cảm ơn em nhé!"
+          }
+        ],
+        "words": {
+          "menu": {
+            "speaker": "guest",
+            "text": "Cho tôi xem {w} được không em?"
+          },
+          "to go": {
+            "speaker": "host",
+            "text": "Anh uống ở đây hay {w} ạ?"
+          },
+          "receipt": {
+            "speaker": "guest",
+            "text": "Cho tôi xin {w} nhé."
+          },
+          "medium": {
+            "speaker": "guest",
+            "text": "Cho tôi một ly cà phê sữa size {w}."
+          },
+          "large": {
+            "speaker": "guest",
+            "text": "Cho tôi ly {w} nhé, tôi khát lắm."
+          },
+          "refill": {
+            "speaker": "guest",
+            "text": "Ở đây có {w} miễn phí không em?"
+          },
+          "straw": {
+            "speaker": "guest",
+            "text": "Em cho tôi xin một cái {w} nhé."
+          },
+          "iced": {
+            "speaker": "guest",
+            "text": "Cho tôi một ly trà {w}."
+          },
+          "napkin": {
+            "speaker": "guest",
+            "text": "Em ơi, cho tôi thêm {w} được không?"
+          },
+          "order": {
+            "speaker": "host",
+            "text": "Anh muốn {w} món gì ạ?"
+          },
+          "change": {
+            "speaker": "host",
+            "text": "Dạ, đây là tiền {w} của anh."
+          },
+          "for here": {
+            "speaker": "guest",
+            "text": "Tôi uống {w} nhé."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "À, còn {w} nữa nhé."
+        }
+      },
+      "2": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào anh, anh muốn uống gì ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Dạ, của anh đây. Cảm ơn anh nhé!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you, em nhé!"
+          }
+        ],
+        "words": {
+          "menu": {
+            "speaker": "guest",
+            "text": "Em ơi, can I see the {w}?"
+          },
+          "to go": {
+            "speaker": "host",
+            "text": "Dạ, for here or {w} ạ?"
+          },
+          "receipt": {
+            "speaker": "guest",
+            "text": "Can I have the {w}, em nhé?"
+          },
+          "medium": {
+            "speaker": "guest",
+            "text": "Cho tôi a {w} latte nhé."
+          },
+          "large": {
+            "speaker": "guest",
+            "text": "Cho tôi a {w} coffee nhé."
+          },
+          "refill": {
+            "speaker": "guest",
+            "text": "Can I get a free {w} không em?"
+          },
+          "straw": {
+            "speaker": "guest",
+            "text": "Em cho tôi a {w}, please."
+          },
+          "iced": {
+            "speaker": "guest",
+            "text": "Cho tôi một ly {w} tea nhé."
+          },
+          "napkin": {
+            "speaker": "guest",
+            "text": "Cho tôi thêm a {w}, please."
+          },
+          "order": {
+            "speaker": "host",
+            "text": "Dạ, are you ready to {w} chưa ạ?"
+          },
+          "change": {
+            "speaker": "host",
+            "text": "Dạ, here is your {w} ạ."
+          },
+          "for here": {
+            "speaker": "guest",
+            "text": "Tôi uống {w}, please."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "And the {w}, please."
+        }
+      },
+      "3": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Hi! What can I get for you?",
+            "translation_vi": "Chào anh! Anh muốn dùng gì ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Here you go. Have a nice day!",
+            "translation_vi": "Của anh đây. Chúc anh một ngày tốt lành!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you!",
+            "translation_vi": "Cảm ơn em!"
+          }
+        ],
+        "words": {
+          "menu": {
+            "speaker": "guest",
+            "text": "Can I see the {w}, please?",
+            "translation_vi": "Cho tôi xem thực đơn được không?"
+          },
+          "to go": {
+            "speaker": "host",
+            "text": "Is that for here or {w}?",
+            "translation_vi": "Anh uống ở đây hay mang đi ạ?"
+          },
+          "receipt": {
+            "speaker": "guest",
+            "text": "Can I have the {w}, please?",
+            "translation_vi": "Cho tôi xin hóa đơn nhé."
+          },
+          "medium": {
+            "speaker": "guest",
+            "text": "A {w} latte, please.",
+            "translation_vi": "Cho tôi một ly latte cỡ vừa."
+          },
+          "large": {
+            "speaker": "guest",
+            "text": "I'd like a {w} coffee.",
+            "translation_vi": "Tôi muốn một ly cà phê cỡ lớn."
+          },
+          "refill": {
+            "speaker": "guest",
+            "text": "Can I get a free {w}?",
+            "translation_vi": "Tôi được rót thêm miễn phí không?"
+          },
+          "straw": {
+            "speaker": "guest",
+            "text": "Could I have a {w}, please?",
+            "translation_vi": "Cho tôi xin một cái ống hút nhé."
+          },
+          "iced": {
+            "speaker": "guest",
+            "text": "One {w} tea, please.",
+            "translation_vi": "Cho tôi một ly trà đá."
+          },
+          "napkin": {
+            "speaker": "guest",
+            "text": "Can I have a {w}, please?",
+            "translation_vi": "Cho tôi xin một tờ khăn giấy nhé."
+          },
+          "order": {
+            "speaker": "host",
+            "text": "Are you ready to {w}?",
+            "translation_vi": "Anh gọi món được chưa ạ?"
+          },
+          "change": {
+            "speaker": "host",
+            "text": "Here is your {w}.",
+            "translation_vi": "Đây là tiền thối của anh."
+          },
+          "for here": {
+            "speaker": "guest",
+            "text": "I'll have it {w}.",
+            "translation_vi": "Tôi uống tại chỗ."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "And the {w}, please.",
+          "translation_vi": "Và cả {vi} nữa nhé."
+        }
+      }
+    }
+  },
+  "supermarket": {
+    "roles": {
+      "host": "Nhân viên",
+      "guest": "Khách"
+    },
+    "levels": {
+      "1": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào chị, chị cần tìm gì ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Dạ, cảm ơn chị. Hẹn gặp lại!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Cảm ơn em nhé!"
+          }
+        ],
+        "words": {
+          "cart": {
+            "speaker": "guest",
+            "text": "Em ơi, lấy {w} ở đâu vậy?"
+          },
+          "basket": {
+            "speaker": "guest",
+            "text": "Cho chị một cái {w} để đựng đồ nhé."
+          },
+          "aisle": {
+            "speaker": "host",
+            "text": "Dạ, sữa ở {w} số 3 ạ."
+          },
+          "checkout": {
+            "speaker": "guest",
+            "text": "Quầy {w} ở đâu em?"
+          },
+          "cashier": {
+            "speaker": "host",
+            "text": "Chị ra chỗ {w} để tính tiền nhé."
+          },
+          "bag": {
+            "speaker": "host",
+            "text": "Chị có cần {w} không ạ?"
+          },
+          "on sale": {
+            "speaker": "guest",
+            "text": "Trái cây này có đang {w} không em?"
+          },
+          "price": {
+            "speaker": "guest",
+            "text": "Cái này {w} bao nhiêu vậy em?"
+          },
+          "cash": {
+            "speaker": "guest",
+            "text": "Chị trả bằng {w} nhé."
+          },
+          "card": {
+            "speaker": "guest",
+            "text": "Chị trả bằng {w} được không?"
+          },
+          "fresh": {
+            "speaker": "host",
+            "text": "Rau hôm nay rất {w} chị ạ."
+          },
+          "frozen": {
+            "speaker": "guest",
+            "text": "Đồ ăn {w} để ở đâu em?"
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "À, chị cần {w} nữa."
+        }
+      },
+      "2": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào chị, chị cần tìm gì ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Dạ, cảm ơn chị. Hẹn gặp lại!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you, em nhé!"
+          }
+        ],
+        "words": {
+          "cart": {
+            "speaker": "guest",
+            "text": "Em ơi, where is the {w}?"
+          },
+          "basket": {
+            "speaker": "guest",
+            "text": "Cho chị a {w}, please."
+          },
+          "aisle": {
+            "speaker": "host",
+            "text": "Dạ, milk is in {w} 3 ạ."
+          },
+          "checkout": {
+            "speaker": "guest",
+            "text": "Where is the {w} vậy em?"
+          },
+          "cashier": {
+            "speaker": "host",
+            "text": "Chị ra the {w} để tính tiền nhé."
+          },
+          "bag": {
+            "speaker": "host",
+            "text": "Do you need a {w} không chị?"
+          },
+          "on sale": {
+            "speaker": "guest",
+            "text": "Is this {w} không em?"
+          },
+          "price": {
+            "speaker": "guest",
+            "text": "What's the {w} vậy em?"
+          },
+          "cash": {
+            "speaker": "guest",
+            "text": "Chị pay by {w} nhé."
+          },
+          "card": {
+            "speaker": "guest",
+            "text": "Can I pay by {w} không?"
+          },
+          "fresh": {
+            "speaker": "host",
+            "text": "Rau hôm nay rất {w} ạ."
+          },
+          "frozen": {
+            "speaker": "guest",
+            "text": "Where is the {w} food vậy em?"
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "Chị cần the {w} nữa."
+        }
+      },
+      "3": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Hi! Can I help you find something?",
+            "translation_vi": "Chào chị! Chị cần tìm gì ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Thank you. See you again!",
+            "translation_vi": "Cảm ơn chị. Hẹn gặp lại!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you!",
+            "translation_vi": "Cảm ơn em!"
+          }
+        ],
+        "words": {
+          "cart": {
+            "speaker": "guest",
+            "text": "Excuse me, where can I get a {w}?",
+            "translation_vi": "Xin lỗi, lấy xe đẩy ở đâu vậy?"
+          },
+          "basket": {
+            "speaker": "guest",
+            "text": "Can I have a {w}, please?",
+            "translation_vi": "Cho tôi một cái giỏ nhé."
+          },
+          "aisle": {
+            "speaker": "host",
+            "text": "The milk is in {w} 3.",
+            "translation_vi": "Sữa ở dãy kệ số 3 ạ."
+          },
+          "checkout": {
+            "speaker": "guest",
+            "text": "Where is the {w}?",
+            "translation_vi": "Quầy thanh toán ở đâu?"
+          },
+          "cashier": {
+            "speaker": "host",
+            "text": "Please pay at the {w}.",
+            "translation_vi": "Chị thanh toán ở chỗ thu ngân nhé."
+          },
+          "bag": {
+            "speaker": "host",
+            "text": "Do you need a {w}?",
+            "translation_vi": "Chị có cần túi không ạ?"
+          },
+          "on sale": {
+            "speaker": "guest",
+            "text": "Is this {w} today?",
+            "translation_vi": "Hôm nay cái này có giảm giá không?"
+          },
+          "price": {
+            "speaker": "guest",
+            "text": "What's the {w} of this?",
+            "translation_vi": "Cái này giá bao nhiêu?"
+          },
+          "cash": {
+            "speaker": "guest",
+            "text": "I'll pay in {w}.",
+            "translation_vi": "Tôi trả bằng tiền mặt."
+          },
+          "card": {
+            "speaker": "guest",
+            "text": "Can I pay by {w}?",
+            "translation_vi": "Tôi trả bằng thẻ được không?"
+          },
+          "fresh": {
+            "speaker": "host",
+            "text": "The vegetables are very {w} today.",
+            "translation_vi": "Rau hôm nay rất tươi ạ."
+          },
+          "frozen": {
+            "speaker": "guest",
+            "text": "Where is the {w} food?",
+            "translation_vi": "Đồ đông lạnh ở đâu?"
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "I also need the {w}.",
+          "translation_vi": "Tôi cũng cần {vi} nữa."
+        }
+      }
+    }
+  },
+  "taxi": {
+    "roles": {
+      "host": "Tài xế",
+      "guest": "Khách"
+    },
+    "levels": {
+      "1": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào chị, chị đi đâu ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Dạ, tới nơi rồi. Chúc chị một ngày vui!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Cảm ơn anh nhé!"
+          }
+        ],
+        "words": {
+          "address": {
+            "speaker": "guest",
+            "text": "Anh chở tôi đến {w} này nhé."
+          },
+          "airport": {
+            "speaker": "guest",
+            "text": "Anh cho tôi ra {w} nhé."
+          },
+          "turn left": {
+            "speaker": "guest",
+            "text": "Tới ngã tư anh {w} nhé."
+          },
+          "turn right": {
+            "speaker": "guest",
+            "text": "Chỗ đèn đỏ anh {w} giúp tôi."
+          },
+          "straight": {
+            "speaker": "host",
+            "text": "Mình cứ đi {w} đường này phải không chị?"
+          },
+          "stop here": {
+            "speaker": "guest",
+            "text": "Anh {w} được rồi."
+          },
+          "traffic": {
+            "speaker": "host",
+            "text": "Giờ này {w} đông lắm chị ạ."
+          },
+          "fare": {
+            "speaker": "guest",
+            "text": "Anh ơi, {w} hết bao nhiêu?"
+          },
+          "seatbelt": {
+            "speaker": "host",
+            "text": "Chị nhớ thắt {w} nhé."
+          },
+          "trunk": {
+            "speaker": "host",
+            "text": "Để hành lý vào {w} nhé chị."
+          },
+          "how long": {
+            "speaker": "guest",
+            "text": "Còn {w} nữa thì tới vậy anh?"
+          },
+          "tip": {
+            "speaker": "guest",
+            "text": "Đây là tiền {w} cho anh."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "À, anh ơi, còn {w} nữa."
+        }
+      },
+      "2": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào chị, chị đi đâu ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Dạ, tới nơi rồi. Chúc chị một ngày vui!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you, anh nhé!"
+          }
+        ],
+        "words": {
+          "address": {
+            "speaker": "guest",
+            "text": "Anh chở tôi đến this {w} nhé."
+          },
+          "airport": {
+            "speaker": "guest",
+            "text": "To the {w}, please."
+          },
+          "turn left": {
+            "speaker": "guest",
+            "text": "Anh {w} at the next corner nhé."
+          },
+          "turn right": {
+            "speaker": "guest",
+            "text": "Please {w} chỗ đèn đỏ."
+          },
+          "straight": {
+            "speaker": "host",
+            "text": "Go {w} đường này phải không chị?"
+          },
+          "stop here": {
+            "speaker": "guest",
+            "text": "Anh ơi, please {w}."
+          },
+          "traffic": {
+            "speaker": "host",
+            "text": "Giờ này the {w} is bad lắm chị."
+          },
+          "fare": {
+            "speaker": "guest",
+            "text": "How much is the {w} vậy anh?"
+          },
+          "seatbelt": {
+            "speaker": "host",
+            "text": "Please wear your {w} nhé chị."
+          },
+          "trunk": {
+            "speaker": "host",
+            "text": "Bags in the {w} nhé chị."
+          },
+          "how long": {
+            "speaker": "guest",
+            "text": "Anh ơi, {w} to get there?"
+          },
+          "tip": {
+            "speaker": "guest",
+            "text": "This is a {w} for you, anh."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "Còn the {w} nữa, anh."
+        }
+      },
+      "3": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Hello! Where are you going?",
+            "translation_vi": "Chào chị! Chị đi đâu ạ?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Here we are. Have a good day!",
+            "translation_vi": "Tới nơi rồi. Chúc chị một ngày tốt lành!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you!",
+            "translation_vi": "Cảm ơn anh!"
+          }
+        ],
+        "words": {
+          "address": {
+            "speaker": "guest",
+            "text": "Please take me to this {w}.",
+            "translation_vi": "Anh chở tôi đến địa chỉ này nhé."
+          },
+          "airport": {
+            "speaker": "guest",
+            "text": "To the {w}, please.",
+            "translation_vi": "Cho tôi ra sân bay."
+          },
+          "turn left": {
+            "speaker": "guest",
+            "text": "Please {w} at the next corner.",
+            "translation_vi": "Tới góc đường anh rẽ trái nhé."
+          },
+          "turn right": {
+            "speaker": "guest",
+            "text": "Please {w} at the light.",
+            "translation_vi": "Tới đèn giao thông anh rẽ phải nhé."
+          },
+          "straight": {
+            "speaker": "host",
+            "text": "Do I go {w} on this road?",
+            "translation_vi": "Tôi cứ đi thẳng đường này phải không?"
+          },
+          "stop here": {
+            "speaker": "guest",
+            "text": "You can {w}, thank you.",
+            "translation_vi": "Anh dừng ở đây được rồi, cảm ơn."
+          },
+          "traffic": {
+            "speaker": "host",
+            "text": "The {w} is very bad right now.",
+            "translation_vi": "Giờ này kẹt xe lắm."
+          },
+          "fare": {
+            "speaker": "guest",
+            "text": "How much is the {w}?",
+            "translation_vi": "Tiền xe bao nhiêu vậy anh?"
+          },
+          "seatbelt": {
+            "speaker": "host",
+            "text": "Please wear your {w}.",
+            "translation_vi": "Chị thắt dây an toàn nhé."
+          },
+          "trunk": {
+            "speaker": "host",
+            "text": "I'll put your bag in the {w}.",
+            "translation_vi": "Tôi để túi của chị vào cốp xe nhé."
+          },
+          "how long": {
+            "speaker": "guest",
+            "text": "Do you know {w} it will take?",
+            "translation_vi": "Anh biết mất bao lâu không?"
+          },
+          "tip": {
+            "speaker": "guest",
+            "text": "This is a {w} for you.",
+            "translation_vi": "Đây là tiền boa cho anh."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "And the {w}, please.",
+          "translation_vi": "Và cả {vi} nữa nhé."
+        }
+      }
+    }
+  },
+  "clinic": {
+    "roles": {
+      "host": "Bác sĩ",
+      "guest": "Bệnh nhân"
+    },
+    "levels": {
+      "1": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào anh, anh thấy trong người thế nào?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Anh nhớ nghỉ ngơi nhé. Chúc anh mau khỏe!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Dạ, cảm ơn bác sĩ!"
+          }
+        ],
+        "words": {
+          "appointment": {
+            "speaker": "guest",
+            "text": "Tôi có {w} lúc 9 giờ."
+          },
+          "doctor": {
+            "speaker": "guest",
+            "text": "Tôi muốn gặp {w} để khám."
+          },
+          "fever": {
+            "speaker": "guest",
+            "text": "Tôi bị {w} từ tối qua."
+          },
+          "headache": {
+            "speaker": "guest",
+            "text": "Tôi bị {w} suốt cả ngày."
+          },
+          "cough": {
+            "speaker": "guest",
+            "text": "Tôi bị {w} nhiều về đêm."
+          },
+          "sore throat": {
+            "speaker": "guest",
+            "text": "Tôi bị {w}, nuốt rất đau."
+          },
+          "medicine": {
+            "speaker": "host",
+            "text": "Anh uống {w} này ngày hai lần nhé."
+          },
+          "pharmacy": {
+            "speaker": "host",
+            "text": "Anh mang toa ra {w} để mua thuốc nhé."
+          },
+          "allergy": {
+            "speaker": "host",
+            "text": "Anh có bị {w} thuốc gì không?"
+          },
+          "insurance": {
+            "speaker": "host",
+            "text": "Anh có {w} không ạ?"
+          },
+          "pain": {
+            "speaker": "guest",
+            "text": "Tôi thấy {w} ở bụng."
+          },
+          "prescription": {
+            "speaker": "host",
+            "text": "Đây là {w} của anh."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "À, bác sĩ ơi, còn {w} nữa."
+        }
+      },
+      "2": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Chào anh, anh thấy trong người thế nào?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Anh nhớ nghỉ ngơi nhé. Chúc anh mau khỏe!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you, bác sĩ!"
+          }
+        ],
+        "words": {
+          "appointment": {
+            "speaker": "guest",
+            "text": "I have an {w} lúc 9 giờ."
+          },
+          "doctor": {
+            "speaker": "guest",
+            "text": "Tôi muốn gặp the {w}."
+          },
+          "fever": {
+            "speaker": "guest",
+            "text": "I have a {w} từ tối qua."
+          },
+          "headache": {
+            "speaker": "guest",
+            "text": "I have a {w} cả ngày."
+          },
+          "cough": {
+            "speaker": "guest",
+            "text": "I have a bad {w} về đêm."
+          },
+          "sore throat": {
+            "speaker": "guest",
+            "text": "I have a {w}, nuốt đau lắm."
+          },
+          "medicine": {
+            "speaker": "host",
+            "text": "Take this {w} ngày hai lần nhé."
+          },
+          "pharmacy": {
+            "speaker": "host",
+            "text": "Anh ra the {w} để mua thuốc nhé."
+          },
+          "allergy": {
+            "speaker": "host",
+            "text": "Anh có {w} với thuốc nào không?"
+          },
+          "insurance": {
+            "speaker": "host",
+            "text": "Do you have {w} không anh?"
+          },
+          "pain": {
+            "speaker": "guest",
+            "text": "I have {w} ở bụng."
+          },
+          "prescription": {
+            "speaker": "host",
+            "text": "Here is your {w} anh nhé."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "Còn the {w} nữa, bác sĩ."
+        }
+      },
+      "3": {
+        "opening": [
+          {
+            "speaker": "host",
+            "text": "Hello. How are you feeling today?",
+            "translation_vi": "Chào anh. Hôm nay anh thấy thế nào?"
+          }
+        ],
+        "closing": [
+          {
+            "speaker": "host",
+            "text": "Get some rest. I hope you feel better soon!",
+            "translation_vi": "Anh nghỉ ngơi nhé. Chúc anh mau khỏe!"
+          },
+          {
+            "speaker": "guest",
+            "text": "Thank you, doctor!",
+            "translation_vi": "Cảm ơn bác sĩ!"
+          }
+        ],
+        "words": {
+          "appointment": {
+            "speaker": "guest",
+            "text": "I have an {w} at nine.",
+            "translation_vi": "Tôi có lịch hẹn lúc 9 giờ."
+          },
+          "doctor": {
+            "speaker": "guest",
+            "text": "I'd like to see the {w}.",
+            "translation_vi": "Tôi muốn gặp bác sĩ."
+          },
+          "fever": {
+            "speaker": "guest",
+            "text": "I've had a {w} since last night.",
+            "translation_vi": "Tôi bị sốt từ tối qua."
+          },
+          "headache": {
+            "speaker": "guest",
+            "text": "I've had a {w} all day.",
+            "translation_vi": "Tôi bị đau đầu cả ngày."
+          },
+          "cough": {
+            "speaker": "guest",
+            "text": "I have a bad {w} at night.",
+            "translation_vi": "Tôi bị ho nhiều về đêm."
+          },
+          "sore throat": {
+            "speaker": "guest",
+            "text": "I have a {w}.",
+            "translation_vi": "Tôi bị đau họng."
+          },
+          "medicine": {
+            "speaker": "host",
+            "text": "Take this {w} twice a day.",
+            "translation_vi": "Anh uống thuốc này ngày hai lần."
+          },
+          "pharmacy": {
+            "speaker": "host",
+            "text": "You can buy it at the {w}.",
+            "translation_vi": "Anh có thể mua ở nhà thuốc."
+          },
+          "allergy": {
+            "speaker": "host",
+            "text": "Do you have an {w} to any medicine?",
+            "translation_vi": "Anh có bị dị ứng thuốc nào không?"
+          },
+          "insurance": {
+            "speaker": "host",
+            "text": "Do you have health {w}?",
+            "translation_vi": "Anh có bảo hiểm y tế không?"
+          },
+          "pain": {
+            "speaker": "guest",
+            "text": "I have {w} in my stomach.",
+            "translation_vi": "Tôi bị đau bụng."
+          },
+          "prescription": {
+            "speaker": "host",
+            "text": "Here is your {w}.",
+            "translation_vi": "Đây là đơn thuốc của anh."
+          }
+        },
+        "fallback": {
+          "speaker": "guest",
+          "text": "And the {w}, please.",
+          "translation_vi": "Còn {vi} nữa ạ."
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { useState, type FormEvent, type ReactNode } from 'react'
 import { Bi, useBiText } from '@/lib/debug'
 import { addWord, canSubmit, toggleWord } from '@/lib/selection'
+import { isLearned, type LearnedWord } from '@/game/state'
 import { cn } from '@/lib/utils'
 import { getScenario, normalizeWord } from '@/shared/scenarios'
 import { MAX_WORDS, MIN_WORDS, wordProblem, type WordProblem } from '@/shared/validate-request'
@@ -29,6 +30,8 @@ type CustomError = { vi: string; en: string }
 export function WordPicker(props: {
   scenarioId: string
   initialWords?: string[]
+  /** Words learned before: their chips are grey instead of yellow (still pickable). */
+  learnedWords?: LearnedWord[]
   submitLabel: ReactNode
   onSubmit: (words: string[]) => void
   /** Asks whether a custom word fits this place. Defaults to the AI check on the server. */
@@ -43,6 +46,7 @@ export function WordPicker(props: {
   const suggested = getScenario(props.scenarioId)?.suggestedWords ?? []
   const customWords = words.filter((w) => !suggested.some((s) => key(s) === key(w)))
   const isSelected = (w: string) => words.some((s) => key(s) === key(w))
+  const learned = (w: string) => isLearned(props.learnedWords ?? [], w)
 
   async function addCustom(e: FormEvent) {
     e.preventDefault()
@@ -83,14 +87,23 @@ export function WordPicker(props: {
             key={w}
             type="button"
             aria-pressed={isSelected(w)}
+            data-learned={learned(w) || undefined}
+            title={learned(w) ? biText('Bạn đã học từ này', 'You already learned this word') : undefined}
             onClick={() => setWords((ws) => toggleWord(ws, w))}
             className={cn(
               'rounded-full px-3.5 py-1.5 text-sm font-bold transition-all sm:text-base',
               isSelected(w)
                 ? 'bg-[#2B1D16] text-white shadow-[0_3px_0_#000]'
-                : 'bg-[#FFF3D6] text-[#2B1D16] hover:-translate-y-0.5 hover:bg-[#FFE8B0]',
+                : learned(w)
+                  ? 'bg-[#E6E2DD] text-[#2B1D16]/50 hover:-translate-y-0.5 hover:bg-[#DAD5CF]'
+                  : 'bg-[#FFF3D6] text-[#2B1D16] hover:-translate-y-0.5 hover:bg-[#FFE8B0]',
             )}
           >
+            {learned(w) && !isSelected(w) && (
+              <span className="mr-1" aria-hidden>
+                ✓
+              </span>
+            )}
             {w}
           </button>
         ))}

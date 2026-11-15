@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FALLBACK_LESSONS } from '@/data/fallback-lessons'
 import { PLACE_ART, PLAYER_EMOJI } from '@/game/art'
-import { COINS_PER_CORRECT } from '@/game/state'
+import { COINS_PER_CORRECT, type LearnedWord } from '@/game/state'
 import { requestLesson, type LessonResult } from '@/lib/api'
 import { ERROR_MESSAGES_EN } from '@/lib/error-messages-en'
 import { Bi, useDebug } from '@/lib/debug'
@@ -26,7 +26,11 @@ export function PlaceScreen(props: {
   placeId: string
   level: Level
   initialWords: string[]
+  /** Words learned before; shown greyed out in the word picker. */
+  learnedWords?: LearnedWord[]
   onWordsChosen: (words: string[]) => void
+  /** Called with the lesson's words once the quiz is finished. */
+  onLearned?: (vocab: Lesson['vocab']) => void
   onCorrect: () => void
   onFinish: () => void
   onLeave: () => void
@@ -87,6 +91,7 @@ export function PlaceScreen(props: {
           <WordPicker
             scenarioId={props.placeId}
             initialWords={words}
+            learnedWords={props.learnedWords}
             submitLabel={<Bi vi="Bắt đầu hội thoại" en="Start the conversation" />}
             onSubmit={(chosen) => {
               setWords(chosen)
@@ -154,7 +159,10 @@ export function PlaceScreen(props: {
             setEarned((n) => n + COINS_PER_CORRECT)
             props.onCorrect()
           }}
-          onFinish={(r) => setPhase({ name: 'done', ...r })}
+          onFinish={(r) => {
+            props.onLearned?.(phase.lesson.vocab)
+            setPhase({ name: 'done', ...r })
+          }}
         />
       )}
 

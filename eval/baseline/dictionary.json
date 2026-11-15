@@ -1,0 +1,202 @@
+{
+  "words": {
+    "menu": {
+      "meaning_vi": "thực đơn",
+      "usage_vi": "Dùng khi muốn xem quán có món gì và giá bao nhiêu."
+    },
+    "to go": {
+      "meaning_vi": "mang đi",
+      "usage_vi": "Trả lời khi nhân viên hỏi bạn uống tại chỗ hay mang đi."
+    },
+    "receipt": {
+      "meaning_vi": "hóa đơn, biên lai",
+      "usage_vi": "Xin sau khi trả tiền, khi cần giấy ghi số tiền đã trả."
+    },
+    "medium": {
+      "meaning_vi": "cỡ vừa",
+      "usage_vi": "Dùng khi chọn cỡ ly đồ uống."
+    },
+    "large": {
+      "meaning_vi": "cỡ lớn",
+      "usage_vi": "Dùng khi muốn ly đồ uống to nhất."
+    },
+    "refill": {
+      "meaning_vi": "rót thêm",
+      "usage_vi": "Hỏi khi muốn được rót thêm đồ uống vào ly."
+    },
+    "straw": {
+      "meaning_vi": "ống hút",
+      "usage_vi": "Xin khi cần ống hút để uống."
+    },
+    "iced": {
+      "meaning_vi": "có đá, ướp lạnh",
+      "usage_vi": "Đặt trước tên đồ uống khi muốn uống lạnh."
+    },
+    "napkin": {
+      "meaning_vi": "khăn giấy",
+      "usage_vi": "Xin khi cần lau tay hoặc lau miệng."
+    },
+    "order": {
+      "meaning_vi": "gọi món",
+      "usage_vi": "Dùng khi nói bạn muốn gọi đồ ăn, đồ uống."
+    },
+    "change": {
+      "meaning_vi": "tiền thối, tiền thừa",
+      "usage_vi": "Nhận lại khi bạn đưa nhiều tiền hơn giá."
+    },
+    "for here": {
+      "meaning_vi": "dùng tại chỗ",
+      "usage_vi": "Trả lời khi bạn ngồi lại quán để uống."
+    },
+    "cart": {
+      "meaning_vi": "xe đẩy hàng",
+      "usage_vi": "Dùng khi mua nhiều đồ trong siêu thị."
+    },
+    "basket": {
+      "meaning_vi": "giỏ xách tay",
+      "usage_vi": "Dùng khi mua ít đồ."
+    },
+    "aisle": {
+      "meaning_vi": "dãy kệ, lối đi giữa các kệ",
+      "usage_vi": "Dùng khi hỏi món hàng nằm ở đâu."
+    },
+    "checkout": {
+      "meaning_vi": "quầy thanh toán",
+      "usage_vi": "Nơi bạn đến để trả tiền."
+    },
+    "cashier": {
+      "meaning_vi": "thu ngân",
+      "usage_vi": "Người tính tiền cho bạn."
+    },
+    "bag": {
+      "meaning_vi": "túi",
+      "usage_vi": "Thu ngân hỏi bạn có cần túi đựng đồ không."
+    },
+    "on sale": {
+      "meaning_vi": "đang giảm giá",
+      "usage_vi": "Hỏi khi muốn biết món hàng có rẻ hơn bình thường không."
+    },
+    "price": {
+      "meaning_vi": "giá",
+      "usage_vi": "Hỏi khi muốn biết món hàng bao nhiêu tiền."
+    },
+    "cash": {
+      "meaning_vi": "tiền mặt",
+      "usage_vi": "Nói khi bạn trả bằng tiền giấy."
+    },
+    "card": {
+      "meaning_vi": "thẻ ngân hàng",
+      "usage_vi": "Nói khi bạn trả bằng thẻ."
+    },
+    "fresh": {
+      "meaning_vi": "tươi",
+      "usage_vi": "Dùng cho rau, trái cây, thịt cá mới."
+    },
+    "frozen": {
+      "meaning_vi": "đông lạnh",
+      "usage_vi": "Dùng cho đồ ăn để trong tủ đông."
+    },
+    "address": {
+      "meaning_vi": "địa chỉ",
+      "usage_vi": "Đưa cho tài xế khi nói nơi muốn đến."
+    },
+    "airport": {
+      "meaning_vi": "sân bay",
+      "usage_vi": "Nói khi muốn đi ra sân bay."
+    },
+    "turn left": {
+      "meaning_vi": "rẽ trái",
+      "usage_vi": "Dùng để chỉ đường cho tài xế."
+    },
+    "turn right": {
+      "meaning_vi": "rẽ phải",
+      "usage_vi": "Dùng để chỉ đường cho tài xế."
+    },
+    "straight": {
+      "meaning_vi": "đi thẳng",
+      "usage_vi": "Chỉ đường khi không cần rẽ."
+    },
+    "stop here": {
+      "meaning_vi": "dừng ở đây",
+      "usage_vi": "Nói khi đã đến nơi muốn xuống xe."
+    },
+    "traffic": {
+      "meaning_vi": "giao thông, xe cộ",
+      "usage_vi": "Dùng khi nói đường đông, kẹt xe."
+    },
+    "fare": {
+      "meaning_vi": "tiền xe, giá cước",
+      "usage_vi": "Hỏi khi muốn biết phải trả bao nhiêu."
+    },
+    "seatbelt": {
+      "meaning_vi": "dây an toàn",
+      "usage_vi": "Tài xế nhắc bạn thắt khi lên xe."
+    },
+    "trunk": {
+      "meaning_vi": "cốp xe",
+      "usage_vi": "Nơi để hành lý trên xe."
+    },
+    "how long": {
+      "meaning_vi": "bao lâu",
+      "usage_vi": "Hỏi khi muốn biết mất bao nhiêu thời gian."
+    },
+    "tip": {
+      "meaning_vi": "tiền boa",
+      "usage_vi": "Đưa thêm cho tài xế để cảm ơn."
+    },
+    "appointment": {
+      "meaning_vi": "lịch hẹn",
+      "usage_vi": "Nói khi bạn đã đặt giờ khám."
+    },
+    "doctor": {
+      "meaning_vi": "bác sĩ",
+      "usage_vi": "Người khám bệnh cho bạn."
+    },
+    "fever": {
+      "meaning_vi": "sốt",
+      "usage_vi": "Nói khi người nóng, nhiệt độ cao."
+    },
+    "headache": {
+      "meaning_vi": "đau đầu",
+      "usage_vi": "Nói khi bị nhức đầu."
+    },
+    "cough": {
+      "meaning_vi": "ho",
+      "usage_vi": "Nói khi bạn bị ho."
+    },
+    "sore throat": {
+      "meaning_vi": "đau họng",
+      "usage_vi": "Nói khi nuốt thấy đau."
+    },
+    "medicine": {
+      "meaning_vi": "thuốc",
+      "usage_vi": "Bác sĩ dặn bạn uống."
+    },
+    "pharmacy": {
+      "meaning_vi": "nhà thuốc",
+      "usage_vi": "Nơi mua thuốc."
+    },
+    "allergy": {
+      "meaning_vi": "dị ứng",
+      "usage_vi": "Báo bác sĩ nếu bạn bị dị ứng thuốc hoặc đồ ăn."
+    },
+    "insurance": {
+      "meaning_vi": "bảo hiểm",
+      "usage_vi": "Phòng khám hỏi để tính tiền khám."
+    },
+    "pain": {
+      "meaning_vi": "cơn đau",
+      "usage_vi": "Dùng để nói chỗ nào bị đau."
+    },
+    "prescription": {
+      "meaning_vi": "đơn thuốc",
+      "usage_vi": "Bác sĩ đưa để bạn mua thuốc."
+    }
+  },
+  "vi_to_en": {
+    "hóa đơn": "receipt",
+    "túi": "bag",
+    "tiền boa": "tip",
+    "đơn thuốc": "prescription"
+  }
+}

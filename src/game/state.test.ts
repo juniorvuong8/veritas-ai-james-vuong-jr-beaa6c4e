@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { canLevelUp, gameReducer, newGame, type GameAction, type GameState } from './state'
+import { canLevelUp, gameReducer, isLearned, newGame, type GameAction, type GameState } from './state'
 
 const run = (s: GameState, ...actions: GameAction[]) => actions.reduce(gameReducer, s)
 const finish = (placeId: string): GameAction => ({ type: 'finishPlace', placeId })
@@ -8,7 +8,7 @@ const allFour = [finish('cafe'), finish('supermarket'), finish('taxi'), finish('
 describe('gameReducer', () => {
   it('starts empty at the chosen level', () => {
     expect(newGame(2)).toEqual({
-      level: 2, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords: {},
+      level: 2, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords: {}, learnedWords: [],
     })
   })
 
@@ -86,5 +86,34 @@ describe('gameReducer', () => {
     const s = newGame(1)
     expect(gameReducer(s, finish('moon'))).toBe(s)
     expect(gameReducer(s, { type: 'rememberWords', placeId: 'moon', words: ['a', 'b', 'c'] })).toBe(s)
+  })
+})
+
+describe('learned words', () => {
+  const vocab = (...words: [string, string][]) =>
+    words.map(([input, word]) => ({ input, word, meaning_vi: `nghĩa ${word}`, usage_vi: `cách dùng ${word}` }))
+  const learn = (placeId: string, ...words: [string, string][]): GameAction => ({ type: 'learnWords', placeId, vocab: vocab(...words) })
+
+  it('adds each word once, keeping where it was first learned', () => {
+    const s = run(newGame(1), learn('cafe', ['menu', 'menu'], ['hóa đơn', 'receipt']), learn('supermarket', ['Receipt', 'receipt'], ['bag', 'bag']))
+    expect(s.learnedWords.map((w) => [w.word, w.placeId])).toEqual([
+      ['menu', 'cafe'],
+      ['receipt', 'cafe'],
+      ['bag', 'supermarket'],
+    ])
+    expect(s.learnedWords[1]).toMatchObject({ input: 'hóa đơn', meaning_vi: 'nghĩa receipt' })
+  })
+
+  it('matches by English word or the Vietnamese input, ignoring case and spacing', () => {
+    const s = run(newGame(1), learn('cafe', ['hóa đơn', 'receipt']))
+    expect(isLearned(s.learnedWords, ' Receipt ')).toBe(true)
+    expect(isLearned(s.learnedWords, 'hóa đơn')).toBe(true)
+    expect(isLearned(s.learnedWords, 'menu')).toBe(false)
+  })
+
+  it('keeps learned words through play again and level up', () => {
+    const s = run(newGame(1), learn('cafe', ['menu', 'menu']), ...allFour)
+    expect(run(s, { type: 'playAgain' }).learnedWords).toHaveLength(1)
+    expect(run(s, { type: 'levelUp' }).learnedWords).toHaveLength(1)
   })
 })

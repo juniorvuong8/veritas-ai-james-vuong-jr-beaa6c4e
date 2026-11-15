@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { validLesson } from '@/shared/test-fixtures'
@@ -69,6 +69,22 @@ describe('App', () => {
     expect(screen.getByLabelText('Quán cà phê: đã xong')).toBeInTheDocument()
     expect(screen.getByText('🪙 20')).toBeInTheDocument()
     expect(playerPos(container)).toEqual(doorOf(CITY, 'cafe').outside)
+
+    // The lesson's words are now in the notebook…
+    await user.click(screen.getByRole('button', { name: /Sổ từ: 3 từ/ }))
+    const notebook = screen.getByRole('dialog', { name: /Sổ từ của bạn/ })
+    for (const w of ['menu', 'to go', 'receipt']) expect(within(notebook).getByText(w)).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Đóng sổ từ' }))
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+
+    // …and show grey in the café's word picker next time.
+    walkTo(doorOf(CITY, 'cafe').pos, doorOf(CITY, 'cafe').outside)
+    await user.click(screen.getByRole('button', { name: 'Vào lại' }))
+    await screen.findByText(/Hôm nay bạn muốn học từ nào/)
+    for (const w of ['menu', 'to go', 'receipt']) await user.click(screen.getByRole('button', { name: w }))
+    expect(screen.getByRole('button', { name: 'menu' })).toHaveAttribute('data-learned', 'true')
+    expect(screen.getByRole('button', { name: 'napkin' })).not.toHaveAttribute('data-learned')
+    expect(JSON.parse(localStorage.getItem(SAVE_KEY)!).learnedWords).toHaveLength(3)
   })
 
   it('continues a saved round', async () => {

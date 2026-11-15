@@ -84,6 +84,7 @@ export function CityScreen(props: {
   paused?: boolean
   onEnterPlace: (placeId: string) => void
   onOpenCelebration: () => void
+  onOpenNotebook?: () => void
   onMoved: () => void
 }) {
   const [pos, setPos] = useState<Pos>(props.startPos)
@@ -197,7 +198,7 @@ export function CityScreen(props: {
       // The whole column (bar, map, hints) is as wide as the map can be on this screen.
       style={{ width: `min(100%, calc((100svh - 10.5rem) * ${CITY.width} / ${CITY.height}))` }}
     >
-      <TopBar state={props.state} onOpenCelebration={props.onOpenCelebration} />
+      <TopBar state={props.state} onOpenCelebration={props.onOpenCelebration} onOpenNotebook={props.onOpenNotebook} />
       {props.showHint && (
         <p className="text-center text-sm font-semibold text-[#2F7F7A]">
           <Bi vi="Đi đến một địa điểm để bắt đầu" en="Walk to a place to start" />
