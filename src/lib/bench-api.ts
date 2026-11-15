@@ -1,7 +1,7 @@
 import type { BenchReply, BenchRequest } from '@/shared/bench'
 import { ERRORS } from '@/shared/generate'
-import type { ErrorBody, ErrorCode } from '@/shared/types'
-import { NETWORK_MESSAGE, TIMEOUT_MESSAGE } from './api'
+import type { ErrorCode } from '@/shared/types'
+import { isErrorBody, NETWORK_MESSAGE, TIMEOUT_MESSAGE } from './api'
 import { benchChatFn } from './bench.functions'
 
 export type BenchChatResult =
@@ -9,15 +9,6 @@ export type BenchChatResult =
   | { ok: false; code: ErrorCode | 'timeout' | 'network'; message_vi: string }
 
 export const BENCH_TIMEOUT_MS = 30_000
-
-function isErrorBody(v: unknown): v is ErrorBody {
-  return (
-    typeof v === 'object' &&
-    v !== null &&
-    typeof (v as ErrorBody).code === 'string' &&
-    typeof (v as ErrorBody).message_vi === 'string'
-  )
-}
 
 export async function requestBenchReply(
   req: BenchRequest,

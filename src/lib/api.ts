@@ -10,7 +10,7 @@ export const TIMEOUT_MESSAGE = 'Mất quá nhiều thời gian. Vui lòng thử 
 export const NETWORK_MESSAGE = 'Không kết nối được. Kiểm tra mạng và thử lại.'
 const FALLBACK_ERROR = 'Không tạo được hội thoại. Vui lòng thử lại.'
 
-function isErrorBody(v: unknown): v is ErrorBody {
+export function isErrorBody(v: unknown): v is ErrorBody {
   return (
     typeof v === 'object' &&
     v !== null &&

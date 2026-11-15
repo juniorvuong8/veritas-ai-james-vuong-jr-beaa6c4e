@@ -25,6 +25,11 @@ describe('requestBenchReply', () => {
     expect(res).toEqual({ ok: false, code: 'ai_failed', message_vi: 'Lỗi' })
   })
 
+  it('falls back to ai_failed on a non-200 response without an error body', async () => {
+    const res = await requestBenchReply(req, { call: fake(async () => ({ status: 500, body: null })) })
+    expect(res).toMatchObject({ ok: false, code: 'ai_failed' })
+  })
+
   it('times out when the call never resolves', async () => {
     const res = await requestBenchReply(req, { call: fake(() => new Promise(() => {})), timeoutMs: 10 })
     expect(res).toMatchObject({ ok: false, code: 'timeout' })
