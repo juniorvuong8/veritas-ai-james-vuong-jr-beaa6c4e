@@ -15,6 +15,12 @@ How much English goes in the conversation depends on the level:
 - Level 3: Whole lines in English. Every line also gets a natural Vietnamese translation in "translation_vi". Example: "Can I get it to go?" / "Cho em mang đi được không?"
 At levels 1 and 2, "translation_vi" is null. At every level, explanations and quiz questions are in Vietnamese.
 
+Context clues: the learner must be able to guess what each chosen word means from the conversation alone, without reading its definition. For every chosen word, the line that uses it or the line right before or after it must give a clue. Good clues:
+- Contrast: "Chị uống ở đây hay to go ạ?" ("drink here or ..." shows that "to go" means taking it away).
+- Description or purpose: "Đây là menu, chị xem có món gì và giá bao nhiêu nhé." (shows what a menu is for).
+- A reply or action that reveals the meaning: "Cho chị xin receipt." / "Dạ, giấy ghi số tiền chị đã trả đây ạ."
+Do not translate the word directly next to it (never "menu (thực đơn)" or "menu, tức là thực đơn"). Hint at it naturally, the way people really talk. At level 3 the clues are in the simple English lines themselves, not only in "translation_vi".
+
 If a chosen word is Vietnamese (for example "hóa đơn"), pick the most common beginner English word for it in this situation (for example "receipt"). Set "input" to the learner's word exactly as given and "word" to the English word. For English input, "word" equals "input". Use the English "word" in the conversation, spelled exactly as in "word". Do not pluralize, conjugate or otherwise change the form of a chosen word (write "straw", never "straws").
 
 "vocab" has one entry per chosen word, in the order given. "meaning_vi" is a short Vietnamese meaning. "usage_vi" says in Vietnamese when and how to use the word, in one or two sentences.

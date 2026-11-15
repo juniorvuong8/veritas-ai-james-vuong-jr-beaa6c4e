@@ -32,6 +32,12 @@ describe('buildMessages', () => {
     expect(user.content).toContain(cafe.promptContext)
   })
 
+  it('asks for a context clue for every chosen word, without direct translation', () => {
+    const [system] = buildMessages(cafe, validRequest)
+    expect(system.content).toContain('guess what each chosen word means from the conversation alone')
+    expect(system.content).toContain('Do not translate the word directly next to it')
+  })
+
   it('states the two-speaker, host-first rule', () => {
     const [system] = buildMessages(cafe, validRequest)
     expect(system.content).toContain('exactly two speakers')

@@ -17,14 +17,14 @@ export class AiError extends Error {
 }
 
 /** Server-only: calls Claude through the Lovable AI Gateway. */
-export function createGatewayAiCaller(): AiCaller {
+export function createGatewayAiCaller(opts: { maxTokens?: number } = {}): AiCaller {
   return async (messages) => {
     const { generateMessage, RateLimitError, PaymentRequiredError, GatewayError } = await import('@lovable.dev/ai-gateway')
     const system = messages.filter((m) => m.role === 'system').map((m) => m.content).join('\n\n')
     const turns = messages.filter((m) => m.role === 'user').map((m) => ({ role: 'user' as const, content: m.content }))
     let res
     try {
-      res = await generateMessage({ model: DEFAULT_MODEL, max_tokens: MAX_OUTPUT_TOKENS, system, messages: turns })
+      res = await generateMessage({ model: DEFAULT_MODEL, max_tokens: opts.maxTokens ?? MAX_OUTPUT_TOKENS, system, messages: turns })
     } catch (err) {
       if (err instanceof RateLimitError) throw new AiError(429, err.message)
       if (err instanceof PaymentRequiredError) throw new AiError(402, err.message)

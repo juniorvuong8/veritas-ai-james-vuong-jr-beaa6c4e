@@ -68,6 +68,15 @@ describe('isValidWord', () => {
     expect(isValidWord('coffee2')).toBe(false)
     expect(isValidWord('hóa đơn')).toBe(true)
   })
+
+  it('allows one or two words, but not a sentence', async () => {
+    const { wordProblem } = await import('./validate-request.ts')
+    expect(wordProblem('sore throat')).toBeNull()
+    expect(wordProblem('kem đánh răng')).toBeNull()
+    expect(wordProblem('i would like a coffee')).toBe('too_long')
+    expect(wordProblem('can I pay')).toBe('too_long')
+    expect(wordProblem('cho tôi một ly cà phê')).toBe('too_long')
+  })
 })
 
 describe('normalizeWord', () => {

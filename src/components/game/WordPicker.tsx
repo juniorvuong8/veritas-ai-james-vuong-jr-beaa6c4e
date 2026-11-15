@@ -3,36 +3,65 @@ import { Bi, useBiText } from '@/lib/debug'
 import { addWord, canSubmit, toggleWord } from '@/lib/selection'
 import { cn } from '@/lib/utils'
 import { getScenario, normalizeWord } from '@/shared/scenarios'
-import { MAX_WORDS, MIN_WORDS, isValidWord } from '@/shared/validate-request'
+import { MAX_WORDS, MIN_WORDS, wordProblem, type WordProblem } from '@/shared/validate-request'
+import type { WordFitResult } from '@/shared/word-fit'
+import { requestWordFit } from '@/lib/word-fit-api'
 import { PrimaryButton, SecondaryButton } from './ui'
 
 const key = (w: string) => normalizeWord(w).toLowerCase()
-const INVALID_WORD = 'Từ chỉ được dùng chữ cái, khoảng trắng, dấu gạch ngang hoặc dấu nháy (tối đa 30 ký tự).'
-const INVALID_WORD_EN = 'Words can only use letters, spaces, hyphens or apostrophes (up to 30 characters).'
+const PROBLEM_MESSAGES: Record<WordProblem, { vi: string; en: string }> = {
+  chars: {
+    vi: 'Từ chỉ được dùng chữ cái, khoảng trắng, dấu gạch ngang hoặc dấu nháy (tối đa 30 ký tự).',
+    en: 'Words can only use letters, spaces, hyphens or apostrophes (up to 30 characters).',
+  },
+  too_long: {
+    vi: 'Hãy nhập một hoặc hai từ thôi, không phải cả câu.',
+    en: 'Please enter just one or two words, not a whole sentence.',
+  },
+}
+
+type CustomError = { vi: string; en: string }
 
 export function WordPicker(props: {
   scenarioId: string
   initialWords?: string[]
   submitLabel: ReactNode
   onSubmit: (words: string[]) => void
+  /** Asks whether a custom word fits this place. Defaults to the AI check on the server. */
+  checkWord?: (word: string) => Promise<WordFitResult>
 }) {
   const [words, setWords] = useState<string[]>(props.initialWords ?? [])
   const [custom, setCustom] = useState('')
-  const [customError, setCustomError] = useState<string | undefined>()
+  const [customError, setCustomError] = useState<CustomError | undefined>()
+  const [checking, setChecking] = useState(false)
   const biText = useBiText()
 
   const suggested = getScenario(props.scenarioId)?.suggestedWords ?? []
   const customWords = words.filter((w) => !suggested.some((s) => key(s) === key(w)))
   const isSelected = (w: string) => words.some((s) => key(s) === key(w))
 
-  function addCustom(e: FormEvent) {
+  async function addCustom(e: FormEvent) {
     e.preventDefault()
-    if (!isValidWord(normalizeWord(custom))) {
-      setCustomError(INVALID_WORD)
+    if (checking) return
+    const word = normalizeWord(custom)
+    const problem = wordProblem(word)
+    if (problem) {
+      setCustomError(PROBLEM_MESSAGES[problem])
       return
     }
     setCustomError(undefined)
-    setWords((ws) => addWord(ws, custom))
+    // Suggested and already-chosen words are known to fit; only new words go to the AI.
+    if (!isSelected(word) && !suggested.some((s) => key(s) === key(word))) {
+      setChecking(true)
+      const check = props.checkWord ?? ((w: string) => requestWordFit(props.scenarioId, w))
+      const verdict = await check(word)
+      setChecking(false)
+      if (!verdict.fits) {
+        setCustomError({ vi: verdict.reason_vi, en: verdict.reason_en })
+        return
+      }
+    }
+    setWords((ws) => addWord(ws, word))
     setCustom('')
   }
 
@@ -87,16 +116,17 @@ export function WordPicker(props: {
             setCustomError(undefined)
           }}
           aria-invalid={customError ? true : undefined}
+          readOnly={checking}
           placeholder={biText('Thêm từ của bạn (tiếng Anh hoặc tiếng Việt)', 'Add your own word (English or Vietnamese)')}
           maxLength={30}
         />
-        <SecondaryButton type="submit" disabled={!custom.trim() || words.length >= MAX_WORDS}>
-          <Bi vi="Thêm" en="Add" />
+        <SecondaryButton type="submit" disabled={checking || !custom.trim() || words.length >= MAX_WORDS}>
+          {checking ? <Bi vi="Đang kiểm tra…" en="Checking…" /> : <Bi vi="Thêm" en="Add" />}
         </SecondaryButton>
       </form>
       {customError && (
         <p role="alert" className="text-sm font-semibold text-[#C2412C]">
-          <Bi vi={customError} en={INVALID_WORD_EN} />
+          <Bi vi={customError.vi} en={customError.en} />
         </p>
       )}
       <PrimaryButton size="lg" arrow className="w-full" disabled={!canSubmit(words)} onClick={() => props.onSubmit(words)}>

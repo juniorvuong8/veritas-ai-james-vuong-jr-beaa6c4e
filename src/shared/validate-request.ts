@@ -5,9 +5,29 @@ export const MIN_WORDS = 3
 export const MAX_WORDS = 5
 const WORD_RULE = /^[\p{L}\p{M}' -]{1,30}$/u
 
-/** Letters (any language), spaces, hyphens and apostrophes, 1-30 chars, with at least one letter. Expects a normalized word. */
+/** English: at most 2 words ("sore throat"). */
+export const MAX_ENGLISH_WORDS = 2
+/** Vietnamese writes each syllable apart, so 2 words can be up to 4 syllables ("kem đánh răng"). */
+export const MAX_VIETNAMESE_SYLLABLES = 4
+const VIETNAMESE_LETTER = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/iu
+
+export type WordProblem = 'chars' | 'too_long'
+
+/**
+ * Why a normalized word can't be used, or null if it can.
+ * 'chars': only letters (any language), spaces, hyphens and apostrophes, 1-30 chars, at least one letter.
+ * 'too_long': a whole phrase or sentence rather than one or two words.
+ */
+export function wordProblem(w: string): WordProblem | null {
+  if (!WORD_RULE.test(w) || !/\p{L}/u.test(w)) return 'chars'
+  const parts = w.split(' ').filter(Boolean).length
+  const max = VIETNAMESE_LETTER.test(w) ? MAX_VIETNAMESE_SYLLABLES : MAX_ENGLISH_WORDS
+  return parts > max ? 'too_long' : null
+}
+
+/** Expects a normalized word. See `wordProblem`. */
 export function isValidWord(w: string): boolean {
-  return WORD_RULE.test(w) && /\p{L}/u.test(w)
+  return wordProblem(w) === null
 }
 
 function isRecord(v: unknown): v is Record<string, unknown> {
