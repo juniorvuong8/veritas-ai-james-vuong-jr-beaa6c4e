@@ -3,7 +3,7 @@ import { DELTA } from './movement'
 
 /**
  * Shortest 4-directional path (BFS). Excludes `from`, includes `to`.
- * Door tiles are only entered when they are the target.
+ * Door and bench tiles are only entered when they are the target.
  */
 export function findPath(map: CityMap, from: Pos, to: Pos): Pos[] | null {
   if (samePos(from, to)) return []
@@ -17,7 +17,7 @@ export function findPath(map: CityMap, from: Pos, to: Pos): Pos[] | null {
       const next = { x: cur.x + d.x, y: cur.y + d.y }
       if (prev.has(key(next)) || !isWalkable(map, next)) continue
       const isTarget = samePos(next, to)
-      if (map.tiles[next.y][next.x] === 'door' && !isTarget) continue
+      if ((map.tiles[next.y][next.x] === 'door' || map.tiles[next.y][next.x] === 'bench') && !isTarget) continue
       prev.set(key(next), cur)
       if (isTarget) {
         const path: Pos[] = []

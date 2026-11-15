@@ -1,4 +1,5 @@
 // Every emoji in the game comes from this file, so real art can replace them in one place.
+import type { BenchId } from '@/shared/bench'
 import type { Tile } from './map'
 
 export const TILE_EMOJI: Record<Tile, string> = {
@@ -9,6 +10,12 @@ export const TILE_EMOJI: Record<Tile, string> = {
   fountain: '⛲',
   building: '',
   door: '🚪',
+  bench: '',
+}
+
+export const BENCH_ART: Record<BenchId, { person: string }> = {
+  'bac-tu': { person: '🧓' },
+  'sinh-vien': { person: '👩‍🎓' },
 }
 
 export const PLAYER_EMOJI = '🧑'

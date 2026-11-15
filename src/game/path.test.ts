@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { CITY, isWalkable, parseMap, type Pos } from './map'
+import { CITY, benchAt, isWalkable, parseMap, type Pos } from './map'
 import { findPath, resolveTapTarget } from './path'
 
 const adjacent = (a: Pos, b: Pos) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y) === 1
@@ -52,5 +52,19 @@ describe('resolveTapTarget', () => {
   })
   it('ignores a tree', () => {
     expect(resolveTapTarget(m, { x: 2, y: 0 })).toBeNull()
+  })
+})
+
+describe('benches in paths', () => {
+  it('never walks through a bench', () => {
+    const path = findPath(CITY, { x: 2, y: 4 }, { x: 0, y: 4 })!
+    expect(path.length).toBeGreaterThan(0)
+    expect(path.some((p) => benchAt(CITY, p))).toBe(false)
+  })
+  it('taps on a bench target it', () => {
+    expect(resolveTapTarget(CITY, { x: 9, y: 4 })).toEqual({ x: 9, y: 4 })
+  })
+  it('reaches each bench within 12 steps', () => {
+    for (const b of CITY.benches) expect(findPath(CITY, CITY.start, b.pos)!.length).toBeLessThanOrEqual(12)
   })
 })

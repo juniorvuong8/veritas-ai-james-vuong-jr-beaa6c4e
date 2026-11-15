@@ -1,4 +1,5 @@
-import { doorAt, isWalkable, type CityMap, type Pos } from './map'
+import type { BenchId } from '@/shared/bench'
+import { benchAt, doorAt, isWalkable, type CityMap, type Pos } from './map'
 
 export type Dir = 'up' | 'down' | 'left' | 'right'
 
@@ -9,11 +10,13 @@ export const DELTA: Record<Dir, Pos> = {
   right: { x: 1, y: 0 },
 }
 
-/** Move one tile if the target is walkable. Reports the place when the step lands on a door. */
-export function step(map: CityMap, from: Pos, dir: Dir): { pos: Pos; enteredPlace?: string } {
+/** Move one tile if the target is walkable. Reports the place or bench when the step lands on a door or bench. */
+export function step(map: CityMap, from: Pos, dir: Dir): { pos: Pos; enteredPlace?: string; enteredBench?: BenchId } {
   const to = { x: from.x + DELTA[dir].x, y: from.y + DELTA[dir].y }
   if (!isWalkable(map, to)) return { pos: from }
   const door = doorAt(map, to)
+  const bench = benchAt(map, to)
+  if (bench) return { pos: to, enteredBench: bench.benchId }
   return door ? { pos: to, enteredPlace: door.placeId } : { pos: to }
 }
 

@@ -27,6 +27,7 @@ const TILE_CLASS: Record<Tile, string> = {
   fountain: 'bg-[#E9DCC8]',
   building: '',
   door: '',
+  bench: 'bg-[#B5DC8F]',
 }
 
 function tileStyle(tile: Tile, place: string | null): CSSProperties | undefined {
