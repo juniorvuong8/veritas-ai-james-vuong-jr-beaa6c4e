@@ -96,3 +96,11 @@ The live site went down partway through: from u038 it answered **404, "No Lovabl
 Two other problems not checked in this round showed up again:
 - A tip left with no thank-you: u023, u027, u035 (rule 6).
 - "pain" used as a verb: u028, "đầu em cũng hơi bị pain" (rule 10).
+
+## Hunt for a clear error (38 lessons)
+
+38 more lessons were generated through the live app (veritas-ai-hackathon-game-to-thrive.lovable.app), aimed at past failures: "pain" at level 1, payment scenes, tricky level 1 inserts ("sore throat", "how long", "on sale"), and words with two meanings ("cold", "patient", "bill", "produce", "shot", "change", "trái").
+
+- **English misuse: none found.** Every target word was used in the taught sense and the right grammatical role, including "pain" in all 7 tries.
+- **Broken back-and-forth: 3 of the last 18 end on a line that needs a reply.** The clearest is **h38** (café, level 1): the customer's last line, "Cảm ơn. Cho tôi xin thêm một tờ napkin để lau tay nhé." ("Can I have a napkin to wipe my hands?"), gets no answer, and the game moves straight to the word review. Lesson: `hunt/h38.json`. Screenshots: `screenshots/h38-napkin-no-reply.png` and `screenshots/h38-napkin-no-reply-debug.png` (debug mode). h27 and h36 (taxi) also end on a tip with no thank-you from the driver.
+- **Also seen:** h18 (café, level 2), where the staff member calls the customer "chị" and himself "anh" in the same sentence.

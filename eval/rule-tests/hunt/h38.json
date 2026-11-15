@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "h38",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "change",
+   "napkin",
+   "for here"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào anh, anh muốn uống gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho tôi một ly cà phê sữa nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, anh uống for here hay mang đi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "For here, tôi ngồi ở cái bàn gần cửa sổ kia.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của anh hết 5 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây, tôi gửi 20 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, anh đưa 20 đô, đây là change của anh, 15 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn. Cho tôi xin thêm một tờ napkin để lau tay nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa trả lại",
+    "usage_vi": "Dùng khi bạn đưa nhiều tiền hơn giá món đồ và người bán trả lại phần dư. Ví dụ: \"Here is your change.\""
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy (để lau tay, lau miệng)",
+    "usage_vi": "Dùng khi bạn muốn xin giấy để lau tay, lau miệng hoặc lau bàn ở quán ăn, quán cà phê."
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại quán",
+    "usage_vi": "Nói khi nhân viên hỏi bạn ngồi lại quán ăn uống hay mang đi. Ngược lại với \"to go\" (mang đi)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một cái bánh giá 3 đô và đưa 10 đô. Người bán trả lại bạn 7 đô. Số tiền 7 đô đó tiếng Anh gọi là gì?",
+    "options": [
+     "napkin",
+     "change",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Change\" là tiền thối, tức phần tiền dư người bán trả lại cho bạn."
+   },
+   {
+    "question_vi": "Bạn làm đổ nước ngọt lên bàn và muốn xin giấy để lau. Bạn nói: \"Cho tôi xin một tờ ___.\"",
+    "options": [
+     "change",
+     "menu",
+     "napkin"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Napkin\" là khăn giấy dùng để lau tay, lau miệng hay lau bàn."
+   },
+   {
+    "question_vi": "Nhân viên tiệm trà sữa hỏi bạn có mang đi không, nhưng bạn muốn ngồi lại uống trong quán. Bạn trả lời:",
+    "options": [
+     "for here",
+     "to go",
+     "change"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại quán, còn \"to go\" là mang đi."
+   }
+  ]
+ }
+}
