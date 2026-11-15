@@ -2,15 +2,18 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { validLesson } from '@/shared/test-fixtures'
-import { CITY, doorOf, type Pos } from '@/game/map'
+import { CITY, benchOf, doorOf, type Pos } from '@/game/map'
 import { findPath } from '@/game/path'
-import { newGame } from '@/game/state'
+import { newGame, today } from '@/game/state'
 import { SAVE_KEY } from '@/game/storage'
 import { requestLesson } from '@/lib/api'
+import { requestBenchReply } from '@/lib/bench-api'
 import { VocabApp as App } from './VocabApp'
 
 vi.mock('@/lib/api', () => ({ requestLesson: vi.fn() }))
+vi.mock('@/lib/bench-api', () => ({ requestBenchReply: vi.fn() }))
 const mocked = vi.mocked(requestLesson)
+const benchMocked = vi.mocked(requestBenchReply)
 
 const keyFor = (a: Pos, b: Pos) =>
   b.x > a.x ? 'ArrowRight' : b.x < a.x ? 'ArrowLeft' : b.y > a.y ? 'ArrowDown' : 'ArrowUp'
@@ -35,6 +38,7 @@ async function openStart(user: ReturnType<typeof userEvent.setup>) {
 describe('App', () => {
   beforeEach(() => {
     mocked.mockReset()
+    benchMocked.mockReset()
     localStorage.clear()
   })
 
@@ -159,5 +163,48 @@ describe('App', () => {
     fireEvent.keyDown(window, { code: 'KeyD', altKey: true, shiftKey: true })
     expect(screen.queryByText(/DEBUG/)).not.toBeInTheDocument()
     expect(localStorage.getItem('vocab-debug')).toBeNull()
+  })
+
+  describe('park benches', () => {
+    const learned = (word: string) => ({ word, input: word, meaning_vi: 'nghĩa', usage_vi: 'cách dùng', placeId: 'cafe' })
+    const save = (extra: object) =>
+      localStorage.setItem(SAVE_KEY, JSON.stringify({ ...newGame(1), learnedWords: [learned('menu'), learned('receipt')], ...extra }))
+    const resume = async (user: ReturnType<typeof userEvent.setup>) => {
+      await openStart(user)
+      await user.click(screen.getByRole('button', { name: 'Chơi tiếp' }))
+    }
+
+    it('chats on a bench, pays a verdict once, and leaves to the tile beside it', async () => {
+      save({ coins: 0 })
+      benchMocked
+        .mockResolvedValueOnce({ ok: true, reply: { text: 'Xin chào cháu!', verdicts: [], done: false } })
+        .mockResolvedValueOnce({ ok: true, reply: { text: 'Giỏi lắm!', verdicts: [{ word: 'menu', check: 'use', passed: true }], done: false } })
+      const user = userEvent.setup()
+      const { container } = render(<App />)
+      await resume(user)
+      const bench = benchOf(CITY, 'bac-tu')
+      walkTo(bench.pos)
+      expect(await screen.findByText('Xin chào cháu!')).toBeInTheDocument()
+      await user.type(screen.getByLabelText('Tin nhắn'), 'Can I see the menu?')
+      await user.click(screen.getByRole('button', { name: 'Gửi' }))
+      expect(await screen.findByText('Giỏi lắm!')).toBeInTheDocument()
+      expect(screen.getByText('+10 🪙')).toBeInTheDocument()
+      await user.click(screen.getByRole('button', { name: 'Rời đi' }))
+      expect(screen.getByText('🪙 10')).toBeInTheDocument()
+      expect(playerPos(container)).toEqual(bench.outside)
+      const saved = JSON.parse(localStorage.getItem(SAVE_KEY)!)
+      expect(saved.benchDay.chats).toBe(1)
+      expect(saved.coins).toBe(10)
+    })
+
+    it('says to come back tomorrow after four chats, without calling the AI', async () => {
+      save({ benchDay: { date: today(), chats: 4, paid: {} } })
+      const user = userEvent.setup()
+      render(<App />)
+      await resume(user)
+      walkTo(benchOf(CITY, 'bac-tu').pos)
+      expect(await screen.findByText(/ngày mai cháu quay lại/)).toBeInTheDocument()
+      expect(benchMocked).not.toHaveBeenCalled()
+    })
   })
 })
