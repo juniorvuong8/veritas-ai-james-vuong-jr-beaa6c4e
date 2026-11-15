@@ -174,10 +174,10 @@ function Game() {
         </>
       )}
 
-      {game && screen.name === 'place' && screen.viaDoor && (
-        // Picks up from the city's fade to black and fades into the place.
+      {game && ((screen.name === 'place' && screen.viaDoor) || screen.name === 'bench') && (
+        // Picks up from the city's fade to black and fades into the place or bench chat.
         <div
-          key={`fade-${screen.placeId}`}
+          key={`fade-${screen.name === 'place' ? screen.placeId : screen.benchId}`}
           data-testid="door-fade-in"
           aria-hidden
           className="pointer-events-none fixed inset-0 z-50 bg-black"

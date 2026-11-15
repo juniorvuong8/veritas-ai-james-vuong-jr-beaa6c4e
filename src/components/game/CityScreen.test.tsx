@@ -176,20 +176,25 @@ describe('CityScreen', () => {
   })
 
   describe('benches', () => {
-    it('sits down after STEP_MS when walking onto a bench with keys, with no fade', () => {
+    it('pauses and fades to black before sitting down on a bench, like a door', () => {
       const c = renderCity()
+      const fade = () => c.container.querySelector('[data-testid="door-fade"]')!
       const bench = benchOf(CITY, 'bac-tu').pos
       const path = [CITY.start, ...findPath(CITY, CITY.start, bench)!]
       for (let i = 1; i < path.length; i++) fireEvent.keyDown(window, { key: keyFor(path[i - 1], path[i]) })
       expect(c.pos()).toEqual(bench)
+      expect(fade()).toHaveClass('opacity-0')
+      act(() => { vi.advanceTimersByTime(STEP_MS + DOOR_PAUSE_MS) })
+      expect(fade()).toHaveClass('opacity-100')
       expect(c.onEnterBench).not.toHaveBeenCalled()
-      act(() => { vi.advanceTimersByTime(STEP_MS) })
+      fireEvent.keyDown(window, { key: 'ArrowDown' })
+      expect(c.pos()).toEqual(bench)
+      act(() => { vi.advanceTimersByTime(FADE_MS) })
       expect(c.onEnterBench).toHaveBeenCalledTimes(1)
       expect(c.onEnterBench).toHaveBeenCalledWith('bac-tu')
       act(() => { vi.advanceTimersByTime(ENTER_DELAY_MS) })
       expect(c.onEnterBench).toHaveBeenCalledTimes(1)
       expect(c.onEnterPlace).not.toHaveBeenCalled()
-      expect(c.container.querySelector('[data-testid="door-fade"]')!.className).toContain('opacity-0')
     })
 
     it('walks to a tapped bench and sits down', () => {
@@ -197,7 +202,7 @@ describe('CityScreen', () => {
       const bench = benchOf(CITY, 'sinh-vien').pos
       const steps = findPath(CITY, CITY.start, bench)!.length
       fireEvent.click(c.tile(bench))
-      act(() => { vi.advanceTimersByTime(STEP_MS * steps + STEP_MS) })
+      act(() => { vi.advanceTimersByTime(STEP_MS * steps + ENTER_DELAY_MS) })
       expect(c.onEnterBench).toHaveBeenCalledWith('sinh-vien')
       expect(c.onEnterPlace).not.toHaveBeenCalled()
     })

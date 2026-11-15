@@ -145,10 +145,13 @@ export function CityScreen(props: {
     )
   }
 
-  /** Finish the step onto the bench, then sit down (no pause, no fade). */
+  /** Finish the step onto the bench, pause, fade to black, then sit down — like going through a door. */
   function enterBench(benchId: BenchId) {
     entered.current = true
-    enterTimers.current.push(setTimeout(() => propsRef.current.onEnterBench?.(benchId), STEP_MS))
+    enterTimers.current.push(
+      setTimeout(() => setFading(true), STEP_MS + DOOR_PAUSE_MS),
+      setTimeout(() => propsRef.current.onEnterBench?.(benchId), ENTER_DELAY_MS),
+    )
   }
 
   const stepDir = useCallback(
