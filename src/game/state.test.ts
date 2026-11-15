@@ -9,7 +9,7 @@ describe('gameReducer', () => {
   it('starts empty at the chosen level', () => {
     expect(newGame(2)).toEqual({
       level: 2, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords: {}, learnedWords: [], benchDay: null,
-      owned: [], outfit: {}, gender: 'neutral',
+      owned: [], outfit: {}, gender: 'neutral', starred: [],
     })
   })
 
@@ -158,5 +158,20 @@ describe('shop', () => {
   it('changes gender for free', () => {
     const s = run(rich(0), { type: 'setGender', gender: 'male' })
     expect(s).toMatchObject({ gender: 'male', coins: 0 })
+  })
+})
+
+describe('stars', () => {
+  it('stars and unstars a word, ignoring case and spacing', () => {
+    const s = run(newGame(1), { type: 'toggleStar', word: ' Receipt ' })
+    expect(s.starred).toEqual(['receipt'])
+    expect(run(s, { type: 'toggleStar', word: 'receipt' }).starred).toEqual([])
+    expect(run(newGame(1), { type: 'toggleStar', word: '  ' }).starred).toEqual([])
+  })
+
+  it('keeps stars through play again and level up', () => {
+    const s = run(newGame(1), { type: 'toggleStar', word: 'menu' }, ...allFour)
+    expect(run(s, { type: 'playAgain' }).starred).toEqual(['menu'])
+    expect(run(s, { type: 'levelUp' }).starred).toEqual(['menu'])
   })
 })

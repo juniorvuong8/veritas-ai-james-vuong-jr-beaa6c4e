@@ -32,7 +32,7 @@ type AppAction = GameAction | { type: 'newGame'; level: Level }
 
 function appReducer(state: GameState | null, action: AppAction): GameState | null {
   if (action.type === 'newGame') {
-    // A new game empties the notebook but keeps today's bench limits, and the shop items and character.
+    // A new game empties the notebook (and its stars) but keeps today's bench limits, and the shop items and character.
     const fresh = newGame(action.level, state?.lastWords, [], state?.benchDay ?? null)
     return state ? { ...fresh, ...keptLook(state) } : fresh
   }
@@ -139,7 +139,14 @@ function Game() {
             onOpenNotebook={() => setNotebookOpen(true)}
             onOpenShop={() => setShopOpen(true)}
           />
-          {notebookOpen && <Notebook words={game.learnedWords} onClose={closeNotebook} />}
+          {notebookOpen && (
+            <Notebook
+              words={game.learnedWords}
+              starred={game.starred}
+              onToggleStar={(word) => dispatch({ type: 'toggleStar', word })}
+              onClose={closeNotebook}
+            />
+          )}
           {shopOpen && (
             <Shop
               coins={game.coins}
@@ -193,6 +200,8 @@ function Game() {
           level={game.level}
           initialWords={game.lastWords[screen.placeId] ?? []}
           learnedWords={game.learnedWords}
+          starred={game.starred}
+          onToggleStar={(word) => dispatch({ type: 'toggleStar', word })}
           onLearned={(vocab) => dispatch({ type: 'learnWords', placeId: screen.placeId, vocab })}
           onWordsChosen={(words) => dispatch({ type: 'rememberWords', placeId: screen.placeId, words })}
           onCorrect={() => dispatch({ type: 'earnCoins', amount: COINS_PER_CORRECT })}

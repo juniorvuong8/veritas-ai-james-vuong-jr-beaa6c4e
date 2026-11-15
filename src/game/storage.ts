@@ -1,5 +1,5 @@
 import { GENDERS, SLOTS, getItem, type Gender, type Outfit } from './shop'
-import { PLACE_IDS, type BenchDay, type GameState, type LearnedWord } from './state'
+import { PLACE_IDS, wordKey, type BenchDay, type GameState, type LearnedWord } from './state'
 
 export const SAVE_KEY = 'vocab-city-v1'
 
@@ -78,6 +78,8 @@ function parseGame(raw: unknown): GameState | null {
     outfit: parseOutfit(g.outfit, owned),
     // Saves from before gender was added start neutral.
     gender: GENDERS.includes(g.gender as Gender) ? (g.gender as Gender) : 'neutral',
+    // Saves from before stars were added have none.
+    starred: isStringArray(g.starred) ? [...new Set(g.starred.map(wordKey).filter(Boolean))] : [],
   }
 }
 

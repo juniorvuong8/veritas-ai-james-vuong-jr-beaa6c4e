@@ -28,6 +28,33 @@ describe('Notebook', () => {
     expect(within(sections[1]).getByText('fever')).toBeInTheDocument()
   })
 
+  it('stars words and shows only the starred ones under Starred', () => {
+    const onToggleStar = vi.fn()
+    render(
+      <Notebook
+        words={[word('menu', 'cafe'), word('fever', 'clinic')]}
+        starred={['fever']}
+        onToggleStar={onToggleStar}
+        onClose={() => {}}
+      />,
+    )
+    expect(screen.getByRole('button', { name: 'Gắn sao "fever"' })).toHaveAttribute('aria-pressed', 'true')
+    fireEvent.click(screen.getByRole('button', { name: 'Gắn sao "menu"' }))
+    expect(onToggleStar).toHaveBeenCalledWith('menu')
+
+    fireEvent.click(screen.getByRole('button', { name: '⭐ Đã gắn sao (1)' }))
+    expect(screen.getByText('fever')).toBeInTheDocument()
+    expect(screen.queryByText('menu')).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Tất cả (2)' }))
+    expect(screen.getByText('menu')).toBeInTheDocument()
+  })
+
+  it('explains how to star when nothing is starred', () => {
+    render(<Notebook words={[word('menu', 'cafe')]} starred={[]} onToggleStar={() => {}} onClose={() => {}} />)
+    fireEvent.click(screen.getByRole('button', { name: '⭐ Đã gắn sao (0)' }))
+    expect(screen.getByText(/Chưa có từ nào được gắn sao/)).toBeInTheDocument()
+  })
+
   it('explains how to fill an empty notebook', () => {
     render(<Notebook words={[]} onClose={() => {}} />)
     expect(screen.getByText(/Chưa có từ nào/)).toBeInTheDocument()

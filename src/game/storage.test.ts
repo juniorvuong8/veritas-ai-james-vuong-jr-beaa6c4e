@@ -49,6 +49,13 @@ describe('storage', () => {
     expect(loadGame(saved({ ...game, gender: 'robot' }))?.gender).toBe('neutral')
   })
 
+  it('loads starred words, and none from a save made before stars', () => {
+    expect(loadGame(saved({ ...game, starred: ['Menu', 7] }))).toMatchObject({ starred: [], coins: 40 })
+    expect(loadGame(saved({ ...game, starred: ['Menu', 'menu'] }))?.starred).toEqual(['menu'])
+    const { starred: _, ...old } = game
+    expect(loadGame(saved(old))?.starred).toEqual([])
+  })
+
   it('loads a save from before the notebook with no learned words', () => {
     const { learnedWords: _, ...old } = game
     expect(loadGame(saved(old))?.learnedWords).toEqual([])

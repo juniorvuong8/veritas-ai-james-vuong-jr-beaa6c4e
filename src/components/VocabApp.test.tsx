@@ -170,7 +170,7 @@ describe('App', () => {
     const word = { word: 'menu', input: 'menu', meaning_vi: 'thực đơn', usage_vi: 'cách dùng', placeId: 'cafe' }
     localStorage.setItem(
       SAVE_KEY,
-      JSON.stringify({ ...newGame(1), stamps: ['cafe'], coins: 40, learnedWords: [word], owned: ['cap'], outfit: { hat: 'cap' } }),
+      JSON.stringify({ ...newGame(1), stamps: ['cafe'], coins: 40, learnedWords: [word], starred: ['menu'], owned: ['cap'], outfit: { hat: 'cap' } }),
     )
     render(<App />)
     await openStart(user)
@@ -187,7 +187,7 @@ describe('App', () => {
     await user.click(screen.getByRole('button', { name: 'Chơi mới' }))
     await user.click(screen.getByRole('button', { name: 'Có, chơi mới' }))
     expect(JSON.parse(localStorage.getItem(SAVE_KEY)!)).toMatchObject({
-      stamps: [], coins: 0, learnedWords: [], owned: ['cap'], outfit: { hat: 'cap' },
+      stamps: [], coins: 0, learnedWords: [], starred: [], owned: ['cap'], outfit: { hat: 'cap' },
     })
   })
 

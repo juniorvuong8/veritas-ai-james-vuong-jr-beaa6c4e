@@ -1,14 +1,26 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { SpeakButton } from '@/components/SpeakButton'
 import { PLACE_ART } from '@/game/art'
-import { PLACE_IDS, type LearnedWord } from '@/game/state'
+import { PLACE_IDS, isStarred, type LearnedWord } from '@/game/state'
 import { Bi, Gloss, useBiText } from '@/lib/debug'
+import { cn } from '@/lib/utils'
 import { getScenario } from '@/shared/scenarios'
+import { StarButton } from './StarButton'
 
 /** The learner's word notebook: every word learned so far, grouped by the place it was learned in. */
-export function Notebook(props: { words: LearnedWord[]; onClose: () => void }) {
+export function Notebook(props: {
+  words: LearnedWord[]
+  /** Starred words (as word keys). */
+  starred?: string[]
+  onToggleStar?: (word: string) => void
+  onClose: () => void
+}) {
   const biText = useBiText()
   const { onClose } = props
+  const starred = props.starred ?? []
+  const [onlyStarred, setOnlyStarred] = useState(false)
+  const starredWords = props.words.filter((w) => isStarred(starred, w.word))
+  const shown = onlyStarred ? starredWords : props.words
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -18,7 +30,7 @@ export function Notebook(props: { words: LearnedWord[]; onClose: () => void }) {
     return () => window.removeEventListener('keydown', onKey)
   }, [onClose])
 
-  const groups = PLACE_IDS.map((id) => ({ id, words: props.words.filter((w) => w.placeId === id) })).filter(
+  const groups = PLACE_IDS.map((id) => ({ id, words: shown.filter((w) => w.placeId === id) })).filter(
     (g) => g.words.length > 0,
   )
 
@@ -49,8 +61,36 @@ export function Notebook(props: { words: LearnedWord[]; onClose: () => void }) {
           </button>
         </div>
 
+        <div role="group" aria-label={biText('Hiển thị', 'Show')} className="flex gap-2 px-5 pt-3">
+          {[
+            { only: false, vi: 'Tất cả', en: 'All', count: props.words.length },
+            { only: true, vi: '⭐ Đã gắn sao', en: '⭐ Starred', count: starredWords.length },
+          ].map((tab) => (
+            <button
+              key={String(tab.only)}
+              type="button"
+              aria-pressed={onlyStarred === tab.only}
+              onClick={() => setOnlyStarred(tab.only)}
+              className={cn(
+                'rounded-full px-3 py-1 text-sm font-bold transition-colors',
+                onlyStarred === tab.only ? 'bg-[#2B1D16] text-white' : 'bg-[#2B1D16]/8 text-[#2B1D16]/70 hover:bg-[#2B1D16]/15',
+              )}
+            >
+              {`${biText(tab.vi, tab.en)} (${tab.count})`}
+            </button>
+          ))}
+        </div>
+
         <div className="space-y-5 overflow-y-auto px-5 py-4">
-          {groups.length === 0 && (
+          {onlyStarred && groups.length === 0 && (
+            <p className="py-6 text-center text-sm font-semibold text-[#2B1D16]/60">
+              <Bi
+                vi="Chưa có từ nào được gắn sao. Bấm ☆ bên cạnh một từ để gắn sao."
+                en="No starred words yet. Tap ☆ next to a word to star it."
+              />
+            </p>
+          )}
+          {!onlyStarred && groups.length === 0 && (
             <p className="py-6 text-center text-sm font-semibold text-[#2B1D16]/60">
               <Bi
                 vi="Chưa có từ nào. Hoàn thành một bài ở một địa điểm để ghi từ vào sổ nhé!"
@@ -72,13 +112,23 @@ export function Notebook(props: { words: LearnedWord[]; onClose: () => void }) {
                 <ul className="grid gap-2">
                   {g.words.map((w) => (
                     <li key={w.word} className="rounded-2xl bg-white p-3 ring-1 ring-[#2B1D16]/10">
-                      <p className="flex flex-wrap items-center gap-1 font-extrabold">
-                        <span className="text-lg">{w.word}</span>
-                        <SpeakButton text={w.word} />
-                        {w.input.toLowerCase() !== w.word.toLowerCase() && (
-                          <span className="text-sm font-semibold text-[#2B1D16]/50">{`(${w.input})`}</span>
+                      <div className="flex items-start justify-between gap-2">
+                        <p className="flex flex-wrap items-center gap-1 font-extrabold">
+                          <span className="text-lg">{w.word}</span>
+                          <SpeakButton text={w.word} />
+                          {w.input.toLowerCase() !== w.word.toLowerCase() && (
+                            <span className="text-sm font-semibold text-[#2B1D16]/50">{`(${w.input})`}</span>
+                          )}
+                        </p>
+                        {props.onToggleStar && (
+                          <StarButton
+                            word={w.word}
+                            starred={isStarred(starred, w.word)}
+                            onToggle={() => props.onToggleStar?.(w.word)}
+                            className="-mt-1 -mr-1"
+                          />
                         )}
-                      </p>
+                      </div>
                       <p className="text-sm">
                         <span className="font-semibold">{w.meaning_vi}</span>
                         <Gloss text={w.meaning_en} />

@@ -68,6 +68,8 @@ export interface GameState {
   outfit: Outfit
   /** The player's character, chosen for free in the shop. Kept across rounds and levels. */
   gender: Gender
+  /** Words the learner starred (as `wordKey`s), shown under Starred in the notebook. Kept across rounds and levels. */
+  starred: string[]
 }
 
 export type GameAction =
@@ -84,12 +86,14 @@ export type GameAction =
   | { type: 'buyItem'; itemId: string }
   | { type: 'toggleItem'; itemId: string }
   | { type: 'setGender'; gender: Gender }
+  | { type: 'toggleStar'; word: string }
 
 export function newGame(
   level: Level,
   lastWords: Record<string, string[]> = {},
   learnedWords: LearnedWord[] = [],
   benchDay: BenchDay | null = null,
+  starred: string[] = [],
 ): GameState {
   return {
     level,
@@ -103,13 +107,17 @@ export function newGame(
     owned: [],
     outfit: {},
     gender: 'neutral',
+    starred,
   }
 }
 
-/** A new round that keeps what lasts across rounds: words, the notebook, today's bench limits and the shop items. */
+/** A new round that keeps what lasts across rounds: words, the notebook and its stars, today's bench limits and the shop items. */
 function nextRound(state: GameState, level: Level): GameState {
-  return { ...newGame(level, state.lastWords, state.learnedWords, state.benchDay), ...keptLook(state) }
+  return { ...newGame(level, state.lastWords, state.learnedWords, state.benchDay, state.starred), ...keptLook(state) }
 }
+
+/** Whether a word is starred. */
+export const isStarred = (starred: string[], word: string) => starred.includes(wordKey(word))
 
 /** The shop items, outfit and character, which last across rounds and new games. */
 export function keptLook(state: GameState): Pick<GameState, 'owned' | 'outfit' | 'gender'> {
@@ -225,5 +233,10 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
     }
     case 'setGender':
       return GENDERS.includes(action.gender) ? { ...state, gender: action.gender } : state
+    case 'toggleStar': {
+      const k = wordKey(action.word)
+      if (!k) return state
+      return { ...state, starred: state.starred.includes(k) ? state.starred.filter((w) => w !== k) : [...state.starred, k] }
+    }
   }
 }

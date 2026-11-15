@@ -36,6 +36,9 @@ export function PlaceScreen(props: {
   onLeave: () => void
   /** The player's face in the conversation (a bought look, or the default). */
   playerAvatar?: string
+  /** Starred words (as word keys), starrable on the word review page. */
+  starred?: string[]
+  onToggleStar?: (word: string) => void
 }) {
   const scenario = getScenario(props.placeId)!
   const art = PLACE_ART[props.placeId]
@@ -152,7 +155,12 @@ export function PlaceScreen(props: {
       )}
 
       {phase.name === 'notes' && (
-        <WordNotes lesson={phase.lesson} onStartQuiz={() => setPhase({ ...phase, name: 'quiz' })} />
+        <WordNotes
+          lesson={phase.lesson}
+          starred={props.starred}
+          onToggleStar={props.onToggleStar}
+          onStartQuiz={() => setPhase({ ...phase, name: 'quiz' })}
+        />
       )}
 
       {phase.name === 'quiz' && (
