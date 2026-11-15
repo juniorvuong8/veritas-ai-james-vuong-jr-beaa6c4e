@@ -1,5 +1,14 @@
 import { useEffect } from 'react'
-import { SHOP_ITEMS, SLOTS, SLOT_NAMES, type Outfit } from '@/game/shop'
+import {
+  GENDERS,
+  GENDER_OPTIONS,
+  SHOP_ITEMS,
+  SLOTS,
+  SLOT_NAMES,
+  itemEmoji,
+  type Gender,
+  type Outfit,
+} from '@/game/shop'
 import { Bi, useBiText } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 import { Avatar } from './Avatar'
@@ -9,6 +18,8 @@ export function Shop(props: {
   coins: number
   owned: string[]
   outfit: Outfit
+  gender: Gender
+  onGender: (gender: Gender) => void
   onBuy: (itemId: string) => void
   onToggle: (itemId: string) => void
   onClose: () => void
@@ -58,9 +69,41 @@ export function Shop(props: {
         <div className="space-y-5 overflow-y-auto px-5 py-4">
           <div className="flex justify-center py-3" aria-hidden>
             <span className="grid size-24 place-items-center rounded-full bg-white ring-1 ring-[#2B1D16]/10">
-              <Avatar outfit={props.outfit} className="text-5xl" />
+              <Avatar outfit={props.outfit} gender={props.gender} className="text-5xl" />
             </span>
           </div>
+
+          <section aria-label={biText('Nhân vật', 'Character')}>
+            <h3 className="mb-2 text-sm font-extrabold tracking-wide uppercase">
+              <Bi vi="Nhân vật" en="Character" />
+              <span className="ml-2 text-xs font-semibold tracking-normal text-[#2B1D16]/50 normal-case">
+                <Bi vi="Miễn phí" en="Free" />
+              </span>
+            </h3>
+            <div role="radiogroup" aria-label={biText('Giới tính', 'Gender')} className="grid grid-cols-3 gap-2">
+              {GENDERS.map((g) => {
+                const selected = props.gender === g
+                return (
+                  <button
+                    key={g}
+                    type="button"
+                    role="radio"
+                    aria-checked={selected}
+                    onClick={() => props.onGender(g)}
+                    className={cn(
+                      'flex flex-col items-center gap-1 rounded-2xl bg-white p-3 text-sm font-bold ring-1 ring-[#2B1D16]/10 transition-all hover:-translate-y-0.5',
+                      selected && 'ring-2 ring-[#22A04B]',
+                    )}
+                  >
+                    <span className="text-3xl" aria-hidden>
+                      {GENDER_OPTIONS[g].emoji}
+                    </span>
+                    <Bi vi={GENDER_OPTIONS[g].vi} en={GENDER_OPTIONS[g].en} />
+                  </button>
+                )
+              })}
+            </div>
+          </section>
 
           {SLOTS.map((slot) => (
             <section key={slot} aria-label={biText(SLOT_NAMES[slot].vi, SLOT_NAMES[slot].en)}>
@@ -81,7 +124,7 @@ export function Shop(props: {
                       )}
                     >
                       <span className="text-3xl" aria-hidden>
-                        {item.emoji}
+                        {itemEmoji(item, props.gender)}
                       </span>
                       <span className="text-sm font-bold">
                         <Bi vi={item.name_vi} en={item.name_en} />

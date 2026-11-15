@@ -9,7 +9,7 @@ import { LandingScreen } from '@/components/landing/LandingScreen'
 import { GameShell } from '@/components/game/ui'
 import { CITY, doorOf, type Pos } from '@/game/map'
 import { outfitEmojis } from '@/game/shop'
-import { COINS_PER_CORRECT, canLevelUp, gameReducer, newGame, type GameAction, type GameState } from '@/game/state'
+import { COINS_PER_CORRECT, canLevelUp, gameReducer, keptLook, newGame, type GameAction, type GameState } from '@/game/state'
 import { clearGame, loadGame, saveGame } from '@/game/storage'
 import { DebugBadge, DebugProvider, readDebugFlag, saveDebugFlag, useDebugShortcut } from '@/lib/debug'
 import type { Level } from '@/shared/types'
@@ -20,7 +20,7 @@ function appReducer(state: GameState | null, action: AppAction): GameState | nul
   if (action.type === 'newGame') {
     // A new game keeps the words learned and the shop items bought.
     const fresh = newGame(action.level, state?.lastWords, state?.learnedWords)
-    return state ? { ...fresh, owned: state.owned, outfit: state.outfit } : fresh
+    return state ? { ...fresh, ...keptLook(state) } : fresh
   }
   return state ? gameReducer(state, action) : state
 }
@@ -123,6 +123,8 @@ function Game() {
               coins={game.coins}
               owned={game.owned}
               outfit={game.outfit}
+              gender={game.gender}
+              onGender={(gender) => dispatch({ type: 'setGender', gender })}
               onBuy={(itemId) => dispatch({ type: 'buyItem', itemId })}
               onToggle={(itemId) => dispatch({ type: 'toggleItem', itemId })}
               onClose={closeShop}
@@ -163,7 +165,7 @@ function Game() {
 
       {game && screen.name === 'place' && (
         <PlaceScreen
-          playerAvatar={outfitEmojis(game.outfit).face}
+          playerAvatar={outfitEmojis(game.outfit, game.gender).face}
           key={screen.placeId}
           placeId={screen.placeId}
           level={game.level}

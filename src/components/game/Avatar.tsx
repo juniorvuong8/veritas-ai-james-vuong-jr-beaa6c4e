@@ -1,12 +1,12 @@
-import { outfitEmojis, type Outfit } from '@/game/shop'
+import { outfitEmojis, type Gender, type Outfit } from '@/game/shop'
 import { cn } from '@/lib/utils'
 
 /**
  * The player drawn with their outfit: the face (or a bought look), a hat on top and a pet at their feet.
  * Sized by font-size, so it scales with the city tiles or a shop preview.
  */
-export function Avatar({ outfit, className }: { outfit: Outfit; className?: string }) {
-  const { face, hat, pet } = outfitEmojis(outfit)
+export function Avatar({ outfit, gender, className }: { outfit: Outfit; gender?: Gender; className?: string }) {
+  const { face, hat, pet } = outfitEmojis(outfit, gender)
   return (
     <span className={cn('relative inline-flex items-center justify-center leading-none', className)}>
       <span data-part="face">{face}</span>

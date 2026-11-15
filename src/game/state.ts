@@ -1,6 +1,6 @@
 import { normalizeWord, SCENARIOS } from '@/shared/scenarios'
 import type { Level, VocabItem } from '@/shared/types'
-import { getItem, type Outfit } from './shop'
+import { GENDERS, getItem, type Gender, type Outfit } from './shop'
 
 export const COINS_PER_CORRECT = 10
 export const PLACE_IDS: string[] = SCENARIOS.map((s) => s.id)
@@ -44,6 +44,8 @@ export interface GameState {
   owned: string[]
   /** What the player is wearing. Kept across rounds and levels. */
   outfit: Outfit
+  /** The player's character, chosen for free in the shop. Kept across rounds and levels. */
+  gender: Gender
 }
 
 export type GameAction =
@@ -57,6 +59,7 @@ export type GameAction =
   | { type: 'levelUp' }
   | { type: 'buyItem'; itemId: string }
   | { type: 'toggleItem'; itemId: string }
+  | { type: 'setGender'; gender: Gender }
 
 export function newGame(
   level: Level,
@@ -73,12 +76,18 @@ export function newGame(
     learnedWords,
     owned: [],
     outfit: {},
+    gender: 'neutral',
   }
 }
 
 /** A new round that keeps what lasts across rounds: words, the notebook and the shop items. */
 function nextRound(state: GameState, level: Level): GameState {
-  return { ...newGame(level, state.lastWords, state.learnedWords), owned: state.owned, outfit: state.outfit }
+  return { ...newGame(level, state.lastWords, state.learnedWords), ...keptLook(state) }
+}
+
+/** The shop items, outfit and character, which last across rounds and new games. */
+export function keptLook(state: GameState): Pick<GameState, 'owned' | 'outfit' | 'gender'> {
+  return { owned: state.owned, outfit: state.outfit, gender: state.gender }
 }
 
 export function canLevelUp(state: GameState): boolean {
@@ -141,5 +150,7 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
       const wearing = state.outfit[item.slot] === item.id
       return { ...state, outfit: { ...state.outfit, [item.slot]: wearing ? undefined : item.id } }
     }
+    case 'setGender':
+      return GENDERS.includes(action.gender) ? { ...state, gender: action.gender } : state
   }
 }

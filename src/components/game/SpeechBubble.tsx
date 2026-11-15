@@ -9,6 +9,8 @@ export function SpeechBubble(props: {
   side: 'host' | 'player'
   avatar: string
   children: ReactNode
+  /** Pinned to the bubble's top-right corner (e.g. the coins just earned). */
+  badge?: ReactNode
 }) {
   const isHost = props.side === 'host'
   return (
@@ -24,11 +26,12 @@ export function SpeechBubble(props: {
         )}
         <div
           className={cn(
-            'inline-block rounded-2xl px-3.5 py-2 text-left text-[15px] leading-relaxed sm:text-base',
+            'relative inline-block rounded-2xl px-3.5 py-2 text-left text-[15px] leading-relaxed sm:text-base',
             isHost ? 'rounded-bl-md bg-[#F4EBDD] text-[#2B1D16]' : 'rounded-br-md bg-[#E8553D] text-white',
           )}
         >
           {props.children}
+          {props.badge && <span className="absolute -top-3 -right-3">{props.badge}</span>}
         </div>
       </div>
     </div>

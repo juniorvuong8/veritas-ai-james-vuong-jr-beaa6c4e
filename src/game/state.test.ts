@@ -9,7 +9,7 @@ describe('gameReducer', () => {
   it('starts empty at the chosen level', () => {
     expect(newGame(2)).toEqual({
       level: 2, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords: {}, learnedWords: [],
-      owned: [], outfit: {},
+      owned: [], outfit: {}, gender: 'neutral',
     })
   })
 
@@ -146,11 +146,17 @@ describe('shop', () => {
     expect(run(s, { type: 'toggleItem', itemId: 'crown' })).toBe(s)
   })
 
-  it('keeps items through play again and level up', () => {
-    const s = run(rich(100), { type: 'buyItem', itemId: 'dog' }, ...allFour)
+  it('keeps items and gender through play again and level up', () => {
+    const s = run(rich(100), { type: 'buyItem', itemId: 'dog' }, { type: 'setGender', gender: 'female' }, ...allFour)
     for (const next of [run(s, { type: 'playAgain' }), run(s, { type: 'levelUp' })]) {
       expect(next.owned).toEqual(['dog'])
       expect(next.outfit).toEqual({ pet: 'dog' })
+      expect(next.gender).toBe('female')
     }
+  })
+
+  it('changes gender for free', () => {
+    const s = run(rich(0), { type: 'setGender', gender: 'male' })
+    expect(s).toMatchObject({ gender: 'male', coins: 0 })
   })
 })

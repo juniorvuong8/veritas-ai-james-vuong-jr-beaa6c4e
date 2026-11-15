@@ -66,13 +66,19 @@ export function HostQuiz(props: {
         ))}
       </div>
       {answered && (
-        <SpeechBubble speaker="" side="host" avatar={props.hostAvatar}>
+        <SpeechBubble
+          speaker=""
+          side="host"
+          avatar={props.hostAvatar}
+          badge={
+            right && (
+              <span className="inline-block animate-bounce rounded-full bg-[#FFD45C] px-2 py-0.5 text-sm font-extrabold whitespace-nowrap text-[#2B1D16] shadow-[0_2px_0_rgba(43,29,22,0.25)] ring-2 ring-white">{`+${COINS_PER_CORRECT} 🪙`}</span>
+            )
+          }
+        >
           <p className={cn('font-extrabold', right ? 'text-[#2F7F7A]' : 'text-[#C2412C]')}>
             {right ? 'Đúng rồi!' : 'Chưa đúng.'}
             <Gloss text={right ? 'Correct!' : 'Not quite.'} />
-            {right && (
-              <span className="ml-2 inline-block animate-bounce rounded-full bg-[#FFD45C] px-2 text-[#2B1D16]">{`+${COINS_PER_CORRECT} 🪙`}</span>
-            )}
           </p>
           <p className="text-sm">
             <Bi vi={q.explanation_vi} en={q.explanation_en} />

@@ -39,9 +39,14 @@ describe('storage', () => {
     expect(loaded?.outfit).toEqual({ hat: 'cap' })
   })
 
-  it('loads a save from before the shop with nothing bought', () => {
-    const { owned: _o, outfit: _f, ...old } = game
-    expect(loadGame(saved(old))).toMatchObject({ owned: [], outfit: {} })
+  it('loads a save from before the shop with nothing bought, as neutral', () => {
+    const { owned: _o, outfit: _f, gender: _g, ...old } = game
+    expect(loadGame(saved(old))).toMatchObject({ owned: [], outfit: {}, gender: 'neutral' })
+  })
+
+  it('loads the chosen gender, and treats an unknown one as neutral', () => {
+    expect(loadGame(saved({ ...game, gender: 'female' }))?.gender).toBe('female')
+    expect(loadGame(saved({ ...game, gender: 'robot' }))?.gender).toBe('neutral')
   })
 
   it('loads a save from before the notebook with no learned words', () => {

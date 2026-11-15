@@ -300,7 +300,7 @@ export function CityScreen(props: {
             transition: `transform ${STEP_MS}ms linear`,
           }}
         >
-          <Avatar outfit={props.state.outfit} />
+          <Avatar outfit={props.state.outfit} gender={props.state.gender} />
         </div>
       </div>
       <p className="text-center text-xs font-medium text-[#2B1D16]/55">

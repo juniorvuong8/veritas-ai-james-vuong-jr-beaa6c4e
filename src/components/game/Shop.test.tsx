@@ -4,8 +4,8 @@ import { describe, expect, it, vi } from 'vitest'
 import { Shop } from './Shop'
 
 const setup = (props: Partial<Parameters<typeof Shop>[0]> = {}) => {
-  const handlers = { onBuy: vi.fn(), onToggle: vi.fn(), onClose: vi.fn() }
-  render(<Shop coins={50} owned={[]} outfit={{}} {...handlers} {...props} />)
+  const handlers = { onBuy: vi.fn(), onToggle: vi.fn(), onClose: vi.fn(), onGender: vi.fn() }
+  render(<Shop coins={50} owned={[]} outfit={{}} gender="neutral" {...handlers} {...props} />)
   return { user: userEvent.setup(), ...handlers }
 }
 
@@ -33,5 +33,13 @@ describe('Shop', () => {
     const { user, onClose } = setup()
     await user.keyboard('{Escape}')
     expect(onClose).toHaveBeenCalled()
+  })
+
+  it('picks a gender for free, and shows looks for that gender', async () => {
+    const { user, onGender } = setup({ gender: 'female' })
+    expect(screen.getByRole('radio', { name: 'Nữ' })).toHaveAttribute('aria-checked', 'true')
+    expect(screen.getByText('🧔‍♀️')).toBeInTheDocument()
+    await user.click(screen.getByRole('radio', { name: 'Nam' }))
+    expect(onGender).toHaveBeenCalledWith('male')
   })
 })
