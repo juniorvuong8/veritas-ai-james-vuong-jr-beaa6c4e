@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { ArrowRight } from 'lucide-react'
+import { Gloss, useDebug } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 import { SCENARIOS } from '@/shared/scenarios'
 import { ChatDemo } from './ChatDemo'
-import { COPY, STREET_BUBBLES, loadLang, saveLang, type Lang } from './copy'
+import { COPY, LEVEL_EXAMPLES_EN, STREET_BUBBLES, loadLang, saveLang, type Lang } from './copy'
 import { StreetScene } from './StreetScene'
 
 const PLACE_COLORS: Record<string, string> = {
@@ -30,6 +31,11 @@ function Marked({ text, className }: { text: string; className?: string }) {
   )
 }
 
+/** Debug-mode gloss of a copy string in the other language (stars dropped). */
+function G({ text, lang }: { text?: string; lang: Lang }) {
+  return <Gloss text={text?.replaceAll('*', '')} lang={lang} />
+}
+
 function LangSwitch({ lang, onChange }: { lang: Lang; onChange: (l: Lang) => void }) {
   return (
     <div role="group" aria-label="Ngôn ngữ / Language" className="flex rounded-full bg-[#2B1D16]/8 p-1 text-sm font-semibold">
@@ -51,7 +57,7 @@ function LangSwitch({ lang, onChange }: { lang: Lang; onChange: (l: Lang) => voi
   )
 }
 
-function StartButton({ children, onClick, big }: { children: string; onClick: () => void; big?: boolean }) {
+function StartButton({ children, onClick, big }: { children: ReactNode; onClick: () => void; big?: boolean }) {
   return (
     <button
       type="button"
@@ -70,6 +76,10 @@ function StartButton({ children, onClick, big }: { children: string; onClick: ()
 export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => void }) {
   const [lang, setLang] = useState<Lang>(loadLang)
   const t = COPY[lang]
+  // Debug mode: the other language is shown under each string.
+  const other: Lang = lang === 'vi' ? 'en' : 'vi'
+  const o = COPY[other]
+  const debug = useDebug()
 
   useEffect(() => {
     document.documentElement.lang = lang
@@ -91,12 +101,20 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
             <span className="grid size-9 place-items-center rounded-xl bg-[#2B1D16] text-lg" aria-hidden>
               💬
             </span>
-            <span>Học từ qua hội thoại</span>
+            <span>
+              Học từ qua hội thoại
+              <Gloss text="Learn words through conversation" />
+            </span>
           </div>
           <div className="flex items-center gap-2 sm:gap-3">
             <LangSwitch lang={lang} onChange={changeLang} />
             <span className="hidden sm:block">
-              <StartButton onClick={() => onStart()}>{t.navStart}</StartButton>
+              <StartButton onClick={() => onStart()}>
+                <span>
+                  {t.navStart}
+                  <G lang={other} text={o.navStart} />
+                </span>
+              </StartButton>
             </span>
           </div>
         </nav>
@@ -105,16 +123,27 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
           <div>
             <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm font-semibold text-[#2F7F7A] ring-1 ring-[#2F7F7A]/20">
               🇺🇸 → 🇻🇳 {t.eyebrow}
+              {debug && <G lang={other} text={o.eyebrow} />}
             </p>
             <h1 className="text-[2.5rem] leading-[1.08] font-extrabold tracking-tight text-balance sm:text-6xl">
               <Marked text={t.headline} />
+              <G lang={other} text={o.headline} />
             </h1>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#2B1D16]/75">{t.sub}</p>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#2B1D16]/75">
+              {t.sub}
+              <G lang={other} text={o.sub} />
+            </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <StartButton big onClick={() => onStart()}>
-                {t.cta}
+                <span>
+                  {t.cta}
+                  <G lang={other} text={o.cta} />
+                </span>
               </StartButton>
-              <span className="text-sm font-medium text-[#2B1D16]/55">✓ {t.ctaNote}</span>
+              <span className="text-sm font-medium text-[#2B1D16]/55">
+                ✓ {t.ctaNote}
+                <G lang={other} text={o.ctaNote} />
+              </span>
             </div>
           </div>
           <div className="flex justify-center md:justify-end">
@@ -142,7 +171,9 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
 
       {/* ---------- how it works ---------- */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-        <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">{t.stepsTitle}</h2>
+        <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">{t.stepsTitle}
+          <G lang={other} text={o.stepsTitle} />
+        </h2>
         <ol className="mt-12 grid gap-5 md:grid-cols-3">
           {t.steps.map((s, i) => (
             <li key={s.title} className="relative rounded-3xl bg-white p-6 ring-1 ring-[#2B1D16]/8">
@@ -152,8 +183,14 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
               <div className="text-4xl" aria-hidden>
                 {s.emoji}
               </div>
-              <h3 className="mt-3 text-xl font-bold">{s.title}</h3>
-              <p className="mt-1.5 leading-relaxed text-[#2B1D16]/70">{s.body}</p>
+              <h3 className="mt-3 text-xl font-bold">
+                {s.title}
+                <G lang={other} text={o.steps[i].title} />
+              </h3>
+              <p className="mt-1.5 leading-relaxed text-[#2B1D16]/70">
+                {s.body}
+                <G lang={other} text={o.steps[i].body} />
+              </p>
             </li>
           ))}
         </ol>
@@ -162,8 +199,13 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
       {/* ---------- places ---------- */}
       <section className="bg-[#F4EBDD] py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{t.placesTitle}</h2>
-          <p className="mt-2 text-lg text-[#2B1D16]/70">{t.placesSub}</p>
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{t.placesTitle}
+            <G lang={other} text={o.placesTitle} />
+          </h2>
+          <p className="mt-2 text-lg text-[#2B1D16]/70">
+            {t.placesSub}
+            <G lang={other} text={o.placesSub} />
+          </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {SCENARIOS.map((s) => {
               const color = PLACE_COLORS[s.id] ?? '#2F7F7A'
@@ -183,7 +225,10 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
                     <div className="text-5xl transition-transform group-hover:scale-110 group-hover:-rotate-6" aria-hidden>
                       {s.emoji}
                     </div>
-                    <h3 className="mt-3 text-xl font-bold">{t.placeNames[s.id] ?? s.name_vi}</h3>
+                    <h3 className="mt-3 text-xl font-bold">
+                      {t.placeNames[s.id] ?? s.name_vi}
+                      <G lang={other} text={o.placeNames[s.id]} />
+                    </h3>
                     <div className="mt-3 flex flex-wrap gap-1.5">
                       {s.suggestedWords.slice(0, 4).map((w) => (
                         <span key={w} className="rounded-full bg-[#FFF3D6] px-2.5 py-0.5 text-sm font-semibold">
@@ -193,6 +238,7 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
                     </div>
                     <span className="mt-5 inline-flex items-center gap-1 font-bold" style={{ color: color === '#F5B82E' ? '#B07F0E' : color }}>
                       {t.placeCta}
+                      {debug && <span className="font-medium italic opacity-75">{` / ${o.placeCta}`}</span>}
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden />
                     </span>
                   </div>
@@ -206,8 +252,13 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
       {/* ---------- levels ---------- */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{t.levelsTitle}</h2>
-          <p className="mt-2 text-lg text-[#2B1D16]/70">{t.levelsSub}</p>
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{t.levelsTitle}
+            <G lang={other} text={o.levelsTitle} />
+          </h2>
+          <p className="mt-2 text-lg text-[#2B1D16]/70">
+            {t.levelsSub}
+            <G lang={other} text={o.levelsSub} />
+          </p>
         </div>
         <ol className="mt-12 grid items-end gap-5 md:grid-cols-3">
           {t.levels.map((l, i) => (
@@ -223,10 +274,17 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
                   <span key={d} className={cn('h-2 w-6 rounded-full', d <= i ? 'bg-[#E8553D]' : 'bg-current opacity-15')} />
                 ))}
               </div>
-              <h3 className="mt-4 text-xl font-bold">{l.name}</h3>
-              <p className={cn('text-sm', i === 2 ? 'text-white/65' : 'text-[#2B1D16]/60')}>{l.desc}</p>
+              <h3 className="mt-4 text-xl font-bold">
+                {l.name}
+                <G lang={other} text={o.levels[i].name} />
+              </h3>
+              <p className={cn('text-sm', i === 2 ? 'text-white/65' : 'text-[#2B1D16]/60')}>
+                {l.desc}
+                <G lang={other} text={o.levels[i].desc} />
+              </p>
               <p className={cn('mt-5 rounded-2xl px-4 py-3 text-[15px]', i === 2 ? 'bg-white/10' : 'bg-[#2B1D16]/5')}>
                 “<Marked text={l.example} className={i === 2 ? 'marker-dark' : undefined} />”
+                <Gloss text={LEVEL_EXAMPLES_EN[i]} />
               </p>
             </li>
           ))}
@@ -238,11 +296,18 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
         <div className="string-lights pointer-events-none absolute inset-x-0 top-0 h-10" aria-hidden />
         <h2 className="mx-auto max-w-3xl text-4xl leading-tight font-extrabold tracking-tight text-balance sm:text-5xl">
           <Marked text={t.finalTitle} className="marker-dark" />
+          <G lang={other} text={o.finalTitle} />
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">{t.finalSub}</p>
+        <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">
+          {t.finalSub}
+          <G lang={other} text={o.finalSub} />
+        </p>
         <div className="mt-10">
           <StartButton big onClick={() => onStart()}>
-            {t.cta}
+            <span>
+              {t.cta}
+              <G lang={other} text={o.cta} />
+            </span>
           </StartButton>
         </div>
       </section>

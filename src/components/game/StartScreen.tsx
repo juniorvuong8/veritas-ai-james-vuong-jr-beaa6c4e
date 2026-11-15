@@ -1,12 +1,30 @@
 import { useState } from 'react'
+import { Bi, Gloss } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 import type { Level } from '@/shared/types'
 import { PrimaryButton, SecondaryButton } from './ui'
 
-const LEVELS: { level: Level; label: string; example: string }[] = [
-  { level: 1, label: 'Cấp 1: chỉ từ mới bằng tiếng Anh', example: 'Chị uống ở đây hay *to go* ạ?' },
-  { level: 2, label: 'Cấp 2: thêm cụm từ tiếng Anh ngắn', example: 'Dạ, em muốn *a coffee to go*.' },
-  { level: 3, label: 'Cấp 3: cả câu tiếng Anh, có dịch', example: '*Can I get it to go?*' },
+const LEVELS: { level: Level; label: string; label_en: string; example: string; example_en?: string }[] = [
+  {
+    level: 1,
+    label: 'Cấp 1: chỉ từ mới bằng tiếng Anh',
+    label_en: 'Level 1: only the new words in English',
+    example: 'Chị uống ở đây hay *to go* ạ?',
+    example_en: 'Will you drink here or to go?',
+  },
+  {
+    level: 2,
+    label: 'Cấp 2: thêm cụm từ tiếng Anh ngắn',
+    label_en: 'Level 2: plus short English phrases',
+    example: 'Dạ, em muốn *a coffee to go*.',
+    example_en: 'Yes, I want a coffee to go.',
+  },
+  {
+    level: 3,
+    label: 'Cấp 3: cả câu tiếng Anh, có dịch',
+    label_en: 'Level 3: whole English sentences, translated',
+    example: '*Can I get it to go?*',
+  },
 ]
 
 function Marked({ text }: { text: string }) {
@@ -32,21 +50,25 @@ export function StartScreen(props: { hasSave: boolean; onContinue: () => void; o
       <div className="space-y-3">
         <h1 className="text-[2rem] leading-[1.1] font-extrabold tracking-tight text-balance sm:text-5xl">
           Dạo phố và học <span className="marker">tiếng Anh</span>
+          <Gloss text="Walk the city and learn English" />
         </h1>
         <p className="text-base leading-relaxed text-[#2B1D16]/70 sm:text-lg">
           Đi dạo quanh thành phố, ghé quán cà phê, siêu thị, taxi và phòng khám để học tiếng Anh qua những cuộc trò
           chuyện hằng ngày.
+          <Gloss text="Stroll around the city, stop by the café, supermarket, taxi and clinic to learn English through everyday conversations." />
         </p>
       </div>
 
       {props.hasSave && (
         <PrimaryButton size="lg" arrow className="w-full sm:w-auto" onClick={props.onContinue}>
-          Chơi tiếp
+          <Bi vi="Chơi tiếp" en="Continue" />
         </PrimaryButton>
       )}
 
       <section className="space-y-3">
-        <h2 className="text-xl font-extrabold">Chọn cấp độ</h2>
+        <h2 className="text-xl font-extrabold">
+          <Bi vi="Chọn cấp độ" en="Choose a level" />
+        </h2>
         <div className="grid gap-3 sm:grid-cols-3">
           {LEVELS.map((l) => {
             const selected = l.level === level
@@ -63,24 +85,32 @@ export function StartScreen(props: { hasSave: boolean; onContinue: () => void; o
                     : 'border-2 border-transparent ring-1 ring-[#2B1D16]/10 hover:-translate-y-0.5',
                 )}
               >
-                <span className="font-bold">{l.label}</span>
+                <span className="font-bold">
+                  <Bi vi={l.label} en={l.label_en} />
+                </span>
                 <span className="text-sm text-[#2B1D16]/60">
                   <Marked text={l.example} />
+                  <Gloss text={l.example_en} />
                 </span>
               </button>
             )
           })}
         </div>
-        <p className="text-sm text-[#2B1D16]/55">Cấp độ sẽ giữ nguyên cho đến khi bạn hoàn thành cả 4 địa điểm.</p>
+        <p className="text-sm text-[#2B1D16]/55">
+          <Bi
+            vi="Cấp độ sẽ giữ nguyên cho đến khi bạn hoàn thành cả 4 địa điểm."
+            en="Your level stays the same until you finish all 4 places."
+          />
+        </p>
       </section>
 
       {props.hasSave ? (
         <SecondaryButton size="lg" className="w-full sm:w-auto" onClick={() => props.onNewGame(level)}>
-          Chơi mới
+          <Bi vi="Chơi mới" en="New game" />
         </SecondaryButton>
       ) : (
         <PrimaryButton size="lg" arrow className="w-full sm:w-auto" onClick={() => props.onNewGame(level)}>
-          Bắt đầu
+          <Bi vi="Bắt đầu" en="Start" />
         </PrimaryButton>
       )}
     </div>

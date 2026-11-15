@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Bi, Gloss } from '@/lib/debug'
 import { scoreQuiz } from '@/lib/quiz'
 import { cn } from '@/lib/utils'
 import { COINS_PER_CORRECT } from '@/game/state'
@@ -30,7 +31,9 @@ export function HostQuiz(props: {
   return (
     <div className="space-y-4">
       <div className="space-y-1">
-        <p className="text-sm font-bold text-[#2B1D16]/60">{`Câu ${index + 1} / ${quiz.length}`}</p>
+        <p className="text-sm font-bold text-[#2B1D16]/60">
+          <Bi vi={`Câu ${index + 1} / ${quiz.length}`} en={`Question ${index + 1} / ${quiz.length}`} />
+        </p>
         <div className="h-2.5 overflow-hidden rounded-full bg-[#2B1D16]/10" aria-hidden>
           <div
             className="h-full rounded-full bg-[#2F7F7A] transition-all"
@@ -39,7 +42,9 @@ export function HostQuiz(props: {
         </div>
       </div>
       <SpeechBubble speaker="" side="host" avatar={props.hostAvatar}>
-        <p className="font-medium">{q.question_vi}</p>
+        <p className="font-medium">
+          <Bi vi={q.question_vi} en={q.question_en} />
+        </p>
       </SpeechBubble>
       <div className="grid gap-2">
         {q.options.map((opt, i) => (
@@ -64,11 +69,14 @@ export function HostQuiz(props: {
         <SpeechBubble speaker="" side="host" avatar={props.hostAvatar}>
           <p className={cn('font-extrabold', right ? 'text-[#2F7F7A]' : 'text-[#C2412C]')}>
             {right ? 'Đúng rồi!' : 'Chưa đúng.'}
+            <Gloss text={right ? 'Correct!' : 'Not quite.'} />
             {right && (
               <span className="ml-2 inline-block animate-bounce rounded-full bg-[#FFD45C] px-2 text-[#2B1D16]">{`+${COINS_PER_CORRECT} 🪙`}</span>
             )}
           </p>
-          <p className="text-sm">{q.explanation_vi}</p>
+          <p className="text-sm">
+            <Bi vi={q.explanation_vi} en={q.explanation_en} />
+          </p>
         </SpeechBubble>
       )}
       {answered && (
@@ -78,7 +86,7 @@ export function HostQuiz(props: {
           className="w-full"
           onClick={() => (isLast ? props.onFinish(scoreQuiz(quiz, answers)) : setIndex(index + 1))}
         >
-          {isLast ? 'Xem kết quả' : 'Câu tiếp theo'}
+          {isLast ? <Bi vi="Xem kết quả" en="See results" /> : <Bi vi="Câu tiếp theo" en="Next question" />}
         </PrimaryButton>
       )}
     </div>

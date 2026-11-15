@@ -122,6 +122,13 @@ export const DEMO_TRANSLATIONS_EN = [
   'Here is your receipt. Have a nice day!',
 ]
 
+/** English glosses of the level examples (the third is already English), shown in debug mode. */
+export const LEVEL_EXAMPLES_EN: (string | undefined)[] = [
+  'Will you drink here or to go?',
+  'Yes, I want a coffee to go, thanks.',
+  undefined,
+]
+
 /** English versions of the demo vocab explanations, keyed by word. */
 export const DEMO_VOCAB_EN: Record<string, { meaning: string; usage: string }> = {
   menu: { meaning: 'the list of food and drinks', usage: 'When you want to see what a place sells and the prices. Say "Can I see the menu?"' },

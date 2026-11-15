@@ -75,4 +75,11 @@ describe('normalizeWord', () => {
     const { normalizeWord } = await import('./scenarios.ts')
     expect(normalizeWord('I’d like')).toBe("I'd like")
   })
+
+  it('passes debug through only when it is exactly true', () => {
+    const on = checkLessonRequest({ ...valid, debug: true })
+    expect(on.ok && on.value.debug).toBe(true)
+    const odd = checkLessonRequest({ ...valid, debug: 'yes' })
+    expect(odd.ok && 'debug' in odd.value).toBe(false)
+  })
 })

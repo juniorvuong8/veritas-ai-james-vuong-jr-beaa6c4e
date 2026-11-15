@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { RotateCcw, Sparkles } from 'lucide-react'
 import { SpeakButton } from '@/components/SpeakButton'
 import { FALLBACK_LESSONS } from '@/data/fallback-lessons'
+import { Gloss, useDebug } from '@/lib/debug'
 import { splitHighlights } from '@/lib/highlight'
 import { cn } from '@/lib/utils'
 import { COPY, DEMO_TRANSLATIONS_EN, DEMO_VOCAB_EN, type Lang } from './copy'
@@ -19,6 +20,10 @@ function prefersReducedMotion() {
 
 export function ChatDemo({ lang }: { lang: Lang }) {
   const t = COPY[lang]
+  // Debug mode shows both languages everywhere.
+  const debug = useDebug()
+  const other = lang === 'vi' ? 'en' : 'vi'
+  const o = COPY[other]
   const [reduced] = useState(prefersReducedMotion)
   const [shown, setShown] = useState(() => (reduced ? LESSON.lines.length : 0))
   const [selected, setSelected] = useState<string | undefined>()
@@ -45,7 +50,10 @@ export function ChatDemo({ lang }: { lang: Lang }) {
           <span className="grid size-9 place-items-center rounded-full bg-[#2F7F7A]/15 text-lg" aria-hidden>
             ☕
           </span>
-          {t.demoTitle}
+          <span>
+            {t.demoTitle}
+            <Gloss text={o.demoTitle} lang={other} />
+          </span>
         </div>
         <button
           type="button"
@@ -53,7 +61,7 @@ export function ChatDemo({ lang }: { lang: Lang }) {
           className="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium text-[#2B1D16]/60 hover:bg-[#2B1D16]/5 hover:text-[#2B1D16]"
         >
           <RotateCcw className="size-3.5" aria-hidden />
-          {t.demoReplay}
+          {debug ? `${t.demoReplay} / ${o.demoReplay}` : t.demoReplay}
         </button>
       </div>
 
@@ -67,7 +75,13 @@ export function ChatDemo({ lang }: { lang: Lang }) {
               </span>
               <div className={cn('max-w-[78%]', host ? '' : 'text-right')}>
                 <div className="mb-0.5 px-1 text-[11px] font-medium text-[#2B1D16]/50">
-                  {lang === 'en' ? (host ? 'Barista' : 'Customer') : line.speaker_vi}
+                  {debug
+                    ? `${line.speaker_vi} · ${host ? 'Barista' : 'Customer'}`
+                    : lang === 'en'
+                      ? host
+                        ? 'Barista'
+                        : 'Customer'
+                      : line.speaker_vi}
                 </div>
                 <p
                   className={cn(
@@ -94,7 +108,7 @@ export function ChatDemo({ lang }: { lang: Lang }) {
                     ),
                   )}
                 </p>
-                {lang === 'en' && (
+                {(lang === 'en' || debug) && (
                   <div className="mt-0.5 px-1 text-left text-xs text-[#2B1D16]/50 italic">{DEMO_TRANSLATIONS_EN[i]}</div>
                 )}
               </div>
@@ -124,10 +138,18 @@ export function ChatDemo({ lang }: { lang: Lang }) {
               <div>
                 <dt className="inline font-semibold">{t.meaning}: </dt>
                 <dd className="inline">{lang === 'en' ? DEMO_VOCAB_EN[vocab.word].meaning : vocab.meaning_vi}</dd>
+                <Gloss
+                  text={`${o.meaning}: ${lang === 'en' ? vocab.meaning_vi : DEMO_VOCAB_EN[vocab.word].meaning}`}
+                  lang={other}
+                />
               </div>
               <div>
                 <dt className="inline font-semibold">{t.whenToUse}: </dt>
                 <dd className="inline">{lang === 'en' ? DEMO_VOCAB_EN[vocab.word].usage : vocab.usage_vi}</dd>
+                <Gloss
+                  text={`${o.whenToUse}: ${lang === 'en' ? vocab.usage_vi : DEMO_VOCAB_EN[vocab.word].usage}`}
+                  lang={other}
+                />
               </div>
             </dl>
           </div>
@@ -135,7 +157,10 @@ export function ChatDemo({ lang }: { lang: Lang }) {
           shown > 0 && (
             <p className="flex items-center justify-center gap-1.5 pt-6 text-sm font-medium text-[#2B1D16]/60">
               <Sparkles className="size-4 text-[#E8A21C]" aria-hidden />
-              {t.demoTapHint}
+              <span>
+                {t.demoTapHint}
+                <Gloss text={o.demoTapHint} lang={other} />
+              </span>
             </p>
           )
         )}

@@ -205,3 +205,14 @@
   .landing .neon,
   .landing .chat-card { animation: none; }
 }
+
+/* ---------- debug mode (?debug=1): English gloss under Vietnamese text ---------- */
+.debug-gloss {
+  display: block;
+  margin-top: 0.1em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.3;
+  opacity: 0.75;
+}

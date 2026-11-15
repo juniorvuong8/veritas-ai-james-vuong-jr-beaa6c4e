@@ -3,6 +3,8 @@ import { FALLBACK_LESSONS } from '@/data/fallback-lessons'
 import { PLACE_ART, PLAYER_EMOJI } from '@/game/art'
 import { COINS_PER_CORRECT } from '@/game/state'
 import { requestLesson, type LessonResult } from '@/lib/api'
+import { ERROR_MESSAGES_EN } from '@/lib/error-messages-en'
+import { Bi, useDebug } from '@/lib/debug'
 import { getScenario } from '@/shared/scenarios'
 import type { Lesson, LessonRequest, Level } from '@/shared/types'
 import { Conversation } from './Conversation'
@@ -34,9 +36,10 @@ export function PlaceScreen(props: {
   const [phase, setPhase] = useState<Phase>({ name: 'pick' })
   const [words, setWords] = useState<string[]>(props.initialWords)
   const [earned, setEarned] = useState(0)
+  const debug = useDebug()
 
   async function generate(chosen: string[]) {
-    const req: LessonRequest = { scenarioId: props.placeId, words: chosen, level: props.level }
+    const req: LessonRequest = { scenarioId: props.placeId, words: chosen, level: props.level, ...(debug ? { debug } : {}) }
     setPhase({ name: 'loading' })
     const result = await requestLesson(req)
     setPhase(
@@ -46,9 +49,11 @@ export function PlaceScreen(props: {
     )
   }
 
-  const host = (text: string) => (
+  const host = (text: string, en?: string) => (
     <SpeechBubble speaker="" side="host" avatar={art.host}>
-      <p>{text}</p>
+      <p>
+        <Bi vi={text} en={en} />
+      </p>
     </SpeechBubble>
   )
 
@@ -61,22 +66,28 @@ export function PlaceScreen(props: {
             <span className="text-3xl sm:text-4xl" aria-hidden>
               {art.sign}
             </span>
-            {scenario.name_vi}
+            <span>
+              <Bi vi={scenario.name_vi} en={scenario.name_en} />
+            </span>
             {'lesson' in phase && phase.isSample && (
-              <span className="rounded-full bg-[#FFD45C] px-2.5 py-0.5 text-xs font-bold">Bài mẫu</span>
+              <span className="rounded-full bg-[#FFD45C] px-2.5 py-0.5 text-xs font-bold">
+                <Bi vi="Bài mẫu" en="Sample lesson" />
+              </span>
             )}
           </h2>
-          {phase.name !== 'done' && <GhostButton onClick={props.onLeave}>Rời đi</GhostButton>}
+          {phase.name !== 'done' && <GhostButton onClick={props.onLeave}>
+              <Bi vi="Rời đi" en="Leave" />
+            </GhostButton>}
         </div>
       </header>
 
       {phase.name === 'pick' && (
         <div className="space-y-4">
-          {host(art.greeting_vi)}
+          {host(art.greeting_vi, art.greeting_en)}
           <WordPicker
             scenarioId={props.placeId}
             initialWords={words}
-            submitLabel="Bắt đầu hội thoại"
+            submitLabel={<Bi vi="Bắt đầu hội thoại" en="Start the conversation" />}
             onSubmit={(chosen) => {
               setWords(chosen)
               props.onWordsChosen(chosen)
@@ -95,7 +106,9 @@ export function PlaceScreen(props: {
                 <i />
                 <i />
               </span>
-              Đang chuẩn bị…
+              <span>
+                <Bi vi="Đang chuẩn bị…" en="Getting ready…" />
+              </span>
             </p>
           </SpeechBubble>
         </div>
@@ -103,15 +116,19 @@ export function PlaceScreen(props: {
 
       {phase.name === 'error' && (
         <div className="space-y-4" role="alert">
-          {host(phase.message_vi)}
+          {host(phase.message_vi, ERROR_MESSAGES_EN[phase.code])}
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            {phase.code !== 'bad_request' && <PrimaryButton onClick={() => generate(words)}>Thử lại</PrimaryButton>}
+            {phase.code !== 'bad_request' && <PrimaryButton onClick={() => generate(words)}>
+                <Bi vi="Thử lại" en="Try again" />
+              </PrimaryButton>}
             <SecondaryButton
               onClick={() => setPhase({ name: 'talk', lesson: FALLBACK_LESSONS[props.level], isSample: true })}
             >
-              Xem bài mẫu
+              <Bi vi="Xem bài mẫu" en="View sample lesson" />
             </SecondaryButton>
-            <GhostButton onClick={() => setPhase({ name: 'pick' })}>Chọn lại từ</GhostButton>
+            <GhostButton onClick={() => setPhase({ name: 'pick' })}>
+              <Bi vi="Chọn lại từ" en="Choose words again" />
+            </GhostButton>
           </div>
         </div>
       )}
@@ -143,7 +160,12 @@ export function PlaceScreen(props: {
 
       {phase.name === 'done' && (
         <div className="space-y-4 rounded-3xl bg-white p-6 text-center ring-1 ring-[#2B1D16]/10">
-          <p className="text-2xl font-extrabold tracking-tight">{`Bạn trả lời đúng ${phase.correct}/${phase.total} câu`}</p>
+          <p className="text-2xl font-extrabold tracking-tight">
+            <Bi
+              vi={`Bạn trả lời đúng ${phase.correct}/${phase.total} câu`}
+              en={`You got ${phase.correct}/${phase.total} right`}
+            />
+          </p>
           <p className="inline-block rounded-full bg-[#FFF3D6] px-4 py-1 text-lg font-bold">{`+${earned} 🪙`}</p>
           <div
             className="mx-auto flex size-28 animate-[stamp_400ms_ease-out] items-center justify-center rounded-full border-4 border-dashed text-6xl"
@@ -151,9 +173,11 @@ export function PlaceScreen(props: {
           >
             {art.sign}
           </div>
-          <p className="text-sm font-semibold text-[#2B1D16]/60">Bạn đã nhận được con dấu!</p>
+          <p className="text-sm font-semibold text-[#2B1D16]/60">
+            <Bi vi="Bạn đã nhận được con dấu!" en="You earned a stamp!" />
+          </p>
           <PrimaryButton size="lg" arrow className="w-full" onClick={props.onFinish}>
-            Về thành phố
+            <Bi vi="Về thành phố" en="Back to the city" />
           </PrimaryButton>
         </div>
       )}

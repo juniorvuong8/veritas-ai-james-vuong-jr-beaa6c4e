@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { SpeakButton } from '@/components/SpeakButton'
+import { Bi, Gloss } from '@/lib/debug'
 import { splitHighlights } from '@/lib/highlight'
 import type { Lesson } from '@/shared/types'
 import { SpeechBubble } from './SpeechBubble'
@@ -33,6 +34,7 @@ export function Conversation(props: { lesson: Lesson; hostAvatar: string; player
   const allShown = shown >= lesson.lines.length
   const words = lesson.vocab.map((v) => v.word)
   const hostSpeaker = lesson.lines[0]?.speaker_vi
+  const hostSpeakerEn = lesson.lines[0]?.speaker_en
   const mapped = lesson.vocab.filter((v) => v.input.toLowerCase() !== v.word.toLowerCase())
   const nextRef = useRef<HTMLButtonElement>(null)
 
@@ -75,23 +77,27 @@ export function Conversation(props: { lesson: Lesson; hostAvatar: string; player
           <SpeechBubble
             key={i}
             speaker={line.speaker_vi}
+            speakerEn={line.speaker_en}
             side={isHost ? 'host' : 'player'}
             avatar={isHost ? props.hostAvatar : props.playerAvatar}
           >
             <p>
               <HighlightedText text={line.text} words={words} />
+              {line.text_en !== line.text && <Gloss text={line.text_en} />}
             </p>
             {line.translation_vi && <p className="mt-0.5 text-sm italic opacity-75">{line.translation_vi}</p>}
           </SpeechBubble>
         )
       })}
       {allShown && (
-        <SpeechBubble speaker={hostSpeaker ?? ''} side="host" avatar={props.hostAvatar}>
-          <p>Cùng xem lại các từ nhé!</p>
+        <SpeechBubble speaker={hostSpeaker ?? ''} speakerEn={hostSpeakerEn} side="host" avatar={props.hostAvatar}>
+          <p>
+            <Bi vi="Cùng xem lại các từ nhé!" en="Let's review the words!" />
+          </p>
         </SpeechBubble>
       )}
       <PrimaryButton ref={nextRef} size="lg" className="sticky bottom-4 w-full" onClick={() => advanceRef.current()}>
-        Tiếp ▸
+        <Bi vi="Tiếp ▸" en="Next" />
       </PrimaryButton>
     </div>
   )

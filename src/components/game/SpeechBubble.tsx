@@ -1,9 +1,11 @@
 import type { ReactNode } from 'react'
+import { Bi } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 
 /** Chat bubble styled like the homepage demo: host in sand, the learner in coral. */
 export function SpeechBubble(props: {
   speaker: string
+  speakerEn?: string
   side: 'host' | 'player'
   avatar: string
   children: ReactNode
@@ -15,7 +17,11 @@ export function SpeechBubble(props: {
         {props.avatar}
       </span>
       <div className={cn('max-w-[82%] sm:max-w-[75%]', !isHost && 'text-right')}>
-        {props.speaker && <p className="mb-0.5 px-1 text-[11px] font-medium text-[#2B1D16]/50">{props.speaker}</p>}
+        {props.speaker && (
+          <p className="mb-0.5 px-1 text-[11px] font-medium text-[#2B1D16]/50">
+            <Bi vi={props.speaker} en={props.speakerEn} />
+          </p>
+        )}
         <div
           className={cn(
             'inline-block rounded-2xl px-3.5 py-2 text-left text-[15px] leading-relaxed sm:text-base',

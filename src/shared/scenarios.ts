@@ -2,6 +2,7 @@ export interface Scenario {
   id: string
   emoji: string
   name_vi: string
+  name_en: string
   /** English description of the situation, used in the AI prompt. */
   promptContext: string
   suggestedWords: string[]
@@ -12,6 +13,7 @@ export const SCENARIOS: Scenario[] = [
     id: 'cafe',
     emoji: '☕',
     name_vi: 'Quán cà phê',
+    name_en: 'Café',
     promptContext: 'ordering drinks at a café in an English-speaking city',
     suggestedWords: [
       'menu',
@@ -32,6 +34,7 @@ export const SCENARIOS: Scenario[] = [
     id: 'supermarket',
     emoji: '🛒',
     name_vi: 'Siêu thị',
+    name_en: 'Supermarket',
     promptContext: 'shopping for groceries at a supermarket in an English-speaking city',
     suggestedWords: [
       'cart',
@@ -52,6 +55,7 @@ export const SCENARIOS: Scenario[] = [
     id: 'taxi',
     emoji: '🚕',
     name_vi: 'Gọi taxi',
+    name_en: 'Taxi',
     promptContext: 'taking a taxi or ride-share in an English-speaking city',
     suggestedWords: [
       'address',
@@ -72,6 +76,7 @@ export const SCENARIOS: Scenario[] = [
     id: 'clinic',
     emoji: '🏥',
     name_vi: 'Phòng khám',
+    name_en: 'Clinic',
     promptContext: 'visiting a doctor at a clinic in an English-speaking city',
     suggestedWords: [
       'appointment',

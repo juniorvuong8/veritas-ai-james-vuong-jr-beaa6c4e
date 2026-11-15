@@ -4,6 +4,7 @@ import { CITY, samePos, type Pos, type Tile } from '@/game/map'
 import { keyToDir, step, type Dir } from '@/game/movement'
 import { findPath, resolveTapTarget } from '@/game/path'
 import type { GameState } from '@/game/state'
+import { Bi, useBiText } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 import { getScenario } from '@/shared/scenarios'
 import { TopBar } from './TopBar'
@@ -78,6 +79,7 @@ export function CityScreen(props: {
   onMoved: () => void
 }) {
   const [pos, setPos] = useState<Pos>(props.startPos)
+  const biText = useBiText()
   const posRef = useRef(pos)
   const walkTimer = useRef<ReturnType<typeof setInterval> | null>(null)
   const entered = useRef(false)
@@ -168,7 +170,9 @@ export function CityScreen(props: {
     >
       <TopBar state={props.state} onOpenCelebration={props.onOpenCelebration} />
       {props.showHint && (
-        <p className="text-center text-sm font-semibold text-[#2F7F7A]">Đi đến một địa điểm để bắt đầu</p>
+        <p className="text-center text-sm font-semibold text-[#2F7F7A]">
+          <Bi vi="Đi đến một địa điểm để bắt đầu" en="Walk to a place to start" />
+        </p>
       )}
       <div
         className="relative w-full touch-manipulation overflow-hidden rounded-[22px] border-2 border-[#2B1D16] shadow-[5px_5px_0_#2B1D16] select-none"
@@ -193,7 +197,11 @@ export function CityScreen(props: {
                   }}
                   className={cn('relative flex cursor-pointer items-center justify-center', TILE_CLASS[tile])}
                   style={{ fontSize: tileFont(0.6), ...tileStyle(tile, CITY.placeAt[y][x]) }}
-                  aria-label={signPlace ? `Đi đến ${getScenario(signPlace)?.name_vi}` : undefined}
+                  aria-label={
+                    signPlace
+                      ? biText(`Đi đến ${getScenario(signPlace)?.name_vi}`, `Go to ${getScenario(signPlace)?.name_en}`)
+                      : undefined
+                  }
                 >
                   {tile === 'door' ? (
                     <>
@@ -232,14 +240,14 @@ export function CityScreen(props: {
               fontSize: `max(0.55rem, ${tileFont(0.24)})`,
             }}
           >
-            {getScenario(b.placeId)?.name_vi}
+            {biText(getScenario(b.placeId)?.name_vi ?? '', getScenario(b.placeId)?.name_en)}
           </span>
         ))}
         <div
           data-testid="player"
           data-x={pos.x}
           data-y={pos.y}
-          aria-label="Bạn"
+          aria-label={biText('Bạn', 'You')}
           className="pointer-events-none absolute flex items-center justify-center"
           style={{
             fontSize: tileFont(0.7),
@@ -255,8 +263,15 @@ export function CityScreen(props: {
         </div>
       </div>
       <p className="text-center text-xs font-medium text-[#2B1D16]/55">
-        <span className="pointer-coarse:hidden">Dùng phím mũi tên / WASD hoặc bấm vào bản đồ để đi</span>
-        <span className="hidden pointer-coarse:inline">Chạm vào bản đồ để đi</span>
+        <span className="pointer-coarse:hidden">
+          <Bi
+            vi="Dùng phím mũi tên / WASD hoặc bấm vào bản đồ để đi"
+            en="Use the arrow keys / WASD or click the map to walk"
+          />
+        </span>
+        <span className="hidden pointer-coarse:inline">
+          <Bi vi="Chạm vào bản đồ để đi" en="Tap the map to walk" />
+        </span>
       </p>
     </div>
   )

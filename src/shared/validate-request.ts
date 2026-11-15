@@ -18,7 +18,7 @@ export function checkLessonRequest(body: unknown): CheckResult<LessonRequest> {
   if (!isRecord(body)) return { ok: false, errors: ['body must be an object'] }
   const errors: string[] = []
 
-  const { scenarioId, words, level } = body
+  const { scenarioId, words, level, debug } = body
   if (typeof scenarioId !== 'string' || !getScenario(scenarioId)) {
     errors.push('unknown scenarioId')
   }
@@ -44,6 +44,11 @@ export function checkLessonRequest(body: unknown): CheckResult<LessonRequest> {
   if (errors.length > 0) return { ok: false, errors }
   return {
     ok: true,
-    value: { scenarioId: scenarioId as string, words: normalized, level: level as Level },
+    value: {
+      scenarioId: scenarioId as string,
+      words: normalized,
+      level: level as Level,
+      ...(debug === true ? { debug: true } : {}),
+    },
   }
 }

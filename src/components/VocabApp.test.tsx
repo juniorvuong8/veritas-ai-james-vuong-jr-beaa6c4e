@@ -131,4 +131,16 @@ describe('App', () => {
     await user.click(screen.getByRole('button', { name: 'Bắt đầu' }))
     expect(screen.getByText(/lên xe nào/)).toBeInTheDocument()
   })
+
+  it('toggles debug mode with Alt+Shift+D, showing English under the Vietnamese', () => {
+    render(<App />)
+    expect(screen.queryByText(/DEBUG/)).not.toBeInTheDocument()
+    fireEvent.keyDown(window, { code: 'KeyD', altKey: true, shiftKey: true })
+    expect(screen.getByText(/DEBUG/)).toBeInTheDocument()
+    expect(screen.getByText('Learn words through conversation')).toBeInTheDocument()
+    expect(localStorage.getItem('vocab-debug')).toBe('1')
+    fireEvent.keyDown(window, { code: 'KeyD', altKey: true, shiftKey: true })
+    expect(screen.queryByText(/DEBUG/)).not.toBeInTheDocument()
+    expect(localStorage.getItem('vocab-debug')).toBeNull()
+  })
 })

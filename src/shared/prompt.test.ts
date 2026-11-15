@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { buildMessages } from './prompt'
+import { DEBUG_INSTRUCTION, buildMessages } from './prompt'
 import { getScenario } from './scenarios'
 import { validRequest } from './test-fixtures'
 
@@ -36,5 +36,13 @@ describe('buildMessages', () => {
     const [system] = buildMessages(cafe, validRequest)
     expect(system.content).toContain('exactly two speakers')
     expect(system.content).toContain('The first line is spoken by the person who works there')
+  })
+
+  it('asks for English fields only in debug mode, leaving the system prompt unchanged', () => {
+    const [system, user] = buildMessages(cafe, validRequest)
+    const [debugSystem, debugUser] = buildMessages(cafe, { ...validRequest, debug: true })
+    expect(user.content).not.toContain(DEBUG_INSTRUCTION)
+    expect(debugUser.content).toContain(DEBUG_INSTRUCTION)
+    expect(debugSystem.content).toBe(system.content)
   })
 })

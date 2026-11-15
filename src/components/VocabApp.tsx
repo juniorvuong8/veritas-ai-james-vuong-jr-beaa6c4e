@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from 'react'
+import { useCallback, useEffect, useReducer, useState } from 'react'
 import { Celebration } from '@/components/game/Celebration'
 import { CityScreen } from '@/components/game/CityScreen'
 import { PlaceScreen } from '@/components/game/PlaceScreen'
@@ -8,6 +8,7 @@ import { GameShell } from '@/components/game/ui'
 import { CITY, doorOf, type Pos } from '@/game/map'
 import { COINS_PER_CORRECT, canLevelUp, gameReducer, newGame, type GameAction, type GameState } from '@/game/state'
 import { clearGame, loadGame, saveGame } from '@/game/storage'
+import { DebugBadge, DebugProvider, readDebugFlag, saveDebugFlag, useDebugShortcut } from '@/lib/debug'
 import type { Level } from '@/shared/types'
 
 type AppAction = GameAction | { type: 'newGame'; level: Level }
@@ -19,7 +20,27 @@ function appReducer(state: GameState | null, action: AppAction): GameState | nul
 
 type Screen = { name: 'home' } | { name: 'start' } | { name: 'city'; startPos: Pos; visit: number } | { name: 'place'; placeId: string }
 
+/**
+ * Wraps the game in debug mode (Alt+Shift+D or ?debug=1): every Vietnamese string also shows its English version.
+ */
 function App() {
+  const [debug, setDebug] = useState(() => readDebugFlag())
+  const setAndSaveDebug = useCallback((on: boolean) => {
+    saveDebugFlag(on)
+    setDebug(on)
+  }, [])
+  useDebugShortcut(useCallback(() => setAndSaveDebug(!debug), [debug, setAndSaveDebug]))
+  return (
+    <DebugProvider value={debug}>
+      <Game />
+      {debug && (
+        <DebugBadge onTurnOff={() => setAndSaveDebug(false)} />
+      )}
+    </DebugProvider>
+  )
+}
+
+function Game() {
   const [game, dispatch] = useReducer(appReducer, null, () => loadGame())
   const [screen, setScreen] = useState<Screen>({ name: 'home' })
   /** A place picked on the homepage, opened right after the level choice. */

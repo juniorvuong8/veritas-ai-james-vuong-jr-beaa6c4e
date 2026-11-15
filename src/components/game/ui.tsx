@@ -1,6 +1,7 @@
 // Shared building blocks so the game looks like the homepage (src/components/landing).
 import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from 'react'
 import { ArrowRight } from 'lucide-react'
+import { Bi } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 
 export const INK = '#2B1D16'
@@ -98,7 +99,9 @@ export function GameShell({ wide, children }: { wide?: boolean; children: ReactN
           <span className="grid size-8 place-items-center rounded-xl bg-[#2B1D16] text-base" aria-hidden>
             💬
           </span>
-          <span>Học từ qua hội thoại</span>
+          <span>
+            <Bi vi="Học từ qua hội thoại" en="Learn words through conversation" />
+          </span>
         </div>
         {children}
       </div>

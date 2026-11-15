@@ -1,11 +1,14 @@
 import { SpeakButton } from '@/components/SpeakButton'
+import { Bi, Gloss } from '@/lib/debug'
 import type { Lesson } from '@/shared/types'
 import { PrimaryButton } from './ui'
 
 export function WordNotes(props: { lesson: Lesson; onStartQuiz: () => void }) {
   return (
     <div className="space-y-4">
-      <h3 className="text-xl font-extrabold">Giải thích từ</h3>
+      <h3 className="text-xl font-extrabold">
+        <Bi vi="Giải thích từ" en="Word notes" />
+      </h3>
       <div className="grid gap-3 sm:grid-cols-2">
         {props.lesson.vocab.map((v) => (
           <div
@@ -19,17 +22,19 @@ export function WordNotes(props: { lesson: Lesson; onStartQuiz: () => void }) {
               <div>
                 <dt className="inline font-semibold">Nghĩa: </dt>
                 <dd className="inline">{v.meaning_vi}</dd>
+                <Gloss text={v.meaning_en && `Meaning: ${v.meaning_en}`} />
               </div>
               <div>
                 <dt className="inline font-semibold">Khi nào dùng: </dt>
                 <dd className="inline">{v.usage_vi}</dd>
+                <Gloss text={v.usage_en && `When to use: ${v.usage_en}`} />
               </div>
             </dl>
           </div>
         ))}
       </div>
       <PrimaryButton size="lg" arrow className="w-full" onClick={props.onStartQuiz}>
-        Làm bài kiểm tra
+        <Bi vi="Làm bài kiểm tra" en="Take the quiz" />
       </PrimaryButton>
     </div>
   )

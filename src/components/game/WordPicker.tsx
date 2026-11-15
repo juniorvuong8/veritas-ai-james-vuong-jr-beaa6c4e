@@ -1,4 +1,5 @@
-import { useState, type FormEvent } from 'react'
+import { useState, type FormEvent, type ReactNode } from 'react'
+import { Bi, useBiText } from '@/lib/debug'
 import { addWord, canSubmit, toggleWord } from '@/lib/selection'
 import { cn } from '@/lib/utils'
 import { getScenario, normalizeWord } from '@/shared/scenarios'
@@ -7,16 +8,18 @@ import { PrimaryButton, SecondaryButton } from './ui'
 
 const key = (w: string) => normalizeWord(w).toLowerCase()
 const INVALID_WORD = 'Từ chỉ được dùng chữ cái, khoảng trắng, dấu gạch ngang hoặc dấu nháy (tối đa 30 ký tự).'
+const INVALID_WORD_EN = 'Words can only use letters, spaces, hyphens or apostrophes (up to 30 characters).'
 
 export function WordPicker(props: {
   scenarioId: string
   initialWords?: string[]
-  submitLabel: string
+  submitLabel: ReactNode
   onSubmit: (words: string[]) => void
 }) {
   const [words, setWords] = useState<string[]>(props.initialWords ?? [])
   const [custom, setCustom] = useState('')
   const [customError, setCustomError] = useState<string | undefined>()
+  const biText = useBiText()
 
   const suggested = getScenario(props.scenarioId)?.suggestedWords ?? []
   const customWords = words.filter((w) => !suggested.some((s) => key(s) === key(w)))
@@ -36,7 +39,10 @@ export function WordPicker(props: {
   return (
     <div className="space-y-3">
       <p className="text-sm font-semibold text-[#2B1D16]/60">
-        Đã chọn {words.length}/{MAX_WORDS} từ (cần ít nhất {MIN_WORDS})
+        <Bi
+          vi={`Đã chọn ${words.length}/${MAX_WORDS} từ (cần ít nhất ${MIN_WORDS})`}
+          en={`Chosen ${words.length}/${MAX_WORDS} words (need at least ${MIN_WORDS})`}
+        />
       </p>
       <div className="flex flex-wrap gap-2">
         {suggested.map((w) => (
@@ -63,7 +69,7 @@ export function WordPicker(props: {
             <span>{w}</span>
             <button
               type="button"
-              aria-label={`Bỏ ${w}`}
+              aria-label={biText(`Bỏ ${w}`, `Remove ${w}`)}
               onClick={() => setWords((ws) => ws.filter((x) => x !== w))}
               className="ml-1 opacity-80 hover:opacity-100"
             >
@@ -81,16 +87,16 @@ export function WordPicker(props: {
             setCustomError(undefined)
           }}
           aria-invalid={customError ? true : undefined}
-          placeholder="Thêm từ của bạn (tiếng Anh hoặc tiếng Việt)"
+          placeholder={biText('Thêm từ của bạn (tiếng Anh hoặc tiếng Việt)', 'Add your own word (English or Vietnamese)')}
           maxLength={30}
         />
         <SecondaryButton type="submit" disabled={!custom.trim() || words.length >= MAX_WORDS}>
-          Thêm
+          <Bi vi="Thêm" en="Add" />
         </SecondaryButton>
       </form>
       {customError && (
         <p role="alert" className="text-sm font-semibold text-[#C2412C]">
-          {customError}
+          <Bi vi={customError} en={INVALID_WORD_EN} />
         </p>
       )}
       <PrimaryButton size="lg" arrow className="w-full" disabled={!canSubmit(words)} onClick={() => props.onSubmit(words)}>

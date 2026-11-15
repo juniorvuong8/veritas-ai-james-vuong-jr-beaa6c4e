@@ -32,11 +32,15 @@ Respond with ONLY a JSON object in exactly this shape, with no other text:
   "quiz": [{ "question_vi": string, "options": [string, string, string], "answer_index": 0 | 1 | 2, "explanation_vi": string }]
 }`
 
+/** Debug mode only: an extra instruction asking for English versions of the Vietnamese text. */
+export const DEBUG_INSTRUCTION = `Debug mode: also add English translations so a non-Vietnamese reader can follow everything. Add "title_en" to the lesson; "speaker_en" and "text_en" (a natural English translation of the whole line; at level 3 repeat "text") to every line; "meaning_en" and "usage_en" to every vocab entry; "question_en" and "explanation_en" to every quiz question. Keep every other field exactly as described.`
+
 export function buildMessages(scenario: Scenario, req: LessonRequest): ChatMessage[] {
   const user = [
     `Situation: ${scenario.promptContext}`,
     `Words: ${JSON.stringify(req.words)}`,
     `Level: ${req.level}`,
+    ...(req.debug ? ['', DEBUG_INSTRUCTION] : []),
   ].join('\n')
   return [
     { role: 'system', content: SYSTEM_PROMPT },
