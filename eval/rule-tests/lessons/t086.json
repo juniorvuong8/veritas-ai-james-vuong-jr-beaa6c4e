@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t086",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cashier",
+   "price",
+   "checkout",
+   "frozen",
+   "card"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị cần em giúp tìm gì không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em tìm kem với cá frozen, loại cứng lạnh, để trong tủ đá ấy anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, đồ frozen nằm trong tủ đá ở cuối dãy số 5 chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Còn hộp bánh này price bao nhiêu vậy anh? Em không thấy ghi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, 6 đô ạ. Price có ghi trên nhãn nhỏ dưới kệ đó chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em trả bằng card được không anh? Em không mang tiền mặt.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Được chị. Chị mang hàng ra checkout gần cửa ra vào, cashier ở đó sẽ quét hàng và nhận tiền cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cảm ơn anh nhiều.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để chỉ người đứng ở quầy tính tiền, quét hàng và nhận tiền của khách ở siêu thị hay cửa hàng."
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi muốn hỏi hoặc nói một món hàng bao nhiêu tiền, ví dụ hỏi \"What's the price?\"."
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền",
+    "usage_vi": "Dùng để chỉ khu vực hoặc quầy nơi bạn mang hàng đến để thanh toán trước khi ra về."
+   },
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng cho đồ ăn được giữ trong tủ đá, như kem, cá, pizza đông lạnh. Ở siêu thị thường có khu \"frozen food\"."
+   },
+   {
+    "input": "card",
+    "word": "card",
+    "meaning_vi": "thẻ (thẻ ngân hàng)",
+    "usage_vi": "Dùng khi muốn trả tiền bằng thẻ thay vì tiền mặt, ví dụ hỏi \"Can I pay by card?\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Ở cửa hàng tiện lợi, người đứng sau quầy quét mã hàng và nhận tiền của bạn được gọi là gì?",
+    "options": [
+     "price",
+     "cashier",
+     "frozen"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cashier\" là người thu ngân, chuyên tính tiền cho khách."
+   },
+   {
+    "question_vi": "Bạn cầm một chai sữa và muốn biết nó bao nhiêu tiền. Bạn cần hỏi về điều gì?",
+    "options": [
+     "price",
+     "card",
+     "checkout"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Price\" là giá tiền của món hàng."
+   },
+   {
+    "question_vi": "Mua xong, bạn đẩy xe hàng đến khu vực trả tiền gần cửa ra. Khu vực đó gọi là gì?",
+    "options": [
+     "frozen",
+     "cashier",
+     "checkout"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Checkout\" là quầy hoặc khu vực thanh toán trong siêu thị."
+   },
+   {
+    "question_vi": "Bạn muốn mua một hộp pizza được bảo quản trong tủ đá để ăn dần. Đó là loại pizza gì?",
+    "options": [
+     "fresh",
+     "frozen",
+     "card"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Frozen\" là đông lạnh, dùng cho đồ ăn để trong tủ đá."
+   },
+   {
+    "question_vi": "Bạn không có tiền mặt nhưng muốn trả bằng thẻ ngân hàng. Bạn nói muốn trả bằng gì?",
+    "options": [
+     "cash",
+     "checkout",
+     "card"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Card\" là thẻ, còn \"cash\" là tiền mặt."
+   }
+  ]
+ }
+}

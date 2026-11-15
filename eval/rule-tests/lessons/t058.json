@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "t058",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "cash",
+   "price",
+   "cashier"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị: hỏi giá và trả tiền",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hello! Can I help you find something?",
+    "translation_vi": "Xin chào! Tôi có thể giúp bạn tìm gì không?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. What is the price of these apples? I can't see the number.",
+    "translation_vi": "Vâng, làm ơn. Táo này giá bao nhiêu vậy? Tôi không thấy con số."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "They cost three dollars a bag. The number is on this small sign.",
+    "translation_vi": "Táo này ba đô một túi. Con số ghi trên tấm bảng nhỏ này."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you. Where do I pay for my food?",
+    "translation_vi": "Cảm ơn bạn. Tôi trả tiền đồ ăn ở đâu?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Please go to the cashier at the front. She will take your money and give you a receipt.",
+    "translation_vi": "Bạn ra quầy thu ngân ở phía trước nhé. Cô ấy sẽ nhận tiền và đưa hóa đơn cho bạn."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Can I pay with cash? I don't have a card.",
+    "translation_vi": "Tôi trả bằng tiền mặt được không? Tôi không có thẻ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, the cashier takes cash and cards. Paper money and coins are fine.",
+    "translation_vi": "Được chứ, thu ngân nhận cả tiền mặt và thẻ. Tiền giấy hay tiền xu đều được."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great, thank you!",
+    "translation_vi": "Tuyệt quá, cảm ơn bạn!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi nói về tiền giấy và tiền xu, khác với thẻ. Hay gặp trong câu \"Can I pay with cash?\" (Tôi trả bằng tiền mặt được không?)."
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng bao nhiêu tiền. Ví dụ: \"What is the price of this?\" (Món này giá bao nhiêu?)."
+   },
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để chỉ người tính tiền và nhận tiền ở quầy trong siêu thị hoặc cửa hàng. Bạn mang đồ đến chỗ cashier để thanh toán."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua nước ở cửa hàng tiện lợi. Bạn không có thẻ, chỉ có tiền giấy trong ví. Bạn nói: \"I want to pay with ___.\"",
+    "options": [
+     "price",
+     "cash",
+     "cashier"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cash\" là tiền mặt, nên \"pay with cash\" nghĩa là trả bằng tiền mặt."
+   },
+   {
+    "question_vi": "Ở tiệm bánh, một ổ bánh mì không có nhãn ghi số tiền. Bạn muốn biết nó bao nhiêu tiền. Bạn hỏi: \"What is the ___ of this bread?\"",
+    "options": [
+     "price",
+     "cashier",
+     "cash"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Price\" là giá tiền, dùng để hỏi một món hàng giá bao nhiêu."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong quần áo trong cửa hàng và muốn tìm người tính tiền. Bạn hỏi: \"Excuse me, where is the ___?\"",
+    "options": [
+     "cash",
+     "receipt",
+     "cashier"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cashier\" là nhân viên thu ngân, người nhận tiền khi bạn thanh toán."
+   }
+  ]
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t079",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "trunk",
+   "address",
+   "stop here",
+   "straight",
+   "traffic"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào anh! Anh cho tôi biết the address nhé, anh muốn đến số nhà nào, đường nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, the address là số 25 đường King. Va li của tôi to quá, tôi để in the trunk ở phía sau xe được không anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Được anh, tôi mở the trunk rồi, anh bỏ va li vào đi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hôm nay có a lot of traffic không anh? Tôi sợ đường đông xe, đi chậm lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Có một chút traffic, xe nhiều thật, nhưng mình cứ go straight, không rẽ trái cũng không rẽ phải, khoảng mười phút là tới.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Tới rồi anh ơi! Please stop here, cho tôi xuống ngay trước tòa nhà màu xanh này.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, tôi dừng xe rồi. Anh nhớ lấy va li in the trunk nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (phía sau xe ô tô)",
+    "usage_vi": "Dùng khi muốn để hoặc lấy hành lý, va li, túi đồ lớn ở phía sau xe. Ví dụ: \"Can I put my bag in the trunk?\""
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi nói cho tài xế biết nơi bạn muốn đến, gồm số nhà và tên đường. Ví dụ: \"The address is 25 King Street.\""
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Dùng khi muốn tài xế dừng xe ngay chỗ bạn đang ở để bạn xuống. Nên thêm \"please\" cho lịch sự: \"Please stop here.\""
+   },
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng (đi thẳng)",
+    "usage_vi": "Dùng khi chỉ đường, nghĩa là cứ đi theo con đường hiện tại, không rẽ. Thường nói \"go straight\"."
+   },
+   {
+    "input": "traffic",
+    "word": "traffic",
+    "meaning_vi": "giao thông, xe cộ trên đường",
+    "usage_vi": "Dùng để nói về lượng xe trên đường, nhất là khi đường đông và xe đi chậm. Ví dụ: \"There is a lot of traffic today.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đi siêu thị về với hai thùng đồ lớn và muốn hỏi tài xế có thể để chúng ở phía sau xe không. Bạn dùng từ nào?",
+    "options": [
+     "address",
+     "trunk",
+     "traffic"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Trunk\" là cốp xe phía sau, nơi để đồ lớn như thùng hàng hay va li."
+   },
+   {
+    "question_vi": "Bạn gọi xe từ khách sạn, và tài xế nhắn hỏi số nhà, tên đường của nơi bạn muốn đến. Tài xế đang hỏi về điều gì?",
+    "options": [
+     "address",
+     "straight",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Address\" là địa chỉ, gồm số nhà và tên đường nơi bạn muốn đến."
+   },
+   {
+    "question_vi": "Đang ngồi trên xe, bạn thấy quán cà phê của bạn mình ngay bên đường và muốn xuống ngay lúc này. Bạn nói gì với tài xế?",
+    "options": [
+     "traffic",
+     "trunk",
+     "stop here"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Stop here\" dùng để nhờ tài xế dừng xe ngay tại chỗ đó cho bạn xuống."
+   },
+   {
+    "question_vi": "Tài xế hỏi có cần rẽ ở ngã tư không, nhưng bạn biết chỉ cần tiếp tục theo con đường này là tới. Bạn dùng từ nào?",
+    "options": [
+     "stop here",
+     "straight",
+     "address"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Straight\" (go straight) nghĩa là cứ đi tiếp, không rẽ trái hay rẽ phải."
+   },
+   {
+    "question_vi": "Bạn đến muộn buổi hẹn vì trên đường quá nhiều xe, xe chạy rất chậm. Bạn giải thích lý do bằng từ nào?",
+    "options": [
+     "trunk",
+     "straight",
+     "traffic"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Traffic\" nói về xe cộ trên đường, ví dụ \"There was a lot of traffic\" khi đường đông và xe đi chậm."
+   }
+  ]
+ }
+}

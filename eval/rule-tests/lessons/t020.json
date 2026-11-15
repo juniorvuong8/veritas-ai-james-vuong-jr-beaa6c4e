@@ -1,0 +1,119 @@
+{
+ "case": {
+  "id": "t020",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "fever",
+   "appointment",
+   "cough",
+   "prescription"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, chị đã gọi điện đặt an appointment lúc 9 giờ sáng nay đúng không? Mời chị ngồi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ đúng ạ. Em bị a high fever từ hôm qua, người nóng ran, đo được 39 độ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị có a cough không? Cổ họng chị thấy thế nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, em có a bad cough, khụ khụ suốt đêm không ngủ được, rát cổ lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Tôi sẽ viết a prescription cho chị. Chị mang tờ giấy này ra nhà thuốc để mua thuốc nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, cảm ơn bác sĩ. Nếu ba ngày nữa em vẫn còn fever thì em đặt another appointment để gặp lại bác sĩ được không ạ?",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường. Thường nói \"I have a fever\" (Tôi bị sốt)."
+   },
+   {
+    "input": "appointment",
+    "word": "appointment",
+    "meaning_vi": "cuộc hẹn, lịch hẹn",
+    "usage_vi": "Dùng khi hẹn trước giờ gặp bác sĩ, nha sĩ hoặc nhân viên. Thường nói \"make an appointment\" (đặt lịch hẹn)."
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng khi bạn bị ho, nhất là lúc bị cảm. Thường nói \"I have a cough\" (Tôi bị ho)."
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Là tờ giấy bác sĩ viết để bạn mang ra nhà thuốc mua thuốc. Một số loại thuốc chỉ được bán khi có prescription."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn sờ trán con thấy rất nóng, đo nhiệt độ được 38,5 độ. Bạn nói với bác sĩ: \"My child has a ___.\" Từ nào phù hợp?",
+    "options": [
+     "cough",
+     "fever",
+     "prescription"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fever\" là sốt, dùng khi thân nhiệt cao như 38,5 độ."
+   },
+   {
+    "question_vi": "Bạn gọi điện đến phòng khám vì muốn hẹn gặp bác sĩ vào thứ Hai tuần sau. Bạn nói: \"I want to make an ___.\" Từ nào phù hợp?",
+    "options": [
+     "appointment",
+     "fever",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Make an appointment\" nghĩa là đặt lịch hẹn trước với bác sĩ."
+   },
+   {
+    "question_vi": "Ở chỗ làm, bạn ho liên tục và đồng nghiệp hỏi bạn bị sao. Bạn nói: \"I have a ___.\" Từ nào phù hợp?",
+    "options": [
+     "prescription",
+     "appointment",
+     "cough"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cough\" là ho, đúng với việc bạn ho liên tục."
+   },
+   {
+    "question_vi": "Ở nhà thuốc, dược sĩ nói loại thuốc này cần có giấy của bác sĩ mới bán được. Dược sĩ hỏi: \"Do you have a ___?\" Từ nào phù hợp?",
+    "options": [
+     "fever",
+     "prescription",
+     "cough"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Prescription\" là đơn thuốc bác sĩ viết, cần có để mua một số loại thuốc."
+   }
+  ]
+ }
+}

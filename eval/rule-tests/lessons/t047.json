@@ -1,0 +1,119 @@
+{
+ "case": {
+  "id": "t047",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "airport",
+   "turn right",
+   "address",
+   "turn left"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi về khách sạn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Where are you going? Please tell me the address, the street name and the number.",
+    "translation_vi": "Chào bạn! Bạn đi đâu ạ? Bạn cho tôi biết địa chỉ nhé, tên đường và số nhà."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "It's 12 Park Road. It's my hotel. I just came from the airport. My plane landed one hour ago.",
+    "translation_vi": "Số 12 đường Park. Đó là khách sạn của tôi. Tôi vừa từ sân bay về. Máy bay của tôi hạ cánh một tiếng trước."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. The map says turn right at the bank. We go to the right side there.",
+    "translation_vi": "Được rồi. Bản đồ chỉ rẽ phải ở ngân hàng. Mình đi về phía bên phải ở chỗ đó."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes. And after the bank, turn left at the school. My hotel is on the left side of the road.",
+    "translation_vi": "Vâng. Và sau ngân hàng thì rẽ trái ở trường học. Khách sạn của tôi nằm bên trái đường."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Here we are! Do you need a taxi back to the airport for your flight home?",
+    "translation_vi": "Đến nơi rồi! Bạn có cần taxi ra sân bay để bay về nhà không?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please! My flight is on Friday. Thank you!",
+    "translation_vi": "Có, làm ơn! Chuyến bay của tôi vào thứ Sáu. Cảm ơn anh!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi bạn muốn đi đến hoặc vừa đến nơi máy bay cất cánh và hạ cánh. Ví dụ: \"Please take me to the airport.\""
+   },
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng để chỉ đường cho tài xế khi cần quẹo sang phía tay phải. Thường đi kèm địa điểm: \"Turn right at the bank.\""
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Là số nhà và tên đường của nơi bạn muốn đến. Tài xế thường hỏi: \"What's the address?\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng để chỉ đường cho tài xế khi cần quẹo sang phía tay trái. Ví dụ: \"Turn left at the school.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn có chuyến bay về Việt Nam tối nay và gọi taxi. Bạn nói: \"Please take me to the ___.\" Từ nào phù hợp?",
+    "options": [
+     "address",
+     "airport",
+     "turn left"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Airport\" là sân bay, nơi bạn đến để bắt máy bay."
+   },
+   {
+    "question_vi": "Sắp đến ngã tư, nhà bạn của bạn nằm ở con đường phía tay phải. Bạn nói với tài xế: \"Please ___ here.\" Từ nào phù hợp?",
+    "options": [
+     "turn left",
+     "address",
+     "turn right"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, dùng khi đường cần đi nằm ở phía tay phải."
+   },
+   {
+    "question_vi": "Bạn đặt xe qua ứng dụng, tài xế gọi điện hỏi số nhà và tên đường nơi bạn đang đứng chờ: \"What's your ___?\" Từ nào phù hợp?",
+    "options": [
+     "address",
+     "airport",
+     "turn right"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Address\" là địa chỉ, gồm số nhà và tên đường."
+   },
+   {
+    "question_vi": "Quán cà phê bạn muốn đến nằm ở con đường bên tay trái. Bạn nói với tài xế: \"Please ___ at the corner.\" Từ nào phù hợp?",
+    "options": [
+     "turn right",
+     "turn left",
+     "airport"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, dùng khi cần quẹo sang phía tay trái."
+   }
+  ]
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t001",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "for here",
+   "order",
+   "napkin",
+   "change",
+   "large"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị muốn order gì ạ? Chị nói món, em ghi lại rồi làm ngay cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị một ly trà sữa. Chị khát lắm, ly nhỏ không đủ đâu, em làm ly large nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ. Chị uống for here hay mang đi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị for here, chị ngồi uống ở cái bàn gần cửa sổ kia.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị 4 đô. Chị đưa em 5 đô, vậy em gửi lại chị 1 đô change ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị xin thêm một tờ napkin để lau tay với lau miệng nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, giấy để ngay cạnh ống hút, chị cứ lấy thoải mái ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "uống hoặc ăn tại quán",
+    "usage_vi": "Dùng khi nhân viên hỏi bạn ngồi lại quán hay mang đi. Trái nghĩa với \"to go\" (mang đi)."
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi bạn nói với nhân viên món mình muốn mua. Nhân viên thường hỏi: \"Can I take your order?\" (Anh/chị gọi món gì ạ?)."
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy",
+    "usage_vi": "Dùng khi bạn cần giấy để lau tay, lau miệng hoặc lau bàn. Bạn có thể nói: \"Can I have a napkin?\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa",
+    "usage_vi": "Là số tiền nhân viên trả lại khi bạn đưa nhiều hơn giá món. Ví dụ: \"Here is your change.\" (Đây là tiền thối của bạn.)"
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn",
+    "usage_vi": "Dùng khi chọn cỡ ly lớn nhất. Các cỡ thường gặp là small (nhỏ), medium (vừa), large (lớn)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một ly cà phê và muốn ngồi lại quán đọc sách. Nhân viên hỏi bạn uống ở đâu. Bạn trả lời bằng từ nào?",
+    "options": [
+     "for here",
+     "to go",
+     "change"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại quán, đúng với việc bạn muốn ngồi lại."
+   },
+   {
+    "question_vi": "Bạn đến quầy của một tiệm bánh, nhân viên đang chờ bạn nói món mình muốn mua. Từ nào chỉ việc gọi món?",
+    "options": [
+     "napkin",
+     "large",
+     "order"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Order\" là gọi món, tức là nói với nhân viên món bạn muốn mua."
+   },
+   {
+    "question_vi": "Bạn làm đổ nước ngọt ra bàn và cần một tờ giấy để lau. Bạn xin cái gì?",
+    "options": [
+     "change",
+     "napkin",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay, lau miệng hoặc lau bàn."
+   },
+   {
+    "question_vi": "Món nước giá 7 đô, bạn đưa 10 đô và nhân viên trả lại bạn 3 đô. Số tiền 3 đô đó gọi là gì?",
+    "options": [
+     "change",
+     "large",
+     "order"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Change\" là tiền thối, tức số tiền được trả lại khi bạn đưa nhiều hơn giá món."
+   },
+   {
+    "question_vi": "Trời rất nóng và bạn muốn mua ly nước cam to nhất. Bạn chọn cỡ nào?",
+    "options": [
+     "small",
+     "for here",
+     "large"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Large\" là cỡ lớn, phù hợp khi bạn muốn ly to nhất."
+   }
+  ]
+ }
+}

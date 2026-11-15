@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t070",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "fresh",
+   "price",
+   "on sale"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Mua thực phẩm ở siêu thị",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Can I help you find something?",
+    "translation_vi": "Chào chị! Chị cần tìm gì không ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes. Are these apples fresh? I want new apples, not old ones.",
+    "translation_vi": "Vâng. Táo này có tươi không? Tôi muốn táo mới, không phải táo cũ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, they are very fresh. They came in this morning.",
+    "translation_vi": "Dạ, táo rất tươi ạ. Sáng nay mới về."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great. What is the price? How much is one bag?",
+    "translation_vi": "Tốt quá. Giá bao nhiêu vậy? Một túi bao nhiêu tiền?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "The price is five dollars a bag. And the oranges are on sale today. They are only two dollars, not four.",
+    "translation_vi": "Giá là năm đô một túi ạ. Còn cam thì hôm nay đang giảm giá. Chỉ còn hai đô thôi, thay vì bốn đô."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Oh, nice! Cheaper than usual. I will take one bag of apples and two bags of oranges.",
+    "translation_vi": "Ồ, hay quá! Rẻ hơn mọi khi. Tôi lấy một túi táo và hai túi cam."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Here you go. Have a nice day!",
+    "translation_vi": "Dạ được ạ. Của chị đây. Chúc chị một ngày vui vẻ!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thực phẩm còn mới, không bị cũ hay hỏng, như rau, trái cây, thịt, bánh mì. Ví dụ: \"Are these apples fresh?\""
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng giá bao nhiêu tiền. Câu hỏi thường gặp: \"What is the price?\""
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn giá thường ngày. Ví dụ: \"The oranges are on sale today.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn biết bánh mì có phải mới nướng hôm nay không. Bạn hỏi: \"Is this bread ___?\"",
+    "options": [
+     "on sale",
+     "fresh",
+     "price"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, nên dùng để hỏi bánh mì có còn mới không."
+   },
+   {
+    "question_vi": "Bạn thấy một chiếc áo không có nhãn ghi số tiền. Bạn hỏi nhân viên: \"What is the ___ of this shirt?\"",
+    "options": [
+     "price",
+     "fresh",
+     "on sale"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Price\" là giá tiền, nên dùng để hỏi chiếc áo giá bao nhiêu."
+   },
+   {
+    "question_vi": "Hôm nay sữa ở siêu thị bán rẻ hơn ngày thường. Nhân viên nói: \"The milk is ___ today.\"",
+    "options": [
+     "fresh",
+     "expensive",
+     "on sale"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, đúng với việc sữa rẻ hơn ngày thường."
+   }
+  ]
+ }
+}

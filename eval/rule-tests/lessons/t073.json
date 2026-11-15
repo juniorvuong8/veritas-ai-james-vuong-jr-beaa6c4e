@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t073",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "medium",
+   "order",
+   "for here"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Xin chào! Chị muốn order gì ạ? Chị nói món, em ghi lại rồi làm nước cho chị liền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chào em, chị lấy một ly trà sữa nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị lấy ly nhỏ, medium hay ly lớn ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Medium thôi em, không nhỏ quá mà cũng không lớn quá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị uống for here hay mang đi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "For here em, chị ngồi ở cái bàn gần cửa sổ kia.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, vậy order của chị là một ly trà sữa medium, uống for here. Chị chờ em một chút nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng khi chọn kích cỡ ly hoặc phần ăn ở giữa nhỏ (small) và lớn (large). Ví dụ: \"A medium coffee, please.\""
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món; đơn gọi món",
+    "usage_vi": "Dùng như động từ khi bạn nói món mình muốn mua, hoặc như danh từ để chỉ những món bạn đã gọi. Nhân viên thường hỏi \"Can I take your order?\""
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại chỗ",
+    "usage_vi": "Dùng để trả lời khi nhân viên hỏi bạn ăn uống ở quán hay mang đi. Ngược lại với \"to go\" (mang đi)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đã xem menu xong và muốn báo với nhân viên rằng bạn sẵn sàng gọi món. Bạn nói: \"Em muốn ___ ạ.\" Từ nào phù hợp?",
+    "options": [
+     "for here",
+     "order",
+     "medium"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, nên dùng khi bạn muốn nói món mình muốn mua."
+   },
+   {
+    "question_vi": "Ở quán nước ép, bạn không muốn ly nhỏ nhưng cũng không muốn ly lớn. Bạn chọn cỡ nào?",
+    "options": [
+     "medium",
+     "order",
+     "large"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa ly nhỏ và ly lớn."
+   },
+   {
+    "question_vi": "Bạn mua một cái bánh ngọt và muốn ngồi ăn luôn ở tiệm. Nhân viên hỏi bạn ăn ở đây hay mang đi, bạn trả lời thế nào?",
+    "options": [
+     "to go",
+     "medium",
+     "for here"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại chỗ, còn \"to go\" là mang đi."
+   }
+  ]
+ }
+}

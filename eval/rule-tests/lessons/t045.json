@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t045",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "change",
+   "to go",
+   "receipt"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống mang đi và xin hóa đơn ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! What can I get for you?",
+    "translation_vi": "Chào chị! Chị muốn dùng gì ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "One iced coffee, please. Can I have it to go? I need to catch my bus.",
+    "translation_vi": "Cho mình một ly cà phê đá nhé. Cho mình mang đi được không? Mình phải bắt xe buýt."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure, I'll put a lid on the cup so you can carry it. That's three dollars.",
+    "translation_vi": "Dạ được, em sẽ đậy nắp ly để chị cầm đi cho tiện. Của chị ba đô ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here's five dollars.",
+    "translation_vi": "Gửi bạn năm đô nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Thank you. Here's your change, two dollars back.",
+    "translation_vi": "Cảm ơn chị. Em gửi lại chị tiền thối, hai đô ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Can I also get a receipt? My company pays for my coffee, so I need a paper with the price on it.",
+    "translation_vi": "Cho mình xin thêm hóa đơn được không? Công ty trả tiền cà phê cho mình, nên mình cần tờ giấy có ghi giá tiền."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Of course. Here's your receipt. It shows what you paid. Have a nice day!",
+    "translation_vi": "Dạ được ạ. Hóa đơn của chị đây, trên đó có ghi số tiền chị đã trả. Chúc chị một ngày vui vẻ!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa trả lại",
+    "usage_vi": "Dùng khi bạn đưa nhiều tiền hơn giá món hàng và người bán trả lại phần dư. Người bán thường nói \"Here's your change.\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi gọi đồ ăn, đồ uống mà bạn muốn mang ra ngoài thay vì dùng tại quán. Bạn có thể nói \"Can I have it to go?\""
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng để xin tờ giấy ghi lại món bạn đã mua và số tiền bạn đã trả. Bạn có thể nói \"Can I get a receipt, please?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một cái bánh mì giá 4 đô và đưa cho thu ngân 10 đô. Thu ngân trả lại bạn 6 đô. Số tiền 6 đô đó gọi là gì?",
+    "options": [
+     "receipt",
+     "change",
+     "to go"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Change\" là tiền thối, tức phần tiền dư mà người bán trả lại cho bạn."
+   },
+   {
+    "question_vi": "Bạn mua trà ở quán và muốn mang ra công viên uống. Bạn nói: \"Can I get it ___?\" Chọn từ phù hợp.",
+    "options": [
+     "to go",
+     "change",
+     "for here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, còn \"for here\" nghĩa là dùng tại quán."
+   },
+   {
+    "question_vi": "Bạn mua một đôi giày và muốn giữ tờ giấy ghi giá tiền để sau này đổi trả. Bạn cần xin cái gì?",
+    "options": [
+     "change",
+     "menu",
+     "receipt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Receipt\" là hóa đơn, tờ giấy ghi lại món bạn đã mua và số tiền bạn đã trả."
+   }
+  ]
+ }
+}

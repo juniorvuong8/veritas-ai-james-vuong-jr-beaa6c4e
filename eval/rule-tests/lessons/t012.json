@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "t012",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "headache",
+   "fever",
+   "sore throat",
+   "insurance"
+  ],
+  "custom": [
+   "sốt"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Y tá",
+    "text": "Hello. What is wrong today?",
+    "translation_vi": "Chào bạn. Hôm nay bạn bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "My head hurts a lot. I have a headache.",
+    "translation_vi": "Đầu tôi đau lắm. Tôi bị đau đầu."
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Anything else? Does it hurt when you eat or drink?",
+    "translation_vi": "Còn gì nữa không? Bạn có bị đau khi ăn hoặc uống không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, my throat hurts when I eat. I have a sore throat. And my body feels very hot.",
+    "translation_vi": "Có, họng tôi đau khi ăn. Tôi bị đau họng. Người tôi cũng thấy rất nóng."
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Let me check. Your temperature is 39 degrees. That is high. You have a fever.",
+    "translation_vi": "Để tôi đo xem. Nhiệt độ của bạn là 39 độ. Cao đấy. Bạn bị sốt rồi."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Oh no. Can the doctor see me today?",
+    "translation_vi": "Ôi không. Hôm nay bác sĩ khám cho tôi được không?"
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Yes. Do you have insurance? With insurance, you pay less for the visit.",
+    "translation_vi": "Được. Bạn có bảo hiểm không? Có bảo hiểm thì bạn trả ít tiền khám hơn."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, here is my insurance card.",
+    "translation_vi": "Có, thẻ bảo hiểm của tôi đây."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu",
+    "usage_vi": "Dùng khi đầu bạn bị đau. Thường nói: \"I have a headache.\""
+   },
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi nhiệt độ cơ thể cao hơn bình thường. Thường nói: \"I have a fever.\""
+   },
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng",
+    "usage_vi": "Dùng khi họng bị đau, nhất là lúc nuốt, ăn hoặc nói. Thường nói: \"I have a sore throat.\""
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dùng khi nói về bảo hiểm giúp bạn trả bớt tiền khám chữa bệnh. Lễ tân hay y tá thường hỏi: \"Do you have insurance?\""
+   },
+   {
+    "input": "sốt",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Từ tiếng Anh thông dụng nhất cho \"sốt\" là \"fever\". Khi đi khám hay mua thuốc, bạn nói: \"I have a fever.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn học bài quá khuya, sáng dậy đầu đau nhức. Bạn nói với bác sĩ: \"I have a ___.\"",
+    "options": [
+     "fever",
+     "headache",
+     "sore throat"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với việc đầu bạn bị đau nhức."
+   },
+   {
+    "question_vi": "Bạn đo nhiệt độ cho em bé và thấy 38,5 độ. Bạn gọi cho bác sĩ và nói: \"My baby has a ___.\"",
+    "options": [
+     "fever",
+     "insurance",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Nhiệt độ cơ thể cao là bị sốt, tiếng Anh là \"fever\"."
+   },
+   {
+    "question_vi": "Bạn hát karaoke cả tối, hôm sau nuốt nước thấy họng rất đau. Bạn nói với bác sĩ: \"I have a ___.\"",
+    "options": [
+     "headache",
+     "insurance",
+     "sore throat"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Sore throat\" nghĩa là đau họng, đúng khi bạn nuốt thấy đau."
+   },
+   {
+    "question_vi": "Ở quầy lễ tân của phòng khám, nhân viên muốn biết bạn có thẻ giúp trả bớt tiền khám không. Họ hỏi: \"Do you have ___?\"",
+    "options": [
+     "headache",
+     "fever",
+     "insurance"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Insurance\" là bảo hiểm, thứ giúp bạn trả ít tiền khám hơn."
+   },
+   {
+    "question_vi": "Bạn bị sốt và vào hiệu thuốc để mua thuốc hạ sốt. Bạn hỏi dược sĩ: \"Do you have medicine for a ___?\"",
+    "options": [
+     "sore throat",
+     "fever",
+     "headache"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Sốt\" trong tiếng Anh là \"fever\", nên bạn hỏi thuốc cho \"a fever\"."
+   }
+  ]
+ }
+}

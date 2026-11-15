@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t100",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "fever",
+   "sore throat",
+   "medicine",
+   "headache"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ khi bị cảm",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, hôm nay chị thấy trong người thế nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em bị headache từ hôm qua, cứ nhức hai bên thái dương suốt, không làm việc được.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị có bị fever không? Để tôi lấy nhiệt kế đo nhiệt độ cho chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, người em nóng lắm, đêm qua còn run lạnh nữa. Em cũng bị sore throat, nuốt nước bọt là thấy rát cổ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Nhiệt độ của chị là 38,5 độ, họng cũng hơi đỏ. Tôi sẽ kê medicine cho chị, chị uống ngày ba lần sau bữa ăn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em uống medicine này khoảng bao lâu thì khỏi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Khoảng ba ngày là đỡ. Chị nhớ uống nhiều nước và nghỉ ngơi nhiều nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi cơ thể bị nóng hơn bình thường vì ốm. Thường nói \"I have a fever\" (Tôi bị sốt)."
+   },
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng, rát cổ",
+    "usage_vi": "Dùng khi cổ họng bị đau hoặc rát, nhất là lúc nuốt hay nói. Thường nói \"I have a sore throat\"."
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (để chữa bệnh)",
+    "usage_vi": "Dùng để nói về thuốc uống hoặc thuốc bác sĩ kê khi bị ốm. Ví dụ: \"Take this medicine after meals\" (Uống thuốc này sau bữa ăn)."
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bị đau ở đầu. Thường nói \"I have a headache\" (Tôi bị đau đầu)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Con bạn sờ trán thấy rất nóng, nhiệt kế chỉ 39 độ. Bạn nói với bác sĩ là con bị gì?",
+    "options": [
+     "headache",
+     "medicine",
+     "fever"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fever\" là sốt, khi nhiệt độ cơ thể cao hơn bình thường."
+   },
+   {
+    "question_vi": "Bạn đi hát karaoke cả tối, sáng hôm sau nói chuyện và nuốt đều thấy rát cổ. Bạn bị gì?",
+    "options": [
+     "sore throat",
+     "fever",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Sore throat\" là đau họng, rát cổ khi nói hoặc nuốt."
+   },
+   {
+    "question_vi": "Bạn đến nhà thuốc và muốn mua thứ để uống cho đỡ cảm. Bạn cần mua gì?",
+    "options": [
+     "fever",
+     "medicine",
+     "sore throat"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medicine\" là thuốc, thứ bạn uống để chữa bệnh."
+   },
+   {
+    "question_vi": "Bạn ngồi trước máy tính cả ngày, đến tối thấy nhức đầu. Bạn nói mình bị gì?",
+    "options": [
+     "sore throat",
+     "headache",
+     "medicine"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Headache\" là đau đầu, nhức đầu."
+   }
+  ]
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t099",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "how long",
+   "turn right",
+   "tip",
+   "traffic"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi đến khách sạn",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị, chị đi đến khách sạn Grand đúng không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ đúng rồi. Đi đến đó how long vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Bình thường chỉ mười phút, nhưng giờ này traffic đông lắm, xe kẹt cả đường nên chắc khoảng hai mươi phút chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ không sao. Đến ngã tư phía trước anh turn right giúp em, khách sạn nằm trên con đường phía bên phải đó.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Được, tôi rẽ vào đây nhé... Tới nơi rồi chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây là tiền xe, còn đây là tip em gửi thêm cho anh, cảm ơn anh đã chở em cẩn thận.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Cảm ơn chị nhiều, chúc chị một ngày vui vẻ!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "bao lâu",
+    "usage_vi": "Dùng để hỏi một việc mất bao nhiêu thời gian, ví dụ hỏi tài xế đi đến nơi mất bao lâu."
+   },
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế, bảo họ rẽ sang bên phải ở ngã tư hoặc góc đường."
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền típ",
+    "usage_vi": "Là tiền bạn đưa thêm để cảm ơn tài xế hoặc nhân viên phục vụ, ngoài số tiền phải trả."
+   },
+   {
+    "input": "traffic",
+    "word": "traffic",
+    "meaning_vi": "giao thông, xe cộ trên đường",
+    "usage_vi": "Dùng để nói về tình hình xe cộ trên đường, thường nói khi đường đông hoặc kẹt xe."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn hỏi người qua đường rằng đi bộ đến ga tàu mất bao nhiêu thời gian. Bạn dùng từ nào?",
+    "options": [
+     "tip",
+     "how long",
+     "turn right"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"How long\" dùng để hỏi một việc mất bao lâu."
+   },
+   {
+    "question_vi": "Ngồi trên xe, bạn muốn tài xế rẽ sang bên phải ở cột đèn giao thông tiếp theo. Bạn nói gì?",
+    "options": [
+     "turn right",
+     "traffic",
+     "turn left"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, còn \"turn left\" là rẽ trái."
+   },
+   {
+    "question_vi": "Ăn xong ở nhà hàng, bạn muốn để lại thêm một ít tiền để cảm ơn người phục vụ. Số tiền đó gọi là gì?",
+    "options": [
+     "traffic",
+     "how long",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Tip\" là tiền đưa thêm để cảm ơn người phục vụ."
+   },
+   {
+    "question_vi": "Bạn đến buổi hẹn trễ vì đường có quá nhiều xe và bị kẹt. Bạn nói: \"Sorry, there was a lot of ___.\" Chọn từ đúng.",
+    "options": [
+     "tip",
+     "traffic",
+     "turn right"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Traffic\" chỉ xe cộ trên đường, \"a lot of traffic\" nghĩa là đường rất đông xe."
+   }
+  ]
+ }
+}

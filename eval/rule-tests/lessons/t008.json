@@ -1,0 +1,113 @@
+{
+ "case": {
+  "id": "t008",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "pain",
+   "doctor"
+  ],
+  "custom": [
+   "nurse"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên lễ tân",
+    "text": "Chào chị, hôm nay chị thấy khó chịu ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em bị stomach pain từ tối qua, ăn gì xong cũng thấy nhói.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên lễ tân",
+    "text": "The pain có nặng lắm không chị? Nếu chấm từ 1 đến 10 thì được mấy điểm?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, khoảng 7 ạ, tối qua em ngủ không được luôn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên lễ tân",
+    "text": "Vậy chị ngồi chờ chút nhé. First, a nurse sẽ đo nhiệt độ và huyết áp cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ. Rồi sau đó em gặp the doctor luôn hả chị?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên lễ tân",
+    "text": "Đúng rồi, the doctor sẽ khám bụng và kê thuốc cho chị ở phòng số 2.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em cảm ơn chị nhiều.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng khi nói với bác sĩ hoặc y tá về chỗ bị đau. Thường nói \"I have pain in my...\" hoặc ghép với bộ phận cơ thể như \"stomach pain\", \"back pain\"."
+   },
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Dùng để chỉ người khám bệnh và kê thuốc. Khi muốn được khám, bạn có thể nói \"I want to see a doctor.\""
+   },
+   {
+    "input": "nurse",
+    "word": "nurse",
+    "meaning_vi": "y tá",
+    "usage_vi": "Dùng để chỉ người chăm sóc bệnh nhân, như đo nhiệt độ, đo huyết áp, tiêm thuốc. Ở phòng khám, y tá thường gặp bạn trước khi bác sĩ khám."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị ngã xe và đầu gối rất đau. Bạn nói với bác sĩ: \"I have ___ in my knee.\" Từ nào phù hợp?",
+    "options": [
+     "nurse",
+     "pain",
+     "doctor"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pain\" nghĩa là cơn đau, dùng để nói chỗ nào trên cơ thể đang bị đau."
+   },
+   {
+    "question_vi": "Con trai bạn bị sốt, bạn muốn có người khám và kê thuốc cho bé. Bạn hỏi lễ tân: \"Can my son see a ___ today?\" Từ nào phù hợp?",
+    "options": [
+     "doctor",
+     "pain",
+     "ticket"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Doctor\" là bác sĩ, người khám bệnh và kê thuốc cho bệnh nhân."
+   },
+   {
+    "question_vi": "Ở bệnh viện, có người đến tiêm thuốc và thay băng vết thương cho bạn mỗi ngày. Người đó thường là a ___. Từ nào phù hợp?",
+    "options": [
+     "pain",
+     "doctor",
+     "nurse"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Nurse\" là y tá, người chăm sóc bệnh nhân hằng ngày như tiêm thuốc và thay băng."
+   }
+  ]
+ }
+}

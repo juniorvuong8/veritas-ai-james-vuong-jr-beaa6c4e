@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "t097",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "medium",
+   "menu",
+   "for here"
+  ],
+  "custom": [
+   "tiền thừa"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Xin chào chị! Đây là menu, chị xem có những đồ uống gì và giá bao nhiêu rồi gọi nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị một ly cà phê sữa đá nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị lấy ly nhỏ, ly medium hay ly lớn ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị lấy ly medium, không cần ly lớn đâu em.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị 4 đô rưỡi. Chị ngồi uống for here hay mang đi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị ngồi lại quán uống, for here nhé. Gửi em 10 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, em gửi lại chị change 5 đô rưỡi, chị đếm lại giúp em nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đủ rồi, cảm ơn em nhé!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng khi chọn kích cỡ đồ uống hoặc đồ ăn, nằm giữa \"small\" (nhỏ) và \"large\" (lớn). Ví dụ: \"A medium coffee, please.\""
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng để chỉ danh sách món ăn, đồ uống kèm giá ở quán. Bạn có thể nói \"Can I see the menu?\" để xin xem thực đơn."
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại quán",
+    "usage_vi": "Dùng khi bạn muốn ngồi lại quán để ăn uống, ngược với \"to go\" (mang đi). Nhân viên thường hỏi \"For here or to go?\""
+   },
+   {
+    "input": "tiền thừa",
+    "word": "change",
+    "meaning_vi": "tiền thừa, tiền thối lại",
+    "usage_vi": "Dùng để chỉ số tiền người bán trả lại khi bạn đưa nhiều hơn giá. Ví dụ: \"Here is your change.\" (Tiền thừa của bạn đây.)"
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua trà sữa và muốn một ly không quá nhỏ cũng không quá lớn. Bạn chọn cỡ nào?",
+    "options": [
+     "small",
+     "medium",
+     "large"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa \"small\" (nhỏ) và \"large\" (lớn)."
+   },
+   {
+    "question_vi": "Bạn vào một nhà hàng và muốn biết ở đây có món gì, giá bao nhiêu. Bạn xin nhân viên cái gì?",
+    "options": [
+     "change",
+     "medium",
+     "menu"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Menu\" là thực đơn, nơi ghi các món ăn và giá tiền."
+   },
+   {
+    "question_vi": "Bạn mua một cái bánh và muốn ngồi ăn luôn ở tiệm. Nhân viên hỏi \"For here or to go?\". Bạn trả lời thế nào?",
+    "options": [
+     "for here",
+     "to go",
+     "medium"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại quán, còn \"to go\" là mang đi."
+   },
+   {
+    "question_vi": "Bạn mua bánh mì giá 3 đô và đưa người bán 5 đô. Người bán trả lại bạn 2 đô. Số tiền 2 đô đó gọi là gì?",
+    "options": [
+     "menu",
+     "change",
+     "for here"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Change\" là tiền thừa, tức số tiền người bán trả lại khi bạn đưa nhiều hơn giá."
+   }
+  ]
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t030",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "frozen",
+   "cash",
+   "price"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị cần em giúp gì không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em ơi, chị muốn mua cá về cất trong ngăn đá để ăn dần. Có frozen fish không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có ạ, frozen fish ở trong tủ đông cuối dãy số 5. Cá còn cứng và lạnh lắm, về nhà chị cất ngay vào ngăn đá nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Còn túi gạo này, what is the price? Chị không thấy ghi bao nhiêu tiền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, the price is twelve dollars ạ. Chị nhìn con số ghi trên kệ ngay bên dưới nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị quên mang thẻ rồi. Can I pay in cash? Chị có tiền giấy với tiền xu đây.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, cash is fine ạ. Chị cứ đếm tiền đưa cho bạn thu ngân ở quầy phía trước là được.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để nói về thực phẩm được làm lạnh cứng và bán trong tủ đông, ví dụ \"frozen fish\" hay \"frozen pizza\"."
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi bạn trả bằng tiền giấy hoặc tiền xu thay vì thẻ. Câu hay dùng: \"Can I pay in cash?\""
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng bao nhiêu tiền. Câu hay dùng: \"What is the price?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy kem và pizza được bán trong tủ đông, món nào cũng rất lạnh và cứng. Những món này là loại thực phẩm gì?",
+    "options": [
+     "fresh",
+     "cash",
+     "frozen"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Frozen\" là đông lạnh, dùng cho thực phẩm được cất trong tủ đông nên lạnh và cứng."
+   },
+   {
+    "question_vi": "Máy quẹt thẻ ở cửa hàng bị hỏng, người bán bảo bạn trả bằng tiền giấy. Bạn nói: \"OK, I will pay in ___.\"",
+    "options": [
+     "cash",
+     "price",
+     "card"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cash\" là tiền mặt, tức là tiền giấy và tiền xu, nên đây là đáp án đúng khi không dùng thẻ được."
+   },
+   {
+    "question_vi": "Bạn cầm một chai dầu ăn nhưng không biết nó bao nhiêu tiền. Bạn hỏi nhân viên: \"What is the ___ of this oil?\"",
+    "options": [
+     "frozen",
+     "price",
+     "cash"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Price\" là giá tiền, nên bạn dùng từ này để hỏi một món hàng có giá bao nhiêu."
+   }
+  ]
+ }
+}

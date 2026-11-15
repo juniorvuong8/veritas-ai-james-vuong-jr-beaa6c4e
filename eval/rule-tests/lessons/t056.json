@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t056",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "headache",
+   "medicine",
+   "pain",
+   "pharmacy"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ vì bị nhức đầu",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị. Hôm nay chị thấy không khỏe chỗ nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em có a bad headache, cả cái đầu nhức suốt từ sáng tới giờ ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị chỉ cho tôi chỗ khó chịu nhất nhé. Where is the pain, phía trước hay phía sau đầu?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, the pain is here, ở ngay trán, nhói lắm bác sĩ ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị chỉ bị cảm nhẹ thôi. Tôi sẽ give you some medicine, chị uống hai viên sau bữa ăn là đỡ nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, vậy em lấy medicine ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị mang tờ toa này ra the pharmacy ở góc đường, người ta sẽ đưa đúng loại cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em đi the pharmacy ngay. Thank you, bác sĩ!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "chứng đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bạn bị đau ở đầu. Thường nói \"I have a headache\" (Tôi bị nhức đầu)."
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (để chữa bệnh)",
+    "usage_vi": "Dùng để nói về thuốc uống hoặc thuốc chữa bệnh nói chung, ví dụ \"Take this medicine after meals\" (Uống thuốc này sau bữa ăn)."
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng khi mô tả chỗ bị đau trên cơ thể với bác sĩ, ví dụ \"I have pain in my knee\" (Tôi bị đau ở đầu gối)."
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "nhà thuốc, hiệu thuốc",
+    "usage_vi": "Dùng để chỉ nơi bán thuốc hoặc nơi bạn mang toa bác sĩ đến lấy thuốc, ví dụ \"Where is the pharmacy?\" (Nhà thuốc ở đâu?)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn học bài khuya quá nên sáng dậy thấy nhức đầu. Bạn nói với bạn cùng phòng: \"I have a ...\"",
+    "options": [
+     "pharmacy",
+     "headache",
+     "medicine"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Headache\" nghĩa là nhức đầu, đúng với cảm giác đau ở đầu của bạn."
+   },
+   {
+    "question_vi": "Bạn bị ho và muốn mua thứ gì đó để uống cho khỏi. Bạn hỏi nhân viên: \"Do you have ... for a cough?\"",
+    "options": [
+     "medicine",
+     "pain",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Medicine\" là thuốc, thứ bạn cần mua để chữa ho."
+   },
+   {
+    "question_vi": "Bạn bị ngã xe và đầu gối rất đau. Bác sĩ hỏi bạn bị sao, bạn chỉ vào đầu gối và nói: \"I have ... in my knee.\"",
+    "options": [
+     "pharmacy",
+     "medicine",
+     "pain"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng để nói chỗ nào trên cơ thể bị đau."
+   },
+   {
+    "question_vi": "Bạn có toa thuốc của bác sĩ và cần tìm nơi để lấy thuốc. Bạn hỏi người đi đường: \"Where is the ...?\"",
+    "options": [
+     "headache",
+     "pharmacy",
+     "hospital"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pharmacy\" là nhà thuốc, nơi bạn mang toa đến để mua thuốc."
+   }
+  ]
+ }
+}

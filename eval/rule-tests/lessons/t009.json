@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t009",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "receipt",
+   "to go",
+   "iced",
+   "refill"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Would you like a hot coffee or an iced coffee?",
+    "translation_vi": "Chào bạn! Bạn muốn cà phê nóng hay cà phê đá?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Iced, please. It's very hot outside, so I want a cold drink.",
+    "translation_vi": "Cho mình cà phê đá nhé. Ngoài trời nóng quá nên mình muốn uống gì đó lạnh."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. For here or to go?",
+    "translation_vi": "Vâng. Bạn uống ở đây hay mang đi?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "For here. I want to sit by the window. Can I get a refill later?",
+    "translation_vi": "Mình uống ở đây. Mình muốn ngồi cạnh cửa sổ. Lát nữa mình xin thêm một ly được không?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes. When your cup is empty, bring it back and we fill it again for free.",
+    "translation_vi": "Được ạ. Khi ly của bạn hết, bạn mang lại đây, bọn mình sẽ rót đầy lại miễn phí."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great! And can I have the receipt, please?",
+    "translation_vi": "Tuyệt quá! Cho mình xin hóa đơn luôn nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Of course. Here is the paper that shows what you paid.",
+    "translation_vi": "Dạ được. Đây là tờ giấy ghi số tiền bạn đã trả ạ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng khi muốn xin tờ giấy ghi món đã mua và số tiền đã trả. Câu thường dùng: \"Can I have the receipt, please?\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi gọi đồ ăn hoặc đồ uống để mang ra ngoài, không ngồi lại quán. Nhân viên thường hỏi \"For here or to go?\" và bạn trả lời \"To go, please.\""
+   },
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, lạnh",
+    "usage_vi": "Đặt trước tên đồ uống để nói bạn muốn uống lạnh với đá, ví dụ \"iced coffee\", \"iced tea\". Từ trái nghĩa thường gặp là \"hot\"."
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, châm thêm (ly mới)",
+    "usage_vi": "Dùng khi ly đã hết và bạn muốn được rót đầy lại, thường ở quán cà phê hoặc nhà hàng. Câu thường dùng: \"Can I get a refill?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một cái áo và muốn giữ tờ giấy ghi số tiền đã trả để sau này đổi hàng. Bạn nói: \"Can I have the ___, please?\"",
+    "options": [
+     "receipt",
+     "refill",
+     "iced"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Receipt\" là tờ hóa đơn ghi món đã mua và số tiền đã trả, nên dùng để đổi hàng."
+   },
+   {
+    "question_vi": "Bạn mua trà sữa và muốn mang về văn phòng uống. Bạn nói: \"A milk tea ___, please.\"",
+    "options": [
+     "iced",
+     "refill",
+     "to go"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, không uống tại quán."
+   },
+   {
+    "question_vi": "Trời rất nóng và bạn muốn một ly trà lạnh có đá. Bạn nói: \"I'd like an ___ tea.\"",
+    "options": [
+     "to go",
+     "iced",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" đặt trước tên đồ uống để chỉ đồ uống lạnh có đá."
+   },
+   {
+    "question_vi": "Bạn đang ăn ở nhà hàng, ly nước ngọt đã hết và bạn muốn được rót đầy lại. Bạn hỏi: \"Can I get a ___?\"",
+    "options": [
+     "refill",
+     "receipt",
+     "to go"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Refill\" là xin rót thêm cho ly đã hết."
+   }
+  ]
+ }
+}

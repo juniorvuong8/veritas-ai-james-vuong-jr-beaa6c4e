@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t044",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "sore throat",
+   "doctor",
+   "headache"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Chào chị, hôm nay chị đến phòng khám vì chuyện gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em muốn see a doctor. Em bị ốm từ hôm qua.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Dạ được, the doctor sẽ khám bệnh cho chị lúc 10 giờ. Chị thấy khó chịu ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Em có a sore throat, nuốt nước bọt rất đau, nói chuyện cũng khó.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Chị còn thấy khó chịu chỗ nào khác nữa không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em còn bị a bad headache, cả vùng trán và hai bên thái dương nhức suốt buổi sáng.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Dạ, chị ngồi đợi một chút, the doctor sẽ gọi tên chị vào phòng khám nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng",
+    "usage_vi": "Dùng khi cổ họng bị đau, nhất là lúc nuốt hoặc nói. Thường nói: \"I have a sore throat.\""
+   },
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Dùng để chỉ người khám và chữa bệnh. Khi muốn được khám, bạn nói: \"I want to see a doctor.\""
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bị đau hoặc nhức ở đầu. Thường nói: \"I have a headache.\" Nếu đau nhiều thì nói \"a bad headache\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn bánh mì và thấy cổ họng đau rát khi nuốt. Bạn nói với dược sĩ: \"I have a ___.\"",
+    "options": [
+     "headache",
+     "sore throat",
+     "doctor"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Sore throat\" là đau họng, đúng với cảm giác đau khi nuốt."
+   },
+   {
+    "question_vi": "Bạn bị sốt cao ở khách sạn và muốn có người khám bệnh cho mình. Bạn nói với nhân viên khách sạn: \"I need to see a ___.\"",
+    "options": [
+     "sore throat",
+     "headache",
+     "doctor"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Doctor\" là bác sĩ, người khám và chữa bệnh cho bạn."
+   },
+   {
+    "question_vi": "Bạn làm việc trên máy tính cả ngày và thấy trán nhức nhối. Bạn nói với đồng nghiệp: \"I have a ___.\"",
+    "options": [
+     "headache",
+     "sore throat",
+     "toothache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Headache\" là đau đầu, đúng với cảm giác nhức ở trán."
+   }
+  ]
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "t048",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "doctor",
+   "pain"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đến phòng khám gặp bác sĩ",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Hello! How can I help you today?",
+    "translation_vi": "Xin chào! Hôm nay tôi có thể giúp gì cho bạn?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Hi. I feel sick. Can I see a doctor?",
+    "translation_vi": "Chào chị. Tôi thấy không khỏe. Tôi có thể gặp bác sĩ không?"
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Sure. The doctor can check you in ten minutes. What is wrong?",
+    "translation_vi": "Được chứ. Bác sĩ có thể khám cho bạn sau mười phút nữa. Bạn bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have pain in my stomach. It hurts a lot.",
+    "translation_vi": "Tôi bị đau bụng. Đau lắm."
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "I'm sorry. Do you have an allergy? Some medicine can make people sick or itchy.",
+    "translation_vi": "Tôi rất tiếc. Bạn có bị dị ứng gì không? Có một số loại thuốc làm người ta bị mệt hoặc ngứa."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes. I have an allergy to some medicine. When I take it, my skin gets red and itchy.",
+    "translation_vi": "Có. Tôi bị dị ứng với một số loại thuốc. Khi uống vào, da tôi bị đỏ và ngứa."
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Thank you. I will tell the doctor. Please sit down and wait.",
+    "translation_vi": "Cảm ơn bạn. Tôi sẽ báo cho bác sĩ. Mời bạn ngồi đợi nhé."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Okay, thank you.",
+    "translation_vi": "Vâng, cảm ơn chị."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "sự dị ứng",
+    "usage_vi": "Dùng khi cơ thể phản ứng xấu (ngứa, nổi mẩn, khó thở) với một thứ như thuốc hay thức ăn. Thường nói \"I have an allergy to...\" (Tôi bị dị ứng với...)."
+   },
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Dùng để chỉ người khám và chữa bệnh. Khi muốn được khám, bạn nói \"Can I see a doctor?\" (Tôi có thể gặp bác sĩ không?)."
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói chỗ nào trên cơ thể bị đau. Thường nói \"I have pain in my...\" (Tôi bị đau ở...)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn tôm xong thì bị nổi mẩn đỏ và ngứa. Bạn muốn nói với người phục vụ ở nhà hàng: \"I have a shrimp ___.\" Từ nào phù hợp?",
+    "options": [
+     "pain",
+     "allergy",
+     "doctor"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Allergy\" là dị ứng, nên \"I have a shrimp allergy\" nghĩa là tôi bị dị ứng tôm."
+   },
+   {
+    "question_vi": "Con trai bạn bị sốt cao cả đêm. Bạn gọi điện đến phòng khám và nói: \"My son needs to see a ___.\" Từ nào phù hợp?",
+    "options": [
+     "allergy",
+     "pain",
+     "doctor"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Doctor\" là bác sĩ, người khám bệnh cho con bạn."
+   },
+   {
+    "question_vi": "Bạn bị ngã xe đạp và đầu gối rất đau. Bạn nói với y tá: \"I have ___ in my knee.\" Từ nào phù hợp?",
+    "options": [
+     "pain",
+     "doctor",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pain\" là cơn đau, nên \"I have pain in my knee\" nghĩa là tôi bị đau ở đầu gối."
+   }
+  ]
+ }
+}

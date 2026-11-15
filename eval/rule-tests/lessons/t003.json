@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t003",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "stop here",
+   "turn right",
+   "fare",
+   "traffic",
+   "address"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị, chị đi đâu ạ? Chị đọc address cho tôi nhé, số nhà và tên đường để tôi nhập vào bản đồ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, address của tôi là số 25 đường Park Street ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ. Giờ này traffic đông lắm, xe cộ nhiều quá nên mình đi hơi chậm, chị thông cảm nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Không sao ạ. Đến ngã tư phía trước anh turn right giúp tôi, đi về phía có tiệm bánh mì bên tay phải ấy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được. Tới đường Park Street rồi, chị muốn xuống chỗ nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Anh stop here là được, tôi xuống ngay chỗ này. Fare hết bao nhiêu tiền vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, fare là 18 đô, chị trả tiền mặt hay thẻ đều được ạ. Cảm ơn chị!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Nói với tài xế khi bạn muốn xe dừng lại ngay tại chỗ đó để xuống xe."
+   },
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế, thường nói trước khi đến ngã tư hoặc con đường cần rẽ."
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền cước, giá vé đi xe",
+    "usage_vi": "Chỉ số tiền phải trả cho một chuyến taxi, xe buýt hay tàu. Bạn có thể hỏi \"How much is the fare?\"."
+   },
+   {
+    "input": "traffic",
+    "word": "traffic",
+    "meaning_vi": "giao thông, xe cộ trên đường",
+    "usage_vi": "Dùng để nói về lượng xe trên đường, nhất là khi đường đông hoặc kẹt xe làm chuyến đi bị chậm."
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Là số nhà và tên đường của nơi bạn muốn đến. Đưa hoặc đọc cho tài xế khi vừa lên xe."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang ngồi taxi và thấy đã đến đúng cửa khách sạn của mình. Bạn nói gì để tài xế dừng xe?",
+    "options": [
+     "turn right",
+     "stop here",
+     "traffic"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" nghĩa là dừng ở đây, dùng khi bạn muốn xuống xe ngay tại chỗ đó."
+   },
+   {
+    "question_vi": "Bạn đi xe công nghệ và cần xe rẽ vào con đường bên tay phải ở ngã tư tới. Bạn nói gì với tài xế?",
+    "options": [
+     "turn right",
+     "address",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, dùng để chỉ hướng cho tài xế."
+   },
+   {
+    "question_vi": "Bạn đi xe buýt sân bay và muốn biết một chuyến đi tốn bao nhiêu tiền. Bạn hỏi về từ nào?",
+    "options": [
+     "traffic",
+     "address",
+     "fare"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fare\" là tiền cước phải trả cho một chuyến xe."
+   },
+   {
+    "question_vi": "Bạn gọi điện báo bạn sẽ đến muộn vì đường có quá nhiều xe và bị kẹt. Bạn dùng từ nào để nói về chuyện này?",
+    "options": [
+     "fare",
+     "traffic",
+     "turn right"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Traffic\" chỉ xe cộ trên đường, dùng khi đường đông hoặc kẹt xe."
+   },
+   {
+    "question_vi": "Bạn đặt xe trên ứng dụng và cần nhập số nhà, tên đường của nơi muốn đến. Ứng dụng đang hỏi bạn điều gì?",
+    "options": [
+     "fare",
+     "stop here",
+     "address"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Address\" là địa chỉ, gồm số nhà và tên đường của nơi bạn muốn đến."
+   }
+  ]
+ }
+}

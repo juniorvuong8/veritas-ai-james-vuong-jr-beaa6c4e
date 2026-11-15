@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t026",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cash",
+   "bag",
+   "basket",
+   "aisle"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị mua đồ ăn",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị lấy một cái basket ở chỗ này để bỏ đồ vào trong lúc đi chọn hàng nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Em ơi, sữa nằm ở aisle nào vậy?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị đi dọc theo các kệ hàng, tới aisle số 5 thì rẽ vào, sữa nằm trên kệ bên trái ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị lấy đủ đồ rồi. Em tính tiền giúp chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, tổng cộng 12 đô ạ. Chị trả bằng thẻ hay cash ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị trả cash nhé, đây là tờ 20 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, em thối chị 8 đô. Chị có cần bag để đựng đồ mang về nhà không ạ? Mỗi cái 10 xu.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị một cái bag nhé, nhiều đồ quá, chị cầm tay không hết.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi bạn trả bằng tiền giấy hoặc tiền xu thay vì thẻ. Ví dụ: \"I'll pay with cash.\""
+   },
+   {
+    "input": "bag",
+    "word": "bag",
+    "meaning_vi": "túi (đựng đồ)",
+    "usage_vi": "Dùng khi xin túi để đựng đồ mang về lúc thanh toán. Ở nhiều nước, túi siêu thị phải trả thêm tiền."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ (mua hàng)",
+    "usage_vi": "Là giỏ cầm tay của siêu thị để bỏ đồ vào trong lúc đi chọn hàng. Khi thanh toán xong thì bạn trả lại giỏ."
+   },
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ hàng",
+    "usage_vi": "Dùng khi hỏi hoặc chỉ chỗ để hàng trong siêu thị, thường đi kèm số. Ví dụ: \"It's in aisle 5.\" Chú ý: chữ \"s\" không đọc, \"aisle\" đọc giống \"ai-ồ\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn không mang thẻ nên đưa tờ 10 đô cho thu ngân. Bạn nói: \"I'll pay with ___.\" Chọn từ đúng.",
+    "options": [
+     "card",
+     "basket",
+     "cash"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Trả bằng tiền giấy là trả bằng \"cash\", còn \"card\" là trả bằng thẻ."
+   },
+   {
+    "question_vi": "Mua xong, bạn cần một thứ để đựng đồ xách về nhà. Bạn hỏi thu ngân: \"Can I have a ___?\"",
+    "options": [
+     "bag",
+     "aisle",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Bag\" là túi để đựng đồ mang về, còn \"receipt\" chỉ là giấy ghi số tiền đã trả."
+   },
+   {
+    "question_vi": "Vừa vào siêu thị, bạn muốn lấy một thứ có quai cầm để bỏ đồ vào trong lúc đi chọn hàng. Bạn lấy cái gì?",
+    "options": [
+     "cash",
+     "aisle",
+     "basket"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Basket\" là giỏ của siêu thị dùng để đựng đồ trong lúc đi mua."
+   },
+   {
+    "question_vi": "Bạn hỏi chỗ để mì gói. Nhân viên chỉ vào lối đi giữa hai dãy kệ có biển số 3 và nói: \"It's in ___ 3.\"",
+    "options": [
+     "bag",
+     "aisle",
+     "basket"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Aisle\" là lối đi giữa các dãy kệ hàng và thường được đánh số để khách dễ tìm."
+   }
+  ]
+ }
+}

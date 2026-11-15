@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t015",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "turn left",
+   "stop here",
+   "airport",
+   "tip"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị, chị muốn đi đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Anh chở em ra airport nhé, em phải kịp chuyến bay lúc chín giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được. Mà đường thẳng phía trước đang kẹt xe lắm chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy tới ngã tư anh turn left nhé, đi con đường bên tay trái cho nhanh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, mình tới airport rồi, máy bay cất cánh ngay kia kìa. Chị muốn xuống ở cửa nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Anh stop here được rồi, em xuống ngay trước cửa số 2 này.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, tổng cộng là 30 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em gửi anh 35 đô, 5 đô dư là tip em cảm ơn anh đã chạy nhanh nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế, bảo họ rẽ sang bên tay trái. Thường đi kèm vị trí, ví dụ: \"Turn left at the corner.\""
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Nói với tài xế khi bạn muốn xe dừng lại ngay chỗ này để xuống xe. Có thể nói lịch sự hơn: \"Please stop here.\""
+   },
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi nói điểm đến là nơi đi máy bay. Ví dụ khi lên taxi: \"To the airport, please.\""
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền típ",
+    "usage_vi": "Là khoản tiền thêm bạn tự nguyện đưa cho tài xế để cảm ơn, ngoài số tiền cước. Ở nhiều nước nói tiếng Anh, người ta thường cho tip khoảng 10-20%."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang ngồi taxi và nhà bạn nằm ở con đường bên tay trái phía trước. Bạn nói gì với tài xế?",
+    "options": [
+     "stop here",
+     "turn left",
+     "tip"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, dùng khi muốn tài xế rẽ sang đường bên tay trái."
+   },
+   {
+    "question_vi": "Xe đã chạy tới đúng trước cửa khách sạn của bạn. Bạn muốn xuống xe ngay chỗ này, bạn nói gì?",
+    "options": [
+     "stop here",
+     "airport",
+     "turn left"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Stop here\" nghĩa là dừng ở đây, dùng khi muốn tài xế dừng xe ngay vị trí hiện tại."
+   },
+   {
+    "question_vi": "Bạn cần đi đón người thân vừa bay tới thành phố. Bạn bảo tài xế chở bạn đến đâu?",
+    "options": [
+     "tip",
+     "turn left",
+     "airport"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Airport\" là sân bay, nơi máy bay cất cánh và hạ cánh."
+   },
+   {
+    "question_vi": "Tài xế rất thân thiện và giúp bạn mang vali. Bạn muốn đưa thêm vài đô để cảm ơn. Khoản tiền thêm đó gọi là gì?",
+    "options": [
+     "airport",
+     "tip",
+     "stop here"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip\" là tiền boa, khoản tiền thêm bạn đưa cho tài xế để cảm ơn ngoài tiền cước."
+   }
+  ]
+ }
+}

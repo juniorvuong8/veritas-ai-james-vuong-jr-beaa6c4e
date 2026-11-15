@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t087",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "seatbelt",
+   "address",
+   "tip",
+   "stop here",
+   "straight"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi trong thành phố nói tiếng Anh",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị muốn đi đâu ạ? Chị đọc address cho tôi nhé, số nhà và tên đường ấy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, số 25, đường Oak Street ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Được rồi. Chị nhớ thắt seatbelt vào cho an toàn nhé, cái dây ở ngay bên cạnh ghế ấy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em thắt rồi ạ. Mình đi đường nào vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Mình cứ đi straight thôi, không rẽ trái cũng không rẽ phải, khoảng năm phút là tới.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ôi, tới nhà em rồi! Anh stop here giúp em, ngay trước cánh cửa màu xanh kia ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Được, tôi dừng xe rồi đây. Tổng cộng 15 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em gửi anh 20 đô, 5 đô còn lại là tip cho anh, cảm ơn anh đã lái xe cẩn thận ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nói về sợi dây bạn thắt qua người khi ngồi trên xe hơi hoặc máy bay. Tài xế thường nhắc: \"Please put on your seatbelt.\""
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi nói số nhà và tên đường của nơi bạn muốn đến. Khi lên taxi, bạn có thể đọc hoặc đưa address cho tài xế xem."
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền thưởng thêm",
+    "usage_vi": "Dùng để chỉ số tiền bạn đưa thêm ngoài giá phải trả để cảm ơn người phục vụ. Ở nhiều nước nói tiếng Anh, người ta thường cho tip tài xế taxi và nhân viên nhà hàng."
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Dùng khi bạn muốn tài xế dừng xe ngay tại chỗ này. Bạn có thể nói lịch sự: \"Please stop here.\""
+   },
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng, đi thẳng",
+    "usage_vi": "Dùng khi chỉ đường, nghĩa là cứ đi tiếp về phía trước, không rẽ. Người ta hay nói: \"Go straight.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn lên xe buýt du lịch và hướng dẫn viên nhắc mọi người thắt dây qua người cho an toàn. Họ đang nói về cái gì?",
+    "options": [
+     "tip",
+     "seatbelt",
+     "straight"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn, thứ bạn cần thắt khi ngồi trên xe."
+   },
+   {
+    "question_vi": "Người giao đồ ăn gọi điện hỏi số nhà và tên đường để mang đồ tới cho bạn. Họ đang hỏi về điều gì?",
+    "options": [
+     "address",
+     "stop here",
+     "seatbelt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Số nhà và tên đường chính là \"address\", tức là địa chỉ."
+   },
+   {
+    "question_vi": "Ăn xong ở nhà hàng, bạn muốn để lại thêm một ít tiền để cảm ơn người phục vụ. Số tiền thêm đó gọi là gì?",
+    "options": [
+     "address",
+     "straight",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Tiền đưa thêm để cảm ơn người phục vụ gọi là \"tip\"."
+   },
+   {
+    "question_vi": "Bạn đang ngồi xe của một người bạn và thấy cửa hàng bạn cần tới ngay bên đường. Bạn nói gì để bạn ấy dừng xe?",
+    "options": [
+     "straight",
+     "stop here",
+     "tip"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" dùng khi bạn muốn người lái dừng xe ngay tại chỗ đó."
+   },
+   {
+    "question_vi": "Bạn hỏi đường đến ga tàu, và người ta bảo bạn không cần rẽ, cứ đi tiếp về phía trước. Từ nào phù hợp?",
+    "options": [
+     "address",
+     "stop here",
+     "straight"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Straight\" nghĩa là đi thẳng về phía trước mà không rẽ."
+   }
+  ]
+ }
+}

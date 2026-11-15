@@ -1,0 +1,108 @@
+{
+ "case": {
+  "id": "t077",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "refill",
+   "receipt"
+  ],
+  "custom": [
+   "hóa đơn"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống và thanh toán ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Ly cà phê của chị hết rồi, chị muốn a refill không ạ? Em rót đầy lại cho chị, không tính thêm tiền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, yes, a refill, please. Cà phê ở đây ngon quá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, cà phê của chị đây ạ. Chị cần gọi thêm gì nữa không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Không, em uống xong rồi. Can I have the bill? Em muốn xem tổng cộng bao nhiêu để trả tiền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, here is your bill. Tổng cộng là 8 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em gửi 10 đô. Cho em xin a receipt luôn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, tiền thối 2 đô của chị đây, và here is your receipt. Tờ giấy này ghi là chị đã trả tiền rồi ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "sự rót đầy lại, ly thêm",
+    "usage_vi": "Dùng khi muốn được rót thêm đồ uống vào ly đã hết, ví dụ: \"Can I get a refill?\". Nhiều quán ở nước ngoài cho refill miễn phí."
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "biên lai, phiếu tính tiền đã thanh toán",
+    "usage_vi": "Là tờ giấy nhận được sau khi đã trả tiền, chứng minh bạn đã thanh toán. Nói \"Can I have a receipt, please?\" để xin."
+   },
+   {
+    "input": "hóa đơn",
+    "word": "bill",
+    "meaning_vi": "hóa đơn, phiếu ghi số tiền phải trả",
+    "usage_vi": "Dùng khi ăn uống xong và muốn biết phải trả bao nhiêu, trước khi trả tiền. Nói \"Can I have the bill, please?\" để gọi tính tiền."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang ăn ở nhà hàng, ly trà đá đã hết và bạn muốn nhân viên rót thêm cho mình. Bạn nói: \"Can I get a ___, please?\"",
+    "options": [
+     "bill",
+     "refill",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Refill\" là xin rót thêm đồ uống vào ly đã hết."
+   },
+   {
+    "question_vi": "Bạn vừa trả tiền mua đồ ở cửa hàng và cần tờ giấy chứng minh đã thanh toán để nộp cho công ty. Bạn hỏi xin cái gì?",
+    "options": [
+     "receipt",
+     "refill",
+     "menu"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Receipt\" là tờ giấy nhận sau khi trả tiền, chứng minh bạn đã thanh toán."
+   },
+   {
+    "question_vi": "Bạn ăn tối xong ở nhà hàng và muốn xem tổng cộng phải trả bao nhiêu tiền. Bạn nói: \"Can I have the ___, please?\"",
+    "options": [
+     "refill",
+     "menu",
+     "bill"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Bill\" là hóa đơn ghi số tiền bạn cần trả trước khi thanh toán."
+   }
+  ]
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t059",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn left",
+   "tip",
+   "straight",
+   "stop here",
+   "airport"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Where do you want to go?",
+    "translation_vi": "Chào anh! Anh muốn đi đâu ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "The airport, please. My plane leaves at six.",
+    "translation_vi": "Cho tôi ra sân bay nhé. Máy bay của tôi cất cánh lúc sáu giờ."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. At this corner, do I go straight or turn?",
+    "translation_vi": "Dạ được. Tới góc này tôi chạy thẳng hay rẽ ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Go straight. Don't turn here. At the next light, turn left. The road to the airport is on the left side.",
+    "translation_vi": "Anh cứ chạy thẳng, đừng rẽ ở đây. Tới đèn giao thông tiếp theo thì rẽ trái. Đường ra sân bay nằm bên tay trái."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "We are at the airport now. Which door do you need?",
+    "translation_vi": "Mình tới sân bay rồi. Anh cần xuống ở cửa nào ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Door 3. Please stop here, next to it. I can get out now.",
+    "translation_vi": "Cửa số 3. Anh dừng ở đây nhé, ngay cạnh cửa. Tôi xuống được rồi."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. That's 18 dollars.",
+    "translation_vi": "Dạ. Hết 18 đô ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here is 20 dollars. Keep the extra 2 dollars as a tip. Thank you for a good ride!",
+    "translation_vi": "Đây là 20 đô. Anh cứ giữ 2 đô dư, coi như tiền cảm ơn nhé. Cảm ơn anh đã chở tôi chu đáo!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng để chỉ đường cho tài xế khi cần rẽ sang bên trái. Thường nói kèm vị trí, ví dụ: \"Turn left at the next light.\""
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền típ",
+    "usage_vi": "Là khoản tiền bạn đưa thêm ngoài giá cước để cảm ơn tài xế. Ở nhiều nước nói tiếng Anh, đưa tip cho tài xế là chuyện bình thường."
+   },
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng (đi thẳng)",
+    "usage_vi": "Dùng khi muốn tài xế tiếp tục chạy thẳng, không rẽ. Câu thường gặp: \"Go straight.\""
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Dùng khi bạn muốn xe dừng lại ngay chỗ hiện tại để xuống. Nên thêm \"please\" cho lịch sự: \"Please stop here.\""
+   },
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Là nơi máy bay cất cánh và hạ cánh. Khi lên taxi, bạn có thể nói: \"The airport, please.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy khách sạn của mình nằm ở con đường bên trái phía trước. Bạn nói gì với tài xế để xe rẽ vào đó?",
+    "options": [
+     "stop here",
+     "turn left",
+     "airport"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, dùng khi đường cần đi nằm bên tay trái."
+   },
+   {
+    "question_vi": "Tài xế giúp bạn mang chiếc vali nặng vào nhà. Bạn đưa thêm một ít tiền ngoài giá cước để cảm ơn. Khoản tiền đó gọi là gì?",
+    "options": [
+     "receipt",
+     "change",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Tip\" là tiền boa, khoản tiền đưa thêm để cảm ơn người phục vụ."
+   },
+   {
+    "question_vi": "Tài xế hỏi có cần rẽ không, nhưng nơi bạn muốn đến nằm ngay trên con đường này, phía trước. Bạn nói: \"Go ___.\"",
+    "options": [
+     "straight",
+     "turn left",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Go straight\" nghĩa là cứ chạy thẳng, không cần rẽ."
+   },
+   {
+    "question_vi": "Xe đang chạy ngang qua cửa hàng bạn muốn ghé. Bạn muốn xe dừng lại ngay chỗ này để xuống. Bạn nói gì?",
+    "options": [
+     "go straight",
+     "stop here",
+     "turn left"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" nghĩa là dừng ở đây, dùng khi bạn muốn xuống xe ngay tại chỗ."
+   },
+   {
+    "question_vi": "Tối nay bạn có chuyến bay về Việt Nam. Bạn lên taxi và nói: \"Take me to the ___, please.\"",
+    "options": [
+     "hotel",
+     "station",
+     "airport"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Airport\" là sân bay, nơi bạn cần đến để đi máy bay."
+   }
+  ]
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t080",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "allergy",
+   "headache",
+   "fever",
+   "prescription"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, hôm nay chị thấy không khỏe ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em bị a bad headache từ hôm qua, đầu em cứ đau nhức suốt bác sĩ ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Để tôi đo nhiệt độ xem người chị có nóng không, có bị a fever không nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, đêm qua em thấy người nóng ran mà lại hơi lạnh run ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Ừ, 38 độ rồi, chị có a fever thật. Chị có allergy to any medicine không? Có thuốc nào uống vào là bị ngứa hay nổi mẩn không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, em có an allergy to penicillin, uống vào là nổi mẩn đỏ khắp người ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Vậy tôi sẽ viết a prescription cho loại thuốc khác. Chị mang tờ giấy này ra nhà thuốc để họ bán thuốc cho chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em cảm ơn bác sĩ. Em sẽ mang the prescription ra nhà thuốc ngay ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể bạn phản ứng xấu (ngứa, nổi mẩn, khó thở) với một loại thuốc, thức ăn hay thứ gì đó. Thường nói: \"I have an allergy to ...\"."
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu",
+    "usage_vi": "Dùng khi bạn bị đau ở đầu. Thường nói: \"I have a headache.\""
+   },
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi nhiệt độ cơ thể cao hơn bình thường, người nóng. Thường nói: \"I have a fever.\""
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc (giấy bác sĩ kê thuốc)",
+    "usage_vi": "Là tờ giấy bác sĩ viết tên thuốc cho bạn, bạn mang ra nhà thuốc để mua. Nhiều loại thuốc ở nước ngoài phải có prescription mới mua được."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Mỗi lần ăn tôm là bạn bị ngứa và nổi mẩn. Bạn nói với bác sĩ: \"I have an ___ to shrimp.\" Từ nào đúng?",
+    "options": [
+     "fever",
+     "allergy",
+     "headache"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Allergy\" là dị ứng, đúng khi cơ thể bị ngứa, nổi mẩn vì một loại thức ăn như tôm."
+   },
+   {
+    "question_vi": "Bạn thức khuya học bài, sáng dậy thấy đầu đau nhức. Bạn nói với bạn cùng phòng: \"I have a ___.\" Từ nào đúng?",
+    "options": [
+     "headache",
+     "prescription",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Headache\" là đau đầu, đúng với cảm giác đầu đau nhức."
+   },
+   {
+    "question_vi": "Bạn sờ trán con thấy rất nóng, nhiệt kế chỉ 39 độ. Bạn nói với y tá: \"My son has a ___.\" Từ nào đúng?",
+    "options": [
+     "prescription",
+     "headache",
+     "fever"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fever\" là sốt, đúng khi nhiệt độ cơ thể cao và người nóng."
+   },
+   {
+    "question_vi": "Bạn muốn mua một loại thuốc ở nhà thuốc, dược sĩ hỏi bạn có giấy bác sĩ kê thuốc không: \"Do you have a ___?\" Từ nào đúng?",
+    "options": [
+     "allergy",
+     "prescription",
+     "fever"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Prescription\" là đơn thuốc do bác sĩ viết, cần có để mua một số loại thuốc."
+   }
+  ]
+ }
+}

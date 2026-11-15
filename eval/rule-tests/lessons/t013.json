@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t013",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "iced",
+   "napkin",
+   "to go",
+   "menu",
+   "large"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Đây là menu, chị xem quán có đồ uống gì và giá bao nhiêu nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho em một cà phê sữa iced nha, trời nóng quá nên em muốn uống lạnh với đá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị lấy ly nhỏ, ly vừa hay large ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Large luôn ạ, em khát lắm, cho em ly to nhất.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị uống ở đây hay to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em lấy to go nha, em mang về văn phòng uống.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, cà phê của chị đây. Chị cần gì thêm không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho em xin vài cái napkin để lau tay ạ, cà phê hơi chảy ra ngoài ly.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, uống lạnh",
+    "usage_vi": "Đặt trước tên đồ uống khi bạn muốn uống lạnh với đá, ví dụ \"iced coffee\", \"iced tea\"."
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy",
+    "usage_vi": "Dùng khi bạn muốn xin giấy để lau tay, lau miệng hoặc lau bàn ở quán ăn, quán cà phê."
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Nói khi bạn muốn mang đồ uống hoặc đồ ăn ra khỏi quán, không ngồi lại dùng tại chỗ."
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng khi muốn xem danh sách các món và giá trong quán, ví dụ \"Can I see the menu?\"."
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn",
+    "usage_vi": "Dùng khi chọn cỡ ly hoặc phần ăn lớn nhất, thường đi cùng các cỡ \"small\" (nhỏ) và \"medium\" (vừa)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Trời rất nóng, bạn muốn gọi một ly trà lạnh có đá. Bạn nói: \"Cho em một trà ___.\" Từ nào phù hợp?",
+    "options": [
+     "large",
+     "iced",
+     "to go"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" nghĩa là có đá, uống lạnh, nên \"iced tea\" là trà đá."
+   },
+   {
+    "question_vi": "Bạn lỡ làm đổ nước lên bàn và muốn xin giấy để lau. Bạn xin cái gì?",
+    "options": [
+     "napkin",
+     "menu",
+     "iced"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay, lau miệng hoặc lau bàn."
+   },
+   {
+    "question_vi": "Bạn đang vội đi làm và muốn mang ly sinh tố theo, không ngồi lại quán. Bạn nói gì?",
+    "options": [
+     "menu",
+     "large",
+     "to go"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, dùng khi bạn không uống tại quán."
+   },
+   {
+    "question_vi": "Bạn vào một quán trà sữa mới và muốn xem quán có những món gì, giá bao nhiêu. Bạn xin xem cái gì?",
+    "options": [
+     "napkin",
+     "menu",
+     "large"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Menu\" là thực đơn, nơi ghi các món và giá của quán."
+   },
+   {
+    "question_vi": "Bạn rất khát và muốn gọi ly nước cam cỡ to nhất. Bạn chọn cỡ nào?",
+    "options": [
+     "large",
+     "napkin",
+     "to go"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Large\" là cỡ lớn, phù hợp khi bạn muốn ly to nhất."
+   }
+  ]
+ }
+}

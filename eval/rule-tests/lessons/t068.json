@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t068",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "sore throat",
+   "pain",
+   "medicine",
+   "fever",
+   "headache"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ khi bị ốm",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, mời chị ngồi. Hôm nay chị thấy trong người thế nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em có a sore throat ạ, nuốt nước hay nói chuyện là cổ họng rát lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị có a fever không? Người có nóng không? Để tôi lấy nhiệt kế đo cho chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, tối qua người em nóng ran. Em còn bị a headache nữa, cứ nhức ở trán và hai bên thái dương.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Ngoài cổ họng và đầu ra, chị còn thấy any pain ở chỗ nào khác không? Bụng hay ngực có đau không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ không, no pain ở chỗ khác ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị bị cảm thôi. Tôi kê some medicine cho chị, ngày uống hai lần sau bữa ăn là sẽ đỡ sốt và đỡ rát họng.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em sẽ ra nhà thuốc mua this medicine luôn ạ. Cảm ơn bác sĩ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng, rát họng",
+    "usage_vi": "Dùng khi cổ họng bị đau, rát, nhất là lúc nuốt hoặc nói. Thường nói: \"I have a sore throat.\""
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói về cảm giác đau ở một bộ phận cơ thể. Thường nói: \"I have pain in my ...\" hoặc hỏi \"Any pain?\""
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (chữa bệnh)",
+    "usage_vi": "Dùng để chỉ thuốc uống hoặc thuốc bác sĩ kê để chữa bệnh. Thường nói: \"some medicine\" hoặc \"medicine for a cough\"."
+   },
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường, người nóng. Thường nói: \"I have a fever.\""
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bị đau hoặc nhức ở vùng đầu. Thường nói: \"I have a headache.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ăn nhiều kem lạnh, sáng hôm sau nuốt nước thấy cổ họng rát. Bạn nói với bác sĩ: \"I have a ___.\"",
+    "options": [
+     "headache",
+     "sore throat",
+     "fever"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Sore throat\" là đau họng, đúng với cảm giác rát cổ họng khi nuốt."
+   },
+   {
+    "question_vi": "Bạn bị ngã xe và đầu gối rất đau. Bạn nói với bác sĩ: \"I have ___ in my knee.\"",
+    "options": [
+     "pain",
+     "medicine",
+     "fever"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng để nói bộ phận nào trên cơ thể đang bị đau."
+   },
+   {
+    "question_vi": "Bạn vào nhà thuốc và muốn mua thuốc trị ho. Bạn hỏi: \"Can I have some ___ for my cough?\"",
+    "options": [
+     "fever",
+     "headache",
+     "medicine"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Medicine\" là thuốc, nên dùng khi muốn mua thuốc chữa bệnh."
+   },
+   {
+    "question_vi": "Con bạn sờ trán thấy nóng hổi, đo nhiệt độ được 39 độ. Bạn nói với bác sĩ: \"My child has a ___.\"",
+    "options": [
+     "sore throat",
+     "fever",
+     "pain"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fever\" là sốt, dùng khi người nóng và nhiệt độ cơ thể cao."
+   },
+   {
+    "question_vi": "Bạn nhìn máy tính cả ngày, đến chiều thấy nhức ở trán và hai bên thái dương. Bạn nói: \"I have a ___.\"",
+    "options": [
+     "medicine",
+     "fever",
+     "headache"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Headache\" là đau đầu, đúng với cảm giác nhức ở trán và thái dương."
+   }
+  ]
+ }
+}

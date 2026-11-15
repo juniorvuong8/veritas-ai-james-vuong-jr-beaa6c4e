@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t027",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "airport",
+   "traffic",
+   "seatbelt",
+   "turn left"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào anh, anh muốn đi đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho tôi ra airport nhé, tôi phải kịp chuyến bay lúc 3 giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được. Anh nhớ cài seatbelt nhé, kéo sợi dây này chéo qua người rồi bấm vào chốt bên cạnh ghế.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Rồi, tôi cài xong rồi. Đường đi có đông không anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Giờ này traffic nhiều lắm, xe cộ kẹt cứng trên đường lớn, chắc mất khoảng 40 phút.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy tới ngã tư phía trước anh turn left giúp tôi, đi con đường nhỏ phía bên trái cho nhanh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, tôi rẽ vào con đường bên trái đây. Đường này vắng xe hơn nhiều.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn anh, vậy chắc tôi kịp chuyến bay rồi.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi nói về nơi máy bay cất cánh và hạ cánh, ví dụ khi bảo tài xế: \"To the airport, please.\""
+   },
+   {
+    "input": "traffic",
+    "word": "traffic",
+    "meaning_vi": "giao thông, xe cộ trên đường",
+    "usage_vi": "Dùng để nói đường đông hay vắng xe; khi bị kẹt xe người ta hay nói \"There is a lot of traffic.\""
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nhắc ai đó cài dây trên ghế ô tô hoặc máy bay, ví dụ: \"Please wear your seatbelt.\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế hoặc người khác, thường kèm vị trí, ví dụ: \"Turn left at the corner.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đi đón người thân từ nước ngoài bay về. Bạn bảo tài xế taxi chở bạn đến đâu?",
+    "options": [
+     "traffic",
+     "airport",
+     "seatbelt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Airport\" là sân bay, nơi bạn đón người đi máy bay về."
+   },
+   {
+    "question_vi": "Bạn đến trễ buổi hẹn vì đường quá đông xe. Bạn xin lỗi: \"Sorry, there was a lot of ___.\" Từ nào điền vào chỗ trống?",
+    "options": [
+     "traffic",
+     "airport",
+     "turn left"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Traffic\" chỉ xe cộ trên đường, \"a lot of traffic\" nghĩa là đường rất đông xe."
+   },
+   {
+    "question_vi": "Bạn ngồi ghế sau ô tô với con nhỏ. Trước khi xe chạy, bạn nhắc con cài cái gì?",
+    "options": [
+     "turn left",
+     "traffic",
+     "seatbelt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn, cần cài trước khi xe chạy."
+   },
+   {
+    "question_vi": "Bạn đang đi xe ôm công nghệ, nhà bạn nằm ở con đường bên tay trái ngay ngã tư. Bạn nói gì với tài xế?",
+    "options": [
+     "turn right",
+     "turn left",
+     "airport"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" là rẽ trái, còn \"turn right\" là rẽ phải nên không đúng hướng."
+   }
+  ]
+ }
+}

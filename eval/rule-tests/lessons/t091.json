@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t091",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "turn left",
+   "seatbelt",
+   "airport"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hello! Anh muốn đi đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Please take me to the airport, tôi có chuyến bay lúc 3 giờ chiều.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được. Anh nhớ put on your seatbelt nhé, kéo cái dây bên vai xuống rồi cài vào đây cho an toàn ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "OK, my seatbelt is on rồi. Đi đường nào nhanh hơn anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Đường thẳng đang kẹt xe, nên tới đèn đỏ kia mình turn left, không đi thẳng nữa.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Turn left ở đèn đỏ hả? À, bên tay trái có biển chỉ đường ra airport kìa.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Đúng rồi. Khoảng 20 phút nữa là tới the airport, anh kịp giờ bay ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường hoặc bảo tài xế rẽ sang bên trái ở ngã tư, đèn đỏ hay con hẻm. Ví dụ: \"Please turn left here.\""
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nói về dây cài trên ghế xe hơi hoặc máy bay. Câu thường gặp là \"Put on your seatbelt\" (cài dây an toàn vào)."
+   },
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi nói về nơi máy bay cất cánh và hạ cánh. Khi đi taxi, bạn có thể nói \"Please take me to the airport.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang ngồi taxi về khách sạn, và khách sạn nằm ở con đường bên trái phía trước. Bạn nói với tài xế: \"Please ___ here.\" Chọn từ đúng.",
+    "options": [
+     "seatbelt",
+     "turn left",
+     "go straight"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, đúng với việc khách sạn nằm ở đường bên trái."
+   },
+   {
+    "question_vi": "Bạn vừa ngồi vào xe của bạn mình. Bạn ấy nhắc bạn kéo dây trên ghế để cài vào cho an toàn. Bạn ấy đang nói về cái gì?",
+    "options": [
+     "airport",
+     "turn left",
+     "seatbelt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn trên ghế xe, cần cài vào để giữ an toàn khi xe chạy."
+   },
+   {
+    "question_vi": "Bạn phải đi máy bay về Việt Nam. Bạn gọi taxi và nói: \"Please take me to the ___.\" Chọn từ đúng.",
+    "options": [
+     "airport",
+     "hotel",
+     "seatbelt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Muốn đi máy bay thì phải đến \"airport\", tức là sân bay."
+   }
+  ]
+ }
+}

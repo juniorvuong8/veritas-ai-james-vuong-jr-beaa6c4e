@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t072",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "prescription",
+   "cough",
+   "headache"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello. What's wrong today?",
+    "translation_vi": "Chào bạn. Hôm nay bạn bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a bad cough. My throat hurts, and I can't stop at night.",
+    "translation_vi": "Tôi bị ho nặng. Cổ họng tôi đau, và ban đêm tôi ho mãi không dừng được."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Do you have a headache too? Does your head hurt?",
+    "translation_vi": "Bạn có bị đau đầu không? Đầu bạn có đau không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, my head hurts a lot in the morning.",
+    "translation_vi": "Có, buổi sáng đầu tôi đau lắm."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Do you have an allergy to any medicine? Does any medicine make your skin red or itchy?",
+    "translation_vi": "Bạn có bị dị ứng với thuốc nào không? Có thuốc nào làm da bạn đỏ hoặc ngứa không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, I have an allergy to penicillin. It makes my skin red.",
+    "translation_vi": "Có, tôi bị dị ứng với penicillin. Nó làm da tôi bị đỏ."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "OK. Here is your prescription. Take this paper to the pharmacy to get your medicine.",
+    "translation_vi": "Được rồi. Đây là đơn thuốc của bạn. Bạn mang tờ giấy này ra nhà thuốc để mua thuốc nhé."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you, doctor.",
+    "translation_vi": "Cảm ơn bác sĩ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể phản ứng xấu (ngứa, nổi mẩn, khó thở) với một thứ như thuốc hay thức ăn. Hay nói: \"I have an allergy to ...\"."
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Là giấy bác sĩ viết để bạn mang ra nhà thuốc mua thuốc. Nhiều loại thuốc ở nước ngoài phải có prescription mới mua được."
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng khi bạn bị ho, thường lúc cảm lạnh hoặc đau họng. Hay nói: \"I have a cough.\""
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu",
+    "usage_vi": "Dùng khi đầu bạn bị đau. Hay nói: \"I have a headache.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Mỗi lần ăn tôm, bạn bị ngứa và nổi mẩn đỏ. Bạn nói với bác sĩ: \"I have an ___ to shrimp.\" Từ nào phù hợp?",
+    "options": [
+     "cough",
+     "allergy",
+     "prescription"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Allergy\" là dị ứng, dùng khi cơ thể phản ứng xấu với một thứ như tôm."
+   },
+   {
+    "question_vi": "Bác sĩ đưa bạn một tờ giấy ghi tên thuốc để mang ra nhà thuốc mua. Tờ giấy đó gọi là gì?",
+    "options": [
+     "prescription",
+     "headache",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Prescription\" là đơn thuốc bác sĩ viết để bạn mua thuốc ở nhà thuốc."
+   },
+   {
+    "question_vi": "Bạn bị cảm, cổ họng ngứa và ho suốt cả ngày. Bạn nói: \"I have a ___.\" Từ nào phù hợp?",
+    "options": [
+     "headache",
+     "allergy",
+     "cough"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cough\" là ho, đúng với tình trạng ho suốt cả ngày khi bị cảm."
+   },
+   {
+    "question_vi": "Bạn ngồi làm việc trước máy tính cả ngày và thấy đầu đau nhức. Bạn nói: \"I have a ___.\" Từ nào phù hợp?",
+    "options": [
+     "headache",
+     "cough",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Headache\" là đau đầu, dùng khi đầu bạn bị đau."
+   }
+  ]
+ }
+}

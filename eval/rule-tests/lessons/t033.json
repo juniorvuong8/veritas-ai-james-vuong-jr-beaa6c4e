@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "t033",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "iced",
+   "receipt",
+   "napkin"
+  ],
+  "custom": [
+   "wifi"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! What can I get for you today?",
+    "translation_vi": "Chào bạn! Hôm nay bạn muốn gọi gì ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "It's so hot today. Can I get an iced coffee, nice and cold?",
+    "translation_vi": "Hôm nay nóng quá. Cho mình một cà phê đá, thật lạnh nhé?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure, one iced coffee with lots of ice. That's five dollars.",
+    "translation_vi": "Vâng, một cà phê đá, nhiều đá. Của bạn năm đô ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here you go. Can I have a receipt, please?",
+    "translation_vi": "Gửi bạn. Cho mình xin hóa đơn được không?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Of course. Here's your receipt. It shows you paid five dollars. And here's your coffee.",
+    "translation_vi": "Dạ được ạ. Hóa đơn của bạn đây, trên đó ghi bạn đã trả năm đô. Còn đây là cà phê của bạn."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thanks! Oops, I spilled a little. Can I have a napkin to wipe my hands?",
+    "translation_vi": "Cảm ơn bạn! Ôi, mình làm đổ một chút rồi. Cho mình xin tờ khăn giấy để lau tay nhé?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Here's a napkin. And the wifi password is on the wall, if you want to use the internet.",
+    "translation_vi": "Khăn giấy của bạn đây. À, mật khẩu wifi dán trên tường nếu bạn muốn dùng mạng nhé."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great, now I can go online with my phone. Thank you!",
+    "translation_vi": "Tuyệt quá, giờ mình lên mạng bằng điện thoại được rồi. Cảm ơn bạn!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, ướp lạnh",
+    "usage_vi": "Đặt trước tên đồ uống khi bạn muốn uống lạnh có đá, ví dụ \"iced coffee\" (cà phê đá) hay \"iced tea\" (trà đá)."
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng khi bạn muốn xin tờ giấy ghi món đã mua và số tiền đã trả. Câu thường dùng: \"Can I have a receipt, please?\""
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy (để lau tay, lau miệng)",
+    "usage_vi": "Dùng khi ăn uống mà cần lau tay, lau miệng hoặc lau chỗ bị đổ. Câu thường dùng: \"Can I have a napkin?\""
+   },
+   {
+    "input": "wifi",
+    "word": "wifi",
+    "meaning_vi": "mạng wifi, mạng internet không dây",
+    "usage_vi": "Dùng khi hỏi quán có mạng không hoặc hỏi mật khẩu, ví dụ \"Do you have wifi?\" hay \"What's the wifi password?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Trời nóng, bạn muốn gọi trà có đá thật lạnh. Bạn nói: \"Can I get an ___ tea?\"",
+    "options": [
+     "receipt",
+     "iced",
+     "napkin"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" nghĩa là có đá, nên \"iced tea\" là trà đá."
+   },
+   {
+    "question_vi": "Bạn mua bánh mì ở tiệm và muốn giữ tờ giấy ghi số tiền đã trả. Bạn hỏi xin cái gì?",
+    "options": [
+     "wifi",
+     "menu",
+     "receipt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Receipt\" là hóa đơn, tờ giấy ghi món đã mua và số tiền bạn đã trả."
+   },
+   {
+    "question_vi": "Bạn đang ăn bánh và tay bị dính bơ. Bạn cần xin cái gì để lau tay?",
+    "options": [
+     "napkin",
+     "straw",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay và lau miệng khi ăn uống."
+   },
+   {
+    "question_vi": "Ở khách sạn, bạn muốn dùng internet trên máy tính. Bạn hỏi: \"What's the ___ password?\"",
+    "options": [
+     "iced",
+     "wifi",
+     "napkin"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Wifi\" là mạng internet không dây, nên bạn hỏi mật khẩu wifi để lên mạng."
+   }
+  ]
+ }
+}

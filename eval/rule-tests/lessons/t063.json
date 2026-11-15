@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t063",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "stop here",
+   "turn left",
+   "tip",
+   "seatbelt"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi trong thành phố nói tiếng Anh",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào anh, anh kéo seatbelt qua người rồi cài vào giúp tôi nhé, cho an toàn ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, tôi cài rồi. Đến ngã tư phía trước, anh turn left giúp tôi nhé, khách sạn nằm ở con đường bên tay trái.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được, tôi bật đèn xi nhan bên trái rồi, sắp vào đường đó ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Khách sạn màu xanh kia rồi. Anh stop here giúp tôi, tôi xuống xe ở đây luôn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, xe đứng yên rồi ạ. Tiền cước là hai mươi đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây hai mươi đô, còn năm đô này là tip cho anh, cảm ơn anh đã chạy xe cẩn thận.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Cảm ơn anh nhiều! Anh nhớ tháo seatbelt ra rồi hãy mở cửa nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Dùng khi bạn muốn tài xế dừng xe ngay tại chỗ này để bạn xuống. Có thể nói lịch sự hơn: \"Please stop here.\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế, muốn xe quẹo sang phía tay trái. Thường nói kèm vị trí, ví dụ: \"Turn left at the corner.\""
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền tip",
+    "usage_vi": "Là khoản tiền thêm bạn tự nguyện đưa cho tài xế để cảm ơn, ngoài tiền cước. Ở nhiều nước nói tiếng Anh, khách thường để tip khoảng 10–20%."
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Là sợi dây trên ghế xe, kéo qua người và cài lại để giữ an toàn khi đi xe. Tài xế hay nhắc: \"Please put on your seatbelt.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang đi taxi và thấy cửa hàng mình cần đến ngay bên đường. Bạn muốn tài xế dừng xe ngay chỗ này. Bạn nói gì?",
+    "options": [
+     "turn left",
+     "stop here",
+     "tip"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" là câu dùng để nhờ tài xế dừng xe ngay tại chỗ bạn muốn xuống."
+   },
+   {
+    "question_vi": "Tài xế hỏi đường tới bệnh viện. Bệnh viện nằm ở con đường bên tay trái của ngã rẽ phía trước. Bạn nói gì?",
+    "options": [
+     "turn left",
+     "seatbelt",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Turn left\" dùng để bảo tài xế quẹo sang phía tay trái."
+   },
+   {
+    "question_vi": "Tài xế giúp bạn mang hai chiếc vali nặng vào tận sảnh. Bạn đưa thêm cho anh ấy một ít tiền để cảm ơn. Khoản tiền thêm đó gọi là gì?",
+    "options": [
+     "seatbelt",
+     "turn left",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Tip\" là tiền thêm bạn tự nguyện đưa để cảm ơn người phục vụ mình."
+   },
+   {
+    "question_vi": "Bạn vừa ngồi vào xe, tài xế nhắc bạn kéo một sợi dây qua người rồi cài lại để an toàn. Sợi dây đó là gì?",
+    "options": [
+     "tip",
+     "seatbelt",
+     "stop here"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn trên ghế xe, cần cài lại khi ngồi trong xe."
+   }
+  ]
+ }
+}

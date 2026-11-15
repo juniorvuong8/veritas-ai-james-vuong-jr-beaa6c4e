@@ -1,0 +1,102 @@
+{
+ "case": {
+  "id": "t023",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "straight",
+   "trunk",
+   "address"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi trong thành phố",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Where are you going? What is the address?",
+    "translation_vi": "Chào chị! Chị đi đâu ạ? Địa chỉ là gì ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "25 Park Street, please. Can I put my big bag in the trunk?",
+    "translation_vi": "Cho tôi đến số 25 đường Park. Tôi để cái túi lớn vào cốp xe được không?"
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Sure. I'll open the back of the car for your bag.",
+    "translation_vi": "Được chứ. Tôi sẽ mở phía sau xe để chị cất túi."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thanks. At this corner, please don't turn left or right. Go straight.",
+    "translation_vi": "Cảm ơn anh. Đến góc này, anh đừng rẽ trái hay rẽ phải nhé. Cứ đi thẳng."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "OK, no turning. Here we are, 25 Park Street. I'll get your bag from the trunk.",
+    "translation_vi": "Vâng, không rẽ. Đến rồi, số 25 đường Park. Tôi sẽ lấy túi của chị trong cốp ra."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you so much!",
+    "translation_vi": "Cảm ơn anh nhiều!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng, đi thẳng",
+    "usage_vi": "Dùng khi chỉ đường, muốn nói không rẽ mà cứ đi thẳng về phía trước. Thường nói \"Go straight.\""
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (phía sau xe hơi)",
+    "usage_vi": "Dùng khi muốn để hành lý, vali hoặc túi lớn ở phía sau xe hơi. Ví dụ: \"Can I put my bag in the trunk?\""
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi nói số nhà, tên đường của nơi bạn muốn đến hoặc nơi bạn ở. Tài xế thường hỏi \"What is the address?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang đi bộ và hỏi đường đến bưu điện. Người ta bảo bạn không cần rẽ, cứ đi thẳng về phía trước. Họ sẽ nói \"Go ___.\"",
+    "options": [
+     "trunk",
+     "straight",
+     "address"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Straight\" nghĩa là đi thẳng, không rẽ trái hay rẽ phải."
+   },
+   {
+    "question_vi": "Bạn đi taxi ra sân bay với một vali rất to và muốn để vali ở phía sau xe. Bạn hỏi: \"Can I put my suitcase in the ___?\"",
+    "options": [
+     "trunk",
+     "seat",
+     "address"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Trunk\" là cốp xe phía sau, nơi để vali và hành lý lớn."
+   },
+   {
+    "question_vi": "Bạn đặt xe qua ứng dụng, và ứng dụng yêu cầu bạn nhập số nhà và tên đường nơi bạn muốn đến. Ứng dụng đang hỏi \"___\" của bạn.",
+    "options": [
+     "straight",
+     "trunk",
+     "address"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Address\" là địa chỉ, gồm số nhà và tên đường của một nơi."
+   }
+  ]
+ }
+}

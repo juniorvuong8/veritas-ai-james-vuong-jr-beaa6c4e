@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t088",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "doctor",
+   "headache",
+   "pain",
+   "cough",
+   "insurance"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Chào anh, hôm nay anh thấy trong người thế nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Tôi bị headache từ hôm qua, cứ cúi xuống là đầu nhức như búa bổ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Anh còn chỗ nào bị pain nữa không, ví dụ họng thấy rát hay ngực thấy nhói?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Có, họng tôi rát lắm, và tôi cough cả đêm, cứ khụ khụ không ngủ được.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Anh cho em xem thẻ insurance nhé, có thẻ này thì anh sẽ trả ít tiền khám hơn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thẻ của tôi đây. Tôi có phải đợi lâu không chị?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Khoảng mười phút nữa doctor sẽ gọi anh vào phòng để khám và kê thuốc cho anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, cảm ơn chị.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Dùng để chỉ người khám và chữa bệnh. Khi gặp, bạn có thể gọi trực tiếp \"Doctor\" hoặc \"Doctor\" + họ, ví dụ \"Doctor Smith\"."
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bạn bị đau ở đầu. Thường nói \"I have a headache\" (Tôi bị đau đầu)."
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói về cảm giác đau ở bất kỳ chỗ nào trên cơ thể. Ví dụ: \"I have pain in my chest\" (Tôi bị đau ở ngực)."
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng khi bạn bị ho. Có thể nói \"I have a cough\" (Tôi bị ho) hoặc \"I cough a lot\" (Tôi ho nhiều)."
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Ở phòng khám, nhân viên thường hỏi bạn có bảo hiểm không để biết ai trả tiền khám. Câu hay gặp: \"Do you have insurance?\" (Anh/chị có bảo hiểm không?)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị sốt và muốn gặp người khám bệnh cho mình. Bạn nói \"I want to see a ...\". Từ nào đúng?",
+    "options": [
+     "cough",
+     "doctor",
+     "insurance"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Doctor\" là bác sĩ, người khám và chữa bệnh cho bạn."
+   },
+   {
+    "question_vi": "Bạn làm việc trước máy tính cả ngày và bị nhức đầu. Bạn nói \"I have a ...\". Từ nào đúng?",
+    "options": [
+     "headache",
+     "insurance",
+     "doctor"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Headache\" nghĩa là đau đầu, nhức đầu."
+   },
+   {
+    "question_vi": "Bạn bị ngã và đầu gối thấy nhói khi đi. Bạn nói \"I have ... in my knee\". Từ nào đúng?",
+    "options": [
+     "doctor",
+     "insurance",
+     "pain"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng cho đau ở bất kỳ chỗ nào như đầu gối."
+   },
+   {
+    "question_vi": "Bạn bị cảm, cổ họng ngứa và cứ khụ khụ liên tục. Bạn nói \"I have a ...\". Từ nào đúng?",
+    "options": [
+     "cough",
+     "headache",
+     "doctor"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cough\" nghĩa là ho, đúng với việc khụ khụ liên tục."
+   },
+   {
+    "question_vi": "Ở quầy thanh toán của bệnh viện, nhân viên muốn biết có công ty nào trả bớt tiền khám cho bạn không. Họ hỏi \"Do you have ...?\". Từ nào đúng?",
+    "options": [
+     "pain",
+     "insurance",
+     "headache"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Insurance\" là bảo hiểm, giúp bạn trả ít tiền khám chữa bệnh hơn."
+   }
+  ]
+ }
+}

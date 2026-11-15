@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t037",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "medium",
+   "receipt",
+   "napkin",
+   "for here",
+   "menu"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Đây là menu, chị xem có đồ uống gì và giá bao nhiêu nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị một ly trà sữa.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị lấy ly nhỏ, ly medium hay ly lớn ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị lấy medium thôi, không nhỏ quá mà cũng không lớn quá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị uống for here hay mang đi ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị uống for here em nhé, chị ngồi bàn gần cửa sổ. Cho chị xin thêm một tờ napkin để lau tay nữa.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, napkin đây ạ. Tổng cộng năm đô. Chị có lấy receipt không, để biết mình đã trả bao nhiêu?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Có em, cho chị receipt nhé. Cảm ơn em!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng khi chọn kích cỡ ly hoặc phần ăn, nằm giữa \"small\" (nhỏ) và \"large\" (lớn). Ví dụ: \"A medium coffee, please.\""
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Là tờ giấy ghi số tiền bạn đã trả, thường xin sau khi thanh toán. Ví dụ: \"Can I have a receipt, please?\""
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy",
+    "usage_vi": "Dùng khi cần giấy để lau tay, lau miệng hoặc lau bàn ở quán. Ví dụ: \"Can I have a napkin?\""
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại quán",
+    "usage_vi": "Nói khi bạn muốn ngồi lại quán để ăn uống, trái nghĩa với \"to go\" (mang đi). Nhân viên thường hỏi: \"For here or to go?\""
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Là danh sách các món và giá ở quán. Khi muốn xem, bạn nói: \"Can I see the menu, please?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua nước cam ở một quán khác và muốn ly không nhỏ cũng không lớn. Bạn nói: \"A ___ orange juice, please.\"",
+    "options": [
+     "napkin",
+     "medium",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa cỡ nhỏ và cỡ lớn."
+   },
+   {
+    "question_vi": "Bạn vừa trả tiền mua bánh ở tiệm và muốn giữ tờ giấy ghi số tiền đã trả. Bạn hỏi: \"Can I have a ___, please?\"",
+    "options": [
+     "for here",
+     "napkin",
+     "receipt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Receipt\" là hóa đơn ghi số tiền bạn đã trả."
+   },
+   {
+    "question_vi": "Bạn đang ăn bánh mì và tay bị dính sốt. Bạn hỏi nhân viên: \"Can I have a ___?\"",
+    "options": [
+     "napkin",
+     "receipt",
+     "medium"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Napkin\" là khăn giấy dùng để lau tay hoặc lau miệng."
+   },
+   {
+    "question_vi": "Ở tiệm bánh, nhân viên hỏi bạn ăn ở đâu. Bạn muốn ngồi lại tiệm để ăn, bạn trả lời: \"___, please.\"",
+    "options": [
+     "To go",
+     "Menu",
+     "For here"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại quán, còn \"to go\" là mang đi."
+   },
+   {
+    "question_vi": "Bạn bước vào một nhà hàng mới và muốn xem có những món gì, giá bao nhiêu. Bạn hỏi: \"Can I see the ___, please?\"",
+    "options": [
+     "receipt",
+     "menu",
+     "medium"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Menu\" là thực đơn, nơi ghi các món và giá tiền."
+   }
+  ]
+ }
+}

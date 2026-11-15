@@ -1,0 +1,113 @@
+{
+ "case": {
+  "id": "t054",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "aisle",
+   "on sale"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị cần tìm gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em đang tìm sữa. Where is the milk ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Milk is in aisle 5 ạ. Chị đi thẳng, đến dãy kệ có treo bảng số 5 là thấy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn anh. Hôm nay có gì on sale không ạ? Em muốn mua đồ rẻ hơn ngày thường.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có, bread is on sale today. Bánh mì hôm nay chỉ còn nửa giá thôi chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em còn có this coupon cắt từ tờ quảng cáo nữa, dùng được không anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Được chị. Chị đưa tờ phiếu đó cho thu ngân là được giảm thêm one dollar ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hay quá, thank you so much!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ hàng",
+    "usage_vi": "Dùng khi hỏi hoặc chỉ chỗ để hàng trong siêu thị, thường đi kèm số, ví dụ \"aisle 5\". Chữ \"s\" trong từ này không đọc, phát âm giống \"ai-ồ\"."
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng để nói một món hàng đang được bán rẻ hơn bình thường, ví dụ \"Bread is on sale today.\""
+   },
+   {
+    "input": "coupon",
+    "word": "coupon",
+    "meaning_vi": "phiếu giảm giá",
+    "usage_vi": "Dùng để chỉ tờ phiếu (giấy hoặc trên điện thoại) mà bạn đưa cho thu ngân để được giảm tiền khi thanh toán."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn hỏi nhân viên gạo được để ở dãy kệ nào. Bạn điền từ nào vào câu: \"Which ___ is the rice in?\"",
+    "options": [
+     "coupon",
+     "on sale",
+     "aisle"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Aisle\" là lối đi giữa các dãy kệ, dùng để hỏi món hàng nằm ở khu nào trong siêu thị."
+   },
+   {
+    "question_vi": "Bạn thấy tấm bảng ghi táo hôm nay rẻ hơn mọi ngày. Bạn nói với bạn mình: \"Apples are ___ today!\"",
+    "options": [
+     "on sale",
+     "aisle",
+     "coupon"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, đúng khi món hàng được bán rẻ hơn bình thường."
+   },
+   {
+    "question_vi": "Ở quầy thanh toán, bạn đưa cho thu ngân một tờ phiếu để được giảm 2 đô. Bạn nói: \"Can I use this ___?\"",
+    "options": [
+     "aisle",
+     "coupon",
+     "on sale"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Coupon\" là phiếu giảm giá bạn đưa cho thu ngân để được bớt tiền."
+   }
+  ]
+ }
+}

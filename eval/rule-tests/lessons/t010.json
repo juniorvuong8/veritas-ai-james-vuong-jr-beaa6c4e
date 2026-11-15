@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t010",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "price",
+   "cashier",
+   "fresh",
+   "bag"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Mua táo ở siêu thị",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Do you need any help?",
+    "translation_vi": "Chào chị! Chị có cần em giúp gì không ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. Are these apples fresh? I don't want old ones.",
+    "translation_vi": "Có em ạ. Táo này có tươi không em? Chị không muốn mua táo cũ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, they are very fresh. They came in this morning.",
+    "translation_vi": "Dạ, táo tươi lắm chị. Sáng nay mới về hàng ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Good. What is the price? How much are they?",
+    "translation_vi": "Tốt quá. Giá bao nhiêu em? Bao nhiêu tiền vậy?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "The price is three dollars a kilo. Here is a bag to put your apples in.",
+    "translation_vi": "Dạ, giá là ba đô một ký. Chị lấy cái túi này để đựng táo nhé."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you! Where do I pay?",
+    "translation_vi": "Cảm ơn em! Chị trả tiền ở đâu vậy?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Please go to the cashier at the front. She will take your money.",
+    "translation_vi": "Chị ra quầy thu ngân ở phía trước nhé. Chị ấy sẽ tính tiền cho chị ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Okay, thank you very much!",
+    "translation_vi": "Được rồi, cảm ơn em nhiều nhé!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng bao nhiêu tiền. Ví dụ: \"What is the price?\" nghĩa là \"Giá bao nhiêu?\"."
+   },
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Chỉ người tính tiền và nhận tiền ở quầy trong siêu thị hay cửa hàng. Bạn có thể hỏi \"Where is the cashier?\" khi muốn đi trả tiền."
+   },
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thức ăn như rau, trái cây, thịt, cá hay bánh mì còn mới, không cũ hay bị hỏng. Ví dụ: \"Is this fish fresh?\"."
+   },
+   {
+    "input": "bag",
+    "word": "bag",
+    "meaning_vi": "cái túi",
+    "usage_vi": "Dùng để chỉ túi đựng đồ khi mua sắm. Ở quầy tính tiền, bạn có thể nói \"Can I have a bag, please?\" để xin túi."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy một hộp sữa không ghi giá và muốn hỏi nhân viên. Bạn nói: \"What is the ___ of this milk?\"",
+    "options": [
+     "bag",
+     "price",
+     "cashier"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Price\" là giá tiền, nên \"What is the price?\" dùng để hỏi món hàng bao nhiêu tiền."
+   },
+   {
+    "question_vi": "Ở cửa hàng tiện lợi, bạn đã chọn xong đồ và muốn tìm người tính tiền. Bạn hỏi: \"Where is the ___?\"",
+    "options": [
+     "cashier",
+     "fresh",
+     "bag"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cashier\" là nhân viên thu ngân, người tính tiền và nhận tiền của bạn."
+   },
+   {
+    "question_vi": "Bạn mua bánh mì ở tiệm và muốn bánh mới nướng hôm nay, không phải bánh cũ. Bạn hỏi: \"Is this bread ___?\"",
+    "options": [
+     "price",
+     "cashier",
+     "fresh"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, dùng để hỏi thức ăn có còn mới hay không."
+   },
+   {
+    "question_vi": "Bạn mua nhiều đồ quá, không cầm hết bằng tay được. Bạn nói với nhân viên: \"Can I have a ___, please?\"",
+    "options": [
+     "price",
+     "bag",
+     "fresh"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Bag\" là cái túi, dùng để đựng đồ khi bạn mua nhiều thứ."
+   }
+  ]
+ }
+}

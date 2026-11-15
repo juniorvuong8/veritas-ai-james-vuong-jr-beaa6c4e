@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t041",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "order",
+   "to go",
+   "receipt",
+   "large",
+   "napkin"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi cà phê mang đi ở quán",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Are you ready to order? Chị chọn đồ uống gì, em ghi lại cho chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, cho em one iced coffee ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị lấy ly nhỏ hay a large one ạ? Large thì nhiều cà phê hơn, chỉ thêm 10.000 đồng thôi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "A large one, please. Em khát lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị ngồi uống ở đây hay to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "To go, please. Em mang lên văn phòng uống. Cho em xin a napkin nữa, để lau tay lỡ cà phê bị đổ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, napkin của chị đây. Còn đây là your receipt, tờ giấy ghi món chị mua và số tiền chị đã trả ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi nói với nhân viên món mình muốn mua ở quán. Nhân viên hay hỏi \"Are you ready to order?\" khi bạn đã sẵn sàng gọi món."
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi bạn muốn lấy đồ ăn, đồ uống mang ra ngoài thay vì ngồi tại quán. Ví dụ: \"A coffee to go, please.\""
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Là tờ giấy ghi món bạn mua và số tiền đã trả. Bạn có thể xin bằng câu \"Can I have the receipt, please?\""
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "lớn, cỡ lớn",
+    "usage_vi": "Dùng để chọn cỡ ly hoặc phần ăn to nhất. Ví dụ: \"A large coffee, please.\""
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy",
+    "usage_vi": "Dùng để lau tay hoặc miệng khi ăn uống. Bạn có thể xin bằng câu \"Can I have a napkin, please?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đứng ở quầy một tiệm bánh mì, nhân viên muốn biết bạn đã sẵn sàng nói món mình muốn mua chưa. Nhân viên sẽ hỏi \"Are you ready to ___?\"",
+    "options": [
+     "napkin",
+     "order",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, nên nhân viên hỏi \"Are you ready to order?\" để xem bạn đã sẵn sàng gọi món chưa."
+   },
+   {
+    "question_vi": "Bạn mua một ly trà ở quán nhưng muốn mang về nhà uống. Bạn nói \"Can I get it ___?\"",
+    "options": [
+     "to go",
+     "large",
+     "order"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, dùng khi bạn không ngồi lại quán."
+   },
+   {
+    "question_vi": "Bạn mua một đôi giày và muốn giữ tờ giấy ghi số tiền đã trả để sau này đổi hàng. Bạn nói \"Can I have the ___, please?\"",
+    "options": [
+     "napkin",
+     "to go",
+     "receipt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Receipt\" là tờ giấy ghi món đã mua và số tiền đã trả."
+   },
+   {
+    "question_vi": "Bạn rất đói và muốn phần khoai tây chiên cỡ to nhất. Bạn nói \"A ___ fries, please.\"",
+    "options": [
+     "small",
+     "napkin",
+     "large"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Large\" nghĩa là cỡ lớn, còn \"small\" là cỡ nhỏ."
+   },
+   {
+    "question_vi": "Bạn đang ăn gà rán và tay bị dính dầu. Bạn muốn xin thứ gì đó để lau tay: \"Can I have a ___?\"",
+    "options": [
+     "napkin",
+     "receipt",
+     "order"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay hoặc miệng khi ăn."
+   }
+  ]
+ }
+}

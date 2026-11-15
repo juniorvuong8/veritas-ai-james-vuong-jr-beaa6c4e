@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t024",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "prescription",
+   "appointment",
+   "pharmacy",
+   "medicine"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello. What is the problem today?",
+    "translation_vi": "Chào bạn. Hôm nay bạn bị làm sao?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a bad cough and a sore throat.",
+    "translation_vi": "Tôi bị ho nhiều và đau họng."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "You need some medicine. Take it two times a day, after you eat.",
+    "translation_vi": "Bạn cần uống thuốc. Uống ngày hai lần, sau khi ăn."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Where can I buy it?",
+    "translation_vi": "Tôi mua thuốc ở đâu ạ?"
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Here is your prescription. Take this paper to the pharmacy next door. They sell medicine there.",
+    "translation_vi": "Đây là đơn thuốc của bạn. Bạn mang tờ giấy này đến hiệu thuốc bên cạnh nhé. Ở đó có bán thuốc."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you. Do I need to come back?",
+    "translation_vi": "Cảm ơn bác sĩ. Tôi có cần quay lại khám không ạ?"
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Yes. Please make an appointment at the front desk. Choose a day and time to see me again next week.",
+    "translation_vi": "Có. Bạn đặt lịch hẹn ở quầy lễ tân nhé. Chọn ngày giờ để gặp lại tôi vào tuần sau."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "OK. I will make an appointment for Monday at 9 a.m. Thank you, doctor.",
+    "translation_vi": "Vâng. Tôi sẽ đặt lịch hẹn vào thứ Hai lúc 9 giờ sáng. Cảm ơn bác sĩ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Là tờ giấy bác sĩ viết, ghi loại thuốc bạn cần. Bạn mang nó đến hiệu thuốc để mua thuốc."
+   },
+   {
+    "input": "appointment",
+    "word": "appointment",
+    "meaning_vi": "cuộc hẹn, lịch hẹn",
+    "usage_vi": "Dùng khi đặt ngày giờ cố định để gặp bác sĩ hoặc người khác. Thường nói \"make an appointment\" (đặt lịch hẹn)."
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "hiệu thuốc, nhà thuốc",
+    "usage_vi": "Là cửa hàng bán thuốc. Bạn đến đây để mua thuốc, có thể mang theo đơn thuốc của bác sĩ."
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (chữa bệnh)",
+    "usage_vi": "Dùng để nói về thuốc uống hoặc thuốc chữa bệnh nói chung. Thường nói \"take medicine\" (uống thuốc)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn ra hiệu thuốc mua một loại thuốc mạnh. Người bán nói bạn cần tờ giấy bác sĩ viết thì mới bán được. Tờ giấy đó gọi là gì?",
+    "options": [
+     "appointment",
+     "prescription",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Prescription\" là đơn thuốc do bác sĩ viết để bạn mua thuốc."
+   },
+   {
+    "question_vi": "Bạn gọi điện cho phòng khám nha khoa để đặt giờ khám vào thứ Sáu. Bạn nói: \"I want to make an ___.\" Chọn từ đúng.",
+    "options": [
+     "appointment",
+     "medicine",
+     "prescription"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Make an appointment\" nghĩa là đặt lịch hẹn vào một ngày giờ cố định."
+   },
+   {
+    "question_vi": "Bạn đang đi trên phố và bị đau đầu, muốn tìm nơi bán thuốc. Bạn hỏi người đi đường: \"Where is the nearest ___?\" Chọn từ đúng.",
+    "options": [
+     "appointment",
+     "medicine",
+     "pharmacy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pharmacy\" là hiệu thuốc, nơi bạn đến để mua thuốc."
+   },
+   {
+    "question_vi": "Con bạn bị sốt. Bạn nói với y tá rằng con cần uống thuốc: \"My child needs some ___.\" Chọn từ đúng.",
+    "options": [
+     "pharmacy",
+     "medicine",
+     "appointment"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medicine\" là thuốc chữa bệnh, thứ người bệnh cần uống."
+   }
+  ]
+ }
+}

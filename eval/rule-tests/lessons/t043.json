@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t043",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "fare",
+   "straight",
+   "seatbelt",
+   "address",
+   "tip"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị muốn đi đâu ạ? Chị cho anh the address nhé, số nhà với tên đường.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, the address là số 25 King Street ạ, khách sạn của em ở đó.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Ok chị. Chị nhớ cài your seatbelt nhé, kéo dây này qua người rồi bấm vào đây cho an toàn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cài rồi. Anh ơi, mình phải rẽ trái hay đi straight ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Mình cứ đi straight on this road thôi, không rẽ đâu, khoảng mười phút là tới.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Tới rồi! Anh ơi, the fare bao nhiêu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Đi từ sân bay đến đây là 18 đô chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em gửi anh 20 đô. Hai đô còn lại là a tip cho anh vì anh chạy xe cẩn thận, anh không cần thối lại đâu.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "giá vé, tiền cước (đi xe)",
+    "usage_vi": "Dùng để nói số tiền phải trả cho một chuyến đi bằng taxi, xe buýt, tàu. Thường hỏi: \"How much is the fare?\""
+   },
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng, đi thẳng",
+    "usage_vi": "Dùng khi chỉ đường, nghĩa là cứ đi tiếp về phía trước, không rẽ. Thường nói: \"Go straight\" hoặc \"Go straight ahead.\""
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng để nói sợi dây cài trên ghế ô tô hoặc máy bay để giữ an toàn. Thường nghe: \"Please fasten your seatbelt.\""
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng để nói số nhà, tên đường của nơi bạn muốn đến hoặc nơi bạn ở. Khi đi taxi, bạn đưa tài xế địa chỉ: \"Here is the address.\""
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền tip",
+    "usage_vi": "Dùng để nói số tiền thêm bạn tự nguyện đưa cho tài xế hoặc người phục vụ để cảm ơn. Ở nhiều nước nói tiếng Anh, để lại tip là việc rất phổ biến."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn lên xe buýt và muốn hỏi tài xế chuyến đi này giá bao nhiêu tiền. Bạn hỏi: \"How much is the ___?\"",
+    "options": [
+     "tip",
+     "fare",
+     "address"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fare\" là số tiền phải trả cho một chuyến đi, nên dùng để hỏi giá vé xe buýt."
+   },
+   {
+    "question_vi": "Bạn hỏi đường đến công viên. Người đi đường bảo bạn không cần rẽ trái hay rẽ phải, cứ đi tiếp về phía trước. Họ nói: \"Go ___.\"",
+    "options": [
+     "straight",
+     "seatbelt",
+     "back"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Go straight\" nghĩa là cứ đi thẳng về phía trước, không rẽ."
+   },
+   {
+    "question_vi": "Bạn ngồi trên máy bay sắp cất cánh. Tiếp viên nhắc bạn cài dây trên ghế cho an toàn. Họ nói: \"Please fasten your ___.\"",
+    "options": [
+     "fare",
+     "address",
+     "seatbelt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn trên ghế ô tô hoặc máy bay."
+   },
+   {
+    "question_vi": "Bạn mua hàng online và trang web hỏi bạn số nhà, tên đường để giao hàng. Ô cần điền ghi: \"Your ___\".",
+    "options": [
+     "tip",
+     "address",
+     "straight"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Address\" là địa chỉ, gồm số nhà và tên đường nơi nhận hàng."
+   },
+   {
+    "question_vi": "Bạn ăn ở nhà hàng, người phục vụ rất nhiệt tình nên bạn để thêm một ít tiền để cảm ơn họ. Số tiền thêm đó gọi là a ___.",
+    "options": [
+     "fare",
+     "receipt",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Tip\" là tiền boa, số tiền thêm bạn tự nguyện đưa để cảm ơn người phục vụ."
+   }
+  ]
+ }
+}

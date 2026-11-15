@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t016",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "doctor",
+   "headache",
+   "allergy",
+   "pain"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Y tá",
+    "text": "Chào anh, hôm nay anh đến phòng khám vì bị làm sao ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, tôi bị headache từ sáng, cứ nhức ở trán và hai bên thái dương.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Ngoài đầu ra, anh có thấy pain ở chỗ nào khác không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, tôi thấy pain ở cổ, cứ quay đầu là nhức lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Anh có allergy với thuốc nào không, ví dụ uống vào là bị ngứa hay nổi mẩn đỏ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, tôi có allergy với penicillin, uống vào là nổi mẩn khắp người.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Vâng, tôi ghi lại rồi. Anh ngồi chờ một chút, doctor sẽ vào khám và kê thuốc cho anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, cảm ơn chị. Tôi ngồi đây chờ doctor ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Dùng để chỉ người khám bệnh và kê thuốc. Khi gọi trực tiếp, người ta thường nói \"Doctor\" hoặc \"Dr.\" kèm họ, ví dụ \"Dr. Smith\"."
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bạn bị nhức đầu. Thường nói \"I have a headache\" (Tôi bị đau đầu)."
+   },
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể phản ứng xấu (ngứa, nổi mẩn, khó thở) với một loại thuốc, thức ăn hay thứ gì đó. Thường nói \"I have an allergy to...\" (Tôi bị dị ứng với...)."
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói về cảm giác đau ở bất kỳ chỗ nào trên cơ thể. Ví dụ \"I have pain in my back\" (Tôi bị đau lưng)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị sốt và muốn gặp người có thể khám bệnh và kê thuốc cho bạn. Bạn cần gặp ai?",
+    "options": [
+     "pain",
+     "doctor",
+     "allergy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Doctor\" là bác sĩ, người khám bệnh và kê thuốc cho bạn."
+   },
+   {
+    "question_vi": "Sau khi ngồi làm việc với máy tính cả ngày, đầu bạn nhức nhối. Bạn bị gì?",
+    "options": [
+     "headache",
+     "allergy",
+     "doctor"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Headache\" là đau đầu, đúng với cảm giác đầu bị nhức."
+   },
+   {
+    "question_vi": "Mỗi lần ăn tôm, người bạn bị ngứa và nổi mẩn đỏ. Bạn nói với nhân viên nhà hàng là bạn có gì với tôm?",
+    "options": [
+     "pain",
+     "headache",
+     "allergy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Allergy\" là dị ứng, khi cơ thể bị ngứa hay nổi mẩn vì một thứ gì đó như tôm."
+   },
+   {
+    "question_vi": "Bạn bị ngã xe đạp và thấy đầu gối rất đau. Bạn dùng từ nào để nói về cảm giác này?",
+    "options": [
+     "pain",
+     "headache",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng được cho bất kỳ chỗ nào trên cơ thể như đầu gối."
+   }
+  ]
+ }
+}

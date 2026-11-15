@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t050",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "aisle",
+   "fresh",
+   "on sale",
+   "basket",
+   "checkout"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ trong siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị lấy một cái basket ở ngay cạnh cửa để đựng đồ cho tiện nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Chị muốn mua rau, rau nằm ở aisle nào vậy em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, rau ở aisle số 3 ạ. Chị đi vào giữa hai dãy kệ có biển số 3 là thấy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Rau hôm nay có fresh không em? Chị không thích rau để lâu, bị héo.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, rau rất fresh, sáng nay mới chở tới ạ. Táo cũng đang on sale, giảm nửa giá đến hết tuần đó chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Rẻ vậy thì chị lấy thêm táo. Mua xong thì chị trả tiền ở đâu em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị mang basket ra checkout gần cửa ra, nhân viên ở đó sẽ tính tiền cho chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em nhiều nhé!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ hàng",
+    "usage_vi": "Dùng khi hỏi hoặc chỉ chỗ để hàng trong siêu thị, thường đi kèm số, ví dụ \"aisle 3\". Đọc là /aɪl/, chữ \"s\" không đọc."
+   },
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói đồ ăn như rau, cá, thịt, bánh mì còn mới, chưa để lâu."
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn giá bình thường, ví dụ \"Apples are on sale\"."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ đựng hàng",
+    "usage_vi": "Là cái giỏ có quai cầm, dùng để đựng đồ khi đi mua sắm, thường để ở gần cửa vào siêu thị. Hợp khi mua ít đồ."
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền",
+    "usage_vi": "Là nơi bạn mang hàng đến để trả tiền trước khi ra khỏi siêu thị."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang tìm sữa trong siêu thị nhưng không biết sữa để ở dãy kệ nào. Bạn hỏi nhân viên: \"Sữa ở ___ nào ạ?\"",
+    "options": [
+     "checkout",
+     "aisle",
+     "basket"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Aisle\" là lối đi giữa các dãy kệ, nên bạn dùng nó để hỏi món hàng nằm ở đâu."
+   },
+   {
+    "question_vi": "Bạn muốn mua cá và muốn chắc chắn cá mới về, chưa để lâu. Bạn hỏi: \"Cá này có ___ không?\"",
+    "options": [
+     "fresh",
+     "on sale",
+     "aisle"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, dùng để hỏi đồ ăn có còn mới hay không."
+   },
+   {
+    "question_vi": "Bạn thấy bánh mì hôm nay rẻ hơn mọi ngày 30%. Bạn nói với bạn mình: \"Bánh mì đang ___ kìa!\"",
+    "options": [
+     "fresh",
+     "basket",
+     "on sale"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, đúng với món hàng bán rẻ hơn bình thường."
+   },
+   {
+    "question_vi": "Bạn chỉ mua vài món nhỏ và cần thứ gì đó để đựng đồ khi đi quanh siêu thị. Bạn lấy một cái ___.",
+    "options": [
+     "aisle",
+     "basket",
+     "checkout"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Basket\" là cái giỏ có quai cầm, dùng để đựng hàng khi đi mua sắm."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn trả tiền trước khi về. Bạn đi đến ___.",
+    "options": [
+     "checkout",
+     "aisle",
+     "basket"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Checkout\" là quầy tính tiền, nơi bạn trả tiền cho hàng đã chọn."
+   }
+  ]
+ }
+}

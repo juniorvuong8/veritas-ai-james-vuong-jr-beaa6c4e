@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "t028",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "medicine",
+   "insurance",
+   "sore throat",
+   "pain"
+  ],
+  "custom": [
+   "dị ứng"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ vì bị đau họng",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào chị, hôm nay chị bị làm sao vậy?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em bị sore throat ba ngày rồi, nuốt nước thôi cũng thấy rát cổ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Ngoài cổ ra, chị còn thấy pain ở chỗ nào nữa không, ví dụ nhức đầu hay nhức tai?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, tai bên phải cũng pain, nhất là lúc em nuốt.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chị có allergy với thuốc nào không? Có loại nào uống vào là bị ngứa hay nổi mẩn không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, em uống kháng sinh pênixilin là nổi mẩn đỏ khắp người.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Vậy tôi kê medicine loại khác cho chị, chị ra nhà thuốc mua, ngày uống hai lần sau bữa ăn. Chị có insurance không? Nếu có thì bên đó sẽ trả phần lớn tiền khám, chị chỉ phải trả một ít thôi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, thẻ insurance của em đây ạ. Em cảm ơn bác sĩ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc",
+    "usage_vi": "Dùng để nói về thuốc uống hoặc thuốc chữa bệnh mà bác sĩ kê cho bạn. Ví dụ: \"I need some medicine.\" (Tôi cần mua thuốc)."
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dùng khi phòng khám hỏi bạn có bảo hiểm y tế để chi trả tiền khám, chữa bệnh hay không. Thường bạn sẽ đưa thẻ bảo hiểm khi được hỏi."
+   },
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng, viêm họng",
+    "usage_vi": "Dùng khi cổ họng bị rát, đau, nhất là lúc nuốt. Bạn có thể nói: \"I have a sore throat.\" (Tôi bị đau họng)."
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói bạn bị đau ở một chỗ nào đó trên cơ thể. Ví dụ: \"I have pain in my ear.\" (Tôi bị đau tai)."
+   },
+   {
+    "input": "dị ứng",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể bạn phản ứng xấu (ngứa, nổi mẩn, khó thở) với một loại thuốc hay thức ăn. Hãy luôn báo cho bác sĩ biết nếu bạn có allergy."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị cảm và muốn hỏi nhân viên nhà thuốc mua thuốc uống. Bạn dùng từ nào để nói về \"thuốc\"?",
+    "options": [
+     "insurance",
+     "medicine",
+     "allergy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medicine\" là thuốc dùng để chữa bệnh, nên bạn dùng từ này khi muốn mua thuốc."
+   },
+   {
+    "question_vi": "Ở quầy lễ tân bệnh viện, nhân viên muốn biết có công ty nào trả tiền khám cho bạn không. Họ sẽ hỏi về từ nào?",
+    "options": [
+     "insurance",
+     "pain",
+     "sore throat"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Insurance\" là bảo hiểm, bên này sẽ chi trả một phần hoặc toàn bộ tiền khám cho bạn."
+   },
+   {
+    "question_vi": "Sáng nay bạn thức dậy, cổ họng rát và nuốt nước bọt rất khó chịu. Bạn nói với bác sĩ là bạn bị gì?",
+    "options": [
+     "allergy",
+     "medicine",
+     "sore throat"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Sore throat\" là đau họng, đúng với cảm giác rát cổ khi nuốt."
+   },
+   {
+    "question_vi": "Bạn bị ngã và đầu gối rất đau. Bạn dùng từ nào để nói với bác sĩ về cảm giác đau này?",
+    "options": [
+     "insurance",
+     "pain",
+     "medicine"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng để nói chỗ nào trên cơ thể bạn bị đau."
+   },
+   {
+    "question_vi": "Mỗi lần ăn tôm, bạn bị ngứa và nổi mẩn đỏ. Bạn muốn báo điều này cho bác sĩ. Bạn dùng từ nào?",
+    "options": [
+     "allergy",
+     "sore throat",
+     "pain"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Allergy\" là dị ứng, tức là cơ thể bị ngứa, nổi mẩn khi gặp một loại thức ăn hay thuốc nào đó."
+   }
+  ]
+ }
+}

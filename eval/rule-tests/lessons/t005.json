@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t005",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "refill",
+   "menu",
+   "for here",
+   "to go"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Here is the menu, chị xem quán có đồ uống gì và giá bao nhiêu nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị a black coffee, please.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ. Chị uống for here hay to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "For here, chị ngồi ở cái bàn cạnh cửa sổ kia. À, thêm one tea to go nữa, chị cầm về văn phòng cho bạn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được. Ly trà to go em đậy nắp kỹ để chị cầm đi đường nhé. Cà phê uống tại quán thì có free refill ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em ơi, ly của chị hết rồi. Can I get a refill?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có ngay, em rót đầy lại cho chị, không tính thêm tiền ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, lấy thêm (đồ uống)",
+    "usage_vi": "Dùng khi ly của bạn đã hết và bạn muốn được rót đầy lại. Hay nói: \"Can I get a refill?\""
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng khi muốn xem danh sách món ăn, đồ uống và giá ở quán. Hay nói: \"Can I see the menu?\""
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại quán",
+    "usage_vi": "Dùng để trả lời khi bạn muốn ngồi ăn uống ngay tại quán. Nhân viên thường hỏi: \"For here or to go?\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi bạn muốn mua đồ ăn, đồ uống rồi cầm theo, không ngồi tại quán. Hay nói: \"A coffee to go, please.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang ngồi ăn trưa ở nhà hàng, ly nước ngọt đã hết và bạn muốn được rót thêm. Bạn nói: \"Can I get a ___?\"",
+    "options": [
+     "menu",
+     "refill",
+     "to go"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Refill\" là xin rót thêm đồ uống khi ly đã hết."
+   },
+   {
+    "question_vi": "Bạn vừa bước vào một tiệm bánh, chưa biết có những loại bánh nào và giá bao nhiêu. Bạn hỏi: \"Can I see the ___?\"",
+    "options": [
+     "menu",
+     "receipt",
+     "refill"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Menu\" là danh sách món và giá, nên bạn xin xem menu để chọn."
+   },
+   {
+    "question_vi": "Bạn mua trà sữa và muốn ngồi uống ngay tại quán với bạn bè. Nhân viên hỏi \"For here or to go?\". Bạn trả lời: \"___, please.\"",
+    "options": [
+     "to go",
+     "refill",
+     "for here"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại quán, đúng với ý muốn ngồi uống ở đó."
+   },
+   {
+    "question_vi": "Bạn đang vội ra bến xe buýt và muốn mua một ly cà phê để cầm theo. Bạn nói: \"One coffee ___, please.\"",
+    "options": [
+     "for here",
+     "to go",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, phù hợp khi bạn muốn cầm đồ uống theo mình."
+   }
+  ]
+ }
+}

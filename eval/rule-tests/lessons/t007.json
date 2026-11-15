@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t007",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "seatbelt",
+   "how long",
+   "trunk",
+   "airport",
+   "fare"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị cho hành lý vào the trunk ở phía sau xe nhé, tôi mở sẵn rồi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ cảm ơn anh. Em muốn đi to the airport, chuyến bay của em lúc 9 giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Được chị. Chị nhớ put on your seatbelt nhé, kéo dây qua người rồi cài lại cho an toàn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ. How long to the airport ạ? Em sợ trễ chuyến bay.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Khoảng 30 minutes thôi chị, hôm nay đường vắng lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, vậy là kịp rồi, em yên tâm quá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Tới nơi rồi chị! The fare là 45 dollars. Chị trả cash hay card?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em trả by card. Anh lấy giúp em hành lý trong the trunk nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nói về dây cài trên ghế xe hoặc máy bay. Thường nghe tài xế nhắc: \"Please put on your seatbelt.\""
+   },
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "bao lâu",
+    "usage_vi": "Dùng để hỏi mất bao nhiêu thời gian. Ví dụ: \"How long to the airport?\" để hỏi đi đến sân bay mất bao lâu."
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe",
+    "usage_vi": "Là chỗ chứa đồ ở phía sau xe hơi, thường dùng để để vali, hành lý. Ví dụ: \"Can you open the trunk?\""
+   },
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi muốn nói nơi đi hoặc đến bằng máy bay. Khi lên taxi có thể nói: \"To the airport, please.\""
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền vé, tiền cước xe",
+    "usage_vi": "Là số tiền phải trả cho một chuyến đi bằng taxi, xe buýt, tàu. Có thể hỏi: \"What is the fare?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vừa lên một chiếc xe Uber, tài xế nhắc bạn cài thứ gì để an toàn trước khi xe chạy?",
+    "options": [
+     "seatbelt",
+     "trunk",
+     "fare"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn, cần cài vào khi ngồi trên xe."
+   },
+   {
+    "question_vi": "Bạn đang trên taxi đi đến khách sạn và muốn hỏi mất bao nhiêu thời gian. Bạn nói: \"___ to the hotel?\"",
+    "options": [
+     "fare",
+     "airport",
+     "how long"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"How long\" dùng để hỏi mất bao lâu, nên đây là câu hỏi về thời gian đến khách sạn."
+   },
+   {
+    "question_vi": "Bạn có một chiếc vali rất to và muốn nhờ tài xế mở chỗ để đồ phía sau xe. Bạn nói: \"Can you open the ___?\"",
+    "options": [
+     "airport",
+     "trunk",
+     "seatbelt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Trunk\" là cốp xe, nơi để vali và hành lý ở phía sau xe."
+   },
+   {
+    "question_vi": "Bạn sắp bay về Việt Nam và gọi taxi. Bạn nói với tài xế: \"To the ___, please.\"",
+    "options": [
+     "station",
+     "trunk",
+     "airport"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Muốn đi máy bay thì phải đến \"airport\", tức là sân bay."
+   },
+   {
+    "question_vi": "Bạn muốn biết chuyến xe buýt này phải trả bao nhiêu tiền. Bạn hỏi: \"What is the ___?\"",
+    "options": [
+     "seatbelt",
+     "fare",
+     "trunk"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fare\" là số tiền phải trả cho một chuyến đi bằng xe buýt, taxi hay tàu."
+   }
+  ]
+ }
+}

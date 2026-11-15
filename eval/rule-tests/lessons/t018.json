@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "t018",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "cashier",
+   "aisle",
+   "checkout"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Tìm hàng và trả tiền ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị cần tìm gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em tìm sữa tươi. Sữa ở which aisle vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sữa nằm in aisle 5 ạ. Chị đi vào giữa hai dãy kệ có treo biển số 5 là thấy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn anh. Lấy xong thì em trả tiền ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị ra the checkout gần cửa ra vào, chỗ có máy tính tiền và băng chuyền để hàng ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ở the checkout có người tính tiền giúp không, hay em phải tự làm?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Có ạ, the cashier sẽ quét từng món hàng và nhận tiền của chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cảm ơn. Em đi lấy sữa rồi ra checkout luôn.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để chỉ người quét hàng và nhận tiền của bạn ở quầy tính tiền. Ví dụ: \"Please pay the cashier.\""
+   },
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ hàng",
+    "usage_vi": "Dùng khi hỏi hoặc chỉ chỗ để hàng trong siêu thị, thường đi kèm số. Ví dụ: \"The rice is in aisle 3.\""
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền",
+    "usage_vi": "Dùng để chỉ khu vực bạn mang hàng đến để trả tiền trước khi ra về. Ví dụ: \"Where is the checkout?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Ở cửa hàng tiện lợi, bạn muốn nói về người đứng sau quầy quét mã vạch và thối tiền cho bạn. Người đó gọi là gì?",
+    "options": [
+     "aisle",
+     "checkout",
+     "cashier"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cashier\" là người thu tiền, còn \"checkout\" là nơi trả tiền và \"aisle\" là lối đi giữa các kệ."
+   },
+   {
+    "question_vi": "Bạn hỏi mì gói ở đâu, nhân viên trả lời: \"It's in ___ 7.\" Từ nào điền vào chỗ trống?",
+    "options": [
+     "aisle",
+     "cashier",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Aisle 7\" là lối đi số 7 giữa các dãy kệ, nơi để mì gói."
+   },
+   {
+    "question_vi": "Bạn đã lấy đủ đồ vào giỏ và muốn tìm khu vực trả tiền. Bạn hỏi: \"Where is the ___?\"",
+    "options": [
+     "basket",
+     "checkout",
+     "aisle"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Checkout\" là quầy tính tiền, nơi bạn mang hàng đến để trả tiền."
+   }
+  ]
+ }
+}

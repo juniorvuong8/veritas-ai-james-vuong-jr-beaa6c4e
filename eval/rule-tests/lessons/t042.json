@@ -1,0 +1,103 @@
+{
+ "case": {
+  "id": "t042",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "cart",
+   "basket"
+  ],
+  "custom": [
+   "discount"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi mua đồ ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị cần em giúp gì không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em ơi, hôm nay chị mua nhiều đồ lắm. Chị cần a cart để đẩy đồ cho nhẹ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, a cart có bánh xe ở ngay cạnh cửa ạ. Còn nếu mua ít thì chị lấy a basket xách tay cho gọn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Hôm nay có a discount nào không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có, táo có a 20% discount, giá giảm từ 5 đô xuống còn 4 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Rẻ quá, vậy chị lấy thêm táo. Cảm ơn em nhé!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cart",
+    "word": "cart",
+    "meaning_vi": "xe đẩy (ở siêu thị)",
+    "usage_vi": "Dùng khi bạn mua nhiều đồ và cần xe có bánh để đẩy trong siêu thị. Ví dụ: \"I need a cart.\""
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ xách tay",
+    "usage_vi": "Dùng khi bạn mua ít đồ và chỉ cần một cái giỏ nhỏ để xách tay. Ví dụ: \"I'll take a basket.\""
+   },
+   {
+    "input": "discount",
+    "word": "discount",
+    "meaning_vi": "sự giảm giá",
+    "usage_vi": "Dùng khi nói một món hàng được bán rẻ hơn giá bình thường. Ví dụ: \"Is there a discount today?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua rất nhiều đồ cho cả tuần và cần một thứ có bánh xe để đẩy. Bạn nên lấy gì?",
+    "options": [
+     "basket",
+     "discount",
+     "cart"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cart\" là xe đẩy có bánh xe, phù hợp khi mua nhiều đồ."
+   },
+   {
+    "question_vi": "Bạn chỉ mua một hộp sữa và một ổ bánh mì, nên muốn một thứ nhỏ để xách tay. Bạn nên lấy gì?",
+    "options": [
+     "basket",
+     "cart",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Basket\" là giỏ xách tay, tiện khi chỉ mua vài món."
+   },
+   {
+    "question_vi": "Bạn thấy bảng ghi \"Giảm 30% cho tất cả bánh quy\". Từ tiếng Anh nào nói về việc giảm giá này?",
+    "options": [
+     "cart",
+     "discount",
+     "basket"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Discount\" nghĩa là giảm giá, tức là món hàng được bán rẻ hơn bình thường."
+   }
+  ]
+ }
+}

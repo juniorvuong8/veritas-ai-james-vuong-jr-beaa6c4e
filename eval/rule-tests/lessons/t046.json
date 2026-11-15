@@ -1,0 +1,120 @@
+{
+ "case": {
+  "id": "t046",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "fresh",
+   "cart",
+   "bag"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị mua đồ ăn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Your hands are full. Do you want a cart to carry your things?",
+    "translation_vi": "Chào chị! Tay chị cầm đầy đồ rồi. Chị có muốn lấy xe đẩy để chở đồ không ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, thank you! Is this bread fresh? I want bread from today, not old bread.",
+    "translation_vi": "Có, cảm ơn em! Bánh mì này có tươi không? Chị muốn bánh mới làm hôm nay, không phải bánh cũ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, it's fresh. We make it every morning.",
+    "translation_vi": "Dạ, bánh tươi ạ. Bên em làm bánh mỗi sáng."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great. Can I use this coupon? It says one dollar off.",
+    "translation_vi": "Tốt quá. Chị dùng phiếu giảm giá này được không? Trên đó ghi giảm một đô."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes! With the coupon, you pay one dollar less. Do you need a bag for your food?",
+    "translation_vi": "Dạ được! Có phiếu này chị trả ít hơn một đô. Chị có cần túi để đựng đồ ăn không ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, one bag, please. I want to carry everything home.",
+    "translation_vi": "Có, cho chị một cái túi nhé. Chị muốn mang hết đồ về nhà."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói đồ ăn mới làm hoặc mới hái, chưa để lâu, ví dụ \"fresh bread\", \"fresh fruit\". Hỏi \"Is it fresh?\" để biết đồ ăn có tươi không."
+   },
+   {
+    "input": "cart",
+    "word": "cart",
+    "meaning_vi": "xe đẩy (ở siêu thị)",
+    "usage_vi": "Dùng khi nói về chiếc xe đẩy để chở đồ lúc đi mua sắm trong siêu thị. Ví dụ: \"I need a cart.\""
+   },
+   {
+    "input": "bag",
+    "word": "bag",
+    "meaning_vi": "túi",
+    "usage_vi": "Dùng khi cần túi để đựng đồ mang về, thường hỏi ở quầy thu ngân: \"Can I have a bag, please?\""
+   },
+   {
+    "input": "coupon",
+    "word": "coupon",
+    "meaning_vi": "phiếu giảm giá",
+    "usage_vi": "Dùng khi bạn có một tờ phiếu giúp mua hàng rẻ hơn. Đưa cho thu ngân và hỏi: \"Can I use this coupon?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang mua cá và muốn cá mới đánh bắt hôm nay, không bị để lâu. Bạn hỏi nhân viên: \"Is this fish ___?\"",
+    "options": [
+     "cart",
+     "fresh",
+     "bag"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, dùng để hỏi đồ ăn có còn tươi không."
+   },
+   {
+    "question_vi": "Bạn định mua nhiều đồ nặng như nước và gạo. Bạn cần thứ gì để đẩy đồ đi khắp siêu thị?",
+    "options": [
+     "bag",
+     "coupon",
+     "cart"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cart\" là xe đẩy, giúp bạn chở nhiều đồ nặng trong siêu thị."
+   },
+   {
+    "question_vi": "Ở quầy thu ngân, bạn cần thứ gì đó để bỏ đồ vào và xách về nhà. Bạn nói: \"Can I have a ___, please?\"",
+    "options": [
+     "bag",
+     "coupon",
+     "cart"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Bag\" là cái túi, dùng để đựng đồ và xách về nhà."
+   },
+   {
+    "question_vi": "Bạn có một tờ giấy nhỏ cắt từ tờ báo, giúp bạn mua sữa rẻ hơn hai đô. Bạn hỏi thu ngân: \"Can I use this ___?\"",
+    "options": [
+     "cart",
+     "coupon",
+     "bag"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Coupon\" là phiếu giảm giá, giúp bạn trả ít tiền hơn khi mua hàng."
+   }
+  ]
+ }
+}

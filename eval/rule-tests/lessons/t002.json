@@ -1,0 +1,103 @@
+{
+ "case": {
+  "id": "t002",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "price",
+   "on sale"
+  ],
+  "custom": [
+   "tính tiền"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, hôm nay táo đang on sale, rẻ hơn mọi ngày một nửa đó ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ồ, vậy price bây giờ là bao nhiêu một túi em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, price trên bảng ghi 2 đô một túi, trước đây là 4 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Rẻ quá, chị lấy hai túi. Giờ chị muốn trả tiền thì checkout ở đâu em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, checkout ở cuối cửa hàng, chỗ mọi người xếp hàng đưa đồ và trả tiền đó chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em nhé!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi nói hoặc hỏi một món hàng có giá bao nhiêu. Bạn thường thấy chữ này trên nhãn hoặc bảng giá trong siêu thị."
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn bình thường. Ví dụ: táo đang on sale tức là táo đang rẻ hơn mọi ngày."
+   },
+   {
+    "input": "tính tiền",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền, chỗ thanh toán",
+    "usage_vi": "Dùng để chỉ nơi bạn mang đồ đến trả tiền trước khi ra về. Khi mua xong, bạn đi đến checkout để thanh toán."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn thấy một hộp bánh ở cửa hàng và muốn biết nó bao nhiêu tiền. Bạn tìm chữ nào trên nhãn?",
+    "options": [
+     "on sale",
+     "price",
+     "checkout"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Price\" là giá tiền của món hàng, nên bạn tìm chữ này để biết món hàng giá bao nhiêu."
+   },
+   {
+    "question_vi": "Tuần này siêu thị bán sữa rẻ hơn mọi tuần. Biển quảng cáo sẽ ghi chữ nào?",
+    "options": [
+     "on sale",
+     "checkout",
+     "price"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, đúng với việc sữa đang rẻ hơn bình thường."
+   },
+   {
+    "question_vi": "Bạn đã lấy đủ đồ vào xe đẩy và muốn đi trả tiền. Bạn cần đi đến đâu?",
+    "options": [
+     "price",
+     "on sale",
+     "checkout"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Checkout\" là chỗ tính tiền, nơi bạn mang đồ đến để thanh toán."
+   }
+  ]
+ }
+}

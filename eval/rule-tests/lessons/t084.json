@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t084",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "fever",
+   "pharmacy",
+   "headache",
+   "insurance",
+   "sore throat"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello. What is the problem today?",
+    "translation_vi": "Chào bạn. Hôm nay bạn bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a headache. My head hurts a lot.",
+    "translation_vi": "Tôi bị đau đầu. Đầu tôi nhức lắm."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Let me check your temperature. Yes, you have a fever. Your body is very hot.",
+    "translation_vi": "Để tôi đo nhiệt độ cho bạn. Đúng rồi, bạn bị sốt. Người bạn nóng lắm."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I also have a sore throat. It hurts when I eat and talk.",
+    "translation_vi": "Tôi cũng bị đau họng nữa. Lúc ăn và nói chuyện thì họng tôi đau."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Take this paper to the pharmacy. They will give you medicine.",
+    "translation_vi": "Bạn mang tờ giấy này đến hiệu thuốc nhé. Ở đó họ sẽ đưa thuốc cho bạn."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you. I have insurance. Will it pay for the medicine?",
+    "translation_vi": "Cảm ơn bác sĩ. Tôi có bảo hiểm. Bảo hiểm có trả tiền thuốc không ạ?"
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Yes, your insurance pays for most of it. You only pay a small part.",
+    "translation_vi": "Có, bảo hiểm của bạn trả phần lớn. Bạn chỉ phải trả một phần nhỏ thôi."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường, người nóng. Thường nói: \"I have a fever.\""
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "hiệu thuốc, nhà thuốc",
+    "usage_vi": "Là nơi bạn mua thuốc hoặc mang đơn thuốc của bác sĩ đến để lấy thuốc. Ví dụ: \"Where is the pharmacy?\""
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi bạn thấy đau ở đầu. Thường nói: \"I have a headache.\""
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dùng khi nói về bảo hiểm y tế giúp trả tiền khám bệnh hoặc tiền thuốc. Ở phòng khám người ta hay hỏi: \"Do you have insurance?\""
+   },
+   {
+    "input": "sore throat",
+    "word": "sore throat",
+    "meaning_vi": "đau họng",
+    "usage_vi": "Dùng khi họng bị đau, nhất là lúc nuốt, ăn hoặc nói. Thường nói: \"I have a sore throat.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Con bạn bị nóng người, nhiệt kế chỉ 39 độ. Bạn nói với y tá: \"My child has a ___.\" Từ nào phù hợp?",
+    "options": [
+     "headache",
+     "fever",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fever\" nghĩa là sốt, dùng khi nhiệt độ cơ thể cao và người nóng."
+   },
+   {
+    "question_vi": "Buổi tối bạn cần mua thuốc cảm và hỏi một người đi đường: \"Where is the nearest ___?\" Từ nào phù hợp?",
+    "options": [
+     "pharmacy",
+     "insurance",
+     "sore throat"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pharmacy\" là hiệu thuốc, nơi bạn đến để mua thuốc."
+   },
+   {
+    "question_vi": "Bạn làm việc trước máy tính cả ngày và thấy nhức đầu. Bạn nói với đồng nghiệp: \"I have a ___.\" Từ nào phù hợp?",
+    "options": [
+     "sore throat",
+     "fever",
+     "headache"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với cảm giác nhức đầu của bạn."
+   },
+   {
+    "question_vi": "Ở quầy lễ tân bệnh viện, nhân viên muốn biết có ai giúp bạn trả tiền khám không. Họ hỏi: \"Do you have ___?\" Từ nào phù hợp?",
+    "options": [
+     "fever",
+     "insurance",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Insurance\" là bảo hiểm, có thể giúp trả tiền khám bệnh và tiền thuốc."
+   },
+   {
+    "question_vi": "Bạn hát karaoke rất lâu, hôm sau nuốt nước cũng thấy đau họng. Bạn nói với bác sĩ: \"I have a ___.\" Từ nào phù hợp?",
+    "options": [
+     "headache",
+     "pharmacy",
+     "sore throat"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Sore throat\" nghĩa là đau họng, dùng khi họng đau lúc nuốt hoặc nói."
+   }
+  ]
+ }
+}

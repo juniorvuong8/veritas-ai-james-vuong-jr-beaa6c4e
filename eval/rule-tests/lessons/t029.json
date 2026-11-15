@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t029",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "menu",
+   "napkin",
+   "to go",
+   "refill"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Đây là the menu ạ, chị xem có đồ uống gì và giá bao nhiêu nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị một ly iced tea, please.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị ngồi đây uống hay lấy it to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị ngồi đây em nhé. Mà uống hết ly thì có a free refill không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có, free refill ạ. Chị uống hết thì cứ mang ly lại, em rót đầy lại cho chị, không tính tiền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Tốt quá. Cho chị xin a napkin nữa nhé, để chị lau tay.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, a napkin đây ạ. Trà của chị đây, enjoy!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng khi muốn xem danh sách món ăn, đồ uống và giá trong quán. Có thể nói: \"Can I see the menu, please?\""
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy (ăn)",
+    "usage_vi": "Dùng khi cần giấy để lau tay, lau miệng hoặc lau bàn khi ăn uống. Có thể nói: \"Can I have a napkin, please?\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi muốn mua đồ ăn, đồ uống để mang đi chứ không ngồi tại quán. Nhân viên hay hỏi: \"For here or to go?\""
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, làm đầy lại (ly nước)",
+    "usage_vi": "Dùng khi uống hết và muốn được rót thêm vào ly. Nhiều quán có \"free refill\", tức là rót thêm không mất tiền."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vừa vào một quán ăn và muốn xem quán có những món gì, giá bao nhiêu. Bạn nói: \"Can I see the ___, please?\"",
+    "options": [
+     "napkin",
+     "menu",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Menu\" là danh sách món và giá, nên bạn xin xem menu để chọn món."
+   },
+   {
+    "question_vi": "Bạn làm đổ một chút cà phê lên bàn và cần giấy để lau. Bạn nói: \"Can I have a ___, please?\"",
+    "options": [
+     "napkin",
+     "menu",
+     "to go"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Napkin\" là khăn giấy dùng để lau tay, lau miệng hoặc lau bàn."
+   },
+   {
+    "question_vi": "Bạn đang vội và muốn mua một ly latte để uống trên đường đi làm. Bạn nói: \"A latte ___, please.\"",
+    "options": [
+     "for here",
+     "refill",
+     "to go"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, còn \"for here\" là ngồi uống tại quán."
+   },
+   {
+    "question_vi": "Bạn ngồi ăn ở nhà hàng, ly nước ngọt đã hết và bạn muốn được rót thêm. Bạn nói: \"Can I get a ___, please?\"",
+    "options": [
+     "refill",
+     "menu",
+     "napkin"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Refill\" là rót thêm vào ly khi bạn đã uống hết."
+   }
+  ]
+ }
+}

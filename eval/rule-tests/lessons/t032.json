@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t032",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "fever",
+   "cough",
+   "headache",
+   "insurance",
+   "appointment"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đến phòng khám khi bị ốm",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Chào anh. Anh có an appointment với bác sĩ không, hay anh chưa đặt giờ trước?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, em có an appointment lúc 10 giờ. Hôm qua em đã gọi điện đặt rồi ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Vâng. Anh có health insurance không? Nếu có thì anh không phải tự trả hết tiền khám. Anh cho tôi xem thẻ nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, đây là my insurance card ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Cảm ơn anh. Hôm nay anh thấy không khỏe thế nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Em bị a high fever, người nóng ran, đo được 39 độ. Em còn bị a headache nữa, đầu em nhức suốt từ sáng.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Anh có bị a cough không? Nghe giọng anh thì cổ họng có vẻ rát lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, a bad cough. Cả đêm em cứ khục khặc liên tục, không ngủ được.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường. Thường nói \"I have a fever\" hoặc \"a high fever\" (sốt cao)."
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng để nói bạn bị ho. Thường nói \"I have a cough\" hoặc \"a bad cough\" (ho nặng)."
+   },
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu",
+    "usage_vi": "Dùng khi đầu bị đau hoặc nhức. Thường nói \"I have a headache\"."
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dùng khi phòng khám hỏi bạn có bảo hiểm để chi trả tiền khám hay không. Ví dụ: \"Do you have health insurance?\" hoặc \"my insurance card\"."
+   },
+   {
+    "input": "appointment",
+    "word": "appointment",
+    "meaning_vi": "cuộc hẹn, lịch hẹn (khám bệnh)",
+    "usage_vi": "Dùng khi đặt giờ gặp bác sĩ hoặc nói bạn đã có giờ hẹn. Ví dụ: \"I have an appointment at 10\" hoặc \"I'd like to make an appointment\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn sờ trán con thấy rất nóng, đo được 38,5 độ. Bạn nói với bác sĩ: \"My child has a ___.\" Từ nào đúng?",
+    "options": [
+     "cough",
+     "fever",
+     "appointment"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fever\" nghĩa là sốt, tức là thân nhiệt cao hơn bình thường."
+   },
+   {
+    "question_vi": "Bạn bị cảm lạnh, cổ họng rát và cứ khục khặc mãi không dứt. Bạn nói với dược sĩ: \"I have a bad ___.\" Từ nào đúng?",
+    "options": [
+     "cough",
+     "headache",
+     "insurance"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cough\" nghĩa là ho, đúng với triệu chứng cổ họng rát và khục khặc liên tục."
+   },
+   {
+    "question_vi": "Sau cả ngày nhìn màn hình máy tính, đầu bạn đau nhức. Bạn nói với đồng nghiệp: \"I have a ___.\" Từ nào đúng?",
+    "options": [
+     "fever",
+     "insurance",
+     "headache"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Headache\" nghĩa là đau đầu, đúng với cảm giác đầu đau nhức."
+   },
+   {
+    "question_vi": "Ở phòng khám nha khoa, nhân viên muốn biết có công ty nào trả bớt tiền khám cho bạn không. Họ hỏi: \"Do you have dental ___?\" Từ nào đúng?",
+    "options": [
+     "appointment",
+     "cough",
+     "insurance"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Insurance\" là bảo hiểm, giúp chi trả một phần hoặc toàn bộ tiền khám."
+   },
+   {
+    "question_vi": "Bạn gọi điện cho phòng khám để đặt giờ gặp bác sĩ vào thứ Hai. Bạn nói: \"I'd like to make an ___.\" Từ nào đúng?",
+    "options": [
+     "appointment",
+     "insurance",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Make an appointment\" nghĩa là đặt lịch hẹn để gặp bác sĩ vào một giờ cụ thể."
+   }
+  ]
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "t092",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "cough",
+   "pharmacy",
+   "medicine"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ vì bị ho",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Chào anh, hôm nay anh thấy không khỏe chỗ nào?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Khụ khụ... Dạ, em bị a bad cough ba ngày rồi, cứ khụ khụ suốt nên rát cổ họng lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Anh có cough at night không? Có bị sốt không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, đêm nào em cũng cough a lot, không ngủ được. Nhưng em không sốt ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Không sao đâu. Tôi sẽ cho anh some medicine, uống ba lần một ngày sau khi ăn là sẽ đỡ ho.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, vậy em lấy medicine ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Anh mang tờ giấy này đến the pharmacy ở tầng một, ở đó họ sẽ đưa medicine cho anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em cảm ơn bác sĩ. Em xuống the pharmacy ngay ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng khi nói mình bị ho, ví dụ \"I have a cough\" (tôi bị ho). Cũng dùng như động từ: \"I cough at night\" (tôi ho vào ban đêm)."
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "hiệu thuốc, nhà thuốc",
+    "usage_vi": "Dùng để chỉ nơi bán thuốc hoặc nơi nhận thuốc theo đơn của bác sĩ. Ví dụ: \"Where is the pharmacy?\" (Hiệu thuốc ở đâu?)."
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc (chữa bệnh)",
+    "usage_vi": "Dùng khi nói về thuốc uống hoặc thuốc chữa bệnh nói chung. Ví dụ: \"Take this medicine after meals\" (Uống thuốc này sau bữa ăn)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Con trai bạn ho liên tục cả tuần. Bạn đưa bé đi khám và nói với bác sĩ: \"My son has a ___.\" Từ nào phù hợp?",
+    "options": [
+     "pharmacy",
+     "cough",
+     "medicine"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cough\" nghĩa là ho, nên \"My son has a cough\" là \"Con trai tôi bị ho\"."
+   },
+   {
+    "question_vi": "Bạn đang đi dạo và bị đau đầu, muốn tìm chỗ mua thuốc. Bạn hỏi người đi đường: \"Where is the ___?\" Từ nào phù hợp?",
+    "options": [
+     "pharmacy",
+     "cough",
+     "doctor"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pharmacy\" là hiệu thuốc, nơi bạn có thể mua thuốc đau đầu."
+   },
+   {
+    "question_vi": "Bạn bị cảm và vào hiệu thuốc. Bạn hỏi người bán: \"Do you have ___ for a cold?\" Từ nào phù hợp?",
+    "options": [
+     "a cough",
+     "a pharmacy",
+     "medicine"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Medicine\" là thuốc chữa bệnh, nên câu này hỏi \"Bạn có thuốc trị cảm không?\"."
+   }
+  ]
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t085",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "receipt",
+   "to go",
+   "change",
+   "large",
+   "order"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Xin chào, chị muốn order gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị một ly cà phê sữa nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị lấy ly nhỏ hay ly large ạ? Chị uống ở đây hay to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ly large nhé, chị muốn ly to để uống lâu. Chị lấy to go, mang về văn phòng uống. Chị gửi 10 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, ly của chị 6 đô, chị đưa 10 đô, đây là 4 đô change của chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị xin receipt luôn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, receipt đây ạ, trên này có ghi món và số tiền chị đã trả.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em nhiều!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng khi muốn xin tờ giấy ghi món đã mua và số tiền đã trả, ví dụ: \"Can I have the receipt?\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi mua đồ ăn, đồ uống nhưng không ngồi lại quán mà mang đi nơi khác, ví dụ: \"A coffee to go, please.\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối lại",
+    "usage_vi": "Là số tiền người bán trả lại khi bạn đưa nhiều hơn giá món hàng, ví dụ: \"Here is your change.\""
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn, to",
+    "usage_vi": "Dùng khi chọn cỡ ly hoặc phần ăn to nhất, ví dụ: \"A large coffee, please.\""
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi nói muốn chọn món ăn, đồ uống ở quán, ví dụ: \"Can I order now?\" hoặc nhân viên hỏi \"What would you like to order?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một chiếc áo ở cửa hàng và muốn giữ tờ giấy ghi số tiền đã trả để sau này đổi hàng. Bạn xin cái gì?",
+    "options": [
+     "receipt",
+     "change",
+     "order"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Receipt\" là tờ hóa đơn ghi món đã mua và số tiền đã trả."
+   },
+   {
+    "question_vi": "Bạn mua bánh mì ở tiệm nhưng muốn mang về nhà ăn. Nhân viên hỏi \"For here or ...?\". Bạn trả lời thế nào?",
+    "options": [
+     "large",
+     "receipt",
+     "to go"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, không ăn tại quán."
+   },
+   {
+    "question_vi": "Bạn ăn hết 15 đô và đưa thu ngân 20 đô. Thu ngân đưa lại bạn 5 đô. Số tiền 5 đô đó gọi là gì?",
+    "options": [
+     "receipt",
+     "change",
+     "order"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Change\" là tiền thối lại khi bạn đưa nhiều hơn số tiền phải trả."
+   },
+   {
+    "question_vi": "Ở rạp phim, bạn rất khát và muốn mua ly nước ngọt to nhất. Bạn chọn cỡ nào?",
+    "options": [
+     "large",
+     "to go",
+     "change"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Large\" là cỡ lớn, dùng khi muốn ly hoặc phần ăn to."
+   },
+   {
+    "question_vi": "Ở nhà hàng, người phục vụ đến bàn và muốn biết bạn chọn món gì. Họ hỏi \"Are you ready to ...?\". Từ nào phù hợp?",
+    "options": [
+     "change",
+     "receipt",
+     "order"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, nên câu hỏi là \"Are you ready to order?\"."
+   }
+  ]
+ }
+}

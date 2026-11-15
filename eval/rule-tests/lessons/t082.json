@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "t082",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "cart",
+   "cash",
+   "fresh"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi mua thực phẩm ở siêu thị",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hello! Do you need a cart? You can put all your food in it and push it around the store.",
+    "translation_vi": "Xin chào! Bạn có cần xe đẩy không? Bạn có thể bỏ hết đồ ăn vào đó và đẩy đi khắp cửa hàng."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. I'm buying a lot today. Where can I find vegetables?",
+    "translation_vi": "Vâng, cho tôi một cái. Hôm nay tôi mua nhiều đồ lắm. Rau ở đâu vậy?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Over there, on the left. They're very fresh. They came in this morning.",
+    "translation_vi": "Ở đằng kia, bên trái. Rau rất tươi, mới về sáng nay."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Good. I don't want old bread either. Is the bread fresh too?",
+    "translation_vi": "Tốt quá. Tôi cũng không muốn mua bánh mì cũ. Bánh mì cũng mới ra lò chứ?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, we bake it every morning. Anything else?",
+    "translation_vi": "Vâng, sáng nào chúng tôi cũng nướng bánh mới. Bạn cần gì nữa không?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Can I pay with cash, or only with a card?",
+    "translation_vi": "Tôi trả bằng tiền mặt được không, hay chỉ được trả bằng thẻ?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Both are fine. If you pay with cash, the cashier will give you your change.",
+    "translation_vi": "Cả hai đều được. Nếu bạn trả tiền mặt thì nhân viên thu ngân sẽ thối tiền lại cho bạn."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great, thank you!",
+    "translation_vi": "Tuyệt quá, cảm ơn bạn!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cart",
+    "word": "cart",
+    "meaning_vi": "xe đẩy (trong siêu thị)",
+    "usage_vi": "Dùng khi nói về chiếc xe có bánh để bỏ đồ cần mua và đẩy đi trong siêu thị. Ví dụ: \"Do you need a cart?\""
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi muốn trả bằng tiền giấy hoặc tiền xu, không dùng thẻ. Thường nói: \"pay with cash\" (trả bằng tiền mặt)."
+   },
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thực phẩm như rau, trái cây, cá, bánh mì còn mới, không bị cũ hay hư. Ví dụ: \"Is the fish fresh?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn định mua nhiều chai nước và một bao gạo, quá nặng để cầm bằng tay. Bạn hỏi nhân viên: \"Where can I get a ___?\" Từ nào phù hợp?",
+    "options": [
+     "cart",
+     "cash",
+     "fresh"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cart\" là xe đẩy, giúp bạn chở đồ nặng khi đi mua sắm trong siêu thị."
+   },
+   {
+    "question_vi": "Ví của bạn chỉ có tiền giấy, không có thẻ ngân hàng. Ở quầy tính tiền, bạn hỏi: \"Can I pay with ___?\" Từ nào phù hợp?",
+    "options": [
+     "fresh",
+     "cart",
+     "cash"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cash\" là tiền mặt, nên \"pay with cash\" nghĩa là trả bằng tiền mặt."
+   },
+   {
+    "question_vi": "Ở quầy trái cây, bạn muốn biết táo có mới về không hay đã để lâu rồi. Bạn hỏi: \"Are these apples ___?\" Từ nào phù hợp?",
+    "options": [
+     "cash",
+     "fresh",
+     "cart"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, dùng để hỏi thực phẩm còn mới hay đã cũ."
+   }
+  ]
+ }
+}

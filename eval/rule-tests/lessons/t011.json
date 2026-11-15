@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t011",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn left",
+   "fare",
+   "trunk"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi về khách sạn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hello! Your bag is big. I can put it in the trunk at the back of the car.",
+    "translation_vi": "Chào bạn! Túi của bạn to quá. Tôi có thể để nó vào cốp ở phía sau xe."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you. Please go to the City Hotel on Main Street.",
+    "translation_vi": "Cảm ơn anh. Anh chở tôi đến khách sạn City Hotel trên đường Main nhé."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Sure. At the next corner, do I go straight or turn left?",
+    "translation_vi": "Được thôi. Đến góc đường tới, tôi đi thẳng hay rẽ trái?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Please turn left. Go left, not right. The hotel is there.",
+    "translation_vi": "Anh rẽ trái nhé. Đi bên trái, không phải bên phải. Khách sạn ở đó."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "We are here. The fare is 15 dollars for this ride.",
+    "translation_vi": "Đến nơi rồi. Tiền cước chuyến này là 15 đô la."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here is 15 dollars. Can I get my bag from the trunk, please?",
+    "translation_vi": "Gửi anh 15 đô la. Anh lấy giúp tôi túi trong cốp xe được không?"
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Of course. Here is your bag. Have a nice day!",
+    "translation_vi": "Tất nhiên rồi. Túi của bạn đây. Chúc bạn một ngày vui vẻ!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế hoặc người khác đi sang bên trái. Ví dụ: \"Please turn left here.\""
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền cước, tiền vé",
+    "usage_vi": "Dùng để nói số tiền phải trả cho một chuyến đi bằng taxi, xe buýt, tàu hoặc máy bay. Ví dụ: \"How much is the fare?\""
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe",
+    "usage_vi": "Dùng để chỉ ngăn chứa đồ ở phía sau xe ô tô, nơi để vali và túi lớn. Ví dụ: \"Can you open the trunk, please?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang ngồi trên xe Grab, con đường bạn muốn đến nằm ở bên trái ngã tư phía trước. Bạn nói gì với tài xế?",
+    "options": [
+     "go straight",
+     "trunk",
+     "turn left"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, dùng khi muốn tài xế đi sang đường bên trái."
+   },
+   {
+    "question_vi": "Bạn lên xe buýt và muốn hỏi chuyến đi này phải trả bao nhiêu tiền: \"How much is the ___?\"",
+    "options": [
+     "fare",
+     "trunk",
+     "turn left"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fare\" là tiền cước hoặc tiền vé phải trả cho một chuyến đi."
+   },
+   {
+    "question_vi": "Bạn đi taxi ra sân bay với một chiếc vali lớn và muốn để nó ở phía sau xe: \"Can you open the ___, please?\"",
+    "options": [
+     "fare",
+     "trunk",
+     "seat"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Trunk\" là cốp xe ở phía sau, nơi để vali và hành lý lớn."
+   }
+  ]
+ }
+}

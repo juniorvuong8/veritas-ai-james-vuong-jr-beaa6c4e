@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "t083",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn right",
+   "turn left",
+   "trunk"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi đến khách sạn",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Is this big bag yours? I can put it in the trunk at the back of the car.",
+    "translation_vi": "Chào bạn! Cái túi lớn này của bạn phải không? Tôi có thể để nó vào cốp ở phía sau xe."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. Thank you! I'm going to the City Hotel.",
+    "translation_vi": "Vâng, nhờ anh nhé. Cảm ơn anh! Tôi muốn đến khách sạn City."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. We're at the traffic light now. Do I turn left or turn right?",
+    "translation_vi": "Được rồi. Mình đang ở đèn giao thông. Tôi rẽ trái hay rẽ phải?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Turn left, please. Go to the left side, near the park.",
+    "translation_vi": "Anh rẽ trái giúp tôi. Đi sang bên trái, gần công viên."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. And after the park?",
+    "translation_vi": "Được. Còn qua công viên rồi thì sao?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "At the bank, turn right. The hotel is on the right side of the street.",
+    "translation_vi": "Đến ngân hàng thì rẽ phải. Khách sạn nằm ở bên phải đường."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Here we are! I'll get your bag from the trunk.",
+    "translation_vi": "Đến nơi rồi! Để tôi lấy túi của bạn trong cốp ra."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you so much!",
+    "translation_vi": "Cảm ơn anh rất nhiều!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng để chỉ đường cho tài xế khi cần đổi hướng sang bên tay phải. Bạn có thể nói thêm địa điểm, ví dụ: \"Turn right at the bank.\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng để chỉ đường khi cần đổi hướng sang bên tay trái. Ví dụ: \"Turn left at the traffic light, please.\""
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (phía sau ô tô)",
+    "usage_vi": "Dùng khi nói về chỗ để hành lý ở phía sau xe. Ví dụ: \"Can you open the trunk?\" khi bạn muốn để vali vào xe."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang đi taxi về nhà. Đến ngã tư, nhà bạn nằm ở con đường bên tay phải. Bạn nói gì với tài xế?",
+    "options": [
+     "turn left",
+     "turn right",
+     "trunk"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, đúng hướng con đường bên tay phải dẫn về nhà bạn."
+   },
+   {
+    "question_vi": "Bạn đi xe công nghệ đến bệnh viện. Bệnh viện nằm ở con đường bên tay trái ngay sau đèn giao thông. Bạn nói gì?",
+    "options": [
+     "turn left",
+     "trunk",
+     "turn right"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, giúp tài xế đi vào con đường bên tay trái có bệnh viện."
+   },
+   {
+    "question_vi": "Bạn ra sân bay với một chiếc vali to và muốn nhờ tài xế để vali ở phía sau xe. Bạn nói: \"Can you open the ___?\"",
+    "options": [
+     "turn right",
+     "seat",
+     "trunk"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Trunk\" là cốp xe ở phía sau ô tô, nơi để vali và hành lý lớn."
+   }
+  ]
+ }
+}

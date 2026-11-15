@@ -1,0 +1,113 @@
+{
+ "case": {
+  "id": "t076",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pharmacy",
+   "insurance"
+  ],
+  "custom": [
+   "blood pressure"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Y tá",
+    "text": "Chào anh, anh có insurance không ạ? Nếu có thì công ty sẽ trả phần lớn tiền khám, anh chỉ phải trả một ít thôi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, đây là thẻ insurance của tôi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Cảm ơn anh. Bây giờ em đo blood pressure cho anh nhé, anh xắn tay áo lên để em quấn máy đo vào cánh tay.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ được. Kết quả thế nào ạ, có cao không chị?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Blood pressure của anh hơi cao, 140 trên 90. Bác sĩ sẽ kê thuốc để hạ xuống cho anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Vậy tôi mua thuốc ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Anh mang đơn thuốc này ra pharmacy ở tầng một, ở đó người ta sẽ bán thuốc cho anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, cảm ơn chị nhiều.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "nhà thuốc, hiệu thuốc",
+    "usage_vi": "Dùng để chỉ nơi bán thuốc, thường là nơi bạn mang đơn thuốc của bác sĩ đến để mua thuốc."
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Khi đi khám, nhân viên thường hỏi bạn có insurance không để biết công ty bảo hiểm có trả tiền khám giúp bạn không."
+   },
+   {
+    "input": "blood pressure",
+    "word": "blood pressure",
+    "meaning_vi": "huyết áp",
+    "usage_vi": "Dùng khi y tá hoặc bác sĩ đo huyết áp bằng máy quấn vào cánh tay; người ta hay nói blood pressure cao hoặc thấp."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị đau đầu và muốn mua thuốc giảm đau. Bạn nên đến đâu?",
+    "options": [
+     "bank",
+     "insurance",
+     "pharmacy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Pharmacy là nhà thuốc, nơi bán thuốc nên đây là chỗ bạn cần đến."
+   },
+   {
+    "question_vi": "Bạn gọi điện đặt lịch khám, nhân viên muốn biết có công ty nào trả tiền khám giúp bạn không. Họ hỏi: \"Do you have ___?\" Từ nào điền vào chỗ trống?",
+    "options": [
+     "insurance",
+     "pharmacy",
+     "blood pressure"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Insurance là bảo hiểm, tức là công ty trả tiền khám chữa bệnh giúp bạn."
+   },
+   {
+    "question_vi": "Ông của bạn hay bị chóng mặt, bác sĩ quấn một cái máy vào cánh tay ông để kiểm tra. Bác sĩ đang đo gì?",
+    "options": [
+     "pharmacy",
+     "blood pressure",
+     "insurance"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Máy quấn vào cánh tay dùng để đo blood pressure, tức là huyết áp."
+   }
+  ]
+ }
+}

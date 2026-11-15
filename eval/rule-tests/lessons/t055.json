@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t055",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "stop here",
+   "turn left",
+   "how long",
+   "traffic"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi đến khách sạn",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị, chị đi to the Grand Hotel đúng không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ đúng rồi. Anh ơi, how long to the hotel? Tôi có hẹn lúc 3 giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Bình thường chỉ about 15 minutes, nhưng hôm nay heavy traffic lắm. Chị nhìn kìa, xe nối đuôi nhau dài cả cây số, chắc mất 25 phút.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy cũng được. Đến ngã tư phía trước, please turn left nhé, khách sạn nằm trên con đường bên tay trái.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, tôi bật xi-nhan trái rồi rẽ vào đường đó luôn.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "A, khách sạn kia rồi! Please stop here, tôi xuống ngay cửa này.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, tôi đã đỗ xe sát lề rồi. Chị đi cẩn thận nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Dùng khi muốn tài xế dừng xe ngay chỗ mình đang ở để xuống xe. Nên nói lịch sự: \"Please stop here.\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng để chỉ đường cho tài xế khi cần rẽ sang bên trái, thường ở ngã tư hoặc đầu hẻm. Ví dụ: \"Please turn left at the corner.\""
+   },
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "mất bao lâu",
+    "usage_vi": "Dùng để hỏi một việc tốn bao nhiêu thời gian, ví dụ đi đến nơi nào đó. Ví dụ: \"How long to the airport?\""
+   },
+   {
+    "input": "traffic",
+    "word": "traffic",
+    "meaning_vi": "xe cộ lưu thông trên đường, tình trạng giao thông",
+    "usage_vi": "Dùng khi nói về lượng xe trên đường. \"Heavy traffic\" nghĩa là đường đông xe, đi chậm."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đi taxi đến siêu thị. Khi xe chạy ngang cổng siêu thị, bạn muốn xuống xe ngay. Bạn nói gì với tài xế?",
+    "options": [
+     "turn left",
+     "stop here",
+     "how long"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Stop here\" dùng để nhờ tài xế dừng xe ngay tại chỗ đó cho bạn xuống."
+   },
+   {
+    "question_vi": "Bạn chỉ đường cho tài xế. Nhà bạn ở con đường phía bên tay trái ngã tư. Bạn nói gì?",
+    "options": [
+     "turn left",
+     "turn right",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Turn left\" là rẽ trái, đúng hướng đến nhà bạn; \"turn right\" là rẽ phải."
+   },
+   {
+    "question_vi": "Bạn sắp đi sân bay và muốn biết đi xe đến đó tốn mấy phút. Bạn hỏi tài xế bằng cụm từ nào?",
+    "options": [
+     "how much",
+     "traffic",
+     "how long"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"How long\" dùng để hỏi thời gian, còn \"how much\" dùng để hỏi giá tiền."
+   },
+   {
+    "question_vi": "Giờ tan tầm, đường rất đông xe nên bạn đến trễ. Bạn giải thích: \"Sorry, there was heavy ___.\" Chỗ trống điền gì?",
+    "options": [
+     "ticket",
+     "traffic",
+     "turn left"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Heavy traffic\" nghĩa là đường đông xe, đi chậm, nên đây là lý do bạn đến trễ."
+   }
+  ]
+ }
+}

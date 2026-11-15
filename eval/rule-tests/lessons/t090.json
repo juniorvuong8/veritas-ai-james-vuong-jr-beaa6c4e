@@ -1,0 +1,102 @@
+{
+ "case": {
+  "id": "t090",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "cashier",
+   "aisle",
+   "frozen"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị tìm đồ đông lạnh",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị cần tìm gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em muốn mua kem và cá. Em đang tìm the frozen food, loại để trong tủ đá cho khỏi tan ấy ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị đi thẳng rồi rẽ vào aisle 7, chỗ giữa hai dãy kệ có biển số 7 treo phía trên đó ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn anh. Mua xong thì em trả tiền ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị mang đồ ra quầy phía trước, the cashier sẽ quét đồ và tính tiền cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em hiểu rồi. Cảm ơn anh nhiều ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để chỉ người ngồi ở quầy tính tiền trong siêu thị hoặc cửa hàng. Khi muốn trả tiền, bạn mang đồ đến chỗ cashier."
+   },
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "dãy kệ hàng, lối đi giữa các kệ",
+    "usage_vi": "Trong siêu thị, mỗi dãy kệ có số, ví dụ \"aisle 7\". Nhân viên thường nói \"It's in aisle 7\" để chỉ chỗ có món bạn tìm."
+   },
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để nói về đồ ăn được để trong tủ đá, như kem, cá, pizza. Thường gặp trong cụm \"frozen food\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn trả tiền. Bạn mang đồ đến chỗ ai?",
+    "options": [
+     "aisle",
+     "cashier",
+     "frozen"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cashier\" là nhân viên thu ngân, người tính tiền cho bạn ở quầy."
+   },
+   {
+    "question_vi": "Bạn hỏi mì gói ở đâu, nhân viên chỉ sang dãy kệ có biển số 3. Từ nào điền vào chỗ trống: \"It's in ___ 3.\"",
+    "options": [
+     "aisle",
+     "cashier",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Aisle\" là dãy kệ hàng có đánh số trong siêu thị, nên nói \"in aisle 3\"."
+   },
+   {
+    "question_vi": "Bạn lấy một hộp pizza cứng và lạnh từ tủ đá trong siêu thị. Đó là loại pizza gì?",
+    "options": [
+     "fresh",
+     "cashier",
+     "frozen"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Đồ ăn để trong tủ đá cho đông cứng gọi là \"frozen\", ví dụ \"frozen pizza\"."
+   }
+  ]
+ }
+}

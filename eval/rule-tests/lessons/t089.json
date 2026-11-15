@@ -1,0 +1,102 @@
+{
+ "case": {
+  "id": "t089",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "to go",
+   "menu",
+   "for here"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Xin chào! Đây là our menu, anh xem quán có đồ uống gì và giá bao nhiêu nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn chị. Em muốn a hot tea for here, em sẽ ngồi ở cái bàn cạnh cửa sổ kia.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ. Anh còn muốn gọi thêm gì nữa không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, thêm an iced coffee to go nữa, em sẽ mang về công ty cho đồng nghiệp.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, ly iced coffee sẽ được để trong cốc giấy có nắp cho anh dễ cầm đi. Tổng cộng là eight dollars ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here you go. Cảm ơn chị nhiều!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi gọi đồ ăn hoặc đồ uống mà bạn muốn mang ra khỏi quán. Bạn có thể nói \"a coffee to go\" hoặc trả lời nhân viên \"To go, please.\""
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng để chỉ danh sách món ăn, đồ uống và giá ở quán. Bạn có thể hỏi \"Can I see the menu?\" khi muốn xem."
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại quán",
+    "usage_vi": "Dùng khi bạn muốn ngồi lại ăn uống ngay trong quán. Nhân viên thường hỏi \"For here or to go?\" và bạn trả lời \"For here, please.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một ly cà phê và muốn cầm theo lên xe buýt để uống. Bạn nói với nhân viên: \"A coffee ___, please.\"",
+    "options": [
+     "for here",
+     "to go",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, phù hợp khi bạn muốn cầm đồ uống ra khỏi quán."
+   },
+   {
+    "question_vi": "Bạn vào một quán nước mới và muốn xem quán có những món gì, giá bao nhiêu. Bạn hỏi: \"Can I see the ___?\"",
+    "options": [
+     "menu",
+     "to go",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Menu\" là thực đơn, nơi ghi các món và giá của quán."
+   },
+   {
+    "question_vi": "Bạn muốn ngồi lại quán đọc sách và uống trà. Nhân viên hỏi \"For here or to go?\". Bạn trả lời: \"___, please.\"",
+    "options": [
+     "To go",
+     "Menu",
+     "For here"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại quán, đúng với việc bạn ngồi lại uống trà."
+   }
+  ]
+ }
+}

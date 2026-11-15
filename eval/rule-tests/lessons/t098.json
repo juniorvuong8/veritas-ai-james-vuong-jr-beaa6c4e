@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t098",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "bag",
+   "price",
+   "on sale",
+   "fresh"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Mua táo ở siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Hôm nay táo đang on sale đó ạ, rẻ hơn giá thường 30%.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ồ, vậy price bây giờ là bao nhiêu một ký vậy em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chỉ còn 2 đô một ký thôi ạ, hôm qua là 3 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Táo này có fresh không em? Chị không thích táo để lâu, bị mềm và héo.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ fresh lắm chị, táo mới được giao tới sáng nay, còn cứng và giòn ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy chị lấy hai ký. Em cho chị một cái bag để đựng táo nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, bag đây ạ. Chị bỏ táo vào rồi mang ra quầy tính tiền nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "bag",
+    "word": "bag",
+    "meaning_vi": "túi, bao",
+    "usage_vi": "Dùng khi bạn cần một cái túi để đựng đồ đã mua. Ví dụ: 'Can I have a bag?' là xin một cái túi."
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói về số tiền phải trả cho một món hàng. Ví dụ: 'What is the price?' nghĩa là giá bao nhiêu."
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng để nói một món hàng đang được bán rẻ hơn bình thường. Ở siêu thị bạn hay thấy bảng ghi 'on sale'."
+   },
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng cho thức ăn mới, chưa để lâu, như rau, trái cây, cá, thịt hay bánh mì. Ví dụ: 'Is the fish fresh?'"
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua nhiều đồ ở siêu thị và cần thứ để đựng mang về nhà. Bạn xin nhân viên một cái gì?",
+    "options": [
+     "price",
+     "bag",
+     "fresh"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Bag\" là cái túi dùng để đựng đồ mang về."
+   },
+   {
+    "question_vi": "Bạn thấy một hộp sữa nhưng không thấy ghi giá tiền. Bạn hỏi nhân viên: \"Hộp sữa này ___ bao nhiêu vậy?\"",
+    "options": [
+     "on sale",
+     "fresh",
+     "price"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Price\" là giá tiền, nên dùng khi muốn hỏi món hàng giá bao nhiêu."
+   },
+   {
+    "question_vi": "Bánh mì hôm nay được bán rẻ hơn một nửa so với ngày thường. Nhân viên nói: \"Bánh mì hôm nay đang ___.\"",
+    "options": [
+     "on sale",
+     "bag",
+     "price"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, bán rẻ hơn bình thường."
+   },
+   {
+    "question_vi": "Bạn muốn mua cá vừa mới được đưa tới, không phải cá để lâu. Bạn hỏi: \"Cá này có ___ không?\"",
+    "options": [
+     "bag",
+     "fresh",
+     "on sale"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, chưa để lâu."
+   }
+  ]
+ }
+}

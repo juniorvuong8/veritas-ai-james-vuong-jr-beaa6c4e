@@ -1,0 +1,119 @@
+{
+ "case": {
+  "id": "t053",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "for here",
+   "order",
+   "to go",
+   "menu"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị xem the menu trước nhé, tên các loại đồ uống và giá tiền đều ghi trong này ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em, chị chọn xong rồi. Chị muốn order an iced latte.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, em ghi lại món chị chọn rồi: one iced latte. Chị uống ở đây hay mang theo ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "A latte to go nhé, chị phải cầm theo đi làm luôn, không ngồi lại được.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ. Lần sau nếu chị muốn drink it for here thì quán có bàn ở tầng trên, chị cứ ngồi uống thoải mái nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ok, cảm ơn em. Lần sau chị sẽ ngồi lại uống.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "uống hoặc ăn tại quán",
+    "usage_vi": "Dùng khi bạn muốn ngồi lại quán để ăn uống. Nhân viên thường hỏi: \"For here or to go?\""
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi bạn nói với nhân viên món bạn muốn mua. Ví dụ: \"Can I order a coffee?\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi bạn muốn mua đồ ăn, đồ uống rồi mang ra ngoài, không ngồi tại quán. Ví dụ: \"A tea to go, please.\""
+   },
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng để chỉ danh sách món ăn, đồ uống và giá tiền ở quán. Ví dụ: \"Can I see the menu?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn có nhiều thời gian và muốn ngồi lại quán để uống trà. Khi nhân viên hỏi, bạn nói: \"A tea ___, please.\"",
+    "options": [
+     "to go",
+     "for here",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"For here\" nghĩa là uống tại quán, phù hợp khi bạn muốn ngồi lại."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong món ở một tiệm bánh và muốn nói với nhân viên là bạn sẵn sàng gọi món: \"Can I ___ now?\"",
+    "options": [
+     "menu",
+     "to go",
+     "order"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, dùng khi bạn muốn nói món mình muốn mua."
+   },
+   {
+    "question_vi": "Bạn mua một ly nước cam và muốn mang lên xe buýt uống. Bạn nói: \"An orange juice ___, please.\"",
+    "options": [
+     "to go",
+     "for here",
+     "order"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, phù hợp khi bạn không uống tại quán."
+   },
+   {
+    "question_vi": "Bạn vừa vào một quán trà sữa và muốn xem danh sách đồ uống cùng giá tiền. Bạn hỏi: \"Can I see the ___?\"",
+    "options": [
+     "order",
+     "menu",
+     "to go"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Menu\" là thực đơn, nơi ghi tên các món và giá tiền."
+   }
+  ]
+ }
+}

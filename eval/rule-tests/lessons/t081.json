@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t081",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "menu",
+   "for here",
+   "large"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Here is the menu. You can see all our drinks and prices on it.",
+    "translation_vi": "Chào bạn! Đây là menu. Bạn có thể xem tất cả đồ uống và giá ở trên đó."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you. I'd like an iced latte, please.",
+    "translation_vi": "Cảm ơn bạn. Cho mình một ly latte đá nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Small, medium or large? Large is our biggest cup.",
+    "translation_vi": "Vâng. Bạn lấy cỡ nhỏ, vừa hay lớn ạ? Cỡ lớn là ly to nhất của quán."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Large, please. I'm very thirsty.",
+    "translation_vi": "Cho mình cỡ lớn nhé. Mình khát quá."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Is that for here or to go? You can sit and drink here, or take it with you.",
+    "translation_vi": "Bạn uống ở đây hay mang đi ạ? Bạn có thể ngồi uống tại quán, hoặc mang theo."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "I'll have it for here, please. I want to sit by the window.",
+    "translation_vi": "Mình uống ở đây nhé. Mình muốn ngồi cạnh cửa sổ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Great. That's five dollars. Please take a seat, and I'll bring your drink to you.",
+    "translation_vi": "Dạ được. Của bạn hết năm đô. Bạn cứ ngồi đi, mình sẽ mang đồ uống ra cho bạn."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng khi muốn xem danh sách món ăn, đồ uống và giá của quán. Bạn có thể nói: \"Can I see the menu, please?\""
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại quán",
+    "usage_vi": "Dùng khi bạn muốn ngồi ăn uống ngay tại quán, ngược lại với \"to go\" (mang đi). Nhân viên thường hỏi: \"For here or to go?\""
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn, to",
+    "usage_vi": "Dùng khi chọn cỡ ly hoặc phần ăn to nhất, bên cạnh \"small\" (nhỏ) và \"medium\" (vừa). Ví dụ: \"A large coffee, please.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vào một quán cà phê mới và muốn xem quán có những đồ uống gì, giá bao nhiêu. Bạn nói: \"Can I see the ___, please?\"",
+    "options": [
+     "large",
+     "menu",
+     "for here"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Menu\" là tờ hoặc bảng ghi các món và giá, nên bạn xin xem \"menu\"."
+   },
+   {
+    "question_vi": "Ở tiệm bánh, nhân viên hỏi: \"For here or to go?\". Bạn muốn ngồi lại tiệm để ăn. Bạn trả lời gì?",
+    "options": [
+     "for here",
+     "menu",
+     "large"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại chỗ, đúng với ý muốn ngồi lại tiệm để ăn."
+   },
+   {
+    "question_vi": "Bạn rất khát và muốn ly nước cam to nhất. Nhân viên hỏi: \"What size?\". Bạn nói gì?",
+    "options": [
+     "small",
+     "for here",
+     "large"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Large\" là cỡ lớn nhất, còn \"small\" là cỡ nhỏ, nên bạn chọn \"large\"."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1230 @@
+[
+ {
+  "id": "t001",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "for here",
+   "order",
+   "napkin",
+   "change",
+   "large"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t002",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "price",
+   "on sale"
+  ],
+  "custom": [
+   "tính tiền"
+  ]
+ },
+ {
+  "id": "t003",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "stop here",
+   "turn right",
+   "fare",
+   "traffic",
+   "address"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t004",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pharmacy",
+   "sore throat",
+   "insurance",
+   "headache"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t005",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "refill",
+   "menu",
+   "for here",
+   "to go"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t006",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "checkout",
+   "cart",
+   "cash",
+   "basket"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ {
+  "id": "t007",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "seatbelt",
+   "how long",
+   "trunk",
+   "airport",
+   "fare"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t008",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "pain",
+   "doctor"
+  ],
+  "custom": [
+   "nurse"
+  ]
+ },
+ {
+  "id": "t009",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "receipt",
+   "to go",
+   "iced",
+   "refill"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t010",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "price",
+   "cashier",
+   "fresh",
+   "bag"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t011",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn left",
+   "fare",
+   "trunk"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t012",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "headache",
+   "fever",
+   "sore throat",
+   "insurance"
+  ],
+  "custom": [
+   "sốt"
+  ]
+ },
+ {
+  "id": "t013",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "iced",
+   "napkin",
+   "to go",
+   "menu",
+   "large"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t014",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cashier",
+   "basket",
+   "on sale",
+   "cash"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t015",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "turn left",
+   "stop here",
+   "airport",
+   "tip"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t016",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "doctor",
+   "headache",
+   "allergy",
+   "pain"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t017",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "to go",
+   "iced",
+   "receipt",
+   "straw"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t018",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "cashier",
+   "aisle",
+   "checkout"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t019",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "seatbelt",
+   "stop here",
+   "airport",
+   "straight",
+   "tip"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t020",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "fever",
+   "appointment",
+   "cough",
+   "prescription"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t021",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "to go",
+   "medium",
+   "large",
+   "refill"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t022",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "basket",
+   "cashier",
+   "fresh",
+   "cash",
+   "frozen"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t023",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "straight",
+   "trunk",
+   "address"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t024",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "prescription",
+   "appointment",
+   "pharmacy",
+   "medicine"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t025",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "large",
+   "refill",
+   "medium",
+   "order",
+   "change"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t026",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cash",
+   "bag",
+   "basket",
+   "aisle"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t027",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "airport",
+   "traffic",
+   "seatbelt",
+   "turn left"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t028",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "medicine",
+   "insurance",
+   "sore throat",
+   "pain"
+  ],
+  "custom": [
+   "dị ứng"
+  ]
+ },
+ {
+  "id": "t029",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "menu",
+   "napkin",
+   "to go",
+   "refill"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t030",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "frozen",
+   "cash",
+   "price"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t031",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "traffic",
+   "seatbelt"
+  ],
+  "custom": [
+   "tiền boa"
+  ]
+ },
+ {
+  "id": "t032",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "fever",
+   "cough",
+   "headache",
+   "insurance",
+   "appointment"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t033",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "iced",
+   "receipt",
+   "napkin"
+  ],
+  "custom": [
+   "wifi"
+  ]
+ },
+ {
+  "id": "t034",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "basket",
+   "price"
+  ],
+  "custom": [
+   "túi"
+  ]
+ },
+ {
+  "id": "t035",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn right",
+   "traffic",
+   "how long"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t036",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "pain",
+   "pharmacy",
+   "prescription"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t037",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "medium",
+   "receipt",
+   "napkin",
+   "for here",
+   "menu"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t038",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "frozen",
+   "cashier",
+   "checkout",
+   "cart"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t039",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "turn left",
+   "tip",
+   "seatbelt",
+   "address"
+  ],
+  "custom": [
+   "tiền boa"
+  ]
+ },
+ {
+  "id": "t040",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "fever",
+   "doctor",
+   "insurance",
+   "cough"
+  ],
+  "custom": [
+   "nurse"
+  ]
+ },
+ {
+  "id": "t041",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "order",
+   "to go",
+   "receipt",
+   "large",
+   "napkin"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t042",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "cart",
+   "basket"
+  ],
+  "custom": [
+   "discount"
+  ]
+ },
+ {
+  "id": "t043",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "fare",
+   "straight",
+   "seatbelt",
+   "address",
+   "tip"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t044",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "sore throat",
+   "doctor",
+   "headache"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t045",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "change",
+   "to go",
+   "receipt"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t046",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "fresh",
+   "cart",
+   "bag"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ {
+  "id": "t047",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "airport",
+   "turn right",
+   "address",
+   "turn left"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t048",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "doctor",
+   "pain"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t049",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "change",
+   "to go",
+   "napkin"
+  ],
+  "custom": [
+   "ống hút"
+  ]
+ },
+ {
+  "id": "t050",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "aisle",
+   "fresh",
+   "on sale",
+   "basket",
+   "checkout"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t051",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "airport",
+   "address",
+   "seatbelt"
+  ],
+  "custom": [
+   "tiền boa"
+  ]
+ },
+ {
+  "id": "t052",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pain",
+   "cough",
+   "sore throat"
+  ],
+  "custom": [
+   "đau bụng"
+  ]
+ },
+ {
+  "id": "t053",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "for here",
+   "order",
+   "to go",
+   "menu"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t054",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "aisle",
+   "on sale"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ {
+  "id": "t055",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "stop here",
+   "turn left",
+   "how long",
+   "traffic"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t056",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "headache",
+   "medicine",
+   "pain",
+   "pharmacy"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t057",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "change",
+   "refill",
+   "to go",
+   "large",
+   "order"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t058",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "cash",
+   "price",
+   "cashier"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t059",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn left",
+   "tip",
+   "straight",
+   "stop here",
+   "airport"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t060",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "doctor",
+   "prescription",
+   "medicine",
+   "insurance"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t061",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "large",
+   "straw",
+   "iced"
+  ],
+  "custom": [
+   "ống hút"
+  ]
+ },
+ {
+  "id": "t062",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cashier",
+   "cash",
+   "frozen",
+   "basket",
+   "aisle"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t063",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "stop here",
+   "turn left",
+   "tip",
+   "seatbelt"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t064",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pain",
+   "insurance",
+   "cough"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t065",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "to go",
+   "change",
+   "order"
+  ],
+  "custom": [
+   "sugar"
+  ]
+ },
+ {
+  "id": "t066",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "frozen",
+   "cashier",
+   "aisle"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ {
+  "id": "t067",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "how long",
+   "stop here",
+   "trunk",
+   "fare"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t068",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "sore throat",
+   "pain",
+   "medicine",
+   "fever",
+   "headache"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t069",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "change",
+   "for here",
+   "napkin",
+   "large"
+  ],
+  "custom": [
+   "hóa đơn"
+  ]
+ },
+ {
+  "id": "t070",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "fresh",
+   "price",
+   "on sale"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t071",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn left",
+   "straight",
+   "fare"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t072",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "prescription",
+   "cough",
+   "headache"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t073",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "medium",
+   "order",
+   "for here"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t074",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "fresh",
+   "checkout",
+   "on sale",
+   "bag"
+  ],
+  "custom": [
+   "receipt"
+  ]
+ },
+ {
+  "id": "t075",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "how long",
+   "airport",
+   "trunk"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t076",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pharmacy",
+   "insurance"
+  ],
+  "custom": [
+   "blood pressure"
+  ]
+ },
+ {
+  "id": "t077",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "refill",
+   "receipt"
+  ],
+  "custom": [
+   "hóa đơn"
+  ]
+ },
+ {
+  "id": "t078",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "basket",
+   "frozen",
+   "checkout",
+   "aisle"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t079",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "trunk",
+   "address",
+   "stop here",
+   "straight",
+   "traffic"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t080",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "allergy",
+   "headache",
+   "fever",
+   "prescription"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t081",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "menu",
+   "for here",
+   "large"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t082",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "cart",
+   "cash",
+   "fresh"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t083",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn right",
+   "turn left",
+   "trunk"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t084",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "fever",
+   "pharmacy",
+   "headache",
+   "insurance",
+   "sore throat"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t085",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "receipt",
+   "to go",
+   "change",
+   "large",
+   "order"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t086",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cashier",
+   "price",
+   "checkout",
+   "frozen",
+   "card"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t087",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "seatbelt",
+   "address",
+   "tip",
+   "stop here",
+   "straight"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t088",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "doctor",
+   "headache",
+   "pain",
+   "cough",
+   "insurance"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t089",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "to go",
+   "menu",
+   "for here"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t090",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "cashier",
+   "aisle",
+   "frozen"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t091",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "turn left",
+   "seatbelt",
+   "airport"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t092",
+  "scenarioId": "clinic",
+  "level": 2,
+  "suggested": [
+   "cough",
+   "pharmacy",
+   "medicine"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t093",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "menu",
+   "order",
+   "change",
+   "iced",
+   "medium"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t094",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "fresh",
+   "checkout",
+   "frozen",
+   "basket"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t095",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "seatbelt",
+   "turn right",
+   "fare",
+   "turn left"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t096",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "headache",
+   "prescription",
+   "fever",
+   "cough"
+  ],
+  "custom": [
+   "thuốc"
+  ]
+ },
+ {
+  "id": "t097",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "medium",
+   "menu",
+   "for here"
+  ],
+  "custom": [
+   "tiền thừa"
+  ]
+ },
+ {
+  "id": "t098",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "bag",
+   "price",
+   "on sale",
+   "fresh"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t099",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "how long",
+   "turn right",
+   "tip",
+   "traffic"
+  ],
+  "custom": []
+ },
+ {
+  "id": "t100",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "fever",
+   "sore throat",
+   "medicine",
+   "headache"
+  ],
+  "custom": []
+ }
+]

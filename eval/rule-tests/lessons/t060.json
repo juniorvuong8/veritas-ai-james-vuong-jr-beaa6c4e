@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t060",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "doctor",
+   "prescription",
+   "medicine",
+   "insurance"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello, I am your doctor today. Tell me what is wrong, and I will help you feel better.",
+    "translation_vi": "Chào bạn, hôm nay tôi là bác sĩ khám cho bạn. Bạn cho tôi biết bạn bị sao, tôi sẽ giúp bạn khỏe hơn."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a sore throat and a fever.",
+    "translation_vi": "Tôi bị đau họng và bị sốt."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Do you have an allergy? Does any food or drug make your skin red or itchy?",
+    "translation_vi": "Bạn có bị dị ứng gì không? Có món ăn hay loại thuốc nào làm da bạn đỏ hoặc ngứa không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, I have an allergy to penicillin. It makes my skin red and itchy.",
+    "translation_vi": "Có, tôi bị dị ứng với penicillin. Nó làm da tôi đỏ và ngứa."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "OK, no penicillin for you. Here is your prescription. Take this paper to the pharmacy. They will give you medicine for your throat. Take it two times a day after you eat.",
+    "translation_vi": "Được, tôi sẽ không cho bạn penicillin. Đây là đơn thuốc của bạn. Bạn mang tờ giấy này ra nhà thuốc. Họ sẽ đưa bạn thuốc trị đau họng. Bạn uống ngày hai lần sau khi ăn."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you. Can I use my insurance here? I don't want to pay for everything myself.",
+    "translation_vi": "Cảm ơn bác sĩ. Tôi dùng bảo hiểm ở đây được không? Tôi không muốn tự trả hết tiền."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Yes. Your insurance company will pay most of the cost. You only pay ten dollars.",
+    "translation_vi": "Được. Công ty bảo hiểm của bạn sẽ trả phần lớn chi phí. Bạn chỉ phải trả mười đô la thôi."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể bạn phản ứng xấu (ngứa, nổi mẩn, khó thở) với một món ăn hay loại thuốc. Nói: \"I have an allergy to ...\"."
+   },
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Người khám và chữa bệnh. Khi muốn được khám, bạn nói: \"I want to see a doctor.\""
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Tờ giấy bác sĩ ghi loại thuốc bạn cần. Bạn mang nó ra nhà thuốc để mua thuốc."
+   },
+   {
+    "input": "medicine",
+    "word": "medicine",
+    "meaning_vi": "thuốc",
+    "usage_vi": "Thứ bạn uống hoặc dùng để chữa bệnh. Ví dụ: \"I need some medicine for my cough.\""
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dịch vụ giúp trả một phần hoặc toàn bộ tiền khám chữa bệnh. Ở phòng khám thường được hỏi: \"Do you have insurance?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Mỗi lần ăn tôm bạn đều bị ngứa và nổi mẩn. Bạn nói với nhân viên nhà hàng: \"I have a shrimp ___.\" Từ nào đúng?",
+    "options": [
+     "prescription",
+     "allergy",
+     "insurance"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Allergy\" là dị ứng, dùng khi cơ thể phản ứng xấu với một món ăn như tôm."
+   },
+   {
+    "question_vi": "Bạn đau bụng và đến phòng khám, muốn gặp người khám bệnh. Bạn nói: \"Can I see a ___?\" Từ nào đúng?",
+    "options": [
+     "doctor",
+     "medicine",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Doctor\" là bác sĩ, người khám và chữa bệnh cho bạn."
+   },
+   {
+    "question_vi": "Ở nhà thuốc, dược sĩ hỏi bạn có tờ giấy bác sĩ ghi tên thuốc không: \"Do you have a ___?\" Từ nào đúng?",
+    "options": [
+     "insurance",
+     "doctor",
+     "prescription"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Prescription\" là đơn thuốc, tờ giấy bác sĩ ghi loại thuốc bạn cần mua."
+   },
+   {
+    "question_vi": "Bạn bị đau đầu và muốn mua thứ gì đó để uống cho đỡ. Bạn nói: \"I need some ___ for my headache.\" Từ nào đúng?",
+    "options": [
+     "allergy",
+     "medicine",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Medicine\" là thuốc, thứ bạn uống để hết đau đầu."
+   },
+   {
+    "question_vi": "Lễ tân phòng khám muốn biết có công ty nào trả tiền khám giúp bạn không. Họ hỏi: \"Do you have ___?\" Từ nào đúng?",
+    "options": [
+     "insurance",
+     "prescription",
+     "medicine"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Insurance\" là bảo hiểm, giúp trả một phần hoặc toàn bộ tiền khám bệnh."
+   }
+  ]
+ }
+}

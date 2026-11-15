@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t021",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "to go",
+   "medium",
+   "large",
+   "refill"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! What can I get for you today?",
+    "translation_vi": "Xin chào! Hôm nay anh/chị dùng gì ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hi. Can I have an iced coffee and a tea, please?",
+    "translation_vi": "Chào bạn. Cho mình một cà phê đá và một trà nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. What size? Small, medium or large?",
+    "translation_vi": "Dạ vâng. Anh/chị lấy cỡ nào ạ? Nhỏ, vừa hay lớn?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "A large coffee, please. I'm really thirsty! And a medium tea for my friend, not too big and not too small.",
+    "translation_vi": "Cho mình cà phê cỡ lớn nhé, mình khát lắm! Còn trà cỡ vừa cho bạn mình, không to quá mà cũng không nhỏ quá."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Okay. Is that for here or to go?",
+    "translation_vi": "Dạ được. Anh/chị uống ở đây hay mang đi ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "To go, please. We need to catch a bus.",
+    "translation_vi": "Mang đi nhé. Bọn mình phải đi cho kịp xe buýt."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "No problem. Next time, if you drink here, you get a free refill. We fill your cup again for free.",
+    "translation_vi": "Dạ không sao ạ. Lần sau nếu anh/chị uống tại quán thì được rót thêm miễn phí. Quán sẽ rót đầy lại ly cho anh/chị mà không tính tiền."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Oh, nice! Thank you.",
+    "translation_vi": "Ồ, hay quá! Cảm ơn bạn."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi gọi đồ ăn hoặc đồ uống mà bạn muốn mang ra ngoài, không ngồi lại quán. Nhân viên thường hỏi \"For here or to go?\"."
+   },
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng để chọn cỡ ở giữa, không nhỏ cũng không lớn, khi gọi đồ uống hoặc mua quần áo. Ví dụ: \"A medium tea, please.\""
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn",
+    "usage_vi": "Dùng để chọn cỡ to nhất khi gọi đồ uống, đồ ăn hoặc mua quần áo. Ví dụ: \"A large coffee, please.\""
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "sự rót thêm, ly rót thêm",
+    "usage_vi": "Dùng khi bạn uống hết và muốn được rót đầy lại ly của mình. Nhiều quán ở nước ngoài cho \"free refill\", tức là rót thêm miễn phí."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua bánh mì ở tiệm và muốn mang về văn phòng ăn. Bạn nói: \"Can I get it ___?\"",
+    "options": [
+     "refill",
+     "to go",
+     "large"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, dùng khi bạn không ăn tại tiệm."
+   },
+   {
+    "question_vi": "Bạn mua áo phông, cỡ nhỏ thì chật quá, cỡ lớn thì rộng quá. Bạn chọn cỡ ở giữa: \"___, please.\"",
+    "options": [
+     "Large",
+     "Refill",
+     "Medium"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa cỡ nhỏ và cỡ lớn."
+   },
+   {
+    "question_vi": "Bạn đi xem phim cùng cả nhà và muốn mua hộp bỏng ngô to nhất để mọi người cùng ăn: \"A ___ popcorn, please.\"",
+    "options": [
+     "large",
+     "medium",
+     "to go"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Large\" là cỡ lớn, phù hợp khi bạn muốn phần to nhất."
+   },
+   {
+    "question_vi": "Bạn đang ăn ở nhà hàng, ly trà đá đã hết và bạn muốn được rót đầy lại: \"Can I get a ___, please?\"",
+    "options": [
+     "to go",
+     "medium",
+     "refill"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Refill\" là rót thêm vào ly khi bạn đã uống hết."
+   }
+  ]
+ }
+}

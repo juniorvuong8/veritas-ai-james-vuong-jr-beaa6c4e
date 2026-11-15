@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "t006",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "checkout",
+   "cart",
+   "cash",
+   "basket"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Tính tiền ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, this checkout đang trống, chị qua đây em tính tiền luôn ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Chị đẩy the cart nãy giờ mỏi tay quá, đồ trong xe nhiều nên lấy ra hơi lâu, em chờ chút nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ không sao ạ. Hôm nào chị mua ít thì dùng a basket xách tay cho nhẹ nhé. Của chị tổng cộng 45 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "À, chị có a coupon cắt từ tờ quảng cáo nè, được giảm 5 đô đó em.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, dùng coupon rồi thì còn 40 đô ạ. Chị quẹt thẻ hay pay in cash ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị không quẹt thẻ đâu, chị trả in cash nhé, đây là hai tờ 20 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ vừa đủ ạ. Cảm ơn chị, chúc chị một ngày vui vẻ!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền",
+    "usage_vi": "Dùng để chỉ nơi bạn mang đồ đến trả tiền trong siêu thị hoặc cửa hàng. Ví dụ: \"Where is the checkout?\""
+   },
+   {
+    "input": "cart",
+    "word": "cart",
+    "meaning_vi": "xe đẩy (mua hàng)",
+    "usage_vi": "Dùng khi bạn mua nhiều đồ và cần chiếc xe có bánh để đẩy trong siêu thị. Ví dụ: \"I need a cart.\""
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi bạn trả bằng tiền giấy hoặc tiền xu thay vì quẹt thẻ. Thường nói \"pay in cash\"."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ xách (mua hàng)",
+    "usage_vi": "Dùng khi bạn chỉ mua ít đồ và lấy cái giỏ nhỏ để xách tay. Ví dụ: \"I just need a basket.\""
+   },
+   {
+    "input": "coupon",
+    "word": "coupon",
+    "meaning_vi": "phiếu giảm giá",
+    "usage_vi": "Dùng khi bạn có tờ phiếu (giấy hoặc trên điện thoại) để được giảm giá lúc trả tiền. Ví dụ: \"Can I use this coupon?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn đi trả tiền nhưng không biết chỗ trả tiền ở đâu. Bạn hỏi: \"Where is the ___?\"",
+    "options": [
+     "basket",
+     "checkout",
+     "coupon"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Checkout\" là quầy tính tiền, nơi bạn trả tiền cho đồ đã mua."
+   },
+   {
+    "question_vi": "Bạn định mua rất nhiều nước uống và một bao gạo nặng, nên cần một chiếc xe có bánh để đẩy. Bạn nói: \"I need a ___.\"",
+    "options": [
+     "cart",
+     "cash",
+     "coupon"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cart\" là xe đẩy, rất tiện khi bạn mua nhiều đồ nặng."
+   },
+   {
+    "question_vi": "Máy quẹt thẻ ở cửa hàng bị hỏng, bạn muốn trả bằng tiền giấy. Bạn hỏi: \"Can I pay in ___?\"",
+    "options": [
+     "basket",
+     "coupon",
+     "cash"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cash\" là tiền mặt, dùng khi bạn không trả bằng thẻ."
+   },
+   {
+    "question_vi": "Bạn chỉ mua một hộp sữa và một ổ bánh mì, nên muốn lấy một cái giỏ nhỏ để xách tay. Bạn lấy a ___.",
+    "options": [
+     "checkout",
+     "basket",
+     "cart"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Basket\" là giỏ xách tay, hợp khi bạn mua ít đồ."
+   },
+   {
+    "question_vi": "Ứng dụng của siêu thị tặng bạn một phiếu giảm 10% và bạn muốn dùng nó khi trả tiền. Bạn nói: \"I have a ___.\"",
+    "options": [
+     "cart",
+     "cash",
+     "coupon"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Coupon\" là phiếu giảm giá, giúp bạn trả ít tiền hơn."
+   }
+  ]
+ }
+}

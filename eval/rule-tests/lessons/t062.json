@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t062",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cashier",
+   "cash",
+   "frozen",
+   "basket",
+   "aisle"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị lấy một cái basket ở đây để bỏ đồ vào, xách trên tay cho tiện nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Chị muốn mua đồ frozen, loại để trong tủ đông cho lạnh cứng ấy, như kem với gà. Ở đâu vậy em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Đồ frozen ở aisle số 5 ạ. Chị đi thẳng, rẽ vào lối đi giữa hai dãy kệ có biển số 5 treo trên cao là thấy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Lấy đồ xong thì chị trả tiền ở đâu em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị mang đồ ra quầy phía trước, cashier ở đó sẽ quét từng món và tính tiền cho chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị trả bằng cash được không, hay phải dùng thẻ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ. Chị đưa tiền giấy hay quẹt thẻ đều được hết.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để gọi người đứng ở quầy tính tiền trong siêu thị hoặc cửa hàng. Ví dụ: \"Please pay the cashier.\""
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi nói về tiền giấy và tiền xu, khác với trả bằng thẻ. Ví dụ: \"Can I pay in cash?\""
+   },
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để nói về đồ ăn được giữ trong tủ đông, lạnh cứng. Thường đứng trước tên món, ví dụ: \"frozen pizza\", \"frozen fish\"."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ (xách tay)",
+    "usage_vi": "Dùng để chỉ cái giỏ nhỏ có quai mà khách xách khi mua ít đồ trong siêu thị. Nếu mua nhiều đồ, người ta thường dùng xe đẩy (cart)."
+   },
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ",
+    "usage_vi": "Dùng khi hỏi hoặc chỉ chỗ để hàng trong siêu thị, thường đi kèm số. Ví dụ: \"The milk is in aisle 3.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang ở một cửa hàng tiện lợi và muốn tìm người ngồi ở quầy để tính tiền món đồ của mình. Người đó được gọi là gì?",
+    "options": [
+     "basket",
+     "aisle",
+     "cashier"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cashier\" là người làm việc ở quầy, quét đồ và nhận tiền của khách."
+   },
+   {
+    "question_vi": "Bạn mua bánh mì ở một tiệm nhỏ và muốn trả bằng tiền giấy, không dùng thẻ. Bạn nói: \"Can I pay in ___?\"",
+    "options": [
+     "cash",
+     "frozen",
+     "basket"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cash\" là tiền giấy và tiền xu, dùng khi bạn không trả bằng thẻ."
+   },
+   {
+    "question_vi": "Bạn muốn mua một hộp pizza được để trong tủ đông, lạnh cứng, về nhà hâm nóng lên ăn. Đó là loại pizza gì?",
+    "options": [
+     "aisle",
+     "frozen",
+     "cashier"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Frozen\" dùng cho đồ ăn được giữ lạnh cứng trong tủ đông, như \"frozen pizza\"."
+   },
+   {
+    "question_vi": "Bạn vào siêu thị chỉ để mua một chai nước và một gói bánh, không cần xe đẩy. Bạn nên lấy cái gì để đựng đồ và xách trên tay?",
+    "options": [
+     "cash",
+     "aisle",
+     "basket"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Basket\" là cái giỏ nhỏ có quai để xách khi mua ít đồ."
+   },
+   {
+    "question_vi": "Bạn không biết gạo nằm ở lối nào giữa các dãy kệ trong siêu thị. Bạn hỏi nhân viên: \"Which ___ is the rice in?\"",
+    "options": [
+     "aisle",
+     "cashier",
+     "frozen"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Aisle\" là lối đi giữa các dãy kệ hàng, thường có số để khách dễ tìm."
+   }
+  ]
+ }
+}

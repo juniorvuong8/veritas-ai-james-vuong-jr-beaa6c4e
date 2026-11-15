@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "t051",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "airport",
+   "address",
+   "seatbelt"
+  ],
+  "custom": [
+   "tiền boa"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị, chị muốn đi đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Anh chở em ra airport nhé, em phải kịp chuyến bay lúc mười giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được. Chị có cần ghé đâu trước không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Có ạ, anh ghé khách sạn lấy hành lý giúp em. Đây là address của khách sạn: số 25, đường Main Street.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, tôi nhập vào bản đồ rồi. Chị kéo seatbelt qua người rồi cài vào bên cạnh ghế cho an toàn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cài rồi. Mình đi thôi anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Đến airport rồi chị. Tổng cộng là 40 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em gửi anh 45 đô, 5 đô còn lại là tip để cảm ơn anh đã lái xe cẩn thận.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi nói về nơi máy bay cất cánh và hạ cánh. Ví dụ, bạn nói với tài xế: \"To the airport, please\" khi cần ra sân bay."
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi nói số nhà, tên đường của nơi bạn muốn đến. Khi đi taxi, bạn có thể đưa tài xế xem address trên điện thoại."
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng để chỉ sợi dây trên ghế xe mà bạn cài vào người để an toàn. Tài xế thường nhắc khách cài seatbelt trước khi chạy xe."
+   },
+   {
+    "input": "tiền boa",
+    "word": "tip",
+    "meaning_vi": "tiền boa",
+    "usage_vi": "Dùng để chỉ số tiền thêm bạn tự nguyện đưa để cảm ơn tài xế hay người phục vụ. Ở nhiều nước nói tiếng Anh, khách thường đưa tip cho tài xế taxi."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn sắp bay về Việt Nam và cần đến nơi có máy bay. Bạn nói với tài xế đưa bạn đến đâu?",
+    "options": [
+     "address",
+     "airport",
+     "seatbelt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Airport\" là sân bay, nơi bạn đi máy bay."
+   },
+   {
+    "question_vi": "Bạn đặt xe qua ứng dụng, và ứng dụng hỏi số nhà, tên đường nơi bạn muốn được đón. Ứng dụng đang hỏi gì?",
+    "options": [
+     "address",
+     "tip",
+     "airport"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Số nhà và tên đường chính là \"address\", tức là địa chỉ."
+   },
+   {
+    "question_vi": "Bạn vừa ngồi lên xe của một người bạn. Bạn cần cài thứ gì vào người để an toàn?",
+    "options": [
+     "tip",
+     "airport",
+     "seatbelt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn mà bạn cài khi ngồi trên xe."
+   },
+   {
+    "question_vi": "Ở nhà hàng, người phục vụ rất nhiệt tình nên bạn để lại thêm ít tiền trên bàn để cảm ơn. Số tiền đó gọi là gì?",
+    "options": [
+     "seatbelt",
+     "tip",
+     "address"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Số tiền thêm để cảm ơn người phục vụ gọi là \"tip\", tức là tiền boa."
+   }
+  ]
+ }
+}

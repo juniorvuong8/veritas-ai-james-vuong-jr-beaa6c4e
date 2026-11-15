@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t038",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "frozen",
+   "cashier",
+   "checkout",
+   "cart"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị mua đồ ăn",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị cần tìm gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị muốn mua kem với cá frozen, mà tìm hoài không thấy ở đâu.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, đồ frozen nằm trong tủ đông ở cuối dãy số 5, lấy ra còn lạnh cứng luôn ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Mà chị mua nhiều quá, hai tay cầm không hết.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị lấy một cái cart ở gần cửa, bỏ hết đồ vào rồi đẩy đi cho nhẹ nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy mua xong thì chị trả tiền ở đâu em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị ra khu checkout gần cửa chính, chỗ mọi người đang xếp hàng trả tiền đó ạ. Cashier ở đó sẽ quét từng món và tính tiền cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "À, chị hiểu rồi. Cảm ơn em nhiều nhé!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để nói về thực phẩm được giữ trong tủ đông, như kem, cá, pizza đông lạnh. Trong siêu thị thường có khu \"frozen\" riêng."
+   },
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để gọi người đứng ở quầy, quét hàng và tính tiền cho khách. Bạn có thể hỏi cashier về túi đựng hoặc cách trả tiền."
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy thanh toán, khu tính tiền",
+    "usage_vi": "Dùng để chỉ nơi khách mang đồ đến trả tiền trước khi ra về. Trong siêu thị thường có biển ghi \"checkout\" gần cửa ra."
+   },
+   {
+    "input": "cart",
+    "word": "cart",
+    "meaning_vi": "xe đẩy hàng",
+    "usage_vi": "Dùng để chỉ chiếc xe có bánh mà khách đẩy đi trong siêu thị để đựng đồ. Thường lấy cart ở gần cửa ra vào."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn mua một hộp pizza để trong tủ đông, mang về nhà nướng. Bạn sẽ đi tìm khu đồ nào?",
+    "options": [
+     "fresh",
+     "frozen",
+     "cart"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Frozen\" là đồ đông lạnh, được để trong tủ đông như pizza đông lạnh."
+   },
+   {
+    "question_vi": "Bạn đang đứng ở quầy trả tiền và muốn hỏi người quét hàng xem có túi đựng không. Người đó gọi là gì?",
+    "options": [
+     "checkout",
+     "cart",
+     "cashier"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cashier\" là người quét hàng và tính tiền cho khách ở quầy."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn đi trả tiền. Bạn nên đi theo biển chỉ đường ghi chữ nào?",
+    "options": [
+     "checkout",
+     "frozen",
+     "exit"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Checkout\" là khu thanh toán, nơi bạn trả tiền trước khi ra về."
+   },
+   {
+    "question_vi": "Bạn định mua một thùng nước và rất nhiều rau, cần một thứ có bánh xe để đẩy đồ đi trong siêu thị. Bạn lấy gì?",
+    "options": [
+     "cashier",
+     "bag",
+     "cart"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cart\" là xe đẩy hàng, giúp bạn chở nhiều đồ mà không phải cầm tay."
+   }
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "case": {
+  "id": "t094",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "fresh",
+   "checkout",
+   "frozen",
+   "basket"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi mua đồ ở siêu thị",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Do you need a basket to carry your things?",
+    "translation_vi": "Chào chị! Chị có cần giỏ để đựng đồ không ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, please. Where is the fresh fish? I want fish that came in today, not old fish.",
+    "translation_vi": "Dạ có, cảm ơn em. Cá tươi ở đâu vậy em? Chị muốn cá mới về hôm nay, không phải cá cũ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "The fresh fish is at the back. The frozen fish is in that very cold freezer. It is hard like ice, and you can keep it for months.",
+    "translation_vi": "Cá tươi ở phía cuối ạ. Cá đông lạnh thì để trong tủ cấp đông rất lạnh kia. Cá cứng như đá, chị để được mấy tháng luôn."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you. When I finish shopping, where do I pay?",
+    "translation_vi": "Cảm ơn em. Khi mua xong thì chị trả tiền ở đâu?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Go to the checkout near the door. The cashier will help you pay.",
+    "translation_vi": "Chị ra quầy thanh toán gần cửa nhé. Nhân viên thu ngân sẽ tính tiền cho chị."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great, thank you so much!",
+    "translation_vi": "Tuyệt quá, cảm ơn em nhiều!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thực phẩm mới, chưa để lâu, như cá, rau, trái cây hay bánh mì. Ví dụ: \"fresh fish\", \"fresh bread\"."
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy thanh toán, quầy tính tiền",
+    "usage_vi": "Dùng để chỉ nơi bạn mang đồ đến trả tiền trong siêu thị hoặc cửa hàng. Ví dụ: \"Where is the checkout?\"."
+   },
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để nói thực phẩm được làm lạnh cứng như đá để giữ được lâu. Ví dụ: \"frozen fish\", \"frozen vegetables\"."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "cái giỏ",
+    "usage_vi": "Dùng để chỉ giỏ xách tay trong siêu thị để đựng đồ khi bạn mua ít món. Ví dụ: \"Can I take a basket?\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn mua bánh mì vừa mới nướng sáng nay, không phải bánh để từ hôm qua. Bạn hỏi nhân viên: \"Is this bread ___?\"",
+    "options": [
+     "frozen",
+     "fresh",
+     "old"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, đúng với bánh mì vừa nướng sáng nay."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ ở một cửa hàng tiện lợi và muốn đi trả tiền. Bạn hỏi: \"Where is the ___?\"",
+    "options": [
+     "basket",
+     "freezer",
+     "checkout"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Checkout\" là quầy thanh toán, nơi bạn trả tiền cho đồ đã chọn."
+   },
+   {
+    "question_vi": "Bạn muốn mua rau củ đã được làm lạnh cứng như đá để cất trong tủ ăn dần nhiều tuần. Bạn hỏi: \"Where are the ___ vegetables?\"",
+    "options": [
+     "frozen",
+     "fresh",
+     "checkout"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Frozen\" nghĩa là đông lạnh, phù hợp với rau củ để được lâu trong tủ cấp đông."
+   },
+   {
+    "question_vi": "Bạn vào cửa hàng chỉ để mua vài món nhỏ và cần một thứ để đựng đồ, xách bằng tay. Bạn hỏi: \"Can I take a ___?\"",
+    "options": [
+     "checkout",
+     "basket",
+     "receipt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Basket\" là cái giỏ dùng để đựng đồ khi đi mua sắm."
+   }
+  ]
+ }
+}

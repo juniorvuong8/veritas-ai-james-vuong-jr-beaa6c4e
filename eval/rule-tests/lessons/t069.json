@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "t069",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "change",
+   "for here",
+   "napkin",
+   "large"
+  ],
+  "custom": [
+   "hóa đơn"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! What can I get you?",
+    "translation_vi": "Chào bạn! Bạn muốn dùng gì ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "An iced tea, please. A large one, the big cup. I'm very thirsty!",
+    "translation_vi": "Cho mình một ly trà lạnh nhé. Ly lớn, loại ly to ấy. Mình khát quá!"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Is that for here, or do you want to take it with you?",
+    "translation_vi": "Dạ được. Bạn uống tại đây hay mang đi ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "For here, please. I'll sit by the window. Here's five dollars.",
+    "translation_vi": "Uống ở đây nhé. Mình sẽ ngồi cạnh cửa sổ. Gửi bạn năm đô."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "It's three dollars, so here's your change: two dollars back. And here's your receipt. It shows what you paid.",
+    "translation_vi": "Hết ba đô ạ, nên đây là tiền thừa của bạn, hai đô. Còn đây là hóa đơn, có ghi số tiền bạn đã trả."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you. Can I have a napkin, too? My hands are wet from the cup.",
+    "translation_vi": "Cảm ơn bạn. Cho mình xin thêm một tờ khăn giấy được không? Tay mình bị ướt vì cầm ly."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Of course. Here's a napkin to dry your hands. Enjoy your tea!",
+    "translation_vi": "Dạ có ngay. Khăn giấy đây để bạn lau tay ạ. Chúc bạn uống ngon miệng!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thừa (tiền trả lại)",
+    "usage_vi": "Dùng khi bạn đưa nhiều tiền hơn giá và người bán trả lại phần dư. Nhân viên thường nói \"Here's your change.\""
+   },
+   {
+    "input": "for here",
+    "word": "for here",
+    "meaning_vi": "dùng tại chỗ",
+    "usage_vi": "Dùng để trả lời khi nhân viên hỏi bạn ăn uống ở quán hay mang đi. Bạn nói \"For here, please\" nếu muốn ngồi lại quán."
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy (khăn ăn)",
+    "usage_vi": "Dùng khi bạn cần lau tay, lau miệng hoặc lau bàn ở quán ăn, quán cà phê. Bạn có thể hỏi \"Can I have a napkin?\""
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn, to",
+    "usage_vi": "Dùng khi gọi đồ uống hoặc đồ ăn cỡ to nhất. Thường đặt trước tên món, ví dụ \"a large coffee\"."
+   },
+   {
+    "input": "hóa đơn",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn (biên lai sau khi trả tiền)",
+    "usage_vi": "Là tờ giấy ghi những món bạn đã mua và số tiền bạn đã trả. Bạn có thể xin bằng câu \"Can I have the receipt, please?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một cái bánh giá 4 đô và đưa 10 đô. Nhân viên trả lại bạn 6 đô và nói: \"Here's your ___.\" Từ nào đúng?",
+    "options": [
+     "receipt",
+     "change",
+     "napkin"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Change\" là tiền thừa người bán trả lại khi bạn đưa nhiều tiền hơn giá món hàng."
+   },
+   {
+    "question_vi": "Bạn muốn ngồi ăn bánh ngay tại tiệm. Nhân viên hỏi bạn ăn ở đây hay mang đi, bạn trả lời: \"___, please.\" Từ nào đúng?",
+    "options": [
+     "For here",
+     "To go",
+     "Large"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"For here\" nghĩa là dùng tại chỗ, còn \"to go\" là mang đi."
+   },
+   {
+    "question_vi": "Bạn làm đổ nước lên bàn và cần thứ gì đó để lau. Bạn hỏi nhân viên: \"Can I have a ___?\" Từ nào đúng?",
+    "options": [
+     "receipt",
+     "change",
+     "napkin"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Napkin\" là khăn giấy, dùng để lau tay, lau miệng hoặc lau bàn."
+   },
+   {
+    "question_vi": "Bạn rất khát và muốn ly nước cam to nhất. Bạn nói: \"A ___ orange juice, please.\" Từ nào đúng?",
+    "options": [
+     "large",
+     "small",
+     "for here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Large\" nghĩa là cỡ lớn, dùng khi bạn muốn ly to nhất."
+   },
+   {
+    "question_vi": "Công ty cần bạn mang về tờ giấy ghi số tiền bạn đã trả ở nhà hàng. Bạn nói với nhân viên: \"Can I have the ___, please?\" Từ nào đúng?",
+    "options": [
+     "napkin",
+     "receipt",
+     "change"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Receipt\" là hóa đơn, tờ giấy ghi những món bạn đã mua và số tiền đã trả."
+   }
+  ]
+ }
+}

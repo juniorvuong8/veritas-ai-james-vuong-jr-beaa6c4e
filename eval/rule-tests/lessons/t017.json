@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t017",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "to go",
+   "iced",
+   "receipt",
+   "straw"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Xin chào chị! Chị muốn uống gì ạ? Chị ngồi uống ở đây hay to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em đang vội đi làm ngay, nên cho em a latte to go nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị muốn a hot latte hay an iced latte ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Trời nóng quá, cho em an iced latte, bỏ nhiều đá nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, của chị đây. Chị có cần a straw để hút cho dễ uống không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ có, cho em a straw. Em cũng muốn xin a receipt nữa ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, here's your receipt, đây là giấy ghi món chị mua và số tiền chị đã trả ạ.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi gọi đồ ăn, đồ uống mà bạn không ngồi lại quán, ví dụ \"A coffee to go, please.\" Nhân viên thường hỏi \"For here or to go?\"."
+   },
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, ướp lạnh",
+    "usage_vi": "Đặt trước tên đồ uống để gọi loại uống lạnh có đá, ví dụ \"an iced coffee\", \"an iced tea\"."
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng khi muốn xin giấy ghi những món đã mua và số tiền đã trả, ví dụ \"Can I have a receipt, please?\"."
+   },
+   {
+    "input": "straw",
+    "word": "straw",
+    "meaning_vi": "ống hút",
+    "usage_vi": "Dùng khi cần ống để hút đồ uống, ví dụ \"Can I have a straw, please?\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua trà sữa nhưng muốn mang lên xe buýt uống. Bạn nói: \"A milk tea ___, please.\" Chọn từ đúng.",
+    "options": [
+     "for here",
+     "to go",
+     "iced"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, còn \"for here\" là uống tại quán."
+   },
+   {
+    "question_vi": "Hôm nay trời 35 độ, bạn muốn uống trà lạnh có đá. Bạn nói: \"An ___ tea, please.\" Chọn từ đúng.",
+    "options": [
+     "hot",
+     "straw",
+     "iced"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Iced\" dùng cho đồ uống có đá, còn \"hot\" là nóng."
+   },
+   {
+    "question_vi": "Bạn cần giấy ghi số tiền đã trả để công ty trả lại tiền cho bạn. Bạn hỏi: \"Can I have a ___, please?\" Chọn từ đúng.",
+    "options": [
+     "receipt",
+     "straw",
+     "menu"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Receipt\" là hóa đơn ghi món đã mua và số tiền đã trả."
+   },
+   {
+    "question_vi": "Bạn mua một ly nước cam nhưng không muốn uống trực tiếp từ ly. Bạn hỏi: \"Can I have a ___, please?\" Chọn từ đúng.",
+    "options": [
+     "receipt",
+     "straw",
+     "spoon"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Straw\" là ống hút, dùng để hút đồ uống từ ly."
+   }
+  ]
+ }
+}

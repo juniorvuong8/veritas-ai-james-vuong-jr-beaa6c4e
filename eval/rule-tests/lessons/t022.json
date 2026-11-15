@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t022",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "basket",
+   "cashier",
+   "fresh",
+   "cash",
+   "frozen"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hello! Do you need a basket to carry your food?",
+    "translation_vi": "Xin chào! Anh/chị có cần giỏ để đựng đồ ăn không ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, thank you. Where can I find fresh fish? I want fish from today, not old fish.",
+    "translation_vi": "Có, cảm ơn bạn. Tôi có thể tìm cá tươi ở đâu? Tôi muốn cá của hôm nay, không phải cá cũ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Fresh fish is over there. We also have frozen fish. It is very cold and hard like ice.",
+    "translation_vi": "Cá tươi ở đằng kia ạ. Bên em cũng có cá đông lạnh. Cá đó rất lạnh và cứng như đá."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "No, thanks. I just want the fresh fish. Where do I pay?",
+    "translation_vi": "Thôi, cảm ơn. Tôi chỉ muốn cá tươi thôi. Tôi trả tiền ở đâu?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Please go to the cashier at the front. She will take your money.",
+    "translation_vi": "Anh/chị đến chỗ nhân viên thu ngân ở phía trước nhé. Chị ấy sẽ nhận tiền của anh/chị."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Can I pay with cash? I only have paper money and coins, no card.",
+    "translation_vi": "Tôi trả bằng tiền mặt được không? Tôi chỉ có tiền giấy và tiền xu, không có thẻ."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes, cash is fine. Have a nice day!",
+    "translation_vi": "Dạ, trả tiền mặt được ạ. Chúc anh/chị một ngày vui vẻ!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "cái giỏ",
+    "usage_vi": "Dùng để chỉ cái giỏ xách tay trong siêu thị để đựng đồ khi mua ít món. Ví dụ: \"Can I have a basket?\""
+   },
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để chỉ người tính tiền ở quầy thanh toán. Thường nói \"go to the cashier\" (đến quầy thu ngân)."
+   },
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thực phẩm còn tươi, mới, chưa để lâu, như cá, thịt, rau, trái cây. Ví dụ: \"fresh fish\", \"fresh fruit\"."
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng khi nói về tiền giấy và tiền xu, khác với trả bằng thẻ. Thường nói \"pay with cash\" hoặc \"pay in cash\"."
+   },
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để chỉ thực phẩm được làm đông cứng và để trong tủ đông, như cá, thịt, kem. Ví dụ: \"frozen food\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn chỉ mua vài món nhỏ và cần một thứ để xách theo đựng đồ khi đi trong siêu thị. Bạn hỏi xin cái gì?",
+    "options": [
+     "cash",
+     "frozen",
+     "basket"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Basket\" là cái giỏ dùng để đựng đồ khi đi mua sắm."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn tìm người tính tiền ở quầy. Bạn tìm ai?",
+    "options": [
+     "cashier",
+     "basket",
+     "customer"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cashier\" là nhân viên thu ngân, người tính tiền cho khách."
+   },
+   {
+    "question_vi": "Bạn muốn mua rau mới hái sáng nay, còn xanh và giòn. Bạn dùng từ nào để tả loại rau này?",
+    "options": [
+     "frozen",
+     "fresh",
+     "cash"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, chưa để lâu."
+   },
+   {
+    "question_vi": "Máy đọc thẻ ở quầy bị hỏng, nên bạn trả bằng tiền giấy. Bạn nói \"I will pay with ...\"",
+    "options": [
+     "card",
+     "basket",
+     "cash"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cash\" là tiền mặt, gồm tiền giấy và tiền xu."
+   },
+   {
+    "question_vi": "Bạn muốn tìm kem và pizza được để trong tủ đông, cứng như đá. Bạn hỏi khu thực phẩm nào?",
+    "options": [
+     "frozen",
+     "fresh",
+     "cashier"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Frozen\" nghĩa là đông lạnh, dùng cho đồ ăn để trong tủ đông."
+   }
+  ]
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "case": {
+  "id": "t064",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "pain",
+   "insurance",
+   "cough"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Y tá",
+    "text": "Chào anh. Hôm nay anh thấy trong người thế nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, em bị cough suốt từ tối qua, cổ họng ngứa lắm, cứ khục khục không ngủ được.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Cough nhiều như vậy thì anh nhớ lấy tay che miệng nhé. Anh có thấy pain ở chỗ nào không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, ngực em bị pain, mỗi lần cough là em phải nhăn mặt, khó chịu lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Bác sĩ sẽ khám cho anh ngay. Anh có insurance không? Nếu có thì công ty sẽ trả phần lớn tiền khám, anh chỉ trả một ít thôi.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, đây là thẻ insurance của em, tháng nào em cũng đóng tiền.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Y tá",
+    "text": "Cảm ơn anh. Mời anh ngồi chờ một chút nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng khi nói với bác sĩ về chỗ bị đau trên cơ thể. Ví dụ: \"I have pain here\" (Tôi bị đau ở đây)."
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dùng khi phòng khám hỏi bạn có bảo hiểm để trả bớt tiền khám không. Thường bạn sẽ đưa thẻ bảo hiểm cho lễ tân hoặc y tá."
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng để kể với bác sĩ là bạn bị ho. Ví dụ: \"I have a cough\" (Tôi bị ho)."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn bị ngã và đầu gối rất đau. Bạn muốn nói với bác sĩ là đầu gối bị đau, bạn dùng từ nào?",
+    "options": [
+     "cough",
+     "pain",
+     "insurance"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Pain\" là cơn đau, dùng khi muốn nói một chỗ trên cơ thể bị đau."
+   },
+   {
+    "question_vi": "Lễ tân hỏi bạn có thẻ gì để công ty trả bớt tiền khám không. Bạn đưa thẻ nào?",
+    "options": [
+     "insurance",
+     "receipt",
+     "pain"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Insurance\" là bảo hiểm, giúp trả một phần tiền khám chữa bệnh cho bạn."
+   },
+   {
+    "question_vi": "Con bạn bị cảm, cứ ho liên tục cả ngày. Bạn muốn nói với bác sĩ là bé bị ho, bạn dùng từ nào?",
+    "options": [
+     "insurance",
+     "fever",
+     "cough"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cough\" là ho; còn \"fever\" là sốt nên không đúng trong trường hợp này."
+   }
+  ]
+ }
+}

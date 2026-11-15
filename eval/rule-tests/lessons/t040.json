@@ -1,0 +1,137 @@
+{
+ "case": {
+  "id": "t040",
+  "scenarioId": "clinic",
+  "level": 1,
+  "suggested": [
+   "fever",
+   "doctor",
+   "insurance",
+   "cough"
+  ],
+  "custom": [
+   "nurse"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bệnh ở phòng khám",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Chào anh, anh có insurance không ạ? Nếu có thì công ty sẽ trả bớt tiền khám giúp anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ có, đây là thẻ insurance của tôi. Tôi muốn gặp doctor để được khám và kê thuốc.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Dạ vâng. Anh thấy trong người thế nào ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Tôi bị fever từ hôm qua, người nóng lắm, đo được 39 độ. Tôi còn bị cough nữa, cứ khụ khụ suốt đêm không ngủ được.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Lễ tân",
+    "text": "Anh ngồi chờ một chút nhé. Nurse sẽ đo nhiệt độ và huyết áp cho anh trước, sau đó doctor sẽ vào khám.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Dạ, cảm ơn chị.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi thân nhiệt cao hơn bình thường, người nóng. Ví dụ: \"I have a fever.\""
+   },
+   {
+    "input": "doctor",
+    "word": "doctor",
+    "meaning_vi": "bác sĩ",
+    "usage_vi": "Người khám bệnh, chẩn đoán và kê thuốc. Ví dụ: \"I want to see a doctor.\""
+   },
+   {
+    "input": "insurance",
+    "word": "insurance",
+    "meaning_vi": "bảo hiểm",
+    "usage_vi": "Dùng khi nói về việc công ty bảo hiểm trả một phần hoặc toàn bộ chi phí khám chữa bệnh. Ở phòng khám, lễ tân thường hỏi: \"Do you have insurance?\""
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng khi bạn bị ho, thường do cảm lạnh hoặc đau họng. Ví dụ: \"I have a cough.\""
+   },
+   {
+    "input": "nurse",
+    "word": "nurse",
+    "meaning_vi": "y tá",
+    "usage_vi": "Người làm việc cùng bác sĩ, chăm sóc bệnh nhân, đo nhiệt độ, tiêm thuốc. Ví dụ: \"The nurse will check your temperature.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn sờ trán con thấy rất nóng, nhiệt độ là 38,5 độ. Khi gọi cho phòng khám, bạn nói con bị gì?",
+    "options": [
+     "cough",
+     "fever",
+     "nurse"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Người nóng và nhiệt độ cao là bị sốt, nên dùng \"fever\"."
+   },
+   {
+    "question_vi": "Bạn đau bụng mấy ngày và muốn gặp người có thể khám bệnh và kê thuốc cho mình. Bạn xin gặp ai?",
+    "options": [
+     "doctor",
+     "nurse",
+     "insurance"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Người khám bệnh và kê thuốc là bác sĩ, tức là \"doctor\"."
+   },
+   {
+    "question_vi": "Ở quầy lễ tân, bạn muốn hỏi phòng khám có nhận loại thẻ giúp bạn được trả bớt tiền khám không. Bạn dùng từ nào?",
+    "options": [
+     "fever",
+     "receipt",
+     "insurance"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Thẻ giúp công ty trả bớt tiền khám là thẻ bảo hiểm, nên dùng \"insurance\"."
+   },
+   {
+    "question_vi": "Bạn bị cảm lạnh và cứ khụ khụ liên tục cả ngày. Bạn nói với bác sĩ là mình bị gì?",
+    "options": [
+     "fever",
+     "cough",
+     "doctor"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Khụ khụ liên tục là bị ho, nên dùng \"cough\"."
+   },
+   {
+    "question_vi": "Ở bệnh viện, có một người mặc đồng phục giúp bác sĩ, tiêm thuốc và băng vết thương cho bạn. Người đó là ai?",
+    "options": [
+     "doctor",
+     "insurance",
+     "nurse"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Người hỗ trợ bác sĩ, tiêm thuốc và chăm sóc bệnh nhân là y tá, tức là \"nurse\"."
+   }
+  ]
+ }
+}

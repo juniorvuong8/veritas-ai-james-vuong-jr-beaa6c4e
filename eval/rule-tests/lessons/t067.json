@@ -1,0 +1,124 @@
+{
+ "case": {
+  "id": "t067",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "how long",
+   "stop here",
+   "trunk",
+   "fare"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi trong thành phố nói tiếng Anh",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị có vali to không? Để em mở the trunk phía sau xe cho chị cất đồ nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, cảm ơn anh. Anh ơi, how long to the Grand Hotel ạ? Em sợ trễ giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Khoảng twenty minutes thôi chị, hôm nay đường không kẹt xe.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Còn the fare đến đó khoảng bao nhiêu, em trả bằng thẻ được không anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Khoảng twenty-five dollars, trả thẻ được chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Tới rồi! Please stop here, ngay trước cửa khách sạn là được anh.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, em dừng xe rồi. Chị quẹt thẻ trả tiền xe ở máy này, em lấy vali trong the trunk ra cho chị nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "bao lâu",
+    "usage_vi": "Dùng để hỏi một việc kéo dài hoặc mất bao nhiêu thời gian, ví dụ hỏi đi xe đến nơi mất bao lâu."
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Nói với tài xế khi bạn muốn xe dừng lại ngay chỗ này để xuống xe; thêm \"please\" cho lịch sự."
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (phía sau)",
+    "usage_vi": "Chỉ khoang chứa đồ ở phía sau ô tô, nơi cất vali, túi đồ; người Anh thường gọi là \"boot\"."
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "giá vé, tiền xe",
+    "usage_vi": "Chỉ số tiền phải trả cho một chuyến đi bằng taxi, xe buýt, tàu… Ví dụ: \"How much is the fare?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn sắp đi taxi ra sân bay và muốn hỏi tài xế đi mất bao nhiêu thời gian. Bạn nói: \"___ to the airport?\"",
+    "options": [
+     "fare",
+     "how long",
+     "trunk"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"How long\" dùng để hỏi một việc mất bao lâu, nên phù hợp khi hỏi thời gian đi đến sân bay."
+   },
+   {
+    "question_vi": "Xe sắp chạy qua nhà bạn mình, bạn muốn tài xế dừng xe ngay chỗ đó. Bạn nói: \"Please ___.\"",
+    "options": [
+     "stop here",
+     "how long",
+     "fare"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Stop here\" là câu yêu cầu tài xế dừng xe ngay tại chỗ này."
+   },
+   {
+    "question_vi": "Bạn đi siêu thị về, có nhiều túi đồ nặng và muốn cất vào khoang chứa đồ phía sau xe. Bạn hỏi: \"Can you open the ___?\"",
+    "options": [
+     "fare",
+     "stop here",
+     "trunk"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Trunk\" là cốp xe phía sau, nơi để cất túi đồ và hành lý."
+   },
+   {
+    "question_vi": "Bạn đứng ở trạm xe buýt và muốn hỏi một chuyến đi phải trả bao nhiêu tiền. Bạn hỏi: \"How much is the ___?\"",
+    "options": [
+     "trunk",
+     "fare",
+     "seat"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fare\" là số tiền phải trả cho một chuyến đi bằng xe buýt, taxi hay tàu."
+   }
+  ]
+ }
+}

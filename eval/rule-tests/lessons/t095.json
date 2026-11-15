@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t095",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "seatbelt",
+   "turn right",
+   "fare",
+   "turn left"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Please put on your seatbelt. It keeps you safe.",
+    "translation_vi": "Chào bạn! Bạn cài dây an toàn vào nhé. Nó giúp bạn an toàn."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Okay, it's on now. Can you take me to Central Park, please?",
+    "translation_vi": "Vâng, tôi cài rồi. Anh chở tôi đến Công viên Trung tâm được không?"
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Sure. Which way do I go at the next light?",
+    "translation_vi": "Được chứ. Đến đèn giao thông tới thì tôi đi hướng nào?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Please turn left there, to the big bank on the left side.",
+    "translation_vi": "Anh rẽ trái ở đó nhé, đi về phía ngân hàng lớn bên tay trái."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. And after the bank?",
+    "translation_vi": "Được. Còn qua ngân hàng rồi thì sao?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Then turn right. The park is on the right side of the street.",
+    "translation_vi": "Sau đó anh rẽ phải. Công viên nằm ở bên phải đường."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Here we are at Central Park.",
+    "translation_vi": "Mình đến Công viên Trung tâm rồi đây."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you! How much is the fare for this ride? I want to pay now.",
+    "translation_vi": "Cảm ơn anh! Tiền cước chuyến này bao nhiêu ạ? Tôi muốn trả tiền luôn."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nói về dây cài trên ghế xe để giữ an toàn. Thường nói \"put on your seatbelt\" nghĩa là cài dây an toàn."
+   },
+   {
+    "input": "turn right",
+    "word": "turn right",
+    "meaning_vi": "rẽ phải",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế hoặc người khác đi sang phía bên phải, ví dụ \"Please turn right at the light.\""
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền cước, giá vé đi xe",
+    "usage_vi": "Dùng khi hỏi hoặc nói về số tiền phải trả cho một chuyến taxi, xe buýt, tàu. Thường hỏi \"How much is the fare?\""
+   },
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường để đi sang phía bên trái, ví dụ \"Turn left at the bank.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vừa lên xe ô tô của một người bạn. Người bạn nhắc bạn cài thứ gì để an toàn?",
+    "options": [
+     "fare",
+     "seatbelt",
+     "turn left"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn, thứ cần cài khi ngồi trên xe."
+   },
+   {
+    "question_vi": "Bạn đang chỉ đường cho tài xế Grab. Nhà bạn ở phía bên phải ngã tư. Bạn nói gì?",
+    "options": [
+     "turn left",
+     "fare",
+     "turn right"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, đúng với hướng nhà bạn."
+   },
+   {
+    "question_vi": "Bạn lên xe buýt và muốn hỏi đi một lượt hết bao nhiêu tiền. Bạn dùng từ nào?",
+    "options": [
+     "fare",
+     "seatbelt",
+     "turn right"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Fare\" là tiền cước hay giá vé đi xe, nên bạn hỏi \"How much is the fare?\""
+   },
+   {
+    "question_vi": "Bạn đi bộ với một du khách. Quán cà phê nằm ở con đường bên tay trái. Bạn bảo họ làm gì?",
+    "options": [
+     "turn right",
+     "turn left",
+     "seatbelt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, đúng với hướng quán cà phê."
+   }
+  ]
+ }
+}

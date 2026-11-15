@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t019",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "seatbelt",
+   "stop here",
+   "airport",
+   "straight",
+   "tip"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào anh! Trước khi đi, please wear your seatbelt. Anh kéo dây qua vai rồi cài vào đây cho an toàn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, tôi cài rồi. Anh chở tôi to the airport nhé, tôi có chuyến bay lúc 3 giờ chiều.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được. Tới đèn đỏ phía trước, mình go straight, không rẽ trái cũng không rẽ phải, khoảng 20 phút là tới.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "À, tôi cần mua chai nước trước. Please stop here, ngay trước cửa hàng này một chút được không anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, tôi dừng xe rồi. Anh xuống mua đi, tôi đợi anh ở đây.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Xong rồi anh. Mình đi tiếp ra airport nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Tới airport rồi anh. Tổng cộng là 30 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây là 35 đô. 5 đô còn lại là a tip for you, cảm ơn anh đã lái xe cẩn thận và đợi tôi.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nói về dây cài trên ghế xe để giữ an toàn. Câu thường nghe: \"Please wear your seatbelt.\""
+   },
+   {
+    "input": "stop here",
+    "word": "stop here",
+    "meaning_vi": "dừng ở đây",
+    "usage_vi": "Nói với tài xế khi bạn muốn xe dừng ngay chỗ này. Lịch sự hơn khi thêm \"please\": \"Please stop here.\""
+   },
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi nói nơi máy bay cất cánh và hạ cánh. Khi đi taxi, bạn nói: \"To the airport, please.\""
+   },
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng (đi thẳng về phía trước)",
+    "usage_vi": "Dùng khi chỉ đường, nghĩa là cứ đi thẳng, không rẽ. Cụm thường gặp: \"go straight\"."
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền típ",
+    "usage_vi": "Là khoản tiền nhỏ đưa thêm để cảm ơn tài xế hoặc người phục vụ. Bạn có thể nói: \"This is a tip for you.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vừa ngồi vào xe Grab ở New York. Tài xế nhắc bạn cài dây trên ghế cho an toàn. Tài xế đang nói về cái gì?",
+    "options": [
+     "tip",
+     "seatbelt",
+     "airport"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn trên ghế xe, nên tài xế nhắc bạn cài nó."
+   },
+   {
+    "question_vi": "Bạn đang ngồi taxi và thấy khách sạn của mình ở ngay bên đường. Bạn muốn tài xế dừng xe ngay chỗ đó. Bạn nói gì?",
+    "options": [
+     "airport",
+     "straight",
+     "stop here"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Stop here\" nghĩa là dừng ở đây, dùng khi muốn xe dừng ngay chỗ đang đi tới."
+   },
+   {
+    "question_vi": "Ngày mai bạn bay về Việt Nam. Bạn gọi taxi và muốn tài xế chở bạn tới nơi có máy bay. Bạn nói \"To the ___, please.\"",
+    "options": [
+     "airport",
+     "seatbelt",
+     "stop here"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Airport\" là sân bay, nơi bạn đến để đi máy bay."
+   },
+   {
+    "question_vi": "Tài xế hỏi bạn có cần rẽ ở ngã tư không, nhưng nhà bạn ở ngay phía trước, không cần rẽ. Bạn nói \"Go ___.\"",
+    "options": [
+     "left",
+     "tip",
+     "straight"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Go straight\" nghĩa là cứ đi thẳng, không rẽ, đúng với đường về nhà bạn."
+   },
+   {
+    "question_vi": "Tài xế lái xe rất cẩn thận và giúp bạn mang vali. Bạn muốn đưa thêm vài đô để cảm ơn. Số tiền đó gọi là gì?",
+    "options": [
+     "seatbelt",
+     "tip",
+     "straight"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Tip\" là tiền boa, khoản tiền nhỏ đưa thêm để cảm ơn tài xế."
+   }
+  ]
+ }
+}

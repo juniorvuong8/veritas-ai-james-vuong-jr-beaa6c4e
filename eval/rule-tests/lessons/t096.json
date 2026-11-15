@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "t096",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "headache",
+   "prescription",
+   "fever",
+   "cough"
+  ],
+  "custom": [
+   "thuốc"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello, please sit down. What's wrong today?",
+    "translation_vi": "Chào chị, mời chị ngồi. Hôm nay chị bị sao vậy?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have a headache. My head hurts a lot.",
+    "translation_vi": "Dạ, em bị nhức đầu. Đầu em đau lắm ạ."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Let me check. Your body is very hot. You have a fever.",
+    "translation_vi": "Để tôi kiểm tra nhé. Người chị nóng quá. Chị bị sốt rồi."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, and I have a cough. My throat hurts, and I can't sleep at night.",
+    "translation_vi": "Dạ, em còn bị ho nữa. Cổ họng em đau, tối em không ngủ được."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "You have a cold. You need some medicine. Take it three times a day after you eat.",
+    "translation_vi": "Chị bị cảm rồi. Chị cần uống thuốc. Mỗi ngày uống ba lần, sau khi ăn."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Okay. Where can I get it?",
+    "translation_vi": "Dạ. Em mua thuốc ở đâu ạ?"
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Here is your prescription. Take this paper to the pharmacy, and they will give you the medicine.",
+    "translation_vi": "Đây là đơn thuốc của chị. Chị mang tờ giấy này ra nhà thuốc, họ sẽ đưa thuốc cho chị."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you, doctor.",
+    "translation_vi": "Dạ, em cảm ơn bác sĩ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "headache",
+    "word": "headache",
+    "meaning_vi": "đau đầu, nhức đầu",
+    "usage_vi": "Dùng khi đầu bạn bị đau. Thường nói \"I have a headache.\""
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Là tờ giấy bác sĩ ghi thuốc cho bạn. Bạn mang nó đến nhà thuốc (pharmacy) để mua thuốc."
+   },
+   {
+    "input": "fever",
+    "word": "fever",
+    "meaning_vi": "sốt",
+    "usage_vi": "Dùng khi người bạn nóng hơn bình thường vì bị bệnh. Thường nói \"I have a fever.\""
+   },
+   {
+    "input": "cough",
+    "word": "cough",
+    "meaning_vi": "ho, cơn ho",
+    "usage_vi": "Dùng khi bạn bị ho, thường do cảm lạnh. Thường nói \"I have a cough.\""
+   },
+   {
+    "input": "thuốc",
+    "word": "medicine",
+    "meaning_vi": "thuốc",
+    "usage_vi": "Là thứ bạn uống khi bị bệnh để mau khỏe. Ví dụ: \"I need some medicine.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn học bài quá lâu và bây giờ đầu bạn rất đau. Bạn nói với bạn bè: \"I have a ___.\"",
+    "options": [
+     "fever",
+     "headache",
+     "cough"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Headache\" là đau đầu, đúng với việc đầu bạn đang đau."
+   },
+   {
+    "question_vi": "Ở nhà thuốc, dược sĩ hỏi xin tờ giấy bác sĩ đã ghi thuốc cho bạn. Họ muốn xem cái gì?",
+    "options": [
+     "prescription",
+     "medicine",
+     "headache"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Prescription\" là đơn thuốc, tức tờ giấy bác sĩ ghi thuốc để bạn mang đến nhà thuốc."
+   },
+   {
+    "question_vi": "Con bạn bị bệnh, người rất nóng, nhiệt độ lên 39 độ. Bạn nói với bác sĩ: \"My child has a ___.\"",
+    "options": [
+     "cough",
+     "medicine",
+     "fever"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fever\" là sốt, khi người nóng hơn bình thường vì bị bệnh."
+   },
+   {
+    "question_vi": "Bạn bị cảm lạnh, cổ họng đau và ho suốt ngày. Bạn nói: \"I have a ___.\"",
+    "options": [
+     "headache",
+     "cough",
+     "prescription"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cough\" là ho, đúng với việc bạn ho suốt ngày khi bị cảm."
+   },
+   {
+    "question_vi": "Bạn bị bệnh và muốn mua thứ để uống cho mau khỏe. Bạn hỏi nhân viên: \"Can I get some ___?\"",
+    "options": [
+     "prescription",
+     "fever",
+     "medicine"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Medicine\" là thuốc, thứ bạn uống khi bị bệnh để mau khỏe."
+   }
+  ]
+ }
+}

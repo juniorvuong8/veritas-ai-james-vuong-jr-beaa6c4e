@@ -1,0 +1,125 @@
+{
+ "case": {
+  "id": "t066",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "frozen",
+   "cashier",
+   "aisle"
+  ],
+  "custom": [
+   "coupon"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi mua đồ ở siêu thị",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, em có thể giúp gì cho chị ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị muốn mua kem với rau loại cất trong tủ đá, lạnh cứng ấy. Chị tìm the frozen food ở đâu vậy em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị nhìn các biển số treo phía trên kệ, đi đến aisle 5, rồi đi vào giữa hai dãy kệ đó là thấy tủ đông có frozen food ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. À, chị có a coupon giảm 10% cắt từ tờ quảng cáo đây, dùng được không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ được ạ. Khi ra quầy tính tiền, chị đưa coupon cho the cashier, người quét hàng và nhận tiền của chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy lúc trả tiền chị chỉ cần give the coupon to the cashier là được giảm giá hả em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ đúng rồi, the cashier sẽ quét coupon và trừ 10% cho chị. Chúc chị mua sắm vui vẻ!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để chỉ đồ ăn được cất trong tủ đông, thường đi trước danh từ như \"frozen food\", \"frozen pizza\"."
+   },
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để gọi người ở quầy tính tiền, người quét hàng và nhận tiền của bạn, ví dụ \"Please pay the cashier\"."
+   },
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ",
+    "usage_vi": "Dùng khi hỏi hoặc chỉ chỗ để hàng trong siêu thị, thường đi kèm số, ví dụ \"It's in aisle 3\"."
+   },
+   {
+    "input": "coupon",
+    "word": "coupon",
+    "meaning_vi": "phiếu giảm giá",
+    "usage_vi": "Dùng khi bạn có một tờ phiếu (giấy hoặc trên điện thoại) để được giảm giá lúc thanh toán, ví dụ \"Can I use this coupon?\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn mua pizza loại cất trong tủ đông để về nhà nướng. Bạn hỏi nhân viên: \"Where is the ___ pizza?\" Từ nào phù hợp?",
+    "options": [
+     "fresh",
+     "frozen",
+     "coupon"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Frozen\" dùng cho đồ ăn được cất trong tủ đông, nên \"frozen pizza\" là pizza đông lạnh."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ và muốn trả tiền. Bạn cần đưa hàng cho ai ở quầy tính tiền?",
+    "options": [
+     "aisle",
+     "customer",
+     "cashier"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Cashier\" là người ở quầy tính tiền, quét hàng và nhận tiền của bạn."
+   },
+   {
+    "question_vi": "Bạn hỏi nhân viên bánh mì để ở đâu. Nhân viên trả lời: \"It's in ___ 3.\" Từ nào phù hợp?",
+    "options": [
+     "aisle",
+     "cashier",
+     "basket"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Aisle 3\" là lối đi số 3 giữa các dãy kệ, nơi để bánh mì."
+   },
+   {
+    "question_vi": "Bạn có một tờ phiếu cắt từ báo giúp giảm 2 đô khi mua sữa. Lúc trả tiền bạn nói: \"I have a ___.\" Từ nào phù hợp?",
+    "options": [
+     "receipt",
+     "coupon",
+     "frozen"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Coupon\" là phiếu giảm giá, còn \"receipt\" là giấy ghi số tiền bạn đã trả sau khi mua."
+   }
+  ]
+ }
+}

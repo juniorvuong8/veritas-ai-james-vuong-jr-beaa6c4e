@@ -1,0 +1,112 @@
+{
+ "case": {
+  "id": "t071",
+  "scenarioId": "taxi",
+  "level": 3,
+  "suggested": [
+   "turn left",
+   "straight",
+   "fare"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi trong thành phố",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Hi! Where are you going?",
+    "translation_vi": "Chào chị! Chị muốn đi đâu ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "To the City Hotel, please. How much is the fare?",
+    "translation_vi": "Cho tôi đến khách sạn City. Giá cuốc xe bao nhiêu vậy anh?"
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "About 15 dollars for this ride. Is that okay?",
+    "translation_vi": "Khoảng 15 đô cho chuyến này. Được không chị?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, that's fine. Please go straight on this road. Don't turn yet.",
+    "translation_vi": "Vâng, được ạ. Anh cứ đi thẳng đường này nhé. Đừng rẽ vội."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Okay. And then?",
+    "translation_vi": "Được rồi. Rồi sau đó sao ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "At the next traffic light, turn left, not right. The hotel is on the left side.",
+    "translation_vi": "Đến đèn giao thông tiếp theo thì anh rẽ trái, đừng rẽ phải. Khách sạn nằm bên tay trái."
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Here we are! The fare is 15 dollars.",
+    "translation_vi": "Đến nơi rồi! Tiền xe là 15 đô ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Here you go. Thank you!",
+    "translation_vi": "Tiền đây anh. Cảm ơn anh!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường, muốn tài xế quẹo sang bên tay trái. Thường đi kèm địa điểm, ví dụ: \"Turn left at the bank.\""
+   },
+   {
+    "input": "straight",
+    "word": "straight",
+    "meaning_vi": "thẳng, đi thẳng",
+    "usage_vi": "Dùng khi muốn xe tiếp tục chạy thẳng, không rẽ. Hay nói: \"Go straight\" hoặc \"Keep going straight.\""
+   },
+   {
+    "input": "fare",
+    "word": "fare",
+    "meaning_vi": "tiền vé, giá cước (taxi, xe buýt, tàu)",
+    "usage_vi": "Dùng khi hỏi hoặc nói số tiền phải trả cho một chuyến đi. Câu hay dùng: \"How much is the fare?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đi Grab đến nhà bạn bè. Nhà bạn ấy ở góc đường phía bên tay trái. Bạn nói với tài xế: \"Please ___ at the corner.\"",
+    "options": [
+     "straight",
+     "turn left",
+     "fare"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, đúng khi nhà bạn ở bên tay trái góc đường."
+   },
+   {
+    "question_vi": "Tài xế hỏi có cần rẽ không, nhưng con đường phía trước dẫn thẳng đến nơi bạn cần đến. Bạn nói: \"No, go ___.\"",
+    "options": [
+     "straight",
+     "turn left",
+     "stop"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Go straight\" nghĩa là cứ đi thẳng, không cần rẽ."
+   },
+   {
+    "question_vi": "Bạn lên xe buýt và muốn biết đi một chuyến hết bao nhiêu tiền. Bạn hỏi tài xế: \"How much is the ___?\"",
+    "options": [
+     "tip",
+     "map",
+     "fare"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Fare\" là tiền vé cho một chuyến đi, còn \"tip\" là tiền boa thêm và \"map\" là bản đồ."
+   }
+  ]
+ }
+}

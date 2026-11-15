@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t014",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "cashier",
+   "basket",
+   "on sale",
+   "cash"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Mua đồ ở siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị lấy một cái basket nhé, để đựng đồ và xách theo khi đi chọn hàng cho tiện ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, cảm ơn anh, em lấy một cái basket. Hôm nay có món nào on sale không anh? Em muốn mua đồ rẻ hơn ngày thường.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Có chị, táo hôm nay đang on sale, chỉ còn một nửa giá so với hôm qua thôi ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hay quá! Chọn xong rồi em ra đâu để tính tiền ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị ra quầy phía trước, cashier ở đó sẽ quét hàng và nhận tiền của chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Em trả bằng cash được không anh, hay ở đây chỉ quẹt thẻ thôi?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Được chị, trả bằng cash hay quẹt thẻ đều được, tiền giấy hay tiền xu bên em đều nhận ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cảm ơn anh nhiều!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "cashier",
+    "word": "cashier",
+    "meaning_vi": "nhân viên thu ngân",
+    "usage_vi": "Dùng để chỉ người đứng ở quầy tính tiền, quét hàng và nhận tiền của khách. Ví dụ: Chị ra chỗ cashier để trả tiền nhé."
+   },
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ (đựng hàng)",
+    "usage_vi": "Dùng để chỉ cái giỏ nhỏ khách xách tay khi đi chọn đồ trong siêu thị, thường dùng khi mua ít món."
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn giá bình thường. Ví dụ: Táo hôm nay đang on sale."
+   },
+   {
+    "input": "cash",
+    "word": "cash",
+    "meaning_vi": "tiền mặt",
+    "usage_vi": "Dùng để chỉ tiền giấy và tiền xu, khác với trả bằng thẻ. Ví dụ: Em trả bằng cash."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn xếp hàng ở quầy tính tiền. Người quét mã sản phẩm và nhận tiền của bạn được gọi là gì?",
+    "options": [
+     "basket",
+     "cashier",
+     "cash"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Cashier\" là nhân viên thu ngân, người tính tiền cho khách ở quầy."
+   },
+   {
+    "question_vi": "Bạn vào siêu thị chỉ để mua vài món nhỏ. Bạn nên lấy thứ gì để xách theo đựng đồ khi đi chọn hàng?",
+    "options": [
+     "basket",
+     "receipt",
+     "on sale"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Basket\" là cái giỏ để đựng hàng khi đi chọn đồ trong siêu thị."
+   },
+   {
+    "question_vi": "Bạn thấy bảng ghi sữa hôm nay rẻ hơn ngày thường. Bạn nói với bạn mình: \"Sữa đang ___ đấy!\"",
+    "options": [
+     "cash",
+     "cashier",
+     "on sale"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, bán rẻ hơn giá bình thường."
+   },
+   {
+    "question_vi": "Bạn quên mang thẻ, trong ví chỉ có tiền giấy. Bạn nói với nhân viên: \"Em trả bằng ___ nhé.\"",
+    "options": [
+     "cash",
+     "card",
+     "basket"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Cash\" là tiền mặt, tức là tiền giấy và tiền xu, nên đúng khi bạn không trả bằng thẻ."
+   }
+  ]
+ }
+}

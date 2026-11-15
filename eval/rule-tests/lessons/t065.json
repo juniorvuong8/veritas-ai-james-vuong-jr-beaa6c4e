@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "t065",
+  "scenarioId": "cafe",
+  "level": 2,
+  "suggested": [
+   "to go",
+   "change",
+   "order"
+  ],
+  "custom": [
+   "sugar"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào anh! Are you ready to order? Anh xem menu xong chưa ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Rồi, cho em one latte, please.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Anh uống ngọt không? Em thêm sugar cho anh nhé?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, just one sugar thôi, đừng ngọt quá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Anh uống ở đây hay to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho em to go, em mang lên văn phòng uống. Đây, em gửi five dollars.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, latte là four fifty, here's your change, năm mươi cent dư của anh đây ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn chị, have a nice day!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi bạn muốn mua đồ ăn, đồ uống rồi mang đi chỗ khác, không ngồi lại quán. Ví dụ: \"A coffee to go, please.\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa",
+    "usage_vi": "Là số tiền người bán trả lại khi bạn đưa nhiều hơn giá. Nhân viên thường nói \"Here's your change.\""
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi nói về việc chọn và yêu cầu đồ ăn, đồ uống ở quán. Nhân viên hay hỏi \"Are you ready to order?\""
+   },
+   {
+    "input": "sugar",
+    "word": "sugar",
+    "meaning_vi": "đường",
+    "usage_vi": "Dùng khi muốn thêm vị ngọt vào cà phê hay trà. Bạn có thể nói \"one sugar\" hoặc \"no sugar\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một ổ bánh mì và muốn mang về nhà ăn. Bạn nói: \"Can I get it ___?\"",
+    "options": [
+     "order",
+     "to go",
+     "change"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, không ăn tại quán."
+   },
+   {
+    "question_vi": "Bạn mua chai nước giá 2 đô và đưa 10 đô. Người bán trả lại bạn 8 đô. Số tiền 8 đô đó gọi là gì?",
+    "options": [
+     "sugar",
+     "order",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thối lại khi bạn trả nhiều hơn giá."
+   },
+   {
+    "question_vi": "Ở nhà hàng, phục vụ đến bàn hỏi bạn muốn gọi món gì. Họ nói: \"Can I take your ___?\"",
+    "options": [
+     "order",
+     "change",
+     "to go"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Order\" là món bạn gọi, nên phục vụ hỏi \"Can I take your order?\"."
+   },
+   {
+    "question_vi": "Ly trà của bạn đắng quá, bạn muốn nó ngọt hơn. Bạn hỏi: \"Can I have some ___?\"",
+    "options": [
+     "change",
+     "sugar",
+     "to go"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Sugar\" là đường, dùng để làm đồ uống ngọt hơn."
+   }
+  ]
+ }
+}

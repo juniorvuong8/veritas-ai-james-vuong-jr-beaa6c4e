@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t025",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "large",
+   "refill",
+   "medium",
+   "order",
+   "change"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị muốn order gì ạ? Chị nói món, em ghi lại cho chị nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị một ly trà đào nhé em.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị lấy ly nhỏ, ly medium không nhỏ không to, hay ly large to nhất ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị lấy large nhé, hôm nay trời nóng quá, chị muốn uống thật nhiều.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ. Ly này được refill miễn phí. Chị uống hết thì mang ly lại quầy, em rót đầy thêm cho chị.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Hay quá! Đây, chị gửi em tờ 20 đô.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, ly trà 6 đô, chị đưa 20 đô, đây là 14 đô change của chị ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em nhé!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn, to",
+    "usage_vi": "Dùng khi chọn cỡ ly lớn nhất ở quán đồ uống. Ví dụ: \"A large coffee, please.\""
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, châm thêm (đồ uống vào ly đã uống hết)",
+    "usage_vi": "Dùng khi bạn muốn được rót thêm nước hoặc cà phê vào ly của mình. Ví dụ: \"Can I get a refill?\""
+   },
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng khi chọn cỡ ly ở giữa, không nhỏ cũng không lớn. Ví dụ: \"A medium tea, please.\""
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món; món đã gọi",
+    "usage_vi": "Dùng khi nói với nhân viên món bạn muốn mua. Ví dụ: \"Can I order now?\" hoặc nhân viên hỏi \"What would you like to order?\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối lại, tiền thừa",
+    "usage_vi": "Là số tiền nhân viên trả lại khi bạn đưa nhiều hơn giá tiền. Ví dụ: \"Here is your change.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đang rất khát và muốn ly trà sữa to nhất của quán. Bạn chọn cỡ nào?",
+    "options": [
+     "medium",
+     "large",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Large\" là cỡ lớn nhất, phù hợp khi bạn muốn uống nhiều."
+   },
+   {
+    "question_vi": "Bạn đã uống hết ly cà phê và muốn nhân viên rót thêm vào ly đó. Bạn dùng từ nào?",
+    "options": [
+     "refill",
+     "order",
+     "change"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Refill\" nghĩa là rót thêm đồ uống vào ly đã hết."
+   },
+   {
+    "question_vi": "Ly nhỏ thì quá ít, ly to thì quá nhiều. Bạn muốn ly cỡ ở giữa. Bạn chọn từ nào?",
+    "options": [
+     "large",
+     "small",
+     "medium"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa cỡ nhỏ và cỡ lớn."
+   },
+   {
+    "question_vi": "Bạn bước vào quán, đến quầy và muốn nói với nhân viên món mình muốn mua. Từ nào chỉ việc gọi món?",
+    "options": [
+     "change",
+     "order",
+     "large"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, dùng khi bạn nói món mình muốn với nhân viên."
+   },
+   {
+    "question_vi": "Ly nước giá 4 đô, bạn đưa tờ 10 đô và chờ nhận lại 6 đô. Số tiền 6 đô đó gọi là gì?",
+    "options": [
+     "change",
+     "refill",
+     "medium"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Change\" là tiền thối lại khi bạn trả nhiều hơn giá tiền."
+   }
+  ]
+ }
+}

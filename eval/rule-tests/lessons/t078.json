@@ -1,0 +1,119 @@
+{
+ "case": {
+  "id": "t078",
+  "scenarioId": "supermarket",
+  "level": 2,
+  "suggested": [
+   "basket",
+   "frozen",
+   "checkout",
+   "aisle"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi siêu thị mua đồ ăn",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Chị có cần a basket không ạ? Có cái này để đựng đồ, chị khỏi phải ôm trên tay.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, cho em a basket, cảm ơn anh. Em đang tìm frozen food, như kem với cá được giữ lạnh cứng trong tủ đá ấy. Ở đâu vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Frozen food ở aisle 5 ạ. Chị nhìn biển số 5 treo phía trên, rồi đi vào giữa hai hàng kệ đó là thấy các tủ đá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ hiểu rồi. Lấy đồ xong thì em trả tiền ở đâu ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chị ra the checkout gần cửa nhé, chỗ có máy tính tiền và nhân viên thu ngân đứng đó.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vâng, em lấy đồ xong rồi ra the checkout. Cảm ơn anh nhiều!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "giỏ (giỏ xách tay để đựng đồ trong siêu thị)",
+    "usage_vi": "Dùng khi bạn cần một cái giỏ để đựng vài món đồ lúc đi mua sắm. Bạn có thể nói \"Can I have a basket?\"."
+   },
+   {
+    "input": "frozen",
+    "word": "frozen",
+    "meaning_vi": "đông lạnh",
+    "usage_vi": "Dùng để nói về đồ ăn được để trong tủ đá, như kem, pizza hay thịt cá đông lạnh. Thường đi với \"food\": \"frozen food\"."
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền",
+    "usage_vi": "Dùng để chỉ nơi bạn trả tiền sau khi chọn đồ xong ở siêu thị hoặc cửa hàng. Thường nói \"the checkout\"."
+   },
+   {
+    "input": "aisle",
+    "word": "aisle",
+    "meaning_vi": "lối đi giữa các dãy kệ",
+    "usage_vi": "Dùng khi hỏi hoặc chỉ đường đến một khu hàng trong siêu thị, thường đi kèm với số như \"aisle 5\". Chữ \"s\" trong từ này không đọc, phát âm giống \"ai-ồ\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn chỉ định mua vài món nhỏ và muốn có một cái để đựng đồ xách trên tay. Bạn hỏi nhân viên xin cái gì?",
+    "options": [
+     "checkout",
+     "basket",
+     "aisle"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Basket\" là cái giỏ dùng để đựng đồ khi đi mua sắm."
+   },
+   {
+    "question_vi": "Bạn muốn mua pizza được để trong tủ đá để mang về nhà nướng. Bạn tìm khu thực phẩm nào?",
+    "options": [
+     "frozen",
+     "basket",
+     "fresh"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Frozen\" nghĩa là đông lạnh, dùng cho đồ ăn được giữ trong tủ đá."
+   },
+   {
+    "question_vi": "Bạn đã chọn đủ đồ và bây giờ muốn trả tiền. Bạn cần đi đến đâu?",
+    "options": [
+     "aisle",
+     "frozen",
+     "checkout"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Checkout\" là quầy tính tiền, nơi bạn thanh toán trước khi ra về."
+   },
+   {
+    "question_vi": "Bạn không biết mì Ý nằm ở dãy kệ nào nên hỏi nhân viên: \"Which ___ is the pasta in?\". Từ nào điền vào chỗ trống?",
+    "options": [
+     "basket",
+     "aisle",
+     "checkout"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Aisle\" là lối đi giữa các dãy kệ, dùng khi hỏi món hàng nằm ở khu nào."
+   }
+  ]
+ }
+}

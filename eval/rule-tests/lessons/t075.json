@@ -1,0 +1,102 @@
+{
+ "case": {
+  "id": "t075",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "how long",
+   "airport",
+   "trunk"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Vali của chị to quá, để tôi bỏ vào trunk phía sau xe cho rộng chỗ nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn anh. Chị đi airport, máy bay của chị cất cánh lúc mười giờ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ được, tôi đi đường cao tốc cho nhanh để chị kịp chuyến bay.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Từ đây ra đó mất how long vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Khoảng ba mươi phút thôi chị, giờ này đường vắng.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Tới nơi anh mở trunk giúp chị lấy vali ra nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "how long",
+    "word": "how long",
+    "meaning_vi": "bao lâu",
+    "usage_vi": "Dùng để hỏi một việc mất bao nhiêu thời gian, ví dụ khi hỏi tài xế đi đến nơi mất mấy phút: \"How long does it take?\""
+   },
+   {
+    "input": "airport",
+    "word": "airport",
+    "meaning_vi": "sân bay",
+    "usage_vi": "Dùng khi muốn đi đến nơi máy bay cất cánh và hạ cánh. Khi lên taxi, bạn có thể nói ngắn gọn: \"Airport, please.\""
+   },
+   {
+    "input": "trunk",
+    "word": "trunk",
+    "meaning_vi": "cốp xe (phía sau ô tô)",
+    "usage_vi": "Dùng khi muốn để hành lý hoặc đồ đạc vào phía sau xe ô tô. Người Mỹ nói \"trunk\", còn người Anh thường nói \"boot\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đi taxi đến khách sạn và muốn hỏi tài xế đi mất mấy phút. Bạn dùng từ nào?",
+    "options": [
+     "airport",
+     "how long",
+     "trunk"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"How long\" nghĩa là \"bao lâu\", dùng để hỏi một việc mất bao nhiêu thời gian."
+   },
+   {
+    "question_vi": "Bạn sắp bay về Việt Nam và muốn tài xế chở bạn đến nơi có máy bay. Bạn nói đi đâu?",
+    "options": [
+     "airport",
+     "trunk",
+     "how long"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Airport\" là sân bay, nơi bạn đến để đi máy bay."
+   },
+   {
+    "question_vi": "Bạn mua nhiều túi đồ ở siêu thị và muốn tài xế cất chúng ở phía sau xe. Bạn nhờ tài xế mở cái gì?",
+    "options": [
+     "how long",
+     "airport",
+     "trunk"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Trunk\" là cốp xe phía sau ô tô, nơi để hành lý và đồ đạc."
+   }
+  ]
+ }
+}

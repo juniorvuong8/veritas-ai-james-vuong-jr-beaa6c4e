@@ -1,0 +1,129 @@
+{
+ "case": {
+  "id": "t036",
+  "scenarioId": "clinic",
+  "level": 3,
+  "suggested": [
+   "allergy",
+   "pain",
+   "pharmacy",
+   "prescription"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi khám bác sĩ ở phòng khám",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Hello. How can I help you today?",
+    "translation_vi": "Chào bạn. Hôm nay tôi có thể giúp gì cho bạn?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "I have pain in my throat. It hurts when I eat.",
+    "translation_vi": "Tôi bị đau họng. Mỗi lần ăn là thấy đau."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "I see. Do you have an allergy? Does any medicine make your skin red or itchy?",
+    "translation_vi": "Tôi hiểu rồi. Bạn có bị dị ứng gì không? Có loại thuốc nào làm da bạn đỏ hoặc ngứa không?"
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Yes, I have an allergy to penicillin. It makes my skin red.",
+    "translation_vi": "Có, tôi bị dị ứng với penicillin. Thuốc đó làm da tôi bị đỏ."
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "OK, I will give you a different medicine. Here is your prescription. On this paper, I wrote your medicine and how much to take.",
+    "translation_vi": "Được, tôi sẽ cho bạn loại thuốc khác. Đây là đơn thuốc của bạn. Trên tờ giấy này tôi đã ghi tên thuốc và liều dùng."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Thank you. Where can I get this medicine?",
+    "translation_vi": "Cảm ơn bác sĩ. Tôi có thể mua thuốc này ở đâu?"
+   },
+   {
+    "speaker_vi": "Bác sĩ",
+    "text": "Take this paper to the pharmacy next door. They sell medicine there.",
+    "translation_vi": "Bạn mang tờ giấy này sang hiệu thuốc bên cạnh. Ở đó có bán thuốc."
+   },
+   {
+    "speaker_vi": "Bệnh nhân",
+    "text": "Great. Thank you, doctor.",
+    "translation_vi": "Tốt quá. Cảm ơn bác sĩ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "allergy",
+    "word": "allergy",
+    "meaning_vi": "dị ứng",
+    "usage_vi": "Dùng khi cơ thể bạn phản ứng xấu (ngứa, nổi mẩn, khó thở) với một loại thức ăn hoặc thuốc. Thường nói \"I have an allergy to...\" để báo cho bác sĩ biết."
+   },
+   {
+    "input": "pain",
+    "word": "pain",
+    "meaning_vi": "cơn đau, sự đau",
+    "usage_vi": "Dùng để nói chỗ nào trên cơ thể bị đau. Thường nói \"I have pain in my...\" (ví dụ: back, stomach, throat)."
+   },
+   {
+    "input": "pharmacy",
+    "word": "pharmacy",
+    "meaning_vi": "hiệu thuốc, nhà thuốc",
+    "usage_vi": "Là nơi bán thuốc. Bạn hỏi \"Where is the pharmacy?\" khi cần tìm chỗ mua thuốc."
+   },
+   {
+    "input": "prescription",
+    "word": "prescription",
+    "meaning_vi": "đơn thuốc",
+    "usage_vi": "Là tờ giấy bác sĩ ghi tên thuốc và cách dùng. Bạn mang nó đến hiệu thuốc để mua những loại thuốc cần có chỉ định của bác sĩ."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Mỗi lần ăn tôm, bạn bị ngứa và nổi mẩn đỏ. Bạn nói với bác sĩ: \"I have a shrimp ___.\" Từ nào phù hợp?",
+    "options": [
+     "pharmacy",
+     "allergy",
+     "pain"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Allergy\" nghĩa là dị ứng, đúng với tình trạng ngứa và nổi mẩn khi ăn tôm."
+   },
+   {
+    "question_vi": "Bạn bị đau lưng sau khi bê đồ nặng. Bạn nói với bác sĩ: \"I have ___ in my back.\" Từ nào phù hợp?",
+    "options": [
+     "pain",
+     "prescription",
+     "allergy"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Pain\" nghĩa là cơn đau, dùng để nói lưng của bạn đang bị đau."
+   },
+   {
+    "question_vi": "Buổi tối bạn cần mua thuốc ho và hỏi một người đi đường: \"Where is the nearest ___?\" Từ nào phù hợp?",
+    "options": [
+     "prescription",
+     "pain",
+     "pharmacy"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Pharmacy\" là hiệu thuốc, nơi bạn có thể mua thuốc ho."
+   },
+   {
+    "question_vi": "Ở hiệu thuốc, nhân viên nói loại thuốc này cần có giấy của bác sĩ. Họ hỏi bạn: \"Do you have a ___?\" Từ nào phù hợp?",
+    "options": [
+     "allergy",
+     "prescription",
+     "pharmacy"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Prescription\" là đơn thuốc do bác sĩ viết, cần có để mua loại thuốc này."
+   }
+  ]
+ }
+}

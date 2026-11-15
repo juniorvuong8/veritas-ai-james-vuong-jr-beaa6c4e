@@ -1,0 +1,141 @@
+{
+ "case": {
+  "id": "t057",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "change",
+   "refill",
+   "to go",
+   "large",
+   "order"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! What would you like to order?",
+    "translation_vi": "Chào chị! Chị muốn gọi gì ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "A large iced coffee, please. Not small, the big one.",
+    "translation_vi": "Cho em một ly cà phê đá cỡ lớn. Không phải ly nhỏ đâu, ly to ấy."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Do you want to drink it here, or is it to go?",
+    "translation_vi": "Dạ được ạ. Chị uống ở đây hay mang đi ạ?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "To go, please. I'm going to work now.",
+    "translation_vi": "Cho em mang đi nhé. Giờ em đi làm."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "That's three dollars fifty. You gave me five, so here is your change: one dollar fifty.",
+    "translation_vi": "Của chị hết ba đô năm mươi. Chị đưa năm đô nên em gửi lại chị một đô năm mươi tiền thối ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thank you! Can I get a refill later?",
+    "translation_vi": "Cảm ơn anh! Lát nữa em xin thêm một ly nữa được không?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Yes! Bring back this cup, and we fill it again. A refill is free.",
+    "translation_vi": "Dạ được ạ! Chị mang ly này quay lại, bọn em rót đầy lại cho. Rót thêm thì miễn phí ạ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền trả lại",
+    "usage_vi": "Dùng khi bạn đưa nhiều tiền hơn số phải trả và người bán trả lại phần dư. Ví dụ: \"Here is your change.\" (Tiền thối của bạn đây.)"
+   },
+   {
+    "input": "refill",
+    "word": "refill",
+    "meaning_vi": "rót thêm, đổ đầy lại (đồ uống)",
+    "usage_vi": "Dùng khi bạn muốn uống thêm cùng loại đồ uống vào ly cũ. Hay nói: \"Can I get a refill?\""
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi bạn mua đồ ăn, đồ uống để mang đi chứ không dùng tại quán. Nhân viên hay hỏi: \"For here or to go?\""
+   },
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "cỡ lớn, to",
+    "usage_vi": "Dùng để chọn cỡ lớn nhất khi gọi đồ uống hoặc đồ ăn. Ví dụ: \"A large tea, please.\""
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi nói về việc gọi đồ ăn, đồ uống ở quán. Nhân viên thường hỏi: \"What would you like to order?\" hoặc \"Are you ready to order?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một ly trà giá 7 đô và đưa 10 đô. Người bán trả lại bạn 3 đô. Số tiền 3 đô đó gọi là gì?",
+    "options": [
+     "refill",
+     "change",
+     "order"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Change\" là tiền thối, tức phần tiền dư người bán trả lại cho bạn."
+   },
+   {
+    "question_vi": "Bạn đang ngồi ở quán, ly nước ngọt đã hết và bạn muốn được rót thêm vào ly đó. Bạn nói: \"Can I get a ___?\"",
+    "options": [
+     "refill",
+     "large",
+     "to go"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Refill\" nghĩa là rót thêm, đổ đầy lại ly đồ uống của bạn."
+   },
+   {
+    "question_vi": "Bạn mua bánh mì ở tiệm và muốn mang ra công viên ăn. Nhân viên hỏi \"For here or...?\" Bạn trả lời gì?",
+    "options": [
+     "large",
+     "change",
+     "to go"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"To go\" nghĩa là mang đi, không ăn tại tiệm."
+   },
+   {
+    "question_vi": "Bạn rất khát và muốn gọi ly nước cam cỡ to nhất. Bạn nói: \"A ___ orange juice, please.\"",
+    "options": [
+     "small",
+     "large",
+     "refill"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Large\" nghĩa là cỡ lớn, dùng khi bạn muốn ly to nhất."
+   },
+   {
+    "question_vi": "Bạn vào nhà hàng và ngồi xuống bàn. Người phục vụ đến hỏi bạn đã sẵn sàng gọi món chưa: \"Are you ready to ___?\"",
+    "options": [
+     "order",
+     "change",
+     "to go"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, nên \"Are you ready to order?\" là câu hỏi bạn đã sẵn sàng gọi món chưa."
+   }
+  ]
+ }
+}

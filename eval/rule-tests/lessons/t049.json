@@ -1,0 +1,125 @@
+{
+ "case": {
+  "id": "t049",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "change",
+   "to go",
+   "napkin"
+  ],
+  "custom": [
+   "ống hút"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị uống ở đây hay to go ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị mang về văn phòng uống, nên lấy to go nhé. Cho chị một ly trà sữa đá.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, ly trà sữa của chị là năm đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị gửi em tờ mười đô nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị đưa mười đô, ly năm đô, vậy em gửi lại chị năm đô change ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Cho chị xin một cái straw để hút trà sữa, với một tờ napkin để lau tay nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, straw và napkin chị lấy ở quầy bên cạnh nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thối, tiền thừa",
+    "usage_vi": "Dùng khi nói về số tiền người bán trả lại cho bạn sau khi bạn đưa nhiều hơn giá món hàng."
+   },
+   {
+    "input": "to go",
+    "word": "to go",
+    "meaning_vi": "mang đi",
+    "usage_vi": "Dùng khi gọi đồ ăn hoặc đồ uống mà bạn muốn mang ra ngoài, không ngồi lại quán. Thường nói sau tên món, ví dụ \"a coffee to go\"."
+   },
+   {
+    "input": "napkin",
+    "word": "napkin",
+    "meaning_vi": "khăn giấy",
+    "usage_vi": "Dùng khi bạn cần tờ giấy để lau tay hoặc lau miệng lúc ăn uống ở quán."
+   },
+   {
+    "input": "ống hút",
+    "word": "straw",
+    "meaning_vi": "ống hút",
+    "usage_vi": "Dùng khi bạn cần ống nhỏ để hút nước, trà sữa hoặc nước ép từ ly."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua một cái bánh giá 3 đô và đưa người bán 5 đô. Người bán trả lại bạn 2 đô. Số tiền 2 đô đó gọi là gì?",
+    "options": [
+     "napkin",
+     "change",
+     "to go"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Số tiền người bán trả lại khi bạn đưa dư gọi là \"change\"."
+   },
+   {
+    "question_vi": "Bạn mua cà phê và muốn mang lên xe buýt uống. Bạn nói với nhân viên rằng bạn muốn ly cà phê thế nào?",
+    "options": [
+     "to go",
+     "change",
+     "straw"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Khi muốn mang đồ uống đi chỗ khác, bạn nói \"to go\"."
+   },
+   {
+    "question_vi": "Bạn ăn bánh mì và bị dính sốt lên miệng. Bạn cần xin gì để lau?",
+    "options": [
+     "straw",
+     "change",
+     "napkin"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Napkin\" là khăn giấy dùng để lau miệng hoặc lau tay."
+   },
+   {
+    "question_vi": "Bạn mua nước ép trái cây và muốn uống bằng một ống nhỏ thay vì uống trực tiếp từ ly. Bạn xin cái gì?",
+    "options": [
+     "change",
+     "straw",
+     "napkin"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Straw\" là ống hút dùng để hút nước từ ly."
+   }
+  ]
+ }
+}

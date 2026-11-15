@@ -1,0 +1,147 @@
+{
+ "case": {
+  "id": "t074",
+  "scenarioId": "supermarket",
+  "level": 1,
+  "suggested": [
+   "fresh",
+   "checkout",
+   "on sale",
+   "bag"
+  ],
+  "custom": [
+   "receipt"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi chợ ở siêu thị",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị! Rau ở đây rất fresh, mới hái sáng nay, chưa héo chút nào ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ồ, đẹp thật. Còn táo này hôm nay có on sale không em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có, táo đang on sale, rẻ hơn ngày thường 30% ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Vậy chị lấy hai ký. Chọn xong rồi thì chị trả tiền ở đâu em?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị mang đồ ra checkout gần cửa ra vào, chỗ có máy tính tiền nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em. Đồ nhiều quá, em có bag để chị đựng mang về không?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ có, bag giấy 10 cent một cái. Còn đây là receipt ghi các món chị mua và số tiền chị đã trả ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cảm ơn em, chị giữ lại để về nhà kiểm tra.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "fresh",
+    "word": "fresh",
+    "meaning_vi": "tươi, mới",
+    "usage_vi": "Dùng để nói thực phẩm như rau, trái cây, thịt, cá còn mới, chưa để lâu. Ví dụ: fresh fish là cá tươi."
+   },
+   {
+    "input": "checkout",
+    "word": "checkout",
+    "meaning_vi": "quầy tính tiền",
+    "usage_vi": "Dùng để chỉ chỗ bạn mang hàng đến trả tiền trong siêu thị hoặc cửa hàng. Bạn có thể hỏi: Where is the checkout?"
+   },
+   {
+    "input": "on sale",
+    "word": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "usage_vi": "Dùng khi một món hàng đang được bán rẻ hơn giá bình thường. Ví dụ: The apples are on sale."
+   },
+   {
+    "input": "bag",
+    "word": "bag",
+    "meaning_vi": "túi",
+    "usage_vi": "Dùng để chỉ cái túi đựng đồ mua về, có thể bằng giấy hoặc nhựa. Ở nhiều nước, siêu thị tính thêm tiền cho mỗi cái bag."
+   },
+   {
+    "input": "receipt",
+    "word": "receipt",
+    "meaning_vi": "hóa đơn, biên lai",
+    "usage_vi": "Dùng để chỉ tờ giấy ghi các món đã mua và số tiền đã trả. Nên giữ receipt nếu muốn đổi hoặc trả hàng."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn mua cá mới đánh bắt sáng nay, chưa để lâu. Bạn hỏi nhân viên: Cá này có ... không?",
+    "options": [
+     "on sale",
+     "fresh",
+     "bag"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, dùng cho thực phẩm chưa để lâu."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong đồ ở siêu thị và muốn tìm chỗ trả tiền. Bạn hỏi: ... ở đâu ạ?",
+    "options": [
+     "checkout",
+     "receipt",
+     "fresh"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Checkout\" là quầy tính tiền, nơi bạn trả tiền cho hàng đã chọn."
+   },
+   {
+    "question_vi": "Bạn thấy biển ghi hôm nay sữa rẻ hơn ngày thường. Vậy sữa đang ...",
+    "options": [
+     "fresh",
+     "bag",
+     "on sale"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"On sale\" nghĩa là đang giảm giá, bán rẻ hơn bình thường."
+   },
+   {
+    "question_vi": "Ở tiệm bánh mì, bạn mua nhiều bánh và cần thứ gì đó để đựng mang về. Bạn xin nhân viên một cái ...",
+    "options": [
+     "receipt",
+     "bag",
+     "checkout"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Bag\" là cái túi dùng để đựng đồ mang về."
+   },
+   {
+    "question_vi": "Bạn mua một cái áo ở cửa hàng quần áo nhưng về nhà thấy không vừa, muốn đổi. Bạn cần mang theo tờ giấy chứng minh đã mua, gọi là ...",
+    "options": [
+     "checkout",
+     "on sale",
+     "receipt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Receipt\" là hóa đơn ghi món đã mua và số tiền đã trả, cần có khi đổi hoặc trả hàng."
+   }
+  ]
+ }
+}

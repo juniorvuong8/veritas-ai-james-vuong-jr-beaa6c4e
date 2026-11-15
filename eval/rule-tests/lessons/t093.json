@@ -1,0 +1,146 @@
+{
+ "case": {
+  "id": "t093",
+  "scenarioId": "cafe",
+  "level": 3,
+  "suggested": [
+   "menu",
+   "order",
+   "change",
+   "iced",
+   "medium"
+  ],
+  "custom": []
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hi! Here is the menu. You can see all our drinks and prices on it.",
+    "translation_vi": "Chào bạn! Đây là thực đơn. Bạn có thể xem tất cả đồ uống và giá ở đây."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Thanks! I want to order a latte, please.",
+    "translation_vi": "Cảm ơn! Cho mình gọi một ly latte nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Sure. Do you want it hot or iced?",
+    "translation_vi": "Dạ được. Bạn muốn uống nóng hay đá?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Iced, please. It's very hot today, and I want a cold drink.",
+    "translation_vi": "Cho mình đá nhé. Hôm nay trời nóng quá, mình muốn uống gì đó mát lạnh."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Okay, an iced latte. What size: small, medium, or large?",
+    "translation_vi": "Vâng, một ly latte đá. Bạn lấy cỡ nào: nhỏ, vừa hay lớn?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Medium, please. Not too big, not too small. Here is ten dollars.",
+    "translation_vi": "Cho mình cỡ vừa. Không lớn quá, cũng không nhỏ quá. Mình gửi mười đô nhé."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Thank you. It's four dollars, so here is your change: six dollars.",
+    "translation_vi": "Cảm ơn bạn. Ly này bốn đô, mình gửi lại tiền thừa sáu đô nhé."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great, thank you!",
+    "translation_vi": "Tuyệt, cảm ơn bạn!"
+   }
+  ],
+  "vocab": [
+   {
+    "input": "menu",
+    "word": "menu",
+    "meaning_vi": "thực đơn",
+    "usage_vi": "Dùng để chỉ danh sách món ăn, đồ uống và giá ở quán. Bạn có thể nói \"Can I see the menu, please?\" để xin xem thực đơn."
+   },
+   {
+    "input": "order",
+    "word": "order",
+    "meaning_vi": "gọi món, đặt món",
+    "usage_vi": "Dùng khi bạn nói với nhân viên món bạn muốn mua. Ví dụ: \"I want to order a coffee.\""
+   },
+   {
+    "input": "change",
+    "word": "change",
+    "meaning_vi": "tiền thừa, tiền thối lại",
+    "usage_vi": "Là số tiền người bán trả lại khi bạn đưa nhiều hơn giá. Nhân viên thường nói \"Here is your change.\""
+   },
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, ướp lạnh",
+    "usage_vi": "Đặt trước tên đồ uống để nói bạn muốn uống lạnh có đá. Ví dụ: \"iced coffee\", \"iced tea\"."
+   },
+   {
+    "input": "medium",
+    "word": "medium",
+    "meaning_vi": "cỡ vừa",
+    "usage_vi": "Dùng khi chọn kích cỡ ly, nằm giữa \"small\" (nhỏ) và \"large\" (lớn). Ví dụ: \"A medium latte, please.\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vào một nhà hàng và muốn xem danh sách các món cùng giá tiền. Bạn nói: \"Can I see the ___, please?\"",
+    "options": [
+     "order",
+     "menu",
+     "change"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Menu\" là thực đơn, nơi ghi các món và giá, nên bạn xin xem \"the menu\"."
+   },
+   {
+    "question_vi": "Bạn đã chọn xong món và muốn nói với người phục vụ rằng bạn sẵn sàng gọi món. Bạn nói: \"Can I ___ now?\"",
+    "options": [
+     "order",
+     "iced",
+     "medium"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Order\" nghĩa là gọi món, nên \"Can I order now?\" là \"Tôi gọi món bây giờ được không?\"."
+   },
+   {
+    "question_vi": "Bạn mua một cái bánh giá 2 đô và đưa 5 đô. Người bán đưa lại bạn 3 đô và nói: \"Here is your ___.\"",
+    "options": [
+     "menu",
+     "medium",
+     "change"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Change\" là tiền thừa người bán trả lại khi bạn đưa nhiều tiền hơn giá."
+   },
+   {
+    "question_vi": "Trời rất nóng, bạn muốn một ly trà lạnh có đá. Bạn nói: \"An ___ tea, please.\"",
+    "options": [
+     "medium",
+     "iced",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced\" nghĩa là có đá, nên \"iced tea\" là trà đá."
+   },
+   {
+    "question_vi": "Bạn muốn một ly nước cam không lớn cũng không nhỏ. Bạn nói: \"A ___ orange juice, please.\"",
+    "options": [
+     "medium",
+     "large",
+     "iced"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Medium\" là cỡ vừa, nằm giữa cỡ nhỏ và cỡ lớn."
+   }
+  ]
+ }
+}

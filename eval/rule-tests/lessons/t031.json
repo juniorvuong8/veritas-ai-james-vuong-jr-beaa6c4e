@@ -1,0 +1,108 @@
+{
+ "case": {
+  "id": "t031",
+  "scenarioId": "taxi",
+  "level": 2,
+  "suggested": [
+   "traffic",
+   "seatbelt"
+  ],
+  "custom": [
+   "tiền boa"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ra sân bay",
+  "level": 2,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị nhớ put on your seatbelt nhé, cài vào cho an toàn khi xe chạy.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em cài rồi. Đi đến the airport mất bao lâu vậy anh?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Giờ này heavy traffic lắm chị, xe cộ đông, đường kẹt nên chắc mất khoảng 40 phút.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Ôi, so much traffic! Không sao, em không vội đâu.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Đến nơi rồi ạ. Tổng cộng là thirty dollars.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, em gửi anh 35 đô. Năm đô còn lại là a tip cho anh, cảm ơn anh đã chở em cẩn thận.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Thank you so much! Chị đi đường bình an nhé.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "traffic",
+    "word": "traffic",
+    "meaning_vi": "giao thông, xe cộ trên đường",
+    "usage_vi": "Dùng để nói về lượng xe trên đường. Khi đường đông và kẹt xe, người ta hay nói \"heavy traffic\" hoặc \"a lot of traffic\"."
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi ngồi trên xe hơi hoặc máy bay. Tài xế thường nhắc \"Please put on your seatbelt\" trước khi xe chạy."
+   },
+   {
+    "input": "tiền boa",
+    "word": "tip",
+    "meaning_vi": "tiền boa, tiền thưởng thêm",
+    "usage_vi": "Dùng khi bạn đưa thêm tiền cho tài xế, phục vụ hoặc nhân viên để cảm ơn họ. Có thể nói \"This is a tip for you\"."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn đi taxi vào giờ tan tầm, đường đầy xe và xe chạy rất chậm. Tài xế nói: \"There is a lot of ___ today.\" Từ nào phù hợp?",
+    "options": [
+     "tip",
+     "traffic",
+     "seatbelt"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Traffic\" nghĩa là xe cộ trên đường, nên \"a lot of traffic\" nghĩa là đường rất đông xe."
+   },
+   {
+    "question_vi": "Bạn vừa lên một chiếc xe ôm công nghệ bốn bánh, tài xế nhắc bạn cài dây trước khi xe chạy. Tài xế nói: \"Please put on your ___.\" Từ nào phù hợp?",
+    "options": [
+     "seatbelt",
+     "traffic",
+     "receipt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Seatbelt\" là dây an toàn, thứ cần cài vào khi ngồi trên xe."
+   },
+   {
+    "question_vi": "Sau bữa ăn ở nhà hàng, bạn muốn để lại thêm tiền cho người phục vụ vì họ rất chu đáo. Bạn nói: \"This is a ___ for you.\" Từ nào phù hợp?",
+    "options": [
+     "seatbelt",
+     "receipt",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Tip\" là tiền boa, số tiền bạn đưa thêm để cảm ơn người phục vụ."
+   }
+  ]
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "case": {
+  "id": "t061",
+  "scenarioId": "cafe",
+  "level": 1,
+  "suggested": [
+   "large",
+   "straw",
+   "iced"
+  ],
+  "custom": [
+   "ống hút"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Gọi đồ uống ở quán cà phê",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Chào chị, chị muốn uống gì ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị một ly latte nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ, chị uống nóng hay iced ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Trời nóng quá, cho chị iced, bỏ nhiều đá vào cho mát nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ. Chị lấy ly nhỏ, ly vừa hay large ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Cho chị large, ly to nhất ấy, chị đang khát lắm.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Dạ. Chị có cần straw để hút cho dễ không ạ?",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Có, cho chị một cái straw nhé, cảm ơn em.",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "large",
+    "word": "large",
+    "meaning_vi": "lớn, cỡ to",
+    "usage_vi": "Dùng khi chọn cỡ ly hoặc phần ăn to nhất. Thường đi cùng các cỡ small (nhỏ) và medium (vừa)."
+   },
+   {
+    "input": "straw",
+    "word": "straw",
+    "meaning_vi": "ống hút",
+    "usage_vi": "Dùng khi bạn cần ống để hút đồ uống. Có thể nói \"Can I have a straw?\" để xin nhân viên."
+   },
+   {
+    "input": "iced",
+    "word": "iced",
+    "meaning_vi": "có đá, uống lạnh",
+    "usage_vi": "Đặt trước tên đồ uống để gọi bản có đá, ví dụ \"iced coffee\" hay \"iced tea\". Trái nghĩa với hot (nóng)."
+   },
+   {
+    "input": "ống hút",
+    "word": "straw",
+    "meaning_vi": "ống hút",
+    "usage_vi": "Khi muốn xin ống hút ở quán, bạn nói \"straw\". Nhân viên thường hỏi bạn có cần straw không khi đưa đồ uống lạnh."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn mua nước ngọt ở rạp phim và rất khát, muốn lấy ly to nhất. Bạn chọn cỡ nào?",
+    "options": [
+     "small",
+     "iced",
+     "large"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Large\" là cỡ lớn nhất, phù hợp khi bạn muốn ly to."
+   },
+   {
+    "question_vi": "Bạn mua một ly nước ép nhưng không có gì để hút. Bạn xin nhân viên cái gì?",
+    "options": [
+     "straw",
+     "large",
+     "cup"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Straw\" là ống hút, dùng để hút đồ uống."
+   },
+   {
+    "question_vi": "Trời nắng nóng, bạn muốn gọi trà uống với đá. Bạn nói từ nào trước \"tea\"?",
+    "options": [
+     "hot",
+     "iced",
+     "straw"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Iced tea\" là trà có đá, còn \"hot tea\" là trà nóng."
+   },
+   {
+    "question_vi": "Ở quán ăn nhanh, ống hút của bạn bị rơi xuống đất. Bạn xin nhân viên cái mới bằng từ nào?",
+    "options": [
+     "large",
+     "napkin",
+     "straw"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Ống hút trong tiếng Anh là \"straw\", còn \"napkin\" là khăn giấy."
+   }
+  ]
+ }
+}

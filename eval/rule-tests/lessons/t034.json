@@ -1,0 +1,103 @@
+{
+ "case": {
+  "id": "t034",
+  "scenarioId": "supermarket",
+  "level": 3,
+  "suggested": [
+   "basket",
+   "price"
+  ],
+  "custom": [
+   "túi"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi mua đồ ăn ở siêu thị",
+  "level": 3,
+  "lines": [
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Hello! Do you need a basket to carry your things while you shop?",
+    "translation_vi": "Xin chào! Chị có cần giỏ để đựng đồ trong lúc đi mua sắm không?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, thank you. What is the price of these apples? How much are they?",
+    "translation_vi": "Có, cảm ơn em. Táo này giá bao nhiêu vậy? Bao nhiêu tiền?"
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "The price is two dollars for one kilo.",
+    "translation_vi": "Giá là hai đô la một ký ạ."
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Great, I will take two kilos.",
+    "translation_vi": "Tốt quá, chị lấy hai ký."
+   },
+   {
+    "speaker_vi": "Nhân viên",
+    "text": "Okay, that is four dollars. Do you want a bag to carry your apples home?",
+    "translation_vi": "Dạ, của chị là bốn đô la. Chị có muốn lấy túi để mang táo về nhà không?"
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Yes, one bag, please. And here is the basket back.",
+    "translation_vi": "Có, cho chị một cái túi nhé. Còn đây, chị trả lại cái giỏ."
+   }
+  ],
+  "vocab": [
+   {
+    "input": "basket",
+    "word": "basket",
+    "meaning_vi": "cái giỏ (giỏ xách tay trong siêu thị)",
+    "usage_vi": "Dùng để chỉ cái giỏ có quai mà bạn lấy ở siêu thị để đựng hàng trong lúc đi chọn đồ. Thường trả lại giỏ sau khi thanh toán."
+   },
+   {
+    "input": "price",
+    "word": "price",
+    "meaning_vi": "giá, giá tiền",
+    "usage_vi": "Dùng khi hỏi hoặc nói một món hàng giá bao nhiêu. Có thể hỏi: \"What is the price of this?\""
+   },
+   {
+    "input": "túi",
+    "word": "bag",
+    "meaning_vi": "cái túi",
+    "usage_vi": "Dùng để chỉ túi nilon, túi giấy hoặc túi vải để đựng đồ mang về nhà. Khi thanh toán, thu ngân thường hỏi: \"Do you need a bag?\""
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn vào siêu thị và thấy một chồng giỏ nhựa có quai ở cửa ra vào. Bạn muốn lấy một cái để đựng đồ khi đi chọn hàng. Bạn nói: \"Can I take a ___?\"",
+    "options": [
+     "price",
+     "basket",
+     "menu"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Basket\" là cái giỏ dùng để đựng hàng trong lúc đi mua sắm trong siêu thị."
+   },
+   {
+    "question_vi": "Ở một quầy trái cây, bạn muốn hỏi chuối giá bao nhiêu. Bạn nói: \"What is the ___ of these bananas?\"",
+    "options": [
+     "price",
+     "bag",
+     "basket"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "\"Price\" nghĩa là giá tiền, dùng để hỏi một món hàng bao nhiêu tiền."
+   },
+   {
+    "question_vi": "Bạn mua thuốc ở hiệu thuốc xong và muốn xin một cái túi giấy để bỏ thuốc vào mang về. Bạn nói: \"Can I have a ___, please?\"",
+    "options": [
+     "basket",
+     "price",
+     "bag"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Bag\" là cái túi dùng để đựng đồ mang về nhà."
+   }
+  ]
+ }
+}

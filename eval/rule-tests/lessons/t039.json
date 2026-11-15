@@ -1,0 +1,142 @@
+{
+ "case": {
+  "id": "t039",
+  "scenarioId": "taxi",
+  "level": 1,
+  "suggested": [
+   "turn left",
+   "tip",
+   "seatbelt",
+   "address"
+  ],
+  "custom": [
+   "tiền boa"
+  ]
+ },
+ "ok": true,
+ "lesson": {
+  "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+  "level": 1,
+  "lines": [
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Chào chị! Chị muốn đi đâu ạ? Chị cho em xin address, số nhà và tên đường chỗ chị đến nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Dạ, address của chị là số 25, đường Oak Street.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ rồi. Chị kéo seatbelt qua người rồi cài vào cho an toàn nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Chị cài xong rồi. Đến ngã tư phía trước em turn left nhé, đừng rẽ phải.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Dạ, em turn left đây ạ. Tới nơi rồi chị, hết 18 đô ạ.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Khách",
+    "text": "Đây là 20 đô. Còn 2 đô là tip cho em, cảm ơn em chạy cẩn thận nhé.",
+    "translation_vi": null
+   },
+   {
+    "speaker_vi": "Tài xế",
+    "text": "Cảm ơn chị nhiều! Chúc chị một ngày vui vẻ!",
+    "translation_vi": null
+   }
+  ],
+  "vocab": [
+   {
+    "input": "turn left",
+    "word": "turn left",
+    "meaning_vi": "rẽ trái",
+    "usage_vi": "Dùng khi chỉ đường cho tài xế, muốn xe rẽ sang bên trái ở ngã tư hoặc góc đường."
+   },
+   {
+    "input": "tip",
+    "word": "tip",
+    "meaning_vi": "tiền boa",
+    "usage_vi": "Là khoản tiền nhỏ đưa thêm cho tài xế để cảm ơn. Ở nhiều nước nói tiếng Anh, khách thường để tip khi đi taxi."
+   },
+   {
+    "input": "seatbelt",
+    "word": "seatbelt",
+    "meaning_vi": "dây an toàn",
+    "usage_vi": "Dùng khi nói về dây cài ngang người trên ghế xe. Nên cài seatbelt ngay khi lên xe."
+   },
+   {
+    "input": "address",
+    "word": "address",
+    "meaning_vi": "địa chỉ",
+    "usage_vi": "Dùng khi báo cho tài xế hoặc nhập vào ứng dụng gọi xe nơi bạn muốn đến, gồm số nhà và tên đường."
+   },
+   {
+    "input": "tiền boa",
+    "word": "tip",
+    "meaning_vi": "tiền boa",
+    "usage_vi": "Trong tiếng Anh, tiền boa là \"tip\". Bạn có thể nói \"This is a tip for you\" khi đưa thêm tiền cảm ơn tài xế."
+   }
+  ],
+  "quiz": [
+   {
+    "question_vi": "Bạn muốn tài xế rẽ sang bên trái ở ngã tư tiếp theo. Bạn nói gì?",
+    "options": [
+     "seatbelt",
+     "turn left",
+     "tip"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "\"Turn left\" nghĩa là rẽ trái, dùng để chỉ đường cho tài xế."
+   },
+   {
+    "question_vi": "Chuyến xe hết 15 đô, bạn đưa 17 đô và nói phần dư là để cảm ơn tài xế. Phần tiền dư đó gọi là gì?",
+    "options": [
+     "tip",
+     "address",
+     "seatbelt"
+    ],
+    "answer_index": 0,
+    "explanation_vi": "Tiền đưa thêm để cảm ơn tài xế gọi là \"tip\"."
+   },
+   {
+    "question_vi": "Vừa lên xe, tài xế nhắc bạn cài sợi dây ngang người để an toàn khi xe chạy. Sợi dây đó là gì?",
+    "options": [
+     "address",
+     "turn left",
+     "seatbelt"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "Dây cài ngang người trên ghế xe để giữ an toàn là \"seatbelt\"."
+   },
+   {
+    "question_vi": "Bạn mở ứng dụng gọi xe và cần nhập số nhà, tên đường của khách sạn. Bạn đang nhập gì?",
+    "options": [
+     "tip",
+     "address",
+     "turn left"
+    ],
+    "answer_index": 1,
+    "explanation_vi": "Số nhà và tên đường của nơi bạn muốn đến chính là \"address\"."
+   },
+   {
+    "question_vi": "Tài xế giúp bạn mang hai chiếc vali nặng lên tận cửa. Bạn đưa thêm 5 đô và nói: \"This is a ___ for you.\" Từ nào điền vào chỗ trống?",
+    "options": [
+     "address",
+     "seatbelt",
+     "tip"
+    ],
+    "answer_index": 2,
+    "explanation_vi": "\"Tip\" là tiền boa, khoản tiền đưa thêm để cảm ơn người giúp mình."
+   }
+  ]
+ }
+}
