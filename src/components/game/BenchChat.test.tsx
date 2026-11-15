@@ -4,6 +4,7 @@ import { describe, expect, it, vi } from 'vitest'
 import type { BenchRequest, BenchReply, BenchTarget } from '@/shared/bench'
 import type { BenchPayout } from '@/game/state'
 import type { BenchChatResult } from '@/lib/bench-api'
+import { DebugProvider } from '@/lib/debug'
 import { BenchChat } from './BenchChat'
 
 const targets: BenchTarget[] = [
@@ -132,6 +133,44 @@ describe('BenchChat', () => {
     expect(screen.getAllByText('xin chào')).toHaveLength(1)
     expect(requestReply.mock.calls[2][0].history).toEqual(requestReply.mock.calls[1][0].history)
     expect(onVerdicts).not.toHaveBeenCalled()
+  })
+
+  it('hides Try again on bad_request and blocks sending while an error shows', async () => {
+    const { requestReply, user } = setup({
+      replies: [reply(), { ok: false, code: 'bad_request', message_vi: 'Yêu cầu không hợp lệ' }],
+    })
+    await screen.findByText('Chào cháu!')
+    await send(user, 'xin chào')
+    expect(await screen.findByText('Yêu cầu không hợp lệ')).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'Thử lại' })).not.toBeInTheDocument()
+    await user.type(screen.getByRole('textbox'), 'again{Enter}')
+    expect(requestReply).toHaveBeenCalledTimes(2)
+  })
+
+  it('shows the English error and aria-label in debug mode', async () => {
+    const requestReply = vi.fn()
+      .mockResolvedValueOnce(reply())
+      .mockResolvedValueOnce({ ok: false, code: 'network', message_vi: 'Mất mạng rồi' })
+    const user = userEvent.setup()
+    render(
+      <DebugProvider value>
+        <BenchChat benchId="bac-tu" level={1} status="open" targets={targets} onStart={vi.fn()} onVerdicts={() => []} onLeave={vi.fn()} requestReply={requestReply} />
+      </DebugProvider>,
+    )
+    await screen.findByText('Chào cháu!')
+    expect(screen.getByLabelText('Tin nhắn · Message')).toBeInTheDocument()
+    await user.type(screen.getByRole('textbox'), 'hi{Enter}')
+    expect(await screen.findByText(/Couldn't connect/)).toBeInTheDocument()
+  })
+
+  it('shows the summary status for a word the server spelled differently', async () => {
+    const { user } = setup({
+      replies: [reply(), reply({ done: true, verdicts: [{ word: 'ICED', check: 'use', passed: true }] })],
+      onVerdicts: () => [{ word: 'iced', check: 'use', coins: 10 }],
+    })
+    await screen.findByText('Chào cháu!')
+    await send(user, 'iced')
+    expect(await screen.findByText('đã dùng')).toBeInTheDocument()
   })
 
   it('shows a summary when done', async () => {

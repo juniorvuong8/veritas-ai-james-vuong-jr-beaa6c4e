@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { BENCH_ART } from '@/game/art'
-import { type BenchPayout, type BenchStatus } from '@/game/state'
+import { type BenchPayout, type BenchStatus, wordKey } from '@/game/state'
 import { requestBenchReply, type BenchChatResult } from '@/lib/bench-api'
-import { Bi, useDebug } from '@/lib/debug'
+import { Bi, useBiText, useDebug } from '@/lib/debug'
+import { ERROR_MESSAGES_EN } from '@/lib/error-messages-en'
 import {
   BENCH_PERSONAS,
   MAX_LEARNER_MESSAGES,
@@ -39,10 +40,11 @@ export function BenchChat(props: {
   const persona = BENCH_PERSONAS[props.benchId]
   const art = BENCH_ART[props.benchId]
   const debug = useDebug()
+  const biText = useBiText()
   const [lines, setLines] = useState<Line[]>([])
   const [draft, setDraft] = useState('')
   const [pending, setPending] = useState(false)
-  const [error, setError] = useState<{ message_vi: string; history: BenchTurn[] } | null>(null)
+  const [error, setError] = useState<{ code: Extract<BenchChatResult, { ok: false }>['code']; message_vi: string; history: BenchTurn[] } | null>(null)
   const [finished, setFinished] = useState(false)
   const [seen, setSeen] = useState<Record<string, Seen>>({})
   const [earned, setEarned] = useState(0)
@@ -77,7 +79,7 @@ export function BenchChat(props: {
     if (!alive.current) return
     setPending(false)
     if (!result.ok) {
-      setError({ message_vi: result.message_vi, history })
+      setError({ code: result.code, message_vi: result.message_vi, history })
       return
     }
     const { reply } = result
@@ -89,8 +91,9 @@ export function BenchChat(props: {
         const next = { ...prev }
         for (const v of reply.verdicts) {
           if (!v.passed) continue
-          if (v.check === 'use') next[v.word] = 'used'
-          else if (next[v.word] !== 'used') next[v.word] = 'understood'
+          const k = wordKey(v.word)
+          if (v.check === 'use') next[k] = 'used'
+          else if (next[k] !== 'used') next[k] = 'understood'
         }
         return next
       })
@@ -118,7 +121,7 @@ export function BenchChat(props: {
 
   function submit() {
     const text = draft.trim()
-    if (!text || pending || finished) return
+    if (!text || pending || finished || error) return
     const next = [...lines, { from: 'learner' as const, text }]
     setLines(next)
     setDraft('')
@@ -130,7 +133,7 @@ export function BenchChat(props: {
     props.onLeave()
   }
 
-  const statusOf = (word: string) => seen[word]
+  const statusOf = (word: string) => seen[wordKey(word)]
 
   return (
     <div className="space-y-5">
@@ -213,10 +216,14 @@ export function BenchChat(props: {
             )}
             {error && (
               <div className="space-y-2" role="alert">
-                <p className="text-sm font-semibold text-[#B23A25]">{error.message_vi}</p>
-                <PrimaryButton onClick={() => void ask(error.history)}>
-                  <Bi vi="Thử lại" en="Try again" />
-                </PrimaryButton>
+                <p className="text-sm font-semibold text-[#B23A25]">
+                  <Bi vi={error.message_vi} en={ERROR_MESSAGES_EN[error.code]} />
+                </p>
+                {error.code !== 'bad_request' && (
+                  <PrimaryButton onClick={() => void ask(error.history)}>
+                    <Bi vi="Thử lại" en="Try again" />
+                  </PrimaryButton>
+                )}
               </div>
             )}
             <div ref={bottom} />
@@ -265,7 +272,7 @@ export function BenchChat(props: {
                 maxLength={MAX_MESSAGE_CHARS}
                 disabled={pending || lines.length === 0}
                 onChange={(e) => setDraft(e.target.value)}
-                aria-label="Tin nhắn"
+                aria-label={biText('Tin nhắn', 'Message')}
                 className="min-w-0 flex-1 rounded-full border-2 border-[#2B1D16]/20 bg-white px-4 py-2 text-base focus:border-[#E8553D] focus:outline-none"
               />
               <PrimaryButton type="submit" disabled={pending || error !== null || draft.trim() === ''}>

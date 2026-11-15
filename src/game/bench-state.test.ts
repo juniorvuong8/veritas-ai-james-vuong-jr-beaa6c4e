@@ -30,6 +30,21 @@ describe('benchStatus', () => {
   })
 })
 
+describe('unusable notebook words', () => {
+  const bad = [lw('food to go'), lw('check (bill)'), lw('long', { meaning_vi: 'x'.repeat(201) }), lw('blank', { meaning_vi: '  ' })]
+  it('are skipped when picking targets', () => {
+    expect(pickBenchTargets(withWords([...bad, lw('menu')]), D).map((t) => t.word)).toEqual(['menu'])
+  })
+  it('make the status no_words when nothing qualifies', () => {
+    expect(benchStatus(withWords(bad), D)).toBe('no_words')
+    expect(benchStatus(withWords([...bad, lw('menu')]), D)).toBe('open')
+  })
+  it('does not pay prototype keys as checks', () => {
+    const s = withWords([lw('menu')])
+    expect(benchPayouts(s, D, [{ word: 'menu', check: 'toString' as never, passed: true }])).toEqual([])
+  })
+})
+
 describe('pickBenchTargets', () => {
   const five = [lw('a', { lastTested: '2026-11-10' }), lw('b', { lastTested: '2026-11-12' }), lw('c'), lw('d'), lw('e')]
   it('prefers untested words in notebook order, then oldest tested', () => {

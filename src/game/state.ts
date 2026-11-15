@@ -1,6 +1,7 @@
 import type { BenchCheck, BenchTarget, BenchVerdict } from '@/shared/bench'
 import { MAX_TARGETS } from '@/shared/bench'
 import { normalizeWord, SCENARIOS } from '@/shared/scenarios'
+import { isValidWord } from '@/shared/validate-request'
 import type { Level, VocabItem } from '@/shared/types'
 
 export const COINS_PER_CORRECT = 10
@@ -87,8 +88,14 @@ const dayRecord = (state: GameState, date: string): BenchDay =>
 
 export type BenchStatus = 'no_words' | 'limit' | 'open'
 
+/** Words the bench server will accept (it validates the same way). */
+const benchable = (l: LearnedWord): boolean => {
+  const meaning = l.meaning_vi.trim()
+  return isValidWord(normalizeWord(l.word)) && meaning.length >= 1 && meaning.length <= 200
+}
+
 export function benchStatus(state: GameState, date: string): BenchStatus {
-  if (state.learnedWords.length === 0) return 'no_words'
+  if (!state.learnedWords.some(benchable)) return 'no_words'
   return dayRecord(state, date).chats >= BENCH_CHATS_PER_DAY ? 'limit' : 'open'
 }
 
@@ -97,6 +104,7 @@ export function pickBenchTargets(state: GameState, date: string): BenchTarget[] 
   const paid = dayRecord(state, date).paid
   return state.learnedWords
     .map((l, i) => ({ l, i }))
+    .filter(({ l }) => benchable(l))
     .sort((a, b) => {
       const x = a.l.lastTested ?? ''
       const y = b.l.lastTested ?? ''
@@ -114,7 +122,7 @@ export function benchPayouts(state: GameState, date: string, verdicts: BenchVerd
   const seen = new Set<string>()
   const out: BenchPayout[] = []
   for (const v of verdicts) {
-    if (!v.passed || !(v.check in BENCH_COINS)) continue
+    if (!v.passed || !Object.hasOwn(BENCH_COINS, v.check)) continue
     const key = wordKey(v.word)
     const learned = state.learnedWords.find((l) => wordKey(l.word) === key)
     if (!learned) continue
