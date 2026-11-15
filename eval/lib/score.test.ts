@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { validLesson } from '@/shared/test-fixtures'
 import { dialogueHash } from './hash'
-import { renderResults, score } from './score'
+import { renderExtraResults, renderResults, score } from './score'
 import type { EvalCase, Method, RatingsFile, ResultsFile } from './types'
 
 const words = ['menu', 'to go', 'receipt']
@@ -85,5 +85,25 @@ describe('score', () => {
   it('states plainly that the methods can be told apart', () => {
     expect(renderResults(score(cases, results, ratings))).toContain('not fully blind')
     expect(renderResults(score(cases, results, ratings))).toContain('length and turn-taking')
+  })
+
+  it('renders the extra set per case, marking the expected LLM failures', () => {
+    const extra: EvalCase[] = cases.map((c, i) => ({ ...c, id: `x-${c.id}`, set: 'X', ...(i === 1 ? { trap: 'pain used as a verb' } : {}) }))
+    const res: Record<Method, ResultsFile> = {
+      baseline: { 'x-cafe-A-L1': ok(1), 'x-cafe-A-L2': ok(2) },
+      llm: { 'x-cafe-A-L1': ok(1), 'x-cafe-A-L2': ok(2) },
+    }
+    const rt: RatingsFile = {
+      'baseline:x-cafe-A-L1': { q1: true, q2: false, note: '' },
+      'baseline:x-cafe-A-L2': { q1: false, q2: false, note: '' },
+      'llm:x-cafe-A-L1': { q1: true, q2: true, note: '' },
+      'llm:x-cafe-A-L2': { q1: false, q2: true, note: 'tai cũng pain' },
+    }
+    const md = renderExtraResults(extra, score(extra, res, rt), rt)
+    expect(md).toContain('baseline 0%, LLM 50%')
+    expect(md).toContain('The LLM passed 0 of the 1 cases expected to make it fail.')
+    expect(md).toContain('| `x-cafe-A-L2` ⚠️ | menu, to go, receipt | fail (Q1 no, Q2 no) | fail (Q1 no, Q2 yes) |')
+    expect(md).toContain('- `x-cafe-A-L2`: pain used as a verb')
+    expect(md).toContain('- **LLM** `x-cafe-A-L2`: tai cũng pain')
   })
 })

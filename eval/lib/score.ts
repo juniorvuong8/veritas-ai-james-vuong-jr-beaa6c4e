@@ -131,3 +131,42 @@ npm run eval:score      # recompute this file
 \`\`\`
 `
 }
+
+/** RESULTS.md for the separate 6-case set: one row per case, with the cases expected to trip the LLM marked. */
+export function renderExtraResults(cases: EvalCase[], r: Report, ratings: RatingsFile): string {
+  const mark = (m: Method, c: EvalCase) => {
+    const x = ratings[dialogueId(m, c.id)]
+    if (!x) return 'run failed'
+    const yn = (v: boolean) => (v ? 'yes' : 'no')
+    return `${x.q1 && x.q2 ? '**pass**' : 'fail'} (Q1 ${yn(x.q1)}, Q2 ${yn(x.q2)})`
+  }
+  const rows = cases.map(
+    (c) => `| \`${c.id}\`${c.trap ? ' ⚠️' : ''} | ${c.words.join(', ')} | ${mark('baseline', c)} | ${mark('llm', c)} |`,
+  )
+  const traps = cases.filter((c) => c.trap)
+  const trapPassed = traps.filter((c) => {
+    const x = ratings[dialogueId('llm', c.id)]
+    return x?.q1 && x?.q2
+  })
+  const notes = [...r.llm.notes.map((n) => `- **LLM** \`${n.caseId}\`: ${n.note}`), ...r.baseline.notes.map((n) => `- Baseline \`${n.caseId}\`: ${n.note}`)]
+  return `# Extra test set: results
+
+A separate set of ${r.total} cases, scored on its own and not mixed into the main result in \`eval/RESULTS.md\`. ${traps.length} of them (⚠️) were picked because the LLM had already failed that way several times in the rule tests (\`eval/rule-tests/RESULTS.md\`).
+
+**Headline (both questions yes):** baseline ${r.baseline.headline}%, LLM ${r.llm.headline}%. The LLM passed ${trapPassed.length} of the ${traps.length} cases expected to make it fail.
+
+| Case | Words | Baseline | LLM |
+|---|---|---|---|
+${rows.join('\n')}
+
+## Why the ⚠️ cases were expected to fail
+
+${traps.map((c) => `- \`${c.id}\`: ${c.trap}`).join('\n')}
+
+## Rater notes on dialogues that failed
+
+${notes.length ? notes.join('\n') : '_No notes._'}
+
+Same rating page, questions and limits as the main set. With 6 cases, one dialogue moves the headline by about 17 points.
+`
+}

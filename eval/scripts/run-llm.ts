@@ -1,35 +1,37 @@
-// Generates the LLM lessons through the app's own code (uses AI credits): bun run eval:llm [-- --only <caseId>]
+// Generates the LLM lessons through the app's own code (uses AI credits):
+// LOVABLE_API_KEY=... bun eval/scripts/run-llm.ts [--set extra] [--only <caseId>]
 import { join } from 'node:path'
-import { createLovableAiCaller } from '../../src/shared/ai.ts'
+import { createGatewayAiCaller } from '../../src/shared/ai.ts'
 import { generateLesson } from '../../src/shared/generate.ts'
 import type { Lesson } from '../../src/shared/types.ts'
 import { runCases } from '../lib/runner.ts'
 import type { EvalCase, ResultsFile, RunResult } from '../lib/types.ts'
-import { EVAL_DIR, readJson, writeJsonAtomic } from './io.ts'
+import { evalSetDir, readJson, writeJsonAtomic } from './io.ts'
 
-const apiKey = process.env.LOVABLE_API_KEY
-if (!apiKey) {
+// Checked here only to fail early: the gateway client reads it from the environment itself.
+if (!process.env.LOVABLE_API_KEY) {
   console.error('LOVABLE_API_KEY is missing from the environment')
   process.exit(1)
 }
 
 const onlyIdx = process.argv.indexOf('--only')
 const only = onlyIdx !== -1 ? process.argv[onlyIdx + 1] : undefined
-const allCases = readJson<EvalCase[]>(join(EVAL_DIR, 'cases.json'))
+const { dir } = evalSetDir()
+const allCases = readJson<EvalCase[]>(join(dir, 'cases.json'))
 const cases = only ? allCases.filter((c) => c.id === only) : allCases
 if (cases.length === 0) {
   console.error(`no case with id ${only}`)
   process.exit(1)
 }
 
-const callAi = createLovableAiCaller(apiKey)
+const callAi = createGatewayAiCaller()
 let calls = 0
 const timed: typeof callAi = async (messages) => {
   calls++
   return callAi(messages)
 }
 
-const outPath = join(EVAL_DIR, 'results/llm.json')
+const outPath = join(dir, 'results/llm.json')
 const existing = readJson<ResultsFile>(outPath, {})
 
 const results = await runCases(

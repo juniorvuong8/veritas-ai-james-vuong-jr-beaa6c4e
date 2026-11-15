@@ -1,0 +1,22 @@
+[
+  { "id": "x-cafe-L2", "scenarioId": "cafe", "set": "X", "level": 2, "words": ["iced", "large", "change"] },
+  { "id": "x-supermarket-L3", "scenarioId": "supermarket", "set": "X", "level": 3, "words": ["aisle", "frozen", "fresh", "card"] },
+  { "id": "x-taxi-L1", "scenarioId": "taxi", "set": "X", "level": 1, "words": ["turn right", "straight", "stop here"] },
+  { "id": "x-clinic-L3", "scenarioId": "clinic", "set": "X", "level": 3, "words": ["allergy", "insurance", "prescription"] },
+  {
+    "id": "x-clinic-pain-L1",
+    "scenarioId": "clinic",
+    "set": "X",
+    "level": 1,
+    "words": ["pain", "headache", "sore throat"],
+    "trap": "\"pain\" is a noun, but at level 1 the AI has three times dropped it into a Vietnamese sentence as a verb or adjective (\"tai bên phải cũng pain\", \"Chỗ đó pain lắm\", \"đầu em cũng hơi bị pain\": rule tests t028, t052, u028)."
+  },
+  {
+    "id": "x-taxi-tip-L2",
+    "scenarioId": "taxi",
+    "set": "X",
+    "level": 2,
+    "words": ["address", "traffic", "tip"],
+    "trap": "The driver mixed up who is older (\"Chị cho anh...\") in five taxi lessons (t043, t065, t067, t075, t089), and a tip went without a thank-you in three (u023, u027, u035)."
+  }
+]

@@ -1,16 +1,18 @@
-// Recomputes eval/RESULTS.md from saved files: npm run eval:score
+// Recomputes RESULTS.md from saved files: bun eval/scripts/score.ts [--set extra]
 import { writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { renderResults, score } from '../lib/score.ts'
+import { renderExtraResults, renderResults, score } from '../lib/score.ts'
 import type { EvalCase, RatingsFile, ResultsFile } from '../lib/types.ts'
-import { EVAL_DIR, readJson } from './io.ts'
+import { evalSetDir, readJson } from './io.ts'
 
-const cases = readJson<EvalCase[]>(join(EVAL_DIR, 'cases.json'))
+const { name, dir } = evalSetDir()
+const cases = readJson<EvalCase[]>(join(dir, 'cases.json'))
 const results = {
-  baseline: readJson<ResultsFile>(join(EVAL_DIR, 'results/baseline.json')),
-  llm: readJson<ResultsFile>(join(EVAL_DIR, 'results/llm.json')),
+  baseline: readJson<ResultsFile>(join(dir, 'results/baseline.json')),
+  llm: readJson<ResultsFile>(join(dir, 'results/llm.json')),
 }
-const ratings = readJson<RatingsFile>(join(EVAL_DIR, 'ratings.json'))
+const ratings = readJson<RatingsFile>(join(dir, 'ratings.json'))
 const report = score(cases, results, ratings)
-writeFileSync(join(EVAL_DIR, 'RESULTS.md'), renderResults(report))
-console.log(`baseline ${report.baseline.headline}% · LLM ${report.llm.headline}% → eval/RESULTS.md`)
+const out = join(dir, 'RESULTS.md')
+writeFileSync(out, name === 'extra' ? renderExtraResults(cases, report, ratings) : renderResults(report))
+console.log(`baseline ${report.baseline.headline}% · LLM ${report.llm.headline}% → ${out}`)

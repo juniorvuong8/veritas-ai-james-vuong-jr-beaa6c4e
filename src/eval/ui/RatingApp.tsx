@@ -10,9 +10,9 @@ const STORAGE_KEY = 'eval-ratings-v2'
 const Q1 = 'Mỗi từ tiếng Anh có được dùng đúng nghĩa và đúng tình huống không?'
 const Q2 = 'Phần tiếng Việt có tự nhiên, như người thật nói không?'
 
-function load(storage: Storage | undefined): RatingsFile {
+function load(storage: Storage | undefined, key: string): RatingsFile {
   try {
-    return JSON.parse(storage?.getItem(STORAGE_KEY) ?? '{}') as RatingsFile
+    return JSON.parse(storage?.getItem(key) ?? '{}') as RatingsFile
   } catch {
     return {}
   }
@@ -77,15 +77,33 @@ function YesNo({ label, value, onChange }: { label: string; value: boolean | und
   )
 }
 
-export function RatingApp(props: { cases: EvalCase[]; results: Record<Method, ResultsFile>; storage?: Storage }) {
+export function RatingApp(props: {
+  cases: EvalCase[]
+  results: Record<Method, ResultsFile>
+  storage?: Storage
+  /** Separate case sets keep separate saved answers. */
+  storageKey?: string
+  /** Name of the downloaded file, e.g. ratings.json. */
+  fileName?: string
+  heading?: string
+}) {
   const storage = props.storage ?? (typeof window !== 'undefined' ? window.localStorage : undefined)
+  const storageKey = props.storageKey ?? STORAGE_KEY
   const order = useMemo(() => buildOrder(props.cases, props.results), [props.cases, props.results])
-  const [ratings, setRatings] = useState<RatingsFile>(() => load(storage))
+  const [ratings, setRatings] = useState<RatingsFile>(() => load(storage, storageKey))
   const isDone = (id: string) => ratings[id]?.q1 !== undefined && ratings[id]?.q2 !== undefined
   const [index, setIndex] = useState(() => {
     const first = order.findIndex((id) => !isDone(id))
     return first === -1 ? Math.max(order.length - 1, 0) : first
   })
+
+  if (order.length === 0) {
+    return (
+      <div className="landing min-h-svh bg-[#FFF8EE] p-6 text-[#2B1D16]">
+        <p className="font-semibold">Chưa có hội thoại nào để đánh giá.</p>
+      </div>
+    )
+  }
 
   const id = order[index]
   const [method, caseId] = id.split(':') as [Method, string]
@@ -100,7 +118,7 @@ export function RatingApp(props: { cases: EvalCase[]; results: Record<Method, Re
     const next = { ...ratings, [id]: { ...prev, ...patch, h } as Rating }
     setRatings(next)
     try {
-      storage?.setItem(STORAGE_KEY, JSON.stringify(next))
+      storage?.setItem(storageKey, JSON.stringify(next))
     } catch {
       // storage unavailable: answers stay in memory until downloaded
     }
@@ -110,7 +128,7 @@ export function RatingApp(props: { cases: EvalCase[]; results: Record<Method, Re
     const blob = new Blob([JSON.stringify(ratings, null, 2) + '\n'], { type: 'application/json' })
     const a = document.createElement('a')
     a.href = URL.createObjectURL(blob)
-    a.download = 'ratings.json'
+    a.download = props.fileName ?? 'ratings.json'
     a.click()
     URL.revokeObjectURL(a.href)
   }
@@ -119,7 +137,7 @@ export function RatingApp(props: { cases: EvalCase[]; results: Record<Method, Re
     <div className="landing min-h-svh bg-[#FFF8EE] text-[#2B1D16]">
       <div className="mx-auto max-w-2xl space-y-5 px-4 py-6">
         <header className="flex items-center justify-between gap-2">
-          <h1 className="text-lg font-extrabold">Đánh giá hội thoại</h1>
+          <h1 className="text-lg font-extrabold">{props.heading ?? 'Đánh giá hội thoại'}</h1>
           <span className="text-sm font-bold">{`${index + 1} / ${order.length}`}</span>
         </header>
         <p className="text-xs text-[#2B1D16]/60">{`Đã đánh giá ${doneCount} / ${order.length}`}</p>

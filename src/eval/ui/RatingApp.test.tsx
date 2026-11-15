@@ -72,4 +72,18 @@ describe('RatingApp', () => {
     const lesson = m === 'llm' ? llmLesson : baselineLesson
     expect(saved[id].h).toBe(dialogueHash(lesson))
   })
+
+  it('keeps a separate case set\'s answers under its own storage key', async () => {
+    const user = userEvent.setup()
+    const storage = memoryStorage()
+    render(<RatingApp cases={[caseA]} results={results} storage={storage} storageKey="eval-ratings-extra-v1" />)
+    await user.click(screen.getAllByRole('button', { name: 'Có' })[0])
+    expect(storage.getItem('eval-ratings-v2')).toBeNull()
+    expect(Object.keys(JSON.parse(storage.getItem('eval-ratings-extra-v1')!))).toHaveLength(1)
+  })
+
+  it('says there is nothing to rate when no dialogue was generated', () => {
+    render(<RatingApp cases={[caseA]} results={{ baseline: {}, llm: {} }} storage={memoryStorage()} />)
+    expect(screen.getByText('Chưa có hội thoại nào để đánh giá.')).toBeInTheDocument()
+  })
 })

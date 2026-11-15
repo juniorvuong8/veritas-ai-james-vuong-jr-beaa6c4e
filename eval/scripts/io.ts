@@ -16,3 +16,11 @@ export function writeJsonAtomic(path: string, value: unknown): void {
   writeFileSync(tmp, JSON.stringify(value, null, 2) + '\n')
   renameSync(tmp, path)
 }
+
+/** Where a case set's files live: the main 24 cases (default), or the separate 6 with `--set extra`. */
+export function evalSetDir(argv: string[] = process.argv): { name: 'main' | 'extra'; dir: string } {
+  const i = argv.indexOf('--set')
+  const name = i !== -1 ? argv[i + 1] : 'main'
+  if (name !== 'main' && name !== 'extra') throw new Error(`unknown --set ${name} (use main or extra)`)
+  return { name, dir: name === 'extra' ? join(EVAL_DIR, 'extra') : EVAL_DIR }
+}

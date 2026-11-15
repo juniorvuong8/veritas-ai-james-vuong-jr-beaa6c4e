@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { getScenario } from '@/shared/scenarios'
 import { checkLessonRequest } from '@/shared/validate-request'
 import casesJson from '../cases.json'
+import extraJson from '../extra/cases.json'
 import type { EvalCase } from './types'
 
 const cases = casesJson as EvalCase[]
@@ -42,5 +43,30 @@ describe('eval cases', () => {
         expect(other.every(hasDiacritic), c.id).toBe(true)
       }
     }
+  })
+})
+
+describe('extra eval cases', () => {
+  const extra = extraJson as EvalCase[]
+
+  it('has 6 valid cases in set X, with ids that differ from the main set', () => {
+    expect(extra).toHaveLength(6)
+    expect(new Set(extra.map((c) => c.id)).size).toBe(6)
+    for (const c of extra) {
+      expect(c.set, c.id).toBe('X')
+      expect(checkLessonRequest(c).ok, c.id).toBe(true)
+      expect(cases.some((m) => m.id === c.id), c.id).toBe(false)
+    }
+  })
+
+  it('uses suggested words for every place, and marks one or two cases as expected LLM failures', () => {
+    for (const c of extra) {
+      const suggested = getScenario(c.scenarioId)!.suggestedWords
+      expect(c.words.every((w) => suggested.includes(w)), c.id).toBe(true)
+    }
+    expect(new Set(extra.map((c) => c.scenarioId))).toEqual(new Set(['cafe', 'supermarket', 'taxi', 'clinic']))
+    const traps = extra.filter((c) => c.trap)
+    expect(traps.length).toBeGreaterThanOrEqual(1)
+    expect(traps.length).toBeLessThanOrEqual(2)
   })
 })

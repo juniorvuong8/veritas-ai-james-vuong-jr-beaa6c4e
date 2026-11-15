@@ -1,7 +1,10 @@
 import type { Lesson, LessonRequest } from '../../src/shared/types'
 
-/** One test case: a lesson request plus an id and which word set it uses. */
-export type EvalCase = LessonRequest & { id: string; set: 'A' | 'B' }
+/**
+ * One test case: a lesson request plus an id and which word set it uses.
+ * Set X is the separate 6-case set (eval/extra/); `trap` says why a case is expected to make the LLM fail.
+ */
+export type EvalCase = LessonRequest & { id: string; set: 'A' | 'B' | 'X'; trap?: string }
 export type Method = 'baseline' | 'llm'
 export type RunResult = { ok: true; lesson: Lesson } | { ok: false; code: string }
 /** Keyed by case id. */
