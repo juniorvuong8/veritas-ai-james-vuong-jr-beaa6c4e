@@ -32,8 +32,8 @@ type AppAction = GameAction | { type: 'newGame'; level: Level }
 
 function appReducer(state: GameState | null, action: AppAction): GameState | null {
   if (action.type === 'newGame') {
-    // A new game keeps the words learned, today's bench limits, and the shop items and character.
-    const fresh = newGame(action.level, state?.lastWords, state?.learnedWords, state?.benchDay ?? null)
+    // A new game empties the notebook but keeps today's bench limits, and the shop items and character.
+    const fresh = newGame(action.level, state?.lastWords, [], state?.benchDay ?? null)
     return state ? { ...fresh, ...keptLook(state) } : fresh
   }
   return state ? gameReducer(state, action) : state

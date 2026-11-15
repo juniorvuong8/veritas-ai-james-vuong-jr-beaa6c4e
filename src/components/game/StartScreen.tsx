@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Bi, Gloss } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 import type { Level } from '@/shared/types'
-import { PrimaryButton, SecondaryButton } from './ui'
+import { GhostButton, PrimaryButton, SecondaryButton } from './ui'
 
 const LEVELS: { level: Level; label: string; label_en: string; example: string; example_en?: string }[] = [
   {
@@ -45,6 +45,13 @@ function Marked({ text }: { text: string }) {
 
 export function StartScreen(props: { hasSave: boolean; onContinue: () => void; onNewGame: (level: Level) => void }) {
   const [level, setLevel] = useState<Level>(1)
+  const [confirming, setConfirming] = useState(false)
+  useEffect(() => {
+    if (!confirming) return
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setConfirming(false)
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [confirming])
   return (
     <div className="space-y-7">
       <div className="space-y-3">
@@ -105,13 +112,50 @@ export function StartScreen(props: { hasSave: boolean; onContinue: () => void; o
       </section>
 
       {props.hasSave ? (
-        <SecondaryButton size="lg" className="w-full sm:w-auto" onClick={() => props.onNewGame(level)}>
+        <SecondaryButton size="lg" className="w-full sm:w-auto" onClick={() => setConfirming(true)}>
           <Bi vi="Chơi mới" en="New game" />
         </SecondaryButton>
       ) : (
         <PrimaryButton size="lg" arrow className="w-full sm:w-auto" onClick={() => props.onNewGame(level)}>
           <Bi vi="Bắt đầu" en="Start" />
         </PrimaryButton>
+      )}
+
+      {confirming && (
+        <div className="fixed inset-0 z-40 flex items-end justify-center bg-[#2B1D16]/40 p-4 sm:items-center">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="new-game-title"
+            className="bubble-in w-full max-w-sm space-y-4 rounded-[28px] border-2 border-[#2B1D16] bg-[#FFF8EE] p-6 text-center shadow-[6px_6px_0_#2B1D16]"
+          >
+            <div className="text-5xl" aria-hidden>
+              🔄
+            </div>
+            <h2 id="new-game-title" className="text-xl font-extrabold tracking-tight">
+              <Bi vi="Bạn có chắc không?" en="Are you sure?" />
+            </h2>
+            <p className="text-sm text-[#2B1D16]/70">
+              <Bi
+                vi="Trò chơi mới sẽ xóa con dấu, xu và sổ từ vựng của bạn. Đồ đã mua trong cửa hàng vẫn được giữ."
+                en="A new game clears your stamps, coins and word notebook. Items you bought in the shop are kept."
+              />
+            </p>
+            <div className="grid gap-2">
+              <PrimaryButton
+                onClick={() => {
+                  setConfirming(false)
+                  props.onNewGame(level)
+                }}
+              >
+                <Bi vi="Có, chơi mới" en="Yes, start a new game" />
+              </PrimaryButton>
+              <GhostButton autoFocus onClick={() => setConfirming(false)}>
+                <Bi vi="Không, quay lại" en="No, go back" />
+              </GhostButton>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   )

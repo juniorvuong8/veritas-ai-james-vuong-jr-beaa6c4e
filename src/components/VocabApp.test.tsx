@@ -165,6 +165,32 @@ describe('App', () => {
     expect(localStorage.getItem('vocab-debug')).toBeNull()
   })
 
+  it('asks before starting a new game, then clears the notebook but keeps shop items', async () => {
+    const user = userEvent.setup()
+    const word = { word: 'menu', input: 'menu', meaning_vi: 'thực đơn', usage_vi: 'cách dùng', placeId: 'cafe' }
+    localStorage.setItem(
+      SAVE_KEY,
+      JSON.stringify({ ...newGame(1), stamps: ['cafe'], coins: 40, learnedWords: [word], owned: ['cap'], outfit: { hat: 'cap' } }),
+    )
+    render(<App />)
+    await openStart(user)
+    await user.click(screen.getByRole('button', { name: 'Chơi mới' }))
+    expect(screen.getByRole('dialog', { name: 'Bạn có chắc không?' })).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Không, quay lại' }))
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+    expect(JSON.parse(localStorage.getItem(SAVE_KEY)!).learnedWords).toHaveLength(1)
+
+    await user.click(screen.getByRole('button', { name: 'Chơi mới' }))
+    await user.keyboard('{Escape}')
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Chơi mới' }))
+    await user.click(screen.getByRole('button', { name: 'Có, chơi mới' }))
+    expect(JSON.parse(localStorage.getItem(SAVE_KEY)!)).toMatchObject({
+      stamps: [], coins: 0, learnedWords: [], owned: ['cap'], outfit: { hat: 'cap' },
+    })
+  })
+
   it('opens the shop from the coins, buys a hat and wears it in the city', async () => {
     const user = userEvent.setup()
     localStorage.setItem(SAVE_KEY, JSON.stringify({ ...newGame(1), coins: 50 }))
