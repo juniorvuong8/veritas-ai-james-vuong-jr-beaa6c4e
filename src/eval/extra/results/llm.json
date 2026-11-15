@@ -1,1 +1,604 @@
-{}
+{
+  "x-cafe-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Gọi đồ uống ở quán cà phê",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Chào chị! Hôm nay chị muốn uống gì ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cho chị a coffee nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, chị uống a hot coffee hay an iced coffee ạ? Hôm nay trời nóng, nhiều khách thích uống có đá lắm.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Chị lấy an iced coffee. Chị khát quá, em cho chị ly to nhất nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, vậy là a large iced coffee, ly to nhất của quán. Của chị là 4 đô ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Đây, chị gửi em tờ 5 đô.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Dạ, chị đưa 5 đô, cà phê 4 đô, nên đây là your change, 1 đô ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Cảm ơn em nhé!",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "iced",
+          "word": "iced",
+          "meaning_vi": "có đá, ướp lạnh",
+          "usage_vi": "Dùng trước tên đồ uống khi bạn muốn uống lạnh có đá, ví dụ \"iced coffee\", \"iced tea\"."
+        },
+        {
+          "input": "large",
+          "word": "large",
+          "meaning_vi": "lớn, cỡ to",
+          "usage_vi": "Dùng khi chọn cỡ ly to nhất ở quán, ví dụ \"a large coffee\". Các cỡ thường gặp là small, medium, large."
+        },
+        {
+          "input": "change",
+          "word": "change",
+          "meaning_vi": "tiền thừa, tiền thối lại",
+          "usage_vi": "Là số tiền người bán trả lại khi bạn đưa nhiều hơn giá tiền. Nhân viên thường nói \"Here is your change.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Trời rất nóng, bạn muốn một ly trà có đá. Bạn nói: \"I want ___ tea, please.\" Từ nào phù hợp?",
+          "options": [
+            "hot",
+            "iced",
+            "change"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Iced tea\" là trà có đá, phù hợp khi bạn muốn uống lạnh."
+        },
+        {
+          "question_vi": "Bạn rất khát và muốn ly nước cam to nhất. Bạn nói: \"A ___ orange juice, please.\" Từ nào phù hợp?",
+          "options": [
+            "small",
+            "change",
+            "large"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Large\" nghĩa là cỡ lớn, nên bạn sẽ nhận được ly to nhất."
+        },
+        {
+          "question_vi": "Bạn đưa 10 đô để trả ly trà giá 7 đô. Nhân viên đưa lại bạn 3 đô và nói: \"Here is your ___.\" Từ nào phù hợp?",
+          "options": [
+            "change",
+            "iced",
+            "menu"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Change\" là tiền thừa được trả lại, ở đây là 3 đô."
+        }
+      ]
+    }
+  },
+  "x-supermarket-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi siêu thị mua cá",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Hi! Can I help you find something?",
+          "translation_vi": "Chào chị! Chị cần em giúp tìm gì không ạ?"
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Yes, I'm looking for frozen fish. I want to keep it in my freezer for a long time.",
+          "translation_vi": "Có, chị đang tìm cá đông lạnh. Chị muốn để trong ngăn đá được lâu."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Frozen food is in aisle 5. Look for the big number 5 above the shelves, then walk down between them.",
+          "translation_vi": "Đồ đông lạnh ở dãy số 5 ạ. Chị nhìn bảng số 5 to phía trên kệ, rồi đi vào lối giữa hai hàng kệ đó."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Thank you. Do you also have fresh fish? Not frozen. I want to cook it tonight.",
+          "translation_vi": "Cảm ơn em. Ở đây có cá tươi không? Không phải cá đông lạnh. Chị muốn nấu tối nay."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Yes, the fresh fish came in this morning. It's at the counter in the back.",
+          "translation_vi": "Có ạ, cá tươi mới về sáng nay. Ở quầy phía cuối siêu thị ạ."
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Great. Can I pay by card? I don't have any cash.",
+          "translation_vi": "Tốt quá. Chị trả bằng thẻ được không? Chị không mang tiền mặt."
+        },
+        {
+          "speaker_vi": "Nhân viên",
+          "text": "Sure, you can pay by card. Just tap it on the machine at the checkout.",
+          "translation_vi": "Được ạ, chị trả bằng thẻ được. Chị chỉ cần chạm thẻ vào máy ở quầy thanh toán thôi."
+        }
+      ],
+      "vocab": [
+        {
+          "input": "aisle",
+          "word": "aisle",
+          "meaning_vi": "lối đi giữa các dãy kệ (trong siêu thị)",
+          "usage_vi": "Dùng khi hỏi hoặc chỉ chỗ để hàng trong siêu thị, thường đi kèm số, ví dụ: \"aisle 5\". Chú ý: đọc là /aɪl/, chữ \"s\" không đọc."
+        },
+        {
+          "input": "frozen",
+          "word": "frozen",
+          "meaning_vi": "đông lạnh",
+          "usage_vi": "Dùng cho đồ ăn được làm đông đá để giữ lâu, như \"frozen fish\" hay \"frozen food\". Trong siêu thị thường có khu riêng cho đồ frozen."
+        },
+        {
+          "input": "fresh",
+          "word": "fresh",
+          "meaning_vi": "tươi, mới",
+          "usage_vi": "Dùng cho thịt, cá, rau, bánh mì mới, chưa đông lạnh và chưa để lâu, ví dụ: \"fresh fish\", \"fresh bread\"."
+        },
+        {
+          "input": "card",
+          "word": "card",
+          "meaning_vi": "thẻ (thẻ ngân hàng, thẻ thanh toán)",
+          "usage_vi": "Dùng khi muốn trả tiền bằng thẻ thay vì tiền mặt. Câu hay dùng: \"Can I pay by card?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn muốn mua gạo nhưng không biết gạo nằm ở dãy kệ nào. Bạn hỏi nhân viên: \"Which ___ is the rice in?\"",
+          "options": [
+            "card",
+            "aisle",
+            "fresh"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Aisle\" là lối đi giữa các dãy kệ, nên dùng để hỏi món hàng nằm ở dãy nào."
+        },
+        {
+          "question_vi": "Bạn muốn mua pizza để trong ngăn đá, cất được lâu. Bạn tìm khu bán \"___ food\".",
+          "options": [
+            "frozen",
+            "fresh",
+            "aisle"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Frozen food\" là đồ ăn đông lạnh, để trong ngăn đá được lâu."
+        },
+        {
+          "question_vi": "Ở quầy bánh, người bán nói bánh mì vừa nướng sáng nay. Bạn nói: \"This bread is very ___.\"",
+          "options": [
+            "frozen",
+            "card",
+            "fresh"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Fresh\" nghĩa là tươi, mới, đúng với bánh mì vừa nướng sáng nay."
+        },
+        {
+          "question_vi": "Bạn mua đồ ở cửa hàng tiện lợi nhưng quên mang tiền mặt, chỉ có thẻ ngân hàng. Bạn hỏi: \"Can I pay by ___?\"",
+          "options": [
+            "fresh",
+            "card",
+            "aisle"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Pay by card\" nghĩa là trả tiền bằng thẻ, phù hợp khi bạn không có tiền mặt."
+        }
+      ]
+    }
+  },
+  "x-taxi-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Chỉ đường cho tài xế taxi",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị, chị muốn đi đâu ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh chở em đến công viên thành phố nhé. Đến ngã tư phía trước thì anh turn right, công viên nằm bên tay phải.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Dạ được. Rẽ xong thì mình đi tiếp thế nào chị?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Anh cứ đi straight, không rẽ đâu nữa, khoảng hai trăm mét là tới.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Công viên đây rồi. Chị muốn xuống ở cổng chính không ạ?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, anh stop here giúp em, em xuống xe ngay chỗ này luôn. Cảm ơn anh!",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Dạ, xe dừng rồi, chị xuống cẩn thận nhé.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "turn right",
+          "word": "turn right",
+          "meaning_vi": "rẽ phải",
+          "usage_vi": "Dùng khi muốn tài xế rẽ sang tay phải ở ngã tư hoặc khúc cua. Có thể nói \"Please turn right here.\""
+        },
+        {
+          "input": "straight",
+          "word": "straight",
+          "meaning_vi": "đi thẳng",
+          "usage_vi": "Dùng khi muốn tài xế tiếp tục đi thẳng, không rẽ. Thường nói \"Go straight\"."
+        },
+        {
+          "input": "stop here",
+          "word": "stop here",
+          "meaning_vi": "dừng ở đây",
+          "usage_vi": "Dùng khi đã đến nơi và muốn tài xế dừng xe ngay chỗ đó để bạn xuống. Có thể nói \"Please stop here.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn đang đi taxi, khách sạn của bạn nằm ở con đường bên tay phải phía trước. Bạn nói gì với tài xế?",
+          "options": [
+            "straight",
+            "turn right",
+            "stop here"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Turn right\" nghĩa là rẽ phải, đúng hướng đến khách sạn."
+        },
+        {
+          "question_vi": "Tài xế hỏi có cần rẽ ở ngã tư không, nhưng nhà bạn ở ngay phía trước trên con đường này. Bạn bảo anh ấy cứ đi ...?",
+          "options": [
+            "turn right",
+            "stop here",
+            "straight"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Straight\" nghĩa là đi thẳng, không cần rẽ vì nhà bạn ở ngay phía trước."
+        },
+        {
+          "question_vi": "Xe đã đến đúng trước cửa nhà bạn và bạn muốn tài xế dừng xe ngay chỗ này. Bạn nói gì?",
+          "options": [
+            "stop here",
+            "turn left",
+            "straight"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Stop here\" nghĩa là dừng ở đây, dùng khi bạn muốn xuống xe ngay chỗ đó."
+        }
+      ]
+    }
+  },
+  "x-clinic-L3": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ ở phòng khám",
+      "level": 3,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Hello, what is the problem today?",
+          "translation_vi": "Chào bạn, hôm nay bạn bị làm sao?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "I have a sore throat and a fever.",
+          "translation_vi": "Tôi bị đau họng và sốt."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Do you have an allergy to any medicine? Does any medicine make your skin red and itchy?",
+          "translation_vi": "Bạn có bị dị ứng với thuốc nào không? Có thuốc nào làm da bạn đỏ và ngứa không?"
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Yes, I have an allergy to penicillin. It makes my skin red.",
+          "translation_vi": "Có, tôi bị dị ứng với penicillin. Nó làm da tôi bị đỏ."
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "OK, I will give you a different medicine. Here is your prescription. Take this paper to the pharmacy to get your medicine.",
+          "translation_vi": "Được rồi, tôi sẽ cho bạn thuốc khác. Đây là đơn thuốc của bạn. Bạn mang tờ giấy này đến nhà thuốc để lấy thuốc nhé."
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Thank you. Do I pay for the visit myself?",
+          "translation_vi": "Cảm ơn bác sĩ. Tôi có phải tự trả tiền khám không?"
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Do you have insurance? If you do, the insurance company pays part of the cost.",
+          "translation_vi": "Bạn có bảo hiểm không? Nếu có thì công ty bảo hiểm sẽ trả một phần chi phí."
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Yes, here is my insurance card.",
+          "translation_vi": "Có, đây là thẻ bảo hiểm của tôi."
+        }
+      ],
+      "vocab": [
+        {
+          "input": "allergy",
+          "word": "allergy",
+          "meaning_vi": "dị ứng",
+          "usage_vi": "Dùng khi cơ thể phản ứng xấu (ngứa, nổi đỏ, sưng) với một thứ như thuốc hay thức ăn. Thường nói \"I have an allergy to...\" để báo cho bác sĩ biết."
+        },
+        {
+          "input": "insurance",
+          "word": "insurance",
+          "meaning_vi": "bảo hiểm",
+          "usage_vi": "Dùng khi nói về dịch vụ giúp trả một phần hoặc toàn bộ chi phí khám chữa bệnh. Ở phòng khám, nhân viên hay hỏi \"Do you have insurance?\"."
+        },
+        {
+          "input": "prescription",
+          "word": "prescription",
+          "meaning_vi": "đơn thuốc",
+          "usage_vi": "Là tờ giấy bác sĩ viết tên thuốc bạn cần dùng. Bạn mang nó đến nhà thuốc (pharmacy) để mua thuốc."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn của bạn ăn đậu phộng xong thì mặt bị sưng và ngứa. Bạn muốn nói với bác sĩ rằng bạn ấy bị dị ứng đậu phộng. Từ nào phù hợp?",
+          "options": [
+            "insurance",
+            "allergy",
+            "prescription"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Allergy\" là dị ứng, dùng khi cơ thể phản ứng xấu với một thứ như đậu phộng."
+        },
+        {
+          "question_vi": "Trước khi đi du lịch nước ngoài, bạn muốn mua một gói dịch vụ để nếu bị ốm thì công ty sẽ trả tiền bệnh viện. Bạn cần mua gì?",
+          "options": [
+            "insurance",
+            "prescription",
+            "receipt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Insurance\" là bảo hiểm, giúp trả chi phí khi bạn đi khám hoặc nằm viện."
+        },
+        {
+          "question_vi": "Bạn ra nhà thuốc mua một loại thuốc mạnh, nhưng dược sĩ nói bạn cần có tờ giấy bác sĩ ghi tên thuốc. Dược sĩ đang nói đến thứ gì?",
+          "options": [
+            "allergy",
+            "appointment",
+            "prescription"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Prescription\" là đơn thuốc do bác sĩ viết, cần có để mua một số loại thuốc."
+        }
+      ]
+    }
+  },
+  "x-clinic-pain-L1": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi khám bác sĩ khi bị đau đầu và đau họng",
+      "level": 1,
+      "lines": [
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chào chị, hôm nay chị thấy pain ở chỗ nào? Chị chỉ cho tôi xem chỗ nào khó chịu nhất nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ, em bị headache từ hôm qua, cứ nhức ở trán và hai bên đầu ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Nếu chấm pain từ 1 đến 10, 10 là đau nhất, thì chị chấm mấy?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Chắc khoảng 6 ạ. Em uống thuốc rồi mà headache vẫn chưa hết.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Chị có bị sore throat không? Khi nuốt nước hay nói chuyện, cổ có thấy rát không?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bệnh nhân",
+          "text": "Dạ có, em bị sore throat, nuốt nước bọt thôi cũng thấy rát cổ ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Bác sĩ",
+          "text": "Tôi khám họng cho chị rồi kê thuốc nhé. Chị nhớ uống nhiều nước ấm.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "pain",
+          "word": "pain",
+          "meaning_vi": "cơn đau, sự đau",
+          "usage_vi": "Dùng để nói chung về cảm giác đau ở bất kỳ chỗ nào trên cơ thể. Ví dụ: \"I have pain in my knee\" nghĩa là đầu gối bị đau."
+        },
+        {
+          "input": "headache",
+          "word": "headache",
+          "meaning_vi": "đau đầu, nhức đầu",
+          "usage_vi": "Dùng khi bị đau hoặc nhức ở vùng đầu. Thường nói \"I have a headache\"."
+        },
+        {
+          "input": "sore throat",
+          "word": "sore throat",
+          "meaning_vi": "đau họng, rát họng",
+          "usage_vi": "Dùng khi cổ họng bị đau rát, nhất là lúc nuốt hoặc nói chuyện. Thường nói \"I have a sore throat\"."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn bị ngã xe và đầu gối rất đau. Khi gặp bác sĩ, bạn nói đầu gối bị gì?",
+          "options": [
+            "headache",
+            "pain",
+            "sore throat"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Pain\" là từ chung để chỉ cơn đau ở bất kỳ bộ phận nào, như đầu gối."
+        },
+        {
+          "question_vi": "Bạn ngồi làm việc trước máy tính cả ngày, đến tối thấy nhức hết cả đầu. Bạn bị gì?",
+          "options": [
+            "headache",
+            "sore throat",
+            "fever"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Headache\" là đau đầu, đúng với cảm giác nhức đầu sau khi nhìn máy tính lâu."
+        },
+        {
+          "question_vi": "Tối qua bạn hát karaoke rất nhiều, sáng nay nuốt nước thấy rát cổ. Bạn bị gì?",
+          "options": [
+            "headache",
+            "stomachache",
+            "sore throat"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Sore throat\" là đau họng, rát cổ khi nuốt hoặc nói, thường gặp sau khi hát nhiều."
+        }
+      ]
+    }
+  },
+  "x-taxi-tip-L2": {
+    "ok": true,
+    "lesson": {
+      "title_vi": "Đi taxi ở thành phố nói tiếng Anh",
+      "level": 2,
+      "lines": [
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Chào chị! Chị muốn đi đâu ạ? Chị cho em xin the address, số nhà và tên đường nhé.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Dạ, the address là 25 Main Street. Đi mất bao lâu vậy em?",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Khoảng 20 phút chị ạ. Giờ này có heavy traffic, xe cộ đông lắm, đường hay bị kẹt.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Không sao, em cứ đi từ từ. Bad traffic thì chịu thôi.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Đến nơi rồi chị. Tổng là 18 đô ạ.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Khách",
+          "text": "Đây là 20 đô. Em giữ 2 đô dư làm a tip nhé, cảm ơn em đã chở chị cẩn thận.",
+          "translation_vi": null
+        },
+        {
+          "speaker_vi": "Tài xế",
+          "text": "Ôi, thank you for the tip! Chúc chị một ngày vui vẻ.",
+          "translation_vi": null
+        }
+      ],
+      "vocab": [
+        {
+          "input": "address",
+          "word": "address",
+          "meaning_vi": "địa chỉ",
+          "usage_vi": "Dùng khi nói cho tài xế, người giao hàng biết nơi bạn muốn đến hoặc nơi bạn ở. Ví dụ: \"My address is 25 Main Street.\""
+        },
+        {
+          "input": "traffic",
+          "word": "traffic",
+          "meaning_vi": "giao thông, xe cộ trên đường",
+          "usage_vi": "Dùng để nói về tình trạng xe cộ trên đường, thường đi với \"heavy\" hoặc \"bad\" khi đường đông, kẹt xe. Ví dụ: \"There is heavy traffic today.\""
+        },
+        {
+          "input": "tip",
+          "word": "tip",
+          "meaning_vi": "tiền boa, tiền tip",
+          "usage_vi": "Là số tiền thêm bạn tự nguyện đưa cho tài xế hoặc phục vụ để cảm ơn họ. Ở Mỹ, người ta thường boa tài xế taxi và nhân viên nhà hàng."
+        }
+      ],
+      "quiz": [
+        {
+          "question_vi": "Bạn đặt mua đồ trên mạng và cần ghi số nhà, tên đường để người ta giao hàng đến. Ô đó tiếng Anh gọi là gì?",
+          "options": [
+            "tip",
+            "address",
+            "traffic"
+          ],
+          "answer_index": 1,
+          "explanation_vi": "\"Address\" là địa chỉ, nơi cần ghi số nhà và tên đường để giao hàng."
+        },
+        {
+          "question_vi": "Bạn đến trễ buổi hẹn vì đường quá đông xe và bị kẹt. Bạn nói: \"Sorry, there was a lot of ___.\" Từ nào phù hợp?",
+          "options": [
+            "traffic",
+            "address",
+            "receipt"
+          ],
+          "answer_index": 0,
+          "explanation_vi": "\"Traffic\" chỉ xe cộ trên đường, nên \"a lot of traffic\" nghĩa là đường rất đông xe."
+        },
+        {
+          "question_vi": "Ăn xong ở một nhà hàng ở Mỹ, bạn để lại thêm một ít tiền trên bàn để cảm ơn người phục vụ. Số tiền đó gọi là gì?",
+          "options": [
+            "address",
+            "fare",
+            "tip"
+          ],
+          "answer_index": 2,
+          "explanation_vi": "\"Tip\" là tiền boa, số tiền thêm để cảm ơn người phục vụ."
+        }
+      ]
+    }
+  }
+}
