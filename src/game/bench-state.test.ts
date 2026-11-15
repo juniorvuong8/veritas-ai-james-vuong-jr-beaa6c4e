@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import {
   BENCH_REWARD, benchStatus, gameReducer, newGame, pickBenchTargets, today,
   type BenchDay, type GameAction, type GameState, type LearnedWord,
@@ -15,6 +15,15 @@ const D1 = '2026-11-15'
 describe('today', () => {
   it('formats a local date as YYYY-MM-DD', () => {
     expect(today(new Date(2026, 10, 14, 23, 30))).toBe('2026-11-14')
+  })
+  it('pads single-digit months and days, so dates sort as strings', () => {
+    expect(today(new Date(2027, 0, 5, 0, 1))).toBe('2027-01-05')
+    expect(today(new Date(2026, 1, 1)) < today(new Date(2026, 11, 1))).toBe(true)
+  })
+  it('does not depend on the browser locale', () => {
+    const spy = vi.spyOn(Date.prototype, 'toLocaleDateString').mockReturnValue('1/5/2027')
+    expect(today(new Date(2027, 0, 5))).toBe('2027-01-05')
+    spy.mockRestore()
   })
 })
 

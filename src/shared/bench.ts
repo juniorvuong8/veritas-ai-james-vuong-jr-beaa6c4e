@@ -1,4 +1,5 @@
 import { AiError, parseJsonObject, type AiCaller } from './ai'
+import { signChat, verifyChat } from './bench-sign'
 import { ERRORS, MAX_ATTEMPTS } from './generate'
 import type { ChatMessage } from './prompt'
 import { normalizeWord } from './scenarios'
@@ -20,6 +21,8 @@ export interface BenchRequest {
   targets: BenchTarget[]
   history: BenchTurn[]
   debug?: boolean
+  /** The signature from the previous reply, covering everything in `history` but the learner's newest message. */
+  sig?: string
 }
 /** Whether the learner's latest message showed they understood a target word. */
 export interface BenchVerdict {
@@ -31,6 +34,8 @@ export interface BenchReply {
   text_en?: string
   verdicts: BenchVerdict[]
   done: boolean
+  /** Signs the chat including this reply; send it back with the next message. */
+  sig?: string
 }
 export type BenchResult = { status: number; body: BenchReply | ErrorBody }
 
@@ -60,6 +65,12 @@ export const BENCH_PERSONAS: Record<BenchId, { name_vi: string; name_en: string;
 
 const isRecord = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v)
 
+/**
+ * How a chat line is stored and sent: transcript fence tags removed, whitespace collapsed.
+ * The browser uses it too, so it never sends a message that would end up empty.
+ */
+export const normalizeTurnText = (text: string) => text.replace(/<\/?transcript>/gi, ' ').replace(/\s+/g, ' ').trim()
+
 function checkTarget(v: unknown): BenchTarget | undefined {
   if (!isRecord(v) || typeof v.word !== 'string' || typeof v.meaning_vi !== 'string') return undefined
   const word = normalizeWord(v.word)
@@ -77,7 +88,7 @@ function checkHistory(v: unknown): BenchTurn[] | undefined {
     if (!isRecord(t) || typeof t.text !== 'string') return undefined
     const from = i % 2 === 0 ? 'person' : 'learner'
     if (t.from !== from) return undefined
-    const text = t.text.replace(/<\/?transcript>/gi, ' ').replace(/\s+/g, ' ').trim()
+    const text = normalizeTurnText(t.text)
     if (text === '') return undefined
     if (from === 'learner') {
       learnerCount++
@@ -105,6 +116,7 @@ export function checkBenchRequest(body: unknown): BenchRequest | undefined {
   if (!history) return undefined
   const req: BenchRequest = { benchId: body.benchId as BenchId, level: body.level, targets, history }
   if (body.debug === true) req.debug = true
+  if (typeof body.sig === 'string') req.sig = body.sig
   return req
 }
 
@@ -162,7 +174,10 @@ export function buildBenchMessages(req: BenchRequest): ChatMessage[] {
 export function parseBenchReply(text: string, req: BenchRequest): BenchReply | undefined {
   const parsed = parseJsonObject(text)
   if (!isRecord(parsed)) return undefined
-  if (typeof parsed.text !== 'string' || parsed.text.trim() === '') return undefined
+  if (typeof parsed.text !== 'string') return undefined
+  // Cleaned the same way the next request's history will be, so a reply can never break the chat later.
+  const replyText = normalizeTurnText(parsed.text)
+  if (replyText === '' || replyText.length > MAX_PERSON_CHARS) return undefined
   if (typeof parsed.done !== 'boolean') return undefined
 
   const verdicts: BenchVerdict[] = []
@@ -176,8 +191,6 @@ export function parseBenchReply(text: string, req: BenchRequest): BenchReply | u
       verdicts.push({ word: target.word, understood: v.understood })
     }
   }
-  const replyText = parsed.text.trim()
-  if (replyText.length > MAX_PERSON_CHARS) return undefined
   // The chat always ends on the learner's last message, whatever the model says, and never on the opening turn.
   const learnerCount = req.history.filter((t) => t.from === 'learner').length
   const done = learnerCount >= MAX_LEARNER_MESSAGES || (parsed.done && learnerCount > 0)
@@ -190,9 +203,18 @@ function fail(code: ErrorCode): BenchResult {
   return { status: ERRORS[code].status, body: { code, message_vi: ERRORS[code].message_vi } }
 }
 
-export async function chatOnBench(body: unknown, callAi: AiCaller): Promise<BenchResult> {
+/**
+ * One bench turn. With a `secret`, every reply is signed and every later request must carry the signature
+ * of the chat it continues, so the person's lines and the words can't be made up by the caller.
+ */
+export async function chatOnBench(body: unknown, callAi: AiCaller, opts: { secret?: string } = {}): Promise<BenchResult> {
   const req = checkBenchRequest(body)
   if (!req) return fail('bad_request')
+  const chat = { benchId: req.benchId, level: req.level, targets: req.targets }
+  if (opts.secret && req.history.length > 0) {
+    const ok = await verifyChat(opts.secret, { ...chat, history: req.history.slice(0, -1) }, req.sig)
+    if (!ok) return fail('bad_request')
+  }
   const messages = buildBenchMessages(req)
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
@@ -206,7 +228,12 @@ export async function chatOnBench(body: unknown, callAi: AiCaller): Promise<Benc
       continue
     }
     const reply = parseBenchReply(text, req)
-    if (reply) return { status: 200, body: reply }
+    if (reply) {
+      if (opts.secret) {
+        reply.sig = await signChat(opts.secret, { ...chat, history: [...req.history, { from: 'person', text: reply.text }] })
+      }
+      return { status: 200, body: reply }
+    }
     console.error(`bench-chat attempt ${attempt}: output failed checks`)
   }
   return fail('ai_failed')

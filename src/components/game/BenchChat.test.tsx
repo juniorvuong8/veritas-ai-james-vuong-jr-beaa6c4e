@@ -100,24 +100,62 @@ describe('BenchChat', () => {
     const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
     await send(user, 'xin chào')
-    expect(await screen.findByText('Mất mạng rồi')).toBeInTheDocument()
+    expect(await screen.findByText(/Không kết nối được/)).toBeInTheDocument()
+    await user.type(screen.getByRole('textbox'), 'again{Enter}')
+    expect(requestReply).toHaveBeenCalledTimes(2)
     await user.click(screen.getByRole('button', { name: 'Thử lại' }))
     expect(await screen.findByText('Ổn rồi')).toBeInTheDocument()
     expect(screen.getAllByText('xin chào')).toHaveLength(1)
     expect(requestReply.mock.calls[2][0].history).toEqual(requestReply.mock.calls[1][0].history)
   })
 
-  it('hides Try again on bad_request and blocks sending while an error shows', async () => {
+  it('takes a rejected message back into the box so the chat never gets stuck', async () => {
     const { requestReply } = setup({
-      replies: [reply(), { ok: false, code: 'bad_request', message_vi: 'Yêu cầu không hợp lệ' }],
+      replies: [reply(), { ok: false, code: 'bad_request', message_vi: 'Yêu cầu không hợp lệ' }, reply({ text: 'Ừ, hay đấy!' })],
     })
     const user = userEvent.setup()
     await screen.findByText('Chào cháu!')
     await send(user, 'xin chào')
-    expect(await screen.findByText('Yêu cầu không hợp lệ')).toBeInTheDocument()
+    expect(await screen.findByText(/viết lại theo cách khác/)).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: 'Thử lại' })).not.toBeInTheDocument()
-    await user.type(screen.getByRole('textbox'), 'again{Enter}')
-    expect(requestReply).toHaveBeenCalledTimes(2)
+    expect(screen.queryByText('xin chào')).not.toBeInTheDocument()
+    expect(screen.getByRole('textbox')).toHaveValue('xin chào')
+    await user.clear(screen.getByRole('textbox'))
+    await send(user, 'chào bác ạ')
+    expect(await screen.findByText('Ừ, hay đấy!')).toBeInTheDocument()
+    expect(requestReply.mock.calls[2][0].history).toEqual([
+      { from: 'person', text: 'Chào cháu!' },
+      { from: 'learner', text: 'chào bác ạ' },
+    ])
+  })
+
+  it('never sends a message that is only transcript tags or spaces', async () => {
+    const { requestReply } = setup()
+    const user = userEvent.setup()
+    await screen.findByText('Chào cháu!')
+    await user.type(screen.getByRole('textbox'), '<transcript>  </transcript>')
+    expect(screen.getByRole('button', { name: 'Gửi' })).toBeDisabled()
+    await user.type(screen.getByRole('textbox'), '{Enter}')
+    expect(requestReply).toHaveBeenCalledTimes(1)
+  })
+
+  it('sends back the signature from the last reply', async () => {
+    const { requestReply } = setup({ replies: [reply({ sig: 'abc' }), reply({ text: 'B', sig: 'def' }), reply({ text: 'C' })] })
+    const user = userEvent.setup()
+    await screen.findByText('Chào cháu!')
+    expect(requestReply.mock.calls[0][0].sig).toBeUndefined()
+    await send(user, 'one')
+    await screen.findByText('B')
+    await send(user, 'two')
+    await screen.findByText('C')
+    expect(requestReply.mock.calls[1][0].sig).toBe('abc')
+    expect(requestReply.mock.calls[2][0].sig).toBe('def')
+  })
+
+  it('uses bench wording for errors, never the sample-lesson message', async () => {
+    setup({ replies: [{ ok: false, code: 'out_of_credits', message_vi: 'Bạn có thể xem bài mẫu.' }] })
+    expect(await screen.findByText(/không trò chuyện được nữa/)).toBeInTheDocument()
+    expect(screen.queryByText(/bài mẫu/)).not.toBeInTheDocument()
   })
 
   it('shows the English error and aria-label in debug mode', async () => {

@@ -8,7 +8,8 @@ export type BenchChatResult =
   | { ok: true; reply: BenchReply }
   | { ok: false; code: ErrorCode | 'timeout' | 'network'; message_vi: string }
 
-export const BENCH_TIMEOUT_MS = 30_000
+/** Same as lessons: the server may retry the AI once, so a turn can take well over 30 seconds. */
+export const BENCH_TIMEOUT_MS = 60_000
 
 export async function requestBenchReply(
   req: BenchRequest,

@@ -35,8 +35,9 @@ export interface BenchDay {
   rewarded: number
 }
 
-/** Local calendar date as YYYY-MM-DD. */
-export const today = (d = new Date()) => d.toLocaleDateString('en-CA')
+/** Local calendar date as YYYY-MM-DD, built by hand: locale date formats differ between browsers. */
+export const today = (d = new Date()) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 
 /** How words are compared: trimmed, single-spaced, lowercase. */
 export const wordKey = (w: string) => normalizeWord(w).toLowerCase()

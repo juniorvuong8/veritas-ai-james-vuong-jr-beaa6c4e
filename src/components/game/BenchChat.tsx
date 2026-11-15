@@ -3,11 +3,11 @@ import { BENCH_ART } from '@/game/art'
 import { BENCH_REWARD, type BenchStatus, wordKey } from '@/game/state'
 import { requestBenchReply, type BenchChatResult } from '@/lib/bench-api'
 import { Bi, useBiText, useDebug } from '@/lib/debug'
-import { ERROR_MESSAGES_EN } from '@/lib/error-messages-en'
 import {
   BENCH_PERSONAS,
   MAX_LEARNER_MESSAGES,
   MAX_MESSAGE_CHARS,
+  normalizeTurnText,
   type BenchId,
   type BenchRequest,
   type BenchTarget,
@@ -18,9 +18,42 @@ import { SpeechBubble } from './SpeechBubble'
 import { Awning, GhostButton, PrimaryButton } from './ui'
 
 type Line = BenchTurn & { en?: string }
+type ErrorCode = Extract<BenchChatResult, { ok: false }>['code']
 
 const LEARNER_EMOJI = '🧑'
 const BENCH_COLOR = '#7BAE7F'
+
+/** Bench wording for each failure (the lesson messages mention a sample lesson the bench doesn't have). */
+const BENCH_ERRORS: Record<ErrorCode, { vi: string; en: string }> = {
+  bad_request: {
+    vi: 'Bác chưa đọc được tin nhắn đó. Cháu viết lại theo cách khác nhé!',
+    en: "I couldn't read that message. Try writing it another way!",
+  },
+  inappropriate: {
+    vi: 'Mình nói chuyện về chuyện khác nhé!',
+    en: "Let's talk about something else!",
+  },
+  rate_limited: {
+    vi: 'Bác đang hơi bận, cháu đợi một chút rồi thử lại nhé.',
+    en: "I'm a bit busy right now. Wait a moment and try again.",
+  },
+  out_of_credits: {
+    vi: 'Hôm nay bác không trò chuyện được nữa. Cháu quay lại sau nhé!',
+    en: "I can't chat any more right now. Come back later!",
+  },
+  ai_failed: {
+    vi: 'Bác chưa nghĩ ra câu trả lời. Cháu thử lại nhé!',
+    en: "I couldn't think of a reply. Please try again!",
+  },
+  timeout: {
+    vi: 'Bác nghĩ lâu quá. Cháu thử lại nhé!',
+    en: 'That took too long. Please try again!',
+  },
+  network: {
+    vi: 'Không kết nối được. Cháu kiểm tra mạng rồi thử lại nhé.',
+    en: "Couldn't connect. Check your connection and try again.",
+  },
+}
 
 export function BenchChat(props: {
   benchId: BenchId
@@ -41,7 +74,12 @@ export function BenchChat(props: {
   const [lines, setLines] = useState<Line[]>([])
   const [draft, setDraft] = useState('')
   const [pending, setPending] = useState(false)
-  const [error, setError] = useState<{ code: Extract<BenchChatResult, { ok: false }>['code']; message_vi: string; history: BenchTurn[] } | null>(null)
+  /** A failed turn: `history` is resent by Try again. */
+  const [error, setError] = useState<{ code: ErrorCode; history: BenchTurn[] } | null>(null)
+  /** A message the server couldn't accept: it was taken back into the text box to rephrase. */
+  const [rejected, setRejected] = useState(false)
+  /** Signature of the chat so far, from the last reply; sent with the next message. */
+  const sig = useRef<string | undefined>(undefined)
   /** Set when the chat has ended: whether every word was understood. */
   const [result, setResult] = useState<{ allUnderstood: boolean } | null>(null)
   /** wordKey → understood at least once in this chat. */
@@ -62,7 +100,7 @@ export function BenchChat(props: {
 
   useEffect(() => {
     bottom.current?.scrollIntoView?.({ block: 'end' })
-  }, [lines, pending, error, result])
+  }, [lines, pending, error, rejected, result])
 
   function leave() {
     alive.current = false
@@ -71,21 +109,32 @@ export function BenchChat(props: {
 
   async function ask(history: BenchTurn[]) {
     setError(null)
+    setRejected(false)
     setPending(true)
     const res = await send({
       benchId: props.benchId,
       level: props.level,
       targets: props.targets,
       history,
+      ...(sig.current ? { sig: sig.current } : {}),
       ...(debug ? { debug } : {}),
     })
     if (!alive.current) return
     setPending(false)
     if (!res.ok) {
-      setError({ code: res.code, message_vi: res.message_vi, history })
+      const last = history[history.length - 1]
+      if (res.code === 'bad_request' && last?.from === 'learner') {
+        // Don't get stuck: take the message back so the learner can say it another way.
+        setLines((prev) => prev.slice(0, -1))
+        setDraft(last.text)
+        setRejected(true)
+        return
+      }
+      setError({ code: res.code, history })
       return
     }
     const { reply } = res
+    sig.current = reply.sig
     for (const v of reply.verdicts) if (v.understood) understood.current[wordKey(v.word)] = true
     setLines((prev) => [...prev, { from: 'person', text: reply.text, en: reply.text_en }])
     const learnerCount = history.filter((t) => t.from === 'learner').length
@@ -110,7 +159,8 @@ export function BenchChat(props: {
   const toTurns = (ls: Line[]): BenchTurn[] => ls.map(({ from, text }) => ({ from, text }))
 
   function submit() {
-    const text = draft.trim()
+    // Cleaned the way the server will clean it, so a message that would come out empty is never sent.
+    const text = normalizeTurnText(draft)
     if (!text || pending || result || error) return
     const next = [...lines, { from: 'learner' as const, text }]
     setLines(next)
@@ -190,10 +240,15 @@ export function BenchChat(props: {
                 </SpeechBubble>
               </div>
             )}
+            {rejected && (
+              <p role="alert" className="text-sm font-semibold text-[#B23A25]">
+                <Bi vi={BENCH_ERRORS.bad_request.vi} en={BENCH_ERRORS.bad_request.en} />
+              </p>
+            )}
             {error && (
               <div className="space-y-2" role="alert">
                 <p className="text-sm font-semibold text-[#B23A25]">
-                  <Bi vi={error.message_vi} en={ERROR_MESSAGES_EN[error.code]} />
+                  <Bi vi={BENCH_ERRORS[error.code].vi} en={BENCH_ERRORS[error.code].en} />
                 </p>
                 {error.code !== 'bad_request' && (
                   <PrimaryButton onClick={() => void ask(error.history)}>
@@ -250,7 +305,7 @@ export function BenchChat(props: {
                 aria-label={biText('Tin nhắn', 'Message')}
                 className="min-w-0 flex-1 rounded-full border-2 border-[#2B1D16]/20 bg-white px-4 py-2 text-base focus:border-[#E8553D] focus:outline-none"
               />
-              <PrimaryButton type="submit" disabled={pending || error !== null || draft.trim() === ''}>
+              <PrimaryButton type="submit" disabled={pending || error !== null || normalizeTurnText(draft) === ''}>
                 <Bi vi="Gửi" en="Send" />
               </PrimaryButton>
             </form>
