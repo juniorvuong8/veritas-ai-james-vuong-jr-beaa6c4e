@@ -3,7 +3,12 @@ import { PLACE_IDS, type GameState } from '@/game/state'
 import { Bi, useBiText } from '@/lib/debug'
 import { getScenario } from '@/shared/scenarios'
 
-export function TopBar(props: { state: GameState; onOpenCelebration: () => void; onOpenNotebook?: () => void }) {
+export function TopBar(props: {
+  state: GameState
+  onOpenCelebration: () => void
+  onOpenNotebook?: () => void
+  onOpenShop?: () => void
+}) {
   const { state } = props
   const biText = useBiText()
   return (
@@ -12,7 +17,22 @@ export function TopBar(props: { state: GameState; onOpenCelebration: () => void;
         <span className="rounded-full bg-[#2B1D16] px-2.5 py-1 text-white">
           <Bi vi={`Cấp ${state.level}`} en={`Level ${state.level}`} />
         </span>
-        <span className="rounded-full bg-[#FFF3D6] px-2.5 py-1">{`🪙 ${state.coins}`}</span>
+        {props.onOpenShop ? (
+          <button
+            type="button"
+            onClick={props.onOpenShop}
+            aria-label={biText(`🪙 ${state.coins} xu: mở cửa hàng`, `${state.coins} coins: open the shop`)}
+            title={biText('Cửa hàng', 'Shop')}
+            className="rounded-full bg-[#FFF3D6] px-2.5 py-1 transition-transform hover:scale-105 hover:bg-[#FFE8B0]"
+          >
+            {`🪙 ${state.coins}`}
+            <span className="ml-1" aria-hidden>
+              🛍️
+            </span>
+          </button>
+        ) : (
+          <span className="rounded-full bg-[#FFF3D6] px-2.5 py-1">{`🪙 ${state.coins}`}</span>
+        )}
         {props.onOpenNotebook && (
           <button
             type="button"

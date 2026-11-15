@@ -1,5 +1,6 @@
 import { normalizeWord, SCENARIOS } from '@/shared/scenarios'
 import type { Level, VocabItem } from '@/shared/types'
+import { getItem, type Outfit } from './shop'
 
 export const COINS_PER_CORRECT = 10
 export const PLACE_IDS: string[] = SCENARIOS.map((s) => s.id)
@@ -39,6 +40,10 @@ export interface GameState {
   lastWords: Record<string, string[]>
   /** Every word learned so far, oldest first. Kept across rounds and levels. */
   learnedWords: LearnedWord[]
+  /** Shop items bought with coins (ids from SHOP_ITEMS). Kept across rounds and levels. */
+  owned: string[]
+  /** What the player is wearing. Kept across rounds and levels. */
+  outfit: Outfit
 }
 
 export type GameAction =
@@ -50,13 +55,30 @@ export type GameAction =
   | { type: 'dismissCelebration' }
   | { type: 'playAgain' }
   | { type: 'levelUp' }
+  | { type: 'buyItem'; itemId: string }
+  | { type: 'toggleItem'; itemId: string }
 
 export function newGame(
   level: Level,
   lastWords: Record<string, string[]> = {},
   learnedWords: LearnedWord[] = [],
 ): GameState {
-  return { level, stamps: [], coins: 0, complete: false, celebrationOpen: false, lastWords, learnedWords }
+  return {
+    level,
+    stamps: [],
+    coins: 0,
+    complete: false,
+    celebrationOpen: false,
+    lastWords,
+    learnedWords,
+    owned: [],
+    outfit: {},
+  }
+}
+
+/** A new round that keeps what lasts across rounds: words, the notebook and the shop items. */
+function nextRound(state: GameState, level: Level): GameState {
+  return { ...newGame(level, state.lastWords, state.learnedWords), owned: state.owned, outfit: state.outfit }
 }
 
 export function canLevelUp(state: GameState): boolean {
@@ -98,8 +120,26 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
     case 'dismissCelebration':
       return { ...state, celebrationOpen: false }
     case 'playAgain':
-      return newGame(state.level, state.lastWords, state.learnedWords)
+      return nextRound(state, state.level)
     case 'levelUp':
-      return canLevelUp(state) ? newGame((state.level + 1) as Level, state.lastWords, state.learnedWords) : state
+      return canLevelUp(state) ? nextRound(state, (state.level + 1) as Level) : state
+    case 'buyItem': {
+      // Buying puts the item on straight away.
+      const item = getItem(action.itemId)
+      if (!item || state.owned.includes(item.id) || state.coins < item.price) return state
+      return {
+        ...state,
+        coins: state.coins - item.price,
+        owned: [...state.owned, item.id],
+        outfit: { ...state.outfit, [item.slot]: item.id },
+      }
+    }
+    case 'toggleItem': {
+      // Put an owned item on, or take it off if it's already on.
+      const item = getItem(action.itemId)
+      if (!item || !state.owned.includes(item.id)) return state
+      const wearing = state.outfit[item.slot] === item.id
+      return { ...state, outfit: { ...state.outfit, [item.slot]: wearing ? undefined : item.id } }
+    }
   }
 }

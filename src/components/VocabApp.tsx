@@ -2,11 +2,13 @@ import { useCallback, useEffect, useReducer, useState } from 'react'
 import { Celebration } from '@/components/game/Celebration'
 import { CityScreen, FADE_MS } from '@/components/game/CityScreen'
 import { Notebook } from '@/components/game/Notebook'
+import { Shop } from '@/components/game/Shop'
 import { PlaceScreen } from '@/components/game/PlaceScreen'
 import { StartScreen } from '@/components/game/StartScreen'
 import { LandingScreen } from '@/components/landing/LandingScreen'
 import { GameShell } from '@/components/game/ui'
 import { CITY, doorOf, type Pos } from '@/game/map'
+import { outfitEmojis } from '@/game/shop'
 import { COINS_PER_CORRECT, canLevelUp, gameReducer, newGame, type GameAction, type GameState } from '@/game/state'
 import { clearGame, loadGame, saveGame } from '@/game/storage'
 import { DebugBadge, DebugProvider, readDebugFlag, saveDebugFlag, useDebugShortcut } from '@/lib/debug'
@@ -15,7 +17,11 @@ import type { Level } from '@/shared/types'
 type AppAction = GameAction | { type: 'newGame'; level: Level }
 
 function appReducer(state: GameState | null, action: AppAction): GameState | null {
-  if (action.type === 'newGame') return newGame(action.level, state?.lastWords, state?.learnedWords)
+  if (action.type === 'newGame') {
+    // A new game keeps the words learned and the shop items bought.
+    const fresh = newGame(action.level, state?.lastWords, state?.learnedWords)
+    return state ? { ...fresh, owned: state.owned, outfit: state.outfit } : fresh
+  }
   return state ? gameReducer(state, action) : state
 }
 
@@ -50,6 +56,8 @@ function Game() {
   const [visit, setVisit] = useState(0)
   const [notebookOpen, setNotebookOpen] = useState(false)
   const closeNotebook = useCallback(() => setNotebookOpen(false), [])
+  const [shopOpen, setShopOpen] = useState(false)
+  const closeShop = useCallback(() => setShopOpen(false), [])
 
   useEffect(() => {
     if (game) saveGame(game)
@@ -102,13 +110,24 @@ function Game() {
             state={game}
             startPos={screen.startPos}
             showHint={showHint}
-            paused={game.celebrationOpen || notebookOpen}
+            paused={game.celebrationOpen || notebookOpen || shopOpen}
             onMoved={() => setShowHint(false)}
             onEnterPlace={(placeId) => setScreen({ name: 'place', placeId, viaDoor: true })}
             onOpenCelebration={() => dispatch({ type: 'openCelebration' })}
             onOpenNotebook={() => setNotebookOpen(true)}
+            onOpenShop={() => setShopOpen(true)}
           />
           {notebookOpen && <Notebook words={game.learnedWords} onClose={closeNotebook} />}
+          {shopOpen && (
+            <Shop
+              coins={game.coins}
+              owned={game.owned}
+              outfit={game.outfit}
+              onBuy={(itemId) => dispatch({ type: 'buyItem', itemId })}
+              onToggle={(itemId) => dispatch({ type: 'toggleItem', itemId })}
+              onClose={closeShop}
+            />
+          )}
           {game.celebrationOpen && (
             <Celebration
               level={game.level}
@@ -144,6 +163,7 @@ function Game() {
 
       {game && screen.name === 'place' && (
         <PlaceScreen
+          playerAvatar={outfitEmojis(game.outfit).face}
           key={screen.placeId}
           placeId={screen.placeId}
           level={game.level}

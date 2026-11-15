@@ -160,4 +160,19 @@ describe('App', () => {
     expect(screen.queryByText(/DEBUG/)).not.toBeInTheDocument()
     expect(localStorage.getItem('vocab-debug')).toBeNull()
   })
+
+  it('opens the shop from the coins, buys a hat and wears it in the city', async () => {
+    const user = userEvent.setup()
+    localStorage.setItem(SAVE_KEY, JSON.stringify({ ...newGame(1), coins: 50 }))
+    const { container } = render(<App />)
+    await openStart(user)
+    await user.click(screen.getByRole('button', { name: 'Chơi tiếp' }))
+    await user.click(screen.getByRole('button', { name: /50 xu: mở cửa hàng/ }))
+    await user.click(screen.getByRole('button', { name: 'Mua Mũ lưỡi trai giá 20 xu' }))
+    expect(screen.getByTestId('shop-coins')).toHaveTextContent('🪙 30')
+    await user.click(screen.getByRole('button', { name: 'Đóng cửa hàng' }))
+    const player = container.querySelector('[data-testid="player"]')!
+    expect(player.querySelector('[data-part="hat"]')).toHaveTextContent('🧢')
+    expect(JSON.parse(localStorage.getItem(SAVE_KEY)!)).toMatchObject({ coins: 30, owned: ['cap'], outfit: { hat: 'cap' } })
+  })
 })

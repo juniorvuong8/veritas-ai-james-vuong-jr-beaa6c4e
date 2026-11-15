@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react'
-import { PLACE_ART, PLAYER_EMOJI, TILE_EMOJI } from '@/game/art'
+import { PLACE_ART, TILE_EMOJI } from '@/game/art'
 import { CITY, samePos, type Pos, type Tile } from '@/game/map'
 import { keyToDir, step, type Dir } from '@/game/movement'
 import { findPath, resolveTapTarget } from '@/game/path'
@@ -7,6 +7,7 @@ import type { GameState } from '@/game/state'
 import { Bi, useBiText } from '@/lib/debug'
 import { cn } from '@/lib/utils'
 import { getScenario } from '@/shared/scenarios'
+import { Avatar } from './Avatar'
 import { TopBar } from './TopBar'
 import { GhostButton, PrimaryButton } from './ui'
 
@@ -85,6 +86,7 @@ export function CityScreen(props: {
   onEnterPlace: (placeId: string) => void
   onOpenCelebration: () => void
   onOpenNotebook?: () => void
+  onOpenShop?: () => void
   onMoved: () => void
 }) {
   const [pos, setPos] = useState<Pos>(props.startPos)
@@ -198,7 +200,12 @@ export function CityScreen(props: {
       // The whole column (bar, map, hints) is as wide as the map can be on this screen.
       style={{ width: `min(100%, calc((100svh - 10.5rem) * ${CITY.width} / ${CITY.height}))` }}
     >
-      <TopBar state={props.state} onOpenCelebration={props.onOpenCelebration} onOpenNotebook={props.onOpenNotebook} />
+      <TopBar
+        state={props.state}
+        onOpenCelebration={props.onOpenCelebration}
+        onOpenNotebook={props.onOpenNotebook}
+        onOpenShop={props.onOpenShop}
+      />
       {props.showHint && (
         <p className="text-center text-sm font-semibold text-[#2F7F7A]">
           <Bi vi="Đi đến một địa điểm để bắt đầu" en="Walk to a place to start" />
@@ -293,7 +300,7 @@ export function CityScreen(props: {
             transition: `transform ${STEP_MS}ms linear`,
           }}
         >
-          {PLAYER_EMOJI}
+          <Avatar outfit={props.state.outfit} />
         </div>
       </div>
       <p className="text-center text-xs font-medium text-[#2B1D16]/55">
