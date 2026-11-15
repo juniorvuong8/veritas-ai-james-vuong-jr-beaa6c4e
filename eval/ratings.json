@@ -1,0 +1,290 @@
+{
+  "baseline:cafe-A-L3": {
+    "note": "“Is that for here or to go?“ does not go with “ Can I get a free refill?“",
+    "q2": true,
+    "h": "bfc1c43b",
+    "q1": false
+  },
+  "baseline:clinic-A-L2": {
+    "note": "“I have an appointment lúc 9 giờ.” was not answer to “ Chào anh, anh thấy trong người thế nào?”",
+    "q1": true,
+    "h": "bb67ef95",
+    "q2": false
+  },
+  "llm:clinic-A-L3": {
+    "note": "",
+    "q1": true,
+    "h": "ef6a88bb",
+    "q2": true
+  },
+  "llm:supermarket-A-L2": {
+    "note": "",
+    "q1": true,
+    "h": "b9964aea",
+    "q2": true
+  },
+  "baseline:supermarket-B-L1": {
+    "note": "“Chị có cần bag không ạ?” immediately followed “Dạ, cảm ơn chị. Hẹn gặp lại!” which is completely unrelated. ",
+    "q1": true,
+    "h": "580e12fa",
+    "q2": false
+  },
+  "baseline:supermarket-B-L3": {
+    "note": "",
+    "q1": true,
+    "h": "d9e5fd0c",
+    "q2": false
+  },
+  "llm:supermarket-B-L2": {
+    "note": "",
+    "q1": true,
+    "h": "10e4ae57",
+    "q2": true
+  },
+  "llm:clinic-A-L1": {
+    "note": "",
+    "q1": true,
+    "h": "a27199c1",
+    "q2": true
+  },
+  "baseline:clinic-B-L2": {
+    "note": "",
+    "q1": true,
+    "h": "b97a7aed",
+    "q2": true
+  },
+  "baseline:clinic-B-L1": {
+    "note": "",
+    "q1": true,
+    "h": "13e28532",
+    "q2": true
+  },
+  "baseline:taxi-A-L1": {
+    "note": "“ Dạ, tới nơi rồi. Chúc chị một ngày vui!” is not right answer to “Anh ơi, fare hết bao nhiêu?”",
+    "q1": true,
+    "h": "668d825d",
+    "q2": false
+  },
+  "llm:cafe-B-L3": {
+    "note": "",
+    "q1": true,
+    "h": "5c8b13e8",
+    "q2": true
+  },
+  "baseline:clinic-B-L3": {
+    "note": "",
+    "q1": true,
+    "h": "9bc17fec",
+    "q2": true
+  },
+  "llm:taxi-B-L3": {
+    "note": "",
+    "q1": true,
+    "h": "0654a12d",
+    "q2": true
+  },
+  "llm:taxi-B-L1": {
+    "note": "",
+    "q1": true,
+    "h": "9fbbeeac",
+    "q2": true
+  },
+  "llm:supermarket-A-L1": {
+    "note": "",
+    "q1": true,
+    "h": "bb281b68",
+    "q2": true
+  },
+  "baseline:taxi-A-L2": {
+    "note": "Asked way too many questions without waiting for an answer.",
+    "q1": true,
+    "h": "580d48a0",
+    "q2": false
+  },
+  "baseline:taxi-B-L2": {
+    "note": "“This is a tip for you, anh.” not right answer ",
+    "q1": true,
+    "h": "d7f2a010",
+    "q2": false
+  },
+  "baseline:taxi-A-L3": {
+    "note": "“ Here we are. Have a good day!” did not answer the question. ",
+    "q1": true,
+    "h": "c7a040b9",
+    "q2": false
+  },
+  "llm:taxi-A-L1": {
+    "note": "",
+    "q1": true,
+    "h": "77e1cb1c",
+    "q2": true
+  },
+  "baseline:clinic-A-L1": {
+    "note": "“Tôi có appointment lúc 9 giờ.“ does not answer question before it. ",
+    "q1": true,
+    "h": "669f3d06",
+    "q2": false
+  },
+  "baseline:cafe-A-L2": {
+    "note": "what each person say is not related to egat the other person just said. ",
+    "q1": true,
+    "h": "d29784b5",
+    "q2": false
+  },
+  "llm:clinic-B-L1": {
+    "note": "",
+    "q1": true,
+    "h": "66c38b45",
+    "q2": true
+  },
+  "llm:cafe-B-L1": {
+    "note": "",
+    "q1": true,
+    "h": "c73b114f",
+    "q2": true
+  },
+  "baseline:supermarket-A-L1": {
+    "note": "customer asked three question in a row without waiting for an answer",
+    "q1": true,
+    "h": "5981b8b1",
+    "q2": false
+  },
+  "llm:clinic-B-L2": {
+    "note": "",
+    "q1": true,
+    "h": "b70142e3",
+    "q2": true
+  },
+  "baseline:supermarket-A-L2": {
+    "note": "Customer asks several different questions without waiting for an answer ",
+    "q1": true,
+    "h": "8a47572a",
+    "q2": false
+  },
+  "baseline:supermarket-B-L2": {
+    "note": "what each person say is not related to what the other person just said.",
+    "q1": true,
+    "h": "a85131bb",
+    "q2": false
+  },
+  "llm:clinic-A-L2": {
+    "note": "",
+    "q1": true,
+    "h": "67dcc4ac",
+    "q2": true
+  },
+  "llm:clinic-B-L3": {
+    "note": "",
+    "q1": true,
+    "h": "c5b234cf",
+    "q2": true
+  },
+  "llm:supermarket-B-L3": {
+    "note": "",
+    "q1": true,
+    "h": "9af0b5f8",
+    "q2": true
+  },
+  "llm:taxi-B-L2": {
+    "note": "",
+    "q1": true,
+    "h": "508f1b0f",
+    "q2": true
+  },
+  "llm:taxi-A-L2": {
+    "note": "",
+    "q1": true,
+    "h": "5ff7ccae",
+    "q2": true
+  },
+  "llm:supermarket-B-L1": {
+    "note": "",
+    "q1": true,
+    "h": "660b3c00",
+    "q2": true
+  },
+  "baseline:clinic-A-L3": {
+    "note": "Each person says two things that are unrelated and also not related to what the other persons say. ",
+    "q1": true,
+    "h": "6c5c4ec9",
+    "q2": false
+  },
+  "llm:cafe-A-L1": {
+    "note": "",
+    "q1": true,
+    "h": "a436b493",
+    "q2": true
+  },
+  "llm:cafe-A-L2": {
+    "note": "",
+    "q1": true,
+    "h": "c7a0771b",
+    "q2": true
+  },
+  "baseline:cafe-A-L1": {
+    "note": "what each person say is not related to what the other person just said.",
+    "q1": true,
+    "h": "39e6c4ed",
+    "q2": false
+  },
+  "llm:cafe-A-L3": {
+    "note": "",
+    "q1": true,
+    "h": "46e060fb",
+    "q2": true
+  },
+  "llm:taxi-A-L3": {
+    "note": "",
+    "q1": true,
+    "h": "0cf3d511",
+    "q2": true
+  },
+  "baseline:supermarket-A-L3": {
+    "note": "Customer asks several different questions without waiting for an answer. ",
+    "q1": true,
+    "h": "2345bc2f",
+    "q2": false
+  },
+  "baseline:taxi-B-L1": {
+    "note": "driver didn’t say thank you to the tips bit said “Dạ, tới nơi rồi. Chúc chị một ngày vui!”",
+    "q1": true,
+    "h": "d3598db0",
+    "q2": false
+  },
+  "llm:cafe-B-L2": {
+    "note": "",
+    "q1": true,
+    "h": "17e753d4",
+    "q2": true
+  },
+  "baseline:cafe-B-L3": {
+    "note": "Customer asks several different questions without waiting for an answer. ",
+    "q1": true,
+    "h": "1946478b",
+    "q2": false
+  },
+  "baseline:cafe-B-L2": {
+    "note": "customer made three different request without seeing the employee respond",
+    "q1": true,
+    "h": "202361a5",
+    "q2": false
+  },
+  "baseline:taxi-B-L3": {
+    "note": "“This is a tip for you.“ that’s not answer the request to put on the seatbelt.",
+    "q1": true,
+    "h": "3aadc940",
+    "q2": false
+  },
+  "llm:supermarket-A-L3": {
+    "note": "",
+    "q1": true,
+    "h": "d4475556",
+    "q2": true
+  },
+  "baseline:cafe-B-L1": {
+    "note": "customer made three different request without seeing the employee respond. ",
+    "q1": true,
+    "h": "b388833e",
+    "q2": false
+  }
+}

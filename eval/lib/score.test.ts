@@ -53,6 +53,14 @@ describe('score', () => {
   it('renders the filled-in sentence', () => {
     const md = renderResults(score(cases, results, ratings))
     expect(md).toContain('On the same 2 test cases, the baseline achieved 50% and the LLM achieved 50%.')
+    expect(md).toContain('The LLM still failed when ___')
+  })
+
+  it('does not leave a "failed when ___" blank when the LLM passed every case', () => {
+    const allOk = { ...results, llm: { 'cafe-A-L1': ok(1), 'cafe-A-L2': ok(2) } }
+    const md = renderResults(score(cases, allOk, { ...ratings, 'llm:cafe-A-L2': { q1: true, q2: true, note: '' } }))
+    expect(md).toContain('the LLM achieved 100%. The LLM passed every case, so this test set does not show where it fails')
+    expect(md).not.toContain('___')
   })
 
   it('stops when a results file is missing a case', () => {

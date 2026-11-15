@@ -80,9 +80,14 @@ export function renderResults(r: Report): string {
     ? `The LLM could not produce a valid lesson for ${r.llm.failedRuns.length} case(s): ${r.llm.failedRuns.join(', ')}. These count as fails.`
     : 'The LLM produced a valid lesson for every case.'
   const notes = [...r.llm.notes.map((n) => `- **LLM** \`${n.caseId}\`: ${n.note}`), ...r.baseline.notes.map((n) => `- Baseline \`${n.caseId}\`: ${n.note}`)]
+  // The blank is for the author to fill from the notes; with no LLM failures there is nothing to fill it with.
+  const llmFailures =
+    r.llm.headline === 100
+      ? 'The LLM passed every case, so this test set does not show where it fails (see Limits).'
+      : 'The LLM still failed when ___ (see notes below).'
   return `# LLM evaluation results
 
-> We use a pretrained LLM to generate contextual dialogues with target vocabulary. Our baseline substitutes English vocabulary into fixed Vietnamese dialogues using a dictionary. On the same ${r.total} test cases, the baseline achieved ${r.baseline.headline}% and the LLM achieved ${r.llm.headline}%. The LLM still failed when ___ (see notes below).
+> We use a pretrained LLM to generate contextual dialogues with target vocabulary. Our baseline substitutes English vocabulary into fixed Vietnamese dialogues using a dictionary. On the same ${r.total} test cases, the baseline achieved ${r.baseline.headline}% and the LLM achieved ${r.llm.headline}%. ${llmFailures}
 
 **Score:** the share of test cases where a native Vietnamese speaker answered "yes" to both questions:
 1. *Is every English word used in the right sense for this situation?*
