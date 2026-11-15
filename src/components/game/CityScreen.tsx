@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react'
-import { PLACE_ART, TILE_EMOJI } from '@/game/art'
-import { CITY, samePos, type Pos, type Tile } from '@/game/map'
+import { BENCH_ART, PLACE_ART, TILE_EMOJI } from '@/game/art'
+import { CITY, benchAt, samePos, type Pos, type Tile } from '@/game/map'
 import { keyToDir, step, type Dir } from '@/game/movement'
 import { findPath, resolveTapTarget } from '@/game/path'
 import type { GameState } from '@/game/state'
 import { Bi, useBiText } from '@/lib/debug'
 import { cn } from '@/lib/utils'
+import { BENCH_PERSONAS, type BenchId } from '@/shared/bench'
 import { getScenario } from '@/shared/scenarios'
 import { Avatar } from './Avatar'
 import { TopBar } from './TopBar'
@@ -28,6 +29,7 @@ const TILE_CLASS: Record<Tile, string> = {
   fountain: 'bg-[#E9DCC8]',
   building: '',
   door: '',
+  bench: 'bg-[#B5DC8F]',
 }
 
 function tileStyle(tile: Tile, place: string | null): CSSProperties | undefined {
@@ -84,6 +86,8 @@ export function CityScreen(props: {
   /** Ignore keys and taps (e.g. while an overlay is open). */
   paused?: boolean
   onEnterPlace: (placeId: string) => void
+  /** Called once the player has walked onto a park bench (no door pause or fade). */
+  onEnterBench?: (benchId: BenchId) => void
   onOpenCelebration: () => void
   onOpenNotebook?: () => void
   onOpenShop?: () => void
@@ -111,7 +115,7 @@ export function CityScreen(props: {
 
   /** Move to an adjacent tile (already known to be walkable) and handle doors. */
   const moveTo = useCallback(
-    (next: Pos, enteredPlace?: string) => {
+    (next: Pos, enteredPlace?: string, enteredBench?: BenchId) => {
       if (entered.current || samePos(next, posRef.current)) return
       posRef.current = next
       setPos(next)
@@ -119,7 +123,10 @@ export function CityScreen(props: {
         moved.current = true
         propsRef.current.onMoved()
       }
-      if (enteredPlace) {
+      if (enteredBench) {
+        stopWalk()
+        enterBench(enteredBench)
+      } else if (enteredPlace) {
         stopWalk()
         if (propsRef.current.state.stamps.includes(enteredPlace)) setRevisit(enteredPlace)
         else enterPlace(enteredPlace)
@@ -138,10 +145,16 @@ export function CityScreen(props: {
     )
   }
 
+  /** Finish the step onto the bench, then sit down (no pause, no fade). */
+  function enterBench(benchId: BenchId) {
+    entered.current = true
+    enterTimers.current.push(setTimeout(() => propsRef.current.onEnterBench?.(benchId), STEP_MS))
+  }
+
   const stepDir = useCallback(
     (dir: Dir) => {
       const r = step(CITY, posRef.current, dir)
-      moveTo(r.pos, r.enteredPlace)
+      moveTo(r.pos, r.enteredPlace, r.enteredBench)
     },
     [moveTo],
   )
@@ -158,7 +171,7 @@ export function CityScreen(props: {
         const next = queue.shift()
         if (!next) return stopWalk()
         const door = CITY.doors.find((d) => samePos(d.pos, next))
-        moveTo(next, door?.placeId)
+        moveTo(next, door?.placeId, benchAt(CITY, next)?.benchId)
         if (queue.length === 0) stopWalk()
       }, STEP_MS)
     },
@@ -225,6 +238,7 @@ export function CityScreen(props: {
           {CITY.tiles.flatMap((row, y) =>
             row.map((tile, x) => {
               const signPlace = SIGN_TILES.get(`${x},${y}`)
+              const bench = tile === 'bench' ? benchAt(CITY, { x, y }) : undefined
               return (
                 <div
                   key={`${x},${y}`}
@@ -235,7 +249,12 @@ export function CityScreen(props: {
                   className={cn('relative flex cursor-pointer items-center justify-center', TILE_CLASS[tile])}
                   style={{ fontSize: tileFont(0.6), ...tileStyle(tile, CITY.placeAt[y][x]) }}
                   aria-label={
-                    signPlace
+                    bench
+                      ? biText(
+                          `Nói chuyện với ${BENCH_PERSONAS[bench.benchId].name_vi}`,
+                          `Talk to ${BENCH_PERSONAS[bench.benchId].name_en}`,
+                        )
+                      : signPlace
                       ? biText(`Đi đến ${getScenario(signPlace)?.name_vi}`, `Go to ${getScenario(signPlace)?.name_en}`)
                       : undefined
                   }
@@ -244,6 +263,13 @@ export function CityScreen(props: {
                     <>
                       <Awning color={PLACE_ART[CITY.placeAt[y][x]!].color} />
                       <span className="translate-y-[14%] text-[0.85em]">{TILE_EMOJI.door}</span>
+                    </>
+                  ) : bench ? (
+                    <>
+                      <span aria-hidden className="absolute inset-x-[12%] bottom-[22%] h-[26%] rounded-[3px] border border-[#2B1D16]/40 bg-[#B9814F]" />
+                      <span aria-hidden className="relative -translate-y-[6%] text-[0.9em]">
+                        {BENCH_ART[bench.benchId].person}
+                      </span>
                     </>
                   ) : signPlace ? (
                     PLACE_ART[signPlace].sign

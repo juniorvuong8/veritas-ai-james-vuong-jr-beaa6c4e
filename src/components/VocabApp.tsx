@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useReducer, useState } from 'react'
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
+import { BenchChat } from '@/components/game/BenchChat'
 import { Celebration } from '@/components/game/Celebration'
 import { CityScreen, FADE_MS } from '@/components/game/CityScreen'
 import { Notebook } from '@/components/game/Notebook'
@@ -7,25 +8,40 @@ import { PlaceScreen } from '@/components/game/PlaceScreen'
 import { StartScreen } from '@/components/game/StartScreen'
 import { LandingScreen } from '@/components/landing/LandingScreen'
 import { GameShell } from '@/components/game/ui'
-import { CITY, doorOf, type Pos } from '@/game/map'
+import { CITY, benchOf, doorOf, type Pos } from '@/game/map'
 import { outfitEmojis } from '@/game/shop'
-import { COINS_PER_CORRECT, canLevelUp, gameReducer, keptLook, newGame, type GameAction, type GameState } from '@/game/state'
+import {
+  COINS_PER_CORRECT,
+  benchPayouts,
+  benchStatus,
+  canLevelUp,
+  gameReducer,
+  keptLook,
+  newGame,
+  pickBenchTargets,
+  today,
+  type BenchStatus,
+  type GameAction,
+  type GameState,
+} from '@/game/state'
 import { clearGame, loadGame, saveGame } from '@/game/storage'
 import { DebugBadge, DebugProvider, readDebugFlag, saveDebugFlag, useDebugShortcut } from '@/lib/debug'
+import type { BenchId, BenchTarget, BenchVerdict } from '@/shared/bench'
 import type { Level } from '@/shared/types'
 
 type AppAction = GameAction | { type: 'newGame'; level: Level }
 
 function appReducer(state: GameState | null, action: AppAction): GameState | null {
   if (action.type === 'newGame') {
-    // A new game keeps the words learned and the shop items bought.
-    const fresh = newGame(action.level, state?.lastWords, state?.learnedWords)
+    // A new game keeps the words learned, today's bench limits, and the shop items and character.
+    const fresh = newGame(action.level, state?.lastWords, state?.learnedWords, state?.benchDay ?? null)
     return state ? { ...fresh, ...keptLook(state) } : fresh
   }
   return state ? gameReducer(state, action) : state
 }
 
 type Screen = { name: 'home' } | { name: 'start' } | { name: 'city'; startPos: Pos; visit: number } | { name: 'place'; placeId: string; viaDoor?: boolean }
+  | { name: 'bench'; benchId: BenchId; targets: BenchTarget[]; status: BenchStatus }
 
 /**
  * Wraps the game in debug mode (Alt+Shift+D or ?debug=1): every Vietnamese string also shows its English version.
@@ -62,6 +78,10 @@ function Game() {
   useEffect(() => {
     if (game) saveGame(game)
   }, [game])
+
+  // Latest state for callbacks that fire after earlier dispatches (bench payouts).
+  const gameRef = useRef(game)
+  gameRef.current = game
 
   const enterGame = () => {
     if (pendingPlace) {
@@ -113,6 +133,10 @@ function Game() {
             paused={game.celebrationOpen || notebookOpen || shopOpen}
             onMoved={() => setShowHint(false)}
             onEnterPlace={(placeId) => setScreen({ name: 'place', placeId, viaDoor: true })}
+            onEnterBench={(benchId) => {
+              const date = today()
+              setScreen({ name: 'bench', benchId, status: benchStatus(game, date), targets: pickBenchTargets(game, date) })
+            }}
             onOpenCelebration={() => dispatch({ type: 'openCelebration' })}
             onOpenNotebook={() => setNotebookOpen(true)}
             onOpenShop={() => setShopOpen(true)}
@@ -179,6 +203,24 @@ function Game() {
             goToCity(doorOf(CITY, screen.placeId).outside)
           }}
           onLeave={() => goToCity(doorOf(CITY, screen.placeId).outside)}
+        />
+      )}
+
+      {game && screen.name === 'bench' && (
+        <BenchChat
+          key={screen.benchId}
+          benchId={screen.benchId}
+          level={game.level}
+          status={screen.status}
+          targets={screen.targets}
+          onStart={() => dispatch({ type: 'startBenchChat', date: today(), words: screen.targets.map((t) => t.word) })}
+          onVerdicts={(verdicts: BenchVerdict[]) => {
+            const date = today()
+            const payouts = gameRef.current ? benchPayouts(gameRef.current, date, verdicts) : []
+            dispatch({ type: 'awardBench', date, verdicts })
+            return payouts
+          }}
+          onLeave={() => goToCity(benchOf(CITY, screen.benchId).outside)}
         />
       )}
     </GameShell>

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parseMap } from './map'
+import { CITY, parseMap } from './map'
 import { keyToDir, step } from './movement'
 
 const m = parseMap(['CC..', 'c@.^', '....'], { c: 'cafe' })
@@ -30,5 +30,11 @@ describe('keyToDir', () => {
     expect(keyToDir('s')).toBe('down')
     expect(keyToDir('a')).toBe('left')
     expect(keyToDir('x')).toBeUndefined()
+  })
+})
+
+describe('step onto a bench', () => {
+  it('reports enteredBench', () => {
+    expect(step(CITY, { x: 1, y: 3 }, 'down')).toEqual({ pos: { x: 1, y: 4 }, enteredBench: 'bac-tu' })
   })
 })

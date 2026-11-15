@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { SCENARIOS } from '@/shared/scenarios'
 import { PLACE_ART } from './art'
-import { CITY, isWalkable, parseMap } from './map'
+import { CITY, benchAt, benchOf, isWalkable, parseMap } from './map'
 
 describe('parseMap', () => {
   it('parses a tiny map', () => {
@@ -74,6 +74,34 @@ describe('PLACE_ART', () => {
       expect(PLACE_ART[s.id]?.sign).toBeTruthy()
       expect(PLACE_ART[s.id]?.host).toBeTruthy()
       expect(PLACE_ART[s.id]?.greeting_vi).toBeTruthy()
+    }
+  })
+})
+
+describe('parseMap benchLetters', () => {
+  const letters = { '1': 'bac-tu' as const }
+  it('parses a bench with its outside tile', () => {
+    const map = parseMap([',1,', ',@,'], {}, letters)
+    expect(map.benches).toEqual([{ benchId: 'bac-tu', pos: { x: 1, y: 0 }, outside: { x: 1, y: 1 } }])
+  })
+  it('throws when a bench is missing', () => {
+    expect(() => parseMap([',,,', ',@,'], {}, letters)).toThrow(/bench bac-tu/)
+  })
+  it('throws on a duplicate bench', () => {
+    expect(() => parseMap([',1,1', ',@,,'], {}, letters)).toThrow(/bench bac-tu/)
+  })
+})
+
+describe('benches', () => {
+  it('has two benches on walkable lawns with plain outside tiles', () => {
+    expect(CITY.benches.map((b) => b.pos)).toEqual([{ x: 1, y: 4 }, { x: 9, y: 4 }])
+    expect(benchOf(CITY, 'bac-tu').pos).toEqual({ x: 1, y: 4 })
+    expect(benchAt(CITY, { x: 9, y: 4 })?.benchId).toBe('sinh-vien')
+    expect(benchAt(CITY, { x: 0, y: 0 })).toBeUndefined()
+    for (const b of CITY.benches) {
+      expect(isWalkable(CITY, b.pos)).toBe(true)
+      expect(isWalkable(CITY, b.outside)).toBe(true)
+      expect(CITY.tiles[b.outside.y][b.outside.x]).not.toBe('bench')
     }
   })
 })
