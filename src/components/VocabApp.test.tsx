@@ -90,6 +90,7 @@ describe('App', () => {
     expect(screen.queryByText('Bạn đã hoàn thành cấp 1!')).not.toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: /🏆/ }))
     expect(screen.getByText('Bạn đã hoàn thành cấp 1!')).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'Tiếp tục dạo phố' })).not.toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: 'Lên cấp 2' }))
     expect(screen.getByText('Cấp 2')).toBeInTheDocument()
     expect(screen.getByLabelText('Quán cà phê: chưa xong')).toBeInTheDocument()

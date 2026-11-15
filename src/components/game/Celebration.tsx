@@ -7,6 +7,7 @@ export function Celebration(props: {
   coins: number
   onPlayAgain: () => void
   onLevelUp?: () => void
+  /** Only offered when there is no next level, so finishing a level leads on to the next one. */
   onKeepExploring: () => void
 }) {
   return (
@@ -35,9 +36,11 @@ export function Celebration(props: {
           <SecondaryButton onClick={props.onPlayAgain}>
             <Bi vi={`Chơi lại cấp ${props.level}`} en={`Replay level ${props.level}`} />
           </SecondaryButton>
-          <GhostButton onClick={props.onKeepExploring}>
-            <Bi vi="Tiếp tục dạo phố" en="Keep exploring" />
-          </GhostButton>
+          {!props.onLevelUp && (
+            <GhostButton onClick={props.onKeepExploring}>
+              <Bi vi="Tiếp tục dạo phố" en="Keep exploring" />
+            </GhostButton>
+          )}
         </div>
       </div>
     </div>
