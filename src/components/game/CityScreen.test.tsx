@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { CITY, doorOf, type Pos } from '@/game/map'
+import { CITY, benchOf, doorOf, type Pos } from '@/game/map'
 import { step } from '@/game/movement'
 import { findPath } from '@/game/path'
 import { newGame, type GameState } from '@/game/state'
@@ -11,7 +11,7 @@ const keyFor = (a: Pos, b: Pos) =>
   b.x > a.x ? 'ArrowRight' : b.x < a.x ? 'ArrowLeft' : b.y > a.y ? 'ArrowDown' : 'ArrowUp'
 
 function renderCity(state: GameState = newGame(1)) {
-  const props = { onEnterPlace: vi.fn(), onOpenCelebration: vi.fn(), onMoved: vi.fn() }
+  const props = { onEnterPlace: vi.fn(), onEnterBench: vi.fn(), onOpenCelebration: vi.fn(), onMoved: vi.fn() }
   const utils = render(<CityScreen state={state} startPos={CITY.start} showHint {...props} />)
   const player = () => utils.container.querySelector('[data-testid="player"]')!
   const pos = () => ({ x: Number(player().getAttribute('data-x')), y: Number(player().getAttribute('data-y')) })
@@ -173,5 +173,38 @@ describe('CityScreen', () => {
     for (const name of ['Quán cà phê', 'Siêu thị', 'Gọi taxi', 'Phòng khám']) {
       expect(screen.getByText(name)).toBeInTheDocument()
     }
+  })
+
+  describe('benches', () => {
+    it('sits down after STEP_MS when walking onto a bench with keys, with no fade', () => {
+      const c = renderCity()
+      const bench = benchOf(CITY, 'bac-tu').pos
+      const path = [CITY.start, ...findPath(CITY, CITY.start, bench)!]
+      for (let i = 1; i < path.length; i++) fireEvent.keyDown(window, { key: keyFor(path[i - 1], path[i]) })
+      expect(c.pos()).toEqual(bench)
+      expect(c.onEnterBench).not.toHaveBeenCalled()
+      act(() => { vi.advanceTimersByTime(STEP_MS) })
+      expect(c.onEnterBench).toHaveBeenCalledTimes(1)
+      expect(c.onEnterBench).toHaveBeenCalledWith('bac-tu')
+      act(() => { vi.advanceTimersByTime(ENTER_DELAY_MS) })
+      expect(c.onEnterBench).toHaveBeenCalledTimes(1)
+      expect(c.onEnterPlace).not.toHaveBeenCalled()
+      expect(c.container.querySelector('[data-testid="door-fade"]')!.className).toContain('opacity-0')
+    })
+
+    it('walks to a tapped bench and sits down', () => {
+      const c = renderCity()
+      const bench = benchOf(CITY, 'sinh-vien').pos
+      const steps = findPath(CITY, CITY.start, bench)!.length
+      fireEvent.click(c.tile(bench))
+      act(() => { vi.advanceTimersByTime(STEP_MS * steps + STEP_MS) })
+      expect(c.onEnterBench).toHaveBeenCalledWith('sinh-vien')
+      expect(c.onEnterPlace).not.toHaveBeenCalled()
+    })
+
+    it('labels the bench tile', () => {
+      const c = renderCity()
+      expect(c.tile(benchOf(CITY, 'bac-tu').pos)).toHaveAttribute('aria-label', 'Nói chuyện với Bác Tư')
+    })
   })
 })
