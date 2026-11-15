@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useReducer, useState } from 'react'
 import { Celebration } from '@/components/game/Celebration'
-import { CityScreen } from '@/components/game/CityScreen'
+import { CityScreen, FADE_MS } from '@/components/game/CityScreen'
 import { PlaceScreen } from '@/components/game/PlaceScreen'
 import { StartScreen } from '@/components/game/StartScreen'
 import { LandingScreen } from '@/components/landing/LandingScreen'
@@ -18,7 +18,7 @@ function appReducer(state: GameState | null, action: AppAction): GameState | nul
   return state ? gameReducer(state, action) : state
 }
 
-type Screen = { name: 'home' } | { name: 'start' } | { name: 'city'; startPos: Pos; visit: number } | { name: 'place'; placeId: string }
+type Screen = { name: 'home' } | { name: 'start' } | { name: 'city'; startPos: Pos; visit: number } | { name: 'place'; placeId: string; viaDoor?: boolean }
 
 /**
  * Wraps the game in debug mode (Alt+Shift+D or ?debug=1): every Vietnamese string also shows its English version.
@@ -101,7 +101,7 @@ function Game() {
             showHint={showHint}
             paused={game.celebrationOpen}
             onMoved={() => setShowHint(false)}
-            onEnterPlace={(placeId) => setScreen({ name: 'place', placeId })}
+            onEnterPlace={(placeId) => setScreen({ name: 'place', placeId, viaDoor: true })}
             onOpenCelebration={() => dispatch({ type: 'openCelebration' })}
           />
           {game.celebrationOpen && (
@@ -124,6 +124,17 @@ function Game() {
             />
           )}
         </>
+      )}
+
+      {game && screen.name === 'place' && screen.viaDoor && (
+        // Picks up from the city's fade to black and fades into the place.
+        <div
+          key={`fade-${screen.placeId}`}
+          data-testid="door-fade-in"
+          aria-hidden
+          className="pointer-events-none fixed inset-0 z-50 bg-black"
+          style={{ animation: `fade-from-black ${FADE_MS}ms ease-out forwards` }}
+        />
       )}
 
       {game && screen.name === 'place' && (

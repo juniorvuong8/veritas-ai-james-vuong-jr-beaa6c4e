@@ -1,5 +1,5 @@
 export type Pos = { x: number; y: number }
-export type Tile = 'road' | 'grass' | 'tree' | 'water' | 'building' | 'door'
+export type Tile = 'road' | 'grass' | 'tree' | 'water' | 'fountain' | 'building' | 'door'
 
 export interface Door {
   placeId: string
@@ -18,7 +18,7 @@ export interface CityMap {
   start: Pos
 }
 
-const SIMPLE: Record<string, Tile> = { '.': 'road', '@': 'road', ',': 'grass', '^': 'tree', '~': 'water' }
+const SIMPLE: Record<string, Tile> = { '.': 'road', '@': 'road', ',': 'grass', '^': 'tree', '~': 'water', '*': 'fountain' }
 
 export const samePos = (a: Pos, b: Pos) => a.x === b.x && a.y === b.y
 
@@ -44,7 +44,7 @@ export function doorOf(map: CityMap, placeId: string): Door {
 
 /**
  * Parse a map from rows of characters.
- * `.` road, `,` grass, `^` tree, `~` water, `@` start (road).
+ * `.` road, `,` grass, `^` tree, `~` water, `*` fountain, `@` start (road).
  * A place's building is its uppercase letter, its single door the lowercase letter.
  */
 export function parseMap(rows: string[], placeLetters: Record<string, string>): CityMap {
@@ -102,8 +102,8 @@ export const CITY_ROWS: string[] = [
   ',KKK,.,SSS,',
   ',KkK,.,SsS,',
   '...........',
-  '~~,,.@.,,~~',
-  '...........',
+  ',,,,.*.,,,,',
+  '.....@.....',
   ',CcC,.,TtT,',
   ',CCC,.,TTT,',
   '^CCC^.^TTT^',

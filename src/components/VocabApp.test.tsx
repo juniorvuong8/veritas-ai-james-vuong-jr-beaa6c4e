@@ -55,7 +55,7 @@ describe('App', () => {
     await openStart(user)
     await user.click(screen.getByRole('button', { name: 'Bắt đầu' }))
     walkTo(doorOf(CITY, 'cafe').pos)
-    expect(screen.getByText(/Hôm nay bạn muốn học từ nào/)).toBeInTheDocument()
+    expect(await screen.findByText(/Hôm nay bạn muốn học từ nào/)).toBeInTheDocument()
     for (const w of ['menu', 'to go', 'receipt']) await user.click(screen.getByRole('button', { name: w }))
     await user.click(screen.getByRole('button', { name: 'Bắt đầu hội thoại' }))
     await screen.findByText(/Chào chị! Đây là/)

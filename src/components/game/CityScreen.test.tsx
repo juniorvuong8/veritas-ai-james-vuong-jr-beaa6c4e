@@ -4,7 +4,7 @@ import { CITY, doorOf, type Pos } from '@/game/map'
 import { step } from '@/game/movement'
 import { findPath } from '@/game/path'
 import { newGame, type GameState } from '@/game/state'
-import { CityScreen } from './CityScreen'
+import { CityScreen, DOOR_PAUSE_MS, ENTER_DELAY_MS, FADE_MS, STEP_MS } from './CityScreen'
 import { TopBar } from './TopBar'
 
 const keyFor = (a: Pos, b: Pos) =>
@@ -68,7 +68,24 @@ describe('CityScreen', () => {
     const path = [CITY.start, ...findPath(CITY, CITY.start, doorOf(CITY, 'cafe').pos)!]
     for (let i = 1; i < path.length; i++) fireEvent.keyDown(window, { key: keyFor(path[i - 1], path[i]) })
     fireEvent.keyDown(window, { key: 'ArrowUp' })
+    act(() => { vi.advanceTimersByTime(ENTER_DELAY_MS) })
     expect(c.onEnterPlace).toHaveBeenCalledTimes(1)
+    expect(c.onEnterPlace).toHaveBeenCalledWith('cafe')
+  })
+
+  it('pauses on the door and fades to black before entering', () => {
+    const c = renderCity()
+    const fade = () => c.container.querySelector('[data-testid="door-fade"]')!
+    const path = [CITY.start, ...findPath(CITY, CITY.start, doorOf(CITY, 'cafe').pos)!]
+    for (let i = 1; i < path.length; i++) fireEvent.keyDown(window, { key: keyFor(path[i - 1], path[i]) })
+    expect(c.pos()).toEqual(doorOf(CITY, 'cafe').pos)
+    expect(fade()).toHaveClass('opacity-0')
+    act(() => { vi.advanceTimersByTime(STEP_MS + DOOR_PAUSE_MS) })
+    expect(fade()).toHaveClass('opacity-100')
+    expect(c.onEnterPlace).not.toHaveBeenCalled()
+    fireEvent.keyDown(window, { key: 'ArrowDown' })
+    expect(c.pos()).toEqual(doorOf(CITY, 'cafe').pos)
+    act(() => { vi.advanceTimersByTime(FADE_MS) })
     expect(c.onEnterPlace).toHaveBeenCalledWith('cafe')
   })
 
@@ -80,6 +97,7 @@ describe('CityScreen', () => {
     const steps = findPath(CITY, CITY.start, door.pos)!.length
     act(() => { vi.advanceTimersByTime(120 * steps + 10) })
     expect(c.pos()).toEqual(door.pos)
+    act(() => { vi.advanceTimersByTime(ENTER_DELAY_MS) })
     expect(c.onEnterPlace).toHaveBeenCalledWith('supermarket')
   })
 

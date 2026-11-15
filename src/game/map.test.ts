@@ -43,6 +43,13 @@ describe('CITY', () => {
     expect(CITY.height).toBeGreaterThanOrEqual(7)
     expect(CITY.height).toBeLessThanOrEqual(9)
   })
+  it('has a fountain in the center that you walk around, and no water', () => {
+    const center = { x: Math.floor(CITY.width / 2), y: Math.floor(CITY.height / 2) }
+    expect(CITY.tiles[center.y][center.x]).toBe('fountain')
+    expect(isWalkable(CITY, center)).toBe(false)
+    expect(isWalkable(CITY, CITY.start)).toBe(true)
+    expect(CITY.tiles.flat()).not.toContain('water')
+  })
 })
 
 describe('isWalkable', () => {

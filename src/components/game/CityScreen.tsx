@@ -10,6 +10,11 @@ import { getScenario } from '@/shared/scenarios'
 import { TopBar } from './TopBar'
 
 export const STEP_MS = 120
+/** On a door: finish the step, pause a moment on the doorstep, then fade the screen to black. */
+export const DOOR_PAUSE_MS = 250
+export const FADE_MS = 300
+/** Time from stepping onto a door until the place opens. */
+export const ENTER_DELAY_MS = STEP_MS + DOOR_PAUSE_MS + FADE_MS
 
 // Warm palette matching the homepage street scene. Buildings take their place's colour (see tileStyle).
 const TILE_CLASS: Record<Tile, string> = {
@@ -17,6 +22,8 @@ const TILE_CLASS: Record<Tile, string> = {
   grass: 'bg-[#B5DC8F]',
   tree: 'bg-[#B5DC8F]',
   water: 'bg-[#9AD7F2]',
+  // The fountain sits in the town square, on paving like the roads.
+  fountain: 'bg-[#E9DCC8]',
   building: '',
   door: '',
 }
@@ -83,6 +90,8 @@ export function CityScreen(props: {
   const posRef = useRef(pos)
   const walkTimer = useRef<ReturnType<typeof setInterval> | null>(null)
   const entered = useRef(false)
+  const [fading, setFading] = useState(false)
+  const enterTimers = useRef<ReturnType<typeof setTimeout>[]>([])
   const moved = useRef(false)
   const propsRef = useRef(props)
   propsRef.current = props
@@ -105,7 +114,10 @@ export function CityScreen(props: {
       if (enteredPlace) {
         entered.current = true
         stopWalk()
-        propsRef.current.onEnterPlace(enteredPlace)
+        enterTimers.current.push(
+          setTimeout(() => setFading(true), STEP_MS + DOOR_PAUSE_MS),
+          setTimeout(() => propsRef.current.onEnterPlace(enteredPlace), ENTER_DELAY_MS),
+        )
       }
     },
     [stopWalk],
@@ -151,6 +163,7 @@ export function CityScreen(props: {
     return () => {
       window.removeEventListener('keydown', onKey)
       stopWalk()
+      enterTimers.current.forEach(clearTimeout)
     }
   }, [stepDir, stopWalk])
 
@@ -273,6 +286,13 @@ export function CityScreen(props: {
           <Bi vi="Chạm vào bản đồ để đi" en="Tap the map to walk" />
         </span>
       </p>
+      {/* Fades the whole screen to black as the player goes through a door. */}
+      <div
+        data-testid="door-fade"
+        aria-hidden
+        className={cn('pointer-events-none fixed inset-0 z-50 bg-black', fading ? 'opacity-100' : 'opacity-0')}
+        style={{ transition: `opacity ${FADE_MS}ms ease-in` }}
+      />
     </div>
   )
 }

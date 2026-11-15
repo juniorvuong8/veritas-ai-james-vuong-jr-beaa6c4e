@@ -6,6 +6,7 @@ export const TILE_EMOJI: Record<Tile, string> = {
   grass: '',
   tree: '🌳',
   water: '🌊',
+  fountain: '⛲',
   building: '',
   door: '🚪',
 }
