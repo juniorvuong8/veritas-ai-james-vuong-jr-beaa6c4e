@@ -22,8 +22,20 @@ const TILE_CLASS: Record<Tile, string> = {
 
 function tileStyle(tile: Tile, place: string | null): CSSProperties | undefined {
   if (!place || (tile !== 'building' && tile !== 'door')) return undefined
+  // The door sits inside the building, so it shares the building's wall colour.
   const color = PLACE_ART[place].color
-  return tile === 'door' ? { background: `${color}55` } : { background: `${color}30`, boxShadow: `inset 0 0 0 1px ${color}40` }
+  return { background: `${color}30`, boxShadow: `inset 0 0 0 1px ${color}40` }
+}
+
+/** Striped shop awning over a door, in the place's colour. */
+function Awning({ color }: { color: string }) {
+  return (
+    <span
+      aria-hidden
+      className="pointer-events-none absolute inset-x-[6%] top-[6%] h-[26%] rounded-b-[30%] shadow-[0_2px_0_rgba(43,29,22,0.25)]"
+      style={{ background: `repeating-linear-gradient(90deg, ${color} 0 20%, #FFFFFF 20% 40%)` }}
+    />
+  )
 }
 
 /** The building tile next to each door shows the place sign. */
@@ -47,8 +59,8 @@ const BUILDING_BOXES = CITY.doors.map((d) => {
   const ys = cells.map((c) => c.y)
   const top = Math.min(...ys)
   const bottom = Math.max(...ys)
-  // Put the name on the edge away from the door, so it never covers the sign next to the door.
-  const labelAtBottom = d.pos.y < top
+  // Put the name on the edge away from the door, so it never covers the door or the sign next to it.
+  const labelAtBottom = d.pos.y <= top
   return { placeId: d.placeId, x: Math.min(...xs), w: Math.max(...xs) - Math.min(...xs) + 1, top, bottom, labelAtBottom }
 })
 
@@ -183,7 +195,16 @@ export function CityScreen(props: {
                   style={{ fontSize: tileFont(0.6), ...tileStyle(tile, CITY.placeAt[y][x]) }}
                   aria-label={signPlace ? `Đi đến ${getScenario(signPlace)?.name_vi}` : undefined}
                 >
-                  {signPlace ? PLACE_ART[signPlace].sign : TILE_EMOJI[tile]}
+                  {tile === 'door' ? (
+                    <>
+                      <Awning color={PLACE_ART[CITY.placeAt[y][x]!].color} />
+                      <span className="translate-y-[14%] text-[0.85em]">{TILE_EMOJI.door}</span>
+                    </>
+                  ) : signPlace ? (
+                    PLACE_ART[signPlace].sign
+                  ) : (
+                    TILE_EMOJI[tile]
+                  )}
                   {signPlace && props.state.stamps.includes(signPlace) && (
                     <span className="absolute right-0 top-0 text-[0.6em]" aria-hidden>
                       ✓

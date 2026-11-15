@@ -53,8 +53,8 @@ describe('CityScreen', () => {
 
   it('does not walk into a building', () => {
     const c = renderCity()
-    const besideWall = { x: 1, y: 6 } // grass with the café wall directly below
-    expect(CITY.tiles[7][1]).toBe('building')
+    const besideWall = { x: 1, y: 5 } // road with the café wall directly below
+    expect(CITY.tiles[6][1]).toBe('building')
     const path = [CITY.start, ...findPath(CITY, CITY.start, besideWall)!]
     for (let i = 1; i < path.length; i++) fireEvent.keyDown(window, { key: keyFor(path[i - 1], path[i]) })
     expect(c.pos()).toEqual(besideWall)

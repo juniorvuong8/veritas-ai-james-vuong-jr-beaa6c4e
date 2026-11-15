@@ -100,11 +100,11 @@ export function parseMap(rows: string[], placeLetters: Record<string, string>): 
 export const CITY_ROWS: string[] = [
   '^KKK^.^SSS^',
   ',KKK,.,SSS,',
-  ',,k,,.,,s,,',
+  ',KkK,.,SsS,',
   '...........',
   '~~,,.@.,,~~',
   '...........',
-  ',,c,,.,,t,,',
+  ',CcC,.,TtT,',
   ',CCC,.,TTT,',
   '^CCC^.^TTT^',
 ]
