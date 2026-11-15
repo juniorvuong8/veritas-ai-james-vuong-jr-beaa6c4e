@@ -99,11 +99,14 @@ export function LandingScreen({ onStart }: { onStart: (scenarioId?: string) => v
         <nav className="relative z-10 mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
           <div className="flex items-center gap-2 text-base font-extrabold sm:text-lg">
             <span className="grid size-9 place-items-center rounded-xl bg-[#2B1D16] text-lg" aria-hidden>
-              💬
+              👋
             </span>
-            <span>
-              Học từ qua hội thoại
-              <Gloss text="Learn words through conversation" />
+            <span className="leading-tight">
+              Xin Chào City
+              <span className="block text-xs font-semibold text-[#2B1D16]/60 sm:text-sm">
+                Học từ qua hội thoại
+                <Gloss text="Learn words through conversation" />
+              </span>
             </span>
           </div>
           <div className="flex items-center gap-2 sm:gap-3">
